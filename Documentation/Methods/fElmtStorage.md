@@ -1,0 +1,1 @@
+May-2002 : Created. Get Storage used by BLOBs of element comments of an Inspection.  26-Sep-2003 : Added saving Picture Selection.  2004-4-6 : Commented out named selection for Inspections.  Changed the Query by Formula to use Comment Flag instead of blob size.

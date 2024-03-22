@@ -1,0 +1,1 @@
+Part of the Progress bar set.  Sep-2002: Put start comments in an IF(False) group.  Oct-2002 : Added declarations for some variables and the window reference.  Apr-2003 : Use NewWindow method to open window at top/3 centered position.  Sep-2003 : v3.3f2 Modified to use "TimeRemaining" global var.

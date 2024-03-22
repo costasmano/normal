@@ -1,0 +1,276 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 58,
+					"left": 11,
+					"width": 150,
+					"height": 49,
+					"fill": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 58,
+					"left": 171,
+					"width": 150,
+					"height": 49,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 50,
+					"left": 20,
+					"width": 85,
+					"height": 16,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Consultant:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 15,
+					"left": 10,
+					"width": 312,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"text": "Consultant Address  Search"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 161,
+					"left": 17,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "* Hit Return for Find"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 177,
+					"left": 17,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "** Hit Enter for Ok"
+				},
+				"vConsltName": {
+					"type": "input",
+					"top": 76,
+					"left": 22,
+					"width": 130,
+					"height": 18,
+					"dataSource": "vConsltName",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vLastName": {
+					"type": "input",
+					"top": 76,
+					"left": 181,
+					"width": 130,
+					"height": 18,
+					"dataSource": "vLastName",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 116,
+					"left": 56,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bFind",
+					"shortcutKey": "[Return]",
+					"text": "Find *",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "checkbox",
+					"top": 113,
+					"left": 155,
+					"width": 133,
+					"height": 26,
+					"dataSource": "CBAddTo",
+					"text": "Add to Selection",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 166,
+					"left": 130,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 166,
+					"left": 232,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK **",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 50,
+					"left": 180,
+					"width": 130,
+					"height": 16,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Contact Last Name:"
+				},
+				"SearchResults": {
+					"type": "text",
+					"top": 143,
+					"left": 7,
+					"width": 300,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

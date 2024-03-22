@@ -1,0 +1,1 @@
+Oct-2001 : Modified code to Modify or Display only selection depending on whether the user belongs to the ReadWrite group.  Jan-2003 : Fixed call to Modify or Display Selection

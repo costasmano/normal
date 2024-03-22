@@ -1,0 +1,1 @@
+2003-03-16 : Applied 'DataEntry12Plain' style sheet to input fields.2004-04-13 : Applied form scaling - 120%.2004-04-29 : Re-aligned Text check box.

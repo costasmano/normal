@@ -1,0 +1,1 @@
+9/18/2002 - ASL  Created new method GetParentDescription. 

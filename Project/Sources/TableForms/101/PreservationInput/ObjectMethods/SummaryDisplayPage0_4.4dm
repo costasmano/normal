@@ -1,0 +1,1 @@
+ut_OpenProjInfo_OM("CONTRACT"; PRV_ConstrContr_txt; Self:C308)

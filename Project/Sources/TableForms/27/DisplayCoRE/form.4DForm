@@ -1,0 +1,350 @@
+{
+	"destination": "detailScreen",
+	"inheritedFormTable": 27,
+	"windowMinWidth": 740,
+	"windowMinHeight": 350,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerBody": 528,
+	"markerBreak": 528,
+	"markerFooter": 528,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"PrintPreviewPicture": {
+					"type": "picture",
+					"top": 10,
+					"left": 662,
+					"width": 40,
+					"height": 40,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BMS PrintPreview.png"
+				},
+				"DE InspDate": {
+					"type": "input",
+					"top": 71,
+					"left": 113,
+					"width": 125,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[BMS Inspections:44]Insp Date:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"txtCUSpanGroup": {
+					"type": "text",
+					"top": 90,
+					"left": 311,
+					"width": 89,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "right",
+					"text": "Span Group"
+				},
+				"fieldCUSpanGroup": {
+					"type": "input",
+					"top": 90,
+					"left": 410,
+					"width": 34,
+					"height": 17,
+					"defaultValue": "1",
+					"dataSource": "[BMS Inspections:44]Span Group No:3",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 999,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cbCUMetric": {
+					"type": "radio",
+					"top": 90,
+					"left": 468,
+					"width": 121,
+					"height": 19,
+					"dataSource": "tbMetric",
+					"text": "Metric Units",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/cbCUMetric.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbCUEnglish": {
+					"type": "radio",
+					"top": 90,
+					"left": 593,
+					"width": 121,
+					"height": 19,
+					"dataSource": "tbEnglish",
+					"text": "English Units",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/cbCUEnglish.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"subFormCU": {
+					"type": "subform",
+					"top": 115,
+					"left": 8,
+					"width": 694,
+					"height": 338,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 45,
+					"detailForm": "Cond Units In",
+					"listForm": "Cond Units Inc",
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"printFrame": "variable"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 71,
+					"left": 10,
+					"width": 98,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Inspection Date"
+				},
+				"Page Preview Btn": {
+					"type": "button",
+					"top": 11,
+					"left": 662,
+					"width": 40,
+					"height": 40,
+					"visibility": "hidden",
+					"dataSource": "vbPGPreview",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Preview"
+					},
+					"class": "Default",
+					"focusable": false,
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/0",
+					"method": "ObjectMethods/Page Preview Btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE InspDate1": {
+					"type": "input",
+					"top": 16,
+					"left": 113,
+					"width": 125,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE InspDate2": {
+					"type": "input",
+					"top": 43,
+					"left": 113,
+					"width": 125,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE InspDate3": {
+					"type": "input",
+					"top": 16,
+					"left": 363,
+					"width": 245,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[Bridge MHD NBIS:1]Item7:65",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE InspDate4": {
+					"type": "input",
+					"top": 43,
+					"left": 363,
+					"width": 245,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[Bridge MHD NBIS:1]Item6A:63",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 16,
+					"left": 50,
+					"width": 58,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "BDEPT"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 44,
+					"left": 50,
+					"width": 58,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "BIN"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 16,
+					"left": 260,
+					"width": 98,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Item 7"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 44,
+					"left": 260,
+					"width": 98,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Item 6A"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

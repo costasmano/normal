@@ -1,0 +1,134 @@
+{
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"StartClientControlProcess": {
+					"type": "button",
+					"top": 43,
+					"left": 20,
+					"width": 230,
+					"height": 40,
+					"focusable": false,
+					"text": "Start Client Control Process",
+					"style": "bevel",
+					"method": "ObjectMethods/StartClientControlProcess.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"StopClientControlProcess": {
+					"type": "button",
+					"top": 83,
+					"left": 20,
+					"width": 230,
+					"height": 40,
+					"focusable": false,
+					"text": "Stop Client Control Process",
+					"style": "bevel",
+					"method": "ObjectMethods/StopClientControlProcess.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"StartTransferatInterval": {
+					"type": "button",
+					"top": 203,
+					"left": 20,
+					"width": 230,
+					"height": 40,
+					"focusable": false,
+					"text": "Start Transfers at interval",
+					"style": "bevel",
+					"method": "ObjectMethods/StartTransferatInterval.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 5,
+					"left": 20,
+					"width": 230,
+					"height": 33,
+					"textAlign": "center",
+					"text": "BMSExternal Server Client Control Panel"
+				},
+				"EditBMSExternalTransferRec": {
+					"type": "button",
+					"top": 163,
+					"left": 20,
+					"width": 230,
+					"height": 40,
+					"focusable": false,
+					"text": "Edit BMSExternal_Transfer\\Record",
+					"style": "bevel",
+					"method": "ObjectMethods/EditBMSExternalTransferRec.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"StatsofClientProc": {
+					"type": "button",
+					"top": 123,
+					"left": 20,
+					"width": 230,
+					"height": 40,
+					"focusable": false,
+					"text": "Show Status of\\Client Cotnrol Process",
+					"style": "bevel",
+					"method": "ObjectMethods/StatsofClientProc.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"EditDelayDBSync": {
+					"type": "button",
+					"top": 243,
+					"left": 20,
+					"width": 230,
+					"height": 40,
+					"focusable": false,
+					"text": "Edit DelayDBSync\\Parameter record",
+					"style": "bevel",
+					"method": "ObjectMethods/EditDelayDBSync.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"EditClientTimouts": {
+					"type": "button",
+					"top": 283,
+					"left": 20,
+					"width": 230,
+					"height": 40,
+					"focusable": false,
+					"text": "Modify Client\\Timeouts",
+					"style": "bevel",
+					"method": "ObjectMethods/EditClientTimouts.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

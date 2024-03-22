@@ -1,0 +1,1 @@
+Oct-2001 : modified to use "Is New Record" command instead of "Record Number"

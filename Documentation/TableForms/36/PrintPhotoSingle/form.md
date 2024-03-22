@@ -1,0 +1,1 @@
+2002-11 : Added. Moved objects 20 to right and13  down to fit better on page.2003-08 : v3.3f Increased size of Pict Description box.2003-10-10 : Fixed Page Of block (split in two).2003-12-02 : Fixed fonts of Page of text block.2004-02-13 : Made form type Detail Form for Printing.2004-03-11: Added style sheet.

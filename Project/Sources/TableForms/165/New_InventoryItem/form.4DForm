@@ -1,0 +1,676 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 450,
+	"markerBreak": 450,
+	"markerFooter": 460,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDeactivate",
+		"onMenuSelect",
+		"onDataChange",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line12": {
+					"type": "line",
+					"top": 93,
+					"left": 19,
+					"width": 662,
+					"sizingX": "grow"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 472,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/library/GLASS - Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SaveRecord": {
+					"type": "button",
+					"top": 16,
+					"left": 535,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"shortcutKey": "[Enter]",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Save",
+					"icon": "/RESOURCES/Images/library/GLASS - OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/SaveRecord.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 112,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Structure Number : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 170,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "District : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 141,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "* City / Town : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 286,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "* Kilo Point : "
+				},
+				"Text17": {
+					"type": "text",
+					"top": 315,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "* Mile Point : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 228,
+					"left": 589,
+					"width": 69,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Route : "
+				},
+				"Text19": {
+					"type": "text",
+					"top": 257,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "* Route Direction : "
+				},
+				"Text20": {
+					"type": "text",
+					"top": 374,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Structure Location : "
+				},
+				"LSS_Route_txt": {
+					"type": "input",
+					"top": 228,
+					"left": 663,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_Route_s:9",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_RouteDirectionId_s": {
+					"type": "input",
+					"top": 257,
+					"left": 193,
+					"width": 117,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_RouteDirection_s:14",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LSS_TownName_atxt": {
+					"type": "dropdown",
+					"top": 138,
+					"left": 560,
+					"width": 23,
+					"height": 23,
+					"dataSource": "LSS_TownName_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_TownName_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_StructureClass_atxt": {
+					"type": "dropdown",
+					"top": 196,
+					"left": 192,
+					"width": 173,
+					"height": 23,
+					"dataSource": "LSS_StructureClass_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_StructureClass_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_RouteDesignation_atxt": {
+					"type": "dropdown",
+					"top": 225,
+					"left": 192,
+					"width": 143,
+					"height": 23,
+					"dataSource": "LSS_RouteDesignation_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteDesignation_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Route_L": {
+					"type": "input",
+					"top": 228,
+					"left": 396,
+					"width": 71,
+					"height": 17,
+					"dataSource": "LSS_Route_L",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"min": 1,
+					"max": 9999,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/LSS_Route_L.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_RouteSuffix_L": {
+					"type": "checkbox",
+					"top": 225,
+					"left": 565,
+					"width": 20,
+					"height": 20,
+					"dataSource": "LSS_RouteSuffix_L",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteSuffix_L.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_RouteDirection_as": {
+					"type": "dropdown",
+					"top": 254,
+					"left": 312,
+					"width": 23,
+					"height": 23,
+					"dataSource": "LSS_RouteDirection_as",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteDirection_as.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_MilePoint_r": {
+					"type": "input",
+					"top": 315,
+					"left": 193,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_MilePoint_r:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 1E-06,
+					"max": 999,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/LSS_MilePoint_r.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_IdNumber": {
+					"type": "input",
+					"top": 344,
+					"left": 193,
+					"width": 82,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_IdentificationNumber_L:5",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000000",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_SIN_2_L": {
+					"type": "input",
+					"top": 344,
+					"left": 326,
+					"width": 91,
+					"height": 17,
+					"dataSource": "LSS_SIN_2_L",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "00000",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 99999,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/LSS_SIN_2_L.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"EditIDNum": {
+					"type": "button",
+					"top": 341,
+					"left": 462,
+					"width": 125,
+					"height": 22,
+					"dataSource": "Button",
+					"text": "Edit",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/EditIDNum.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_StructureLocation_txt": {
+					"type": "input",
+					"top": 374,
+					"left": 193,
+					"width": 564,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_StructureLocation_txt:10",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"StructureType1": {
+					"type": "dropdown",
+					"top": 401,
+					"left": 192,
+					"width": 293,
+					"height": 23,
+					"dataSource": "v_171_003_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/StructureType1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_StructureNumber_s": {
+					"type": "input",
+					"top": 112,
+					"left": 193,
+					"width": 220,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_StructureNumber_s:6",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_District_L": {
+					"type": "input",
+					"top": 170,
+					"left": 193,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_District_L:3",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_Town_s": {
+					"type": "input",
+					"top": 141,
+					"left": 193,
+					"width": 364,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_Town_s:4",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 228,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "* Route Designation : "
+				},
+				"Text2": {
+					"type": "text",
+					"top": 199,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "* Structure Class : "
+				},
+				"StructureType": {
+					"type": "text",
+					"top": 404,
+					"left": 69,
+					"width": 119,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Structure Type : "
+				},
+				"LSS_Route_txt1": {
+					"type": "input",
+					"top": 199,
+					"left": 376,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_InventoryType_s:28",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_Route_txt2": {
+					"type": "input",
+					"top": 199,
+					"left": 433,
+					"width": 104,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_Category_s:2",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_Route_txt3": {
+					"type": "text",
+					"top": 199,
+					"left": 410,
+					"width": 23,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "/"
+				},
+				"TrapEnter_L": {
+					"type": "button",
+					"top": 6,
+					"left": 5,
+					"width": 20,
+					"height": 20,
+					"dataSource": "TrapEnter_L",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 344,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "<LSS_SIN_Label_txt> : "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 228,
+					"left": 349,
+					"width": 39,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "* # : "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 228,
+					"left": 479,
+					"width": 79,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Rte Sfx : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 461,
+					"left": 9,
+					"width": 179,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"text": "* : Required Data"
+				},
+				"LSS_KiloPoint_r": {
+					"type": "input",
+					"top": 286,
+					"left": 193,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_KiloPoint_r:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 1E-06,
+					"max": 1607.734656,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/LSS_KiloPoint_r.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Owner": {
+					"type": "dropdown",
+					"top": 431,
+					"left": 192,
+					"width": 133,
+					"height": 23,
+					"dataSource": "v_165_034_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Owner.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Owner1": {
+					"type": "text",
+					"top": 434,
+					"left": 69,
+					"width": 119,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Owner :"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line12"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bCancel",
+					"SaveRecord"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

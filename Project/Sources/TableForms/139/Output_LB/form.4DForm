@@ -1,0 +1,624 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 90
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bDelete": {
+					"type": "button",
+					"top": 8,
+					"left": 16,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Selectio"
+					},
+					"action": "deleteSubrecord",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX - Delete Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 56,
+					"left": 4,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Delete"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 3,
+					"left": 83,
+					"width": 2,
+					"height": 66,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				},
+				"bShowAll": {
+					"type": "button",
+					"top": 8,
+					"left": 105,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bShowAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX - Show All.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowAlllabel": {
+					"type": "text",
+					"top": 56,
+					"left": 93,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Show all"
+				},
+				"bShowSubset": {
+					"type": "button",
+					"top": 8,
+					"left": 177,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bShowSubset",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show Subset"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX - Show Subset.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowSubset.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubsetlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 165,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Show subset"
+				},
+				"bQuery": {
+					"type": "button",
+					"top": 8,
+					"left": 249,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX - Query.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuerylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 237,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Query"
+				},
+				"bOrderBy": {
+					"type": "button",
+					"top": 8,
+					"left": 321,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX Order By.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 309,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Order by"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 3,
+					"left": 388,
+					"width": 2,
+					"height": 66,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				},
+				"bReportlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 399,
+					"width": 85,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Quick reports"
+				},
+				"bPrint": {
+					"type": "button",
+					"top": 8,
+					"left": 494,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX Print Selection.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bPrint.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrintlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 482,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Print"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 3,
+					"left": 853,
+					"width": 2,
+					"height": 66,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				},
+				"bDone": {
+					"type": "button",
+					"top": 8,
+					"left": 855,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "cancel",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX Done.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDonelabel": {
+					"type": "text",
+					"top": 56,
+					"left": 843,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Finish"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 74,
+					"left": 0,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"ARCH_RPT_BTN_L": {
+					"type": "button",
+					"top": 15,
+					"left": 634,
+					"width": 66,
+					"height": 26,
+					"dataSource": "ARCH_RPT_BTN_L",
+					"class": "List12Bold",
+					"focusable": false,
+					"text": "Reports",
+					"popupPlacement": "separated",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/ARCH_RPT_BTN_L.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"ARCH_TOOL_BTN_L1": {
+					"type": "button",
+					"top": 43,
+					"left": 634,
+					"width": 56,
+					"height": 26,
+					"dataSource": "ARCH_TOOL_BTN_L",
+					"class": "List12Bold",
+					"focusable": false,
+					"text": "TOOLS",
+					"popupPlacement": "separated",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/ARCH_TOOL_BTN_L1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"ArchiveReason_atxt": {
+					"type": "dropdown",
+					"top": 15,
+					"left": 711,
+					"width": 144,
+					"height": 21,
+					"dataSource": "ArchiveReason_atxt",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/ArchiveReason_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ArchiveDate_ad": {
+					"type": "dropdown",
+					"top": 43,
+					"left": 711,
+					"width": 144,
+					"height": 21,
+					"dataSource": "ArchiveDate_ad",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/ArchiveDate_ad.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Output_LB": {
+					"type": "listbox",
+					"top": 83,
+					"left": 16,
+					"width": 706,
+					"height": 172,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"movableRows": false,
+					"doubleClickInRowAction": "displaySubrecord",
+					"table": 139,
+					"highlightSet": "UserSet",
+					"scrollbarHorizontal": "automatic",
+					"stroke": "#BEEFEF",
+					"alternateFill": "#BEEFEF",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[BridgeMHDNBISArchive:139]ArchiveReason_s:223",
+							"width": 350,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "#BEEFEF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Archive Reason",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[BridgeMHDNBISArchive:139]ArchiveDate_d:224",
+							"dataSourceTypeHint": "date",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "systemMedium",
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "#BEEFEF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Archive Date",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[BridgeMHDNBISArchive:139]BDEPT:1",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "#BEEFEF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "BDEPT",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[BridgeMHDNBISArchive:139]BIN:3",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "#BEEFEF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "BIN",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[BridgeMHDNBISArchive:139]StructDef:102",
+							"dataSourceTypeHint": "boolean",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"controlType": "checkbox",
+							"truncateMode": "none",
+							"stroke": "#000000",
+							"fill": "automatic",
+							"alternateFill": "#BEEFEF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"header": {
+								"name": "Header5",
+								"text": "SD",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "List12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#000000",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"bReport": {
+					"type": "button",
+					"top": 8,
+					"left": 410,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Report"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX Report.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "custom",
+					"method": "ObjectMethods/bReport.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bDeletelabel",
+					"Picture1",
+					"bShowAlllabel",
+					"bShowSubsetlabel",
+					"bQuerylabel",
+					"bOrderBylabel",
+					"Picture2",
+					"bReportlabel",
+					"bPrintlabel",
+					"Picture3",
+					"bDonelabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

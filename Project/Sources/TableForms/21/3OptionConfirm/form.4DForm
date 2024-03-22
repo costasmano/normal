@@ -1,0 +1,206 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Confirm",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 20,
+					"left": 40,
+					"width": 384,
+					"height": 103,
+					"dataSource": "vTextMsg",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Choice 3 btn": {
+					"type": "button",
+					"top": 127,
+					"left": 312,
+					"width": 133,
+					"height": 23,
+					"dataSource": "vbChoice_3",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "List12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Choice 1 btn": {
+					"type": "button",
+					"top": 127,
+					"left": 20,
+					"width": 133,
+					"height": 23,
+					"dataSource": "vbChoice_1",
+					"action": "cancel",
+					"text": "Option 1",
+					"class": "List12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Choice 2 btn": {
+					"type": "button",
+					"top": 127,
+					"left": 166,
+					"width": 133,
+					"height": 23,
+					"dataSource": "vbChoice_2",
+					"action": "cancel",
+					"text": "Option 2",
+					"class": "List12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"CaptureEsc": {
+					"type": "button",
+					"top": 5,
+					"left": 4,
+					"width": 9,
+					"height": 16,
+					"dataSource": "CaptureEsc",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CaptureRtn": {
+					"type": "button",
+					"top": 25,
+					"left": 4,
+					"width": 9,
+					"height": 16,
+					"dataSource": "CaptureRtn",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CaptureEnter": {
+					"type": "button",
+					"top": 46,
+					"left": 4,
+					"width": 9,
+					"height": 16,
+					"dataSource": "CaptureEnter",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CaptureCmdP": {
+					"type": "button",
+					"top": 65,
+					"left": 4,
+					"width": 9,
+					"height": 16,
+					"dataSource": "CaptureCmdP",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+1-Dec-99 : modified per memo from CSC dated 22-jun-1999.  Aug and Sept 2000: modified to match the code from FHWA's Edit/Update program.  3/21/01 Rounding of Item 51 before any comparisons. Truncate Item 66 before making any comparisons.  Jun-2003 : Enclosed long comments in IF(False) statements.

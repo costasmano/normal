@@ -1,0 +1,1 @@
+4/16/2001 ASL Method to create a hierarchical list of elements given a parameter list of element categories.  4/26/2001 ASL Leave elements collapsed.  Oct-2002 :  Added code to deal with items that are not numeric like APP, OVR, TRA.  Added declarations for $0 and lists generated.

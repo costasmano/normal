@@ -1,0 +1,1 @@
+1/1/2003 ASL Created.  26-Sep-2003 : Use Comments flag to check select elements with comments.  2004-04-16 : Changed the sorting code for [ElementDict].  It uses ORDER BY full label instead of ORDER BY FORUMLA.  2004-05-04 : Use actual values instead of wr Underline; wr continuous underline constants.

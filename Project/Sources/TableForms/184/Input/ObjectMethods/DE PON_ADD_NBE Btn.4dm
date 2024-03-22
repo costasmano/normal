@@ -1,0 +1,33 @@
+If (False:C215)
+	//[TIN_Inspections];"Input".DE PON_ADD_NBE Btn
+End if 
+
+C_LONGINT:C283(PON_PARENTENV_L; PON_PARENTSTRUNIT_L; PON_PARENTKEY_L; PON_GRANDPARENTKEY_L)
+C_BOOLEAN:C305(PON_ADDPROTSYS_b)
+PON_PARENTENV_L:=0
+PON_PARENTSTRUNIT_L:=0
+PON_PARENTKEY_L:=0
+PON_GRANDPARENTKEY_L:=0
+PON_ADDPROTSYS_b:=False:C215
+If (Read only state:C362([TIN_Inspections:184]))
+	
+Else 
+	ARRAY LONGINT:C221(PON_ELEMDEPTH_aL; 0)  //start the depth of elements
+	
+	C_BOOLEAN:C305($RoState_b)
+	$RoState_b:=Read only state:C362([NTI_ELEM_TIN_INSP:185])
+	READ WRITE:C146([NTI_ELEM_TIN_INSP:185])
+	ADD RECORD:C56([NTI_ELEM_TIN_INSP:185])
+	If (OK=1)
+		NTI_ListElements_TIN
+		//_ o _DISABLE BUTTON(*;"@PON_ADD_Damage@")
+		OBJECT SET ENABLED:C1123(*; "@PON_ADD_Damage@"; False:C215)
+		OBJECT SET ENABLED:C1123(*; "@PON_ADD_Prot@"; False:C215)
+	End if 
+	If ($RoState_b)
+		READ ONLY:C145([NTI_ELEM_TIN_INSP:185])
+	End if 
+End if 
+
+//set to no parent after adding
+PON_PARENTKEY_L:=0

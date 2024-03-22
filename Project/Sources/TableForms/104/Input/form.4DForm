@@ -1,0 +1,338 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 152,
+	"markerBreak": 152,
+	"markerFooter": 162,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 83,
+					"left": 24,
+					"width": 352,
+					"height": 18,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"text": "<?[104]>"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 481,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 290,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 353,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 416,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 116,
+					"left": 20,
+					"width": 88,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "<?2> : "
+				},
+				"AssignType": {
+					"type": "input",
+					"top": 137,
+					"left": 19,
+					"width": 481,
+					"height": 18,
+					"sizingX": "grow",
+					"dataSource": "[WorkHour_Config:104]AssignType:2",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/CM_AssgnmntType_List"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ToolSetButton": {
+					"type": "pictureButton",
+					"top": 165,
+					"left": 22,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ToolSet",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WK_Config"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX ToolSet.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/ToolSetButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WorkCFG_Type": {
+					"type": "dropdown",
+					"top": 219,
+					"left": 20,
+					"width": 474,
+					"height": 24,
+					"sizingX": "grow",
+					"dataSource": "WorkCFG_Type",
+					"choiceList": [
+						"",
+						"New Bridge",
+						"Bridge Betterment",
+						"Bridge Maintenance",
+						"Bridge Preservation",
+						"Bridge Rehabilitation",
+						"Bridge Replacement",
+						"Weight Restricted",
+						"Bridge Betterment-Deck Replacement"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/WorkCFG_Type.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"WorkCFG_CopyFromType": {
+					"type": "dropdown",
+					"top": 269,
+					"left": 20,
+					"width": 474,
+					"height": 24,
+					"sizingX": "grow",
+					"dataSource": "WorkCFG_CopyFromType",
+					"choiceList": [
+						"",
+						"New Bridge",
+						"Bridge Betterment",
+						"Bridge Maintenance",
+						"Bridge Preservation",
+						"Bridge Rehabilitation",
+						"Bridge Replacement",
+						"Weight Restricted",
+						"Bridge Betterment-Deck Replacement"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/WorkCFG_CopyFromType.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 250,
+					"left": 18,
+					"width": 203,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "Copy From Other Type"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 3,
+					"left": 273,
+					"width": 2,
+					"height": 73,
+					"sizingX": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				}
+			}
+		}
+	]
+}

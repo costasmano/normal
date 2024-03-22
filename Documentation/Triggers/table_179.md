@@ -1,0 +1,1 @@
+NBEs by inspection for Bridge records - linked to [Inspections] table

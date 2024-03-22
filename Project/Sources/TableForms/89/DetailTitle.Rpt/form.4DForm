@@ -1,0 +1,121 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerBody": 20,
+	"markerBreak": 20,
+	"markerFooter": 20,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 4,
+					"left": 23,
+					"width": 35,
+					"height": 13,
+					"class": "Times10Bold",
+					"text": "Owner"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 4,
+					"left": 61,
+					"width": 32,
+					"height": 13,
+					"class": "Times10Bold",
+					"text": "Dist."
+				},
+				"Text3": {
+					"type": "text",
+					"top": 4,
+					"left": 90,
+					"width": 122,
+					"height": 13,
+					"class": "Times10Bold",
+					"text": "Town"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 4,
+					"left": 212,
+					"width": 122,
+					"height": 13,
+					"class": "Times10Bold",
+					"text": "Item 8"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 4,
+					"left": 347,
+					"width": 122,
+					"height": 13,
+					"class": "Times10Bold",
+					"text": "Item 7"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 4,
+					"left": 476,
+					"width": 122,
+					"height": 13,
+					"class": "Times10Bold",
+					"text": "Item 6A"
+				},
+				"Splitter1": {
+					"type": "splitter",
+					"top": 17,
+					"left": 20,
+					"width": 698,
+					"height": 6,
+					"dataSource": "Splitter1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 4,
+					"left": 624,
+					"width": 92,
+					"height": 13,
+					"class": "Times10Bold",
+					"text": "Status"
+				}
+			}
+		}
+	]
+}

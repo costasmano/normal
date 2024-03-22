@@ -1,0 +1,1 @@
+2003-12-11 : Created for 4D Write templates.  2004-3-2 : Removed "@" when querying by town name

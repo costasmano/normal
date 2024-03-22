@@ -1,0 +1,1 @@
+G_Accesibil_Obj(Self:C308; ->[Inspections:27]Rigging:91; 1; 1)  //part 1, ptr_changes{1}

@@ -1,0 +1,1 @@
+Jun-2001: Removed Plug-in around OK button, Made OK button default, made OK button to Automatic appearance.May-2002 : Added a variable for some extra comments about the record.

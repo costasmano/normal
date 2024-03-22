@@ -1,0 +1,1 @@
+2004-04-22 : Created.  2004-04-27 : Modified vAssignNo to vsAssignNo.

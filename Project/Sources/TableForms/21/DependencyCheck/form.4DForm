@@ -1,0 +1,1304 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 10,
+	"markerBody": 427,
+	"markerBreak": 427,
+	"markerFooter": 427,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"tbDependencyCheck": {
+					"type": "tab",
+					"top": 26,
+					"left": 10,
+					"width": 445,
+					"height": 356,
+					"dataSource": "vtbDependencyCheck",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"SIA",
+						"Ratings"
+					],
+					"class": "TabText",
+					"fontWeight": "bold",
+					"action": "gotoPage",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 152,
+					"width": 163,
+					"height": 17,
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Dependency Check"
+				},
+				"btnCancel": {
+					"type": "button",
+					"top": 391,
+					"left": 257,
+					"width": 88,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "TabText",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnOK": {
+					"type": "button",
+					"top": 392,
+					"left": 367,
+					"width": 88,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "TabText",
+					"fontWeight": "bold",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbDontAskAgain": {
+					"type": "checkbox",
+					"top": 392,
+					"left": 86,
+					"width": 159,
+					"height": 16,
+					"dataSource": "blnDontAskAgain",
+					"text": "Do not show this dialog again",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn SIABtnAll": {
+					"type": "button",
+					"top": 364,
+					"left": 230,
+					"width": 120,
+					"height": 18,
+					"dataSource": "vbtnSIAAcceptAll",
+					"text": "Accept All",
+					"class": "TabText",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/btn SIABtnAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn SIAClearAll": {
+					"type": "button",
+					"top": 364,
+					"left": 365,
+					"width": 90,
+					"height": 18,
+					"dataSource": "vbtnSIAClearAll",
+					"text": "Clear All",
+					"class": "TabText",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/btn SIAClearAll.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 56,
+					"left": 241,
+					"width": 86,
+					"height": 13,
+					"class": "List9",
+					"text": "To value from SIA"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 56,
+					"left": 88,
+					"width": 136,
+					"height": 13,
+					"class": "List9",
+					"text": "Change value in Inspection"
+				},
+				"cbStructureType": {
+					"type": "checkbox",
+					"top": 164,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnStructureType",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldStructureTypeInsp": {
+					"type": "input",
+					"top": 164,
+					"left": 93,
+					"width": 133,
+					"height": 54,
+					"dataSource": "vtxtStructTypeInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldStructureTypeSIA": {
+					"type": "input",
+					"top": 164,
+					"left": 242,
+					"width": 133,
+					"height": 54,
+					"dataSource": "vtxtStructTypeSIA",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 164,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Item 43"
+				},
+				"cbItem107": {
+					"type": "checkbox",
+					"top": 254,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnItem107",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem107Insp": {
+					"type": "input",
+					"top": 254,
+					"left": 93,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem107Insp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem107SIA": {
+					"type": "input",
+					"top": 254,
+					"left": 242,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem107SIA",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 254,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Item 107"
+				},
+				"cbWeightPosting": {
+					"type": "checkbox",
+					"top": 284,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnWeightPosting",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldWeightPostingInsp": {
+					"type": "input",
+					"top": 284,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtWeightPostingInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldWeightPosting": {
+					"type": "input",
+					"top": 284,
+					"left": 242,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtWeightPosting",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 284,
+					"left": 18,
+					"width": 75,
+					"height": 13,
+					"class": "List9",
+					"text": "Weight Posting"
+				},
+				"cbItem106": {
+					"type": "checkbox",
+					"top": 224,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnItem106",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem106Insp": {
+					"type": "input",
+					"top": 224,
+					"left": 93,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem106Insp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem106SIA": {
+					"type": "input",
+					"top": 224,
+					"left": 242,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem106SIA",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 224,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Item 106"
+				},
+				"cbItem21": {
+					"type": "checkbox",
+					"top": 76,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnItem21",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem21Insp": {
+					"type": "input",
+					"top": 76,
+					"left": 93,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem21Insp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem21SIA": {
+					"type": "input",
+					"top": 76,
+					"left": 242,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem21SIA",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 76,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Item 21"
+				},
+				"cbItem22": {
+					"type": "checkbox",
+					"top": 105,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnItem22",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem22Insp": {
+					"type": "input",
+					"top": 105,
+					"left": 93,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem22Insp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem22SIA": {
+					"type": "input",
+					"top": 105,
+					"left": 242,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem22SIA",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 105,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Item 22"
+				},
+				"cbItem26": {
+					"type": "checkbox",
+					"top": 134,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnItem26",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem26Insp": {
+					"type": "input",
+					"top": 134,
+					"left": 93,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem26Insp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem26SIA": {
+					"type": "input",
+					"top": 134,
+					"left": 242,
+					"width": 133,
+					"height": 26,
+					"dataSource": "vtxtItem26SIA",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 134,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Item 26"
+				},
+				"cbEDJMTDate": {
+					"type": "checkbox",
+					"top": 314,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnEDJMTDate",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldEDJMTDateInsp": {
+					"type": "input",
+					"top": 314,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtEDJMTDateInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldEDJMTDate": {
+					"type": "input",
+					"top": 314,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtEDJMTDate",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cbWaivedDate": {
+					"type": "checkbox",
+					"top": 344,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnWaivedDate",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldWaivedDateInsp": {
+					"type": "input",
+					"top": 344,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtWaivedDateInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldWaivedDate": {
+					"type": "input",
+					"top": 344,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtWaivedDate",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 314,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "EDJMT Date"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 344,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Waived Date"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text14": {
+					"type": "text",
+					"top": 55,
+					"left": 88,
+					"width": 135,
+					"height": 13,
+					"class": "List9",
+					"text": "Change value in Inspection"
+				},
+				"cbRatingReport": {
+					"type": "checkbox",
+					"top": 86,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnRatingReport",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldRatingReportInsp": {
+					"type": "input",
+					"top": 86,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRatingReportInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldRatingReport": {
+					"type": "input",
+					"top": 86,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRatingReport",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 86,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Rating Report"
+				},
+				"cbRatingDate": {
+					"type": "checkbox",
+					"top": 115,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnRatingDate",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldRatingDateInsp": {
+					"type": "input",
+					"top": 115,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRatingDateInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldRatingDate": {
+					"type": "input",
+					"top": 115,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRatingDate",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cbRecomPostingH": {
+					"type": "checkbox",
+					"top": 144,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnRecomPostingH",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPostingHInsp": {
+					"type": "input",
+					"top": 144,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPostingHInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPostingH": {
+					"type": "input",
+					"top": 144,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPostingH",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cbRecomPosting3": {
+					"type": "checkbox",
+					"top": 174,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnRecomPosting3",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPosting3Insp": {
+					"type": "input",
+					"top": 174,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPosting3Insp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPosting3": {
+					"type": "input",
+					"top": 174,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPosting3",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cbRecomPosting3S2": {
+					"type": "checkbox",
+					"top": 204,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnRecomPosting3S2",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPosting3S2Insp": {
+					"type": "input",
+					"top": 204,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPosting3S2Insp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPosting3S2": {
+					"type": "input",
+					"top": 204,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPosting3S2",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cbRecomPostingSgl": {
+					"type": "checkbox",
+					"top": 234,
+					"left": 384,
+					"width": 67,
+					"height": 12,
+					"dataSource": "blnRecomPostingSgl",
+					"text": "Accept",
+					"class": "List9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPostingSglInsp": {
+					"type": "input",
+					"top": 234,
+					"left": 93,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPostingSglInsp",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldRecomPostingSgl": {
+					"type": "input",
+					"top": 234,
+					"left": 239,
+					"width": 133,
+					"height": 13,
+					"dataSource": "vtxtRecomPostingSgl",
+					"class": "List9",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 115,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Rating Date"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 144,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Posting H"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 174,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Posting 3"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 204,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Posting 3S2"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 234,
+					"left": 18,
+					"width": 70,
+					"height": 13,
+					"class": "List9",
+					"text": "Posting Single"
+				},
+				"v_65_035_txt": {
+					"type": "input",
+					"top": 55,
+					"left": 238,
+					"width": 187,
+					"height": 28,
+					"dataSource": "v_65_035_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

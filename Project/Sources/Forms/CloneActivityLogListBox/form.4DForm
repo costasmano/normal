@@ -1,0 +1,324 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"TableField2": {
+					"type": "dropdown",
+					"top": 16,
+					"left": 455,
+					"width": 181,
+					"height": 21,
+					"dataSource": "TableNames_atxt",
+					"class": "Default",
+					"method": "ObjectMethods/TableField2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TableField": {
+					"type": "text",
+					"top": 21,
+					"left": 372,
+					"width": 77,
+					"height": 14,
+					"class": "Default",
+					"text": "Select Table-->"
+				},
+				"TableField3": {
+					"type": "dropdown",
+					"top": 40,
+					"left": 455,
+					"width": 181,
+					"height": 21,
+					"dataSource": "FieldNames_atxt",
+					"class": "Default",
+					"method": "ObjectMethods/TableField3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TableField1": {
+					"type": "text",
+					"top": 45,
+					"left": 372,
+					"width": 77,
+					"height": 14,
+					"class": "Default",
+					"text": "Select Fields -->"
+				},
+				"SelectListBox": {
+					"type": "listbox",
+					"top": 71,
+					"left": 26,
+					"width": 699,
+					"height": 269,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "SelectListBox",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 59,
+					"highlightSet": "SelectedRecordsSet",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#DFFFFF",
+					"rowStyleSource": "LB_RowStyle_l",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDisplayDetail",
+						"onHeaderClick"
+					],
+					"columns": []
+				},
+				"TableField4": {
+					"type": "text",
+					"top": 21,
+					"left": 32,
+					"width": 57,
+					"height": 14,
+					"class": "Default",
+					"text": "Start Ref ID->"
+				},
+				"TableField5": {
+					"type": "text",
+					"top": 45,
+					"left": 32,
+					"width": 57,
+					"height": 14,
+					"class": "Default",
+					"text": "End Ref ID--->"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 21,
+					"left": 100,
+					"width": 134,
+					"height": 14,
+					"dataSource": "StartRefID_l",
+					"dataSourceTypeHint": "number",
+					"class": "Default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 45,
+					"left": 100,
+					"width": 134,
+					"height": 14,
+					"dataSource": "EndRefID_l",
+					"dataSourceTypeHint": "number",
+					"class": "Default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 348,
+					"left": 34,
+					"width": 633,
+					"height": 33,
+					"dataSource": "SQL_SelectByTable_txt",
+					"class": "Default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 441,
+					"left": 242,
+					"width": 84,
+					"height": 17,
+					"dataSource": "Button",
+					"text": "Refine Query",
+					"class": "Default",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 441,
+					"left": 584,
+					"width": 126,
+					"height": 17,
+					"dataSource": "Button",
+					"text": "Retrieve From table",
+					"class": "Default",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 441,
+					"left": 84,
+					"width": 126,
+					"height": 17,
+					"dataSource": "Button",
+					"text": "Retrieve Ref ID",
+					"class": "Default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 441,
+					"left": 342,
+					"width": 84,
+					"height": 17,
+					"dataSource": "Button",
+					"text": "Show Selected",
+					"class": "Default",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 441,
+					"left": 442,
+					"width": 84,
+					"height": 17,
+					"dataSource": "Button",
+					"text": "Omit Selected",
+					"class": "Default",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 388,
+					"left": 34,
+					"width": 633,
+					"height": 33,
+					"dataSource": "SQL_SelectByRef_txt",
+					"class": "Default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"3D Radio Button": {
+					"type": "radio",
+					"top": 421,
+					"left": 104,
+					"width": 133,
+					"height": 16,
+					"dataSource": "RBAbort_l",
+					"text": "Abort when Match found",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button1": {
+					"type": "radio",
+					"top": 421,
+					"left": 244,
+					"width": 133,
+					"height": 16,
+					"dataSource": "RBSkip_l",
+					"text": "Skip when Match found",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button2": {
+					"type": "radio",
+					"top": 421,
+					"left": 384,
+					"width": 133,
+					"height": 16,
+					"dataSource": "RBReplace_l",
+					"text": "Replacewhen Match found",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

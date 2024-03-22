@@ -1,0 +1,333 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 18,
+	"markerBody": 34,
+	"markerBreak": 52,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 4,
+					"left": 4,
+					"width": 103,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "left",
+					"text": "Invoices <VInvCont>  "
+				},
+				"vAddFundTLFF9": {
+					"type": "input",
+					"top": 20,
+					"left": 80,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTLFDES",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF10": {
+					"type": "input",
+					"top": 20,
+					"left": 180,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTLFConstr",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF11": {
+					"type": "input",
+					"top": 20,
+					"left": 377,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnDE",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF12": {
+					"type": "input",
+					"top": 20,
+					"left": 477,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTotal",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF16": {
+					"type": "input",
+					"top": 20,
+					"left": 280,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTLFTot",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF1": {
+					"type": "input",
+					"top": 20,
+					"left": 4,
+					"width": 20,
+					"height": 13,
+					"dataSource": "vInvAssgnInvNo",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF2": {
+					"type": "input",
+					"top": 36,
+					"left": 80,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTLFDESSum",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF3": {
+					"type": "input",
+					"top": 36,
+					"left": 180,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTLFConstrSum",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF4": {
+					"type": "input",
+					"top": 36,
+					"left": 377,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnDESum",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF5": {
+					"type": "input",
+					"top": 36,
+					"left": 477,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTotalSum",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vAddFundTLFF6": {
+					"type": "input",
+					"top": 36,
+					"left": 280,
+					"width": 95,
+					"height": 13,
+					"dataSource": "vInvAssgnTLFTotSum",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,###,##0.00;-$###,###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 36,
+					"left": 4,
+					"width": 70,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Total Invoiced"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 50,
+					"left": 80,
+					"width": 500
+				},
+				"Line1": {
+					"type": "line",
+					"top": 35,
+					"left": 80,
+					"width": 500
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

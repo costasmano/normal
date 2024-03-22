@@ -1,0 +1,341 @@
+{
+	"destination": "listScreen",
+	"windowMinWidth": 630,
+	"windowMinHeight": 300,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 97,
+	"markerBody": 119,
+	"markerBreak": 121,
+	"markerFooter": 122,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bShowAll": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 25,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bShowAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show All.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowAlllabel": {
+					"type": "text",
+					"top": 56,
+					"left": 13,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Show all"
+				},
+				"bShowSubset": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 97,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bShowSubset",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show Subset"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show Subset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bShowSubset.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubsetlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 85,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Show subset"
+				},
+				"bQuery": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 169,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuerylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 157,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Query"
+				},
+				"bOrderBy": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 241,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bOrderBy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Order By.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 229,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Order by"
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 75,
+					"left": 0,
+					"width": 610,
+					"height": 22,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Image titre liste.png"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 80,
+					"left": 24,
+					"width": 162,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Design Contract Number : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 80,
+					"left": 218,
+					"width": 380,
+					"height": 13,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": " Description : "
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 97,
+					"left": 0,
+					"width": 610,
+					"height": 22,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 24,
+					"width": 162,
+					"height": 14,
+					"dataSource": "[PRJ_DesignContracts:123]DC_DesignContractNumber_l:3",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 218,
+					"width": 380,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_DesignContracts:123]DC_Description_txt:4",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line8": {
+					"type": "line",
+					"top": 75,
+					"left": 0,
+					"height": 44,
+					"stroke": "#A8A8A8"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 75,
+					"left": 610,
+					"height": 44,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 75,
+					"left": 202,
+					"height": 44,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 75,
+					"left": 201,
+					"width": 3,
+					"height": 44,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 10,
+					"left": 327,
+					"width": 111,
+					"height": 20,
+					"dataSource": "Button1",
+					"text": "Select",
+					"class": "Label12Bold",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 10,
+					"left": 499,
+					"width": 111,
+					"height": 20,
+					"dataSource": "Button1",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 3,
+					"left": 308,
+					"width": 2,
+					"height": 67,
+					"sizingX": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				}
+			}
+		}
+	]
+}

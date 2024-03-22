@@ -1,0 +1,5304 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 747,
+	"markerBreak": 747,
+	"markerFooter": 747,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Matrix69": {
+					"type": "picture",
+					"top": 152,
+					"left": 12,
+					"width": 235,
+					"height": 304,
+					"pictureFormat": "scaled",
+					"picture": "Images/Matrix69.svg"
+				},
+				"Matrix71": {
+					"type": "rectangle",
+					"top": 458,
+					"left": 366,
+					"width": 210,
+					"height": 17,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"Matrix70": {
+					"type": "rectangle",
+					"top": 662,
+					"left": 366,
+					"width": 210,
+					"height": 17,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"Matrix6": {
+					"type": "rectangle",
+					"top": 408,
+					"left": 12,
+					"width": 471,
+					"height": 33,
+					"fill": "transparent"
+				},
+				"Matrix67": {
+					"type": "picture",
+					"top": 152,
+					"left": 246,
+					"width": 195,
+					"height": 304,
+					"pictureFormat": "scaled",
+					"picture": "Images/Matrix67.svg"
+				},
+				"Matrix68": {
+					"type": "picture",
+					"top": 152,
+					"left": 440,
+					"width": 43,
+					"height": 304,
+					"pictureFormat": "scaled",
+					"picture": "Images/Matrix68.svg"
+				},
+				"Matrix5": {
+					"type": "picture",
+					"top": 152,
+					"left": 482,
+					"width": 95,
+					"height": 304,
+					"pictureFormat": "scaled",
+					"picture": "Images/Matrix5.svg"
+				},
+				"Variable1365": {
+					"type": "input",
+					"top": 155,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_100_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 171,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_150_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1367": {
+					"type": "input",
+					"top": 461,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_Cost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1368": {
+					"type": "input",
+					"top": 410,
+					"left": 404,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1369": {
+					"type": "input",
+					"top": 410,
+					"left": 366,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1370": {
+					"type": "input",
+					"top": 410,
+					"left": 327,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1371": {
+					"type": "input",
+					"top": 410,
+					"left": 288,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1372": {
+					"type": "input",
+					"top": 410,
+					"left": 249,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"TotalCosts": {
+					"type": "text",
+					"top": 110,
+					"left": 488,
+					"width": 83,
+					"height": 30,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "TOTAL\rFee"
+				},
+				"Variable1373": {
+					"type": "input",
+					"top": 154,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_100_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1374": {
+					"type": "input",
+					"top": 202,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_220_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1375": {
+					"type": "input",
+					"top": 186,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_200_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1376": {
+					"type": "input",
+					"top": 378,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_900_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1377": {
+					"type": "input",
+					"top": 362,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_800_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1378": {
+					"type": "input",
+					"top": 346,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_750_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1379": {
+					"type": "input",
+					"top": 330,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_710_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1380": {
+					"type": "input",
+					"top": 314,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_700_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1381": {
+					"type": "input",
+					"top": 298,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_600_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1382": {
+					"type": "input",
+					"top": 282,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_500_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1383": {
+					"type": "input",
+					"top": 266,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_450_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1384": {
+					"type": "input",
+					"top": 250,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_400_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1385": {
+					"type": "input",
+					"top": 234,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_350_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1386": {
+					"type": "input",
+					"top": 218,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_300_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1387": {
+					"type": "input",
+					"top": 170,
+					"left": 12,
+					"width": 234,
+					"height": 13,
+					"dataSource": "Item_150_T0",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1418": {
+					"type": "input",
+					"top": 187,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_200_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1419": {
+					"type": "input",
+					"top": 203,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_220_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1420": {
+					"type": "input",
+					"top": 219,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_300_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1421": {
+					"type": "input",
+					"top": 379,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_900_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1422": {
+					"type": "input",
+					"top": 363,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_800_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1423": {
+					"type": "input",
+					"top": 347,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_750_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1424": {
+					"type": "input",
+					"top": 331,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_710_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1425": {
+					"type": "input",
+					"top": 315,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_700_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1426": {
+					"type": "input",
+					"top": 299,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_600_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1427": {
+					"type": "input",
+					"top": 283,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_500_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1428": {
+					"type": "input",
+					"top": 267,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_450_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1429": {
+					"type": "input",
+					"top": 251,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_400_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1430": {
+					"type": "input",
+					"top": 235,
+					"left": 485,
+					"width": 89,
+					"height": 14,
+					"dataSource": "Item_350_totCost",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1431": {
+					"type": "input",
+					"top": 410,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Assgn_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1432": {
+					"type": "input",
+					"top": 426,
+					"left": 405,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_5_pct",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1433": {
+					"type": "input",
+					"top": 426,
+					"left": 366,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_4_pct",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1434": {
+					"type": "input",
+					"top": 426,
+					"left": 327,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_3_pct",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1435": {
+					"type": "input",
+					"top": 426,
+					"left": 288,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_2_pct",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1436": {
+					"type": "input",
+					"top": 426,
+					"left": 249,
+					"width": 34,
+					"height": 13,
+					"dataSource": "Assgn_Tot_1_pct",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text31": {
+					"type": "text",
+					"top": 427,
+					"left": 116,
+					"width": 117,
+					"height": 10,
+					"class": "Times9",
+					"text": "ACTUAL PERCENTAGES"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 444,
+					"left": 116,
+					"width": 103,
+					"height": 10,
+					"class": "Times9",
+					"text": "TYPICAL PERCENTAGES"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 444,
+					"left": 248,
+					"width": 37,
+					"height": 10,
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "1  to 2"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 444,
+					"left": 287,
+					"width": 37,
+					"height": 10,
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "10  to 15"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 444,
+					"left": 326,
+					"width": 37,
+					"height": 10,
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "15  to 25"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 444,
+					"left": 365,
+					"width": 37,
+					"height": 10,
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "30  to 35"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 444,
+					"left": 404,
+					"width": 37,
+					"height": 10,
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "30  to 40\t"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 411,
+					"left": 116,
+					"width": 117,
+					"height": 10,
+					"class": "Times9",
+					"text": "TOTAL WORK HOURS"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 477,
+					"left": 174,
+					"width": 79,
+					"height": 22,
+					"class": "Times10",
+					"textAlign": "center",
+					"text": "DESIGN\rENGINEERING"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 477,
+					"left": 284,
+					"width": 79,
+					"height": 22,
+					"class": "Times10",
+					"textAlign": "center",
+					"text": "CONSTRUCTION\rENGINEERING"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 502,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "(a) Salary Costs"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 642,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "MAXIMUM OBLIGATION"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 622,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "(c) Special Engineering"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 602,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "MAXIMUM PAYMENT AMOUNT"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 582,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "(d) Direct Expenses"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 562,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "TOTAL LIMITING FEE"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 542,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "(c) Net Fee"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 522,
+					"left": 12,
+					"width": 152,
+					"height": 13,
+					"class": "Times10",
+					"text": "(b) Indirect Costs"
+				},
+				"Variable1491": {
+					"type": "input",
+					"top": 502,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Des_Salary",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1492": {
+					"type": "input",
+					"top": 502,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_Salary",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1493": {
+					"type": "input",
+					"top": 502,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Cons_Salary",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1494": {
+					"type": "input",
+					"top": 642,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Des_MaxObl",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1495": {
+					"type": "input",
+					"top": 642,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_MaxObl",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1496": {
+					"type": "input",
+					"top": 642,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Cons_MaxObl",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1497": {
+					"type": "input",
+					"top": 621,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]SpecEngineeringD:15",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1498": {
+					"type": "input",
+					"top": 621,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_SpecEng",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1499": {
+					"type": "input",
+					"top": 621,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]SpecEngineeringC:28",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1500": {
+					"type": "input",
+					"top": 602,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Des_MaxPay",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1501": {
+					"type": "input",
+					"top": 602,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_MaxPay",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1502": {
+					"type": "input",
+					"top": 602,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Cons_MaxPay",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1503": {
+					"type": "input",
+					"top": 581,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]DirectExpenseD:14",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1504": {
+					"type": "input",
+					"top": 581,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_Direct",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1505": {
+					"type": "input",
+					"top": 581,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]DirectExpenseC:27",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1506": {
+					"type": "input",
+					"top": 562,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Des_TLF",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1507": {
+					"type": "input",
+					"top": 562,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_TLF",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1508": {
+					"type": "input",
+					"top": 562,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Cons_TLF",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1509": {
+					"type": "input",
+					"top": 542,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Des_Net",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1510": {
+					"type": "input",
+					"top": 542,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_Net",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1511": {
+					"type": "input",
+					"top": 542,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Cons_Net",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1512": {
+					"type": "input",
+					"top": 522,
+					"left": 174,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Des_Indir",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1513": {
+					"type": "input",
+					"top": 522,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_Indir",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1514": {
+					"type": "input",
+					"top": 522,
+					"left": 284,
+					"width": 98,
+					"height": 13,
+					"dataSource": "Assgn_Cons_Indir",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text27": {
+					"type": "text",
+					"top": 666,
+					"left": 394,
+					"width": 75,
+					"height": 16,
+					"class": "Times12Bold",
+					"text": "SAY"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 575,
+					"left": 174,
+					"width": 104,
+					"strokeWidth": 2
+				},
+				"Line2": {
+					"type": "line",
+					"top": 575,
+					"left": 284,
+					"width": 104,
+					"strokeWidth": 2
+				},
+				"Line3": {
+					"type": "line",
+					"top": 575,
+					"left": 478,
+					"width": 93,
+					"strokeWidth": 2
+				},
+				"Line4": {
+					"type": "line",
+					"top": 634,
+					"left": 174,
+					"width": 104,
+					"strokeWidth": 2
+				},
+				"Line5": {
+					"type": "line",
+					"top": 634,
+					"left": 284,
+					"width": 104,
+					"strokeWidth": 2
+				},
+				"Line6": {
+					"type": "line",
+					"top": 634,
+					"left": 478,
+					"width": 93,
+					"strokeWidth": 2
+				},
+				"Line8": {
+					"type": "line",
+					"top": 655,
+					"left": 174,
+					"width": 104,
+					"strokeWidth": 2
+				},
+				"Line9": {
+					"type": "line",
+					"top": 655,
+					"left": 284,
+					"width": 104,
+					"strokeWidth": 2
+				},
+				"Line10": {
+					"type": "line",
+					"top": 655,
+					"left": 478,
+					"width": 93,
+					"strokeWidth": 2
+				},
+				"Variable1515": {
+					"type": "input",
+					"top": 665,
+					"left": 478,
+					"width": 93,
+					"height": 13,
+					"dataSource": "Assgn_Tot_Say",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "^^^,^^^,^^0.00;-^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text28": {
+					"type": "text",
+					"top": 462,
+					"left": 394,
+					"width": 75,
+					"height": 14,
+					"class": "Times12Bold",
+					"text": "TOTAL"
+				},
+				"Text74": {
+					"type": "text",
+					"top": 110,
+					"left": 248,
+					"width": 34,
+					"height": 30,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Proj\rMgr "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 110,
+					"left": 442,
+					"width": 38,
+					"height": 30,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Total\rHrs\r "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 110,
+					"left": 404,
+					"width": 34,
+					"height": 30,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Tech\r "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 110,
+					"left": 365,
+					"width": 34,
+					"height": 30,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Jr\rEngr "
+				},
+				"Text3": {
+					"type": "text",
+					"top": 110,
+					"left": 326,
+					"width": 34,
+					"height": 30,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Des\rEngr "
+				},
+				"Text2": {
+					"type": "text",
+					"top": 110,
+					"left": 287,
+					"width": 34,
+					"height": 30,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Sr\rEngr "
+				},
+				"Variable249": {
+					"type": "input",
+					"top": 154,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_100_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable250": {
+					"type": "input",
+					"top": 154,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_100_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable251": {
+					"type": "input",
+					"top": 154,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_100_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable252": {
+					"type": "input",
+					"top": 154,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_100_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable253": {
+					"type": "input",
+					"top": 154,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_100_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable223": {
+					"type": "input",
+					"top": 170,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_150_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable224": {
+					"type": "input",
+					"top": 170,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_150_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable225": {
+					"type": "input",
+					"top": 170,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_150_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable226": {
+					"type": "input",
+					"top": 170,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_150_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable228": {
+					"type": "input",
+					"top": 170,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_150_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable230": {
+					"type": "input",
+					"top": 186,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_200_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable231": {
+					"type": "input",
+					"top": 186,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_200_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable232": {
+					"type": "input",
+					"top": 186,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_200_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable233": {
+					"type": "input",
+					"top": 186,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_200_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable234": {
+					"type": "input",
+					"top": 186,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_200_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable236": {
+					"type": "input",
+					"top": 202,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_220_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable237": {
+					"type": "input",
+					"top": 202,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_220_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable238": {
+					"type": "input",
+					"top": 202,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_220_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable239": {
+					"type": "input",
+					"top": 202,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_220_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable240": {
+					"type": "input",
+					"top": 202,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_220_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable284": {
+					"type": "input",
+					"top": 218,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_300_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable285": {
+					"type": "input",
+					"top": 218,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_300_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable286": {
+					"type": "input",
+					"top": 218,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_300_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable287": {
+					"type": "input",
+					"top": 218,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_300_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable288": {
+					"type": "input",
+					"top": 218,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_300_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable200": {
+					"type": "input",
+					"top": 234,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_350_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable201": {
+					"type": "input",
+					"top": 234,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_350_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable202": {
+					"type": "input",
+					"top": 234,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_350_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable203": {
+					"type": "input",
+					"top": 234,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_350_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable204": {
+					"type": "input",
+					"top": 234,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_350_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable206": {
+					"type": "input",
+					"top": 250,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_400_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable207": {
+					"type": "input",
+					"top": 250,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_400_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable208": {
+					"type": "input",
+					"top": 250,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_400_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable246": {
+					"type": "input",
+					"top": 250,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_400_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable247": {
+					"type": "input",
+					"top": 250,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_400_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable256": {
+					"type": "input",
+					"top": 266,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_450_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable257": {
+					"type": "input",
+					"top": 266,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_450_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable258": {
+					"type": "input",
+					"top": 266,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_450_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable259": {
+					"type": "input",
+					"top": 266,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_450_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable260": {
+					"type": "input",
+					"top": 266,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_450_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable262": {
+					"type": "input",
+					"top": 282,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_500_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable263": {
+					"type": "input",
+					"top": 282,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_500_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable264": {
+					"type": "input",
+					"top": 282,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_500_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable265": {
+					"type": "input",
+					"top": 282,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_500_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable266": {
+					"type": "input",
+					"top": 282,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_500_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable268": {
+					"type": "input",
+					"top": 298,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_600_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable269": {
+					"type": "input",
+					"top": 298,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_600_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable270": {
+					"type": "input",
+					"top": 298,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_600_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable271": {
+					"type": "input",
+					"top": 298,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_600_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable272": {
+					"type": "input",
+					"top": 298,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_600_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable274": {
+					"type": "input",
+					"top": 314,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_700_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable275": {
+					"type": "input",
+					"top": 314,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_700_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable276": {
+					"type": "input",
+					"top": 314,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_700_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable277": {
+					"type": "input",
+					"top": 314,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_700_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable278": {
+					"type": "input",
+					"top": 314,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_700_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable280": {
+					"type": "input",
+					"top": 330,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_710_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable281": {
+					"type": "input",
+					"top": 330,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_710_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable282": {
+					"type": "input",
+					"top": 330,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_710_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable291": {
+					"type": "input",
+					"top": 330,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_710_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable292": {
+					"type": "input",
+					"top": 330,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_710_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable294": {
+					"type": "input",
+					"top": 346,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_750_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable295": {
+					"type": "input",
+					"top": 346,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_750_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable296": {
+					"type": "input",
+					"top": 346,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_750_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable297": {
+					"type": "input",
+					"top": 346,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_750_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable298": {
+					"type": "input",
+					"top": 346,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_750_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable300": {
+					"type": "input",
+					"top": 362,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_800_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable301": {
+					"type": "input",
+					"top": 362,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_800_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable302": {
+					"type": "input",
+					"top": 362,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_800_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable303": {
+					"type": "input",
+					"top": 362,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_800_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable304": {
+					"type": "input",
+					"top": 362,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_800_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable306": {
+					"type": "input",
+					"top": 378,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_900_Tot_1",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable307": {
+					"type": "input",
+					"top": 378,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_900_Tot_2",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable308": {
+					"type": "input",
+					"top": 378,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_900_Tot_3",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable309": {
+					"type": "input",
+					"top": 378,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_900_Tot_4",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable310": {
+					"type": "input",
+					"top": 378,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "Item_900_Tot_5",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable254": {
+					"type": "input",
+					"top": 154,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_100_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable227": {
+					"type": "input",
+					"top": 170,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_150_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable229": {
+					"type": "input",
+					"top": 186,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_200_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable235": {
+					"type": "input",
+					"top": 202,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_220_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable283": {
+					"type": "input",
+					"top": 218,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_300_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable205": {
+					"type": "input",
+					"top": 234,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_350_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 250,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_400_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable261": {
+					"type": "input",
+					"top": 266,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_450_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable267": {
+					"type": "input",
+					"top": 282,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_500_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable273": {
+					"type": "input",
+					"top": 298,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_600_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable279": {
+					"type": "input",
+					"top": 314,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_700_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable293": {
+					"type": "input",
+					"top": 330,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_710_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable299": {
+					"type": "input",
+					"top": 346,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_750_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable305": {
+					"type": "input",
+					"top": 362,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_800_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable311": {
+					"type": "input",
+					"top": 378,
+					"left": 442,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Item_900_Tot_6",
+					"dataSourceTypeHint": "number",
+					"class": "List9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 30,
+					"left": 233,
+					"width": 64,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "left",
+					"text": "Consultant : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 31,
+					"left": 24,
+					"width": 64,
+					"height": 12,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "left",
+					"text": "ContractNo : "
+				},
+				"Consultant": {
+					"type": "input",
+					"top": 30,
+					"left": 302,
+					"width": 272,
+					"height": 12,
+					"dataSource": "[Work_Estimate:103]Consultant:6",
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 11,
+					"left": 13,
+					"width": 362,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"text": "Work Hour Proposal  <vWKHR_Add_Title>"
+				},
+				"ContractNo8": {
+					"type": "input",
+					"top": 31,
+					"left": 91,
+					"width": 130,
+					"height": 11,
+					"dataSource": "[Work_Estimate:103]ContractNo:3",
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 48,
+					"left": 24,
+					"width": 64,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "left",
+					"text": "Assignment : "
+				},
+				"ContractNo9": {
+					"type": "input",
+					"top": 48,
+					"left": 91,
+					"width": 43,
+					"height": 12,
+					"dataSource": "[Work_Estimate:103]AssignNo:16",
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 48,
+					"left": 343,
+					"width": 85,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "left",
+					"text": "Project Info No : "
+				},
+				"ContractNo10": {
+					"type": "input",
+					"top": 48,
+					"left": 439,
+					"width": 65,
+					"height": 12,
+					"dataSource": "[Work_Estimate:103]ProjInfoNo:26",
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AddendumLbl": {
+					"type": "text",
+					"top": 48,
+					"left": 154,
+					"width": 64,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "left",
+					"text": "Addendum : "
+				},
+				"AddendumFld": {
+					"type": "input",
+					"top": 48,
+					"left": 221,
+					"width": 43,
+					"height": 12,
+					"dataSource": "[Work_Estimate:103]AddendumNo:29",
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 155,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 379,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 363,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 347,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 331,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 315,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 299,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 283,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 267,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 251,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 235,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 219,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 203,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 187,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 171,
+					"left": 485,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 460,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 501,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 521,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 541,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 561,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 580,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 601,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 620,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text55": {
+					"type": "text",
+					"top": 641,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text56": {
+					"type": "text",
+					"top": 664,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 501,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 521,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 541,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 561,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 580,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text62": {
+					"type": "text",
+					"top": 601,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text63": {
+					"type": "text",
+					"top": 620,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 641,
+					"left": 284,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text65": {
+					"type": "text",
+					"top": 501,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text66": {
+					"type": "text",
+					"top": 521,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text67": {
+					"type": "text",
+					"top": 541,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text68": {
+					"type": "text",
+					"top": 561,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text69": {
+					"type": "text",
+					"top": 580,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text70": {
+					"type": "text",
+					"top": 601,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text71": {
+					"type": "text",
+					"top": 620,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Text72": {
+					"type": "text",
+					"top": 641,
+					"left": 174,
+					"width": 15,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"text": "$"
+				},
+				"Matrix1": {
+					"type": "picture",
+					"top": 137,
+					"left": 246,
+					"width": 195,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "Images/Matrix1.svg"
+				},
+				"ContractNo15": {
+					"type": "input",
+					"top": 139,
+					"left": 248,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]Cat1Rate:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$##0.00;-$^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ContractNo16": {
+					"type": "input",
+					"top": 139,
+					"left": 287,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]Cat2Rate:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$##0.00;-$^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ContractNo17": {
+					"type": "input",
+					"top": 139,
+					"left": 326,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]Cat3Rate:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$##0.00;-$^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ContractNo18": {
+					"type": "input",
+					"top": 139,
+					"left": 365,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]Cate4Rate:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$##0.00;-$^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ContractNo19": {
+					"type": "input",
+					"top": 139,
+					"left": 404,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[Work_Estimate:103]Cat5Rate:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "List9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$##0.00;-$^^^,^^0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text39": {
+					"type": "text",
+					"top": 66,
+					"left": 24,
+					"width": 67,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "left",
+					"text": "Description : "
+				},
+				"ContractNo1": {
+					"type": "input",
+					"top": 66,
+					"left": 91,
+					"width": 483,
+					"height": 40,
+					"dataSource": "[Work_Estimate:103]AssignDesc:4",
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

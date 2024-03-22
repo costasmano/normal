@@ -1,0 +1,181 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "TypInputTemplate",
+	"inheritedFormTable": 21,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 150,
+					"left": 43,
+					"width": 92,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Number"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 150,
+					"left": 138,
+					"width": 54,
+					"height": 17,
+					"dataSource": "[Environments:48]Envir No:1",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 181,
+					"left": 138,
+					"width": 86,
+					"height": 17,
+					"dataSource": "[Environments:48]Envir Name:2",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 212,
+					"left": 138,
+					"width": 324,
+					"height": 17,
+					"dataSource": "[Environments:48]Envir Descr:3",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 181,
+					"left": 43,
+					"width": 92,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Name"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 212,
+					"left": 43,
+					"width": 92,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Description"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 2,
+					"left": 3,
+					"width": 590,
+					"height": 40,
+					"fill": "#0000FF",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 28,
+					"fontWeight": "bold",
+					"text": "Pontis BMS Environments  "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 108,
+					"left": 19,
+					"width": 116,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Environment"
+				}
+			}
+		}
+	]
+}

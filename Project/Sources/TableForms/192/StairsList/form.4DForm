@@ -1,0 +1,268 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Stairs_LB": {
+					"type": "listbox",
+					"top": 10,
+					"left": 40,
+					"width": 435,
+					"height": 105,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 3,
+					"fill": "#E2FFDF",
+					"alternateFill": "automatic",
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/Stairs_LB.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "OwnerCodes",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Owner",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Descriptions",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Description",
+								"text": "Description",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "StairIDs",
+							"dataSourceTypeHint": "number",
+							"width": 20,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "StairID",
+								"text": "ID",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						}
+					]
+				},
+				"AddStair": {
+					"type": "button",
+					"top": 25,
+					"left": 10,
+					"width": 20,
+					"height": 21,
+					"class": "Label12Bold",
+					"focusable": false,
+					"text": "+",
+					"textPlacement": "center",
+					"style": "bevel",
+					"method": "ObjectMethods/AddStair.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelStair": {
+					"type": "button",
+					"top": 49,
+					"left": 10,
+					"width": 20,
+					"height": 21,
+					"class": "Label12Bold",
+					"focusable": false,
+					"text": "-",
+					"textPlacement": "center",
+					"style": "bevel",
+					"method": "ObjectMethods/DelStair.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"StairsEnterable": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 10,
+					"width": 15,
+					"height": 16,
+					"visibility": "hidden",
+					"text": "Stair Info enterable",
+					"focusable": false
+				},
+				"SaveStairs": {
+					"type": "button",
+					"top": 10,
+					"left": 481,
+					"width": 75,
+					"height": 24,
+					"sizingX": "move",
+					"focusable": false,
+					"text": "Save",
+					"style": "bevel",
+					"method": "ObjectMethods/SaveStairs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 35,
+					"left": 481,
+					"width": 75,
+					"height": 24,
+					"sizingX": "move",
+					"action": "cancel",
+					"focusable": false,
+					"text": "Cancel",
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Help": {
+					"type": "button",
+					"top": 75,
+					"left": 10,
+					"width": 20,
+					"height": 21,
+					"class": "Label12Bold",
+					"focusable": false,
+					"text": "?",
+					"textPlacement": "center",
+					"style": "bevel",
+					"method": "ObjectMethods/Help.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ELEMENT-DATA version="2.0" xsi:noNamespaceSchemaLocation="ElementData - 8.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DECLARATION>
+    <Source>Export From MADOT BMS <!--#4DTEXT PON_ExportDateTime_txt--></Source>
+    <Format>I</Format>
+    <Description>Current CoRe element inspection set of <!--#4DTEXT PON_NumeExport_L--> records</Description>
+    <Units>M</Units>
+  </DECLARATION>
+  <DATA><!--4DLOOP [Cond Units]--> <!--#4DSCRIPT/PON_PREPAREELMTDATA-->
+    <ELEMENT brkey="<!--#4DTEXT [Inspections]BIN-->" inspkey="<!--#4DTEXT PON_INSPID2INSPKEY_txt-->" inspdate="<!--#4DTEXT PON_INSPDATE_txt-->" strunitkey="0" elemkey="<!--#4DTEXT [BMS Elements]Element No-->" envkey="<!--#4DTEXT [Cond Units]Environment-->" quantity="<!--#4DTEXT [Cond Units]Total Quantity-->" scale-factor="1" paircode="0">
+      <Condition-States>
+        <State><!--#4DTEXT PON_elemqt1_txt--></State>
+        <State><!--#4DTEXT PON_elemqt2_txt--></State>
+        <State><!--#4DTEXT PON_elemqt3_txt--></State>
+        <State><!--#4DTEXT PON_elemqt4_txt--></State>
+        <State><!--#4DTEXT PON_elemqt5_txt--></State>
+      </Condition-States>
+      <Element-Notes-Exchange>
+        <Source-Elmrowidkey>A-DOT001-0952C02D-00000013</Source-Elmrowidkey>
+        <Source-Docrefkey>A-DOT001-0952C02D-0000001A</Source-Docrefkey>
+        <Source-Element-Inspection-Notes><!--#4DTEXT [Cond Units]Comment--></Source-Element-Inspection-Notes>
+      </Element-Notes-Exchange>
+    </ELEMENT><!--#4DENDLOOP-->
+  </DATA>
+</ELEMENT-DATA>

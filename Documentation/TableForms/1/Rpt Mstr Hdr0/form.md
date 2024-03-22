@@ -1,0 +1,1 @@
+22-nov-2000 : Form modified to adjust for problems printing in PCs, where the second  line of items ( ex number of item) would not print.  Also fixed field vDtTmPg so that the time is also printedFeb-2001 :  removed Bridge key column and added Item8 Owner , Item8 Bridge Category columns.2004-02-13 : Made form type List Form for Printing. Declare vars in obj method vDtTmPg.

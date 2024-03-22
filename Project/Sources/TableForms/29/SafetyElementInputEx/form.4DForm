@@ -1,0 +1,1216 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "SafetyElmtTemplate",
+	"inheritedFormTable": 29,
+	"windowMinWidth": 740,
+	"windowMinHeight": 550,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerBody": 559,
+	"markerBreak": 565,
+	"markerFooter": 570,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"LoadRating Rect MBTHighway": {
+					"type": "picture",
+					"top": 175,
+					"left": 403,
+					"width": 313,
+					"height": 56,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "Images/LoadRating Rect MBTHighway.svg"
+				},
+				"LoadRating Rect MBTComm": {
+					"type": "picture",
+					"top": 175,
+					"left": 403,
+					"width": 231,
+					"height": 56,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "Images/LoadRating Rect MBTComm.svg"
+				},
+				"LoadRating Rect MBTTrans": {
+					"type": "picture",
+					"top": 175,
+					"left": 403,
+					"width": 311,
+					"height": 56,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "Images/LoadRating Rect MBTTrans.svg"
+				},
+				"DE LoadRtgNA SM": {
+					"type": "checkbox",
+					"top": 226,
+					"left": 403,
+					"width": 151,
+					"height": 29,
+					"dataSource": "vLoadRtgNA",
+					"text": "Element Not Rated",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/DE LoadRtgNA SM.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 236,
+					"left": 9,
+					"width": 101,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Urgency of Repair"
+				},
+				"WeldRectangle": {
+					"type": "rectangle",
+					"top": 111,
+					"left": 403,
+					"width": 222,
+					"height": 30,
+					"fill": "transparent"
+				},
+				"WeldLabel": {
+					"type": "text",
+					"top": 119,
+					"left": 499,
+					"width": 93,
+					"height": 15,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"text": "Weld's Condition"
+				},
+				"AboveRating Label": {
+					"type": "text",
+					"top": 119,
+					"left": 9,
+					"width": 101,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Rating"
+				},
+				"DE AboveRating Field": {
+					"type": "input",
+					"top": 117,
+					"left": 116,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Rating:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\"0-9;X;N;H;R\"#",
+					"method": "ObjectMethods/DE AboveRating Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE AboveRating Drop": {
+					"type": "dropdown",
+					"top": 114,
+					"left": 160,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aRatCAT1_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE AboveRating Drop.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE PrevRating Field": {
+					"type": "input",
+					"top": 146,
+					"left": 116,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Rating_i:15",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\"0-9;X;H;R\"#",
+					"method": "ObjectMethods/DE PrevRating Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE PrevRating Drop": {
+					"type": "dropdown",
+					"top": 144,
+					"left": 160,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aRatCAT2_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE PrevRating Drop.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Deficiency fld": {
+					"type": "input",
+					"top": 206,
+					"left": 116,
+					"width": 33,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Deficiency:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "! ~\" ;C;M;N;S;H;-\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Deficiency Codes"
+					},
+					"method": "ObjectMethods/DE Deficiency fld.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Deficiency Cat": {
+					"type": "dropdown",
+					"top": 202,
+					"left": 160,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aDefCAT_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Deficiency Cat.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Priority Fld.": {
+					"type": "input",
+					"top": 236,
+					"left": 116,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Priority:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\" ;I;A;P\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Urgency of Repair Codes"
+					},
+					"method": "ObjectMethods/DE Priority Fld..4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Urgency Cat": {
+					"type": "dropdown",
+					"top": 231,
+					"left": 160,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aUORCAT_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Urgency Cat.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE WeldCheckBox": {
+					"type": "checkbox",
+					"top": 117,
+					"left": 408,
+					"width": 80,
+					"height": 18,
+					"dataSource": "[ElementsSafety:29]Crack:9",
+					"text": "Crack",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE WeldCheckBox.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE WeldCondField": {
+					"type": "input",
+					"top": 118,
+					"left": 597,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Weld Condition:10",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N;H\"#",
+					"method": "ObjectMethods/DE WeldCondField.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTTrans4": {
+					"type": "input",
+					"top": 181,
+					"left": 463,
+					"width": 117,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[Inspections:27]Rating_RevCar_desc_s:220",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE LoadRating Desc MBTTrans4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTTrans2": {
+					"type": "input",
+					"top": 209,
+					"left": 492,
+					"width": 58,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_Revenue_r:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTTrans1": {
+					"type": "input",
+					"top": 181,
+					"left": 590,
+					"width": 117,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[Inspections:27]Rating_WorkCar_desc_s:219",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE LoadRating Desc MBTTrans1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTTrans3": {
+					"type": "input",
+					"top": 209,
+					"left": 619,
+					"width": 58,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_WorkCar_r:12",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTComm1": {
+					"type": "input",
+					"top": 209,
+					"left": 405,
+					"width": 40,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_E80_r:3",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTComm": {
+					"type": "input",
+					"top": 209,
+					"left": 452,
+					"width": 40,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_F40PH_r:4",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTComm2": {
+					"type": "input",
+					"top": 209,
+					"left": 498,
+					"width": 40,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_286K_r:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTComm3": {
+					"type": "input",
+					"top": 209,
+					"left": 544,
+					"width": 40,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_263K_r:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating Desc MBTComm4": {
+					"type": "input",
+					"top": 209,
+					"left": 590,
+					"width": 40,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_315K_r:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating MBTHighway1": {
+					"type": "input",
+					"top": 209,
+					"left": 406,
+					"width": 46,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElementsSafety:29]Inv H20:11",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/DE LoadRating MBTHighway1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating MBTHighway2": {
+					"type": "input",
+					"top": 209,
+					"left": 458,
+					"width": 46,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElementsSafety:29]Inv Type 3:12",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/DE LoadRating MBTHighway2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating MBTHighway3": {
+					"type": "input",
+					"top": 209,
+					"left": 510,
+					"width": 46,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElementsSafety:29]Inv 3S2:13",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/DE LoadRating MBTHighway3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating MBTHighway4": {
+					"type": "input",
+					"top": 209,
+					"left": 562,
+					"width": 46,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_Neoplan_r:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating MBTHighway": {
+					"type": "input",
+					"top": 209,
+					"left": 614,
+					"width": 46,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_NABI_r:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating MBTHighway5": {
+					"type": "input",
+					"top": 209,
+					"left": 666,
+					"width": 46,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElmtRatingLoads:158]R_HybridArtic_r:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0;N;0",
+					"entryFilter": "&\"0-9;-\"####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 207,
+					"left": 9,
+					"width": 101,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Deficiency"
+				},
+				"PrevRating Label": {
+					"type": "text",
+					"top": 149,
+					"left": 9,
+					"width": 101,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Previous Rating"
+				},
+				"Cond Rating Label": {
+					"type": "text",
+					"top": 93,
+					"left": 116,
+					"width": 267,
+					"height": 17,
+					"class": "Label14BoldU",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Condition Ratings"
+				},
+				"LoadRating Label Default": {
+					"type": "text",
+					"top": 144,
+					"left": 403,
+					"width": 145,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Inventory rating of member from rating analysis"
+				},
+				"LoadRating Label MBTComm": {
+					"type": "text",
+					"top": 144,
+					"left": 403,
+					"width": 145,
+					"height": 37,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Normal rating of member from rating analysis"
+				},
+				"LoadRating Label MBTHighway": {
+					"type": "text",
+					"top": 144,
+					"left": 403,
+					"width": 145,
+					"height": 37,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Inventory rating of member from rating analysis"
+				},
+				"LoadRating Label MBTTrans": {
+					"type": "text",
+					"top": 144,
+					"left": 403,
+					"width": 308,
+					"height": 20,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Inventory rating of member from rating analysis"
+				},
+				"LoadRating Rect Default": {
+					"type": "picture",
+					"top": 175,
+					"left": 403,
+					"width": 127,
+					"height": 56,
+					"pictureFormat": "scaled",
+					"picture": "Images/LoadRating Rect Default.svg"
+				},
+				"DE LoadRating H20 Default": {
+					"type": "input",
+					"top": 207,
+					"left": 410,
+					"width": 32,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Inv H20:11",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##0;N;0",
+					"entryFilter": "&\"0-9;-\"###",
+					"method": "ObjectMethods/DE LoadRating H20 Default.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating 3 Default": {
+					"type": "input",
+					"top": 207,
+					"left": 451,
+					"width": 32,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Inv Type 3:12",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##0;N;0",
+					"entryFilter": "&\"0-9;-\"###",
+					"method": "ObjectMethods/DE LoadRating 3 Default.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE LoadRating 3s2 Default": {
+					"type": "input",
+					"top": 207,
+					"left": 492,
+					"width": 32,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Inv 3S2:13",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##0;N;0",
+					"entryFilter": "&\"0-9;-\"###",
+					"method": "ObjectMethods/DE LoadRating 3s2 Default.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LoadRating Label Default3": {
+					"type": "input",
+					"top": 181,
+					"left": 492,
+					"width": 30,
+					"height": 17,
+					"dataSource": "WP_3S2_s",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LoadRating Label Default1": {
+					"type": "input",
+					"top": 181,
+					"left": 410,
+					"width": 30,
+					"height": 17,
+					"dataSource": "WP_H_s",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LoadRating Label Default2": {
+					"type": "input",
+					"top": 181,
+					"left": 451,
+					"width": 30,
+					"height": 17,
+					"dataSource": "WP_3_s",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LoadRating Label MBTComm1": {
+					"type": "text",
+					"top": 181,
+					"left": 404,
+					"width": 44,
+					"height": 18,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"text": "E80"
+				},
+				"LoadRating Label MBTComm2": {
+					"type": "text",
+					"top": 181,
+					"left": 450,
+					"width": 44,
+					"height": 18,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"text": "F40"
+				},
+				"LoadRating Label MBTComm3": {
+					"type": "text",
+					"top": 181,
+					"left": 496,
+					"width": 44,
+					"height": 18,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"text": "286K"
+				},
+				"LoadRating Label MBTComm4": {
+					"type": "text",
+					"top": 181,
+					"left": 542,
+					"width": 44,
+					"height": 18,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"text": "263K"
+				},
+				"LoadRating Label MBTComm5": {
+					"type": "text",
+					"top": 181,
+					"left": 588,
+					"width": 44,
+					"height": 18,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"text": "315K"
+				},
+				"LoadRating Label MBTHighway1": {
+					"type": "text",
+					"top": 181,
+					"left": 404,
+					"width": 50,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "H"
+				},
+				"LoadRating Label MBTHighway2": {
+					"type": "text",
+					"top": 181,
+					"left": 456,
+					"width": 50,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "3"
+				},
+				"LoadRating LabelMBTHighway": {
+					"type": "text",
+					"top": 181,
+					"left": 508,
+					"width": 50,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "3S2"
+				},
+				"LoadRating Label MBTHighway3": {
+					"type": "text",
+					"top": 181,
+					"left": 560,
+					"width": 50,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "TBusA"
+				},
+				"LoadRating Label MBTHighway4": {
+					"type": "text",
+					"top": 181,
+					"left": 612,
+					"width": 50,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "TBusB"
+				},
+				"LoadRating Label MBTTrans1": {
+					"type": "text",
+					"top": 159,
+					"left": 473,
+					"width": 107,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Revenue Car"
+				},
+				"LoadRating Label MBTTrans4": {
+					"type": "text",
+					"top": 160,
+					"left": 590,
+					"width": 117,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Work Car"
+				},
+				"LoadRating Label MBTHighway5": {
+					"type": "text",
+					"top": 181,
+					"left": 664,
+					"width": 50,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "TBusC"
+				},
+				"LoadRating Label MBTTrans2": {
+					"type": "text",
+					"top": 211,
+					"left": 404,
+					"width": 48,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Load"
+				},
+				"LoadRating Label MBTTrans3": {
+					"type": "text",
+					"top": 183,
+					"left": 404,
+					"width": 48,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Desc."
+				},
+				"LoadRating Rect MBTTrans2": {
+					"type": "line",
+					"top": 175,
+					"left": 458,
+					"height": 56
+				},
+				"LoadRating Rect MBTTrans1": {
+					"type": "line",
+					"top": 175,
+					"left": 586,
+					"height": 56
+				},
+				"DE ElementComments_WP": {
+					"type": "write",
+					"top": 298,
+					"left": 7,
+					"width": 707,
+					"height": 222,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/DE ElementComments_WP.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"WPToolbar": {
+					"type": "subform",
+					"top": 266,
+					"left": 7,
+					"width": 691,
+					"height": 28,
+					"dataSourceTypeHint": "undefined",
+					"detailForm": "WPToolbar",
+					"focusable": false,
+					"hideFocusRing": true,
+					"enterableInList": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				}
+			},
+			"entryOrder": [
+				"DE LoadRtgNA SM",
+				"DE AboveRating Field",
+				"DE AboveRating Drop",
+				"DE PrevRating Field",
+				"DE PrevRating Drop",
+				"DE Deficiency fld",
+				"DE Deficiency Cat",
+				"DE Priority Fld.",
+				"DE Urgency Cat",
+				"DE WeldCheckBox",
+				"DE WeldCondField",
+				"DE LoadRating Desc MBTTrans4",
+				"DE LoadRating Desc MBTTrans2",
+				"DE LoadRating Desc MBTTrans1",
+				"DE LoadRating Desc MBTTrans3",
+				"DE LoadRating Desc MBTComm1",
+				"DE LoadRating Desc MBTComm",
+				"DE LoadRating Desc MBTComm2",
+				"DE LoadRating Desc MBTComm3",
+				"DE LoadRating Desc MBTComm4",
+				"DE LoadRating MBTHighway1",
+				"DE LoadRating MBTHighway2",
+				"DE LoadRating MBTHighway3",
+				"DE LoadRating MBTHighway4",
+				"DE LoadRating MBTHighway",
+				"DE LoadRating MBTHighway5",
+				"DE LoadRating H20 Default",
+				"DE LoadRating 3 Default",
+				"DE LoadRating 3s2 Default",
+				"DE ElementComments_WP",
+				"WPToolbar"
+			]
+		}
+	],
+	"editor": {
+		"defaultView": "View 1",
+		"activeView": "MBTHighway",
+		"views": {
+			"View 1": {},
+			"MBTCommuter": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"LoadRating Rect MBTComm",
+					"DE LoadRating Desc MBTComm1",
+					"DE LoadRating Desc MBTComm",
+					"DE LoadRating Desc MBTComm2",
+					"DE LoadRating Desc MBTComm3",
+					"DE LoadRating Desc MBTComm4",
+					"LoadRating Label MBTComm",
+					"LoadRating Label MBTComm1",
+					"LoadRating Label MBTComm2",
+					"LoadRating Label MBTComm3",
+					"LoadRating Label MBTComm4",
+					"LoadRating Label MBTComm5"
+				]
+			},
+			"MBTHighway": {
+				"objects": [
+					"LoadRating Rect MBTHighway",
+					"DE LoadRating MBTHighway1",
+					"DE LoadRating MBTHighway2",
+					"DE LoadRating MBTHighway3",
+					"DE LoadRating MBTHighway4",
+					"DE LoadRating MBTHighway",
+					"DE LoadRating MBTHighway5",
+					"LoadRating Label MBTHighway",
+					"LoadRating Label MBTHighway1",
+					"LoadRating Label MBTHighway2",
+					"LoadRating LabelMBTHighway",
+					"LoadRating Label MBTHighway3",
+					"LoadRating Label MBTHighway4",
+					"LoadRating Label MBTHighway5"
+				]
+			},
+			"MBT Transit": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"LoadRating Rect MBTTrans",
+					"DE LoadRating Desc MBTTrans4",
+					"DE LoadRating Desc MBTTrans2",
+					"DE LoadRating Desc MBTTrans1",
+					"DE LoadRating Desc MBTTrans3",
+					"LoadRating Label MBTTrans",
+					"LoadRating Label MBTTrans1",
+					"LoadRating Label MBTTrans4",
+					"LoadRating Label MBTTrans2",
+					"LoadRating Label MBTTrans3",
+					"LoadRating Rect MBTTrans2",
+					"LoadRating Rect MBTTrans1"
+				]
+			},
+			"Default": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"LoadRating Label Default",
+					"LoadRating Rect Default",
+					"DE LoadRating H20 Default",
+					"DE LoadRating 3 Default",
+					"DE LoadRating 3s2 Default",
+					"LoadRating Label Default3",
+					"LoadRating Label Default1",
+					"LoadRating Label Default2"
+				]
+			},
+			"View 6": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 7": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 8": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 9": {
+				"visible": false,
+				"selectable": false
+			}
+		}
+	}
+}

@@ -1,0 +1,315 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"NewRatingReport_MAC": {
+					"type": "webArea",
+					"top": 39,
+					"left": 20,
+					"width": 620,
+					"height": 620,
+					"visibility": "hidden",
+					"sizingY": "grow",
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"borderStyle": "none",
+					"events": [
+						"onOpenExternalLink"
+					]
+				},
+				"NewRatingReport_WIN": {
+					"type": "webArea",
+					"top": 39,
+					"left": 20,
+					"width": 620,
+					"height": 620,
+					"sizingY": "grow",
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"events": [
+						"onOpenExternalLink"
+					]
+				},
+				"ExistingRatingReport_MAC": {
+					"type": "webArea",
+					"top": 39,
+					"left": 680,
+					"width": 620,
+					"height": 620,
+					"sizingY": "grow",
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"events": [
+						"onOpenExternalLink"
+					]
+				},
+				"ExistingRatingReport_WIN": {
+					"type": "webArea",
+					"top": 39,
+					"left": 680,
+					"width": 620,
+					"height": 620,
+					"sizingY": "grow",
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"events": [
+						"onOpenExternalLink"
+					]
+				},
+				"CopyButton": {
+					"type": "button",
+					"top": 672,
+					"left": 478,
+					"width": 163,
+					"height": 31,
+					"sizingY": "move",
+					"text": "Copy Document",
+					"method": "ObjectMethods/CopyButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DeleteButton": {
+					"type": "button",
+					"top": 672,
+					"left": 1137,
+					"width": 163,
+					"height": 31,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"text": "Delete Document",
+					"method": "ObjectMethods/DeleteButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FileName": {
+					"type": "text",
+					"top": 672,
+					"left": 21,
+					"width": 450,
+					"height": 33,
+					"sizingY": "move",
+					"fill": "automatic",
+					"text": " "
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 12,
+					"left": 257,
+					"width": 176,
+					"height": 22,
+					"text": "Select Report Suffix",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ExistingRatingReport2A": {
+					"type": "dropdown",
+					"top": 11,
+					"left": 917,
+					"width": 253,
+					"height": 22,
+					"visibility": "hidden",
+					"dataSource": "MatchedDocuments_atxt",
+					"method": "ObjectMethods/ExistingRatingReport2A.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ExistingRatingReport1A": {
+					"type": "text",
+					"top": 14,
+					"left": 680,
+					"width": 227,
+					"height": 17,
+					"visibility": "hidden",
+					"text": "Select Similar Name Document -->"
+				},
+				"Green_Color": {
+					"type": "text",
+					"top": 14,
+					"left": 18,
+					"width": 63,
+					"height": 17,
+					"visibility": "hidden",
+					"fill": "#00BB00",
+					"textAlign": "center"
+				},
+				"Yellow_Color": {
+					"type": "text",
+					"top": 14,
+					"left": 95,
+					"width": 63,
+					"height": 17,
+					"visibility": "hidden",
+					"fill": "#FFFF00",
+					"textAlign": "center"
+				},
+				"Red_Color": {
+					"type": "text",
+					"top": 14,
+					"left": 172,
+					"width": 63,
+					"height": 17,
+					"visibility": "hidden",
+					"fill": "#EE0000",
+					"textAlign": "center"
+				},
+				"Green": {
+					"type": "text",
+					"top": 14,
+					"left": 18,
+					"width": 63,
+					"height": 18,
+					"textAlign": "center",
+					"text": "Green"
+				},
+				"Yellow": {
+					"type": "text",
+					"top": 14,
+					"left": 95,
+					"width": 63,
+					"height": 18,
+					"textAlign": "center",
+					"text": "Yellow"
+				},
+				"Red": {
+					"type": "text",
+					"top": 14,
+					"left": 172,
+					"width": 63,
+					"height": 18,
+					"textAlign": "center",
+					"text": "Red"
+				},
+				"Green1": {
+					"type": "button",
+					"top": 10,
+					"left": 18,
+					"width": 63,
+					"height": 24,
+					"display": false,
+					"method": "ObjectMethods/Green1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Yellow1": {
+					"type": "button",
+					"top": 10,
+					"left": 95,
+					"width": 63,
+					"height": 24,
+					"display": false,
+					"method": "ObjectMethods/Yellow1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Yellow2": {
+					"type": "button",
+					"top": 10,
+					"left": 172,
+					"width": 63,
+					"height": 24,
+					"display": false,
+					"method": "ObjectMethods/Yellow2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SuffixValue": {
+					"type": "text",
+					"top": 12,
+					"left": 451,
+					"width": 136,
+					"height": 17
+				},
+				"DuplicateName": {
+					"type": "text",
+					"top": 672,
+					"left": 680,
+					"width": 450,
+					"height": 33,
+					"sizingY": "move",
+					"text": " "
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"defaultView": "View 1",
+		"activeView": "WIN",
+		"views": {
+			"View 1": {},
+			"WIN": {},
+			"MAC": {
+				"selectable": false
+			},
+			"View 4": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 5": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 6": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 7": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 8": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 9": {
+				"visible": false,
+				"selectable": false
+			}
+		}
+	}
+}

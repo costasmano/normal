@@ -1,0 +1,1 @@
+Aug-2002 : Created to allow return of Error variable using process variable gError.

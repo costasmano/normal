@@ -1,0 +1,908 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 16,
+	"markerBody": 59,
+	"markerBreak": 63,
+	"markerFooter": 75,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 0,
+					"width": 741,
+					"height": 62,
+					"fill": "transparent"
+				},
+				"Line24": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 741
+				},
+				"Field31": {
+					"type": "input",
+					"top": 64,
+					"left": 607,
+					"width": 132,
+					"height": 8,
+					"dataSource": "vDateTime_S",
+					"class": "Geneva7",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field32": {
+					"type": "input",
+					"top": 64,
+					"left": 314,
+					"width": 132,
+					"height": 8,
+					"dataSource": "vPageNo_s",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field32.4dm",
+					"events": [
+						"onPrintingFooter"
+					]
+				},
+				"Line25": {
+					"type": "line",
+					"top": 57,
+					"left": 0,
+					"width": 741,
+					"strokeWidth": 0.1
+				}
+			}
+		},
+		{
+			"objects": {
+				"Line8": {
+					"type": "line",
+					"top": 1,
+					"left": 92,
+					"height": 60
+				},
+				"Line14": {
+					"type": "line",
+					"top": 1,
+					"left": 143,
+					"height": 60
+				},
+				"Line15": {
+					"type": "line",
+					"top": 1,
+					"left": 215,
+					"height": 60
+				},
+				"Line16": {
+					"type": "line",
+					"top": 1,
+					"left": 327,
+					"height": 60
+				},
+				"Line17": {
+					"type": "line",
+					"top": 1,
+					"left": 346,
+					"height": 60
+				},
+				"Line18": {
+					"type": "line",
+					"top": 1,
+					"left": 412,
+					"height": 60
+				},
+				"Line19": {
+					"type": "line",
+					"top": 1,
+					"left": 164,
+					"height": 60
+				},
+				"Line20": {
+					"type": "line",
+					"top": 1,
+					"left": 41,
+					"height": 60
+				},
+				"Line21": {
+					"type": "line",
+					"top": 1,
+					"left": 261,
+					"height": 60
+				},
+				"Line22": {
+					"type": "line",
+					"top": 1,
+					"left": 660,
+					"height": 60
+				},
+				"Line23": {
+					"type": "line",
+					"top": 1,
+					"left": 705,
+					"height": 60
+				},
+				"Text14": {
+					"type": "text",
+					"top": 3,
+					"left": 662,
+					"width": 42,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"text": "Date"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 3,
+					"left": 707,
+					"width": 32,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"text": "Time"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 3,
+					"left": 43,
+					"width": 48,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Destination"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 3,
+					"left": 94,
+					"width": 48,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Source"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 3,
+					"left": 145,
+					"width": 18,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "ACT"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 3,
+					"left": 263,
+					"width": 63,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "User"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 3,
+					"left": 329,
+					"width": 16,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Status"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 3,
+					"left": 348,
+					"width": 63,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Field Name"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 3,
+					"left": 414,
+					"width": 244,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Data"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 3,
+					"left": 166,
+					"width": 48,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Parent Key"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 38,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "right",
+					"text": "RefID"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 3,
+					"left": 217,
+					"width": 43,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Local Key"
+				},
+				"Field16": {
+					"type": "input",
+					"top": 18,
+					"left": 2,
+					"width": 38,
+					"height": 13,
+					"dataSource": "[Activity Log:59]RefID:28",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field22": {
+					"type": "input",
+					"top": 18,
+					"left": 43,
+					"width": 48,
+					"height": 31,
+					"dataSource": "[Activity Log:59]Destination:1",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field23": {
+					"type": "input",
+					"top": 18,
+					"left": 94,
+					"width": 48,
+					"height": 31,
+					"dataSource": "[Activity Log:59]Source:2",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field24": {
+					"type": "input",
+					"top": 18,
+					"left": 145,
+					"width": 18,
+					"height": 13,
+					"dataSource": "[Activity Log:59]Activity Type:3",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field25": {
+					"type": "input",
+					"top": 18,
+					"left": 263,
+					"width": 63,
+					"height": 31,
+					"dataSource": "[Activity Log:59]User Name:4",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field26": {
+					"type": "input",
+					"top": 18,
+					"left": 329,
+					"width": 16,
+					"height": 13,
+					"dataSource": "[Activity Log:59]Status:9",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field27": {
+					"type": "input",
+					"top": 18,
+					"left": 348,
+					"width": 63,
+					"height": 13,
+					"dataSource": "[Activity Log:59]ActField Name:20",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field28": {
+					"type": "input",
+					"top": 18,
+					"left": 662,
+					"width": 42,
+					"height": 13,
+					"dataSource": "[Activity Log:59]dDate:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field29": {
+					"type": "input",
+					"top": 18,
+					"left": 707,
+					"width": 32,
+					"height": 13,
+					"dataSource": "[Activity Log:59]tTime:6",
+					"dataSourceTypeHint": "time",
+					"stroke": "#000000",
+					"class": "Arial8",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 18,
+					"left": 168,
+					"width": 43,
+					"height": 27,
+					"dataSource": "ACTLOG_ParentKey_txt",
+					"stroke": "#000000",
+					"class": "Arial6",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field30": {
+					"type": "input",
+					"top": 29,
+					"left": 414,
+					"width": 244,
+					"height": 18,
+					"dataSource": "vLogData",
+					"class": "Arial6",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none"
+				},
+				"Field17": {
+					"type": "input",
+					"top": 18,
+					"left": 217,
+					"width": 43,
+					"height": 27,
+					"dataSource": "ACTLOG_LocalKey_txt",
+					"stroke": "#000000",
+					"class": "Arial6",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 0,
+					"width": 761,
+					"height": 60,
+					"fill": "transparent"
+				},
+				"ParentKey_txt": {
+					"type": "input",
+					"top": 18,
+					"left": 166,
+					"width": 48,
+					"height": 29,
+					"dataSource": "ParentKey_txt",
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 7,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 761
+				},
+				"Line2": {
+					"type": "line",
+					"top": 1,
+					"left": 92,
+					"height": 60
+				},
+				"Line3": {
+					"type": "line",
+					"top": 1,
+					"left": 143,
+					"height": 60
+				},
+				"Line4": {
+					"type": "line",
+					"top": 1,
+					"left": 215,
+					"height": 60
+				},
+				"Line5": {
+					"type": "line",
+					"top": 1,
+					"left": 327,
+					"height": 60
+				},
+				"Line6": {
+					"type": "line",
+					"top": 1,
+					"left": 346,
+					"height": 60
+				},
+				"Line7": {
+					"type": "line",
+					"top": 1,
+					"left": 412,
+					"height": 60
+				},
+				"Line9": {
+					"type": "line",
+					"top": 1,
+					"left": 164,
+					"height": 60
+				},
+				"Line10": {
+					"type": "line",
+					"top": 1,
+					"left": 41,
+					"height": 60
+				},
+				"Line11": {
+					"type": "line",
+					"top": 1,
+					"left": 261,
+					"height": 60
+				},
+				"Line12": {
+					"type": "line",
+					"top": 1,
+					"left": 660,
+					"height": 60
+				},
+				"Line13": {
+					"type": "line",
+					"top": 1,
+					"left": 715,
+					"height": 60
+				},
+				"Text12": {
+					"type": "text",
+					"top": 3,
+					"left": 662,
+					"width": 52,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"text": "Date"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 3,
+					"left": 717,
+					"width": 42,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"text": "Time"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 43,
+					"width": 48,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Destination"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 94,
+					"width": 48,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Source"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 3,
+					"left": 145,
+					"width": 18,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "ACT"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 3,
+					"left": 263,
+					"width": 63,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "User"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 3,
+					"left": 329,
+					"width": 16,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Status"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 3,
+					"left": 348,
+					"width": 63,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Field Name"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 3,
+					"left": 414,
+					"width": 244,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Data"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 3,
+					"left": 166,
+					"width": 48,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Parent Key"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 38,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "right",
+					"text": "RefID"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 3,
+					"left": 217,
+					"width": 43,
+					"height": 8,
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"text": "Local Key"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 18,
+					"left": 2,
+					"width": 38,
+					"height": 8,
+					"dataSource": "[Activity Log:59]RefID:28",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 18,
+					"left": 43,
+					"width": 48,
+					"height": 8,
+					"dataSource": "[Activity Log:59]Destination:1",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 18,
+					"left": 94,
+					"width": 48,
+					"height": 8,
+					"dataSource": "[Activity Log:59]Source:2",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 18,
+					"left": 145,
+					"width": 18,
+					"height": 8,
+					"dataSource": "[Activity Log:59]Activity Type:3",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"LocalKey_txt": {
+					"type": "input",
+					"top": 18,
+					"left": 217,
+					"width": 43,
+					"height": 29,
+					"dataSource": "LocalKey_txt",
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 7,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 18,
+					"left": 263,
+					"width": 63,
+					"height": 8,
+					"dataSource": "[Activity Log:59]User Name:4",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 18,
+					"left": 329,
+					"width": 16,
+					"height": 8,
+					"dataSource": "[Activity Log:59]Status:9",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field9": {
+					"type": "input",
+					"top": 18,
+					"left": 348,
+					"width": 63,
+					"height": 8,
+					"dataSource": "[Activity Log:59]ActField Name:20",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field12": {
+					"type": "input",
+					"top": 18,
+					"left": 662,
+					"width": 52,
+					"height": 8,
+					"dataSource": "[Activity Log:59]dDate:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field13": {
+					"type": "input",
+					"top": 18,
+					"left": 717,
+					"width": 42,
+					"height": 8,
+					"dataSource": "[Activity Log:59]tTime:6",
+					"dataSourceTypeHint": "time",
+					"stroke": "#000000",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field10": {
+					"type": "input",
+					"top": 18,
+					"left": 414,
+					"width": 244,
+					"height": 38,
+					"dataSource": "vLogData",
+					"class": "Geneva7",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none"
+				},
+				"Field14": {
+					"type": "input",
+					"top": 64,
+					"left": 627,
+					"width": 132,
+					"height": 8,
+					"dataSource": "vDateTime_S",
+					"class": "Geneva7",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field15": {
+					"type": "input",
+					"top": 64,
+					"left": 314,
+					"width": 132,
+					"height": 8,
+					"dataSource": "vPageNo_s",
+					"class": "Geneva7",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onPrintingFooter"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+2004-04-13 : Applied form scaling - 120%.  Set hor. and vert. margin to 10.2004-04-15 : Decresed text box height.2004-04-22 : Applied style sheet.  Replaced button images with correctly scaled ones.

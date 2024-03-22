@@ -1,0 +1,1 @@
+2003-10-10 : Created2004-02-26 : Moved "vDate:=Current date" code outside the if bloc

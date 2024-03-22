@@ -1,0 +1,1377 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable4": {
+					"type": "button",
+					"top": 392,
+					"left": 527,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Help Page Control": {
+					"type": "tab",
+					"top": 6,
+					"left": 11,
+					"width": 655,
+					"height": 379,
+					"dataSource": "DefPageControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Condition Rating Guide",
+						"Deficiency Reporting Guide"
+					],
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"action": "gotoPage",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle37": {
+					"type": "rectangle",
+					"top": 52,
+					"left": 195,
+					"width": 465,
+					"height": 21,
+					"fill": "transparent"
+				},
+				"Rectangle38": {
+					"type": "rectangle",
+					"top": 52,
+					"left": 76,
+					"width": 120,
+					"height": 21,
+					"fill": "transparent"
+				},
+				"Rectangle39": {
+					"type": "rectangle",
+					"top": 52,
+					"left": 39,
+					"width": 38,
+					"height": 21,
+					"fill": "transparent"
+				},
+				"Rectangle40": {
+					"type": "rectangle",
+					"top": 52,
+					"left": 18,
+					"width": 22,
+					"height": 21,
+					"fill": "transparent"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 72,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle100": {
+					"type": "rectangle",
+					"top": 356,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle99": {
+					"type": "rectangle",
+					"top": 318,
+					"left": 195,
+					"width": 465,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle98": {
+					"type": "rectangle",
+					"top": 280,
+					"left": 195,
+					"width": 465,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle97": {
+					"type": "rectangle",
+					"top": 242,
+					"left": 195,
+					"width": 465,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle96": {
+					"type": "rectangle",
+					"top": 225,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle95": {
+					"type": "rectangle",
+					"top": 208,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle94": {
+					"type": "rectangle",
+					"top": 191,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle93": {
+					"type": "rectangle",
+					"top": 174,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle92": {
+					"type": "rectangle",
+					"top": 157,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle91": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle90": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle89": {
+					"type": "rectangle",
+					"top": 106,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle88": {
+					"type": "rectangle",
+					"top": 89,
+					"left": 195,
+					"width": 465,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 72,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle87": {
+					"type": "rectangle",
+					"top": 356,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle86": {
+					"type": "rectangle",
+					"top": 318,
+					"left": 76,
+					"width": 120,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle85": {
+					"type": "rectangle",
+					"top": 280,
+					"left": 76,
+					"width": 120,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle84": {
+					"type": "rectangle",
+					"top": 242,
+					"left": 76,
+					"width": 120,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle83": {
+					"type": "rectangle",
+					"top": 225,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle82": {
+					"type": "rectangle",
+					"top": 208,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle81": {
+					"type": "rectangle",
+					"top": 191,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle80": {
+					"type": "rectangle",
+					"top": 174,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle79": {
+					"type": "rectangle",
+					"top": 157,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle78": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle77": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle76": {
+					"type": "rectangle",
+					"top": 106,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle75": {
+					"type": "rectangle",
+					"top": 89,
+					"left": 76,
+					"width": 120,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 72,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle74": {
+					"type": "rectangle",
+					"top": 356,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle73": {
+					"type": "rectangle",
+					"top": 318,
+					"left": 39,
+					"width": 38,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle72": {
+					"type": "rectangle",
+					"top": 280,
+					"left": 39,
+					"width": 38,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle71": {
+					"type": "rectangle",
+					"top": 242,
+					"left": 39,
+					"width": 38,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle70": {
+					"type": "rectangle",
+					"top": 225,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle69": {
+					"type": "rectangle",
+					"top": 208,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle68": {
+					"type": "rectangle",
+					"top": 191,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle67": {
+					"type": "rectangle",
+					"top": 174,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle66": {
+					"type": "rectangle",
+					"top": 157,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle65": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle64": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle63": {
+					"type": "rectangle",
+					"top": 106,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle62": {
+					"type": "rectangle",
+					"top": 89,
+					"left": 39,
+					"width": 38,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 72,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle61": {
+					"type": "rectangle",
+					"top": 356,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle60": {
+					"type": "rectangle",
+					"top": 318,
+					"left": 18,
+					"width": 22,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle59": {
+					"type": "rectangle",
+					"top": 280,
+					"left": 18,
+					"width": 22,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle58": {
+					"type": "rectangle",
+					"top": 242,
+					"left": 18,
+					"width": 22,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle57": {
+					"type": "rectangle",
+					"top": 225,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle56": {
+					"type": "rectangle",
+					"top": 208,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle55": {
+					"type": "rectangle",
+					"top": 191,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle54": {
+					"type": "rectangle",
+					"top": 174,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle53": {
+					"type": "rectangle",
+					"top": 157,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle52": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle51": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle50": {
+					"type": "rectangle",
+					"top": 106,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Rectangle49": {
+					"type": "rectangle",
+					"top": 89,
+					"left": 18,
+					"width": 22,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 143,
+					"left": 22,
+					"width": 14,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "G"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 161,
+					"left": 22,
+					"width": 14,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "G"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 178,
+					"left": 22,
+					"width": 14,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "G"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 195,
+					"left": 22,
+					"width": 14,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "F"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 213,
+					"left": 22,
+					"width": 14,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "F"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 283,
+					"left": 22,
+					"width": 14,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "C"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 321,
+					"left": 22,
+					"width": 14,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "C"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 59,
+					"left": 42,
+					"width": 36,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "CODE"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 76,
+					"left": 50,
+					"width": 16,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "N"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 76,
+					"left": 80,
+					"width": 98,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "NOT APPLICABLE"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 93,
+					"left": 50,
+					"width": 16,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "X"
+				},
+				"Text65": {
+					"type": "text",
+					"top": 93,
+					"left": 80,
+					"width": 98,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "UNKNOWN"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 143,
+					"left": 52,
+					"width": 12,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "9"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 161,
+					"left": 52,
+					"width": 12,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "8"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 178,
+					"left": 52,
+					"width": 12,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "7"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 195,
+					"left": 52,
+					"width": 12,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "6"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 213,
+					"left": 52,
+					"width": 12,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "5"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 283,
+					"left": 52,
+					"width": 12,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 321,
+					"left": 52,
+					"width": 12,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 360,
+					"left": 52,
+					"width": 12,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "0"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 59,
+					"left": 79,
+					"width": 105,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "CONDITION "
+				},
+				"Text22": {
+					"type": "text",
+					"top": 143,
+					"left": 80,
+					"width": 78,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "EXCELLENT"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 161,
+					"left": 80,
+					"width": 78,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "VERY GOOD"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 178,
+					"left": 80,
+					"width": 78,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "GOOD"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 195,
+					"left": 80,
+					"width": 88,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "SATISFACTORY"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 213,
+					"left": 80,
+					"width": 78,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "FAIR"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 283,
+					"left": 80,
+					"width": 78,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "CRITICAL"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 321,
+					"left": 80,
+					"width": 104,
+					"height": 24,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "\"IMMINENT\"\r FAILURE"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 360,
+					"left": 80,
+					"width": 78,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "FAILED"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 57,
+					"left": 354,
+					"width": 66,
+					"height": 12,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "DEFECTS "
+				},
+				"Text31": {
+					"type": "text",
+					"top": 143,
+					"left": 198,
+					"width": 411,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Excellent condtion."
+				},
+				"Text32": {
+					"type": "text",
+					"top": 161,
+					"left": 198,
+					"width": 411,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "No problem noted."
+				},
+				"Text33": {
+					"type": "text",
+					"top": 178,
+					"left": 198,
+					"width": 411,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Some minor problems."
+				},
+				"Text34": {
+					"type": "text",
+					"top": 195,
+					"left": 198,
+					"width": 411,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Structural elements show some minor deterioration."
+				},
+				"Text35": {
+					"type": "text",
+					"top": 213,
+					"left": 198,
+					"width": 460,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "All primary structural elements are sound but may have minor section loss,cracking,spalling or scour."
+				},
+				"Text36": {
+					"type": "text",
+					"top": 281,
+					"left": 198,
+					"width": 420,
+					"height": 42,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Advance deterioriation of primary structural elements.  Fatigue cracks in steel or shear cracks in concrete may be present or scour may have removed substructure support.  Unless closely monitored it may be necessary to close bridge until corrective action is taken."
+				},
+				"Text37": {
+					"type": "text",
+					"top": 319,
+					"left": 198,
+					"width": 420,
+					"height": 42,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Major deterioration or section loss present in critical structural components or obvious vertical or horizontal movement affecting structure stability.  Bridge is closed to traffic but corrective action may put it back in light serivce."
+				},
+				"Text38": {
+					"type": "text",
+					"top": 360,
+					"left": 198,
+					"width": 411,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Out of service - beyond corrective action."
+				},
+				"Text39": {
+					"type": "text",
+					"top": 229,
+					"left": 22,
+					"width": 14,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "P"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 229,
+					"left": 52,
+					"width": 12,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "4"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 229,
+					"left": 80,
+					"width": 78,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "POOR"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 229,
+					"left": 198,
+					"width": 411,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Advance section loss, deterioration, spalling or scour."
+				},
+				"Text43": {
+					"type": "text",
+					"top": 245,
+					"left": 22,
+					"width": 14,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "P"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 245,
+					"left": 52,
+					"width": 12,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 245,
+					"left": 80,
+					"width": 78,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "SERIOUS"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 243,
+					"left": 198,
+					"width": 420,
+					"height": 42,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Loss of section, deterioration, spalling or scour have seriously affected primary structural components.  Local failures are possible.  Fatigue cracks in steel or shear cracks in concrete may be present."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 37,
+					"left": 18,
+					"width": 591,
+					"height": 12,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "(For Items 58,59,60,61,62)"
+				},
+				"Text66": {
+					"type": "text",
+					"top": 110,
+					"left": 50,
+					"width": 16,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "H"
+				},
+				"Text67": {
+					"type": "text",
+					"top": 110,
+					"left": 80,
+					"width": 116,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "HIDDEN/INACCESIBLE"
+				},
+				"Text68": {
+					"type": "text",
+					"top": 127,
+					"left": 50,
+					"width": 16,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "R"
+				},
+				"Text69": {
+					"type": "text",
+					"top": 127,
+					"left": 80,
+					"width": 98,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "REMOVED"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text64": {
+					"type": "text",
+					"top": 347,
+					"left": 202,
+					"width": 394,
+					"height": 26,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "[Shall be prioritized by District Maintenance Engineer or the Responsible Party (if not a State owned bridge) and repairs made when funds and/or manpower is available]."
+				},
+				"Text61": {
+					"type": "text",
+					"top": 347,
+					"left": 20,
+					"width": 180,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "P=Prioritize"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 43,
+					"left": 20,
+					"width": 96,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"textDecoration": "underline",
+					"text": "DEFICIENCY:"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 71,
+					"left": 20,
+					"width": 226,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"textDecoration": "underline",
+					"text": "CATEGORIES OF DEFICIENCIES:"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 276,
+					"left": 20,
+					"width": 159,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"textDecoration": "underline",
+					"text": "URGENCY OF REPAIR:"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 292,
+					"left": 20,
+					"width": 180,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "I=Immediate"
+				},
+				"Text62": {
+					"type": "text",
+					"top": 292,
+					"left": 202,
+					"width": 394,
+					"height": 26,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Inspector(s) immediately contact District Bridge Engineer to report the Deficiency and to receive further instruction from him/her]."
+				},
+				"Text52": {
+					"type": "text",
+					"top": 87,
+					"left": 20,
+					"width": 250,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "M=Minor Deficiency"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 87,
+					"left": 277,
+					"width": 335,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Deficiencies which are minor in nature, generally do not impact the structural integrity of the bridge and could easily be repaired. Examples include but are not limited to: Spalled concrete,  Minor scouring, etc."
+				},
+				"Text53": {
+					"type": "text",
+					"top": 44,
+					"left": 124,
+					"width": 300,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "A defect in a structure that requires corrective action."
+				},
+				"Text55": {
+					"type": "text",
+					"top": 125,
+					"left": 277,
+					"width": 350,
+					"height": 53,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Deficiencies which are more extensive in nature and need more planning and effort to repair. Examples include but are not limited to: Moderate to major deterioration in concrete, Exposed and corroding rebars, Deteriorated timber piles, Considerable settlement, Considerable scouring or undermining, etc."
+				},
+				"Text56": {
+					"type": "text",
+					"top": 125,
+					"left": 20,
+					"width": 250,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "S=Severe/Major Deficiency"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 178,
+					"left": 20,
+					"width": 260,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "C-S=Critical-Structural Deficiency"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 178,
+					"left": 277,
+					"width": 335,
+					"height": 42,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "A deficiency in a structural element of a bridge that poses an extreme unsafe condition due to the failure or imminent failure of the element which will affect the structural integrity of the bridge."
+				},
+				"Text59": {
+					"type": "text",
+					"top": 237,
+					"left": 30,
+					"width": 190,
+					"height": 24,
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"fontWeight": "bold",
+					"text": "(Follow-up critical deficiency report must be submitted separately)"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 319,
+					"left": 20,
+					"width": 180,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "A=As soon as possible"
+				},
+				"Text63": {
+					"type": "text",
+					"top": 319,
+					"left": 202,
+					"width": 394,
+					"height": 26,
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "[Action/Repair should be initiated by District Maintenance Engineer or the responsible Party (if not a State owned bridge) upon receipt of the Inspection Report.]"
+				},
+				"Text70": {
+					"type": "text",
+					"top": 218,
+					"left": 20,
+					"width": 250,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "C-H=Critical-Hazard Deficiency"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 218,
+					"left": 277,
+					"width": 335,
+					"height": 75,
+					"class": "List9",
+					"text": "A deficiency in a component or element of a bridge that poses an extreme hazard or unsafe condition to the public, but does not impair the structural integrity of the bridge. Examples include but are not limited to: Any part of piles or fender system which are projecting outward and may become a safety hazard for the navigational traffic, etc."
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,364 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerBody": 72,
+	"markerBreak": 96,
+	"markerFooter": 96,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 0,
+					"width": 730,
+					"height": 42
+				},
+				"Text5": {
+					"type": "text",
+					"top": 61,
+					"left": 187,
+					"width": 40,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"text": "Assign No."
+				},
+				"Line13": {
+					"type": "line",
+					"top": 50,
+					"left": 279,
+					"height": 19
+				},
+				"Line14": {
+					"type": "line",
+					"top": 50,
+					"left": 466,
+					"height": 19
+				},
+				"Text13": {
+					"type": "text",
+					"top": 61,
+					"left": 509,
+					"width": 84,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"text": "Comments"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 52,
+					"left": 282,
+					"width": 60,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"text": "Date Processed\r& Forwarded"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 4,
+					"left": 0,
+					"width": 250,
+					"height": 40,
+					"dataSource": "vRptHeader",
+					"stroke": "#000000",
+					"class": "ContractPrintTitle",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 4,
+					"left": 654,
+					"width": 76,
+					"height": 36,
+					"dataSource": "vDtTmPg",
+					"stroke": "#000000",
+					"class": "ContractPrintTitle",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 52,
+					"left": 44,
+					"width": 52,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Received Date"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 52,
+					"left": 4,
+					"width": 35,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Invoice\rNo."
+				},
+				"Line1": {
+					"type": "line",
+					"top": 69,
+					"left": 0,
+					"width": 730
+				},
+				"vRateInfo": {
+					"type": "input",
+					"top": 4,
+					"left": 329,
+					"width": 200,
+					"height": 36,
+					"dataSource": "vRateInfo",
+					"stroke": "#000000",
+					"class": "ContractPrintTitle",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 50,
+					"left": 98,
+					"height": 19
+				},
+				"Text2": {
+					"type": "text",
+					"top": 52,
+					"left": 117,
+					"width": 50,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Date of Service"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 61,
+					"left": 109,
+					"width": 21,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "From"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 50,
+					"left": 184,
+					"height": 19
+				},
+				"Text6": {
+					"type": "text",
+					"top": 61,
+					"left": 153,
+					"width": 21,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "To"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 61,
+					"left": 233,
+					"width": 40,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"text": "Percentage"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 59,
+					"left": 229,
+					"height": 10
+				},
+				"Text8": {
+					"type": "text",
+					"top": 52,
+					"left": 344,
+					"width": 60,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Date Sent back\rto Consultant"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 52,
+					"left": 409,
+					"width": 55,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Total\rAmount"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 50,
+					"left": 342,
+					"height": 19
+				},
+				"Text10": {
+					"type": "text",
+					"top": 52,
+					"left": 213,
+					"width": 40,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"text": "Assignments"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 50,
+					"left": 42,
+					"height": 19
+				},
+				"Line6": {
+					"type": "line",
+					"top": 58,
+					"left": 98,
+					"width": 180
+				},
+				"Line8": {
+					"type": "line",
+					"top": 59,
+					"left": 143,
+					"height": 10
+				},
+				"Line9": {
+					"type": "line",
+					"top": 50,
+					"left": 404,
+					"height": 19
+				},
+				"Text11": {
+					"type": "text",
+					"top": 61,
+					"left": 468,
+					"width": 40,
+					"height": 8,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"text": "Accepted"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 50,
+					"left": 503,
+					"height": 19
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

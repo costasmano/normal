@@ -1,0 +1,1 @@
+2000-12 : modified to sort list by Date_Created  2001-02 : changed sort to be by date descending. (see the last report at the top)  2002-10 : added vars for percentages of SD and FO per district used in the new print form.  2004-03-09 : Use method G_InitCondRepVars.

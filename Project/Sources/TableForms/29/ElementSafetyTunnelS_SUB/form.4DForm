@@ -1,0 +1,361 @@
+{
+	"rightMargin": 0,
+	"bottomMargin": 2,
+	"menuBar": "BridgeListMenu",
+	"markerBody": 184,
+	"markerBreak": 184,
+	"markerFooter": 198,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "791pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ElementSafety_LB": {
+					"type": "listbox",
+					"top": 35,
+					"left": 1,
+					"width": 649,
+					"height": 365,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"headerHeight": "2em",
+					"staticColumnCount": 7,
+					"lockedColumnCount": 6,
+					"table": 29,
+					"highlightSet": "ElementSet0",
+					"detailForm": "TunnelSafetySpElmInput",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#0000FF",
+					"fill": "#FFFFC0",
+					"alternateFill": "#FFFFFF",
+					"rowStyleSource": "ES_ReturnStyle",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ElementSafety_LB.4dm",
+					"events": [
+						"onLoad",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onOpenDetail",
+						"onCloseDetail"
+					],
+					"columns": [
+						{
+							"name": "vItemNo",
+							"dataSource": "vItemNo",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#0000FF",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Item No.",
+								"stroke": "#444444",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#0000FF",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "vElmDescr",
+							"dataSource": "vElmDescr",
+							"width": 415,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#0000FF",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Description",
+								"stroke": "#444444",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#0000FF",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "DE Above Field",
+							"dataSource": "[ElementsSafety:29]Rating:2",
+							"width": 28,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#0000FF",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Cur",
+								"stroke": "#444444",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#0000FF",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "[ElementsSafety:29]Rating_i:15",
+							"width": 32,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#0000FF",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Prev",
+								"text": "Prev",
+								"stroke": "#444444",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#0000FF",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[ElementsSafety:29]Deficiency:3",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#0000FF",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Def",
+								"dataSource": "Header5",
+								"stroke": "#444444",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#0000FF",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[ElementsSafety:29]Priority:20",
+							"width": 31,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#0000FF",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Prio",
+								"text": "Prio",
+								"stroke": "#444444",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "#0000FF",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[ElementsSafety:29]Comment Flag:6",
+							"dataSourceTypeHint": "boolean",
+							"width": 28,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"controlType": "checkbox",
+							"stroke": "#0000FF",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "T",
+								"text": " T ",
+								"stroke": "#444444",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "#0000FF",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"DE InspConfig": {
+					"type": "button",
+					"top": 5,
+					"left": 1,
+					"width": 126,
+					"height": 24,
+					"dataSource": "bInspConfig",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/ConfigInsp"
+					},
+					"text": "Configure",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/DE InspConfig.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

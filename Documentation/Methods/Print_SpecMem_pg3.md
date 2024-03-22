@@ -1,0 +1,1 @@
+2003-11-25 : Created.  2004-01-05 : Check for PrintPreviewError before printing.  2004-03-03 : Changed to select only elements w/ a rating.  2004-04-16 : Changed the sorting code for [ElementDict].  It uses ORDER BY FullLabel instead of ElementNo.

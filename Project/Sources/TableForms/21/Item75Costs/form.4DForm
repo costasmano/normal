@@ -1,0 +1,245 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ReplaceCost": {
+					"type": "input",
+					"top": 38,
+					"left": 160,
+					"width": 100,
+					"height": 15,
+					"dataSource": "ReplaceCost",
+					"dataSourceTypeHint": "number",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;-$###,##0.00",
+					"min": 0,
+					"method": "ObjectMethods/ReplaceCost.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 39,
+					"left": 15,
+					"width": 140,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "Bridge Replacement"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 39,
+					"left": 265,
+					"width": 40,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "/ SqM"
+				},
+				"RehabCost": {
+					"type": "input",
+					"top": 62,
+					"left": 160,
+					"width": 100,
+					"height": 15,
+					"dataSource": "RehabCost",
+					"dataSourceTypeHint": "number",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;-$###,##0.00",
+					"min": 0,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 63,
+					"left": 15,
+					"width": 140,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "Bridge Rehabilitation"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 63,
+					"left": 265,
+					"width": 40,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "/ SqM"
+				},
+				"DeckRepCost": {
+					"type": "input",
+					"top": 87,
+					"left": 160,
+					"width": 100,
+					"height": 15,
+					"dataSource": "DeckRepCost",
+					"dataSourceTypeHint": "number",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;-$###,##0.00",
+					"min": 0,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 88,
+					"left": 15,
+					"width": 140,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "Bridge Deck Replacement"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 88,
+					"left": 265,
+					"width": 40,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "/ SqM"
+				},
+				"OKbutton": {
+					"type": "button",
+					"top": 127,
+					"left": 178,
+					"width": 80,
+					"height": 22,
+					"dataSource": "OKButton",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CancelButton": {
+					"type": "button",
+					"top": 127,
+					"left": 63,
+					"width": 80,
+					"height": 22,
+					"dataSource": "CancelButton",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 10,
+					"left": 35,
+					"width": 250,
+					"height": 16,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Bridge Costs For Item 75 calcs"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

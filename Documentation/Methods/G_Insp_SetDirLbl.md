@@ -1,0 +1,1 @@
+2003-12-20 : Created.  2004-02-20 : Add vars vs(NE/SW)SideWlkCurb for curb reveal.

@@ -1,0 +1,293 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 170,
+	"markerBreak": 175,
+	"markerFooter": 180,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 36,
+					"left": 241,
+					"width": 86,
+					"height": 14,
+					"class": "Default",
+					"text": "To value from SIA"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 36,
+					"left": 88,
+					"width": 136,
+					"height": 14,
+					"class": "Default",
+					"text": "Change value from Inspection"
+				},
+				"cbStructureType": {
+					"type": "checkbox",
+					"top": 56,
+					"left": 384,
+					"width": 57,
+					"height": 16,
+					"dataSource": "blnStructureType",
+					"text": "Accept",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldStructTypeInsp": {
+					"type": "input",
+					"top": 58,
+					"left": 93,
+					"width": 133,
+					"height": 16,
+					"dataSource": "vtxtStructTypeInsp",
+					"class": "Default",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldStructTypeSIA": {
+					"type": "input",
+					"top": 58,
+					"left": 242,
+					"width": 133,
+					"height": 16,
+					"dataSource": "vtxtStructTypeSIA",
+					"class": "Default",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cbItem107": {
+					"type": "checkbox",
+					"top": 86,
+					"left": 384,
+					"width": 57,
+					"height": 16,
+					"dataSource": "blnItem107",
+					"text": "Accept",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem107Insp": {
+					"type": "input",
+					"top": 88,
+					"left": 93,
+					"width": 133,
+					"height": 16,
+					"dataSource": "vtxtItem107Insp",
+					"class": "Default",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fldItem107SIA": {
+					"type": "input",
+					"top": 88,
+					"left": 242,
+					"width": 133,
+					"height": 16,
+					"dataSource": "vtxtItem107SIA",
+					"class": "Default",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 57,
+					"left": 18,
+					"width": 70,
+					"height": 14,
+					"class": "Default",
+					"text": "Item 43"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 87,
+					"left": 18,
+					"width": 70,
+					"height": 14,
+					"class": "Default",
+					"text": "Item 107"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 9,
+					"left": 177,
+					"width": 113,
+					"height": 16,
+					"class": "Default",
+					"fontWeight": "bold",
+					"text": "Dependency Check"
+				},
+				"btnCancel": {
+					"type": "button",
+					"top": 130,
+					"left": 229,
+					"width": 88,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnOK": {
+					"type": "button",
+					"top": 131,
+					"left": 329,
+					"width": 88,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "OK",
+					"class": "Default",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbDontAskAgain": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 38,
+					"width": 159,
+					"height": 26,
+					"dataSource": "blnDontAskAgain",
+					"text": "Do not show this dialog again",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

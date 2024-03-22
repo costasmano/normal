@@ -1,0 +1,697 @@
+{
+	"destination": "detailPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 41,
+	"markerBody": 227,
+	"markerBreak": 740,
+	"markerFooter": 748,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 67,
+					"left": 361,
+					"width": 156,
+					"height": 26,
+					"fill": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 97,
+					"left": 361,
+					"width": 156,
+					"height": 26,
+					"fill": "transparent"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 127,
+					"left": 361,
+					"width": 156,
+					"height": 26,
+					"fill": "transparent"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 157,
+					"left": 361,
+					"width": 156,
+					"height": 26,
+					"fill": "transparent"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 187,
+					"left": 361,
+					"width": 156,
+					"height": 39,
+					"fill": "transparent"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 230,
+					"left": 5,
+					"width": 575,
+					"height": 499
+				},
+				"Line1": {
+					"type": "line",
+					"top": 248,
+					"left": 5,
+					"width": 575
+				},
+				"Text1": {
+					"type": "text",
+					"top": 233,
+					"left": 7,
+					"width": 21,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "El #"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 230,
+					"left": 29,
+					"height": 499
+				},
+				"Text2": {
+					"type": "text",
+					"top": 233,
+					"left": 31,
+					"width": 135,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Element Name"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 230,
+					"left": 167,
+					"height": 499
+				},
+				"Text3": {
+					"type": "text",
+					"top": 233,
+					"left": 169,
+					"width": 31,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Units"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 230,
+					"left": 201,
+					"height": 499
+				},
+				"Text4": {
+					"type": "text",
+					"top": 233,
+					"left": 203,
+					"width": 20,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Env."
+				},
+				"Line5": {
+					"type": "line",
+					"top": 230,
+					"left": 224,
+					"height": 499
+				},
+				"Text5": {
+					"type": "text",
+					"top": 233,
+					"left": 226,
+					"width": 51,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Total Q."
+				},
+				"Line6": {
+					"type": "line",
+					"top": 230,
+					"left": 278,
+					"height": 499
+				},
+				"Text6": {
+					"type": "text",
+					"top": 233,
+					"left": 280,
+					"width": 28,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "% or Q"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 230,
+					"left": 309,
+					"height": 499
+				},
+				"Text7": {
+					"type": "text",
+					"top": 233,
+					"left": 311,
+					"width": 51,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "State 1"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 230,
+					"left": 363,
+					"height": 499
+				},
+				"Text8": {
+					"type": "text",
+					"top": 233,
+					"left": 365,
+					"width": 51,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "State 2"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 230,
+					"left": 417,
+					"height": 499
+				},
+				"Text9": {
+					"type": "text",
+					"top": 233,
+					"left": 419,
+					"width": 51,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "State 3"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 230,
+					"left": 471,
+					"height": 499
+				},
+				"Text10": {
+					"type": "text",
+					"top": 233,
+					"left": 473,
+					"width": 51,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "State 4"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 230,
+					"left": 525,
+					"height": 499
+				},
+				"Text11": {
+					"type": "text",
+					"top": 233,
+					"left": 527,
+					"width": 51,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "State 5"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 9,
+					"left": 116,
+					"width": 353,
+					"height": 25,
+					"fill": "transparent"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 12,
+					"left": 119,
+					"width": 347,
+					"height": 22,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "Times18Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Pontis BMS Element Inspection"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 89,
+					"left": 6,
+					"width": 53,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 10,
+					"text": "Item 8"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 53,
+					"left": 9,
+					"width": 50,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 10,
+					"text": "BDEPT#"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 71,
+					"left": 16,
+					"width": 43,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 10,
+					"text": "B.I.N."
+				},
+				"Text16": {
+					"type": "text",
+					"top": 125,
+					"left": 28,
+					"width": 31,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 10,
+					"text": "Town"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 143,
+					"left": 18,
+					"width": 41,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 10,
+					"text": "District"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 67,
+					"left": 306,
+					"width": 43,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Date"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 43,
+					"left": 362,
+					"width": 93,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"textDecoration": "underline",
+					"text": "Current Inspection"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 97,
+					"left": 276,
+					"width": 73,
+					"height": 22,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "District Bridge\rInspection Eng'r"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 127,
+					"left": 296,
+					"width": 53,
+					"height": 22,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Inspecting\rAgency"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 157,
+					"left": 296,
+					"width": 53,
+					"height": 22,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Team\rLeader"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 187,
+					"left": 296,
+					"width": 53,
+					"height": 22,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Roman",
+					"fontSize": 9,
+					"text": "Team\rMember(s)"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 288,
+					"left": 5,
+					"width": 575
+				},
+				"Line13": {
+					"type": "line",
+					"top": 328,
+					"left": 5,
+					"width": 575
+				},
+				"Line14": {
+					"type": "line",
+					"top": 368,
+					"left": 5,
+					"width": 575
+				},
+				"Line15": {
+					"type": "line",
+					"top": 408,
+					"left": 5,
+					"width": 575
+				},
+				"Line16": {
+					"type": "line",
+					"top": 448,
+					"left": 5,
+					"width": 575
+				},
+				"Line17": {
+					"type": "line",
+					"top": 488,
+					"left": 5,
+					"width": 575
+				},
+				"Line18": {
+					"type": "line",
+					"top": 528,
+					"left": 5,
+					"width": 575
+				},
+				"Line19": {
+					"type": "line",
+					"top": 568,
+					"left": 5,
+					"width": 575
+				},
+				"Line20": {
+					"type": "line",
+					"top": 608,
+					"left": 5,
+					"width": 575
+				},
+				"Line21": {
+					"type": "line",
+					"top": 648,
+					"left": 5,
+					"width": 575
+				},
+				"Line22": {
+					"type": "line",
+					"top": 688,
+					"left": 5,
+					"width": 575
+				},
+				"Text24": {
+					"type": "text",
+					"top": 180,
+					"left": 40,
+					"width": 180,
+					"height": 24,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times Italic",
+					"fontSize": 12,
+					"fontStyle": "italic",
+					"text": "The database contains no previous inspection data for this bridge."
+				},
+				"Field1": {
+					"type": "input",
+					"top": 53,
+					"left": 68,
+					"width": 74,
+					"height": 12,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 71,
+					"left": 68,
+					"width": 38,
+					"height": 12,
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#000000",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 89,
+					"left": 68,
+					"width": 134,
+					"height": 12,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#000000",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 125,
+					"left": 68,
+					"width": 144,
+					"height": 12,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000000",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 143,
+					"left": 68,
+					"width": 34,
+					"height": 12,
+					"dataSource": "vDist",
+					"stroke": "#000000",
+					"fontFamily": "Times Bold",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

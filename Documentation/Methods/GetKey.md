@@ -1,0 +1,1 @@
+Feb-2003 : Added check if KeyCode is undefined (from example in LangRef).  Apr-2003 : Added Filter Event command per Lang Ref.

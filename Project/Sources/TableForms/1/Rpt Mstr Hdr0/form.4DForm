@@ -1,0 +1,577 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 61,
+	"markerBreak": 98,
+	"markerFooter": 104,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 0,
+					"width": 730,
+					"height": 42,
+					"fill": "transparent"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 59,
+					"left": 0,
+					"width": 730
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 4,
+					"left": 0,
+					"width": 436,
+					"height": 35,
+					"dataSource": "vRptHeader",
+					"stroke": "#000000",
+					"class": "Helvetica9",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 4,
+					"left": 654,
+					"width": 76,
+					"height": 32,
+					"dataSource": "vDtTmPg",
+					"stroke": "#000000",
+					"class": "Helvetica8",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 40,
+					"left": 45,
+					"height": 19
+				},
+				"Text1": {
+					"type": "text",
+					"top": 42,
+					"left": 47,
+					"width": 16,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "\rBIN"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 40,
+					"left": 64,
+					"height": 19
+				},
+				"Text2": {
+					"type": "text",
+					"top": 42,
+					"left": 66,
+					"width": 21,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Owner\rCode"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 42,
+					"left": 2,
+					"width": 42,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "Town Name\r    BDept#"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 40,
+					"left": 113,
+					"height": 19
+				},
+				"Text4": {
+					"type": "text",
+					"top": 42,
+					"left": 115,
+					"width": 88,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "Over\r(Facility Carried)"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 40,
+					"left": 204,
+					"height": 19
+				},
+				"Text5": {
+					"type": "text",
+					"top": 42,
+					"left": 206,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "Under\r(Facility Intersected)"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 40,
+					"left": 308,
+					"height": 19
+				},
+				"Text6": {
+					"type": "text",
+					"top": 42,
+					"left": 310,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r22"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 40,
+					"left": 364,
+					"height": 19
+				},
+				"Text7": {
+					"type": "text",
+					"top": 42,
+					"left": 366,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r26"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 40,
+					"left": 400,
+					"height": 19
+				},
+				"Text8": {
+					"type": "text",
+					"top": 42,
+					"left": 402,
+					"width": 18,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Year\rBuilt"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 40,
+					"left": 421,
+					"height": 19
+				},
+				"Text9": {
+					"type": "text",
+					"top": 42,
+					"left": 423,
+					"width": 24,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Year\rRebuilt"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 40,
+					"left": 326,
+					"height": 19
+				},
+				"Text10": {
+					"type": "text",
+					"top": 42,
+					"left": 328,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r21"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 40,
+					"left": 344,
+					"height": 19
+				},
+				"Text11": {
+					"type": "text",
+					"top": 42,
+					"left": 346,
+					"width": 17,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r43"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 40,
+					"left": 382,
+					"height": 19
+				},
+				"Text12": {
+					"type": "text",
+					"top": 42,
+					"left": 384,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r41"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 40,
+					"left": 448,
+					"height": 19
+				},
+				"Text15": {
+					"type": "text",
+					"top": 42,
+					"left": 450,
+					"width": 20,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Oper.\rRat."
+				},
+				"Line16": {
+					"type": "line",
+					"top": 40,
+					"left": 471,
+					"height": 19
+				},
+				"Text16": {
+					"type": "text",
+					"top": 42,
+					"left": 473,
+					"width": 20,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Inv.\rRat."
+				},
+				"Line17": {
+					"type": "line",
+					"top": 40,
+					"left": 494,
+					"height": 19
+				},
+				"Text17": {
+					"type": "text",
+					"top": 42,
+					"left": 496,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r58"
+				},
+				"Line18": {
+					"type": "line",
+					"top": 40,
+					"left": 512,
+					"height": 19
+				},
+				"Text18": {
+					"type": "text",
+					"top": 42,
+					"left": 514,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r59"
+				},
+				"Line19": {
+					"type": "line",
+					"top": 40,
+					"left": 530,
+					"height": 19
+				},
+				"Text19": {
+					"type": "text",
+					"top": 42,
+					"left": 532,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r60"
+				},
+				"Line26": {
+					"type": "line",
+					"top": 41,
+					"left": 88,
+					"height": 19
+				},
+				"Text26": {
+					"type": "text",
+					"top": 42,
+					"left": 90,
+					"width": 22,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Bridge\rType"
+				},
+				"Line14": {
+					"type": "line",
+					"top": 40,
+					"left": 674,
+					"height": 19
+				},
+				"Text13": {
+					"type": "text",
+					"top": 42,
+					"left": 676,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Helvetica6",
+					"textAlign": "center",
+					"text": "AASHTO\rRating"
+				},
+				"Line15": {
+					"type": "line",
+					"top": 40,
+					"left": 707,
+					"height": 19
+				},
+				"Text14": {
+					"type": "text",
+					"top": 42,
+					"left": 709,
+					"width": 19,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Helvetica6",
+					"textAlign": "center",
+					"text": "Defic-\riency"
+				},
+				"Line20": {
+					"type": "line",
+					"top": 40,
+					"left": 566,
+					"height": 19
+				},
+				"Text20": {
+					"type": "text",
+					"top": 42,
+					"left": 568,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r67"
+				},
+				"Line21": {
+					"type": "line",
+					"top": 40,
+					"left": 584,
+					"height": 19
+				},
+				"Text21": {
+					"type": "text",
+					"top": 42,
+					"left": 586,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r68"
+				},
+				"Line22": {
+					"type": "line",
+					"top": 40,
+					"left": 602,
+					"height": 19
+				},
+				"Text22": {
+					"type": "text",
+					"top": 42,
+					"left": 604,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r69"
+				},
+				"Line23": {
+					"type": "line",
+					"top": 40,
+					"left": 620,
+					"height": 19
+				},
+				"Text23": {
+					"type": "text",
+					"top": 42,
+					"left": 622,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r70"
+				},
+				"Line24": {
+					"type": "line",
+					"top": 40,
+					"left": 638,
+					"height": 19
+				},
+				"Text24": {
+					"type": "text",
+					"top": 42,
+					"left": 640,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r71"
+				},
+				"Line25": {
+					"type": "line",
+					"top": 40,
+					"left": 656,
+					"height": 19
+				},
+				"Text25": {
+					"type": "text",
+					"top": 42,
+					"left": 658,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r72"
+				},
+				"Line27": {
+					"type": "line",
+					"top": 40,
+					"left": 548,
+					"height": 19
+				},
+				"Text27": {
+					"type": "text",
+					"top": 42,
+					"left": 550,
+					"width": 15,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Item\r62"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

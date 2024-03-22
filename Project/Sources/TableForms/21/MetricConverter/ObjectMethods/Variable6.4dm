@@ -1,0 +1,1 @@
+vMetricTons:=0.9072*vTons

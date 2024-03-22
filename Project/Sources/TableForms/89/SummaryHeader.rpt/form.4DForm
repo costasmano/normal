@@ -1,0 +1,252 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 1,
+	"markerBody": 85,
+	"markerBreak": 85,
+	"markerFooter": 86,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 6,
+					"left": 86,
+					"width": 261,
+					"height": 14,
+					"class": "Form_Header",
+					"textAlign": "center",
+					"text": "Bridge Status History Summary Report"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 24,
+					"left": 30,
+					"width": 440,
+					"height": 60,
+					"class": "Default",
+					"text": "Reporting Criteria"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 44,
+					"left": 53,
+					"width": 45,
+					"height": 15,
+					"class": "Label10Plain",
+					"text": "From  :"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 44,
+					"left": 107,
+					"width": 25,
+					"height": 15,
+					"dataSource": "<>SD_BeginMonth_s",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 44,
+					"left": 132,
+					"width": 10,
+					"height": 15,
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "/"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 44,
+					"left": 142,
+					"width": 40,
+					"height": 15,
+					"dataSource": "<>SD_BeginYear_s",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 44,
+					"left": 237,
+					"width": 31,
+					"height": 15,
+					"class": "Label10Plain",
+					"text": "To  :"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 44,
+					"left": 277,
+					"width": 25,
+					"height": 15,
+					"dataSource": "<>SD_EndMonth_s",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 44,
+					"left": 302,
+					"width": 10,
+					"height": 15,
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "/"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 44,
+					"left": 312,
+					"width": 36,
+					"height": 15,
+					"dataSource": "<>SD_EndYear_s",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SD_Detail_Prt_l": {
+					"type": "checkbox",
+					"top": 61,
+					"left": 328,
+					"width": 87,
+					"height": 16,
+					"dataSource": "SD_Detail_Prt_l",
+					"text": "Detail Report",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 63,
+					"left": 93,
+					"width": 216,
+					"height": 15,
+					"dataSource": "<>SD_Owner_s",
+					"class": "Label10Plain",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 63,
+					"left": 53,
+					"width": 35,
+					"height": 15,
+					"class": "Label10Plain",
+					"text": "Owner"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

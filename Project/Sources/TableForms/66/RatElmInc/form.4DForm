@@ -1,0 +1,573 @@
+{
+	"destination": "listScreen",
+	"windowMinWidth": 650,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 49,
+	"markerBody": 95,
+	"markerBreak": 102,
+	"markerFooter": 107,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 693,
+					"height": 99,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 24,
+					"left": 183,
+					"width": 509,
+					"sizingX": "move"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 48,
+					"left": 0,
+					"width": 692,
+					"sizingX": "grow"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 120,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Description"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 0,
+					"left": 183,
+					"height": 99,
+					"sizingX": "move"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 27,
+					"left": 183,
+					"width": 55,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "H-20"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 24,
+					"left": 240,
+					"height": 75,
+					"sizingX": "move"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 27,
+					"left": 242,
+					"width": 55,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Type 3"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 24,
+					"left": 299,
+					"height": 75,
+					"sizingX": "move"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 27,
+					"left": 301,
+					"width": 65,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Type 3S2"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 24,
+					"left": 368,
+					"height": 75,
+					"sizingX": "move"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 437,
+					"height": 99,
+					"sizingX": "move"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 3,
+					"left": 439,
+					"width": 145,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Operating Rating"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 27,
+					"left": 370,
+					"width": 65,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "HS20-44"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 27,
+					"left": 439,
+					"width": 55,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "H-20"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 27,
+					"left": 498,
+					"width": 55,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Type 3"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 27,
+					"left": 557,
+					"width": 65,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Type 3S2"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 3,
+					"left": 185,
+					"width": 145,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Inventory Rating"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 27,
+					"left": 626,
+					"width": 65,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "HS20-44"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 24,
+					"left": 496,
+					"height": 75,
+					"sizingX": "move"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 24,
+					"left": 555,
+					"height": 75,
+					"sizingX": "move"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 24,
+					"left": 624,
+					"height": 75,
+					"sizingX": "move"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 54,
+					"left": 2,
+					"width": 179,
+					"height": 37,
+					"sizingX": "grow",
+					"dataSource": "[RatingMember:66]Description:4",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 54,
+					"left": 184,
+					"width": 54,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]InvH20:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 54,
+					"left": 243,
+					"width": 54,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]InvType3:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 54,
+					"left": 302,
+					"width": 64,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]Inv3S2:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 54,
+					"left": 371,
+					"width": 64,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]InvHS2044:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 54,
+					"left": 440,
+					"width": 54,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]OprH20:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 54,
+					"left": 499,
+					"width": 54,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]OprType3:12",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 54,
+					"left": 558,
+					"width": 64,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]Opr3S2:13",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 54,
+					"left": 627,
+					"width": 64,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "[RatingMember:66]OprHS2044:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#,###,###.0;N/A;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

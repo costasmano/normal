@@ -1,0 +1,130 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 34,
+					"left": 66,
+					"width": 344,
+					"height": 65,
+					"dataSource": "vTextMsg",
+					"class": "Label10Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 131,
+					"left": 32,
+					"width": 95,
+					"height": 28,
+					"dataSource": "vButtonCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "accept",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Combined Inspection Button": {
+					"type": "button",
+					"top": 131,
+					"left": 162,
+					"width": 133,
+					"height": 28,
+					"dataSource": "vButtonPrintPreview",
+					"action": "accept",
+					"text": "Print Preview",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Special Inspection Button": {
+					"type": "button",
+					"top": 131,
+					"left": 333,
+					"width": 124,
+					"height": 28,
+					"dataSource": "vButtonPrint",
+					"action": "accept",
+					"text": "Print",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

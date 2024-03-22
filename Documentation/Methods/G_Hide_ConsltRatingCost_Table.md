@@ -1,0 +1,1 @@
+Created June-2003 : If the user belongs to the authorized user group, Conslt Rating Cost table is displayed.  If not, it gets hidden.

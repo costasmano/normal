@@ -1,0 +1,1 @@
+2004-01-20 : Created.  2004-02-13 : Changed $aiInvoiceNo to ArrayLongint.

@@ -1,0 +1,228 @@
+{
+	"destination": "detailScreen",
+	"windowMinHeight": 270,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 147,
+					"left": 271,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/TrashCan.png"
+				},
+				"Trash Can": {
+					"type": "button",
+					"top": 147,
+					"left": 271,
+					"width": 32,
+					"height": 32,
+					"dataSource": "Trash Can",
+					"display": false,
+					"dropping": "custom",
+					"method": "ObjectMethods/Trash Can.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDrop",
+						"onDragOver",
+						"onPrintingDetail"
+					]
+				},
+				"Scrollable Area1": {
+					"type": "list",
+					"top": 51,
+					"left": 34,
+					"width": 200,
+					"height": 144,
+					"sizingY": "grow",
+					"dataSource": "hList1",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 77,
+					"left": 245,
+					"width": 88,
+					"height": 66,
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Drag elements to here to include on inspection form ->"
+				},
+				"Scrollable Area2": {
+					"type": "list",
+					"top": 51,
+					"left": 345,
+					"width": 200,
+					"height": 144,
+					"sizingY": "grow",
+					"dataSource": "hList2",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Scrollable Area2.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDrop",
+						"onDataChange",
+						"onDragOver",
+						"onPrintingDetail"
+					]
+				},
+				"DefElemtns": {
+					"type": "button",
+					"top": 205,
+					"left": 382,
+					"width": 127,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "vDefElemts",
+					"text": "Default Elements",
+					"class": "List12Plain",
+					"method": "ObjectMethods/DefElemtns.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 238,
+					"left": 451,
+					"width": 90,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 238,
+					"left": 349,
+					"width": 90,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 14,
+					"left": 59,
+					"width": 150,
+					"height": 37,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Available Elements for this Inspection"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 14,
+					"left": 370,
+					"width": 150,
+					"height": 37,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Elements used for this Inspection"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group5": [
+				"Variable17",
+				"Variable16"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

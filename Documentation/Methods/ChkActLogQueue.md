@@ -1,0 +1,1 @@
+Dec-2002 : Changed method to use set query destination into variable to avoid locking a record.  Apr-2003 : Call M_Exec Transfer instead of NewTellServer so that a new process is launched.

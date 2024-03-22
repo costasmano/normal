@@ -1,0 +1,397 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 6,
+					"left": 28,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SaveContinue"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line7": {
+					"type": "line",
+					"top": 77,
+					"left": 20,
+					"width": 491,
+					"sizingX": "grow"
+				},
+				"bDone": {
+					"type": "pictureButton",
+					"top": 6,
+					"left": 453,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Close"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDone.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 54,
+					"left": 23,
+					"width": 58,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 54,
+					"left": 453,
+					"width": 48,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "Done"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text8": {
+					"type": "text",
+					"top": 264,
+					"left": 15,
+					"width": 128,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "right",
+					"text": "Week Ending :"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 264,
+					"left": 295,
+					"width": 78,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "right",
+					"text": "Hours : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 324,
+					"left": 15,
+					"width": 128,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "right",
+					"text": "Comments :"
+				},
+				"PRJ_ConsultantReviewers_atxt": {
+					"type": "dropdown",
+					"top": 92,
+					"left": 177,
+					"width": 201,
+					"height": 18,
+					"dataSource": "PRJ_ConsultantReviewers_atxt",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/PRJ_ConsultantReviewers_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PT_ConstructionProjectList_HL": {
+					"type": "dropdown",
+					"top": 191,
+					"left": 57,
+					"width": 201,
+					"height": 18,
+					"dataSource": "PT_ConstructionProjectList_HL",
+					"dataSourceTypeHint": "integer",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/PT_ConstructionProjectList_HL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_PT_CostCodeName_atxt": {
+					"type": "dropdown",
+					"top": 191,
+					"left": 307,
+					"width": 201,
+					"height": 18,
+					"dataSource": "PT_CostCodeName_atxt",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/PRJ_PT_CostCodeName_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PT_WeekEnding_d": {
+					"type": "input",
+					"top": 262,
+					"left": 148,
+					"width": 95,
+					"height": 19,
+					"dataSource": "PRJ_PT_WeekEnding_d",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PT_Hours_r": {
+					"type": "input",
+					"top": 261,
+					"left": 378,
+					"width": 88,
+					"height": 19,
+					"dataSource": "PRJ_PT_Hours_r",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PT_EWO_s": {
+					"type": "input",
+					"top": 292,
+					"left": 148,
+					"width": 265,
+					"height": 19,
+					"dataSource": "PRJ_PT_EWO_s",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PT_Coments_txt": {
+					"type": "input",
+					"top": 324,
+					"left": 148,
+					"width": 317,
+					"height": 84,
+					"dataSource": "PRJ_PT_Coments_txt",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PRJ_ReviewDropDown": {
+					"type": "text",
+					"top": 95,
+					"left": 19,
+					"width": 148,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "right",
+					"text": "Select a Reviewer-> : "
+				},
+				"Text1": {
+					"type": "text",
+					"top": 294,
+					"left": 15,
+					"width": 128,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "right",
+					"text": "EWO :"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 174,
+					"left": 95,
+					"width": 128,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "Bridge Project"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 174,
+					"left": 345,
+					"width": 128,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "Other Categories"
+				},
+				"aViewDesign": {
+					"type": "radio",
+					"top": 124,
+					"left": 79,
+					"width": 236,
+					"height": 16,
+					"dataSource": "aViewDesign",
+					"text": "View Design projects",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/aViewDesign.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"aViewDesign1": {
+					"type": "radio",
+					"top": 144,
+					"left": 79,
+					"width": 236,
+					"height": 16,
+					"dataSource": "aViewConstruction",
+					"text": "View Construction projects",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/aViewDesign1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_PT_DesignProjectList_HL": {
+					"type": "dropdown",
+					"top": 191,
+					"left": 57,
+					"width": 201,
+					"height": 18,
+					"dataSource": "PT_DesignProjectList_HL",
+					"dataSourceTypeHint": "integer",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/PRJ_PT_DesignProjectList_HL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PT_Scope_label": {
+					"type": "text",
+					"top": 214,
+					"left": 95,
+					"width": 128,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "Review Stage"
+				},
+				"PT_Scope_atxt": {
+					"type": "dropdown",
+					"top": 231,
+					"left": 57,
+					"width": 201,
+					"height": 18,
+					"dataSource": "PT_Scope_atxt",
+					"choiceList": [
+						"",
+						"1-TYPE",
+						"2-SKETCH",
+						"3-FINAL"
+					],
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/PT_Scope_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

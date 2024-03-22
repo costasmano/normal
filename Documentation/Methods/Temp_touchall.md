@@ -1,0 +1,1 @@
+2004-02-11 : Added code to drop indexes and then rebuild them after each table.

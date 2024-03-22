@@ -1,0 +1,1 @@
+17-Sep-2003 : Adjusted size to fit on PC printer. Adjusted format of TotalOfficeEstimate.

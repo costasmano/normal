@@ -1,0 +1,1 @@
+25-jan-01 : changed Brkey to Item8.May-2003 : Adjusted widths to better display Item 8. Made fields non-enterable.2003-03-16 : Applied 'DataEntry12Plain' style sheet to input fields.2004-04-13 : Applied form scaling - 120%.2004-04-15 : Decreased the text box height.

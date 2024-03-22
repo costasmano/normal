@@ -1,0 +1,207 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 48,
+					"left": 11,
+					"width": 366,
+					"height": 161,
+					"picture": "/RESOURCES/Images/library/BMS TruckPostingSign.png"
+				},
+				"TRUCK_Post_2": {
+					"type": "input",
+					"top": 84,
+					"left": 156,
+					"width": 24,
+					"height": 16,
+					"dataSource": "TRUCK_Post_1_txt",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TRUCK_Post_3": {
+					"type": "input",
+					"top": 121,
+					"left": 156,
+					"width": 24,
+					"height": 16,
+					"dataSource": "TRUCK_Post_2_txt",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TRUCK_Post_5": {
+					"type": "input",
+					"top": 159,
+					"left": 156,
+					"width": 24,
+					"height": 16,
+					"dataSource": "TRUCK_Post_3_txt",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TRUCK_Post_S": {
+					"type": "input",
+					"top": 104,
+					"left": 300,
+					"width": 24,
+					"height": 16,
+					"dataSource": "TRUCK_Post_4_txt",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 227,
+					"left": 49,
+					"width": 115,
+					"height": 22,
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "CANCEL",
+					"class": "Label12Bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 227,
+					"left": 219,
+					"width": 115,
+					"height": 22,
+					"dataSource": "Button1",
+					"action": "accept",
+					"text": "OK",
+					"class": "Label12Bold",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 55,
+					"width": 289,
+					"height": 16,
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "VERIFY POSTING VALUES"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

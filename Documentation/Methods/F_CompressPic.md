@@ -1,0 +1,1 @@
+2003-10-10 : Modified to be used by both Import and cut and paste method in Standard photos.  2003-10-21 : Added code to check if there is an error (new picsize=6) or if the compression does not result in smaller image.  2004-01-20 : Removed use of var $vTempPictOrig.  2004-04-02 : Added code to check for initial size of $TempPic : if=0 return input picture.

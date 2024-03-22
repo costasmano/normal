@@ -1,0 +1,271 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Subform": {
+					"type": "subform",
+					"top": 100,
+					"left": 41,
+					"width": 343,
+					"height": 343,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"detailForm": "OneArrayLB",
+					"hideFocusRing": true,
+					"enterableInList": false,
+					"deletableInList": false,
+					"selectionMode": "single",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Subform.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Open": {
+					"type": "button",
+					"top": 7,
+					"left": 5,
+					"width": 50,
+					"height": 24,
+					"shortcutKey": "[Enter]",
+					"text": "Open",
+					"focusable": false,
+					"method": "ObjectMethods/Open.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ShowSelected": {
+					"type": "button",
+					"top": 7,
+					"left": 60,
+					"width": 110,
+					"height": 24,
+					"shortcutKey": "g",
+					"shortcutAccel": true,
+					"text": "Show Selected",
+					"focusable": false,
+					"method": "ObjectMethods/ShowSelected.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Refresh": {
+					"type": "button",
+					"top": 7,
+					"left": 175,
+					"width": 70,
+					"height": 24,
+					"shortcutKey": "r",
+					"shortcutAccel": true,
+					"text": "Refresh",
+					"focusable": false,
+					"method": "ObjectMethods/Refresh.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DateAfter": {
+					"type": "input",
+					"top": 48,
+					"left": 80,
+					"width": 72,
+					"height": 17,
+					"dataSourceTypeHint": "date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 48,
+					"left": 4,
+					"width": 66,
+					"height": 17,
+					"textAlign": "right",
+					"text": "After Date"
+				},
+				"DateBefore": {
+					"type": "input",
+					"top": 48,
+					"left": 251,
+					"width": 72,
+					"height": 17,
+					"dataSourceTypeHint": "date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 48,
+					"left": 155,
+					"width": 86,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Before Date"
+				},
+				"FilterByAttr": {
+					"type": "dropdown",
+					"top": 10,
+					"left": 381,
+					"width": 23,
+					"height": 22,
+					"focusable": false,
+					"choiceList": [
+						"invisible : true",
+						"invisible : false",
+						"publishedWeb : true",
+						"publishedWeb : false",
+						"publishedSoap : true",
+						"publishedSoap : false",
+						"publishedWsdl : true",
+						"publishedWsdl : false",
+						"shared : true",
+						"shared : false",
+						"publishedSql : true",
+						"publishedSql : false",
+						"executedOnServer : true",
+						"executedOnServer : false",
+						"published4DMobile.scope : none",
+						"published4DMobile.scope : table",
+						"published4DMobile.scope : current record",
+						"published4DMobile.scope : current selection"
+					],
+					"method": "ObjectMethods/FilterByAttr.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 5,
+					"left": 311,
+					"width": 60,
+					"height": 33,
+					"textAlign": "right",
+					"text": "Filter by Attr."
+				},
+				"FindByName": {
+					"type": "button",
+					"top": 40,
+					"left": 356,
+					"width": 48,
+					"height": 26,
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"text": "Find",
+					"method": "ObjectMethods/FindByName.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Copy2txt": {
+					"type": "button",
+					"top": 7,
+					"left": 250,
+					"width": 70,
+					"height": 24,
+					"text": "Copy2Txt",
+					"method": "ObjectMethods/Copy2txt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FindByName1": {
+					"type": "button",
+					"top": 72,
+					"left": 22,
+					"width": 148,
+					"height": 24,
+					"text": "Create CSV of List",
+					"method": "ObjectMethods/FindByName1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FindByName2": {
+					"type": "button",
+					"top": 72,
+					"left": 215,
+					"width": 148,
+					"height": 24,
+					"text": "Export code into a doc",
+					"method": "ObjectMethods/FindByName2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CMDOButton": {
+					"type": "button",
+					"top": 117,
+					"left": 5,
+					"width": 13,
+					"height": 18,
+					"shortcutKey": "o",
+					"shortcutAccel": true,
+					"text": "Open",
+					"focusable": false,
+					"method": "ObjectMethods/CMDOButton.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

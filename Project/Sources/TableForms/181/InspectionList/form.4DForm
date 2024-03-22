@@ -1,0 +1,633 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text16": {
+					"type": "text",
+					"top": 12,
+					"left": 20,
+					"width": 149,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.1) Tunnel Number : "
+				},
+				"NoEntry": {
+					"type": "input",
+					"top": 12,
+					"left": 174,
+					"width": 175,
+					"height": 15,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i1_s:6",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###-###-###-###-###",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"NTI_i2_s1": {
+					"type": "input",
+					"top": 12,
+					"left": 514,
+					"width": 250,
+					"height": 15,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i2_s:7",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 12,
+					"left": 370,
+					"width": 139,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.2)  Tunnel Name : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 42,
+					"left": 40,
+					"width": 129,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Town Name : "
+				},
+				"NoEntry18": {
+					"type": "input",
+					"top": 43,
+					"left": 174,
+					"width": 260,
+					"height": 15,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_TownName_s:71",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"NTI_i7_s1": {
+					"type": "input",
+					"top": 74,
+					"left": 174,
+					"width": 65,
+					"height": 15,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i7_s:12",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 74,
+					"left": 20,
+					"width": 149,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.7) Route Number : "
+				},
+				"NTI_i10_s": {
+					"type": "input",
+					"top": 128,
+					"left": 174,
+					"width": 534,
+					"height": 15,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i10_s:15",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text26": {
+					"type": "text",
+					"top": 128,
+					"left": 10,
+					"width": 159,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.10) Facility Carried : "
+				},
+				"NTI_i8_s_atxt": {
+					"type": "dropdown",
+					"top": 70,
+					"left": 421,
+					"width": 253,
+					"height": 22,
+					"dataSource": "NTI_i8_s_atxt",
+					"focusable": false,
+					"class": "DataEntry12APlain",
+					"method": "ObjectMethods/NTI_i8_s_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NTI_i9_L_atxt": {
+					"type": "dropdown",
+					"top": 98,
+					"left": 174,
+					"width": 368,
+					"height": 22,
+					"dataSource": "NTI_i9_L_atxt",
+					"focusable": false,
+					"class": "DataEntry12APlain",
+					"method": "ObjectMethods/NTI_i9_L_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 74,
+					"left": 257,
+					"width": 159,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.8) Route Direction : "
+				},
+				"Text25": {
+					"type": "text",
+					"top": 102,
+					"left": 40,
+					"width": 129,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.9) Route Type : "
+				},
+				"bDone": {
+					"type": "button",
+					"top": 8,
+					"left": 788,
+					"width": 48,
+					"height": 73,
+					"dataSource": "bDone",
+					"action": "cancel",
+					"class": "DataEntry12APlain",
+					"focusable": false,
+					"text": "Close",
+					"icon": "/RESOURCES/Images/library/GLASS - Done.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"TunnelInspections_LB": {
+					"type": "listbox",
+					"top": 151,
+					"left": 187,
+					"width": 790,
+					"height": 289,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "TunnelInspections_LB",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 184,
+					"highlightSet": "ListboxSet0",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#FFF0DF",
+					"class": "List12Plain",
+					"method": "ObjectMethods/TunnelInspections_LB.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDisplayDetail",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column7",
+							"dataSource": "[TIN_Inspections:184]InspDate:3",
+							"dataSourceTypeHint": "date",
+							"width": 95,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Insp Date",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "LB_Detail2_txt",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Insp Type",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[TIN_Inspections:184]Agency:13",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Agency",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "vTmLeader",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Team Leader",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "LB_Detail9_pct",
+							"dataSourceTypeHint": "picture",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Complete",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "LB_Detail10_pct",
+							"dataSourceTypeHint": "picture",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Review",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "LB_Detail11_pct",
+							"dataSourceTypeHint": "picture",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Approved",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						}
+					]
+				},
+				"Add New Insp Button": {
+					"type": "button",
+					"top": 162,
+					"left": 34,
+					"width": 119,
+					"height": 33,
+					"dataSource": "Button1",
+					"text": "Add",
+					"class": "Default",
+					"focusable": false,
+					"method": "ObjectMethods/Add New Insp Button.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"NoEntry5": {
+					"type": "input",
+					"top": 43,
+					"left": 555,
+					"width": 24,
+					"height": 15,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i6_s:11",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 43,
+					"left": 441,
+					"width": 109,
+					"height": 14,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.6) District : "
+				},
+				"PrintNTIE": {
+					"type": "button",
+					"top": 215,
+					"left": 34,
+					"width": 119,
+					"height": 33,
+					"text": "Print NTIE",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/PrintNTIE.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,260 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"PlusButton_UT": {
+					"type": "button",
+					"top": 6,
+					"left": 6,
+					"width": 30,
+					"height": 24,
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "+",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/PlusButton_UT.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UT_LB": {
+					"type": "listbox",
+					"top": 32,
+					"left": 6,
+					"width": 1004,
+					"height": 197,
+					"resizingMode": "legacy",
+					"listboxType": "namedSelection",
+					"dataSource": "UT_LB",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"selectionName": "UT_LB",
+					"highlightSet": "ListboxSet0",
+					"detailForm": "Input",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/UT_LB.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column18",
+							"dataSource": "[LSS_UT:175]LSS_TechnicianName_s:3",
+							"width": 212,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": "Technician",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "19",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column19",
+							"dataSource": "[LSS_UT:175]LSS_MachineTypeSerialNo_s:8",
+							"width": 209,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": "Machine Type / Serial",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column20",
+							"dataSource": "[LSS_UT:175]LSS_AnchorRodDiameter_s:5",
+							"width": 164,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header20",
+								"text": "Anchor Rod Diameter",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column21",
+							"dataSource": "[LSS_UT:175]LSS_AnchorRodLength_s:6",
+							"width": 183,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header21",
+								"text": "Anchor Rod Length",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "6",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column17",
+							"dataSource": "[LSS_UT:175]LSS_CouplantMfgrAndGrade_s:14",
+							"width": 221,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header17",
+								"text": "Couplant Manufacturer & Grade",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "7",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

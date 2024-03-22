@@ -1,0 +1,1 @@
+31-Jan-01 : modified to platinum. Moved code from an object method to the form method.

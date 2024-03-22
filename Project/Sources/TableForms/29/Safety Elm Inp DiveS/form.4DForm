@@ -1,0 +1,335 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "SafetyElmtTemplate",
+	"inheritedFormTable": 29,
+	"windowMinWidth": 740,
+	"windowMinHeight": 530,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerBody": 517,
+	"markerBreak": 517,
+	"markerFooter": 517,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 207,
+					"left": 7,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Urgency of Repair"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 205,
+					"left": 136,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Priority:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 178,
+					"left": 7,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Deficiency"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 176,
+					"left": 136,
+					"width": 33,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Deficiency:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 489,
+					"left": 74,
+					"width": 571,
+					"height": 20,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Location of deterioration, section loss(%), cracks, collision damage, stress concentration, etc."
+				},
+				"Text12": {
+					"type": "text",
+					"top": 122,
+					"left": 7,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Dive Rating"
+				},
+				"DE AltRating": {
+					"type": "input",
+					"top": 118,
+					"left": 136,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]AltRating:21",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N;X;H;R\"#",
+					"method": "ObjectMethods/DE AltRating.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE AltRating1": {
+					"type": "input",
+					"top": 148,
+					"left": 136,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]AltRating_i:24",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N;X;H;R\"#",
+					"method": "ObjectMethods/DE AltRating1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Rat Category": {
+					"type": "dropdown",
+					"top": 115,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aRatCAT3_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Rat Category.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Def Category": {
+					"type": "dropdown",
+					"top": 174,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aDefCAT_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Def Category.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Urgency Cat": {
+					"type": "dropdown",
+					"top": 202,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aUORCAT_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Urgency Cat.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Cond Rating Label": {
+					"type": "text",
+					"top": 93,
+					"left": 139,
+					"width": 261,
+					"height": 17,
+					"class": "Label14BoldU",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Condition Ratings"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 152,
+					"left": 7,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Prev Dive Rating"
+				},
+				"DE Rat Category1": {
+					"type": "dropdown",
+					"top": 145,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aRatCAT4_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Rat Category1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE ElementComments_WP": {
+					"type": "write",
+					"top": 258,
+					"left": 5,
+					"width": 707,
+					"height": 229,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/DE ElementComments_WP.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"WPToolbar": {
+					"type": "subform",
+					"top": 228,
+					"left": 5,
+					"width": 691,
+					"height": 28,
+					"dataSourceTypeHint": "undefined",
+					"detailForm": "WPToolbar",
+					"focusable": false,
+					"hideFocusRing": true,
+					"enterableInList": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				}
+			},
+			"entryOrder": [
+				"Field3",
+				"DE AltRating",
+				"DE AltRating1",
+				"DE Rat Category",
+				"DE Def Category",
+				"DE Urgency Cat",
+				"DE Rat Category1",
+				"DE ElementComments_WP",
+				"WPToolbar"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

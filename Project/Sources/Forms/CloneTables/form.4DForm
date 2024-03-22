@@ -1,0 +1,821 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 483,
+	"markerBreak": 483,
+	"markerFooter": 483,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onDrop",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 240,
+					"height": 28,
+					"class": "Default",
+					"textAlign": "center",
+					"text": "Table List"
+				},
+				"Scroll1": {
+					"type": "listbox",
+					"top": 54,
+					"left": 20,
+					"width": 465,
+					"height": 315,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "LocalListBox_l",
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Scroll1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop"
+					],
+					"columns": []
+				},
+				"Radio Button": {
+					"type": "radio",
+					"top": 385,
+					"left": 90,
+					"width": 113,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "rbUpdate_l",
+					"text": "Update",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 385,
+					"left": 210,
+					"width": 113,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "rbReplace_l",
+					"text": "Replace",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 385,
+					"left": 350,
+					"width": 53,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "arbOld_l",
+					"text": "Old",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 385,
+					"left": 410,
+					"width": 73,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "arbNew_l",
+					"text": "New",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"AllowForCustomWhere3": {
+					"type": "dropdown",
+					"top": 422,
+					"left": 173,
+					"width": 194,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "FieldNames_atxt",
+					"class": "Default",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/AllowForCustomWhere3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"AllowForCustomWhere2": {
+					"type": "text",
+					"top": 422,
+					"left": 13,
+					"width": 139,
+					"height": 14,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Select Field Name : "
+				},
+				"AllowForCustomWhere4": {
+					"type": "text",
+					"top": 422,
+					"left": 393,
+					"width": 139,
+					"height": 14,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Select Query Type : "
+				},
+				"AllowForCustomWhere": {
+					"type": "input",
+					"top": 450,
+					"left": 39,
+					"width": 1014,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "SQL_TEXT",
+					"class": "Default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 14,
+					"left": 276,
+					"width": 209,
+					"height": 25,
+					"dataSource": "Button1",
+					"text": "Refresh Local Record Counts",
+					"class": "Default",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveButtonRight2": {
+					"type": "button",
+					"top": 60,
+					"left": 501,
+					"width": 47,
+					"height": 20,
+					"dataSource": "Button3",
+					"shortcutKey": "[right arrow]",
+					"text": "->",
+					"class": "Default",
+					"method": "ObjectMethods/MoveButtonRight2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveButtonRight1": {
+					"type": "button",
+					"top": 90,
+					"left": 501,
+					"width": 47,
+					"height": 20,
+					"dataSource": "Button4",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"text": ">>",
+					"class": "Default",
+					"method": "ObjectMethods/MoveButtonRight1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveButtonLeft2": {
+					"type": "button",
+					"top": 160,
+					"left": 501,
+					"width": 47,
+					"height": 20,
+					"dataSource": "Button5",
+					"shortcutKey": "[left arrow]",
+					"text": "<-",
+					"class": "Default",
+					"method": "ObjectMethods/MoveButtonLeft2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveButtonLeft1": {
+					"type": "button",
+					"top": 190,
+					"left": 501,
+					"width": 47,
+					"height": 20,
+					"dataSource": "Button6",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"text": "<<",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/MoveButtonLeft1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 380,
+					"left": 811,
+					"width": 89,
+					"height": 25,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 380,
+					"left": 921,
+					"width": 89,
+					"height": 25,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 20,
+					"left": 560,
+					"width": 240,
+					"height": 28,
+					"sizingX": "move",
+					"class": "Default",
+					"textAlign": "center",
+					"text": "Tables to cloned"
+				},
+				"Scroll4": {
+					"type": "listbox",
+					"top": 54,
+					"left": 586,
+					"width": 751,
+					"height": 315,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "ProcessListBox_l",
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Scroll4.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onBeforeDataEntry",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "ProcessLocalCount_al",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "PHeader1",
+								"text": "Local Count",
+								"dataSource": "LHeader1_l",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "ProcessTableNumber_al",
+							"width": 71,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Table #",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "ProcessTableNames_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Table Name",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "ProcessRemoteCount_al",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Remote Count",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "RemoteKeyName_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column5.4dm",
+							"header": {
+								"name": "Header4",
+								"text": "Key Field",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "RemoteQueryType_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column6.4dm",
+							"header": {
+								"name": "Header5",
+								"text": "Query Type",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "RemoteKey_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Key Value",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "RemoteCustomQuery_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Header7",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "RemoteType_al",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "Header8",
+								"dataSource": "Header8",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"AllowForCustomWhere1": {
+					"type": "input",
+					"top": 422,
+					"left": 820,
+					"width": 204,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "KeyValue_txt",
+					"class": "Default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/AllowForCustomWhere1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"AllowForCustomWhere5": {
+					"type": "dropdown",
+					"top": 422,
+					"left": 553,
+					"width": 74,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "QueryTypes_as",
+					"class": "Default",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/AllowForCustomWhere5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"AllowForCustomWhere6": {
+					"type": "text",
+					"top": 422,
+					"left": 633,
+					"width": 179,
+					"height": 14,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Enter Key Value for Query: "
+				},
+				"Button3": {
+					"type": "button",
+					"top": 380,
+					"left": 1021,
+					"width": 129,
+					"height": 25,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"text": "Clone Activity Log",
+					"class": "Default",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 18,
+					"left": 796,
+					"width": 129,
+					"height": 25,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"shortcutKey": "[Enter]",
+					"text": "Save Tables to Be Cloned",
+					"class": "Default",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 18,
+					"left": 952,
+					"width": 129,
+					"height": 25,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"shortcutKey": "[Enter]",
+					"text": "Load Tables to Be Cloned",
+					"class": "Default",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 15,
+					"left": 1102,
+					"width": 207,
+					"height": 15,
+					"dataSource": "clone_IncludeUUIDS_L",
+					"text": "Include Keys that are UUIDs",
+					"method": "ObjectMethods/Check Box.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 35,
+					"left": 1102,
+					"width": 207,
+					"height": 15,
+					"dataSource": "clone_UseBlobArrays_L",
+					"text": "Use Blob Arrays",
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

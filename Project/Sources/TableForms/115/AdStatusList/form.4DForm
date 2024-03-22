@@ -1,0 +1,153 @@
+{
+	"destination": "listScreen",
+	"windowMinWidth": 300,
+	"windowMinHeight": 300,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 627,
+	"markerBreak": 627,
+	"markerFooter": 627,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"AdStatusVArea": {
+					"type": "plugin",
+					"top": 79,
+					"left": 20,
+					"width": 950,
+					"height": 500,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "AdStatusVArea",
+					"pluginAreaKind": "_4D View",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bDone": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 905,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDonelabel": {
+					"type": "text",
+					"top": 56,
+					"left": 893,
+					"width": 72,
+					"height": 13,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Close"
+				},
+				"Format Col": {
+					"type": "button",
+					"top": 8,
+					"left": 10,
+					"width": 93,
+					"height": 22,
+					"dataSource": "bColFmt",
+					"text": "Col Fmt",
+					"class": "Default",
+					"focusable": false,
+					"method": "ObjectMethods/Format Col.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"bPrint": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 835,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Print Selection.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrint.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDonelabel1": {
+					"type": "text",
+					"top": 56,
+					"left": 823,
+					"width": 72,
+					"height": 13,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Print"
+				}
+			}
+		}
+	]
+}

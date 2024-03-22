@@ -1,0 +1,319 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 39,
+	"markerBreak": 39,
+	"markerFooter": 39,
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 524,
+					"height": 37,
+					"fill": "transparent"
+				},
+				"Line": {
+					"type": "line",
+					"top": 17,
+					"left": 83,
+					"height": 24
+				},
+				"Line1": {
+					"type": "line",
+					"top": 17,
+					"left": 252,
+					"height": 24
+				},
+				"Line2": {
+					"type": "line",
+					"top": 17,
+					"left": 302,
+					"height": 24
+				},
+				"Line3": {
+					"type": "line",
+					"top": 17,
+					"left": 352,
+					"height": 24
+				},
+				"Line4": {
+					"type": "line",
+					"top": 17,
+					"left": 402,
+					"height": 24
+				},
+				"Line5": {
+					"type": "line",
+					"top": 17,
+					"left": 452,
+					"height": 24
+				},
+				"Line6": {
+					"type": "line",
+					"top": 14,
+					"left": 1,
+					"width": 524
+				},
+				"Line7": {
+					"type": "line",
+					"top": 17,
+					"left": 525,
+					"height": 24
+				}
+			}
+		},
+		{
+			"objects": {
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 4,
+					"width": 76,
+					"height": 12,
+					"visibility": "selectedRows",
+					"dataSource": "[LSS_DMeter:161]LSS_DMeterDate_d:9",
+					"dataSourceTypeHint": "date",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 19,
+					"left": 85,
+					"width": 164,
+					"height": 12,
+					"visibility": "unselectedRows",
+					"dataSource": "[LSS_DMeter:161]LSS_Location_s:3",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 19,
+					"left": 254,
+					"width": 45,
+					"height": 12,
+					"visibility": "selectedRows",
+					"dataSource": "[LSS_DMeter:161]LSS_A_s:4",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 19,
+					"left": 304,
+					"width": 45,
+					"height": 12,
+					"visibility": "selectedRows",
+					"dataSource": "[LSS_DMeter:161]LSS_B_s:5",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 19,
+					"left": 354,
+					"width": 45,
+					"height": 12,
+					"visibility": "selectedRows",
+					"dataSource": "[LSS_DMeter:161]LSS_C_s:6",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 19,
+					"left": 404,
+					"width": 45,
+					"height": 12,
+					"visibility": "selectedRows",
+					"dataSource": "[LSS_DMeter:161]LSS_D_s:7",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 19,
+					"left": 454,
+					"width": 65,
+					"height": 12,
+					"visibility": "selectedRows",
+					"dataSource": "[LSS_DMeter:161]LSS_Reference_s:8",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 3,
+					"left": 4,
+					"width": 76,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "DATE"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 85,
+					"width": 164,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "LOCATION"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 254,
+					"width": 45,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "A"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 3,
+					"left": 304,
+					"width": 45,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "B"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 3,
+					"left": 354,
+					"width": 45,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "C"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 3,
+					"left": 404,
+					"width": 45,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "D"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 3,
+					"left": 454,
+					"width": 65,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "Reference"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 729,
+					"left": 24,
+					"width": 65,
+					"height": 6,
+					"stroke": "#000000",
+					"class": "Arial5",
+					"text": "LSS_DM (1)1-2015"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 60,
+					"left": 24,
+					"width": 545,
+					"height": 710,
+					"fill": "transparent",
+					"strokeWidth": 2
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,149 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bOKBtn",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 212,
+	"markerBreak": 232,
+	"markerFooter": 252,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onUnload",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 20,
+					"left": 26,
+					"width": 292,
+					"height": 86,
+					"dataSource": "vsDialogTxt",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 112,
+					"left": 109,
+					"width": 132,
+					"height": 16,
+					"dataSource": "vsPassword",
+					"stroke": "#001EFF",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onDisplayDetail",
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 166,
+					"left": 130,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOKBtn": {
+					"type": "button",
+					"top": 166,
+					"left": 232,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bOK",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/bOKBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 225,
+					"left": 232,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bReturn",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

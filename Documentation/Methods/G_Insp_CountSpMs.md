@@ -1,0 +1,1 @@
+2003-11-25 : Created.  2004-03-03 : Changed to count only elements w/ a rating.

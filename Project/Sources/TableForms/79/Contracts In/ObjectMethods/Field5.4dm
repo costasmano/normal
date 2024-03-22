@@ -1,0 +1,1 @@
+[Contracts:79]ApproxRemainingFund:19:=[Contracts:79]TotalEncumbered:16-[Contracts:79]ApproxSpent:17

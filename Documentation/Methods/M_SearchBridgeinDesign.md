@@ -1,0 +1,1 @@
+Created July-2003 : search bridges in [Bridge Design] by BIN and BDEPT  23-Sep-2003 : Adjusted code to use method CreateRandomsetinBrgDesign.

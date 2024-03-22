@@ -1,0 +1,1 @@
+Create July-2003 : Brings up "View Bridge Design" form. This method is called by "M_ListBridgeDesign"  24-Sep-2003 : Added call to Menu BAR(3) for a blank menu.  2004-04-21 : Increased the NewWindow height to 550 from 450.  Added SET WINDOW RECT code.

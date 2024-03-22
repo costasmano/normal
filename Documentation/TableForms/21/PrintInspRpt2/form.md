@@ -1,0 +1,1 @@
+2003-05 : Changed order to Sketches - charts - photos.2003-11-26 : Added Check box (hideable) for printing SpecMem pages; Added declaration of boolean vars.2004-02-12 : Enabled on Deactivate event and added code to keep dialog in front.2005-01-29: ASL: Added check box to print Pontis form.

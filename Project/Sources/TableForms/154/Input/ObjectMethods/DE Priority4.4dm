@@ -1,0 +1,1 @@
+RtgReq_ComboMenu_OM(Self:C308; ->[RatingRequests:154]Status_s:15; ->[RatingRequests:154]StatusDate_d:16)

@@ -1,0 +1,305 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerHeader": 23,
+	"markerBody": 40,
+	"markerBreak": 46,
+	"markerFooter": 46,
+	"events": [
+		"onDragOver",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 21,
+					"left": 2,
+					"width": 491,
+					"height": 19,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": -2,
+					"left": 115,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter1",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": -2,
+					"left": 251,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": -2,
+					"left": 327,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": -2,
+					"left": 403,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter4_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 403,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 407,
+					"width": 85,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "Approved By"
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 407,
+					"width": 85,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_ReportData:118]RPT_ApprovedBy_s:5",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Splitter3_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 327,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 331,
+					"width": 70,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "Approved"
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 331,
+					"width": 70,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_ReportData:118]RPT_Approved_d:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Splitter2_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 251,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 255,
+					"width": 70,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "Received"
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 255,
+					"width": 70,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_ReportData:118]RPT_Received_d:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Splitter1_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 115,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 119,
+					"width": 130,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "Source"
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 119,
+					"width": 130,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_ReportData:118]RPT_Comments_txt:6",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 39,
+					"left": 0,
+					"width": 493,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 69,
+					"left": -2,
+					"width": 1167,
+					"sizingX": "grow"
+				},
+				"Rectangle12": {
+					"type": "rectangle",
+					"top": -4,
+					"left": -2,
+					"width": 498,
+					"height": 47,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 3,
+					"width": 110,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "Report Type"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 3,
+					"width": 110,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_ReportData:118]RPT_ReportType_s:2",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	]
+}

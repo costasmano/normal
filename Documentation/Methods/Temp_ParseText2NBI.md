@@ -1,0 +1,1 @@
+May-2003 : Created to parse NBI data files to tab delimited files. Added messages with counting of records.

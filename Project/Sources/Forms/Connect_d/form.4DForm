@@ -1,0 +1,184 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Connect",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 423,
+					"height": 219,
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 81,
+					"left": 79,
+					"width": 81,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Username"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 104,
+					"left": 79,
+					"width": 81,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Password"
+				},
+				"vIPAddress_T1": {
+					"type": "input",
+					"top": 49,
+					"left": 168,
+					"width": 159,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "clone_IPAddress_txt",
+					"class": "Default",
+					"fill": "#FFFFFF",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vUsername_T1": {
+					"type": "input",
+					"top": 81,
+					"left": 168,
+					"width": 159,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "Username_txt",
+					"class": "Default",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vPassword_T1": {
+					"type": "input",
+					"top": 104,
+					"left": 168,
+					"width": 159,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "Password_txt",
+					"class": "Default",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 49,
+					"left": 98,
+					"width": 62,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "IP:{:Port}"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 138,
+					"left": 284,
+					"width": 90,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"text": "OK",
+					"class": "Default",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 138,
+					"left": 184,
+					"width": 90,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 26,
+					"left": 78,
+					"width": 198,
+					"height": 16,
+					"text": "4D Server Address\t"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

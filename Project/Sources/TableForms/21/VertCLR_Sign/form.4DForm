@@ -1,0 +1,513 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture2": {
+					"type": "picture",
+					"top": 30,
+					"left": 203,
+					"width": 117,
+					"height": 117,
+					"picture": "/RESOURCES/Images/library/BMS VertCLRSign.png"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 147,
+					"left": 9,
+					"width": 441,
+					"height": 100,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BMS VertCLRSignItems.png"
+				},
+				"VERTCL_Feet_txt": {
+					"type": "input",
+					"top": 80,
+					"left": 225,
+					"width": 24,
+					"height": 16,
+					"dataSource": "VERTCL_Feet_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_Inches_txt": {
+					"type": "input",
+					"top": 80,
+					"left": 269,
+					"width": 24,
+					"height": 16,
+					"dataSource": "VERTCL_Inches_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_1_txt": {
+					"type": "input",
+					"top": 151,
+					"left": 250,
+					"width": 19,
+					"height": 16,
+					"dataSource": "VERTCL_1_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt": {
+					"type": "input",
+					"top": 174,
+					"left": 250,
+					"width": 19,
+					"height": 16,
+					"dataSource": "VERTCL_2_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt10": {
+					"type": "input",
+					"top": 203,
+					"left": 134,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_B1_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt1": {
+					"type": "input",
+					"top": 203,
+					"left": 208,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_B2_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt2": {
+					"type": "input",
+					"top": 203,
+					"left": 281,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_B3_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt3": {
+					"type": "input",
+					"top": 203,
+					"left": 354,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_B4_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt4": {
+					"type": "input",
+					"top": 203,
+					"left": 427,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_B5_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt5": {
+					"type": "input",
+					"top": 227,
+					"left": 134,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_A1_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt6": {
+					"type": "input",
+					"top": 227,
+					"left": 208,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_A2_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt9": {
+					"type": "input",
+					"top": 227,
+					"left": 281,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_A3_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt8": {
+					"type": "input",
+					"top": 227,
+					"left": 354,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_A4_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_NumPosts_txt7": {
+					"type": "input",
+					"top": 227,
+					"left": 427,
+					"width": 17,
+					"height": 16,
+					"dataSource": "VERTCL_A5_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"X; \"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 266,
+					"left": 136,
+					"width": 95,
+					"height": 24,
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "CANCEL",
+					"class": "Label12Bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 266,
+					"left": 265,
+					"width": 95,
+					"height": 24,
+					"dataSource": "Button1",
+					"action": "accept",
+					"text": "OK",
+					"class": "Label12Bold",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 145,
+					"width": 229,
+					"height": 16,
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "VERIFY CLEARANCE VALUES"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 80,
+					"left": 252,
+					"width": 13,
+					"height": 16,
+					"class": "List12Plain",
+					"text": "'"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 80,
+					"left": 298,
+					"width": 13,
+					"height": 16,
+					"class": "List12Plain",
+					"text": "\""
+				},
+				"VERTCL_Use54_rb": {
+					"type": "radio",
+					"top": 70,
+					"left": 3,
+					"width": 200,
+					"height": 18,
+					"dataSource": "VERTCL_Use54_rb",
+					"text": "Use Item 54",
+					"class": "List12Plain",
+					"focusable": false,
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/VERTCL_Use54_rb.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"VERTCL_Use53_rb": {
+					"type": "radio",
+					"top": 100,
+					"left": 3,
+					"width": 200,
+					"height": 18,
+					"dataSource": "VERTCL_Use53_rb",
+					"text": "Use Item 53",
+					"class": "List12Plain",
+					"focusable": false,
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/VERTCL_Use53_rb.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"VERTCL_Use54_rb",
+				"VERTCL_Use53_rb"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

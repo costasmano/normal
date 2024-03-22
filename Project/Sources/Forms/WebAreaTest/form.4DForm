@@ -1,0 +1,241 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Web Area": {
+					"type": "webArea",
+					"top": 84,
+					"left": 26,
+					"width": 800,
+					"height": 600,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "Web Area_url",
+					"progressSource": "Web Area_progress",
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"borderStyle": "none"
+				},
+				"Field": {
+					"type": "input",
+					"top": 63,
+					"left": 26,
+					"width": 603,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "Web Area_url",
+					"class": "Label12Plain",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 5,
+					"left": 26,
+					"width": 95,
+					"height": 23,
+					"class": "Label10Plain",
+					"focusable": false,
+					"text": "GetMapDataTo4D",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Button": {
+					"type": "button",
+					"top": 5,
+					"left": 123,
+					"width": 72,
+					"height": 23,
+					"class": "Label10Plain",
+					"focusable": false,
+					"text": "zoom bounds",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/3D Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Button1": {
+					"type": "button",
+					"top": 5,
+					"left": 207,
+					"width": 72,
+					"height": 23,
+					"class": "Label10Plain",
+					"focusable": false,
+					"text": "Reload",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/3D Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Button2": {
+					"type": "button",
+					"top": 5,
+					"left": 287,
+					"width": 72,
+					"height": 23,
+					"class": "Label10Plain",
+					"focusable": false,
+					"text": "Generate",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/3D Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 5,
+					"left": 437,
+					"width": 94,
+					"height": 23,
+					"class": "Label10Plain",
+					"focusable": false,
+					"text": "Print",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DateEntry": {
+					"type": "subform",
+					"top": 8,
+					"left": 536,
+					"width": 92,
+					"height": 25,
+					"dataSource": "vDate",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateEntry",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/DateEntry.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 10,
+					"left": 630,
+					"width": 200,
+					"height": 56,
+					"dataSource": "vRptTime",
+					"dataSourceTypeHint": "number",
+					"detailForm": "TimeDisplayLCD",
+					"focusable": false,
+					"hideFocusRing": true,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Subform1.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"3D Button3": {
+					"type": "button",
+					"top": 5,
+					"left": 361,
+					"width": 72,
+					"height": 23,
+					"class": "Label10Plain",
+					"focusable": false,
+					"text": "load pdf",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/3D Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Button4": {
+					"type": "button",
+					"top": 27,
+					"left": 361,
+					"width": 72,
+					"height": 23,
+					"class": "Label10Plain",
+					"focusable": false,
+					"text": "load pdf",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/3D Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {
+				"objects": [
+					"DateEntry"
+				]
+			},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

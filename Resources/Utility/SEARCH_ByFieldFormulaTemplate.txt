@@ -1,0 +1,28 @@
+﻿{
+	"mainTable": <!--#4DEVAL SEARCH_Table-->,
+	"queryDestination": 1,
+	"version": 3,
+	"ja": false,
+	"lines": [
+		{
+			"tableNumber": "<!--#4DEVAL SEARCH_Table-->",
+			"fieldNumber": "<!--#4DEVAL SEARCH_Field-->",
+			"criterion": "1",
+			"oneBox": "<!--#4DTEXT SEARCH_Value{1}-->"
+		},<!--#4DEVAL $N:=size of array(SEARCH_Value)--><!--#4DEVAL $I:=2--><!--#4DLOOP ($I<$N)-->
+		{
+			"lineOperator": 2,
+			"tableNumber": "<!--#4DEVAL SEARCH_Table-->",
+			"fieldNumber": "<!--#4DEVAL SEARCH_Field-->",
+			"criterion": "1",
+			"oneBox": "<!--#4DTEXT SEARCH_Value{$I}-->"
+		},<!--#4DEVAL $I:=$I+1--><!--#4DENDLOOP-->
+		{
+			"lineOperator": 2,
+			"tableNumber": "<!--#4DEVAL SEARCH_Table-->",
+			"fieldNumber": "<!--#4DEVAL SEARCH_Field-->",
+			"criterion": "1",
+			"oneBox": "<!--#4DTEXT SEARCH_Value{$N}-->"
+		}
+	]
+}

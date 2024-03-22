@@ -1,0 +1,1 @@
+2003-11-26 : Changed vLastName to (A50).

@@ -1,0 +1,4 @@
+M_GetRegion
+INV_DisplayInvInspections(True:C214)
+INV_ReDoSort
+REDRAW WINDOW:C456

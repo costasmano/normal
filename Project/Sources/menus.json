@@ -1,0 +1,1783 @@
+{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Menu Bar #1",
+			"items": [
+				{
+					"link": 3114
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 18558
+				},
+				{
+					"link": 13128
+				},
+				{
+					"link": 19613
+				},
+				{
+					"link": 24763
+				},
+				{
+					"link": 6243
+				}
+			],
+			"picture": "/RESOURCES/Images/library/Menu bar 1.jpg"
+		},
+		{
+			"id": 2,
+			"name": "BridgeListMenu",
+			"items": [
+				{
+					"link": 31257
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 18558
+				},
+				{
+					"link": 2558
+				},
+				{
+					"link": 24873
+				},
+				{
+					"link": 7542
+				},
+				{
+					"link": 20125
+				},
+				{
+					"link": 22539
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "BlankMenu",
+			"items": [
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "ConsltRtgMenu",
+			"items": [
+				{
+					"link": 19067
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 24145
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "ConsltInspMenu",
+			"items": [
+				{
+					"link": 19067
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 8914
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "InspRtgConsltContrMenu",
+			"items": [
+				{
+					"link": 19067
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 25728
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "MaintConsltContrMenu",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "WorkHours",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "BridgeProgram",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 12678
+				},
+				{
+					"link": 30196
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "ProjectDetail",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 24530
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "LB_Custom",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 32000
+				},
+				{
+					"link": 32001
+				}
+			]
+		},
+		{
+			"id": 12,
+			"name": "User_Mode",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "RtgReqMenu",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 32004
+				}
+			]
+		},
+		{
+			"id": 14,
+			"name": "ScourPOAMenu",
+			"items": [
+				{
+					"link": 15090
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 32005
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "InspRtgConsltContrMenu1",
+			"items": [
+				{
+					"link": 32002
+				},
+				{
+					"link": 32003
+				},
+				{
+					"link": 32006
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 3114,
+			"title": ":79,1",
+			"items": [
+				{
+					"title": "Print All…",
+					"method": "M_PrintRecords",
+					"shortcutAccel": true,
+					"shortcutKey": "P"
+				},
+				{
+					"title": "Preferences…",
+					"method": "M_HandlePrefs"
+				},
+				{
+					"title": "Data Distribution…",
+					"method": "M_HandleTrans"
+				},
+				{
+					"title": "Password…",
+					"method": "M_ChgPassword",
+					"startNewProcess": true
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Export Bridge Data",
+					"method": "M_Export"
+				},
+				{
+					"title": "Import Bridge Data",
+					"enabled": false,
+					"method": "M_Import"
+				},
+				{
+					"title": "Export NBI Data",
+					"method": "ExportNBI"
+				},
+				{
+					"title": "Import NBI Data",
+					"method": "M_ImportNBI"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Update Project Data ODBC",
+					"method": "ut_PRJCtrlRetrieveProjectData",
+					"startNewProcess": true
+				},
+				{
+					"title": "Update Design Contract Amounts",
+					"method": "ut_PRJRetrieveDesignContractAmt"
+				},
+				{
+					"title": "Update Const Cont Amounts",
+					"method": "ut_PRJRetrieveConstructionAmt"
+				},
+				{
+					"title": "Item 21",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "MSC",
+					"method": "utl_OpenMSC"
+				},
+				{
+					"title": "Item 19",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Fill Empty Data File",
+					"method": "SQL_CreateNewDB",
+					"startNewProcess": true
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quit",
+					"method": "M_Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"startNewProcess": true,
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 18558,
+			"title": "Enter",
+			"items": [
+				{
+					"title": "District 1",
+					"enabled": false,
+					"method": "M_DISTRICT1",
+					"shortcutAccel": true,
+					"shortcutKey": "1"
+				},
+				{
+					"title": "District 2",
+					"enabled": false,
+					"method": "M_DISTRICT2",
+					"shortcutAccel": true,
+					"shortcutKey": "2"
+				},
+				{
+					"title": "District 3",
+					"enabled": false,
+					"method": "M_DISTRICT3",
+					"shortcutAccel": true,
+					"shortcutKey": "3"
+				},
+				{
+					"title": "District 4",
+					"enabled": false,
+					"method": "M_DISTRICT4",
+					"shortcutAccel": true,
+					"shortcutKey": "4"
+				},
+				{
+					"title": "District 5",
+					"enabled": false,
+					"method": "M_DISTRICT5",
+					"shortcutAccel": true,
+					"shortcutKey": "5"
+				},
+				{
+					"title": "District 6",
+					"enabled": false,
+					"method": "M_DISTRICT6",
+					"shortcutAccel": true,
+					"shortcutKey": "6"
+				},
+				{
+					"title": "DCR",
+					"enabled": false,
+					"method": "M_MDC"
+				},
+				{
+					"title": "MTA",
+					"enabled": false,
+					"method": "M_MTA"
+				},
+				{
+					"title": "MBTA",
+					"enabled": false,
+					"method": "M_MBTA"
+				},
+				{
+					"title": "MassPort",
+					"enabled": false,
+					"method": "M_MPA"
+				},
+				{
+					"title": "Other agencies…",
+					"enabled": false,
+					"method": "M_OtherAgc"
+				},
+				{
+					"title": "Saved selection…",
+					"method": "M_LoadSelection"
+				},
+				{
+					"title": "All records",
+					"enabled": false,
+					"method": "M_AllBridges",
+					"shortcutAccel": true,
+					"shortcutKey": "A"
+				},
+				{
+					"title": "Item 20",
+					"isSeparator": true
+				},
+				{
+					"title": "Ancillary Structures",
+					"method": "m_ListInventory"
+				},
+				{
+					"title": "Tunnel Information",
+					"enabled": false,
+					"method": "m_DisplayTINs",
+					"startNewProcess": true
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Personnel",
+					"enabled": false,
+					"method": "M_Personnel"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Project Detail",
+					"method": "m_DisplayProjectDetail"
+				},
+				{
+					"title": "Bridge Program",
+					"method": "M_ListBridgeProgram"
+				},
+				{
+					"title": "Design Contracts",
+					"method": "M_ListDesignContracts"
+				}
+			]
+		},
+		{
+			"link": 13128,
+			"title": "Tools",
+			"items": [
+				{
+					"title": "Window Palette",
+					"method": "M_FilesPalette"
+				},
+				{
+					"title": "Metric Converter",
+					"method": "M_MetricConv"
+				},
+				{
+					"title": "Item 8",
+					"isSeparator": true
+				},
+				{
+					"title": "Open Mass GeoDOT apps",
+					"startNewProcess": true
+				},
+				{
+					"title": "MaDOT Bridge Insp Manual 2015",
+					"method": "ut_openBrInspManual2015"
+				},
+				{
+					"title": "Item 9",
+					"isSeparator": true
+				},
+				{
+					"title": "Clear Saved Password",
+					"method": "ut_ClearSavedPassword",
+					"startNewProcess": true
+				},
+				{
+					"title": "Find Missing BDEPTs",
+					"method": "SIA_FindMissingBDEPTs"
+				},
+				{
+					"title": "Check E-Mail Server",
+					"method": "ut_LookupSMTPserver"
+				},
+				{
+					"title": "Stack all Windows",
+					"method": "UI_StackWindows",
+					"startNewProcess": true
+				}
+			]
+		},
+		{
+			"link": 19613,
+			"title": "Data",
+			"items": [
+				{
+					"title": "Initialize FO and SD Fields",
+					"method": "M_InitFOSDField"
+				}
+			]
+		},
+		{
+			"link": 24763,
+			"title": "Special",
+			"items": [
+				{
+					"title": "Execute transfer",
+					"method": "M_Exec Transfer",
+					"startNewProcess": true
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Review Pending Inspections",
+					"method": "M_ReviewInspections"
+				},
+				{
+					"title": "Review Inventory Photos",
+					"method": "M_INV_Review"
+				},
+				{
+					"title": "Review Work Hour Estimates",
+					"fontStyle": "italic",
+					"method": "M_ListWorkHours"
+				},
+				{
+					"title": "Review Scour POA",
+					"method": "SCPOA_ListPOAs"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Consultant Ratings",
+					"method": "M_ListConsRating"
+				},
+				{
+					"title": "Consultant Inspections",
+					"method": "M_ListConsInsp"
+				},
+				{
+					"title": "Rating Requests",
+					"method": "RtgReq_DisplayList"
+				},
+				{
+					"title": "Consultant Insp-Rtg Contracts",
+					"method": "M_ListContracts"
+				},
+				{
+					"title": "Item 22",
+					"isSeparator": true
+				},
+				{
+					"title": "Preservation Assignments",
+					"fontStyle": "italic",
+					"method": "PRV_ListAssignments"
+				},
+				{
+					"title": "Preservation Contracts",
+					"fontStyle": "italic",
+					"method": "M_ListContractMaintenance"
+				},
+				{
+					"title": "Item 21",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "District Maintenance Contracts",
+					"fontStyle": "italic",
+					"method": "M_ListDistrMaint"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Bridge Design",
+					"method": "M_ListBridgeDesign"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Consultant Addresses",
+					"method": "M_ListConsAddress"
+				},
+				{
+					"title": "Town Addresses",
+					"method": "M_ListTownAddress"
+				},
+				{
+					"title": "Item 24",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Administrative Tasks",
+					"method": "M_LoadAdmFunctions",
+					"startNewProcess": true
+				}
+			]
+		},
+		{
+			"link": 6243,
+			"title": "Reports",
+			"items": [
+				{
+					"title": "Bridge Condition",
+					"method": "M_CondRep",
+					"startNewProcess": true
+				},
+				{
+					"title": "Out of Frequency",
+					"method": "M_OutofFreqRep"
+				},
+				{
+					"title": "SD History Report",
+					"method": "SD_ControlReport",
+					"startNewProcess": true
+				},
+				{
+					"title": "Scour Report",
+					"method": "M_ScourReport"
+				}
+			]
+		},
+		{
+			"link": 31257,
+			"title": ":79,1",
+			"items": [
+				{
+					"title": "Print All…",
+					"method": "M_PrintRecords",
+					"shortcutAccel": true,
+					"shortcutKey": "P"
+				},
+				{
+					"title": "Preferences…",
+					"method": "M_HandlePrefs"
+				},
+				{
+					"title": "Data Distribution…",
+					"method": "M_HandleTrans"
+				},
+				{
+					"title": "Password…",
+					"method": "M_ChgPassword"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Export Bridge Data",
+					"method": "M_Export"
+				},
+				{
+					"title": "Import Bridge Data",
+					"enabled": false,
+					"method": "M_Import"
+				},
+				{
+					"title": "Export NBI Data",
+					"method": "ExportNBI"
+				},
+				{
+					"title": "Export NBE Data",
+					"method": "PON_ExportFHWANBE"
+				},
+				{
+					"title": "Import NBI Data",
+					"method": "M_ImportNBI"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quit",
+					"method": "M_Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"startNewProcess": true,
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 2558,
+			"title": "Records",
+			"items": [
+				{
+					"title": "Show All",
+					"method": "M_GetRegion",
+					"shortcutAccel": true,
+					"shortcutKey": "G"
+				},
+				{
+					"title": "Show Subset",
+					"method": "M_ShowSubset",
+					"shortcutAccel": true,
+					"shortcutKey": "H"
+				},
+				{
+					"title": "Omit Subset",
+					"method": "M_OmitSubset"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Save current selection",
+					"method": "M_SaveSet"
+				},
+				{
+					"title": "Load a saved selection",
+					"method": "M_LoadSet"
+				},
+				{
+					"title": "Add a saved selection",
+					"method": "M_AddSet"
+				},
+				{
+					"title": "Subtract a saved selection",
+					"method": "M_SubtractSet"
+				},
+				{
+					"title": "Intersect with a saved selection",
+					"method": "M_IntersectSet"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Search by ID…",
+					"method": "M_SearchBridge",
+					"shortcutAccel": true,
+					"shortcutKey": "F"
+				},
+				{
+					"title": "Search…",
+					"method": "M_SearchSel"
+				},
+				{
+					"title": "Easy Search",
+					"method": "M_EZsearch",
+					"shortcutAccel": true,
+					"shortcutKey": "S"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Sort by BDEPT",
+					"method": "M_SortBdept",
+					"shortcutAccel": true,
+					"shortcutKey": "T"
+				},
+				{
+					"title": "Sort…",
+					"method": "M_SortEditor"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "NBIS Bridges only",
+					"method": "M_GetNBIS",
+					"parameter": "NBIS"
+				},
+				{
+					"title": "Non–NBIS Bridges",
+					"method": "M_GetNBIS",
+					"parameter": "NONNBIS"
+				},
+				{
+					"title": "MDOT NBIS Bridges only",
+					"method": "M_GetNBIS",
+					"parameter": "MHDNBI"
+				},
+				{
+					"title": "MDOT non-NBIS Bridges only",
+					"method": "M_GetNBIS",
+					"parameter": "MHDNONNBI"
+				},
+				{
+					"title": "On NHS",
+					"method": "M_GetNBIS",
+					"parameter": "ONNHS"
+				},
+				{
+					"title": "Off NHS",
+					"method": "M_GetNBIS",
+					"parameter": "OFFNHS"
+				},
+				{
+					"title": "On System (Item 26)",
+					"method": "M_GetNBIS",
+					"parameter": "ONSYSTEM"
+				},
+				{
+					"title": "Off System (item 26)",
+					"method": "M_GetNBIS",
+					"parameter": "OFFSYSTEM"
+				},
+				{
+					"title": "Structurally Deficient",
+					"method": "M_GetNBIS",
+					"parameter": "SD"
+				},
+				{
+					"title": "Functionally Obsolete",
+					"method": "M_GetNBIS",
+					"parameter": "FO"
+				},
+				{
+					"title": "Eligible Bridges",
+					"method": "M_GetNBIS",
+					"parameter": "ELIGIBLE"
+				},
+				{
+					"title": "Not Eligible Bridges",
+					"method": "M_GetNBIS",
+					"parameter": "NOTELIGIBLE"
+				},
+				{
+					"title": "Carrying highway traffic only",
+					"method": "M_GetNBIS",
+					"parameter": "CARRYHWY"
+				},
+				{
+					"title": "Tunnel Structures",
+					"method": "M_GetNBIS",
+					"parameter": "TUNNELS"
+				},
+				{
+					"title": "Carrying RailRoad Only",
+					"method": "M_GetNBIS",
+					"parameter": "CARRYRAIL"
+				},
+				{
+					"title": "Bridges with Stairs",
+					"method": "M_GetNBIS",
+					"parameter": "STAIRS"
+				},
+				{
+					"title": "Bridges only",
+					"method": "M_GetNBIS",
+					"parameter": "BRIDGESONLY"
+				},
+				{
+					"title": "State only Master List",
+					"method": "M_GetNBIS",
+					"parameter": "STATEONLYMASTER"
+				},
+				{
+					"title": "MHS Funded Bridges",
+					"method": "M_GetNBIS",
+					"parameter": "MHSFUND"
+				},
+				{
+					"title": "Choose a random set",
+					"method": "M_GetNBIS",
+					"parameter": "RANDOM"
+				},
+				{
+					"title": "Search from text file...",
+					"method": "M_LoadBINfile"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Schedule Inspection...",
+					"method": "M_InspSchedule"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Search by Element Deficiency",
+					"method": "M_SearchDefElement"
+				},
+				{
+					"title": "Search for Critical Findings",
+					"method": "M_SearchCritFindings"
+				},
+				{
+					"title": "Search by Pontis Elements",
+					"method": "M_SearchPontisElmts"
+				},
+				{
+					"title": "Search by NBEs",
+					"method": "M_searchNBEElmts"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Create BIN",
+					"method": "M_NEW_BIN"
+				}
+			]
+		},
+		{
+			"link": 24873,
+			"title": "Reports",
+			"items": [
+				{
+					"title": "Quick Report…",
+					"method": "M_QuickReport"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Master List",
+					"method": "M_MasterList"
+				},
+				{
+					"title": "Regional Planning Comm. Rpt.",
+					"method": "M_RPC_Report"
+				},
+				{
+					"title": "Pontis Inspection Reports",
+					"method": "M_PontisReports"
+				},
+				{
+					"title": "Bridge Status Report",
+					"method": "M_GenerateCondRep"
+				},
+				{
+					"title": "Bridge Program",
+					"method": "PRJ_BPGM_RelateToBINs"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Stored Quick Reports",
+					"method": "M_LoadReportTemplates"
+				}
+			]
+		},
+		{
+			"link": 7542,
+			"title": "Tools",
+			"items": [
+				{
+					"title": "Window Palette",
+					"method": "M_FilesPalette"
+				},
+				{
+					"title": "Find Missing BDEPTs",
+					"method": "SIA_FindMissingBDEPTs",
+					"parameter": "ONE"
+				},
+				{
+					"title": "Metric Converter",
+					"method": "M_MetricConv"
+				},
+				{
+					"title": "Generate KML file",
+					"method": "MAP_BuildContent"
+				},
+				{
+					"title": "Generate GeoJSON file to use in GeoDOT"
+				},
+				{
+					"title": "Item 6",
+					"isSeparator": true
+				},
+				{
+					"title": "MaDOT Bridge Insp Manual 2015",
+					"method": "ut_openBrInspManual2015"
+				},
+				{
+					"title": "Open Mass GeoDOT apps",
+					"method": "MAP_OpenSite",
+					"startNewProcess": true
+				}
+			]
+		},
+		{
+			"link": 20125,
+			"title": "Data",
+			"items": [
+				{
+					"title": "Recalculate AASHTO",
+					"method": "RecalcAASHTO"
+				},
+				{
+					"title": "Recalc Scour Categories",
+					"method": "SC_CalcScourCategories"
+				},
+				{
+					"title": "Update Item 75 coding",
+					"enabled": false,
+					"method": "M_SetItem75"
+				},
+				{
+					"title": "Import LatLon from KML",
+					"method": "MAP_UpdatePosFromKML"
+				}
+			]
+		},
+		{
+			"link": 22539,
+			"title": "Special",
+			"items": [
+				{
+					"title": "Review Changes unsent",
+					"method": "M_ReviewChanges"
+				},
+				{
+					"title": "Execute transfer",
+					"method": "M_Exec Transfer"
+				},
+				{
+					"title": "Review Changes sent",
+					"method": "M_ReviewLogged"
+				},
+				{
+					"title": "Item 12",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Download Missing Inspections",
+					"method": "ut_DwnldMissingINSPForBridges"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Remove selection from NBI",
+					"method": "M_TakeOffNBI"
+				},
+				{
+					"title": "Put selection back on NBI",
+					"method": "M_PutBackNBI"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": "Interoffice Memo",
+					"method": "M_InterOfficeMemo"
+				},
+				{
+					"title": "Letter to Town",
+					"method": "M_LetterToTown"
+				},
+				{
+					"title": "Request",
+					"method": "M_Request"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Copy BIN Request",
+					"method": "Bridge_ControlCopyBINRquest"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true
+				},
+				{
+					"title": "Load SU / EV rating loads",
+					"method": "RatRep_LoadSU_EV_data"
+				}
+			]
+		},
+		{
+			"link": 19067,
+			"title": "File",
+			"items": [
+				{
+					"title": "Print All…",
+					"method": "M_PrintRecords_CsltRating"
+				},
+				{
+					"title": "Preferences…",
+					"method": "M_HandlePrefs"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quit",
+					"method": "M_Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"startNewProcess": true,
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 24145,
+			"title": "Utilities",
+			"items": [
+				{
+					"title": "Load BIN from text file",
+					"method": "M_LoadBIN_CsltRating"
+				},
+				{
+					"title": "Save BIN to text file",
+					"method": "M_SaveBIN_CsltRating"
+				},
+				{
+					"title": "Assignment List for Cslt Letter",
+					"method": "M_SaveFourColumns"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": "Req for Fee Proposal Letter",
+					"method": "M_WRT_CsltRating_ReqFee"
+				},
+				{
+					"title": "Notice to Proceed Letter",
+					"method": "M_WRT_CsltRating_NTP"
+				},
+				{
+					"title": "Transmittal to In-House",
+					"method": "M_WRT_IOMcover_inhouse"
+				},
+				{
+					"title": "Transmittal to Consultant",
+					"method": "M_WRT_IOMcover_cslt"
+				},
+				{
+					"title": "Notice of Completion",
+					"method": "M_WRT_CsltRating_Complete"
+				},
+				{
+					"title": "Notice of Completion to DPM",
+					"method": "M_WRT_CsltRating_Compl_DPM"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true
+				},
+				{
+					"title": "Copy Negotiated Cost Data from Excel",
+					"method": "NegotiatedDataToAssignmnt"
+				},
+				{
+					"title": "Copy Actual Cost Data from Excel",
+					"method": "ActualDataToAssignmnt"
+				},
+				{
+					"title": "Item 2",
+					"isSeparator": true
+				},
+				{
+					"title": "Create GeoJSON file to use in Mass GeoDOT apps",
+					"method": "MAP_ConsAssignmentsGeoJSON"
+				}
+			]
+		},
+		{
+			"link": 8914,
+			"title": "Utilities",
+			"items": [
+				{
+					"title": "Req for Fee Proposal Letter",
+					"method": "M_WRT_CsltInsp_ReqFee"
+				},
+				{
+					"title": "Notice to Proceed Letter",
+					"method": "M_WRT_CsltInsp_NTP"
+				},
+				{
+					"title": "Inspection Report Review Memo",
+					"method": "M_WRT_CsltInsp_Review"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": "Complex - Req for Fee Proposal",
+					"method": "M_WRT_CsltInsp_ComplexReqFee",
+					"parameter": "WPtemplate_CsltInsp_ReqFeeCompl"
+				},
+				{
+					"title": "Complex - Notice to Proceed",
+					"method": "M_WRT_CsltInsp_ComplexNTP",
+					"parameter": "WPtemplate_CsltInsp_ComplexNTP"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true
+				},
+				{
+					"title": "NonNBI - Req for Fee Proposal",
+					"method": "M_WRT_CsltInsp_ComplexReqFee",
+					"parameter": "WPtemplate_CsltInsp_ReqFeeBRI"
+				},
+				{
+					"title": "NonNBI - Notice to Proceed",
+					"method": "M_WRT_CsltInsp_ComplexNTP",
+					"parameter": "WPtemplate_CsltInsp_BRINTP"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true
+				},
+				{
+					"title": "Copy Negotiated Cost Data from Excel",
+					"method": "NegotiatedDataToAssignmnt"
+				},
+				{
+					"title": "Copy Actual Cost Data From Excel",
+					"method": "ActualDataToAssignmnt"
+				},
+				{
+					"title": "Item 2",
+					"isSeparator": true
+				},
+				{
+					"title": "Create GeoJSON file to use in Mass GeoDOT apps"
+				}
+			]
+		},
+		{
+			"link": 25728,
+			"title": "Reports",
+			"items": [
+				{
+					"title": "Cost Summary",
+					"method": "M_ContractRpt_Cost"
+				},
+				{
+					"title": "Assignment Summary",
+					"method": "M_ContractRpt_Assignment"
+				},
+				{
+					"title": "Payment-Invoice Summary",
+					"method": "M_ContractRpt_Invoice"
+				}
+			]
+		},
+		{
+			"link": 15090,
+			"title": "File",
+			"items": [
+				{
+					"title": "Preferences...",
+					"method": "M_HandlePrefs"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quit",
+					"method": "M_Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"startNewProcess": true,
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 12678,
+			"title": "Search-Report",
+			"items": [
+				{
+					"title": "Show All Records",
+					"method": "PRJ_BPGM_ShowAll",
+					"shortcutAccel": true,
+					"shortcutKey": "G"
+				},
+				{
+					"title": "Show Subset",
+					"method": "PRJ_BPGM_ShowSubSet",
+					"shortcutAccel": true,
+					"shortcutKey": "H"
+				},
+				{
+					"title": "Omit Subset",
+					"method": "PRJ_BPGM_OmitSubset"
+				},
+				{
+					"title": "Custom Search ...",
+					"method": "PRJ_BPGM_CustomSearch",
+					"shortcutAccel": true,
+					"shortcutKey": "F"
+				},
+				{
+					"title": "Search ...",
+					"method": "PRJ_BPGM_Search",
+					"shortcutAccel": true,
+					"shortcutKey": "S"
+				},
+				{
+					"title": "Sort ...",
+					"method": "PRJ_BPGM_OrderBy",
+					"shortcutAccel": true,
+					"shortcutKey": "T"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Save Set",
+					"method": "PRJ_SaveSet"
+				},
+				{
+					"title": "Load Set",
+					"method": "PRJ_LoadSet",
+					"parameter": "LOAD"
+				},
+				{
+					"title": "Add Set",
+					"method": "PRJ_AddSet"
+				},
+				{
+					"title": "Subtract Set",
+					"method": "PRJ_SubtractSet"
+				},
+				{
+					"title": "Intersect Set",
+					"method": "PRJ_IntersectSet"
+				},
+				{
+					"title": "Item 11",
+					"isSeparator": true
+				},
+				{
+					"title": "Quick Report ...",
+					"method": "PRJ_BPGM_QuickRpt",
+					"shortcutAccel": true,
+					"shortcutKey": "R"
+				},
+				{
+					"title": "Print Selection",
+					"method": "PRJ_BPGM_PrintSelection",
+					"shortcutAccel": true,
+					"shortcutKey": "P"
+				}
+			]
+		},
+		{
+			"link": 30196,
+			"title": ":79,6",
+			"items": [
+				{
+					"title": ":131,27",
+					"enabled": false,
+					"shortcutAccel": true,
+					"shortcutKey": "Y",
+					"action": "design"
+				},
+				{
+					"title": ":131,28",
+					"enabled": false,
+					"shortcutAccel": true,
+					"shortcutKey": "U",
+					"action": "userMode"
+				},
+				{
+					"title": ":131,29",
+					"enabled": false,
+					"state": "checked",
+					"shortcutAccel": true,
+					"shortcutKey": "I",
+					"action": "application"
+				}
+			]
+		},
+		{
+			"link": 24530,
+			"title": "Search-Report",
+			"items": [
+				{
+					"title": "Save Set",
+					"method": "PRJ_SaveSet"
+				},
+				{
+					"title": "Load Set",
+					"method": "PRJ_LoadSet",
+					"parameter": "LOAD"
+				},
+				{
+					"title": "Add Set",
+					"method": "PRJ_AddSet"
+				},
+				{
+					"title": "Subtract Set",
+					"method": "PRJ_SubtractSet"
+				},
+				{
+					"title": "Intersect Set",
+					"method": "PRJ_IntersectSet"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Custom Find ...",
+					"method": "PRJ_DET_CustomSearch",
+					"shortcutAccel": true,
+					"shortcutKey": "F"
+				}
+			]
+		},
+		{
+			"link": 32006,
+			"title": "Reports",
+			"items": [
+				{
+					"title": "Cost Summary",
+					"method": "M_ContractRpt_Cost"
+				},
+				{
+					"title": "Assignment Summary",
+					"method": "M_ContractRpt_Assignment"
+				},
+				{
+					"title": "Payment-Invoice Summary",
+					"method": "M_ContractRpt_Invoice"
+				}
+			]
+		},
+		{
+			"link": 32003,
+			"title": ":xliff:CommonMenuEdit",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemUndo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemCut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:CommonMenuItemCopy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:CommonMenuItemPaste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:CommonMenuItemClear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:CommonMenuItemSelectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemShowClipboard",
+					"action": "showClipboard"
+				}
+			]
+		},
+		{
+			"link": 32002,
+			"title": ":79,1",
+			"items": [
+				{
+					"title": "Print All…",
+					"method": "M_PrintRecords_CsltRating"
+				},
+				{
+					"title": "Preferences…",
+					"method": "M_HandlePrefs"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quit",
+					"method": "M_Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"startNewProcess": true,
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 33000,
+			"title": ":xliff:CommonMenuEdit",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemUndo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemCut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:CommonMenuItemCopy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:CommonMenuItemPaste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:CommonMenuItemClear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:CommonMenuItemSelectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemShowClipboard",
+					"action": "showClipboard"
+				}
+			]
+		},
+		{
+			"link": 32000,
+			"title": "Records",
+			"items": [
+				{
+					"title": "Show All",
+					"method": "LB_ShowAll"
+				},
+				{
+					"title": "Query",
+					"method": "LB_QuerySelection"
+				},
+				{
+					"title": "Sort",
+					"method": "LB_SortSelection"
+				},
+				{
+					"title": "Show Subset",
+					"method": "LB_ShowSelection"
+				},
+				{
+					"title": "Omit Subset",
+					"method": "LB_OmitSelection"
+				},
+				{
+					"title": "Item 4",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Save current Selection",
+					"method": "LB_SaveSet"
+				},
+				{
+					"title": "Load a saved selection",
+					"method": "LB_LoadSet"
+				},
+				{
+					"title": "Add a saved selection",
+					"method": "LB_AddToSet"
+				},
+				{
+					"title": "Substract a saved selection",
+					"method": "LB_SubtractSet"
+				},
+				{
+					"title": "Intersect with a saved selection",
+					"method": "LB_IntersectSet"
+				}
+			]
+		},
+		{
+			"link": 32001,
+			"title": "Reports",
+			"items": [
+				{
+					"title": "Quick report",
+					"method": "LB_Quickreport"
+				},
+				{
+					"title": "Stored quick report",
+					"method": "LB_StoredQuickReports"
+				}
+			]
+		},
+		{
+			"link": 32004,
+			"title": "Records",
+			"items": [
+				{
+					"title": "Show All",
+					"method": "LB_MenuTasks",
+					"parameter": "SHOWALL"
+				},
+				{
+					"title": "Search",
+					"method": "LB_MenuTasks",
+					"parameter": "QUERY"
+				},
+				{
+					"title": "Sort",
+					"method": "LB_MenuTasks",
+					"parameter": "SORT"
+				},
+				{
+					"title": "Show Selection",
+					"method": "LB_MenuTasks",
+					"parameter": "SHOWSELECTION"
+				},
+				{
+					"title": "Omit Selection",
+					"method": "LB_MenuTasks",
+					"parameter": "OMITSELECTION"
+				},
+				{
+					"title": "Item 6",
+					"isSeparator": true
+				},
+				{
+					"title": "Save Current Selection",
+					"method": "LB_MenuTasks",
+					"parameter": "SAVESELECTION"
+				},
+				{
+					"title": "Load Saved Selection",
+					"method": "LB_MenuTasks",
+					"parameter": "LOADSELECTION"
+				},
+				{
+					"title": "Add Saved Selection",
+					"method": "LB_MenuTasks",
+					"parameter": "ADDSELECTION"
+				},
+				{
+					"title": "Subtract saved Selection",
+					"method": "LB_MenuTasks",
+					"parameter": "SUBTRACTSELECTION"
+				},
+				{
+					"title": "Intersect with saved Selection",
+					"method": "LB_MenuTasks",
+					"parameter": "INTERSECTSELECTION"
+				}
+			]
+		},
+		{
+			"link": 32005,
+			"title": "Records",
+			"items": [
+				{
+					"title": "Save Selection",
+					"method": "SCPOA_SetControl",
+					"parameter": "SAVE"
+				},
+				{
+					"title": "Load Selection",
+					"method": "SCPOA_SetControl",
+					"parameter": "LOAD"
+				},
+				{
+					"title": "Add Selection",
+					"method": "SCPOA_SetControl",
+					"parameter": "ADD"
+				},
+				{
+					"title": "Subtract Selection",
+					"method": "SCPOA_SetControl",
+					"parameter": "SUBTRACT"
+				},
+				{
+					"title": "Intersect Selection",
+					"method": "SCPOA_SetControl",
+					"parameter": "INTERSECT"
+				}
+			]
+		}
+	]
+}

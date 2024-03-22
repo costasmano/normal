@@ -1,0 +1,1 @@
+2001-01 : Changed height of window to accomodate one mor row of buttons.  2002-06 : Changed window type from -722 to -1924 (Palette Window).  2002-10 : Added Has Window Title to the window type.  2003-02 : Removed the Has Window Title.  2004-01-30 : Use Get form properties for window dimensions.  2004-05-17 : Remove ControlMenuBar call, added Close Window.

@@ -1,0 +1,276 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 785,
+					"height": 180,
+					"sizingX": "grow",
+					"fill": "#DFE4FF",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 46,
+					"left": 60,
+					"width": 60,
+					"height": 39,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Item No.\rPart"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 68,
+					"left": 130,
+					"width": 410,
+					"height": 19,
+					"sizingX": "grow",
+					"class": "DataEntry12Plain",
+					"text": "Description"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 48,
+					"left": 700,
+					"width": 70,
+					"height": 39,
+					"sizingX": "move",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Contract\rQuantity"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 68,
+					"left": 550,
+					"width": 60,
+					"height": 19,
+					"sizingX": "move",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Units"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 48,
+					"left": 620,
+					"width": 70,
+					"height": 39,
+					"sizingX": "move",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Contract\rPrice"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 46,
+					"left": 10,
+					"width": 40,
+					"height": 39,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Item\rNo."
+				},
+				"Text7": {
+					"type": "text",
+					"top": 95,
+					"left": 10,
+					"width": 40,
+					"height": 19,
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "999."
+				},
+				"Text8": {
+					"type": "text",
+					"top": 95,
+					"left": 550,
+					"width": 60,
+					"height": 19,
+					"sizingX": "move",
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "$"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 95,
+					"left": 620,
+					"width": 70,
+					"height": 19,
+					"sizingX": "move",
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "1.00"
+				},
+				"DCM_NewItemPart_txt": {
+					"type": "input",
+					"top": 95,
+					"left": 60,
+					"width": 60,
+					"height": 19,
+					"dataSource": "DCM_NewItemPart_txt",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"textFormat": "###",
+					"entryFilter": "~\"A-Z;0-9\"###",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DCM_NewItemPart_txt.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DCM_NewItemDesc_txt": {
+					"type": "input",
+					"top": 95,
+					"left": 130,
+					"width": 410,
+					"height": 19,
+					"sizingX": "grow",
+					"dataSource": "DCM_NewItemDesc_txt",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DCM_NewItemQ_r": {
+					"type": "input",
+					"top": 95,
+					"left": 700,
+					"width": 70,
+					"height": 19,
+					"sizingX": "move",
+					"dataSource": "DCM_NewItemQ_r",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"numberFormat": "###,###,###,###.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DCM_NewItemSaveBtn": {
+					"type": "button",
+					"top": 140,
+					"left": 597,
+					"width": 173,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "DCM_NewItemSaveBtn",
+					"text": "Save New Item",
+					"class": "DataEntry19Plain",
+					"method": "ObjectMethods/DCM_NewItemSaveBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DCM_NewItemCancelBtn": {
+					"type": "button",
+					"top": 140,
+					"left": 427,
+					"width": 93,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "DCM_NewItemCancelBtn",
+					"text": "Close",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DCM_NewItemCancelBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 5,
+					"left": 0,
+					"width": 770,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#6500FF",
+					"class": "DataEntry19Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "New Contract Item Entry Form"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

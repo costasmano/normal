@@ -1,0 +1,397 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 388,
+	"markerBreak": 388,
+	"markerFooter": 388,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable4": {
+					"type": "input",
+					"top": 40,
+					"left": 197,
+					"width": 40,
+					"height": 16,
+					"dataSource": "vTotalPages",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 40,
+					"left": 64,
+					"width": 125,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "Total Num of Pages:"
+				},
+				"PrintPage1": {
+					"type": "checkbox",
+					"top": 70,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintPage1",
+					"text": "Print Page 1",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PrintPage2": {
+					"type": "checkbox",
+					"top": 92,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintPage2",
+					"text": "Print Page 2",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PrintSpecMemPgs": {
+					"type": "checkbox",
+					"top": 114,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintSpMemPgs",
+					"text": "Print Spec Mem Pg(s)",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Cmts Check Box1": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintCmts",
+					"text": "Print Comments",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Sketches Box1": {
+					"type": "checkbox",
+					"top": 158,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintSketches",
+					"text": "Print Sketches",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Charts Box1": {
+					"type": "checkbox",
+					"top": 180,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintCharts",
+					"text": "Print Charts",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Photos Check Box2": {
+					"type": "checkbox",
+					"top": 202,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintPhotos",
+					"text": "Print Photos",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Photos Check Box1": {
+					"type": "checkbox",
+					"top": 224,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintInvPhotos",
+					"text": "Print Inventory Photos",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Inv Photo Date": {
+					"type": "dropdown",
+					"top": 224,
+					"left": 221,
+					"width": 113,
+					"height": 18,
+					"dataSource": "aInvPhotoDate_aD",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Lower Inv Photo Date.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Inv SIA Box1": {
+					"type": "checkbox",
+					"top": 246,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintSIA",
+					"text": "Print SI & A",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Inv SIA Box2": {
+					"type": "checkbox",
+					"top": 268,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintPontis",
+					"text": "Print Pontis",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Inv PontisField Box1": {
+					"type": "checkbox",
+					"top": 292,
+					"left": 40,
+					"width": 180,
+					"height": 18,
+					"dataSource": "vPrintPontisField",
+					"text": "Print Pontis Field form",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Inv Print": {
+					"type": "button",
+					"top": 322,
+					"left": 202,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bPrint",
+					"action": "accept",
+					"text": "Print",
+					"class": "Label14Bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Inv Cancel": {
+					"type": "button",
+					"top": 322,
+					"left": 82,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label14Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lower Inv Preview Box1": {
+					"type": "checkbox",
+					"top": 358,
+					"left": 84,
+					"width": 133,
+					"height": 18,
+					"dataSource": "vPrintPreview",
+					"text": "Print Preview",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 0,
+					"width": 300,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Printing Inspection Report"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"Variable4",
+				"Text3"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

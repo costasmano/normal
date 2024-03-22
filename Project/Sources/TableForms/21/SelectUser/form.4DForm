@@ -1,0 +1,112 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "User Selection",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDragOver",
+		"onTimer",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "791pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"User List": {
+					"type": "dropdown",
+					"top": 18,
+					"left": 29,
+					"width": 262,
+					"height": 23,
+					"dataSource": "aUserInfo",
+					"class": "List10Plain",
+					"method": "ObjectMethods/User List.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Del user": {
+					"type": "button",
+					"top": 63,
+					"left": 184,
+					"width": 101,
+					"height": 28,
+					"dataSource": "vDelUser",
+					"text": "Delete User",
+					"class": "List10Plain",
+					"method": "ObjectMethods/Del user.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 62,
+					"left": 34,
+					"width": 122,
+					"height": 31,
+					"dataSource": "vCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "List10Plain",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"GroupList": {
+					"type": "input",
+					"top": 103,
+					"left": 35,
+					"width": 247,
+					"height": 164,
+					"dataSource": "vGroupList",
+					"class": "List10Plain",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

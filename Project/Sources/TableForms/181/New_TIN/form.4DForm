@@ -1,0 +1,788 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 363,
+	"markerBreak": 363,
+	"markerFooter": 373,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line15": {
+					"type": "line",
+					"top": 93,
+					"left": 16,
+					"width": 572,
+					"sizingX": "grow"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 472,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/library/GLASS - Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 16,
+					"left": 535,
+					"width": 48,
+					"height": 64,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Save",
+					"icon": "/RESOURCES/Images/library/GLASS - OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 106,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.1) Tunnel Number : "
+				},
+				"NoEntry06": {
+					"type": "input",
+					"top": 106,
+					"left": 184,
+					"width": 175,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i1_s:6",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###-###-###-###-###",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NTI_TownName_atxt": {
+					"type": "dropdown",
+					"top": 133,
+					"left": 437,
+					"width": 183,
+					"height": 22,
+					"dataSource": "NTI_TownName_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/NTI_TownName_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NTI_Prefix_txt": {
+					"type": "input",
+					"top": 222,
+					"left": 191,
+					"width": 24,
+					"height": 17,
+					"dataSource": "NTI_Prefix_txt",
+					"class": "DataEntry12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"T;B;\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/NTI_Prefix_txt.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"NTI_VentID_atxt": {
+					"type": "dropdown",
+					"top": 307,
+					"left": 235,
+					"width": 223,
+					"height": 22,
+					"dataSource": "NTI_VentID_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/NTI_VentID_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NTI_Owner_atxt": {
+					"type": "dropdown",
+					"top": 278,
+					"left": 235,
+					"width": 223,
+					"height": 22,
+					"dataSource": "NTI_Owner_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/NTI_Owner_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NTI_TunnelID_atxt": {
+					"type": "dropdown",
+					"top": 249,
+					"left": 235,
+					"width": 223,
+					"height": 22,
+					"dataSource": "NTI_TunnelID_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/NTI_TunnelID_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NTI_i2_s": {
+					"type": "input",
+					"top": 338,
+					"left": 184,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i2_s:7",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/NTI_i2_s.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NTI_i7_s": {
+					"type": "input",
+					"top": 367,
+					"left": 184,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i7_s:12",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/NTI_i7_s.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NTI_i8_s_atxt": {
+					"type": "dropdown",
+					"top": 365,
+					"left": 483,
+					"width": 223,
+					"height": 22,
+					"dataSource": "NTI_i8_s_atxt",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/NTI_i8_s_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NTI_i9_L_atxt": {
+					"type": "dropdown",
+					"top": 394,
+					"left": 227,
+					"width": 208,
+					"height": 22,
+					"dataSource": "NTI_i9_L_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/NTI_i9_L_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NTI_i10_s": {
+					"type": "input",
+					"top": 426,
+					"left": 184,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i10_s:15",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/NTI_i10_s.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 338,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.2) Tunnel Name : "
+				},
+				"Text19": {
+					"type": "text",
+					"top": 164,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.3) State Code : "
+				},
+				"Text20": {
+					"type": "text",
+					"top": 164,
+					"left": 240,
+					"width": 129,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.4) County Code : "
+				},
+				"Text21": {
+					"type": "text",
+					"top": 164,
+					"left": 420,
+					"width": 129,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.5) Place Code : "
+				},
+				"Text22": {
+					"type": "text",
+					"top": 164,
+					"left": 611,
+					"width": 99,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.6) District : "
+				},
+				"NoEntry02": {
+					"type": "input",
+					"top": 164,
+					"left": 184,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i3_L:8",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"NoEntry": {
+					"type": "input",
+					"top": 164,
+					"left": 374,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i4_L:9",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"NoEntry1": {
+					"type": "input",
+					"top": 164,
+					"left": 554,
+					"width": 49,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i5_L:10",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"NoEntry2": {
+					"type": "input",
+					"top": 164,
+					"left": 715,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i6_s:11",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 367,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.7) Route Number : "
+				},
+				"Text24": {
+					"type": "text",
+					"top": 367,
+					"left": 280,
+					"width": 159,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.8) Route Direction : "
+				},
+				"NoEntry7": {
+					"type": "input",
+					"top": 367,
+					"left": 444,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i8_s:13",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 396,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.9) Route Type : "
+				},
+				"NoEntry8": {
+					"type": "input",
+					"top": 396,
+					"left": 184,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i9_L:14",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 426,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "(I.10) Facility Carried : "
+				},
+				"NoEntry5": {
+					"type": "input",
+					"top": 280,
+					"left": 184,
+					"width": 33,
+					"height": 17,
+					"dataSource": "NTI_Owner_s",
+					"class": "DataEntry12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 135,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Town Name : "
+				},
+				"TrapEnter_L": {
+					"type": "button",
+					"top": 6,
+					"left": 5,
+					"width": 20,
+					"height": 20,
+					"dataSource": "TrapEnter_L",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"NoEntry9": {
+					"type": "input",
+					"top": 135,
+					"left": 184,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_TownName_s:71",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NoEntry3": {
+					"type": "input",
+					"top": 193,
+					"left": 184,
+					"width": 33,
+					"height": 17,
+					"dataSource": "NTI_TownCode_s",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 193,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Town Code : "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 222,
+					"left": 10,
+					"width": 169,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "T - Tunnel or B - Boat : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 251,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "ID : "
+				},
+				"Text7": {
+					"type": "text",
+					"top": 280,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Owner : "
+				},
+				"NoEntry6_B": {
+					"type": "input",
+					"top": 309,
+					"left": 184,
+					"width": 33,
+					"height": 17,
+					"dataSource": "NTI_Vent_s",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNum"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/NoEntry6_B.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 309,
+					"left": 30,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Vent Zone : "
+				},
+				"NTI_i10_s1": {
+					"type": "input",
+					"top": 454,
+					"left": 185,
+					"width": 350,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_Segment_s:74",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 454,
+					"left": 31,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Tunnel Segment : "
+				},
+				"NTI_i10_s2": {
+					"type": "input",
+					"top": 482,
+					"left": 186,
+					"width": 350,
+					"height": 17,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_Contracts_s:75",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 482,
+					"left": 32,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Tunnel Contracts : "
+				},
+				"NTI_Number_s": {
+					"type": "input",
+					"top": 222,
+					"left": 404,
+					"width": 44,
+					"height": 17,
+					"dataSource": "NTI_Number_s",
+					"class": "DataEntry12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "##",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/NTI_Number_s.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 222,
+					"left": 275,
+					"width": 109,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Number (1-99) : "
+				},
+				"NoEntry4_B": {
+					"type": "input",
+					"top": 251,
+					"left": 184,
+					"width": 33,
+					"height": 17,
+					"dataSource": "NTI_TunnelID_s",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNum"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/NoEntry4_B.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterEdit"
+					]
+				}
+			},
+			"entryOrder": [
+				"NTI_TownName_atxt",
+				"NTI_VentID_atxt",
+				"NTI_Owner_atxt",
+				"NTI_TunnelID_atxt",
+				"NTI_i2_s",
+				"NTI_i7_s",
+				"NTI_i8_s_atxt",
+				"NTI_i9_L_atxt",
+				"NTI_i10_s",
+				"NoEntry7",
+				"NoEntry8",
+				"NTI_i10_s1",
+				"NTI_i10_s2"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line15"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bCancel",
+					"bValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

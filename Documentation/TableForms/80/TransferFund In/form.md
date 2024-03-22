@@ -1,0 +1,1 @@
+2004-2-10:  Used style sheet for form objects (text, field, variable, dropdown list, etc)2004-02-13 : Fixed syntax err in obj method BtnSave.2004-04-15 : Decresed text box height.  Set min width/height.2004-04-20 : Replaced the button images with correctly scaled ones. Removed unused buttons from the toolbar.  Applied dark grey background to editable fields.

@@ -1,0 +1,2072 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 742,
+	"windowMinHeight": 520,
+	"rightMargin": 19,
+	"bottomMargin": 0,
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture32": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 723,
+					"height": 40,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarBlue.png"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 93,
+					"left": 9,
+					"width": 51,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Town"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 50,
+					"left": 9,
+					"width": 54,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "BDEPT"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 71,
+					"left": 9,
+					"width": 52,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "B.I.N."
+				},
+				"Text12": {
+					"type": "text",
+					"top": 50,
+					"left": 599,
+					"width": 65,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "AASHTO\r"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 0,
+					"left": 3,
+					"width": 720,
+					"height": 35,
+					"stroke": "#FFFF00",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Rating Report"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 77,
+					"left": 614,
+					"width": 75,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Select List\r"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 50,
+					"left": 72,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 50,
+					"left": 666,
+					"width": 47,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]AASHTO:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000.0",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 71,
+					"left": 72,
+					"width": 45,
+					"height": 17,
+					"dataSource": "[RatingReports:65]BIN:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field4": {
+					"type": "checkbox",
+					"top": 76,
+					"left": 693,
+					"width": 20,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]FHWA Select:4",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 93,
+					"left": 72,
+					"width": 154,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"RatgReptTab": {
+					"type": "tab",
+					"top": 118,
+					"left": 3,
+					"width": 731,
+					"height": 426,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "RatgReptTab",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Rating / Posting Info",
+						"NBI Data",
+						"Element Data"
+					],
+					"class": "DataEntry12Plain",
+					"action": "gotoPage"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 54,
+					"left": 248,
+					"width": 220,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 51,
+					"left": 244,
+					"width": 221,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 59,
+					"left": 253,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 FirstRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 59,
+					"left": 276,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 59,
+					"left": 299,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 59,
+					"left": 322,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ4",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 LastRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"DeleteRatingBtn": {
+					"type": "button",
+					"top": 59,
+					"left": 345,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ5",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DeleteRatingBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 59,
+					"left": 368,
+					"width": 2,
+					"height": 2,
+					"dataSource": "ZZ6",
+					"action": "previousPage",
+					"shortcutKey": "[Page up]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 59,
+					"left": 391,
+					"width": 2,
+					"height": 2,
+					"dataSource": "ZZ7",
+					"action": "nextPage",
+					"shortcutKey": "[Page down]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 59,
+					"left": 414,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ8",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 59,
+					"left": 437,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Print": {
+					"type": "button",
+					"top": 49,
+					"left": 486,
+					"width": 42,
+					"height": 42,
+					"visibility": "hidden",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Glass/Print.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Print.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 416,
+					"left": 484,
+					"width": 182,
+					"height": 113,
+					"class": "Geneva14",
+					"text": " "
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 416,
+					"left": 38,
+					"width": 638,
+					"height": 122,
+					"class": "Geneva14",
+					"text": "Recommended Posting"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 416,
+					"left": 330,
+					"width": 150,
+					"height": 113,
+					"class": "Geneva14",
+					"text": " "
+				},
+				"Text21": {
+					"type": "text",
+					"top": 459,
+					"left": 46,
+					"width": 50,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "H"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 459,
+					"left": 116,
+					"width": 50,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Type 3"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 459,
+					"left": 187,
+					"width": 50,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "3S2"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 459,
+					"left": 258,
+					"width": 50,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Single Posting"
+				},
+				"Matrix": {
+					"type": "picture",
+					"top": 263,
+					"left": 2,
+					"width": 723,
+					"height": 133,
+					"pictureFormat": "scaled",
+					"picture": "Images/Matrix.svg"
+				},
+				"Field6": {
+					"type": "checkbox",
+					"top": 148,
+					"left": 183,
+					"width": 21,
+					"height": 18,
+					"dataSource": "[RatingReports:65]RatingReport:2",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field7": {
+					"type": "checkbox",
+					"top": 172,
+					"left": 183,
+					"width": 21,
+					"height": 18,
+					"dataSource": "[RatingReports:65]EngrJudgment:3",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field26": {
+					"type": "checkbox",
+					"top": 196,
+					"left": 183,
+					"width": 21,
+					"height": 18,
+					"dataSource": "[RatingReports:65]DataFile:27",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field26.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field29": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 183,
+					"width": 21,
+					"height": 18,
+					"dataSource": "[RatingReports:65]StructRpt:33",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field29.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 148,
+					"left": 339,
+					"width": 93,
+					"height": 17,
+					"dataSource": "[RatingReports:65]ReportDate:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 172,
+					"left": 339,
+					"width": 270,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Consultant:5",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Rating Cnslts"
+					},
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "dropdown",
+					"top": 195,
+					"left": 229,
+					"width": 198,
+					"height": 24,
+					"dataSource": "aRatingFT_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field31": {
+					"type": "input",
+					"top": 228,
+					"left": 339,
+					"width": 93,
+					"height": 17,
+					"dataSource": "[RatingReports:65]NBIS_Letter_d:36",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field31.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 319,
+					"left": 68,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]InvH20:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 319,
+					"left": 128,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]InvType3:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 319,
+					"left": 188,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]Inv3S2:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 319,
+					"left": 248,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]InvHS2044:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU4Inv": {
+					"type": "input",
+					"top": 319,
+					"left": 308,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU5Inv": {
+					"type": "input",
+					"top": 319,
+					"left": 368,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU6Inv": {
+					"type": "input",
+					"top": 319,
+					"left": 428,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU7Inv": {
+					"type": "input",
+					"top": 319,
+					"left": 488,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"EV2Inv": {
+					"type": "input",
+					"top": 319,
+					"left": 548,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 148,
+					"left": 14,
+					"width": 139,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Rating Report"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 172,
+					"left": 14,
+					"width": 166,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Engineering Judgment"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 148,
+					"left": 228,
+					"width": 101,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Report Date"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 172,
+					"left": 228,
+					"width": 93,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Consultant"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 196,
+					"left": 14,
+					"width": 166,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Computer File"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 269,
+					"left": 71,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "H-20"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 269,
+					"left": 128,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Type3"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 269,
+					"left": 188,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Type 3S2"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 269,
+					"left": 248,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "HS20 -44"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 269,
+					"left": 668,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "MS-18"
+				},
+				"EV3Inv": {
+					"type": "input",
+					"top": 319,
+					"left": 608,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 367,
+					"left": 68,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]OprH20:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 367,
+					"left": 128,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]OprType3:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 367,
+					"left": 188,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]Opr3S2:12",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field18": {
+					"type": "input",
+					"top": 367,
+					"left": 248,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]OprHS2044:13",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU4Oper": {
+					"type": "input",
+					"top": 367,
+					"left": 308,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU5Oper": {
+					"type": "input",
+					"top": 367,
+					"left": 368,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU6Oper": {
+					"type": "input",
+					"top": 367,
+					"left": 428,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SU7Oper": {
+					"type": "input",
+					"top": 367,
+					"left": 488,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"EV2Oper": {
+					"type": "input",
+					"top": 367,
+					"left": 548,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"EV3Oper": {
+					"type": "input",
+					"top": 367,
+					"left": 608,
+					"width": 50,
+					"height": 18,
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 319,
+					"left": 668,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]InvMS18:22",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 367,
+					"left": 668,
+					"width": 50,
+					"height": 18,
+					"dataSource": "[RatingReports:65]OprMS18:23",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###.0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 482,
+					"left": 56,
+					"width": 30,
+					"height": 17,
+					"dataSource": "[RatingReports:65]RecPostingH:14",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Field20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field21": {
+					"type": "input",
+					"top": 482,
+					"left": 126,
+					"width": 30,
+					"height": 17,
+					"dataSource": "[RatingReports:65]RecPost3:15",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Field21.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field22": {
+					"type": "input",
+					"top": 482,
+					"left": 197,
+					"width": 30,
+					"height": 17,
+					"dataSource": "[RatingReports:65]RecPost3S2:16",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Field22.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field23": {
+					"type": "input",
+					"top": 482,
+					"left": 268,
+					"width": 30,
+					"height": 18,
+					"dataSource": "[RatingReports:65]RecSinglePosting_L:39",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Field23.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NoPostingStatus": {
+					"type": "checkbox",
+					"top": 436,
+					"left": 332,
+					"width": 150,
+					"height": 21,
+					"dataSource": "[RatingReports:65]NoPosting:24",
+					"text": "No posting",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/NoPostingStatus.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WaivedStatus": {
+					"type": "checkbox",
+					"top": 459,
+					"left": 332,
+					"width": 150,
+					"height": 21,
+					"dataSource": "[RatingReports:65]PostingWaived:26",
+					"text": "Waived",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/WaivedStatus.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PostingStatus4": {
+					"type": "checkbox",
+					"top": 482,
+					"left": 332,
+					"width": 150,
+					"height": 21,
+					"dataSource": "[RatingReports:65]RemainPosted:34",
+					"text": "Remain Posted",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PostingStatus4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PostingStatus3": {
+					"type": "checkbox",
+					"top": 506,
+					"left": 332,
+					"width": 150,
+					"height": 21,
+					"dataSource": "[RatingReports:65]BridgeClosed:25",
+					"text": "Closed",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PostingStatus3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WithRestrictions_b": {
+					"type": "checkbox",
+					"top": 436,
+					"left": 492,
+					"width": 150,
+					"height": 21,
+					"dataSource": "[RatingReports:65]WithRestrictions_b:37",
+					"text": "With Restrictions",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/WithRestrictions_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WithPedestrianAccess_b": {
+					"type": "checkbox",
+					"top": 506,
+					"left": 492,
+					"width": 190,
+					"height": 21,
+					"dataSource": "[RatingReports:65]WithPedestrianAccess_b:38",
+					"text": "With Pedestrian Access",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/WithPedestrianAccess_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 220,
+					"left": 14,
+					"width": 166,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Str. Rpt/Partial Calc."
+				},
+				"Text20": {
+					"type": "text",
+					"top": 228,
+					"left": 228,
+					"width": 86,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "NBIS Letter Date"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 269,
+					"left": 308,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "SU 4"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 269,
+					"left": 368,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "SU 5"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 269,
+					"left": 428,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "SU 6"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 269,
+					"left": 488,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "SU 7"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 269,
+					"left": 548,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "EV 2"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 269,
+					"left": 608,
+					"width": 50,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "EV 3"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 319,
+					"left": 11,
+					"width": 50,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Inv."
+				},
+				"Text32": {
+					"type": "text",
+					"top": 367,
+					"left": 11,
+					"width": 50,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Oper"
+				},
+				"ScannedStored": {
+					"type": "checkbox",
+					"top": 148,
+					"left": 708,
+					"width": 21,
+					"height": 18,
+					"dataSource": "[RatingReports:65]ScannedStored:40",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ScannedStored.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text33": {
+					"type": "text",
+					"top": 148,
+					"left": 544,
+					"width": 159,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Scanned and Stored"
+				},
+				"RatingVehicles_LB": {
+					"type": "listbox",
+					"top": 405,
+					"left": 64,
+					"width": 600,
+					"height": 81,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/RatingVehicles_LB.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onSelectionChange",
+						"onBeforeDataEntry",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "Column1",
+							"width": 600,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "top",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 150,
+					"left": 29,
+					"width": 648,
+					"height": 200,
+					"class": "Geneva14",
+					"text": "At Time of Rating"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 171,
+					"left": 42,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Item 58"
+				},
+				"Field27": {
+					"type": "input",
+					"top": 171,
+					"left": 109,
+					"width": 21,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Item58:18",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/Field27.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text29": {
+					"type": "text",
+					"top": 171,
+					"left": 158,
+					"width": 66,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Item 59"
+				},
+				"Field28": {
+					"type": "input",
+					"top": 171,
+					"left": 225,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Item59:19",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/Field28.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text36": {
+					"type": "text",
+					"top": 358,
+					"left": 73,
+					"width": 92,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Rating Info"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 286,
+					"left": 37,
+					"width": 216,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(63) Operating Rating Method"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 313,
+					"left": 37,
+					"width": 216,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(65) Inventory Rating Method"
+				},
+				"Variable17": {
+					"type": "dropdown",
+					"top": 228,
+					"left": 263,
+					"width": 280,
+					"height": 24,
+					"dataSource": "aItem43ades",
+					"class": "Geneva14",
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail"
+					]
+				},
+				"Variable16": {
+					"type": "dropdown",
+					"top": 254,
+					"left": 263,
+					"width": 280,
+					"height": 24,
+					"dataSource": "aItem43bdes",
+					"class": "Geneva14",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail"
+					]
+				},
+				"Field34": {
+					"type": "input",
+					"top": 358,
+					"left": 170,
+					"width": 505,
+					"height": 116,
+					"sizingY": "grow",
+					"dataSource": "[RatingReports:65]RatingInfo:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "solid",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field34.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text42": {
+					"type": "text",
+					"top": 199,
+					"left": 262,
+					"width": 156,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(66) Inventory Rating "
+				},
+				"Text43": {
+					"type": "text",
+					"top": 172,
+					"left": 262,
+					"width": 156,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(64) Operating Rating "
+				},
+				"Text44": {
+					"type": "text",
+					"top": 232,
+					"left": 37,
+					"width": 205,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(43) Structure Type Main:"
+				},
+				"Field39": {
+					"type": "input",
+					"top": 231,
+					"left": 606,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Item43inRating:17",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text45": {
+					"type": "text",
+					"top": 232,
+					"left": 566,
+					"width": 37,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Code"
+				},
+				"Field37": {
+					"type": "input",
+					"top": 171,
+					"left": 420,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Item64:29",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field37.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field38": {
+					"type": "input",
+					"top": 198,
+					"left": 420,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Item66:31",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field38.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable14": {
+					"type": "dropdown",
+					"top": 283,
+					"left": 263,
+					"width": 330,
+					"height": 24,
+					"dataSource": "aORatMethD_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "dropdown",
+					"top": 309,
+					"left": 263,
+					"width": 330,
+					"height": 24,
+					"dataSource": "aIRatMethD_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 172,
+					"left": 511,
+					"width": 88,
+					"height": 17,
+					"dataSource": "vsOprRtgUnit",
+					"class": "Geneva14",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 199,
+					"left": 511,
+					"width": 88,
+					"height": 17,
+					"dataSource": "vsInvRtgUnit",
+					"class": "Geneva14",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field35": {
+					"type": "input",
+					"top": 285,
+					"left": 596,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Item63:28",
+					"stroke": "#0128FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field36": {
+					"type": "input",
+					"top": 312,
+					"left": 596,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[RatingReports:65]Item65:30",
+					"stroke": "#0128FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text52": {
+					"type": "text",
+					"top": 155,
+					"left": 10,
+					"width": 180,
+					"height": 25,
+					"stroke": "#000000",
+					"class": "Geneva20B",
+					"fontWeight": "bold",
+					"text": "Element Data"
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 188,
+					"left": 6,
+					"width": 694,
+					"height": 240,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 66,
+					"detailForm": "RatMemberIn",
+					"listForm": "RatElmInc",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"printFrame": "fixed"
+				},
+				"RatMbOpen": {
+					"type": "button",
+					"top": 444,
+					"left": 27,
+					"width": 96,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bOpen",
+					"action": "editSubrecord",
+					"text": "Open",
+					"class": "DataEntry14Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"RatMbAdd": {
+					"type": "button",
+					"top": 444,
+					"left": 136,
+					"width": 96,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bAdd",
+					"text": "Add",
+					"class": "DataEntry14Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/RatMbAdd.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"RatMbDelete": {
+					"type": "button",
+					"top": 444,
+					"left": 600,
+					"width": 96,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bDelete",
+					"action": "deleteSubrecord",
+					"text": "Delete",
+					"class": "DataEntry14Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"testLB": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"RatingVehicles_LB"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

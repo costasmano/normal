@@ -1,0 +1,1 @@
+2002-04 : Modified to make sure that fields are set to blanks for their defined length , not the value they hold.  2003-02 : Modified to avoid use of ≤≥.  2004-01-22 : Declared parameter $1.

@@ -1,0 +1,1 @@
+Nov-2002 : Disabled most events in the form except Load, Clicked, Timer, On call

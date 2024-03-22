@@ -1,0 +1,1 @@
+2004-05-23 : Created to display variable length confirm dialogues.

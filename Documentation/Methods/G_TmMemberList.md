@@ -1,0 +1,1 @@
+2004-02-13 : Make use of  field TeamMbrAddl to indicate reference in the General Remarks.  2004-04-01 : Adjusted the threshold length of vTeamMbr for applying font size 8.

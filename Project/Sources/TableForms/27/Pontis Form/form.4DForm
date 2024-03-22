@@ -1,0 +1,548 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "AboveWater Template",
+	"inheritedFormTable": 27,
+	"windowMinWidth": 740,
+	"windowMinHeight": 530,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerBody": 528,
+	"markerBreak": 528,
+	"markerFooter": 528,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Page Preview Btn": {
+					"type": "button",
+					"top": 11,
+					"left": 528,
+					"width": 40,
+					"height": 40,
+					"dataSource": "vbPGPreview",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Preview"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/spyglassbutton.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Page Preview Btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Tab Control1": {
+					"type": "tab",
+					"top": 69,
+					"left": 6,
+					"width": 718,
+					"height": 429,
+					"sizingY": "grow",
+					"dataSource": "UWTabControl1",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Pontis"
+					],
+					"class": "TabText",
+					"fontWeight": "bold",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"DE InspDate": {
+					"type": "input",
+					"top": 91,
+					"left": 594,
+					"width": 125,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[Inspections:27]Insp Date:78",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE InspDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"txtCUSpanGroup": {
+					"type": "text",
+					"top": 230,
+					"left": 311,
+					"width": 89,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "right",
+					"text": "Span Group"
+				},
+				"fieldCUSpanGroup": {
+					"type": "input",
+					"top": 230,
+					"left": 410,
+					"width": 34,
+					"height": 17,
+					"defaultValue": "1",
+					"dataSource": "[BMS Inspections:44]Span Group No:3",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 999,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NonMBTAText": {
+					"type": "text",
+					"top": 92,
+					"left": 10,
+					"width": 141,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "District Bridge Insp. Eng'r"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 175,
+					"left": 10,
+					"width": 69,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Team Leader"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 134,
+					"left": 10,
+					"width": 141,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Inspecting Agency"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 92,
+					"left": 490,
+					"width": 98,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "right",
+					"text": "Inspection Date"
+				},
+				"DE DBIE dropdown": {
+					"type": "dropdown",
+					"top": 105,
+					"left": 8,
+					"width": 269,
+					"height": 24,
+					"dataSource": "aBIE",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE DBIE dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Agency dropdown": {
+					"type": "dropdown",
+					"top": 148,
+					"left": 8,
+					"width": 269,
+					"height": 24,
+					"dataSource": "aAgency",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Agency dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE TeamLdr dropdown": {
+					"type": "dropdown",
+					"top": 188,
+					"left": 8,
+					"width": 269,
+					"height": 24,
+					"dataSource": "aTeamLeader",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE TeamLdr dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 150,
+					"left": 12,
+					"width": 244,
+					"height": 19,
+					"dataSource": "vAgency",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 190,
+					"left": 12,
+					"width": 244,
+					"height": 19,
+					"dataSource": "vTmLeader",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 107,
+					"left": 12,
+					"width": 244,
+					"height": 19,
+					"dataSource": "vBIE",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 125,
+					"left": 408,
+					"width": 312,
+					"height": 91,
+					"fill": "#C0CAFF"
+				},
+				"DE EditTm Button": {
+					"type": "button",
+					"top": 128,
+					"left": 618,
+					"width": 96,
+					"height": 24,
+					"dataSource": "bEditTeam",
+					"text": "Edit Team",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE EditTm Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable24": {
+					"type": "listbox",
+					"top": 156,
+					"left": 414,
+					"width": 300,
+					"height": 55,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable24_Column1",
+							"dataSource": "aInspTeam",
+							"width": 285,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Rectangle15": {
+					"type": "rectangle",
+					"top": 128,
+					"left": 412,
+					"width": 109,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 130,
+					"left": 413,
+					"width": 107,
+					"height": 15,
+					"fill": "#C0CAFF",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Team Members"
+				},
+				"MBTAText1": {
+					"type": "text",
+					"top": 92,
+					"left": 10,
+					"width": 152,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "MBTA QC Engineer"
+				},
+				"ListOfPontisElements": {
+					"type": "subform",
+					"top": 214,
+					"left": 4,
+					"width": 718,
+					"height": 266,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 45,
+					"detailForm": "Cond_Units_SUB",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "single",
+					"printFrame": "variable"
+				},
+				"subFormCU": {
+					"type": "subform",
+					"top": 263,
+					"left": 8,
+					"width": 694,
+					"height": 238,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 45,
+					"detailForm": "Cond Units In",
+					"listForm": "Cond Units Inc",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"printFrame": "variable"
+				},
+				"DE cbCUMetric": {
+					"type": "radio",
+					"top": 230,
+					"left": 468,
+					"width": 121,
+					"height": 19,
+					"dataSource": "tbMetric",
+					"text": "Metric Units",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/DE cbCUMetric.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE cbCUEnglish": {
+					"type": "radio",
+					"top": 230,
+					"left": 593,
+					"width": 121,
+					"height": 19,
+					"dataSource": "tbEnglish",
+					"text": "English Units",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/DE cbCUEnglish.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"DE InspDate",
+				"fieldCUSpanGroup",
+				"DE DBIE dropdown",
+				"DE Agency dropdown",
+				"DE TeamLdr dropdown",
+				"Variable4",
+				"Variable2",
+				"Variable6",
+				"DE EditTm Button",
+				"Variable24",
+				"ListOfPontisElements",
+				"subFormCU",
+				"DE cbCUMetric",
+				"DE cbCUEnglish"
+			]
+		},
+		null
+	],
+	"editor": {
+		"activeView": "SubForm",
+		"defaultView": "SubForm",
+		"views": {
+			"SubForm": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {
+				"objects": [
+					"ListOfPontisElements"
+				]
+			},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

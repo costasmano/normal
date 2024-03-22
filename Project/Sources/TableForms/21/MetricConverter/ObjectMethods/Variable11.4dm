@@ -1,0 +1,1 @@
+vDMS_r:=vGeoDeg_L+(vGeoMin_L/60)+(vGeoSec_r/3600)

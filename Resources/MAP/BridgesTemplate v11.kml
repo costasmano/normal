@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name><!--#4DHTMLVAR KML_DocTitle_txt--></name>
+		<description><![CDATA[<!--#4DHTMLVAR KML_DocDescription_txt-->]]></description>
+		<Folder>
+			<name><!--#4DHTMLVAR KML_DocName_txt--></name>
+			<!--#4DLOOP [Bridge MHD NBIS]--><!--#4DSCRIPT/MAP_PREPBRIDGEDATA-->
+			<Placemark>
+				<name><!--#4DHTMLVAR KML_BridgeName_txt--></name>
+				<description><![CDATA[
+				<!--#4DLOOP KML_Fields_aptr--><!--#4DHTMLVAR KML_FieldLabels_atxt{KML_Fields_aptr}-->: <!--#4DHTMLVAR KML_Fields_Value_atxt{KML_Fields_aptr}--><br><!--#4DENDLOOP-->
+				Lat: <!--#4DHTMLVAR KML_BridgeLat_r--><br>Lon: <!--#4DHTMLVAR KML_BridgeLon_r--><br>
+				]]></description>
+				<ExtendedData><!--#4DLOOP KML_Fields_aptr-->
+				<Data name='<!--#4DHTMLVAR KML_FieldLabels_atxt{KML_Fields_aptr}-->'><value><![CDATA[<!--#4DHTMLVAR KML_Fields_Value_atxt{KML_Fields_aptr}-->]]></value></Data>
+				<!--#4DENDLOOP-->
+				<Data name='Lat'><value><!--#4DHTMLVAR KML_BridgeLat_r--></value></Data>
+				<Data name='Lon'><value><!--#4DHTMLVAR KML_BridgeLon_r--></value></Data>
+				</ExtendedData>
+				<Point>
+					<coordinates><!--#4DHTMLVAR KML_BridgeLon_r-->,<!--#4DHTMLVAR KML_BridgeLat_r-->,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<!--#4DENDLOOP-->
+		</Folder>
+	</Document>
+</kml>

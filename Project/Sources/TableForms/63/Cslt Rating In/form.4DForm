@@ -1,0 +1,4793 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 715,
+	"windowMinHeight": 530,
+	"rightMargin": 0,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onDoubleClick",
+		"onDataChange",
+		"onUnload",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture22": {
+					"type": "picture",
+					"top": -2,
+					"left": 0,
+					"width": 908,
+					"height": 44,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarGreen.png"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 63,
+					"left": 251,
+					"width": 370,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 60,
+					"left": 247,
+					"width": 371,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"Text10": {
+					"type": "text",
+					"top": 2,
+					"left": 0,
+					"width": 908,
+					"height": 36,
+					"sizingX": "grow",
+					"stroke": "#0000FF",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Consultant Rating"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 56,
+					"left": 768,
+					"width": 65,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "AASHTO\r"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 81,
+					"left": 789,
+					"width": 76,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Select List\r"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 53,
+					"left": 835,
+					"width": 47,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]AASHTO:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000.0",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "checkbox",
+					"top": 77,
+					"left": 863,
+					"width": 20,
+					"height": 21,
+					"dataSource": "[Bridge MHD NBIS:1]FHWA Select:4",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 100,
+					"left": 9,
+					"width": 51,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Town"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 57,
+					"left": 9,
+					"width": 54,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "BDEPT"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 78,
+					"left": 9,
+					"width": 52,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "B.I.N."
+				},
+				"Field1": {
+					"type": "input",
+					"top": 55,
+					"left": 72,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 76,
+					"left": 72,
+					"width": 45,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]BIN:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 98,
+					"left": 72,
+					"width": 154,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 68,
+					"left": 256,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 FirstRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 68,
+					"left": 279,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 68,
+					"left": 302,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 68,
+					"left": 325,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ4",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 LastRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE btnSave": {
+					"type": "button",
+					"top": 68,
+					"left": 497,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnSaveCRtg",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnSave.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnCancel": {
+					"type": "button",
+					"top": 68,
+					"left": 590,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btnCancel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE btnDelete": {
+					"type": "button",
+					"top": 68,
+					"left": 408,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnDeleteCRtg",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnDelete.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnPrint": {
+					"type": "button",
+					"top": 54,
+					"left": 716,
+					"width": 42,
+					"height": 42,
+					"dataSource": "btnPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintConsRatg"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/MassDOTPrint.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btnPrint.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CRTG_PageTab": {
+					"type": "tab",
+					"top": 123,
+					"left": 0,
+					"width": 889,
+					"height": 503,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "CRTG_PageTab",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"General",
+						"Review Details",
+						"Negotiated Costs",
+						"Actual Costs"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/CRTG_PageTab.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 173,
+					"left": 12,
+					"width": 636,
+					"height": 385,
+					"fill": "transparent",
+					"borderRadius": 5
+				},
+				"Text4": {
+					"type": "text",
+					"top": 246,
+					"left": 24,
+					"width": 132,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Consultant"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 216,
+					"left": 24,
+					"width": 132,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Contract No."
+				},
+				"Text13": {
+					"type": "text",
+					"top": 216,
+					"left": 260,
+					"width": 112,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Assignment No."
+				},
+				"Field6": {
+					"type": "input",
+					"top": 187,
+					"left": 151,
+					"width": 60,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ProjManager:27",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 216,
+					"left": 151,
+					"width": 60,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ContractNoRat:14",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 216,
+					"left": 380,
+					"width": 42,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]AssignNoRat:12",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field48": {
+					"type": "input",
+					"top": 216,
+					"left": 585,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]AssignPhase:51",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field48.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 245,
+					"left": 151,
+					"width": 488,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]AssignRatCons:5",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Rating Cnslts"
+					},
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field49": {
+					"type": "checkbox",
+					"top": 283,
+					"left": 24,
+					"width": 86,
+					"height": 18,
+					"dataSource": "[Conslt Rating:63]Rate:28",
+					"text": "Rate",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field49.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field50": {
+					"type": "checkbox",
+					"top": 311,
+					"left": 24,
+					"width": 86,
+					"height": 18,
+					"dataSource": "[Conslt Rating:63]Re_Rate:29",
+					"text": "Re-Rate",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field50.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field51": {
+					"type": "checkbox",
+					"top": 339,
+					"left": 24,
+					"width": 258,
+					"height": 18,
+					"dataSource": "[Conslt Rating:63]StrReport:40",
+					"text": "Structure Report/Partial Calc.",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field51.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 186,
+					"left": 24,
+					"width": 132,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Project manager"
+				},
+				"Combo Box1": {
+					"type": "dropdown",
+					"top": 279,
+					"left": 412,
+					"width": 114,
+					"height": 24,
+					"dataSource": "cboConsRatPriority",
+					"choiceList": [
+						"",
+						"High",
+						"Medium",
+						"Low"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Combo Box1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Combo Box2": {
+					"type": "dropdown",
+					"top": 309,
+					"left": 412,
+					"width": 114,
+					"height": 24,
+					"dataSource": "cboConsRatLevel",
+					"choiceList": [
+						"",
+						"1",
+						"2",
+						"3"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Combo Box2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"cboContractType": {
+					"type": "dropdown",
+					"top": 340,
+					"left": 412,
+					"width": 114,
+					"height": 24,
+					"dataSource": "cboContractType",
+					"choiceList": [
+						"",
+						"Regular",
+						"Complex",
+						"BRI",
+						"Review"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboContractType.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field52": {
+					"type": "input",
+					"top": 363,
+					"left": 260,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]DateReqbyDistrictBIE:21",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field52.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text53": {
+					"type": "text",
+					"top": 363,
+					"left": 24,
+					"width": 204,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Request by District B.I.E."
+				},
+				"Field53": {
+					"type": "input",
+					"top": 386,
+					"left": 260,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]DateReqbyBIE:20",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field53.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text54": {
+					"type": "text",
+					"top": 386,
+					"left": 24,
+					"width": 204,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Request by B.I.E."
+				},
+				"Field54": {
+					"type": "input",
+					"top": 409,
+					"left": 260,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ReqFeeProposal:30",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field54.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text55": {
+					"type": "text",
+					"top": 409,
+					"left": 24,
+					"width": 204,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Request fee proposal"
+				},
+				"Field55": {
+					"type": "input",
+					"top": 432,
+					"left": 260,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]FeeProposalRecvd:22",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field55.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text56": {
+					"type": "text",
+					"top": 432,
+					"left": 24,
+					"width": 204,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Fee proposal received"
+				},
+				"Field56": {
+					"type": "input",
+					"top": 455,
+					"left": 260,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ProceedRat:10",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field56.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text57": {
+					"type": "text",
+					"top": 454,
+					"left": 24,
+					"width": 204,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "NTP Date (written)"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 478,
+					"left": 24,
+					"width": 204,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "NTP Date (verbal)"
+				},
+				"Field57": {
+					"type": "input",
+					"top": 479,
+					"left": 260,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]NTPdate_verbal:50",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field57.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field58": {
+					"type": "input",
+					"top": 503,
+					"left": 260,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]FirstExpctSubmDate:2",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field58.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text59": {
+					"type": "text",
+					"top": 502,
+					"left": 24,
+					"width": 204,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "First Expected Submission"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 283,
+					"left": 290,
+					"width": 118,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Priority"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 313,
+					"left": 290,
+					"width": 118,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Level"
+				},
+				"Combo Box4": {
+					"type": "dropdown",
+					"top": 527,
+					"left": 260,
+					"width": 204,
+					"height": 24,
+					"dataSource": "cboConsRatSource",
+					"choiceList": [
+						"",
+						"In-House Design",
+						"R/O Unit",
+						"Design Consultant",
+						"Rating Consultant",
+						"Inspection Consultant",
+						"Town/City/Owner"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Combo Box4.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text62": {
+					"type": "text",
+					"top": 528,
+					"left": 24,
+					"width": 204,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Source"
+				},
+				"Text63": {
+					"type": "text",
+					"top": 345,
+					"left": 290,
+					"width": 118,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Contract Type"
+				},
+				"Text65": {
+					"type": "text",
+					"top": 216,
+					"left": 464,
+					"width": 118,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Assignment Phase"
+				},
+				"DE contrno_list": {
+					"type": "dropdown",
+					"left": 213,
+					"top": 214,
+					"width": 22,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/DE contrno_list.4dm"
+				},
+				"DE assign_list": {
+					"type": "dropdown",
+					"left": 424,
+					"top": 214,
+					"width": 22,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/DE assign_list.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text16": {
+					"type": "groupBox",
+					"top": 273,
+					"left": 346,
+					"width": 353,
+					"height": 144,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "\r"
+				},
+				"Text66": {
+					"type": "groupBox",
+					"top": 272,
+					"left": 12,
+					"width": 324,
+					"height": 91,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": " Third Review Dates"
+				},
+				"Text67": {
+					"type": "groupBox",
+					"top": 158,
+					"left": 346,
+					"width": 353,
+					"height": 109,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": " Second Review Dates"
+				},
+				"Text68": {
+					"type": "groupBox",
+					"top": 158,
+					"left": 12,
+					"width": 324,
+					"height": 109,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": " First Review Dates"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 555,
+					"left": 24,
+					"width": 72,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Remarks"
+				},
+				"Field59": {
+					"type": "input",
+					"top": 182,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit1:23",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field59.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text69": {
+					"type": "text",
+					"top": 182,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "First report submit"
+				},
+				"Field60": {
+					"type": "input",
+					"top": 202,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev1:36",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field60.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text70": {
+					"type": "text",
+					"top": 202,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent in-house review"
+				},
+				"Field61": {
+					"type": "input",
+					"top": 222,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]CmntsRecvd1:18",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field61.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text71": {
+					"type": "text",
+					"top": 222,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Comments received"
+				},
+				"Field62": {
+					"type": "input",
+					"top": 242,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt1:33",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field62.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text72": {
+					"type": "text",
+					"top": 242,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent back to consultant"
+				},
+				"Field63": {
+					"type": "input",
+					"top": 182,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit2:31",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field63.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text73": {
+					"type": "text",
+					"top": 182,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Second report resubmit"
+				},
+				"Field64": {
+					"type": "input",
+					"top": 202,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev2:37",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field64.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text74": {
+					"type": "text",
+					"top": 202,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent in-house review"
+				},
+				"Field65": {
+					"type": "input",
+					"top": 222,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]CmntsRecvd2:19",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field65.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text75": {
+					"type": "text",
+					"top": 222,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Comments received"
+				},
+				"Field66": {
+					"type": "input",
+					"top": 242,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt2:34",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field66.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text76": {
+					"type": "text",
+					"top": 242,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent back to consultant"
+				},
+				"Field67": {
+					"type": "input",
+					"top": 300,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit3:41",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field67.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text77": {
+					"type": "text",
+					"top": 300,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Third report resubmit"
+				},
+				"Field68": {
+					"type": "input",
+					"top": 320,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev3:38",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field68.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field69": {
+					"type": "input",
+					"top": 340,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt3:35",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field69.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text78": {
+					"type": "text",
+					"top": 320,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent in-house review"
+				},
+				"Text79": {
+					"type": "text",
+					"top": 320,
+					"left": 356,
+					"width": 228,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Approved rating to area engr"
+				},
+				"Text80": {
+					"type": "text",
+					"top": 343,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Board approval"
+				},
+				"Text81": {
+					"type": "text",
+					"top": 367,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Letter to city/town"
+				},
+				"Text82": {
+					"type": "text",
+					"top": 391,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Letter to district"
+				},
+				"Text83": {
+					"type": "text",
+					"top": 531,
+					"left": 24,
+					"width": 72,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Status"
+				},
+				"Text84": {
+					"type": "text",
+					"top": 444,
+					"left": 356,
+					"width": 216,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Most recent submission"
+				},
+				"Text85": {
+					"type": "text",
+					"top": 340,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent back to consultant"
+				},
+				"Text86": {
+					"type": "text",
+					"top": 469,
+					"left": 24,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Color"
+				},
+				"Text87": {
+					"type": "text",
+					"top": 499,
+					"left": 24,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Assignment status"
+				},
+				"Field70": {
+					"type": "input",
+					"top": 297,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]NBISLetter:26",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field70.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field71": {
+					"type": "input",
+					"top": 320,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ApprovedRtgToAreaEngr:24",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field71.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field72": {
+					"type": "input",
+					"top": 343,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]BoardApproval:17",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field72.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field73": {
+					"type": "input",
+					"top": 367,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]LetterToCityTown:32",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field73.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field78": {
+					"type": "input",
+					"top": 391,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]LetterToDistrict:25",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field78.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Combo Box3": {
+					"type": "dropdown",
+					"top": 469,
+					"left": 189,
+					"width": 144,
+					"height": 24,
+					"dataSource": "cboConsRatColor",
+					"choiceList": [
+						"",
+						"Red",
+						"Yellow",
+						"Green",
+						"Blue",
+						"White"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Combo Box3.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"cboAssignmentStatus": {
+					"type": "dropdown",
+					"top": 499,
+					"left": 189,
+					"width": 144,
+					"height": 24,
+					"dataSource": "cboAssignmentStatus",
+					"choiceList": [
+						"",
+						"Active",
+						"Will be Assigned",
+						"Rescinded",
+						"Completed",
+						"Rejected with Penalty",
+						"Rejected W/O Penalty",
+						"Contract Lapsed"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboAssignmentStatus.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field79": {
+					"type": "input",
+					"top": 444,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]MostRecentSub:49",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field79.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field25": {
+					"type": "input",
+					"top": 531,
+					"left": 98,
+					"width": 578,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]CRtgStatus:39",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"method": "ObjectMethods/Field25.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field80": {
+					"type": "input",
+					"top": 555,
+					"left": 98,
+					"width": 578,
+					"height": 58,
+					"sizingY": "grow",
+					"dataSource": "[Conslt Rating:63]RemarksRat:13",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field80.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text88": {
+					"type": "text",
+					"top": 297,
+					"left": 356,
+					"width": 196,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "NBIS letter"
+				},
+				"cboFillRtgStatus": {
+					"type": "dropdown",
+					"top": 529,
+					"left": 676,
+					"width": 20,
+					"height": 22,
+					"dataSource": "cboFillRtgStatus",
+					"focusable": false,
+					"class": "Label10Plain",
+					"method": "ObjectMethods/cboFillRtgStatus.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 467,
+					"left": 356,
+					"width": 336,
+					"height": 21,
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"text": "Consultant Score"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 469,
+					"left": 595,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ConsltScore:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#####.0;NA;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text48": {
+					"type": "groupBox",
+					"top": 367,
+					"left": 12,
+					"width": 324,
+					"height": 92,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": " Fourth Review Dates"
+				},
+				"Field45": {
+					"type": "input",
+					"top": 395,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit4:52",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field45.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text49": {
+					"type": "text",
+					"top": 395,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Fourth report resubmit"
+				},
+				"Field46": {
+					"type": "input",
+					"top": 415,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev4:53",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field46.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field47": {
+					"type": "input",
+					"top": 435,
+					"left": 231,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt4:62",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field47.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text50": {
+					"type": "text",
+					"top": 415,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent in-house review"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 435,
+					"left": 24,
+					"width": 195,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Sent back to consultant"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 211,
+					"left": 32,
+					"width": 146,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Work hours"
+				},
+				"costsNegWorkHours": {
+					"type": "input",
+					"top": 211,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg WorkHours:2",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"max": 9999,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegSalary": {
+					"type": "input",
+					"top": 312,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Salary:3",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegSalary.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegIndirectCost": {
+					"type": "input",
+					"top": 337,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg IndirectCost:4",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegIndirectCost.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegNetFee": {
+					"type": "input",
+					"top": 362,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg NetFee:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegNetFee.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text89": {
+					"type": "text",
+					"top": 313,
+					"left": 32,
+					"width": 146,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Salary"
+				},
+				"Text90": {
+					"type": "text",
+					"top": 338,
+					"left": 32,
+					"width": 146,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Indirect cost"
+				},
+				"Text91": {
+					"type": "text",
+					"top": 364,
+					"left": 32,
+					"width": 146,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee"
+				},
+				"costsNegTotalLimitFee": {
+					"type": "input",
+					"top": 400,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg TotalLimitFee:6",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text92": {
+					"type": "text",
+					"top": 401,
+					"left": 32,
+					"width": 146,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total limit fee"
+				},
+				"Text93": {
+					"type": "text",
+					"top": 288,
+					"left": 12,
+					"width": 146,
+					"height": 18,
+					"class": "Label12Italic",
+					"fontStyle": "italic",
+					"text": "Limiting Fees"
+				},
+				"Text94": {
+					"type": "text",
+					"top": 236,
+					"left": 32,
+					"width": 146,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Overhead rate %"
+				},
+				"Text95": {
+					"type": "text",
+					"top": 259,
+					"left": 32,
+					"width": 146,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee rate %"
+				},
+				"netFeeRate1": {
+					"type": "input",
+					"top": 259,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "netFeeRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"overheadRate1": {
+					"type": "input",
+					"top": 235,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "overheadRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegFlagging": {
+					"type": "input",
+					"top": 178,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Flagging:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegFlagging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text96": {
+					"type": "text",
+					"top": 179,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Flagging"
+				},
+				"Text97": {
+					"type": "text",
+					"top": 200,
+					"left": 428,
+					"width": 150,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Rigging"
+				},
+				"costsNegRigging": {
+					"type": "input",
+					"top": 199,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Rigging:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegRigging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text98": {
+					"type": "text",
+					"top": 222,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Lifts"
+				},
+				"costsNegLifts": {
+					"type": "input",
+					"top": 221,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Lifts:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegLifts.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text99": {
+					"type": "text",
+					"top": 244,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Traffic control"
+				},
+				"costsNegTrafficControl": {
+					"type": "input",
+					"top": 242,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg TrafficControl:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegTrafficControl.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text100": {
+					"type": "text",
+					"top": 265,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Police"
+				},
+				"costsNegPolice": {
+					"type": "input",
+					"top": 264,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Police:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPolice.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text101": {
+					"type": "text",
+					"top": 286,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Printing"
+				},
+				"costsNegPrinting": {
+					"type": "input",
+					"top": 286,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Printing:12",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPrinting.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text102": {
+					"type": "text",
+					"top": 307,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Mileage"
+				},
+				"costsNegMileage": {
+					"type": "input",
+					"top": 307,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Mileage:13",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMileage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text103": {
+					"type": "text",
+					"top": 329,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Lodging"
+				},
+				"costsNegLodging": {
+					"type": "input",
+					"top": 329,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Lodging:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegLodging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text104": {
+					"type": "text",
+					"top": 350,
+					"left": 428,
+					"width": 150,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Postage"
+				},
+				"costsNegPostage": {
+					"type": "input",
+					"top": 350,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Postage:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPostage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text105": {
+					"type": "text",
+					"top": 372,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Meals"
+				},
+				"costsNegMeals": {
+					"type": "input",
+					"top": 372,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Meals:16",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMeals.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegMileage1": {
+					"type": "input",
+					"top": 394,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Barge:42",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMileage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegLodging1": {
+					"type": "input",
+					"top": 415,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg SafetyBoat:43",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegLodging1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegPostage1": {
+					"type": "input",
+					"top": 437,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Snooper:44",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPostage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegMeals1": {
+					"type": "input",
+					"top": 458,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg RRflagging:45",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMeals1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegMisc": {
+					"type": "input",
+					"top": 480,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg Misc:37",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMisc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegTotalDirectCost": {
+					"type": "input",
+					"top": 511,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg TotalDirectCost:17",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegTotalCost": {
+					"type": "input",
+					"top": 534,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Neg TotalCost:18",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegComments": {
+					"type": "input",
+					"top": 452,
+					"left": 12,
+					"width": 324,
+					"height": 156,
+					"sizingY": "grow",
+					"dataSource": "[Conslt Rating Cost:74]Neg Comments:19",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text106": {
+					"type": "text",
+					"top": 511,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total direct cost"
+				},
+				"Text107": {
+					"type": "text",
+					"top": 534,
+					"left": 373,
+					"width": 204,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total Negotiated Cost"
+				},
+				"Text108": {
+					"type": "text",
+					"top": 433,
+					"left": 12,
+					"width": 120,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Comments"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 181,
+					"left": 69,
+					"width": 204,
+					"height": 17,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "NEGOTIATED COSTS"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 157,
+					"left": 408,
+					"width": 132,
+					"height": 18,
+					"class": "Label12Italic",
+					"fontStyle": "italic",
+					"text": "Direct Expenses"
+				},
+				"Text109": {
+					"type": "text",
+					"top": 480,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Miscellaneous"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 390,
+					"left": 27,
+					"width": 276
+				},
+				"Line10": {
+					"type": "line",
+					"top": 504,
+					"left": 426,
+					"width": 250
+				},
+				"Line11": {
+					"type": "line",
+					"top": 556,
+					"left": 580,
+					"width": 96
+				},
+				"Line12": {
+					"type": "line",
+					"top": 559,
+					"left": 580,
+					"width": 96
+				},
+				"Text110": {
+					"type": "text",
+					"top": 394,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Barge"
+				},
+				"Text111": {
+					"type": "text",
+					"top": 415,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Safety boat"
+				},
+				"Text112": {
+					"type": "text",
+					"top": 437,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Snooper"
+				},
+				"Text113": {
+					"type": "text",
+					"top": 458,
+					"left": 428,
+					"width": 150,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "RR Flagging/Permits"
+				},
+				"bEditRates": {
+					"type": "button",
+					"top": 238,
+					"left": 298,
+					"width": 94,
+					"height": 26,
+					"dataSource": "bEditRates",
+					"text": "Edit Rates",
+					"class": "Default",
+					"method": "ObjectMethods/bEditRates.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onUnload"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"costsActWorkHours": {
+					"type": "input",
+					"top": 211,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Act WorkHours:20",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"max": 9999,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"overheadRate": {
+					"type": "input",
+					"top": 235,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "overheadRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActSalary": {
+					"type": "input",
+					"top": 312,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Act Salary:21",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActSalary.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActIndirectCost": {
+					"type": "input",
+					"top": 337,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Act IndirectCost:39",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActIndirectCost.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActNetFee": {
+					"type": "input",
+					"top": 362,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Act NetFee:22",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActNetFee.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActTotalLimitFee": {
+					"type": "input",
+					"top": 400,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Act TotalLimitFee:23",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 181,
+					"left": 10,
+					"width": 276,
+					"height": 17,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "ACTUAL COSTS"
+				},
+				"Text114": {
+					"type": "text",
+					"top": 211,
+					"left": 32,
+					"width": 132,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Work hours"
+				},
+				"Text115": {
+					"type": "text",
+					"top": 313,
+					"left": 32,
+					"width": 132,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Salary"
+				},
+				"Text116": {
+					"type": "text",
+					"top": 338,
+					"left": 32,
+					"width": 132,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Indirect cost"
+				},
+				"Text117": {
+					"type": "text",
+					"top": 364,
+					"left": 32,
+					"width": 132,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee"
+				},
+				"Text118": {
+					"type": "text",
+					"top": 401,
+					"left": 32,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total limit fee"
+				},
+				"Text119": {
+					"type": "text",
+					"top": 236,
+					"left": 32,
+					"width": 132,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Overhead rate %"
+				},
+				"Text120": {
+					"type": "text",
+					"top": 259,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee rate %"
+				},
+				"netFeeRate": {
+					"type": "input",
+					"top": 259,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "netFeeRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActFlagging": {
+					"type": "input",
+					"top": 178,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Flagging:24",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActFlagging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActRigging": {
+					"type": "input",
+					"top": 199,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Rigging:25",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActRigging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActLifts": {
+					"type": "input",
+					"top": 221,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Lifts:26",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActLifts.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActTrafficControl": {
+					"type": "input",
+					"top": 242,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act TrafficControl:27",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActTrafficControl.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPolice": {
+					"type": "input",
+					"top": 264,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Police:28",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPolice.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPrinting": {
+					"type": "input",
+					"top": 286,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Printing:29",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPrinting.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMileage1": {
+					"type": "input",
+					"top": 307,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Mileage:30",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMileage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActLodging1": {
+					"type": "input",
+					"top": 329,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Lodging:31",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActLodging1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPostage1": {
+					"type": "input",
+					"top": 350,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Postage:32",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPostage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMeals1": {
+					"type": "input",
+					"top": 372,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Meals:33",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMeals1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMileage": {
+					"type": "input",
+					"top": 394,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Barge:46",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMileage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActLodging": {
+					"type": "input",
+					"top": 415,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act SafetyBoat:47",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActLodging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPostage": {
+					"type": "input",
+					"top": 437,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Snooper:48",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPostage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMeals": {
+					"type": "input",
+					"top": 458,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act RRflagging:49",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMeals.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMisc": {
+					"type": "input",
+					"top": 480,
+					"left": 690,
+					"width": 10,
+					"height": 9,
+					"dataSource": "[Conslt Rating Cost:74]Act Misc:38",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMisc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActTotalDirectCost": {
+					"type": "input",
+					"top": 437,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Act TotalDirectCost:34",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActTotalDirectCost.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActTotalCost": {
+					"type": "input",
+					"top": 460,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Conslt Rating Cost:74]Act TotalCost:35",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActComments": {
+					"type": "input",
+					"top": 508,
+					"left": 12,
+					"width": 684,
+					"height": 96,
+					"sizingY": "grow",
+					"dataSource": "[Conslt Rating Cost:74]Act Comments:36",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text121": {
+					"type": "text",
+					"top": 437,
+					"left": 32,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total direct cost"
+				},
+				"Text122": {
+					"type": "text",
+					"top": 460,
+					"left": 32,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total Actual Cost"
+				},
+				"Text123": {
+					"type": "text",
+					"top": 489,
+					"left": 12,
+					"width": 492,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Comments"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 482,
+					"left": 160,
+					"width": 120
+				},
+				"Line14": {
+					"type": "line",
+					"top": 485,
+					"left": 160,
+					"width": 120
+				},
+				"costsActSalary1": {
+					"type": "checkbox",
+					"top": 460,
+					"left": 330,
+					"width": 236,
+					"height": 18,
+					"dataSource": "[Conslt Rating Cost:74]FinalCost_B:41",
+					"text": "Costs Entered are Final",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 288,
+					"left": 12,
+					"width": 146,
+					"height": 18,
+					"class": "Label12Italic",
+					"fontStyle": "italic",
+					"text": "Limiting Fees"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 390,
+					"left": 27,
+					"width": 276
+				},
+				"Line3": {
+					"type": "line",
+					"top": 430,
+					"left": 27,
+					"width": 276
+				},
+				"DE CRTG_AutoCalc_L": {
+					"type": "checkbox",
+					"top": 287,
+					"left": 110,
+					"width": 235,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "CRTG_AutoCalc_L",
+					"text": "Disable Automatic Calculation",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE CRTG_AutoCalc_L.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 381,
+					"left": 394,
+					"width": 490,
+					"height": 151,
+					"fill": "transparent",
+					"stroke": "#DDDDDD",
+					"strokeWidth": 0.1
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 214,
+					"left": 4,
+					"width": 880,
+					"height": 164,
+					"fill": "transparent"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 381,
+					"left": 4,
+					"width": 379,
+					"height": 60,
+					"fill": "transparent"
+				},
+				"DE Fields35": {
+					"type": "input",
+					"top": 164,
+					"left": 129,
+					"width": 110,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ReportDate:64",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE Fields35.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Combo Box5": {
+					"type": "dropdown",
+					"top": 162,
+					"left": 429,
+					"width": 104,
+					"height": 21,
+					"dataSource": "cboConsRatColor",
+					"choiceList": [
+						"",
+						"Red",
+						"Yellow",
+						"Green",
+						"Blue"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Combo Box5.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Fields36": {
+					"type": "input",
+					"top": 191,
+					"left": 95,
+					"width": 782,
+					"height": 19,
+					"dataSource": "[Conslt Rating:63]BridgeType:63",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"method": "ObjectMethods/DE Fields36.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text35": {
+					"type": "text",
+					"top": 217,
+					"left": 4,
+					"width": 204,
+					"height": 22,
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Rating Report Submissions"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 436,
+					"left": 404,
+					"width": 185,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Approved Rating to Area Engr"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 459,
+					"left": 404,
+					"width": 185,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Board Approval"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 483,
+					"left": 404,
+					"width": 185,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Letter to City/Town"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 507,
+					"left": 404,
+					"width": 185,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Letter to District"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 481,
+					"left": 25,
+					"width": 216,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Most Recent submission"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 164,
+					"left": 344,
+					"width": 90,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "Report Color"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 447,
+					"left": 44,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Assignment Status"
+				},
+				"Field43": {
+					"type": "input",
+					"top": 412,
+					"left": 152,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RecentAction:71",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field43.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 413,
+					"left": 603,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]NBISLetter:26",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NBISLetterStatus": {
+					"type": "dropdown",
+					"top": 413,
+					"left": 849,
+					"width": 20,
+					"height": 17,
+					"dataSource": "NBISLetterStatus",
+					"choiceList": [
+						"",
+						"Not Posted",
+						"Posting Waived",
+						"Posted",
+						"Remain Posted",
+						"Reduced Posting",
+						"Closed"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/NBISLetterStatus.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 436,
+					"left": 603,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ApprovedRtgToAreaEngr:24",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cboAssignmentStatus1": {
+					"type": "dropdown",
+					"top": 444,
+					"left": 209,
+					"width": 144,
+					"height": 24,
+					"dataSource": "cboAssignmentStatus",
+					"choiceList": [
+						"",
+						"Active",
+						"Will be Assigned",
+						"Rescinded",
+						"Completed",
+						"Rejected with Penalty",
+						"Rejected W/O Penalty",
+						"Contract Lapsed"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboAssignmentStatus1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 459,
+					"left": 603,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]BoardApproval:17",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 481,
+					"left": 264,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]MostRecentSub:49",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field18": {
+					"type": "input",
+					"top": 483,
+					"left": 603,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]LetterToCityTown:32",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field29": {
+					"type": "input",
+					"top": 506,
+					"left": 264,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ConsltScore:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#####.0;NA;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field29.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 507,
+					"left": 603,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]LetterToDistrict:25",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field21": {
+					"type": "input",
+					"top": 540,
+					"left": 98,
+					"width": 758,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Conslt Rating:63]CRtgStatus:39",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"method": "ObjectMethods/Field21.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cboFillRtgStatus1": {
+					"type": "dropdown",
+					"top": 538,
+					"left": 856,
+					"width": 20,
+					"height": 22,
+					"sizingX": "move",
+					"dataSource": "cboFillRtgStatus",
+					"focusable": false,
+					"class": "Label10Plain",
+					"method": "ObjectMethods/cboFillRtgStatus1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field28": {
+					"type": "input",
+					"top": 564,
+					"left": 98,
+					"width": 758,
+					"height": 58,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Conslt Rating:63]RemarksRat:13",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field28.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text30": {
+					"type": "text",
+					"top": 413,
+					"left": 404,
+					"width": 185,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "NBIS Letter"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 504,
+					"left": 25,
+					"width": 336,
+					"height": 21,
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"text": "Consultant Score"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 559,
+					"left": 24,
+					"width": 72,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Remarks"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 535,
+					"left": 24,
+					"width": 72,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Status"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 164,
+					"left": 5,
+					"width": 120,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Rating Report Date"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 191,
+					"left": 5,
+					"width": 88,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Bridge Type"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 389,
+					"left": 119,
+					"width": 156,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Last Review Action Date"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 392,
+					"left": 285,
+					"width": 90,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Is Rating Here?"
+				},
+				"Field44": {
+					"type": "input",
+					"top": 412,
+					"left": 305,
+					"width": 50,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]IsRtgHere:70",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text46": {
+					"type": "text",
+					"top": 384,
+					"left": 6,
+					"width": 121,
+					"height": 55,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Rating Review Section Information"
+				},
+				"DE Fields39": {
+					"type": "input",
+					"top": 219,
+					"left": 366,
+					"width": 511,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ReportPreparedBy:69",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Rating Cnslts"
+					},
+					"method": "ObjectMethods/DE Fields39.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Text47": {
+					"type": "text",
+					"top": 219,
+					"left": 245,
+					"width": 100,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Rating Done By :"
+				},
+				"CRTGMaintTools": {
+					"type": "pictureButton",
+					"top": 55,
+					"left": 643,
+					"width": 42,
+					"height": 42,
+					"visibility": "hidden",
+					"dataSource": "CRTGMaintTools",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX ToolSet.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/CRTGMaintTools.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 239,
+					"left": 37,
+					"width": 847,
+					"height": 139,
+					"fill": "transparent"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 239,
+					"left": 133,
+					"height": 139
+				},
+				"Line5": {
+					"type": "line",
+					"top": 239,
+					"left": 228,
+					"height": 139
+				},
+				"Line6": {
+					"type": "line",
+					"top": 239,
+					"left": 418,
+					"height": 139
+				},
+				"Line7": {
+					"type": "line",
+					"top": 239,
+					"left": 597,
+					"height": 139
+				},
+				"Line8": {
+					"type": "line",
+					"top": 239,
+					"left": 692,
+					"height": 139
+				},
+				"Line9": {
+					"type": "line",
+					"top": 239,
+					"left": 793,
+					"height": 139
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 276,
+					"left": 4,
+					"width": 880,
+					"height": 102,
+					"fill": "transparent"
+				},
+				"DE Fields3": {
+					"type": "input",
+					"top": 281,
+					"left": 43,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit1:23",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE Fields3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 281,
+					"left": 138,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev1:36",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 281,
+					"left": 233,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]DateReceivedByROUnit1:72",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 281,
+					"left": 328,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]AssignRtgDate1:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 281,
+					"left": 423,
+					"width": 149,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ReviewRtgWho1:8",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Reviewer1List2": {
+					"type": "dropdown",
+					"top": 281,
+					"left": 575,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Reviewer1List",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Reviewer1List2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field22": {
+					"type": "input",
+					"top": 281,
+					"left": 602,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]CmntsRecvd1:18",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field22.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Disposition1List2": {
+					"type": "dropdown",
+					"top": 281,
+					"left": 768,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Disposition1List",
+					"choiceList": [
+						"",
+						"Accepted",
+						"Back w/ Comments"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Disposition1List2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field23": {
+					"type": "input",
+					"top": 281,
+					"left": 796,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt1:33",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field23.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Fields4": {
+					"type": "input",
+					"top": 306,
+					"left": 43,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit2:31",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE Fields4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field24": {
+					"type": "input",
+					"top": 306,
+					"left": 138,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev2:37",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field24.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field26": {
+					"type": "input",
+					"top": 306,
+					"left": 233,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]DateReceivedByROUnit2:73",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field26.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field27": {
+					"type": "input",
+					"top": 306,
+					"left": 328,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]AssignRtgDate2:6",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field27.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field30": {
+					"type": "input",
+					"top": 306,
+					"left": 423,
+					"width": 149,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ReviewRtgWho2:54",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field30.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Reviewer2List2": {
+					"type": "dropdown",
+					"top": 306,
+					"left": 575,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Reviewer2List",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Reviewer2List2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field31": {
+					"type": "input",
+					"top": 306,
+					"left": 602,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]CmntsRecvd2:19",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field31.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Disposition2List2": {
+					"type": "dropdown",
+					"top": 306,
+					"left": 768,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Disposition2List",
+					"choiceList": [
+						"",
+						"Accepted",
+						"Back w/ Comments"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Disposition2List2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field32": {
+					"type": "input",
+					"top": 306,
+					"left": 796,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt2:34",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field32.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field33": {
+					"type": "input",
+					"top": 331,
+					"left": 43,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit3:41",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field33.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field34": {
+					"type": "input",
+					"top": 331,
+					"left": 138,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev3:38",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field34.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field35": {
+					"type": "input",
+					"top": 331,
+					"left": 233,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]DateReceivedByROUnit3:74",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field35.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field36": {
+					"type": "input",
+					"top": 331,
+					"left": 328,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]AssignRtgDate3:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field36.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field37": {
+					"type": "input",
+					"top": 331,
+					"left": 423,
+					"width": 149,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ReviewRtgWho3:55",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field37.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Reviewer3List2": {
+					"type": "dropdown",
+					"top": 331,
+					"left": 575,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Reviewer3List",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Reviewer3List2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field38": {
+					"type": "input",
+					"top": 331,
+					"left": 602,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]CmntsRecvd3:57",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field38.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Disposition3List2": {
+					"type": "dropdown",
+					"top": 331,
+					"left": 768,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Disposition3List",
+					"choiceList": [
+						"",
+						"Accepted",
+						"Back w/ Comments"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Disposition3List2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field39": {
+					"type": "input",
+					"top": 331,
+					"left": 796,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt3:35",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field39.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field40": {
+					"type": "input",
+					"top": 356,
+					"left": 43,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]RepSubmit4:52",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field40.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field41": {
+					"type": "input",
+					"top": 356,
+					"left": 138,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentInHouseRev4:53",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field41.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field42": {
+					"type": "input",
+					"top": 356,
+					"left": 233,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]DateReceivedByROUnit4:75",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field42.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field74": {
+					"type": "input",
+					"top": 356,
+					"left": 328,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]AssignRtgDate4:11",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field74.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field75": {
+					"type": "input",
+					"top": 356,
+					"left": 423,
+					"width": 149,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]ReviewRtgWho4:56",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field75.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Reviewer4List2": {
+					"type": "dropdown",
+					"top": 356,
+					"left": 575,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Reviewer4List",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Reviewer4List2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field76": {
+					"type": "input",
+					"top": 356,
+					"left": 602,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]CmntsRecvd4:58",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field76.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Disposition4List2": {
+					"type": "dropdown",
+					"top": 356,
+					"left": 768,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Disposition4List",
+					"choiceList": [
+						"",
+						"Accepted",
+						"Back w/ Comments"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Disposition4List2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field77": {
+					"type": "input",
+					"top": 356,
+					"left": 796,
+					"width": 85,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]SentBackToConslt4:62",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field77.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Display5": {
+					"type": "input",
+					"top": 281,
+					"left": 695,
+					"width": 70,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]Disposition1:16",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Display6": {
+					"type": "input",
+					"top": 331,
+					"left": 695,
+					"width": 70,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]Disposition3:60",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Display7": {
+					"type": "input",
+					"top": 306,
+					"left": 695,
+					"width": 70,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]Disposition2:59",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 244,
+					"left": 40,
+					"width": 85,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Report submittal"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 244,
+					"left": 138,
+					"width": 85,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Sent to In-house review"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 244,
+					"left": 602,
+					"width": 85,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Review Completed received"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 244,
+					"left": 796,
+					"width": 85,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Disposition Date"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 244,
+					"left": 328,
+					"width": 85,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Assigned"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 244,
+					"left": 423,
+					"width": 150,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Assigned To"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 244,
+					"left": 695,
+					"width": 90,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Disposition"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 281,
+					"left": 4,
+					"width": 30,
+					"height": 19,
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 306,
+					"left": 4,
+					"width": 30,
+					"height": 19,
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 331,
+					"left": 4,
+					"width": 30,
+					"height": 19,
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"Display8": {
+					"type": "input",
+					"top": 356,
+					"left": 695,
+					"width": 70,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]Disposition4:61",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 356,
+					"left": 4,
+					"width": 30,
+					"height": 19,
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "4"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 244,
+					"left": 233,
+					"width": 85,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Received in RO Unit"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 239,
+					"left": 323,
+					"height": 139
+				},
+				"Display9": {
+					"type": "input",
+					"top": 413,
+					"left": 704,
+					"width": 139,
+					"height": 17,
+					"dataSource": "[Conslt Rating:63]NBISLetterPostStatus_s:76",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 392,
+					"left": 704,
+					"width": 185,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "NBIS Letter Status"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"geometryStamp": 46,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

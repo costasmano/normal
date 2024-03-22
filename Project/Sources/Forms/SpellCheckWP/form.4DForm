@@ -1,0 +1,134 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"wpfield": {
+					"type": "input",
+					"top": 31,
+					"left": 2,
+					"width": 80,
+					"height": 16,
+					"visibility": "hidden",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"todoaction": {
+					"type": "input",
+					"top": 31,
+					"left": 103,
+					"width": 82,
+					"height": 16,
+					"visibility": "hidden",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"SpellCheck": {
+					"type": "button",
+					"top": 5,
+					"left": 10,
+					"width": 219,
+					"height": 24,
+					"text": "Do Spell Check and Continue",
+					"focusable": false,
+					"method": "ObjectMethods/SpellCheck.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AbortSpellCheck": {
+					"type": "button",
+					"top": 5,
+					"left": 541,
+					"width": 199,
+					"height": 24,
+					"sizingX": "move",
+					"text": "Stop Spell Check",
+					"focusable": false,
+					"method": "ObjectMethods/AbortSpellCheck.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WPAreaLabel": {
+					"type": "text",
+					"top": 47,
+					"left": 10,
+					"width": 730,
+					"height": 18,
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Sample Text:"
+				},
+				"WPArea": {
+					"type": "write",
+					"top": 76,
+					"left": 10,
+					"width": 730,
+					"height": 241,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHeaders": false,
+					"showFooters": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/WPArea.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterEdit"
+					]
+				}
+			}
+		}
+	]
+}

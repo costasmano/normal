@@ -1,0 +1,468 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onDragOver",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "listbox",
+					"top": 29,
+					"left": 37,
+					"width": 821,
+					"height": 204,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"borderStyle": "double",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable1_Column1",
+							"dataSource": "PRJ_AvailableBins_atxt",
+							"width": 806,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_IncludedList",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDrop",
+								"onDataChange"
+							],
+							"header": {
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"Variable2": {
+					"type": "listbox",
+					"top": 299,
+					"left": 37,
+					"width": 400,
+					"height": 244,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"borderStyle": "double",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable2_Column1",
+							"dataSource": "PRJ_NewSelectedBins_atxt",
+							"width": 385,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_IncludedList",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDrop",
+								"onDataChange"
+							],
+							"header": {
+								"name": "2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"IncludeAll1": {
+					"type": "checkbox",
+					"top": 252,
+					"left": 319,
+					"width": 118,
+					"height": 21,
+					"dataSource": "MoveNew_l",
+					"text": "Include All",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/IncludeAll1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveToNewButton": {
+					"type": "button",
+					"top": 252,
+					"left": 41,
+					"width": 108,
+					"height": 21,
+					"dataSource": "Move_l",
+					"text": "Move to New",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/MoveToNewButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveFromNewButton": {
+					"type": "button",
+					"top": 252,
+					"left": 167,
+					"width": 138,
+					"height": 21,
+					"dataSource": "Move_l",
+					"text": "Move to Available",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/MoveFromNewButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 600,
+					"left": 357,
+					"width": 151,
+					"height": 21,
+					"dataSource": "Button1",
+					"text": "Finished",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 600,
+					"left": 517,
+					"width": 151,
+					"height": 21,
+					"dataSource": "Button1",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"IncludeAllpic1": {
+					"type": "picture",
+					"top": 250,
+					"left": 421,
+					"width": 17,
+					"height": 25,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/IncludeAll.png"
+				},
+				"MoveFromNewPicture": {
+					"type": "picture",
+					"top": 240,
+					"left": 295,
+					"width": 20,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/MoveFromNewPicture.png"
+				},
+				"PRJ_PrimaryBin_txt": {
+					"type": "input",
+					"top": 568,
+					"left": 37,
+					"width": 628,
+					"height": 26,
+					"dataSource": "PRJ_PrimaryBin_txt",
+					"class": "PRJ_InputVariable",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 551,
+					"left": 37,
+					"width": 227,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"text": "Primary BIN"
+				},
+				"Variable3": {
+					"type": "listbox",
+					"top": 299,
+					"left": 457,
+					"width": 400,
+					"height": 244,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"borderStyle": "double",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable3_Column1",
+							"dataSource": "PRJ_ExistSelectedBins_atxt",
+							"width": 385,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_IncludedList",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDrop",
+								"onDataChange"
+							],
+							"header": {
+								"name": "4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"IncludeAll2": {
+					"type": "checkbox",
+					"top": 252,
+					"left": 739,
+					"width": 118,
+					"height": 21,
+					"dataSource": "MoveExisting_l",
+					"text": "Include All",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/IncludeAll2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveToExistingButton": {
+					"type": "button",
+					"top": 252,
+					"left": 457,
+					"width": 124,
+					"height": 21,
+					"dataSource": "Move_l",
+					"text": "Move to Existing",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/MoveToExistingButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveFromExistButton": {
+					"type": "button",
+					"top": 252,
+					"left": 589,
+					"width": 138,
+					"height": 21,
+					"dataSource": "Move_l",
+					"text": "Move to Available",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/MoveFromExistButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"IncludeAllpic2": {
+					"type": "picture",
+					"top": 250,
+					"left": 840,
+					"width": 17,
+					"height": 25,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/IncludeAll.png"
+				},
+				"MoveToExistingPicture": {
+					"type": "picture",
+					"top": 256,
+					"left": 451,
+					"width": 20,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/MoveToExistingPicture.png"
+				},
+				"MoveFromExistPicture": {
+					"type": "picture",
+					"top": 240,
+					"left": 719,
+					"width": 20,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/MoveFromNewPicture.png"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 281,
+					"left": 37,
+					"width": 397,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "New BINs"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 281,
+					"left": 457,
+					"width": 397,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Existing BINs"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 11,
+					"left": 37,
+					"width": 397,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"text": "Available BINs"
+				}
+			}
+		}
+	]
+}

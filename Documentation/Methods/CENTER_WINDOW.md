@@ -1,0 +1,1 @@
+Feb-2003 : Added local var $winID to receive the ID from the Open Window function. Declared parameters.

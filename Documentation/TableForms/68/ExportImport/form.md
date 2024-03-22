@@ -1,0 +1,1 @@
+Export Import Dialog.  2-Jan-01 : Modified to platinum interface. fixed some of the field to  change background color to automatic. Fixed Form Event syntax in Object methods asFields, asFldTypes, asExpImpfld to refer to 'On Double Clicked' constant. Enabled On Double clicked events on these scrollable areas

@@ -1,0 +1,1 @@
+G_InspGetRatings(True:C214)  //Show alerts

@@ -1,0 +1,1 @@
+2003-10-10 : Created2003-10-17 : Changed length of vCityStateZip to 1002004-02-13 : Changed vStreet to A100.2004-02-26 : Moved "vDate:=Current date" code outside the if block

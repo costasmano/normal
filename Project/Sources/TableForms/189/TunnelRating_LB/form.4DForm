@@ -1,0 +1,293 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 119,
+	"markerBreak": 156,
+	"markerFooter": 156,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"TunnelRating_LB": {
+					"type": "listbox",
+					"top": 20,
+					"left": 19,
+					"width": 275,
+					"height": 94,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 189,
+					"highlightSet": "$ListboxSet0",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#C0FFFF",
+					"class": "DataEntry12APlain",
+					"method": "ObjectMethods/TunnelRating_LB.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column5",
+							"dataSource": "[NTI_TunnelRatings:189]RatingReport_d:3",
+							"dataSourceTypeHint": "date",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "short",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12APlain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Report Date",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12APlain"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "[NTI_TunnelRatings:189]Inspection_d:12",
+							"dataSourceTypeHint": "date",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "short",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12APlain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Inspection Date",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12APlain"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[NTI_TunnelRatings:189]RatingReportRoofGirder_s:4",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"class": "DataEntry12APlain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Roof Girder",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12APlain"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[NTI_TunnelRatings:189]RatingReportInvertSlab_s:5",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12APlain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Invert Slab",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12APlain"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[NTI_TunnelRatings:189]RatingReportInvertGirder_s:6",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12APlain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Invert Girder",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12APlain"
+							}
+						}
+					]
+				},
+				"Skip": {
+					"type": "button",
+					"top": 134,
+					"left": 19,
+					"width": 110,
+					"height": 22,
+					"sizingY": "move",
+					"text": "Skip",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Skip.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Select": {
+					"type": "button",
+					"top": 134,
+					"left": 184,
+					"width": 110,
+					"height": 22,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"text": "Select",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Select.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RatingLabel": {
+					"type": "text",
+					"top": 20,
+					"left": 32,
+					"width": 249,
+					"height": 44,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Rating Label : handled in form method"
+				}
+			}
+		}
+	]
+}

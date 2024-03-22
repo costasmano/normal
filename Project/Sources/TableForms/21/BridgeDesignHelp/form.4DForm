@@ -1,0 +1,228 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable4": {
+					"type": "button",
+					"top": 392,
+					"left": 472,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Help Page Control": {
+					"type": "tab",
+					"top": 11,
+					"left": 11,
+					"width": 550,
+					"height": 374,
+					"dataSource": "DefPageControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Descriptions",
+						"Transfer Design Data to SI&A"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"action": "gotoPage",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 61,
+					"left": 33,
+					"width": 481,
+					"height": 39,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "(For exact definition of project categories, see the Bridge Manual, Part I.)\r\rProposed Bridge \r\r\r\r\r\r\r"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 45,
+					"left": 24,
+					"width": 385,
+					"height": 12,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Type of Project   "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 106,
+					"left": 54,
+					"width": 400,
+					"height": 28,
+					"class": "Default",
+					"text": "- New Bridge:  new bridge either on a new road or on an existing road where there was no bridge previously.  This option can be selected only if the Bridge Category = DESIGN."
+				},
+				"Text5": {
+					"type": "text",
+					"top": 135,
+					"left": 54,
+					"width": 400,
+					"height": 28,
+					"class": "Default",
+					"text": "- Functional Replacement:  Replaces an existing bridge either in the same location, on a realigned road, or on a relocated road."
+				},
+				"Text6": {
+					"type": "text",
+					"top": 170,
+					"left": 33,
+					"width": 454,
+					"height": 168,
+					"class": "Default",
+					"text": "Proposed Bridge Repairs\r\rProposed Bridge Rehabilitation\r\rProposed Deck Replacement\r\rProposed Superstructure Replacement\r\rProposed Pre-Engineered Bridge \r\t\t\t\t\t\t- New Bridge\r\t\t\t\t\t\t- Functional Replacement"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 83,
+					"left": 24,
+					"width": 500,
+					"height": 52,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "If the Bridge Category Code is DES = Structure Under Design, the design data which correspond to NBI items will be saved to the SI&A table.  If the design data is blank or empty, then the corresponding SI&A value will not be saved.\r\r"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 63,
+					"left": 24,
+					"width": 385,
+					"height": 12,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Bridge Under Design"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 137,
+					"left": 24,
+					"width": 385,
+					"height": 12,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "English/Metric Data Entry"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 212,
+					"left": 24,
+					"width": 385,
+					"height": 12,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Review Bridge Design Data"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 233,
+					"left": 24,
+					"width": 500,
+					"height": 26,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "When the bridge is ready for the first inspection, the user can review the design data using Design to SI&A form.  The user can designate which design data will be transferred to the SI&A.\r\r\r\r"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 161,
+					"left": 24,
+					"width": 499,
+					"height": 39,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "Geometric data can be entered in either English or Metric mode in the Bridge Design table.  However, when the data are transferred to SI&A table, English data will be converted to Metric value.\r"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

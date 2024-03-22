@@ -1,0 +1,1 @@
+7-17-2003 ASL  Created. Use this to format a date string. Also handles the case when the date is 0/00/00.

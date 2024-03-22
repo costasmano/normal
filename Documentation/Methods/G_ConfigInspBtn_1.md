@@ -1,0 +1,1 @@
+2004-04-16 : Changed the sorting code for [ElementDict].  It uses ORDER BY full label instead of ORDER BY FORUMLA.

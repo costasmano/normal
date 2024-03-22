@@ -1,0 +1,1 @@
+Mar 2001 : All variables transparent; Most Rectangles No fill; All Text No fill; Moved vDate down a bit.23-mar-01 : changed DNR label to Other.Feb-2002 : Changed MHD Logo to Library Picture

@@ -1,0 +1,1168 @@
+{
+	"destination": "detailPrinter",
+	"inheritedForm": "PrintTemplate",
+	"inheritedFormTable": 132,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 764,
+	"markerBreak": 764,
+	"markerFooter": 764,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 38,
+					"left": 16,
+					"width": 568,
+					"height": 17,
+					"sizingY": "move",
+					"fill": "#DDDDDD"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 41,
+					"left": 15,
+					"width": 569,
+					"height": 18,
+					"class": "Helvetica12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "5. DETOUR ROUTE"
+				},
+				"SCPOA_DetBIns_atxt": {
+					"type": "listbox",
+					"top": 364,
+					"left": 20,
+					"width": 25,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetBIns_atxt_Column1",
+							"dataSource": "SCPOA_DetBIns_atxt",
+							"width": 25,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetBDept_atxt": {
+					"type": "listbox",
+					"top": 364,
+					"left": 46,
+					"width": 42,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetBDept_atxt_Column1",
+							"dataSource": "SCPOA_DetBDept_atxt",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetI6A_atxt1": {
+					"type": "listbox",
+					"top": 364,
+					"left": 89,
+					"width": 111,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetI6A_atxt1_Column1",
+							"dataSource": "SCPOA_DetI7_atxt",
+							"width": 111,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetI6A_atxt": {
+					"type": "listbox",
+					"top": 364,
+					"left": 201,
+					"width": 143,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetI6A_atxt_Column1",
+							"dataSource": "SCPOA_DetI6A_atxt",
+							"width": 143,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "6",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_detVertCL_aR": {
+					"type": "listbox",
+					"top": 364,
+					"left": 345,
+					"width": 23,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_detVertCL_aR_Column1",
+							"dataSource": "SCPOA_detVertCL_aR",
+							"width": 23,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "###.#;NA;0",
+							"numberFormat": "###.#;NA;0",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_detWidth_aR": {
+					"type": "listbox",
+					"top": 364,
+					"left": 369,
+					"width": 23,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_detWidth_aR_Column1",
+							"dataSource": "SCPOA_detWidth_aR",
+							"width": 23,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "###.#",
+							"numberFormat": "###.#",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_detAASHTO_ar": {
+					"type": "listbox",
+					"top": 364,
+					"left": 393,
+					"width": 23,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_detAASHTO_ar_Column1",
+							"dataSource": "SCPOA_detAASHTO_ar",
+							"width": 23,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "###.#",
+							"numberFormat": "###.#",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "12",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetI113_atxt": {
+					"type": "listbox",
+					"top": 364,
+					"left": 417,
+					"width": 21,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetI113_atxt_Column1",
+							"dataSource": "SCPOA_DetI113_atxt",
+							"width": 21,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "14",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "15",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetI113_atxt1": {
+					"type": "listbox",
+					"top": 364,
+					"left": 439,
+					"width": 43,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetI113_atxt1_Column1",
+							"dataSource": "SCPOA_DetPosted_atxt",
+							"width": 43,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "16",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "17",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetI113_atxt2": {
+					"type": "listbox",
+					"top": 364,
+					"left": 483,
+					"width": 40,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetI113_atxt2_Column1",
+							"dataSource": "SCPOA_DetPostVs_atxt",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "18",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "19",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetI113_atxt3": {
+					"type": "listbox",
+					"top": 364,
+					"left": 524,
+					"width": 38,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetI113_atxt3_Column1",
+							"dataSource": "SCPOA_DetADT_aL",
+							"width": 38,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "20",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "21",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetI113_atxt4": {
+					"type": "listbox",
+					"top": 364,
+					"left": 563,
+					"width": 17,
+					"height": 192,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Arial8",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "SCPOA_DetI113_atxt4_Column1",
+							"dataSource": "SCPOA_DetTrk_aL",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Arial8",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "22",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							},
+							"footer": {
+								"name": "23",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial8"
+							}
+						}
+					]
+				},
+				"SCPOA_DetourDesc_txt1": {
+					"type": "input",
+					"top": 88,
+					"left": 20,
+					"width": 560,
+					"height": 231,
+					"dataSource": "SCPOA_DetourDesc_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 55,
+					"left": 20,
+					"width": 513,
+					"height": 13,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "5a. Detour route description (route number, from - to, etc.) – Include map in Attachment I.  "
+				},
+				"Text26": {
+					"type": "text",
+					"top": 333,
+					"left": 20,
+					"width": 173,
+					"height": 13,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "5b. Bridges on Detour Route :"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 352,
+					"left": 22,
+					"width": 25,
+					"height": 11,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "BIN"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 352,
+					"left": 46,
+					"width": 42,
+					"height": 11,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "BDEPT"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 352,
+					"left": 203,
+					"width": 143,
+					"height": 11,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"text": "Item 6A"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 342,
+					"left": 393,
+					"width": 23,
+					"height": 23,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "Suff. Rtg."
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 342,
+					"left": 417,
+					"width": 21,
+					"height": 23,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "Item 113"
+				},
+				"S3_Text1": {
+					"type": "text",
+					"top": 352,
+					"left": 91,
+					"width": 104,
+					"height": 11,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"text": "Item 7"
+				},
+				"S5_Text1": {
+					"type": "text",
+					"top": 342,
+					"left": 438,
+					"width": 43,
+					"height": 23,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "Posting Status"
+				},
+				"S5_Text2": {
+					"type": "text",
+					"top": 342,
+					"left": 482,
+					"width": 40,
+					"height": 23,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "Posting Values"
+				},
+				"S5_Text3": {
+					"type": "text",
+					"top": 342,
+					"left": 523,
+					"width": 38,
+					"height": 23,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "ADT"
+				},
+				"S5_Text4": {
+					"type": "text",
+					"top": 342,
+					"left": 559,
+					"width": 21,
+					"height": 23,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "%\r Trk."
+				},
+				"S4_Text1": {
+					"type": "text",
+					"top": 334,
+					"left": 345,
+					"width": 23,
+					"height": 35,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "Vert. Over Clr."
+				},
+				"S4_Text2": {
+					"type": "text",
+					"top": 334,
+					"left": 367,
+					"width": 27,
+					"height": 35,
+					"sizingX": "grow",
+					"class": "Arial8Bold",
+					"textAlign": "center",
+					"text": "Width Curb-Curb"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 330,
+					"left": 15,
+					"width": 569
+				},
+				"Text2": {
+					"type": "text",
+					"top": 559,
+					"left": 20,
+					"width": 21,
+					"height": 19,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "5c."
+				},
+				"Line1": {
+					"type": "line",
+					"top": 557,
+					"left": 15,
+					"width": 569
+				},
+				"Text3": {
+					"type": "text",
+					"top": 559,
+					"left": 40,
+					"width": 200,
+					"height": 37,
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"text": "Traffic Control Equipment And Storage Location(s)\r(DOT/Town) :"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 559,
+					"left": 260,
+					"width": 95,
+					"height": 15,
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"text": "MASSDOT District :"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 559,
+					"left": 370,
+					"width": 205,
+					"height": 18,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "MASSDOT District Bridge Engineer  :"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 659,
+					"left": 20,
+					"width": 16,
+					"height": 19,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "5d."
+				},
+				"Text7": {
+					"type": "text",
+					"top": 659,
+					"left": 40,
+					"width": 203,
+					"height": 14,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Additional Considerations or Critical Issues : "
+				},
+				"Line2": {
+					"type": "line",
+					"top": 657,
+					"left": 15,
+					"width": 569
+				},
+				"SCPOA_TrafEqLoc_txt": {
+					"type": "input",
+					"top": 594,
+					"left": 40,
+					"width": 203,
+					"height": 58,
+					"dataSource": "SCPOA_TrafEqLoc_txt",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_TrafEqDist_txt": {
+					"type": "input",
+					"top": 594,
+					"left": 260,
+					"width": 95,
+					"height": 58,
+					"dataSource": "SCPOA_TrafEqDist_txt",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_TrafEqDBE_txt": {
+					"type": "input",
+					"top": 594,
+					"left": 370,
+					"width": 205,
+					"height": 58,
+					"dataSource": "SCPOA_TrafEqDBE_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_AddtlCritCons_txt": {
+					"type": "input",
+					"top": 674,
+					"left": 40,
+					"width": 540,
+					"height": 71,
+					"dataSource": "SCPOA_AddtlCritCons_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text21": {
+					"type": "text",
+					"top": 69,
+					"left": 20,
+					"width": 543,
+					"height": 14,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Detours to be developed by the District or Municipality specific to each closure event."
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group9": [
+				"SCPOA_DetBIns_atxt",
+				"SCPOA_DetBDept_atxt",
+				"SCPOA_DetI6A_atxt1",
+				"SCPOA_DetI6A_atxt",
+				"SCPOA_detVertCL_aR",
+				"SCPOA_detWidth_aR",
+				"SCPOA_detAASHTO_ar",
+				"SCPOA_DetI113_atxt",
+				"SCPOA_DetI113_atxt1",
+				"SCPOA_DetI113_atxt2",
+				"SCPOA_DetI113_atxt3",
+				"SCPOA_DetI113_atxt4"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

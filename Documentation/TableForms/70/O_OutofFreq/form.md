@@ -1,0 +1,1 @@
+Apr-2001 : modified Object method of button bzPrint to use Page Setup command before the Print Settings command.Dec-2001 :  Changed buttons to 3D Buttons, button pictures to Library Pictures 

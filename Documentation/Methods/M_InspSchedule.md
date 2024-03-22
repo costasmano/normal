@@ -1,0 +1,1 @@
+2001-01-31 : modified to use new InspDialogx dialogs due to new Item8 coding  2001-04 : modified to adjust to change of month popup list in form InspDialog2 .  2004-01-09 : Declare all dialog variables ; Add code to implement the new radio button for State or NBI and the new checkbox for Complex Bridges.

@@ -1,0 +1,1 @@
+Apr-2003 : Added check to avoid setting an ADT value greater than 999,999 (6 digits) to match FHWA coding guide.

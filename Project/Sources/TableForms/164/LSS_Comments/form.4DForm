@@ -1,0 +1,145 @@
+{
+	"destination": "detailPrinter",
+	"inheritedForm": "LSS_FormTemplate",
+	"inheritedFormTable": 164,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 731,
+	"markerBreak": 731,
+	"markerFooter": 731,
+	"events": [
+		"onPrintingDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Lss_CommentsPrint": {
+					"type": "input",
+					"top": 71,
+					"left": 32,
+					"width": 533,
+					"height": 655,
+					"dataSource": "Lss_CommentsPrint_pct",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 6,
+					"left": 460,
+					"width": 33,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Arial9",
+					"text": "PAGE"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 18,
+					"left": 536,
+					"width": 24
+				},
+				"Line6": {
+					"type": "line",
+					"top": 18,
+					"left": 490,
+					"width": 24
+				},
+				"Page2Title": {
+					"type": "text",
+					"top": 56,
+					"left": 215,
+					"width": 171,
+					"height": 18,
+					"fill": "#111111",
+					"stroke": "#FFFFFF",
+					"class": "Times14Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "REMARKS"
+				},
+				"PageNumber": {
+					"type": "input",
+					"top": 5,
+					"left": 493,
+					"width": 21,
+					"height": 13,
+					"dataSource": "vPageNo",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader"
+					]
+				},
+				"TotalPages": {
+					"type": "input",
+					"top": 5,
+					"left": 535,
+					"width": 24,
+					"height": 13,
+					"dataSource": "vTotalPages",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 6,
+					"left": 514,
+					"width": 21,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Arial9",
+					"textAlign": "center",
+					"text": "OF"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

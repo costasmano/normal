@@ -1,0 +1,1 @@
+2004-2-10:  Used style sheet for form objects (text, field, variable, dropdown list, etc)2004-04-13 : Applied form scaling - 120%.  2004-04-15 : Adjusted form objects (decresed text box height, re-applied style sheets, etc).

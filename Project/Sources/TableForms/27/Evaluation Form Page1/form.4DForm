@@ -1,0 +1,798 @@
+{
+	"destination": "detailPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 732,
+	"markerBreak": 732,
+	"markerFooter": 732,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 22,
+					"width": 530,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Arial16Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "INSPECTION TEAM REPORT EVALUATION"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 719,
+					"left": 22,
+					"width": 530,
+					"height": 12,
+					"class": "Arial10",
+					"textAlign": "center",
+					"text": "Page 1 of 5\r"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 120,
+					"left": 279,
+					"width": 103,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "BRIDGE NO./BIN "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 120,
+					"left": 34,
+					"width": 97,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "CITY/TOWN"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 149,
+					"left": 34,
+					"width": 128,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "QA/QC REVIEW DATE"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 149,
+					"left": 257,
+					"width": 125,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "STRUCTURE NO."
+				},
+				"Text7": {
+					"type": "text",
+					"top": 176,
+					"left": 52,
+					"width": 115,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "43 - Structure Type"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 204,
+					"left": 52,
+					"width": 110,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "07 - Facility Carried"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 232,
+					"left": 52,
+					"width": 140,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "06 - Features Intersected"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 260,
+					"left": 34,
+					"width": 151,
+					"height": 12,
+					"class": "Geneva12",
+					"text": "REVIEW TEAM:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 288,
+					"left": 52,
+					"width": 196,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "Quality Assurance Engineer (ABIE)"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 316,
+					"left": 52,
+					"width": 140,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "Team Leader"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 344,
+					"left": 52,
+					"width": 135,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "Team Member(s)"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 372,
+					"left": 34,
+					"width": 214,
+					"height": 15,
+					"class": "Geneva12",
+					"text": "INSPECTION TEAM (From Report):"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 401,
+					"left": 52,
+					"width": 179,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "Quality Control Engineer (DBIE)"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 425,
+					"left": 52,
+					"width": 140,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "Team Leader"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 452,
+					"left": 52,
+					"width": 135,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "Team Member(s)"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 488,
+					"left": 52,
+					"width": 129,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "Date of Report"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 488,
+					"left": 244,
+					"width": 182,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 13,
+					"text": "Type of Inspection"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 549,
+					"left": 52,
+					"width": 186,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "2. Is Team leader Qualified?\t\t\t\t\r"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 520,
+					"left": 323,
+					"width": 126,
+					"height": 14,
+					"class": "Label12Plain",
+					"text": "__Yes\t         __No "
+				},
+				"Line13": {
+					"type": "line",
+					"top": 666,
+					"left": 49,
+					"width": 486
+				},
+				"Line14": {
+					"type": "line",
+					"top": 706,
+					"left": 49,
+					"width": 486
+				},
+				"Line15": {
+					"type": "line",
+					"top": 686,
+					"left": 49,
+					"width": 486
+				},
+				"Text22": {
+					"type": "text",
+					"top": 520,
+					"left": 52,
+					"width": 256,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "1. Is Quality Control Engineer Qualified?\t  "
+				},
+				"Text23": {
+					"type": "text",
+					"top": 576,
+					"left": 52,
+					"width": 160,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "3. Were all items completed?"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 633,
+					"left": 52,
+					"width": 374,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "5. List items which changed from previous report:"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 604,
+					"left": 52,
+					"width": 266,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "4. Were conclusions logically stated and correct?"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 190,
+					"left": 159,
+					"width": 214,
+					"height": 1
+				},
+				"Line11": {
+					"type": "line",
+					"top": 467,
+					"left": 145,
+					"width": 390
+				},
+				"Line16": {
+					"type": "line",
+					"top": 503,
+					"left": 357,
+					"width": 178,
+					"height": 1,
+					"startPoint": "bottomLeft"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 503,
+					"left": 137,
+					"width": 94
+				},
+				"Line10": {
+					"type": "line",
+					"top": 439,
+					"left": 145,
+					"width": 390,
+					"height": 1
+				},
+				"Line9": {
+					"type": "line",
+					"top": 416,
+					"left": 233,
+					"width": 302
+				},
+				"Line7": {
+					"type": "line",
+					"top": 359,
+					"left": 149,
+					"width": 386
+				},
+				"Line6": {
+					"type": "line",
+					"top": 331,
+					"left": 137,
+					"width": 398
+				},
+				"Line4": {
+					"type": "line",
+					"top": 303,
+					"left": 242,
+					"width": 293
+				},
+				"Line3": {
+					"type": "line",
+					"top": 247,
+					"left": 192,
+					"width": 343
+				},
+				"Line18": {
+					"type": "line",
+					"top": 219,
+					"left": 160,
+					"width": 375
+				},
+				"Line5": {
+					"type": "line",
+					"top": 135,
+					"left": 114,
+					"width": 150
+				},
+				"Line19": {
+					"type": "line",
+					"top": 164,
+					"left": 162,
+					"width": 89
+				},
+				"Line8": {
+					"type": "line",
+					"top": 135,
+					"left": 389,
+					"width": 146
+				},
+				"Line2": {
+					"type": "line",
+					"top": 164,
+					"left": 361,
+					"width": 174
+				},
+				"Text29": {
+					"type": "text",
+					"top": 176,
+					"left": 395,
+					"width": 55,
+					"height": 14,
+					"class": "Geneva12",
+					"text": "DISTRICT"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 188,
+					"left": 454,
+					"width": 81
+				},
+				"Text26": {
+					"type": "text",
+					"top": 549,
+					"left": 323,
+					"width": 126,
+					"height": 14,
+					"class": "Label12Plain",
+					"text": "__Yes\t         __No "
+				},
+				"Text27": {
+					"type": "text",
+					"top": 576,
+					"left": 323,
+					"width": 126,
+					"height": 14,
+					"class": "Label12Plain",
+					"text": "__Yes\t         __No "
+				},
+				"Text28": {
+					"type": "text",
+					"top": 604,
+					"left": 323,
+					"width": 126,
+					"height": 14,
+					"class": "Label12Plain",
+					"text": "__Yes\t         __No "
+				}
+			}
+		},
+		{
+			"objects": {
+				"Town Name": {
+					"type": "input",
+					"top": 120,
+					"left": 118,
+					"width": 146,
+					"height": 14,
+					"dataSource": "sTown",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 232,
+					"left": 192,
+					"width": 222,
+					"height": 14,
+					"dataSource": "[Bridge MHD NBIS:1]Item6A:63",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 204,
+					"left": 177,
+					"width": 222,
+					"height": 14,
+					"dataSource": "[Bridge MHD NBIS:1]Item7:65",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 149,
+					"left": 354,
+					"width": 158,
+					"height": 14,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 176,
+					"left": 177,
+					"width": 192,
+					"height": 14,
+					"dataSource": "vItem43",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Insp Date": {
+					"type": "input",
+					"top": 488,
+					"left": 135,
+					"width": 89,
+					"height": 14,
+					"dataSource": "sInspDATE",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "abbreviated",
+					"events": [
+						"onHeader"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 288,
+					"left": 244,
+					"width": 232,
+					"height": 14,
+					"dataSource": "vareabiename",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vTeamMbr": {
+					"type": "input",
+					"top": 452,
+					"left": 203,
+					"width": 332,
+					"height": 14,
+					"dataSource": "vTeamMbr",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vTeamMbr.4dm",
+					"events": [
+						"onPrintingDetail"
+					]
+				},
+				"vTeamLdr": {
+					"type": "input",
+					"top": 425,
+					"left": 203,
+					"width": 332,
+					"height": 14,
+					"dataSource": "vTeamLdr",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vTeamLdr.4dm",
+					"events": [
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 401,
+					"left": 244,
+					"width": 291,
+					"height": 14,
+					"dataSource": "vDBIE",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Inspection Title": {
+					"type": "input",
+					"top": 488,
+					"left": 357,
+					"width": 178,
+					"height": 14,
+					"dataSource": "vInspTitlePr",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 176,
+					"left": 470,
+					"width": 27,
+					"height": 14,
+					"dataSource": "[Bridge MHD NBIS:1]Item2:60",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bridge bin": {
+					"type": "input",
+					"top": 120,
+					"left": 389,
+					"width": 146,
+					"height": 14,
+					"dataSource": "BRIDGEBIN",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

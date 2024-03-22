@@ -1,0 +1,117 @@
+{
+	"windowTitle": "Bridge Status Report Parameters",
+	"memorizeGeometry": true,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"UseLegacyOwner": {
+					"type": "checkbox",
+					"top": 88,
+					"left": 26,
+					"width": 350,
+					"height": 21,
+					"text": "Use Legacy Owner",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"SDCalcMethod": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 26,
+					"width": 350,
+					"height": 21,
+					"text": "New Method of SD Calc (POOR=SD)",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"OK": {
+					"type": "button",
+					"top": 171,
+					"left": 255,
+					"width": 97,
+					"height": 22,
+					"action": "accept",
+					"text": "OK",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"OK1": {
+					"type": "button",
+					"top": 171,
+					"left": 135,
+					"width": 97,
+					"height": 22,
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DistrCalc_4": {
+					"type": "dropdown",
+					"top": 49,
+					"left": 26,
+					"width": 350,
+					"height": 20,
+					"choiceList": [
+						"0 : Use Item 2 (should be same as 2)",
+						"2 : MADOT 6 Distr based on TownData (default)",
+						"3 : Old 5 Districts",
+						"4 : Current MADOT 6 Distr (Somerville in D6)"
+					],
+					"class": "Label12Plain",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 30,
+					"left": 26,
+					"width": 350,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "District Calculation method"
+				}
+			}
+		}
+	]
+}

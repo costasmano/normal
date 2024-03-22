@@ -1,0 +1,127 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 30,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"LISTMODIFIER_txt": {
+					"type": "input",
+					"top": 100,
+					"left": 318,
+					"width": 277,
+					"height": 23,
+					"dataSource": "LISTMODIFIER_txt",
+					"class": "DataEntry14Plain",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Popup Drop down List": {
+					"type": "dropdown",
+					"top": 100,
+					"left": 30,
+					"width": 278,
+					"height": 23,
+					"dataSource": "LISTEDIT_Lists_atxt",
+					"class": "DataEntry14Plain",
+					"method": "ObjectMethods/Popup Drop down List.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 10,
+					"left": 30,
+					"width": 565,
+					"height": 19,
+					"class": "DataEntry19Plain",
+					"textAlign": "center",
+					"text": "LIST EDITOR"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 40,
+					"left": 30,
+					"width": 275,
+					"height": 29,
+					"class": "DataEntry19Plain",
+					"textAlign": "left",
+					"text": "Select List"
+				},
+				"Button": {
+					"type": "button",
+					"top": 153,
+					"left": 242,
+					"width": 141,
+					"height": 38,
+					"dataSource": "bdone",
+					"action": "cancel",
+					"text": "DONE",
+					"class": "DataEntry14Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 40,
+					"left": 320,
+					"width": 275,
+					"height": 49,
+					"class": "DataEntry19Plain",
+					"textAlign": "left",
+					"text": "Enter below to bring up list editor"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

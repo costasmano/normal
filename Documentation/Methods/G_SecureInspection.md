@@ -1,0 +1,1 @@
+Feb-2002 : Created to secure Inspection reports.  Feb-2003 : Allow team members to edit inspection.  Mar-2003 : Adjusted it to make sure team leader can also edit.  Apr-2003 : Adjusted so that inspection can be edited by 'authorized' users if it has not been approved at any level.  Jun-2003 : Added DBIE in list of users allowed to edit inspection.

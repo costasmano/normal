@@ -1,0 +1,1 @@
+Created June-2003 : 2003-10-28:  Added NTP date (verbal/written).2003-11-26 : Changed var vsDate to (A80).2003-12-03 :  Added the following fields (Barge, SafetyBoat, Snooper, RR Flagging) for both Negotiated and Actual Costs2004-02-10 :  Used style sheet for form objects (text, field, variable, dropdown list, etc)

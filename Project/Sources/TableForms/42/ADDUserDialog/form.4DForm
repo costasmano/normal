@@ -1,0 +1,800 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "ADD NEW USER",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 10,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": -10,
+					"left": 0,
+					"width": 663,
+					"height": 58,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarGreen.png"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 96,
+					"left": 3,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Prefix"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 96,
+					"left": 93,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "First"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 96,
+					"left": 283,
+					"width": 51,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Middle"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 96,
+					"left": 343,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Last"
+				},
+				"ADDUSER_Active": {
+					"type": "checkbox",
+					"top": 67,
+					"left": 34,
+					"width": 168,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "ADDUSER_Active",
+					"text": "ACTIVE INSPECTOR",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_Dive": {
+					"type": "checkbox",
+					"top": 67,
+					"left": 214,
+					"width": 188,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "ADDUSER_Dive",
+					"text": "DIVE TEAM",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_Prefix": {
+					"type": "input",
+					"top": 117,
+					"left": 3,
+					"width": 70,
+					"height": 17,
+					"dataSource": "ADDUSER_Prefix",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Prefixes"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_First": {
+					"type": "input",
+					"top": 117,
+					"left": 93,
+					"width": 180,
+					"height": 17,
+					"dataSource": "ADDUSER_First",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ADDUSER_First.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Middle": {
+					"type": "input",
+					"top": 117,
+					"left": 283,
+					"width": 50,
+					"height": 17,
+					"dataSource": "ADDUSER_Middle",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Last": {
+					"type": "input",
+					"top": 117,
+					"left": 343,
+					"width": 260,
+					"height": 17,
+					"dataSource": "ADDUSER_Last",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ADDUSER_Last.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 10,
+					"left": 0,
+					"width": 663,
+					"height": 27,
+					"sizingX": "grow",
+					"stroke": "#FFFF00",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "NEW USER FORM"
+				},
+				"ADDUSER_FromClip": {
+					"type": "button",
+					"top": 112,
+					"left": 620,
+					"width": 34,
+					"height": 25,
+					"dataSource": "ADDUSER_FromClip",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/ADDUSER_FromClip.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 271,
+					"left": 13,
+					"width": 51,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Suffix"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 271,
+					"left": 163,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Division No"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 311,
+					"left": 13,
+					"width": 87,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Job Code"
+				},
+				"ADDUSER_Suffix": {
+					"type": "input",
+					"top": 292,
+					"left": 13,
+					"width": 100,
+					"height": 17,
+					"dataSource": "ADDUSER_Suffix",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Suffixes"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Division": {
+					"type": "input",
+					"top": 292,
+					"left": 163,
+					"width": 45,
+					"height": 17,
+					"dataSource": "ADDUSER_Division",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Jcode": {
+					"type": "input",
+					"top": 332,
+					"left": 13,
+					"width": 40,
+					"height": 17,
+					"dataSource": "ADDUSER_Jcode",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"min": 0,
+					"max": 5,
+					"method": "ObjectMethods/ADDUSER_Jcode.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"aJob": {
+					"type": "dropdown",
+					"top": 328,
+					"left": 73,
+					"width": 290,
+					"height": 22,
+					"dataSource": "aJob",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/aJob.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_Employer": {
+					"type": "input",
+					"top": 377,
+					"left": 13,
+					"width": 320,
+					"height": 17,
+					"dataSource": "ADDUSER_Employer",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Employers"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Phone": {
+					"type": "input",
+					"top": 422,
+					"left": 13,
+					"width": 320,
+					"height": 17,
+					"dataSource": "ADDUSER_Phone",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Email": {
+					"type": "input",
+					"top": 464,
+					"left": 13,
+					"width": 320,
+					"height": 17,
+					"dataSource": "ADDUSER_Email",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 356,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Employer"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 210,
+					"left": 19,
+					"width": 121,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "4D User ID to copy"
+				},
+				"ADDUSER_4DUID_L": {
+					"type": "input",
+					"top": 210,
+					"left": 163,
+					"width": 75,
+					"height": 17,
+					"dataSource": "ADDUSER_4DUID_L",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PWUserHList": {
+					"type": "dropdown",
+					"top": 206,
+					"left": 261,
+					"width": 23,
+					"height": 22,
+					"dataSource": "PWUserHList",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PWUserHList.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 401,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Phone"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 446,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "E-Mail"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 457,
+					"left": 355,
+					"width": 114,
+					"height": 31,
+					"dataSource": "Button1",
+					"text": "DOT Address",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_CopyPersFrom_HL": {
+					"type": "dropdown",
+					"top": 157,
+					"left": 113,
+					"width": 230,
+					"height": 22,
+					"dataSource": "ADDUSER_CopyPersFrom_HL",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ADDUSER_CopyPersFrom_HL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_Copy4DFrom_HL": {
+					"type": "dropdown",
+					"top": 182,
+					"left": 113,
+					"width": 230,
+					"height": 22,
+					"dataSource": "ADDUSER_Copy4DFrom_HL",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ADDUSER_Copy4DFrom_HL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_CopyFrom_L": {
+					"type": "input",
+					"top": 161,
+					"left": 605,
+					"width": 55,
+					"height": 17,
+					"dataSource": "ADDUSER_CopyFrom_L",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_CopyF4Drom_L": {
+					"type": "input",
+					"top": 186,
+					"left": 605,
+					"width": 55,
+					"height": 17,
+					"dataSource": "ADDUSER_CopyF4Drom_L",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Cancel": {
+					"type": "button",
+					"top": 506,
+					"left": 13,
+					"width": 90,
+					"height": 30,
+					"dataSource": "ADDUSER_Cancel",
+					"action": "cancel",
+					"text": "Close",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_NewUserN_txt": {
+					"type": "input",
+					"top": 309,
+					"left": 393,
+					"width": 215,
+					"height": 17,
+					"dataSource": "ADDUSER_NewUserN_txt",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_NewPW_txt": {
+					"type": "input",
+					"top": 355,
+					"left": 393,
+					"width": 215,
+					"height": 17,
+					"dataSource": "ADDUSER_NewPW_txt",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_Copy": {
+					"type": "button",
+					"top": 506,
+					"left": 544,
+					"width": 110,
+					"height": 30,
+					"dataSource": "ADDUSER_Copy",
+					"text": "Create User",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/ADDUSER_Copy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 289,
+					"left": 393,
+					"width": 151,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "New User Name"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 334,
+					"left": 393,
+					"width": 151,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "New Password"
+				},
+				"ADDUSER_CopyUname": {
+					"type": "input",
+					"top": 186,
+					"left": 377,
+					"width": 215,
+					"height": 17,
+					"dataSource": "ADDUSER_CopyUname",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ADDUSER_CopyGroups_atxt": {
+					"type": "dropdown",
+					"top": 206,
+					"left": 376,
+					"width": 225,
+					"height": 22,
+					"dataSource": "ADDUSER_CopyGroups_atxt",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_TOCLIP": {
+					"type": "button",
+					"top": 305,
+					"left": 616,
+					"width": 34,
+					"height": 65,
+					"dataSource": "ADDUSER_TOCLIP",
+					"text": "C",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/ADDUSER_TOCLIP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 243,
+					"left": 19,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "4D Group #"
+				},
+				"ADDUSER_4DGroups_atxt": {
+					"type": "dropdown",
+					"top": 238,
+					"left": 201,
+					"width": 163,
+					"height": 22,
+					"dataSource": "ADDUSER_4DGroups_atxt",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ADDUSER_4DGroups_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ADDUSER_4DGroup_L": {
+					"type": "input",
+					"top": 243,
+					"left": 123,
+					"width": 75,
+					"height": 17,
+					"dataSource": "ADDUSER_4DGroup_L",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 161,
+					"left": 19,
+					"width": 85,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Personnel info"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 186,
+					"left": 19,
+					"width": 85,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "4D User info"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 141,
+					"left": 19,
+					"width": 105,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Copy from user"
+				},
+				"InactiveUsers": {
+					"type": "dropdown",
+					"top": 254,
+					"left": 395,
+					"width": 210,
+					"height": 22,
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/InactiveUsers.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"InactiveUserID": {
+					"type": "input",
+					"top": 255,
+					"left": 605,
+					"width": 55,
+					"height": 17,
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 237,
+					"left": 399,
+					"width": 261,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Select from Inactive list to use"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

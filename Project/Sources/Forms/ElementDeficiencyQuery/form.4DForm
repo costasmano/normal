@@ -1,0 +1,724 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 0,
+					"width": 480,
+					"height": 42,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"text": "Search For Ancillary Structures by Element Deficiency / Condition"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 113,
+					"left": 21,
+					"width": 459,
+					"height": 47
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 180,
+					"left": 21,
+					"width": 459,
+					"height": 47
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 243,
+					"left": 21,
+					"width": 459,
+					"height": 47
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 310,
+					"left": 21,
+					"width": 459,
+					"height": 47
+				},
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 375,
+					"left": 21,
+					"width": 459,
+					"height": 47
+				}
+			}
+		},
+		{
+			"objects": {
+				"cbDeficiency": {
+					"type": "checkbox",
+					"top": 104,
+					"left": 31,
+					"width": 190,
+					"height": 16,
+					"dataSource": "cbDeficiency",
+					"text": "Categories of Deficiencies:",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbDeficiency.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbUrgency": {
+					"type": "checkbox",
+					"top": 170,
+					"left": 32,
+					"width": 135,
+					"height": 16,
+					"dataSource": "cbUrgency",
+					"text": "Urgency of Repair:",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbUrgency.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbElmtCond": {
+					"type": "checkbox",
+					"top": 234,
+					"left": 32,
+					"width": 135,
+					"height": 16,
+					"dataSource": "cbElmtCond",
+					"text": "Element Condition:",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbElmtCond.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbElementCat": {
+					"type": "checkbox",
+					"top": 301,
+					"left": 32,
+					"width": 135,
+					"height": 16,
+					"dataSource": "cbElementCat",
+					"text": "Element Categories:",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbElementCat.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboElem": {
+					"type": "dropdown",
+					"top": 326,
+					"left": 222,
+					"width": 250,
+					"height": 22,
+					"dataSource": "cboElem",
+					"choiceList": [
+						"",
+						"I=Immediate",
+						"A=ASAP",
+						"P=Prioritize"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboElem.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboInspType": {
+					"type": "dropdown",
+					"top": 326,
+					"left": 31,
+					"width": 180,
+					"height": 22,
+					"dataSource": "cboInspType",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboInspType.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ApprovalLevel": {
+					"type": "dropdown",
+					"top": 430,
+					"left": 31,
+					"width": 257,
+					"height": 23,
+					"dataSource": "vApprovalLevel",
+					"choiceList": [
+						"Search Completed Inspections",
+						"Search Approved Inspections"
+					],
+					"class": "Label12Plain",
+					"method": "ObjectMethods/ApprovalLevel.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 537,
+					"left": 283,
+					"width": 75,
+					"height": 21,
+					"dataSource": "bClearAll",
+					"text": "Clear All",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbIncludeComments1": {
+					"type": "checkbox",
+					"top": 492,
+					"left": 32,
+					"width": 247,
+					"height": 26,
+					"dataSource": "cbIncludeComments",
+					"text": "Include Element Comments in the Report",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbIncludeComments1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FindButton": {
+					"type": "button",
+					"top": 462,
+					"left": 35,
+					"width": 90,
+					"height": 26,
+					"dataSource": "bFind",
+					"shortcutKey": "[Return]",
+					"text": "Find *",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/FindButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "checkbox",
+					"top": 459,
+					"left": 134,
+					"width": 182,
+					"height": 21,
+					"dataSource": "cbAddTo",
+					"text": "Add to Inventory Selection",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 594,
+					"left": 195,
+					"width": 90,
+					"height": 26,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 594,
+					"left": 297,
+					"width": 90,
+					"height": 26,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK **",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbElemDescTxt": {
+					"type": "checkbox",
+					"top": 367,
+					"left": 31,
+					"width": 190,
+					"height": 16,
+					"dataSource": "cbElemDescTxt",
+					"text": "Text in Custom Element Descr:",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbElemDescTxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SRC_ELEMDESC_txt": {
+					"type": "input",
+					"top": 397,
+					"left": 151,
+					"width": 320,
+					"height": 17,
+					"dataSource": "SRC_ELEMDESC_txt",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"method": "ObjectMethods/SRC_ELEMDESC_txt.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cboDescComparison": {
+					"type": "dropdown",
+					"top": 393,
+					"left": 31,
+					"width": 110,
+					"height": 22,
+					"dataSource": "cboDescComparison",
+					"choiceList": [
+						"Contains",
+						"Equals",
+						"Begins with",
+						"Ends with"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboDescComparison.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Results": {
+					"type": "button",
+					"top": 563,
+					"left": 32,
+					"width": 267,
+					"height": 25,
+					"text": "Open New window with element results",
+					"method": "ObjectMethods/Results.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Search Results": {
+					"type": "input",
+					"top": 492,
+					"left": 283,
+					"width": 193,
+					"height": 35,
+					"dataSource": "vtSearchResultCnt",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 457,
+					"left": 350,
+					"width": 121,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Current Search\rResults"
+				},
+				"PrintNow": {
+					"type": "button",
+					"top": 527,
+					"left": 32,
+					"width": 160,
+					"height": 25,
+					"dataSource": "Button1",
+					"text": "Print Report Now",
+					"method": "ObjectMethods/PrintNow.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 595,
+					"left": 82,
+					"width": 100,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "* Hit Return for Find"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 611,
+					"left": 82,
+					"width": 100,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "** Hit Enter for OK"
+				},
+				"CAT_Warning": {
+					"type": "text",
+					"top": 301,
+					"left": 231,
+					"width": 160,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"text": "Missing Element Category Information"
+				},
+				"DES_Warning": {
+					"type": "text",
+					"top": 367,
+					"left": 231,
+					"width": 160,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"text": "Missing Element Description Information"
+				},
+				"DistrictTitle": {
+					"type": "text",
+					"top": 69,
+					"left": 242,
+					"width": 220,
+					"height": 20,
+					"text": " "
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 431,
+					"left": 292,
+					"width": 185,
+					"height": 21,
+					"text": "Clear Criteria & Results",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SelectedCategory": {
+					"type": "text",
+					"top": 130,
+					"left": 246,
+					"width": 200,
+					"height": 17,
+					"text": " "
+				},
+				"Deficiency": {
+					"type": "dropdown",
+					"top": 129,
+					"left": 53,
+					"width": 17,
+					"height": 20,
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Search_ElemDeficiency"
+					},
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Deficiency.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Urgency": {
+					"type": "dropdown",
+					"top": 197,
+					"left": 53,
+					"width": 17,
+					"height": 20,
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Search_ElemUrgency"
+					},
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Urgency.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Rating": {
+					"type": "dropdown",
+					"top": 259,
+					"left": 53,
+					"width": 17,
+					"height": 20,
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Search_ElemRatingAncillary"
+					},
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Rating.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Structures": {
+					"type": "dropdown",
+					"top": 69,
+					"left": 215,
+					"width": 17,
+					"height": 20,
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Search_AncillaryStructures"
+					},
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Structures.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DeficiencyDesc": {
+					"type": "text",
+					"top": 132,
+					"left": 91,
+					"width": 380,
+					"height": 17,
+					"text": " "
+				},
+				"UrgencyDesc": {
+					"type": "text",
+					"top": 200,
+					"left": 91,
+					"width": 380,
+					"height": 17,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": " "
+				},
+				"RatingDesc": {
+					"type": "text",
+					"top": 259,
+					"left": 91,
+					"width": 380,
+					"height": 17,
+					"text": " "
+				},
+				"Select Structure": {
+					"type": "text",
+					"top": 69,
+					"left": 31,
+					"width": 180,
+					"height": 20,
+					"text": " Select Structure Type  - >"
+				}
+			}
+		},
+		{
+			"objects": {
+				"cboDeficiency": {
+					"type": "dropdown",
+					"top": 130,
+					"left": 221,
+					"width": 250,
+					"height": 22,
+					"dataSource": "cboDeficiency",
+					"choiceList": [
+						"",
+						"M=Minor Deficiency",
+						"S=Severe/Major Deficiency",
+						"C-S=Critical Structural Deficiency",
+						"C-H=Critical Hazard Deficiency"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboDeficiency.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboUrgOp": {
+					"type": "dropdown",
+					"top": 196,
+					"left": 31,
+					"width": 180,
+					"height": 22,
+					"dataSource": "cboUrgOp",
+					"choiceList": [
+						"",
+						"equal to (=)",
+						"not equal to (#)",
+						"less than (<)",
+						"equal or less (<=)",
+						"greater than (>)",
+						"equal or greater (>=)"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboUrgOp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboUrgency": {
+					"type": "dropdown",
+					"top": 196,
+					"left": 221,
+					"width": 250,
+					"height": 22,
+					"dataSource": "cboUrgency",
+					"choiceList": [
+						"",
+						"I=Immediate",
+						"A=ASAP",
+						"P=Prioritize"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboUrgency.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboElmtCondOp": {
+					"type": "dropdown",
+					"top": 263,
+					"left": 32,
+					"width": 180,
+					"height": 22,
+					"dataSource": "cboElmtCondOp",
+					"choiceList": [
+						"",
+						"equal to (=)",
+						"not equal to (#)",
+						"less than (<)",
+						"equal or less (<=)",
+						"greater than (>)",
+						"equal or greater (>=)"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboElmtCondOp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboElmtCond": {
+					"type": "dropdown",
+					"top": 263,
+					"left": 222,
+					"width": 250,
+					"height": 22,
+					"dataSource": "cboElmtCond",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboElmtCond.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboDefOp": {
+					"type": "dropdown",
+					"top": 130,
+					"left": 31,
+					"width": 180,
+					"height": 22,
+					"dataSource": "cboDefOp",
+					"choiceList": [
+						"",
+						"equal to (=)",
+						"not equal to (#)",
+						"less than (<)",
+						"equal or less (<=)",
+						"greater than (>)",
+						"equal or greater (>=)"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboDefOp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"v_171_004_atxt": {
+					"type": "dropdown",
+					"top": 71,
+					"left": 27,
+					"width": 240,
+					"height": 22,
+					"dataSource": "v_171_004_atxt",
+					"choiceList": [
+						"",
+						"equal to (=)",
+						"not equal to (#)",
+						"less than (<)",
+						"equal or less (<=)",
+						"greater than (>)",
+						"equal or greater (>=)"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/v_171_004_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

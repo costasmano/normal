@@ -1,0 +1,1 @@
+Aug-2002 : Created to allow checking of Data File locked by another app.  Feb-2003 : Declared and inited $datafile.

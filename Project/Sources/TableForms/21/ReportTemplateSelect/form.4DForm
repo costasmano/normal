@@ -1,0 +1,266 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 365,
+	"windowMinHeight": 360,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"RptOptionsGrp": {
+					"type": "groupBox",
+					"top": 277,
+					"left": 13,
+					"width": 344,
+					"height": 62,
+					"sizingY": "move",
+					"class": "List10Plain",
+					"text": "Quick Report Options"
+				},
+				"RptSaveToDisk": {
+					"type": "button",
+					"top": 307,
+					"left": 18,
+					"width": 148,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "RptSaveToDisk",
+					"text": "Save Template to Disk",
+					"class": "Label10Bold",
+					"method": "ObjectMethods/RptSaveToDisk.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"RptDestination": {
+					"type": "dropdown",
+					"top": 307,
+					"left": 203,
+					"width": 143,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "RptDestination",
+					"choiceList": [
+						"Print",
+						"Disk File",
+						"4D View",
+						"4D Chart",
+						"HTML File"
+					],
+					"class": "Label10Plain",
+					"method": "ObjectMethods/RptDestination.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"RptDestinationLbl": {
+					"type": "text",
+					"top": 293,
+					"left": 205,
+					"width": 139,
+					"height": 15,
+					"sizingY": "move",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Report Destination"
+				}
+			}
+		},
+		{
+			"objects": {
+				"PictureButton_v": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 9,
+					"width": 48,
+					"height": 48,
+					"dataSource": "Picture Button1",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Report.png",
+					"switchBackWhenReleased": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 28,
+					"left": 61,
+					"width": 338,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "vsReportTemplateTitle",
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CancelButton": {
+					"type": "button",
+					"top": 324,
+					"left": 14,
+					"width": 90,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"OKButton": {
+					"type": "button",
+					"top": 324,
+					"left": 119,
+					"width": 180,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Generate Report",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/OKButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vSelectionDescription": {
+					"type": "input",
+					"top": 258,
+					"left": 14,
+					"width": 388,
+					"height": 59,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "vSelectionDescription",
+					"class": "List12Plain",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SelectionList": {
+					"type": "list",
+					"top": 62,
+					"left": 14,
+					"width": 388,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "aHL_ReportTemplates",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "List12Plain",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/SelectionList.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+2004-04-02 : Zero picture variable at the end.

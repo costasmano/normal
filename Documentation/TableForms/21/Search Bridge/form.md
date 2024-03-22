@@ -1,0 +1,1 @@
+Jan 2001 : Copied from Old dialog ; Removed Plug-in area around the Find buttonMar 2001 : Changed Appearance to automatic; adjusted Fills of objects; changed marker text (cross and degree sign in Find and OK button) to * and ** for compatibility with PC platform; widened the BIN field.

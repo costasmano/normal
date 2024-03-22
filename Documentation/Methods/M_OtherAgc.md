@@ -1,0 +1,1 @@
+Jan-2001 : changed CENTER_WINDOW call to create a type 2 window for the GetOtherAgc dialog

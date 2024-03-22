@@ -1,0 +1,1 @@
+Feb-2003 : Changed Data fields to be variables. Increased size of Data fields.

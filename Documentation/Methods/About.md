@@ -1,0 +1,1 @@
+2004-02-23 : Use form properties to figure out window size. Use 66 pixels for 4D Creadits.

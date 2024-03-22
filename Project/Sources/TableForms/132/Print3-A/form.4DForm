@@ -1,0 +1,1605 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "PrintTemplate",
+	"inheritedFormTable": 132,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 764,
+	"markerBreak": 764,
+	"markerFooter": 764,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Field1": {
+					"type": "input",
+					"top": 519,
+					"left": 394,
+					"width": 25,
+					"height": 10,
+					"dataSource": "SCPOA_BrNoSpans_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 533,
+					"left": 114,
+					"width": 118,
+					"height": 10,
+					"dataSource": "SCPOA_BrLat_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field14": {
+					"type": "input",
+					"top": 533,
+					"left": 424,
+					"width": 118,
+					"height": 10,
+					"dataSource": "SCPOA_BrLon_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field15": {
+					"type": "input",
+					"top": 519,
+					"left": 534,
+					"width": 42,
+					"height": 10,
+					"dataSource": "SCPOA_BrLen_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 134,
+					"left": 257,
+					"width": 328,
+					"height": 73,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"SCPOA_Descr1_txt1": {
+					"type": "input",
+					"top": 619,
+					"left": 20,
+					"width": 560,
+					"height": 116,
+					"dataSource": "SCPOA_BrgClosure_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text46": {
+					"type": "text",
+					"top": 607,
+					"left": 20,
+					"width": 193,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "3c. Closure Plan Summary :"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 519,
+					"left": 19,
+					"width": 101,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "3a. Bridge ADT / Year:"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 519,
+					"left": 119,
+					"width": 38,
+					"height": 10,
+					"dataSource": "SCPOA_BrADT_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 519,
+					"left": 211,
+					"width": 59,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"text": "% Trucks :"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 519,
+					"left": 275,
+					"width": 25,
+					"height": 10,
+					"dataSource": "SCPOA_TruckPct_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 519,
+					"left": 427,
+					"width": 103,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"text": "Bridge Length (ft) : "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 519,
+					"left": 331,
+					"width": 59,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"text": "No. Spans :"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 533,
+					"left": 54,
+					"width": 56,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"text": "Latitude:"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 533,
+					"left": 357,
+					"width": 63,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"text": "Longitude :"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 546,
+					"left": 20,
+					"width": 410,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "3b. Does the Bridge provide service to emergency facilities and/or an evacuation route (Y/N) ? "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 546,
+					"left": 500,
+					"width": 85,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "If so, describe :"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 556,
+					"left": 424,
+					"width": 25,
+					"strokeWidth": 0.1
+				},
+				"Field2": {
+					"type": "input",
+					"top": 546,
+					"left": 427,
+					"width": 18,
+					"height": 10,
+					"dataSource": "SCPOA_EmergFacYN_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"SCPOA_EmergFac_txt": {
+					"type": "input",
+					"top": 558,
+					"left": 20,
+					"width": 560,
+					"height": 46,
+					"dataSource": "SCPOA_EmergFac_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 531,
+					"left": 15,
+					"width": 569,
+					"strokeWidth": 0.1
+				},
+				"Line3": {
+					"type": "line",
+					"top": 545,
+					"left": 15,
+					"width": 569
+				},
+				"Line6": {
+					"type": "line",
+					"top": 606,
+					"left": 15,
+					"width": 569
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 500,
+					"left": 16,
+					"width": 568,
+					"height": 17,
+					"sizingY": "move",
+					"fill": "#DDDDDD"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 503,
+					"left": 15,
+					"width": 569,
+					"height": 14,
+					"class": "Helvetica12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "3. BRIDGE CLOSURE PLAN"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 38,
+					"left": 16,
+					"width": 568,
+					"height": 15,
+					"sizingY": "move",
+					"fill": "#DDDDDD"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 40,
+					"left": 41,
+					"width": 518,
+					"height": 13,
+					"class": "Helvetica12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "2. MONITORING PLAN (Continued)"
+				},
+				"Picture Button31": {
+					"type": "pictureButton",
+					"top": 318,
+					"left": 53,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PostFldUnderm_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button28": {
+					"type": "pictureButton",
+					"top": 306,
+					"left": 53,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PostFldProfSubstr_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button27": {
+					"type": "pictureButton",
+					"top": 294,
+					"left": 53,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PostFldRvBed_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_PostFlood_L": {
+					"type": "pictureButton",
+					"top": 267,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PostFlood_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 266,
+					"left": 48,
+					"width": 150,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Post Flood Assessment Tasks"
+				},
+				"Text137": {
+					"type": "text",
+					"top": 277,
+					"left": 249,
+					"width": 40,
+					"height": 22,
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"text": "Items to Watch:"
+				},
+				"SCPOA_PostFldWatch_txt": {
+					"type": "input",
+					"top": 277,
+					"left": 293,
+					"width": 287,
+					"height": 107,
+					"dataSource": "SCPOA_PostFldWatch_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text138": {
+					"type": "text",
+					"top": 388,
+					"left": 22,
+					"width": 149,
+					"height": 22,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Scour Critical Riverbed Elevation(s) for Each Pier/Abutment :"
+				},
+				"SCPOA_PostFldElevs_txt": {
+					"type": "input",
+					"top": 388,
+					"left": 174,
+					"width": 406,
+					"height": 34,
+					"dataSource": "SCPOA_PostFldElevs_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text139": {
+					"type": "text",
+					"top": 424,
+					"left": 26,
+					"width": 384,
+					"height": 10,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Action(s) Required if Scour Critical Riverbed Elevation detected:"
+				},
+				"SCPOA_PostFldAction_txt": {
+					"type": "input",
+					"top": 435,
+					"left": 26,
+					"width": 551,
+					"height": 44,
+					"dataSource": "SCPOA_PostFldAction_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button26": {
+					"type": "pictureButton",
+					"top": 282,
+					"left": 53,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PostFldVis_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text31": {
+					"type": "text",
+					"top": 281,
+					"left": 65,
+					"width": 181,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Visual Inspection"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 320,
+					"left": 65,
+					"width": 181,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Undermining"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 307,
+					"left": 65,
+					"width": 181,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Profile at Substructure"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 294,
+					"left": 65,
+					"width": 181,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Riverbed Profile Readings"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 266,
+					"left": 18,
+					"width": 16,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "2e."
+				},
+				"Line18": {
+					"type": "line",
+					"top": 262,
+					"left": 15,
+					"width": 570
+				},
+				"Picture Button7": {
+					"type": "pictureButton",
+					"top": 150,
+					"left": 22,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_DOTSitRept_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button10": {
+					"type": "pictureButton",
+					"top": 164,
+					"left": 22,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_FldForecast_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_OtherMonitDev_L": {
+					"type": "pictureButton",
+					"top": 55,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_OtherMonitDev_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text84": {
+					"type": "text",
+					"top": 65,
+					"left": 24,
+					"width": 43,
+					"height": 11,
+					"class": "Arial10",
+					"textAlign": "left",
+					"text": "Type:"
+				},
+				"Text86": {
+					"type": "text",
+					"top": 137,
+					"left": 23,
+					"width": 251,
+					"height": 13,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Flood monitoring event defined by: "
+				},
+				"Text87": {
+					"type": "text",
+					"top": 215,
+					"left": 28,
+					"width": 200,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Recommended Interval of flood monitoring:"
+				},
+				"SCPOA_OthFldMonFreqDesc_txt": {
+					"type": "input",
+					"top": 215,
+					"left": 493,
+					"width": 87,
+					"height": 11,
+					"dataSource": "SCPOA_OthFldMonFreqDesc_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text83": {
+					"type": "text",
+					"top": 54,
+					"left": 48,
+					"width": 190,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Flood Monitoring Program"
+				},
+				"Picture Button29": {
+					"type": "pictureButton",
+					"top": 66,
+					"left": 52,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_OtherMonitVis_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button30": {
+					"type": "pictureButton",
+					"top": 79,
+					"left": 52,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_OtherMonitinstr_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 65,
+					"left": 64,
+					"width": 70,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Visual"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 78,
+					"left": 64,
+					"width": 70,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Instrument"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 149,
+					"left": 534,
+					"width": 44,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Discharge"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 150,
+					"left": 34,
+					"width": 206,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Isolated Report of Bridge Issue"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 163,
+					"left": 34,
+					"width": 226,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Flood Warning Issued by National Weather Service"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 139,
+					"left": 484,
+					"width": 45,
+					"height": 21,
+					"class": "Arial9",
+					"textAlign": "center",
+					"text": "Stage (WSE)"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 54,
+					"left": 18,
+					"width": 16,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "2d."
+				},
+				"SCPOA_2DFreqCont_L": {
+					"type": "pictureButton",
+					"top": 214,
+					"left": 233,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_2DFreqCont_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text37": {
+					"type": "text",
+					"top": 213,
+					"left": 246,
+					"width": 47,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Continual"
+				},
+				"SCPOA_2DFreq3Hr_L": {
+					"type": "pictureButton",
+					"top": 214,
+					"left": 298,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_2DFreq3Hr_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text38": {
+					"type": "text",
+					"top": 213,
+					"left": 311,
+					"width": 38,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "6 Hrs"
+				},
+				"SCPOA_2DFreq12Hr_L": {
+					"type": "pictureButton",
+					"top": 214,
+					"left": 349,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_2DFreq12Hr_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text39": {
+					"type": "text",
+					"top": 213,
+					"left": 362,
+					"width": 38,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "12 Hrs"
+				},
+				"SCPOA_2DFreqDay_L": {
+					"type": "pictureButton",
+					"top": 214,
+					"left": 399,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_2DFreqDay_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text40": {
+					"type": "text",
+					"top": 213,
+					"left": 412,
+					"width": 38,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Daily"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 78,
+					"left": 198,
+					"width": 190,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "During Flood Event, Look For:"
+				},
+				"SCPOA_FlMonLookFor_txt": {
+					"type": "input",
+					"top": 88,
+					"left": 198,
+					"width": 382,
+					"height": 40,
+					"dataSource": "SCPOA_FlMonLookFor_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text42": {
+					"type": "text",
+					"top": 137,
+					"left": 23,
+					"width": 231,
+					"height": 13,
+					"class": "Arial9",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "(check all that apply)"
+				},
+				"Picture Button17": {
+					"type": "pictureButton",
+					"top": 139,
+					"left": 261,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_USGSStation_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text43": {
+					"type": "text",
+					"top": 138,
+					"left": 273,
+					"width": 137,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Gage Station(s)"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 149,
+					"left": 305,
+					"width": 56,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Station#:"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 210,
+					"left": 15,
+					"width": 570,
+					"strokeWidth": 0.1
+				},
+				"Line12": {
+					"type": "line",
+					"top": 132,
+					"left": 15,
+					"width": 570,
+					"strokeWidth": 0.1
+				},
+				"Picture Button18": {
+					"type": "pictureButton",
+					"top": 90,
+					"left": 21,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_OthMonInstrPort_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button19": {
+					"type": "pictureButton",
+					"top": 90,
+					"left": 86,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_OthMonInstrGeo_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button20": {
+					"type": "pictureButton",
+					"top": 101,
+					"left": 21,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_OthMonInstrSon_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button32": {
+					"type": "pictureButton",
+					"top": 113,
+					"left": 21,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_OthMonInstrOth_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_OthMonInstrType_txt": {
+					"type": "input",
+					"top": 112,
+					"left": 71,
+					"width": 120,
+					"height": 18,
+					"dataSource": "SCPOA_OthMonInstrType_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text45": {
+					"type": "text",
+					"top": 90,
+					"left": 34,
+					"width": 47,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Portable"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 90,
+					"left": 99,
+					"width": 60,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Geophysical"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 101,
+					"left": 34,
+					"width": 40,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Sonar"
+				},
+				"Text55": {
+					"type": "text",
+					"top": 113,
+					"left": 34,
+					"width": 39,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Other :"
+				},
+				"Text56": {
+					"type": "text",
+					"top": 78,
+					"left": 101,
+					"width": 91,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "(check all that apply)"
+				},
+				"SCPOA_2DFreqOther_L": {
+					"type": "pictureButton",
+					"top": 214,
+					"left": 449,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_2DFreqOther_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 213,
+					"left": 462,
+					"width": 48,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Other :"
+				},
+				"SCPOA_USGSStationNo_s2": {
+					"type": "input",
+					"top": 160,
+					"left": 305,
+					"width": 56,
+					"height": 11,
+					"dataSource": "SCPOA_USGSStationNo_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_Stage_s2": {
+					"type": "input",
+					"top": 160,
+					"left": 484,
+					"width": 45,
+					"height": 11,
+					"dataSource": "SCPOA_Stage_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_DischOvrFeet_txt2": {
+					"type": "input",
+					"top": 160,
+					"left": 534,
+					"width": 44,
+					"height": 11,
+					"dataSource": "SCPOA_DischOvrFeet_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_USGSStationNo_s3": {
+					"type": "input",
+					"top": 178,
+					"left": 305,
+					"width": 56,
+					"height": 11,
+					"dataSource": "SCPOA_USGSStationNo2_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_Stage_s3": {
+					"type": "input",
+					"top": 178,
+					"left": 484,
+					"width": 45,
+					"height": 11,
+					"dataSource": "SCPOA_Stage2_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_DischOvrFeet_txt3": {
+					"type": "input",
+					"top": 178,
+					"left": 534,
+					"width": 44,
+					"height": 11,
+					"dataSource": "SCPOA_DischOvrFeet2_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_USGSStationNo_s4": {
+					"type": "input",
+					"top": 168,
+					"left": 305,
+					"width": 275,
+					"height": 10,
+					"dataSource": "SCPOA_USGSStationURL_txt",
+					"class": "Arial8",
+					"textAlign": "left",
+					"textDecoration": "underline",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_USGSStationNo_s5": {
+					"type": "input",
+					"top": 188,
+					"left": 305,
+					"width": 275,
+					"height": 10,
+					"dataSource": "SCPOA_USGSStationURL2_txt",
+					"class": "Arial8",
+					"textAlign": "left",
+					"textDecoration": "underline",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text26": {
+					"type": "text",
+					"top": 54,
+					"left": 198,
+					"width": 140,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Critical WSE Marker Location:"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 66,
+					"left": 198,
+					"width": 140,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Scour Critical Feature:"
+				},
+				"SCPOA_CritWSEMarkLoc_txt": {
+					"type": "input",
+					"top": 54,
+					"left": 338,
+					"width": 242,
+					"height": 11,
+					"dataSource": "SCPOA_CritWSEMarkLoc_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_ScourCritFeat_txt": {
+					"type": "input",
+					"top": 66,
+					"left": 318,
+					"width": 262,
+					"height": 11,
+					"dataSource": "SCPOA_ScourCritFeat_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_FixMonDevWarn_L_P": {
+					"type": "pictureButton",
+					"top": 198,
+					"left": 22,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_FixMonDevWarn_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 197,
+					"left": 34,
+					"width": 226,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Notified by Fixed Monitoring Device"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 149,
+					"left": 369,
+					"width": 111,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Proximity To Bridge:"
+				},
+				"SCPOA_USGSStProxBrg_s": {
+					"type": "input",
+					"top": 160,
+					"left": 369,
+					"width": 111,
+					"height": 11,
+					"dataSource": "SCPOA_USGSStProxBrg_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_USGSSt2ProxBrg_s": {
+					"type": "input",
+					"top": 178,
+					"left": 369,
+					"width": 111,
+					"height": 11,
+					"dataSource": "SCPOA_USGSSt2ProxBrg_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button11": {
+					"type": "pictureButton",
+					"top": 160,
+					"left": 261,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_USGSStation_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button12": {
+					"type": "pictureButton",
+					"top": 178,
+					"left": 261,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_NOAAStation_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text59": {
+					"type": "text",
+					"top": 160,
+					"left": 273,
+					"width": 31,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "USGS"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 178,
+					"left": 273,
+					"width": 31,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "NOAA"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 190,
+					"left": 271,
+					"width": 31,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "(Tidal)"
+				},
+				"Picture Button13": {
+					"type": "pictureButton",
+					"top": 330,
+					"left": 53,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PostFldUWInsp_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text62": {
+					"type": "text",
+					"top": 332,
+					"left": 65,
+					"width": 181,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Underwater Inspection"
+				},
+				"Picture Button14": {
+					"type": "pictureButton",
+					"top": 342,
+					"left": 53,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PostFldProbing_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text63": {
+					"type": "text",
+					"top": 344,
+					"left": 65,
+					"width": 181,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Probing"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 483,
+					"left": 22,
+					"width": 237,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Agency and Department Responsible for Monitoring : "
+				},
+				"SCPOA_BrADTYr_txt": {
+					"type": "input",
+					"top": 519,
+					"left": 168,
+					"width": 38,
+					"height": 10,
+					"dataSource": "SCPOA_BrADTYr_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 519,
+					"left": 157,
+					"width": 11,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"text": " / "
+				},
+				"SCPOA_PostFldMonAgc_txt": {
+					"type": "input",
+					"top": 483,
+					"left": 262,
+					"width": 316,
+					"height": 10,
+					"dataSource": "SCPOA_PostFldMonAgc_txt",
+					"class": "Arial9Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_NWSStationPrint_txt": {
+					"type": "input",
+					"top": 176,
+					"left": 24,
+					"width": 231,
+					"height": 19,
+					"dataSource": "SCPOA_NWSStationPrint_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 266,
+					"left": 198,
+					"width": 214,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "(As Required, See Flood Monitoring Form)"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 356,
+					"left": 35,
+					"width": 250,
+					"height": 21,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "For Detailed Procedures Refer to Post Flood Assessment Form"
+				},
+				"Text88": {
+					"type": "text",
+					"top": 228,
+					"left": 28,
+					"width": 550,
+					"height": 31,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Use Flood Monitoring Form to record visits and track rise in water level towards scour critical WSE (FVC Action Criteria and POA Section 3d).  Look for difference between actual water level and WSE marker or designated mark (low chord for low clearance bridges)."
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

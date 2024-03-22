@@ -1,0 +1,560 @@
+{
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerBody": 396,
+	"markerBreak": 396,
+	"markerFooter": 396,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 17,
+					"left": 15,
+					"width": 384,
+					"height": 337,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 9,
+					"left": 25,
+					"width": 116,
+					"height": 16,
+					"fill": "#EEEEEE",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Data Distribution"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 119,
+					"left": 23,
+					"width": 359,
+					"height": 42,
+					"fill": "transparent"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 352,
+					"left": 20,
+					"width": 32,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/LightBulb.png"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 313,
+					"left": 23,
+					"width": 359,
+					"height": 37,
+					"fill": "transparent"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 257,
+					"left": 23,
+					"width": 359,
+					"height": 46,
+					"fill": "transparent"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 39,
+					"left": 23,
+					"width": 359,
+					"height": 64,
+					"fill": "transparent"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 53,
+					"left": 26,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Destination"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 249,
+					"left": 32,
+					"width": 95,
+					"height": 18,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"class": "Label12Plain",
+					"text": "Transfer Type"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 77,
+					"left": 26,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Forward"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 31,
+					"left": 32,
+					"width": 168,
+					"height": 18,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"class": "Label12Plain",
+					"text": "Destination Server Names"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 177,
+					"left": 23,
+					"width": 359,
+					"height": 64,
+					"fill": "transparent"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 191,
+					"left": 26,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Destination"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 215,
+					"left": 26,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Forward"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 169,
+					"left": 32,
+					"width": 48,
+					"height": 18,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"class": "Label12Plain",
+					"text": "TCP/IP"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 52,
+					"left": 118,
+					"width": 253,
+					"height": 16,
+					"dataSource": "vDest",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 76,
+					"left": 118,
+					"width": 253,
+					"height": 16,
+					"dataSource": "vForward",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 133,
+					"left": 118,
+					"width": 43,
+					"height": 16,
+					"dataSource": "DataFileKey_s",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"textFormat": "###",
+					"entryFilter": "! ~\"A-Z;0-9\"###",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 190,
+					"left": 118,
+					"width": 253,
+					"height": 16,
+					"dataSource": "vDestIP",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 214,
+					"left": 118,
+					"width": 253,
+					"height": 16,
+					"dataSource": "vForwardIP",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "radio",
+					"top": 271,
+					"left": 42,
+					"width": 63,
+					"height": 19,
+					"dataSource": "r1",
+					"text": "Send",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "radio",
+					"top": 271,
+					"left": 140,
+					"width": 106,
+					"height": 19,
+					"dataSource": "r2",
+					"text": "Send, Forward",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "radio",
+					"top": 271,
+					"left": 282,
+					"width": 96,
+					"height": 19,
+					"dataSource": "r3",
+					"text": "No Transfer",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "checkbox",
+					"top": 327,
+					"left": 114,
+					"width": 23,
+					"height": 20,
+					"dataSource": "CBLockUsrTx",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 329,
+					"left": 182,
+					"width": 179,
+					"height": 16,
+					"dataSource": "vTxUserName",
+					"stroke": "#000000",
+					"class": "Default",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UserList": {
+					"type": "dropdown",
+					"top": 326,
+					"left": 360,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"method": "ObjectMethods/UserList.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable18": {
+					"type": "checkbox",
+					"top": 360,
+					"left": 152,
+					"width": 23,
+					"height": 20,
+					"dataSource": "CBAllowTxRx",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 365,
+					"left": 203,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 365,
+					"left": 305,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 360,
+					"left": 26,
+					"width": 19,
+					"height": 19,
+					"dataSource": "bSetVersion",
+					"display": false,
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 306,
+					"left": 32,
+					"width": 95,
+					"height": 18,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"class": "Label12Plain",
+					"text": "Transfer Lock"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 362,
+					"left": 59,
+					"width": 87,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Allow Tx/Rx"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 109,
+					"left": 32,
+					"width": 88,
+					"height": 18,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"class": "Label12Plain",
+					"text": "Data File KEY"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 133,
+					"left": 26,
+					"width": 90,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Unique File KEY"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 329,
+					"left": 26,
+					"width": 83,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Default",
+					"text": "Lock User Tx"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 329,
+					"left": 143,
+					"width": 34,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Default",
+					"text": "User"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

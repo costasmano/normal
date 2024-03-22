@@ -1,0 +1,148 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"SizeREctangle": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 19,
+					"width": 310,
+					"height": 146,
+					"visibility": "hidden",
+					"fill": "transparent"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 10,
+					"left": 19,
+					"width": 310,
+					"height": 61,
+					"dataSource": "vsDialogTxt",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RunNow": {
+					"type": "button",
+					"top": 101,
+					"left": 95,
+					"width": 160,
+					"height": 22,
+					"action": "accept",
+					"text": "Run Now",
+					"class": "Geneva12",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 128,
+					"left": 95,
+					"width": 160,
+					"height": 22,
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Geneva12",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 76,
+					"left": 19,
+					"width": 310,
+					"height": 21,
+					"dataSource": "vTimec",
+					"dataSourceTypeHint": "time",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "HH_MM_SS",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,457 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 323,
+	"markerBreak": 323,
+	"markerFooter": 333,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line11": {
+					"type": "line",
+					"top": 95,
+					"left": 16,
+					"width": 595,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"shortcutKey": "\u0000",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "First",
+					"icon": "/RESOURCES/Images/Buttons/Glass/FirstRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bFirst.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 16,
+					"left": 84,
+					"width": 53,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"shortcutKey": "\u0000",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Previous",
+					"icon": "/RESOURCES/Images/Buttons/Glass/PreviousRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bPrevious.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 16,
+					"left": 152,
+					"width": 48,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"shortcutKey": "\u0000",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Next",
+					"icon": "/RESOURCES/Images/Buttons/Glass/NextRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 16,
+					"left": 215,
+					"width": 48,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"shortcutKey": "\u0000",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Last",
+					"icon": "/RESOURCES/Images/Buttons/Glass/LastRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bLast.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 16,
+					"left": 431,
+					"width": 48,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"shortcutKey": "\u0000",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/Buttons/Glass/DeleteRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 494,
+					"width": 48,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"shortcutKey": "\u0000",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 16,
+					"left": 557,
+					"width": 49,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"shortcutKey": "\u0000",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Save",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Validate.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 104,
+					"left": 41,
+					"width": 200,
+					"height": 16,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "(I.1) Tunnel Number : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 128,
+					"left": 21,
+					"width": 220,
+					"height": 16,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Rating Report Date : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 152,
+					"left": 21,
+					"width": 220,
+					"height": 16,
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Rating Report Inspection Date : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 172,
+					"left": 21,
+					"width": 220,
+					"height": 16,
+					"visibility": "hidden",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Invert Girder : "
+				},
+				"Text17": {
+					"type": "text",
+					"top": 196,
+					"left": 21,
+					"width": 220,
+					"height": 16,
+					"visibility": "hidden",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Invert Slab : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 220,
+					"left": 21,
+					"width": 220,
+					"height": 16,
+					"visibility": "hidden",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Roof Girder : "
+				},
+				"NTI_i1_s": {
+					"type": "input",
+					"top": 104,
+					"left": 246,
+					"width": 160,
+					"height": 16,
+					"dataSource": "[NTI_TunnelRatings:189]NTI_i1_s:2",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###-###-###-###-###",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RatingReport_d": {
+					"type": "input",
+					"top": 128,
+					"left": 246,
+					"width": 81,
+					"height": 16,
+					"dataSource": "[NTI_TunnelRatings:189]RatingReport_d:3",
+					"dataSourceTypeHint": "date",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Inspection_d": {
+					"type": "input",
+					"top": 152,
+					"left": 246,
+					"width": 81,
+					"height": 16,
+					"dataSource": "[NTI_TunnelRatings:189]Inspection_d:12",
+					"dataSourceTypeHint": "date",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"placeholder": "Enter date",
+					"dateFormat": "short",
+					"entryFilter": "##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RatingReportInvertGirder_s": {
+					"type": "input",
+					"top": 172,
+					"left": 246,
+					"width": 16,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "[NTI_TunnelRatings:189]RatingReportInvertGirder_s:6",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9;N",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RatingReportInvertSlab_s": {
+					"type": "input",
+					"top": 196,
+					"left": 246,
+					"width": 16,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "[NTI_TunnelRatings:189]RatingReportInvertSlab_s:5",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9;N",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RatingReportRoofGirder_s": {
+					"type": "input",
+					"top": 220,
+					"left": 246,
+					"width": 16,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "[NTI_TunnelRatings:189]RatingReportRoofGirder_s:4",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9;N",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line11"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bDelete",
+					"bCancel",
+					"bValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

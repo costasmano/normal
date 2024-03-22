@@ -1,0 +1,1 @@
+2004-02-02 : Changed length of vWriterInitial and vPlural, vDBIEInitial. Remove null param "()" from GetBridgeEngineer call.

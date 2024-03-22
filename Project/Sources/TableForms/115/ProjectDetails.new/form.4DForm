@@ -1,0 +1,544 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle38": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 689,
+					"height": 314,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFFFDF",
+					"stroke": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 91,
+					"left": 290,
+					"width": 166,
+					"height": 17,
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "NEW PROJECT ENTRY"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 77,
+					"left": 16,
+					"width": 663,
+					"sizingX": "grow"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 553,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 616,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_DataEntry": {
+					"type": "input",
+					"top": 148,
+					"left": 226,
+					"width": 178,
+					"height": 13,
+					"dataSource": "PRJ_DEBridgeNo_s",
+					"class": "PRJ_InputVariable",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PRJ_Asterisk"
+					},
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PRJ_DataEntry.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PRJ_TemporaryBridge_b": {
+					"type": "checkbox",
+					"top": 148,
+					"left": 548,
+					"width": 122,
+					"height": 12,
+					"dataSource": "[PRJ_ProjectDetails:115]PRJ_TemporaryBridge_b:6",
+					"text": "Temporary Bridge",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "left",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_DataEntry1": {
+					"type": "input",
+					"top": 172,
+					"left": 226,
+					"width": 38,
+					"height": 13,
+					"dataSource": "PRJ_DEBin_s",
+					"class": "PRJ_InputVariable",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PRJ_DataEntry1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SelPrimaryBin1": {
+					"type": "dropdown",
+					"top": 170,
+					"left": 369,
+					"width": 84,
+					"height": 16,
+					"dataSource": "PRJ_SelectedBins_as",
+					"class": "PRJ_InputBoldLabel",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/SelPrimaryBin1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_DataEntry2": {
+					"type": "input",
+					"top": 172,
+					"left": 548,
+					"width": 117,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectDetails:115]PRJ_CityOrTown_s:8",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PRJ_DataEntry2.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"PRJ_DataEntry3": {
+					"type": "input",
+					"top": 196,
+					"left": 226,
+					"width": 62,
+					"height": 13,
+					"dataSource": "PRJ_DEProjectFileNo_l",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"textFormat": "#######;;",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PRJ_DataEntry3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PRJ_DataEntry4": {
+					"type": "input",
+					"top": 196,
+					"left": 567,
+					"width": 98,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectDetails:115]PRJ_EnteredDesignEWO_s:43",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PRJ_DataEntry5": {
+					"type": "input",
+					"top": 220,
+					"left": 226,
+					"width": 109,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectDetails:115]PRJ_FederalAid_s:25",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PRJ_DataEntry5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button7": {
+					"type": "button",
+					"top": 220,
+					"left": 341,
+					"width": 113,
+					"height": 18,
+					"dataSource": "Button1",
+					"text": "Select Federal Aid",
+					"class": "Default",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_DataEntry29": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 482,
+					"width": 108,
+					"height": 12,
+					"dataSource": "[PRJ_ProjectDetails:115]PRJ_FederalReviewRequired_b:42",
+					"text": "Federal Review",
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "left",
+					"method": "ObjectMethods/PRJ_DataEntry29.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_DataEntry6": {
+					"type": "input",
+					"top": 244,
+					"left": 226,
+					"width": 109,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectDetails:115]PRJ_Program_s:23",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PRJ_DataEntry6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 244,
+					"left": 341,
+					"width": 112,
+					"height": 18,
+					"dataSource": "Button1",
+					"text": "Select Program",
+					"class": "Default",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_DataEntry35": {
+					"type": "dropdown",
+					"top": 122,
+					"left": 226,
+					"width": 130,
+					"height": 16,
+					"dataSource": "PRJ_ProjectTypes_atxt",
+					"class": "PRJ_InputBoldLabel",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/PRJ_DataEntry35.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BridgeTitle": {
+					"type": "text",
+					"top": 148,
+					"left": 154,
+					"width": 67,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Bridge : "
+				},
+				"Text71": {
+					"type": "text",
+					"top": 172,
+					"left": 476,
+					"width": 69,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "left",
+					"text": "City / Town : "
+				},
+				"Variable3": {
+					"type": "dropdown",
+					"top": 122,
+					"left": 364,
+					"width": 169,
+					"height": 16,
+					"dataSource": "PRJ_BridgeSection_atxt",
+					"class": "PRJ_InputBoldLabel",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text72": {
+					"type": "text",
+					"top": 220,
+					"left": 136,
+					"width": 85,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Federal Aid : "
+				},
+				"Text73": {
+					"type": "text",
+					"top": 244,
+					"left": 146,
+					"width": 75,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Program : "
+				},
+				"AllowBinEntry1": {
+					"type": "text",
+					"top": 172,
+					"left": 150,
+					"width": 71,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Primary BIN : "
+				},
+				"PRJ_DEProjectFileNo_l": {
+					"type": "text",
+					"top": 196,
+					"left": 150,
+					"width": 71,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Project File : "
+				},
+				"SelPrimaryBin": {
+					"type": "text",
+					"top": 172,
+					"left": 281,
+					"width": 84,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "left",
+					"text": "Sel Primary BIN : "
+				},
+				"PRJ_DEBin_s3": {
+					"type": "text",
+					"top": 196,
+					"left": 466,
+					"width": 99,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Entered Des EWO : "
+				},
+				"NonBridgeTitle": {
+					"type": "text",
+					"top": 148,
+					"left": 160,
+					"width": 61,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Bridge : * "
+				},
+				"PRJ_SelectByDesignContract_l": {
+					"type": "checkbox",
+					"top": 196,
+					"left": 299,
+					"width": 148,
+					"height": 13,
+					"dataSource": "PRJ_SelectByDesignContract_l",
+					"text": "Select By Des Contract",
+					"class": "PRJ_InputBoldLabel",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PRJ_ConsultantName_txt": {
+					"type": "text",
+					"top": 196,
+					"left": 150,
+					"width": 71,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Consultant : "
+				},
+				"PRJ_ConsultantButton_l": {
+					"type": "button",
+					"top": 196,
+					"left": 443,
+					"width": 16,
+					"height": 16,
+					"dataSource": "PRJ_ConsultantButton_l",
+					"display": false,
+					"method": "ObjectMethods/PRJ_ConsultantButton_l.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 122,
+					"left": 17,
+					"width": 130,
+					"height": 12,
+					"dataSource": "PRJ_Chapter85_l",
+					"text": "Chapter 85",
+					"class": "PRJ_InputBoldLabel",
+					"method": "ObjectMethods/Check Box2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRJ_DataEntry32": {
+					"type": "input",
+					"top": 196,
+					"left": 226,
+					"width": 212,
+					"height": 13,
+					"dataSource": "PRJ_ConsultantName_txt",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PRJ_DataEntry32.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PRJ_ConsultantButton": {
+					"type": "picture",
+					"top": 194,
+					"left": 443,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/PRJ_ConsutantButton.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

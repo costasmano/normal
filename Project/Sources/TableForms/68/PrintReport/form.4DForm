@@ -1,0 +1,266 @@
+{
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 370,
+	"markerBody": 456,
+	"markerBreak": 476,
+	"markerFooter": 496,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 176,
+					"left": 4,
+					"width": 296,
+					"height": 145,
+					"fill": "transparent",
+					"stroke": "#000099",
+					"borderRadius": 5
+				},
+				"Round Rectangle2": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 4,
+					"width": 296,
+					"height": 162,
+					"fill": "transparent",
+					"stroke": "#000099",
+					"borderRadius": 5
+				},
+				"Text1": {
+					"type": "text",
+					"top": 413,
+					"left": 4,
+					"width": 124,
+					"height": 39,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "Window Size: 300 x 370\r12/23/98\rby Tom Nee\r"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 9,
+					"left": 9,
+					"width": 272,
+					"height": 126,
+					"dataSource": "vRptDescr",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "checkbox",
+					"top": 141,
+					"left": 31,
+					"width": 230,
+					"height": 17,
+					"dataSource": "ckPrintRpt",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"text": "Print Reports",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "checkbox",
+					"top": 298,
+					"left": 31,
+					"width": 230,
+					"height": 17,
+					"dataSource": "ckWriteDocs",
+					"shortcutKey": "a",
+					"shortcutAccel": true,
+					"text": "Export Tab-Delimited Text",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 329,
+					"left": 107,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 329,
+					"left": 202,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Label12Bold",
+					"stroke": "#000099",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 389,
+					"left": 2,
+					"width": 80,
+					"height": 17,
+					"dataSource": "bEscape",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Escape",
+					"class": "List9",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 389,
+					"left": 94,
+					"width": 80,
+					"height": 17,
+					"dataSource": "bReturn",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Return",
+					"class": "List9",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 182,
+					"left": 9,
+					"width": 272,
+					"height": 108,
+					"dataSource": "vFileDescr",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+2004-01-22 :  Created.  Generic method for creating ratings/posting letters.    2004-01-29 :  Modified to retrieve templates from the [Templates] table instead of from local hard-drive.  2004-02-02 : Remove null param "()" from GetBridgeEngineer and GetChiefEngineer calls.

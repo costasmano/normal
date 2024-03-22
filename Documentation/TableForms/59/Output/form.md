@@ -1,0 +1,1 @@
+2002-12 : Modified width of date and adjusted locations /widths of fields to fit on screen. Added Activate Deactivate events and code to update Files Palette.2003-03 : Added events on Activate and on Deactivate to handle window array.2003-04 : Added form event to check for ◊fQuit global variable to cancel from form.2004-04-02 : Used On Outside Call event to check for fQuit.

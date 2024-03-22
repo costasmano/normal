@@ -1,0 +1,1 @@
+7-21-2003 ASL  Created to handle inspections that only have structure type.

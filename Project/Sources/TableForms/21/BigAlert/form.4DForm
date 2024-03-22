@@ -1,0 +1,119 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 200,
+	"windowMinHeight": 120,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ButtonOK": {
+					"type": "button",
+					"top": 205,
+					"left": 395,
+					"width": 110,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "DataEntry14Plain",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Message": {
+					"type": "input",
+					"top": 20,
+					"left": 20,
+					"width": 469,
+					"height": 170,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtMessage",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"borderStyle": "dotted",
+					"enterable": false,
+					"styledText": true,
+					"printFrame": "variable",
+					"scrollbarVertical": "visible"
+				},
+				"BCopyToClipBtn": {
+					"type": "button",
+					"top": 205,
+					"left": 20,
+					"width": 170,
+					"height": 22,
+					"sizingY": "move",
+					"shortcutKey": "[Enter]",
+					"text": "Copy to Clipboard",
+					"class": "DataEntry14Plain",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/BCopyToClipBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"ButtonOK",
+				"Message",
+				"BCopyToClipBtn"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

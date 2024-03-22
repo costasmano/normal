@@ -1,0 +1,208 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 44,
+					"left": 61,
+					"width": 220,
+					"height": 49,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 36,
+					"left": 79,
+					"width": 185,
+					"height": 16,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Enter part of the Town Name:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 9,
+					"left": 20,
+					"width": 302,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"text": "Town Search"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 161,
+					"left": 17,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "* Hit Return for Find"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 177,
+					"left": 17,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "** Hit Enter for Ok"
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 102,
+					"left": 56,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bFind",
+					"shortcutKey": "[Return]",
+					"text": "Find *",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 155,
+					"width": 133,
+					"height": 26,
+					"dataSource": "CBAddTo",
+					"text": "Add to Selection",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 166,
+					"left": 130,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 166,
+					"left": 232,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK **",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SearchResults": {
+					"type": "text",
+					"top": 134,
+					"left": 18,
+					"width": 300,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center"
+				},
+				"TownName": {
+					"type": "combo",
+					"top": 56,
+					"left": 79,
+					"width": 185,
+					"height": 26,
+					"dataSource": "aTownName_",
+					"class": "DataEntry12Plain",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

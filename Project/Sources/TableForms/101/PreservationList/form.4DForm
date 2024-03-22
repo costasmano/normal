@@ -1,0 +1,364 @@
+{
+	"windowMinHeight": 250,
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"menuBar": "LB_Custom",
+	"markerBody": 414,
+	"markerBreak": 414,
+	"markerFooter": 414,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onDrop",
+		"onBeforeKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange",
+		"onMouseEnter",
+		"onMouseLeave",
+		"onMouseMove",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"SelectListBox": {
+					"type": "listbox",
+					"top": 5,
+					"left": 5,
+					"width": 780,
+					"height": 269,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "SelectListBox",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "22px",
+					"table": 101,
+					"highlightSet": "SelectedRecordsSet",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowFillSource": "PRV_SetRowColor",
+					"rowStyleSource": "LB_RowStyle_l",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/SelectListBox.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": []
+				},
+				"ForDesigner1": {
+					"type": "button",
+					"top": 239,
+					"left": 436,
+					"width": 70,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "Button",
+					"text": "Get Widths",
+					"class": "Default",
+					"method": "ObjectMethods/ForDesigner1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ForDesigner2": {
+					"type": "button",
+					"top": 239,
+					"left": 546,
+					"width": 110,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "Button",
+					"text": "Set Widths & Save",
+					"fontSize": 9,
+					"method": "ObjectMethods/ForDesigner2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ForDesigner": {
+					"type": "input",
+					"top": 239,
+					"left": 23,
+					"width": 380,
+					"height": 29,
+					"sizingY": "move",
+					"dataSource": "ColumnWidths_txt",
+					"class": "Default",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB_Reports": {
+					"type": "button",
+					"top": 290,
+					"left": 641,
+					"width": 144,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "LB_Reports",
+					"class": "Arial10Bold",
+					"focusable": false,
+					"text": "Reports",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "bevel",
+					"method": "ObjectMethods/LB_Reports.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"bShowAll": {
+					"type": "button",
+					"top": 279,
+					"left": 281,
+					"width": 50,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "bShowAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - Show All.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuery": {
+					"type": "button",
+					"top": 279,
+					"left": 110,
+					"width": 48,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - Query.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBy": {
+					"type": "button",
+					"top": 279,
+					"left": 170,
+					"width": 49,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "bOrderBy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - Order By.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubset": {
+					"type": "button",
+					"top": 279,
+					"left": 359,
+					"width": 50,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "bShowSubset",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show Subset"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - Show Subset.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowSubset.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TopButton1": {
+					"type": "button",
+					"top": 279,
+					"left": 437,
+					"width": 50,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "bzOmit",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OmitSub"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/GLASS - Omit Selection.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/TopButton1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"TopButton2": {
+					"type": "button",
+					"top": 279,
+					"left": 565,
+					"width": 48,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "bzOmit",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - Done.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/TopButton2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bAddAssignment": {
+					"type": "button",
+					"top": 279,
+					"left": 20,
+					"width": 48,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "bAddAssignment",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - Add Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bAddAssignment.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bShowAll",
+					"bQuery",
+					"bOrderBy",
+					"bShowSubset",
+					"bAddAssignment"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

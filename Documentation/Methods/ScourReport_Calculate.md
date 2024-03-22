@@ -1,0 +1,1 @@
+  by: Susie Hwang    created: 4/21/2006    modified: 4/21/2006    purpose: Calculates the variables used in Bridge Scour Reports

@@ -1,0 +1,156 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 45,
+	"markerBody": 69,
+	"markerBreak": 75,
+	"markerFooter": 75,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 158,
+					"height": 73
+				},
+				"Field6": {
+					"type": "input",
+					"top": 49,
+					"left": 3,
+					"width": 30,
+					"height": 17,
+					"dataSource": "[Invoice_AssignNo_Maintenance:94]AssignNo:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vTotalAssignInvCost": {
+					"type": "input",
+					"top": 49,
+					"left": 40,
+					"width": 108,
+					"height": 18,
+					"dataSource": "vTotalAssignInvCost",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$##,###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 24,
+					"left": 3,
+					"width": 30,
+					"height": 17,
+					"class": "FormData12",
+					"textAlign": "center",
+					"text": "No."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 24,
+					"left": 43,
+					"width": 100,
+					"height": 17,
+					"class": "FormData12",
+					"textAlign": "center",
+					"text": "Total Cost"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 2,
+					"left": 0,
+					"width": 158,
+					"height": 17,
+					"class": "FormData12",
+					"textAlign": "center",
+					"text": "Per Assignment"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 22,
+					"left": 0,
+					"width": 158
+				},
+				"Line3": {
+					"type": "line",
+					"top": 43,
+					"left": 0,
+					"width": 158
+				},
+				"Line2": {
+					"type": "line",
+					"top": 22,
+					"left": 37,
+					"height": 51
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

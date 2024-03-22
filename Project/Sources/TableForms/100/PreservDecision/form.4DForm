@@ -1,0 +1,1514 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 237,
+	"markerBreak": 237,
+	"markerFooter": 247,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 314,
+					"left": 181,
+					"width": 151,
+					"height": 54,
+					"fill": "transparent"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 314,
+					"left": 331,
+					"width": 134,
+					"height": 54,
+					"fill": "transparent"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 314,
+					"left": 464,
+					"width": 134,
+					"height": 54,
+					"fill": "transparent"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 93,
+					"left": 16,
+					"width": 872,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "First",
+					"icon": "/RESOURCES/Images/library/GLASS - First Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Previous",
+					"icon": "/RESOURCES/Images/library/GLASS - Previous Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Next",
+					"icon": "/RESOURCES/Images/library/GLASS - Next Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Last",
+					"icon": "/RESOURCES/Images/library/GLASS - Last Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 472,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"class": "List12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/library/GLASS - Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 112,
+					"left": 18,
+					"width": 101,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Bridge No : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 113,
+					"left": 409,
+					"width": 101,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "District : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 136,
+					"left": 394,
+					"width": 101,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Location : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 136,
+					"left": 18,
+					"width": 101,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Town : "
+				},
+				"District": {
+					"type": "input",
+					"top": 113,
+					"left": 525,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]District:8",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Location": {
+					"type": "input",
+					"top": 136,
+					"left": 510,
+					"width": 380,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]Location:6",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"Town": {
+					"type": "input",
+					"top": 136,
+					"left": 134,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]Town:7",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 113,
+					"left": 238,
+					"width": 101,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "BIN : "
+				},
+				"BridgeNo1": {
+					"type": "input",
+					"top": 113,
+					"left": 354,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]BIN:5",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"D I S P L A Y": {
+					"type": "button",
+					"top": 168,
+					"left": 18,
+					"width": 138,
+					"height": 29,
+					"dataSource": "Button",
+					"text": "SI & A",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/D I S P L A Y.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 168,
+					"left": 186,
+					"width": 106,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"text": "INSPECTIONS"
+				},
+				"BridgeNo2": {
+					"type": "input",
+					"top": 113,
+					"left": 134,
+					"width": 140,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]BridgeNo:4",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PRV_Inspect_LB": {
+					"type": "listbox",
+					"top": 168,
+					"left": 297,
+					"width": 581,
+					"height": 94,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "PRV_Inspect_LB",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 90,
+					"highlightSet": "PRV_Inspect_HS",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#FFFFC0",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/PRV_Inspect_LB.4dm",
+					"events": [
+						"onDisplayDetail",
+						"onDoubleClick"
+					],
+					"columns": []
+				},
+				"DE Field23": {
+					"type": "input",
+					"top": 343,
+					"left": 191,
+					"width": 80,
+					"height": 17,
+					"dataSource": "PRV_DEC_ADT_L",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,###;;0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field22": {
+					"type": "input",
+					"top": 343,
+					"left": 296,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]ADTValue_L:15",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field20": {
+					"type": "input",
+					"top": 343,
+					"left": 342,
+					"width": 80,
+					"height": 17,
+					"dataSource": "PRV_DEC_Detour_L",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,###;;0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field21": {
+					"type": "input",
+					"top": 343,
+					"left": 432,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]DetourValue_L:17",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field19": {
+					"type": "input",
+					"top": 343,
+					"left": 473,
+					"width": 40,
+					"height": 17,
+					"dataSource": "PRV_DEC_Classification_s",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field18": {
+					"type": "input",
+					"top": 343,
+					"left": 563,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]ClassificationValue_L:19",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field1": {
+					"type": "input",
+					"top": 343,
+					"left": 785,
+					"width": 60,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]HWYEvalValue_r:20",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field3": {
+					"type": "input",
+					"top": 382,
+					"left": 714,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]EmergReplPts_L:22",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field5": {
+					"type": "input",
+					"top": 406,
+					"left": 713,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]ActiveRRPts_L:24",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field7": {
+					"type": "input",
+					"top": 431,
+					"left": 712,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]EvacRoutePts_L:26",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field8": {
+					"type": "input",
+					"top": 453,
+					"left": 785,
+					"width": 60,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]OtherFactorsValue_r:27",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field9": {
+					"type": "input",
+					"top": 482,
+					"left": 785,
+					"width": 60,
+					"height": 17,
+					"dataSource": "[Contract_Project_Maintenance:100]PrelimDecisValue_r:28",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field17": {
+					"type": "input",
+					"top": 775,
+					"left": 345,
+					"width": 483,
+					"height": 65,
+					"dataSource": "PRV_RecommMethod_txt",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 268,
+					"left": 21,
+					"width": 141,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Need Snow Fence : "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 318,
+					"left": 191,
+					"width": 130,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "ADT"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 318,
+					"left": 340,
+					"width": 116,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Detour  (KM)"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 318,
+					"left": 474,
+					"width": 115,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Classification "
+				},
+				"Text7": {
+					"type": "text",
+					"top": 343,
+					"left": 604,
+					"width": 170,
+					"height": 17,
+					"stroke": "#007CFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "HWY Evaluation Value :"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 382,
+					"left": 146,
+					"width": 501,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Is it Emergency replacement (Y/N) :"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 406,
+					"left": 145,
+					"width": 501,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Is the bridge over an active & busy RR or Navigation channel (Y/N) :"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 431,
+					"left": 145,
+					"width": 501,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Is the bridge on Evacuation Route (Y/N) :"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 453,
+					"left": 604,
+					"width": 170,
+					"height": 17,
+					"stroke": "#007CFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Other Factors Value :"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 482,
+					"left": 484,
+					"width": 290,
+					"height": 17,
+					"stroke": "#007CFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "PRELIMINARY DECISION VALUE :"
+				},
+				"DE EditBrInfo Btn": {
+					"type": "button",
+					"top": 320,
+					"left": 18,
+					"width": 144,
+					"height": 42,
+					"dataSource": "Button1",
+					"text": "Edit Bridge Info",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/DE EditBrInfo Btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 521,
+					"left": 16,
+					"width": 511,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Is there possible Staging/Construction area available abutting the bridge?(Y/N):"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 591,
+					"left": 16,
+					"width": 341,
+					"height": 35,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Can the utilities (if located on the structure) be relocated temporarily or permanently off the bridge? (Y/N) :"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 630,
+					"left": 16,
+					"width": 341,
+					"height": 35,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Can the bridge be completely closed for a short period of time? (Y/N) :"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 675,
+					"left": 16,
+					"width": 341,
+					"height": 35,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Does ABC cost 30% or more than Traditional methods? (Y/N) :"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 621,
+					"left": 486,
+					"width": 341,
+					"height": 35,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Can Prefabricated Elements be delivered to the site? (Y/N) :"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 670,
+					"left": 486,
+					"width": 341,
+					"height": 35,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Do other factors (Safety, Environmental, Repetition, etc.) justify prefabrication? (Y/N) :"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 715,
+					"left": 486,
+					"width": 341,
+					"height": 35,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Does Prefabrication significantly reduce inconvenience to the Public and/or Construction time? (Y/N) :"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 775,
+					"left": 16,
+					"width": 311,
+					"height": 17,
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "RECOMMENDED FINAL CONSTRUCTION METHOD "
+				},
+				"FLOW_LT7_1": {
+					"type": "line",
+					"top": 489,
+					"left": 859,
+					"width": 32,
+					"stroke": "#EE0000"
+				},
+				"FLOW_LT7_": {
+					"type": "line",
+					"top": 489,
+					"left": 891,
+					"height": 320,
+					"stroke": "#EE0000"
+				},
+				"FLOW_LT7_2": {
+					"type": "line",
+					"top": 809,
+					"left": 830,
+					"width": 61,
+					"stroke": "#EE0000"
+				},
+				"FLOW_LT7_3": {
+					"type": "text",
+					"top": 475,
+					"left": 859,
+					"width": 29,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "LT 7"
+				},
+				"FLOW_GT7_": {
+					"type": "line",
+					"top": 502,
+					"left": 815,
+					"height": 27
+				},
+				"FLOW_GT7_1": {
+					"type": "line",
+					"top": 529,
+					"left": 561,
+					"width": 254
+				},
+				"FLOW_STGY_": {
+					"type": "line",
+					"top": 545,
+					"left": 538,
+					"height": 14
+				},
+				"FLOW_STGY_1": {
+					"type": "line",
+					"top": 559,
+					"left": 371,
+					"width": 167
+				},
+				"FLOW_STGY_2": {
+					"type": "line",
+					"top": 559,
+					"left": 371,
+					"height": 34
+				},
+				"FLOW_STGN_1": {
+					"type": "line",
+					"top": 559,
+					"left": 548,
+					"width": 293,
+					"stroke": "#EE0000"
+				},
+				"FLOW_STGN_": {
+					"type": "line",
+					"top": 545,
+					"left": 548,
+					"height": 14,
+					"stroke": "#EE0000"
+				},
+				"FLOW_UTY_": {
+					"type": "line",
+					"top": 621,
+					"left": 371,
+					"height": 14
+				},
+				"FLOW_CLBY_": {
+					"type": "line",
+					"top": 663,
+					"left": 371,
+					"height": 14
+				},
+				"FLOW_ABCN_": {
+					"type": "line",
+					"top": 708,
+					"left": 371,
+					"height": 64
+				},
+				"FLOW_UTN_1": {
+					"type": "line",
+					"top": 609,
+					"left": 391,
+					"width": 79,
+					"stroke": "#EE0000"
+				},
+				"FLOW_CLBN_": {
+					"type": "line",
+					"top": 649,
+					"left": 391,
+					"width": 79,
+					"stroke": "#EE0000"
+				},
+				"FLOW_ABCY_": {
+					"type": "line",
+					"top": 689,
+					"left": 391,
+					"width": 79,
+					"stroke": "#EE0000"
+				},
+				"FLOW_UTN_": {
+					"type": "line",
+					"top": 583,
+					"left": 469,
+					"height": 26,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PDELY_": {
+					"type": "line",
+					"top": 651,
+					"left": 841,
+					"height": 22
+				},
+				"FLOW_PJUSY_": {
+					"type": "line",
+					"top": 702,
+					"left": 841,
+					"height": 17
+				},
+				"FLOW_PCOSTLY_": {
+					"type": "line",
+					"top": 744,
+					"left": 841,
+					"height": 44
+				},
+				"FLOW_PCOSTLY_1": {
+					"type": "line",
+					"top": 788,
+					"left": 831,
+					"width": 10
+				},
+				"FLOW_PDELN_": {
+					"type": "line",
+					"top": 638,
+					"left": 854,
+					"width": 37,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PDELN_1": {
+					"type": "line",
+					"top": 638,
+					"left": 891,
+					"height": 171,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PDELN_2": {
+					"type": "line",
+					"top": 809,
+					"left": 830,
+					"width": 61,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PDELN_3": {
+					"type": "text",
+					"top": 624,
+					"left": 854,
+					"width": 26,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "N"
+				},
+				"FLOW_PJUSN_": {
+					"type": "line",
+					"top": 688,
+					"left": 854,
+					"width": 37,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PJUSN_2": {
+					"type": "line",
+					"top": 809,
+					"left": 830,
+					"width": 61,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PJUSN_3": {
+					"type": "text",
+					"top": 674,
+					"left": 854,
+					"width": 26,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "N"
+				},
+				"FLOW_PJUSN_1": {
+					"type": "line",
+					"top": 688,
+					"left": 891,
+					"height": 121,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PCOSTLN_": {
+					"type": "line",
+					"top": 733,
+					"left": 854,
+					"width": 37,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PCOSTLN_1": {
+					"type": "line",
+					"top": 733,
+					"left": 891,
+					"height": 76,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PCOSTLN_2": {
+					"type": "line",
+					"top": 809,
+					"left": 830,
+					"width": 61,
+					"stroke": "#EE0000"
+				},
+				"FLOW_UTN_2": {
+					"type": "line",
+					"top": 583,
+					"left": 470,
+					"width": 371,
+					"stroke": "#EE0000"
+				},
+				"FLOW_UTN_3": {
+					"type": "line",
+					"top": 583,
+					"left": 840,
+					"width": 1,
+					"height": 45,
+					"stroke": "#EE0000"
+				},
+				"FLOW_CLBN_1": {
+					"type": "line",
+					"top": 583,
+					"left": 469,
+					"height": 66,
+					"stroke": "#EE0000"
+				},
+				"FLOW_ABCY_1": {
+					"type": "line",
+					"top": 583,
+					"left": 469,
+					"height": 106,
+					"stroke": "#EE0000"
+				},
+				"FLOW_PCOSTLN_3": {
+					"type": "text",
+					"top": 719,
+					"left": 854,
+					"width": 26,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "N"
+				},
+				"FLOW_STGN_3": {
+					"type": "text",
+					"top": 545,
+					"left": 551,
+					"width": 26,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "N"
+				},
+				"FLOW_CLBN_2": {
+					"type": "line",
+					"top": 583,
+					"left": 470,
+					"width": 371,
+					"stroke": "#EE0000"
+				},
+				"FLOW_ABCY_4": {
+					"type": "line",
+					"top": 583,
+					"left": 470,
+					"width": 371,
+					"stroke": "#EE0000"
+				},
+				"FLOW_UTN_4": {
+					"type": "text",
+					"top": 595,
+					"left": 391,
+					"width": 26,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "N"
+				},
+				"FLOW_CLBN_4": {
+					"type": "text",
+					"top": 635,
+					"left": 391,
+					"width": 26,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "N"
+				},
+				"FLOW_ABCY_3": {
+					"type": "text",
+					"top": 675,
+					"left": 391,
+					"width": 26,
+					"height": 14,
+					"stroke": "#EE0000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"FLOW_CLBN_3": {
+					"type": "line",
+					"top": 583,
+					"left": 840,
+					"width": 1,
+					"height": 45,
+					"stroke": "#EE0000"
+				},
+				"FLOW_ABCY_2": {
+					"type": "line",
+					"top": 583,
+					"left": 840,
+					"width": 1,
+					"height": 45,
+					"stroke": "#EE0000"
+				},
+				"FLOW_STGN_2": {
+					"type": "line",
+					"top": 559,
+					"left": 840,
+					"width": 1,
+					"height": 69,
+					"stroke": "#EE0000"
+				},
+				"FLOW_GT7_2": {
+					"type": "text",
+					"top": 509,
+					"left": 821,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "GT 7"
+				},
+				"FLOW_STGY_3": {
+					"type": "text",
+					"top": 545,
+					"left": 501,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"FLOW_UTY_1": {
+					"type": "text",
+					"top": 620,
+					"left": 372,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"FLOW_CLBY_1": {
+					"type": "text",
+					"top": 664,
+					"left": 372,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"FLOW_ABCN_1": {
+					"type": "text",
+					"top": 714,
+					"left": 372,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "N"
+				},
+				"FLOW_PCOSTLY_2": {
+					"type": "text",
+					"top": 747,
+					"left": 842,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"FLOW_PJUSY_1": {
+					"type": "text",
+					"top": 702,
+					"left": 842,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"FLOW_PDELY_1": {
+					"type": "text",
+					"top": 652,
+					"left": 842,
+					"width": 26,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Y"
+				},
+				"DE bValidate Btn": {
+					"type": "button",
+					"top": 16,
+					"left": 535,
+					"width": 52,
+					"height": 64,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"class": "List12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Validate",
+					"icon": "/RESOURCES/Images/library/GLASS - OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE bValidate Btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 286,
+					"left": 18,
+					"width": 873,
+					"height": 23,
+					"class": "DataEntry19Plain",
+					"textAlign": "center",
+					"text": "Bridge Decision FlowChart"
+				},
+				"DE PRV_DEC_3": {
+					"type": "checkbox",
+					"top": 519,
+					"left": 535,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_StagingAvail_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_7": {
+					"type": "checkbox",
+					"top": 626,
+					"left": 832,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_PrefabDeliv_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_8": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 832,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_PrefabJustif_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_9": {
+					"type": "checkbox",
+					"top": 721,
+					"left": 832,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_PrefabCostLess_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_6": {
+					"type": "checkbox",
+					"top": 678,
+					"left": 363,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_ABCOver30_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_5": {
+					"type": "checkbox",
+					"top": 638,
+					"left": 363,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_BridgeClose_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_4": {
+					"type": "checkbox",
+					"top": 597,
+					"left": 363,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_UtilRelocate_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_": {
+					"type": "checkbox",
+					"top": 264,
+					"left": 173,
+					"width": 34,
+					"height": 24,
+					"dataSource": "PRV_DEC_NeedSnowFence_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_D": {
+					"type": "checkbox",
+					"top": 380,
+					"left": 660,
+					"width": 34,
+					"height": 19,
+					"dataSource": "PRV_DEC_EmergRepl_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_1": {
+					"type": "checkbox",
+					"top": 404,
+					"left": 660,
+					"width": 34,
+					"height": 19,
+					"dataSource": "PRV_DEC_ActiveRR_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PRV_DEC_2": {
+					"type": "checkbox",
+					"top": 429,
+					"left": 660,
+					"width": 34,
+					"height": 19,
+					"dataSource": "PRV_DEC_EvacRoute_b",
+					"text": " ",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line9"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bCancel",
+					"DE bValidate Btn"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

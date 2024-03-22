@@ -1,0 +1,273 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ListBox1": {
+					"type": "listbox",
+					"top": 86,
+					"left": 10,
+					"width": 400,
+					"height": 474,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"focusable": false,
+					"rowHeight": "200px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"method": "ObjectMethods/ListBox1.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange",
+						"onAlternateClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "v_113_003_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"wordwrap": "normal",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "middle",
+							"class": "Label12Plain",
+							"header": {
+								"name": "Header1",
+								"text": "Description",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "INVPHOTOINSPAPPR_AP",
+							"dataSourceTypeHint": "picture",
+							"width": 227,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Photo",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "v_113_001_aL",
+							"dataSourceTypeHint": "number",
+							"width": 184,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"v_112_003_ad": {
+					"type": "dropdown",
+					"top": 8,
+					"left": 195,
+					"width": 139,
+					"height": 17,
+					"dataSource": "v_112_003_ad",
+					"dataSourceTypeHint": "arrayDate",
+					"class": "Geneva14",
+					"method": "ObjectMethods/v_112_003_ad.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"ApproachDescr": {
+					"type": "text",
+					"top": 587,
+					"left": 122,
+					"width": 288,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Label12Plain",
+					"text": "(No photo selected for Approach)"
+				},
+				"ElevationDescr": {
+					"type": "text",
+					"top": 608,
+					"left": 122,
+					"width": 288,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Label12Plain",
+					"text": "(No photo selected for Elevation)"
+				},
+				"Description3": {
+					"type": "text",
+					"top": 8,
+					"left": 20,
+					"width": 163,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "Select Inventory Photo date"
+				},
+				"Text": {
+					"type": "text",
+					"top": 43,
+					"left": 22,
+					"width": 388,
+					"height": 44,
+					"class": "Label12Plain",
+					"text": "Right click on inventory photo from the list below, and then choose  Approach or Elevation."
+				},
+				"Description4": {
+					"type": "text",
+					"top": 587,
+					"left": 10,
+					"width": 103,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Label12Plain",
+					"text": "Approach"
+				},
+				"Description5": {
+					"type": "text",
+					"top": 608,
+					"left": 10,
+					"width": 103,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Label12Plain",
+					"text": "Elevation"
+				},
+				"Description1": {
+					"type": "text",
+					"top": 568,
+					"left": 10,
+					"width": 113,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Label12Plain",
+					"text": "Photo Selected for :"
+				},
+				"Button": {
+					"type": "button",
+					"top": 637,
+					"left": 10,
+					"width": 103,
+					"height": 29,
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 637,
+					"left": 287,
+					"width": 123,
+					"height": 29,
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"text": "Save Changes",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

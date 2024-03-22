@@ -1,0 +1,892 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "TypInputTemplate",
+	"inheritedFormTable": 21,
+	"windowMinWidth": 600,
+	"windowMinHeight": 420,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onDataChange",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable11": {
+					"type": "pictureButton",
+					"top": 350,
+					"left": 342,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "ZZ5",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture11": {
+					"type": "picture",
+					"top": 9,
+					"left": 4,
+					"width": 582,
+					"height": 31,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarBlue.png"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 9,
+					"left": 4,
+					"width": 582,
+					"height": 28,
+					"sizingX": "grow",
+					"stroke": "#FFFF00",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Personnel"
+				},
+				"ViewGroups": {
+					"type": "button",
+					"top": 14,
+					"left": 446,
+					"width": 137,
+					"height": 21,
+					"sizingX": "move",
+					"text": "View Groups",
+					"method": "ObjectMethods/ViewGroups.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Field1": {
+					"type": "input",
+					"top": 50,
+					"left": 133,
+					"width": 55,
+					"height": 17,
+					"dataSource": "[Personnel:42]Person ID:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 50,
+					"left": 19,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Inspector ID"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 79,
+					"left": 13,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Prefix"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 101,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "First"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 101,
+					"left": 203,
+					"width": 51,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Middle"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 101,
+					"left": 263,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Last"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 141,
+					"left": 13,
+					"width": 51,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Suffix"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 141,
+					"left": 123,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Division No"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 141,
+					"left": 233,
+					"width": 87,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Job Code"
+				},
+				"Field10": {
+					"type": "checkbox",
+					"top": 50,
+					"left": 227,
+					"width": 157,
+					"height": 20,
+					"dataSource": "[Personnel:42]Active:11",
+					"text": "Active Inspector",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "checkbox",
+					"top": 50,
+					"left": 397,
+					"width": 186,
+					"height": 20,
+					"dataSource": "[Personnel:42]DiveTeam:10",
+					"text": "Member of Dive Team",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 79,
+					"left": 63,
+					"width": 70,
+					"height": 17,
+					"dataSource": "[Personnel:42]Prefix:2",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Prefixes"
+					},
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 122,
+					"left": 13,
+					"width": 180,
+					"height": 17,
+					"dataSource": "[Personnel:42]First Name:3",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 122,
+					"left": 203,
+					"width": 50,
+					"height": 17,
+					"dataSource": "[Personnel:42]Middle Name:4",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 122,
+					"left": 263,
+					"width": 320,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnel:42]Last Name:5",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 162,
+					"left": 13,
+					"width": 100,
+					"height": 17,
+					"dataSource": "[Personnel:42]Suffix:6",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Suffixes"
+					},
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 162,
+					"left": 123,
+					"width": 45,
+					"height": 17,
+					"dataSource": "[Personnel:42]Division No:7",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 162,
+					"left": 233,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[Personnel:42]Job Code:8",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"min": 0,
+					"max": 5,
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "dropdown",
+					"top": 161,
+					"left": 293,
+					"width": 270,
+					"height": 19,
+					"sizingX": "grow",
+					"dataSource": "aJob",
+					"focusable": false,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 203,
+					"left": 13,
+					"width": 320,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnel:42]Employer:9",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Employers"
+					},
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 242,
+					"left": 13,
+					"width": 320,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnel:42]Phone_s:13",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 280,
+					"left": 13,
+					"width": 320,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnel:42]CellPhone_s:15",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 317,
+					"left": 13,
+					"width": 400,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[Personnel:42]EmailAddress_s:14",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 182,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Employer"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 79,
+					"left": 279,
+					"width": 101,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "4D User ID #"
+				},
+				"Field12": {
+					"type": "input",
+					"top": 79,
+					"left": 383,
+					"width": 75,
+					"height": 17,
+					"dataSource": "[Personnel:42]UserID_4D:12",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#AAAAAA",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PWUserHList": {
+					"type": "dropdown",
+					"top": 79,
+					"left": 461,
+					"width": 123,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "PWUserHList",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/PWUserHList.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 221,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Phone"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 296,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "E-Mail"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 313,
+					"left": 425,
+					"width": 114,
+					"height": 23,
+					"sizingX": "move",
+					"dataSource": "Button1",
+					"text": "DOT Address",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 259,
+					"left": 13,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "Cell Phone"
+				},
+				"Text14": {
+					"type": "groupBox",
+					"top": 181,
+					"left": 360,
+					"width": 221,
+					"height": 130,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Member of"
+				},
+				"MemberOf": {
+					"type": "listbox",
+					"top": 200,
+					"left": 373,
+					"width": 195,
+					"height": 105,
+					"sizingX": "move",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"dataSource": "memberof_c",
+					"scrollbarHorizontal": "automatic",
+					"class": "List12Plain",
+					"columns": [
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.type",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Insp Type",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.tmcount",
+							"width": 38,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "#TM",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.tlcount",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "#TL",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Personnel_Groups": {
+					"type": "listbox",
+					"top": 109,
+					"left": 313,
+					"width": 241,
+					"height": 217,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "4DPersonnelGroups_atxt",
+							"dataSource": "4DPersonnelGroups_atxt",
+							"width": 226,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Personnel Groups",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"NameEmployer": {
+					"type": "text",
+					"top": 59,
+					"left": 13,
+					"width": 561,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"text": "ID-name-employer"
+				},
+				"Expand": {
+					"type": "button",
+					"top": 86,
+					"left": 313,
+					"width": 89,
+					"height": 21,
+					"text": "Expand",
+					"focusable": false,
+					"method": "ObjectMethods/Expand.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"4D_GroupsCollection": {
+					"type": "listbox",
+					"top": 109,
+					"left": 22,
+					"width": 261,
+					"height": 217,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"dataSource": "ugroups",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "4DGroups_atxt1",
+							"dataSource": "This:C1470.groupname",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "4D User Groups",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.main",
+							"width": 46,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "M-S",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 106,
+					"left": 297,
+					"width": 6,
+					"height": 223,
+					"sizingY": "grow",
+					"events": [
+						"onClick"
+					]
+				},
+				"ToolsButton": {
+					"type": "button",
+					"top": 85,
+					"left": 22,
+					"width": 106,
+					"height": 22,
+					"text": "Tools",
+					"focusable": false,
+					"method": "ObjectMethods/ToolsButton.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

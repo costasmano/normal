@@ -1,0 +1,1 @@
+2002-04 : Removed unused buttons and switched to Lib pictures.2003-04-01 : Adjusted form method to use new form events and moved check for ◊fQuit to end.2003-04-15 : Removed REDRAW(◊asWindows) - done in method UpdFilesPalet.2004-04-02 : Used On Outside Call event to check for fQuit. Form type 'Detail'

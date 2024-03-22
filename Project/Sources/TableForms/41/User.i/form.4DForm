@@ -1,0 +1,742 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line10": {
+					"type": "line",
+					"top": 90,
+					"left": 16,
+					"width": 507,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 9,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 93,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 81,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 153,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 237,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 225,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Last"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 3,
+					"left": 304,
+					"width": 2,
+					"height": 86,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 398,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 386,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Cancel"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 106,
+					"left": 17,
+					"width": 30,
+					"height": 12,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Bin : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 106,
+					"left": 82,
+					"width": 77,
+					"height": 12,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Import Date : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 106,
+					"left": 231,
+					"width": 55,
+					"height": 12,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Run Key : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 106,
+					"left": 345,
+					"width": 49,
+					"height": 12,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "SC Key : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 106,
+					"left": 432,
+					"width": 30,
+					"height": 12,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Tev : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 106,
+					"left": 574,
+					"width": 73,
+					"height": 12,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Unique Key : "
+				},
+				"PM_Bin_s": {
+					"type": "input",
+					"top": 106,
+					"left": 49,
+					"width": 31,
+					"height": 12,
+					"dataSource": "[Pontis_Metrics:41]PM_Bin_s:3",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PM_ImportDate_d": {
+					"type": "input",
+					"top": 106,
+					"left": 161,
+					"width": 68,
+					"height": 12,
+					"dataSource": "[Pontis_Metrics:41]PM_ImportDate_d:4",
+					"dataSourceTypeHint": "date",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PM_RunKey_s": {
+					"type": "input",
+					"top": 106,
+					"left": 288,
+					"width": 55,
+					"height": 12,
+					"dataSource": "[Pontis_Metrics:41]PM_RunKey_l:1",
+					"dataSourceTypeHint": "integer",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PM_SCKey_s": {
+					"type": "input",
+					"top": 106,
+					"left": 396,
+					"width": 34,
+					"height": 12,
+					"dataSource": "[Pontis_Metrics:41]PM_SCKey_s:5",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PM_Tev_l": {
+					"type": "input",
+					"top": 106,
+					"left": 464,
+					"width": 108,
+					"height": 12,
+					"dataSource": "[Pontis_Metrics:41]PM_Tev_r:6",
+					"dataSourceTypeHint": "number",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PM_UniqueKey_s": {
+					"type": "input",
+					"top": 106,
+					"left": 649,
+					"width": 117,
+					"height": 12,
+					"dataSource": "[Pontis_Metrics:41]PM_UniqueKey_s:2",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ListBox1": {
+					"type": "listbox",
+					"top": 126,
+					"left": 15,
+					"width": 780,
+					"height": 347,
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#FFFFFF",
+					"class": "Default",
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "PM_YKey_al",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Y Key",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "PM_Hindex_ar",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "##0.000",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "H Index",
+								"dataSource": "Header6",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "PM_ADT_al",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "ADT",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "PM_PTIndex_ar",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"numberFormat": "##0.000",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "PT Index",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "PM_CIX_Supr_ar",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"numberFormat": "##0.000",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "CIX Supr",
+								"dataSource": "Header8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "4",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "PM_CIX_Sub_ar",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "##0.000",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "CIX Sub",
+								"dataSource": "Header8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "PM_CIX_Joint_ar",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "##0.000",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "CIX Joint",
+								"dataSource": "Header8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "6",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "PM_CIX_Bear_ar",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"numberFormat": "##0.000",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "CIX Bear",
+								"dataSource": "Header8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "7",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "PM_CIX_Deck_ar",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"numberFormat": "##0.000",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#00FFEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_InputVariable",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "CIX Deck",
+								"dataSource": "Header8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "8",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line10"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bFirstlabel",
+					"bPrevious",
+					"bPreviouslabel",
+					"bNext",
+					"bNextlabel",
+					"bLast",
+					"bLastlabel",
+					"Picture1",
+					"bCancel",
+					"bCancellabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

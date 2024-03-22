@@ -1,0 +1,372 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 770,
+	"windowMinHeight": 550,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerBody": 240,
+	"markerBreak": 250,
+	"markerFooter": 259,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 13,
+					"left": 174,
+					"width": 260,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 170,
+					"width": 261,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"ElmtSelector": {
+					"type": "dropdown",
+					"top": 19,
+					"left": 180,
+					"width": 23,
+					"height": 21,
+					"dataSource": "asElmtSftyPulldwnName",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/ElmSftyPulldown"
+					},
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ElmtSelector.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"DE FieldDescription": {
+					"type": "input",
+					"top": 70,
+					"left": 144,
+					"width": 432,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Description:22",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE FieldDescription.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ItemLabel": {
+					"type": "input",
+					"top": 49,
+					"left": 96,
+					"width": 528,
+					"height": 17,
+					"dataSource": "vItem",
+					"stroke": "#001EFF",
+					"class": "Label14BoldU",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 72,
+					"left": 4,
+					"width": 89,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Description"
+				},
+				"PrefixLabel": {
+					"type": "input",
+					"top": 70,
+					"left": 96,
+					"width": 40,
+					"height": 18,
+					"dataSource": "vElmPrefix",
+					"stroke": "#001EFF",
+					"class": "Label14BoldU",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"TrapCmd-Period": {
+					"type": "button",
+					"top": 3,
+					"left": 500,
+					"width": 5,
+					"height": 5,
+					"dataSource": "viTrapcmdP",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 18,
+					"left": 241,
+					"width": 23,
+					"height": 23,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page up]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bPrevious.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 18,
+					"left": 264,
+					"width": 23,
+					"height": 23,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page down]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 18,
+					"left": 287,
+					"width": 23,
+					"height": 23,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page down]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 LastRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bLast.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 18,
+					"left": 218,
+					"width": 23,
+					"height": 23,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page up]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 FirstRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bFirst.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 18,
+					"left": 402,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Button Accept": {
+					"type": "button",
+					"top": 18,
+					"left": 364,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ8",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Button Accept.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Button Delete": {
+					"type": "button",
+					"top": 18,
+					"left": 326,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ5",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Element"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Button Delete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 7,
+					"left": 16,
+					"width": 32,
+					"height": 32,
+					"dataSource": "bInspHelp",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RatingGuide"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Help 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 13,
+					"left": 68,
+					"width": 87,
+					"height": 26,
+					"visibility": "hidden",
+					"dataSource": "Button",
+					"text": "AdminTools",
+					"class": "Label10Plain",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

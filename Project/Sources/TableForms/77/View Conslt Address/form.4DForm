@@ -1,0 +1,639 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 350,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 79,
+	"markerBody": 101,
+	"markerBreak": 101,
+	"markerFooter": 180,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 47,
+					"left": 2,
+					"width": 804,
+					"height": 32,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Image titre liste.png"
+				},
+				"Rectangle14": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 2,
+					"width": 804,
+					"height": 60,
+					"fill": "transparent"
+				},
+				"Picture7": {
+					"type": "picture",
+					"top": 0,
+					"left": 2,
+					"width": 804,
+					"height": 47,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Image titre liste.png"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 12,
+					"left": 14,
+					"width": 780,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "ListFormTitle",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Consultant Address"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 78,
+					"left": 2,
+					"width": 804
+				},
+				"Line1": {
+					"type": "line",
+					"top": 78,
+					"left": 2,
+					"width": 802
+				},
+				"Report": {
+					"type": "button",
+					"top": 124,
+					"left": 477,
+					"width": 52,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Quick Report"
+					},
+					"shortcutKey": "r",
+					"shortcutAccel": true,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX Report.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "toolbar",
+					"method": "ObjectMethods/Report.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"Variable10": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 587,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"shortcutKey": "[Enter]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 142,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzSearchLay",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SearchLay"
+					},
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Sort": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 253,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzSort",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SortEdit"
+					},
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Order By.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Sort.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"AllRecs": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 309,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"shortcutKey": "g",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show All.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/AllRecs.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Subset": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 365,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzSub",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Showsub"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show Subset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Subset.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Omit": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 421,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzOmit",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OmitSub"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Omit Subset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Omit.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 197,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzSearch",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SearchKey"
+					},
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Custom Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"S3_Field": {
+					"type": "input",
+					"top": 82,
+					"left": 4,
+					"width": 230,
+					"height": 19,
+					"dataSource": "[Conslt Address:77]ConsltName:2",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line18": {
+					"type": "line",
+					"top": 46,
+					"left": 236,
+					"height": 60
+				},
+				"vContact": {
+					"type": "input",
+					"top": 82,
+					"left": 240,
+					"width": 134,
+					"height": 19,
+					"dataSource": "vContact",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line17": {
+					"type": "line",
+					"top": 46,
+					"left": 375,
+					"height": 60
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 59,
+					"left": 2,
+					"width": 234,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Consultant"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 48,
+					"left": 236,
+					"width": 139,
+					"height": 33,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Contact\rName"
+				},
+				"vAddress": {
+					"type": "input",
+					"top": 82,
+					"left": 469,
+					"width": 200,
+					"height": 19,
+					"dataSource": "vAddress",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S1_Text1": {
+					"type": "text",
+					"top": 59,
+					"left": 466,
+					"width": 204,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Address"
+				},
+				"vCityStateZip": {
+					"type": "input",
+					"top": 82,
+					"left": 675,
+					"width": 130,
+					"height": 19,
+					"dataSource": "vCityStateZip",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S1_Text2": {
+					"type": "text",
+					"top": 59,
+					"left": 670,
+					"width": 136,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "City/State/Zip"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 46,
+					"left": 670,
+					"height": 60
+				},
+				"vSortConslt": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 219,
+					"width": 12,
+					"height": 13,
+					"dataSource": "vSortConslt",
+					"columnCount": 3,
+					"picture": "/RESOURCES/Images/library/BMS Sort Buttons.png",
+					"loopBackToFirstFrame": true,
+					"borderStyle": "raised",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"SortConslt": {
+					"type": "button",
+					"top": 48,
+					"left": 4,
+					"width": 231,
+					"height": 30,
+					"dataSource": "SortConslt",
+					"display": false,
+					"method": "ObjectMethods/SortConslt.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"vSortContact": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 358,
+					"width": 12,
+					"height": 13,
+					"dataSource": "vSortContact",
+					"columnCount": 3,
+					"picture": "/RESOURCES/Images/library/BMS Sort Buttons.png",
+					"loopBackToFirstFrame": true,
+					"borderStyle": "raised",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"vContactFunction": {
+					"type": "input",
+					"top": 82,
+					"left": 378,
+					"width": 85,
+					"height": 19,
+					"dataSource": "vContactFunction",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S1_Text3": {
+					"type": "text",
+					"top": 49,
+					"left": 375,
+					"width": 91,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Contact\rFunction"
+				},
+				"vSortFunction": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 454,
+					"width": 12,
+					"height": 13,
+					"dataSource": "vSortFunction",
+					"columnCount": 3,
+					"picture": "/RESOURCES/Images/library/BMS Sort Buttons.png",
+					"loopBackToFirstFrame": true,
+					"borderStyle": "raised",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"SortContact": {
+					"type": "button",
+					"top": 48,
+					"left": 238,
+					"width": 135,
+					"height": 30,
+					"dataSource": "SortContact",
+					"display": false,
+					"method": "ObjectMethods/SortContact.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"SortFunction": {
+					"type": "button",
+					"top": 48,
+					"left": 376,
+					"width": 90,
+					"height": 30,
+					"dataSource": "SortFunction",
+					"display": false,
+					"method": "ObjectMethods/SortFunction.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 46,
+					"left": 466,
+					"height": 60
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 124,
+					"left": 62,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzAddLay",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Add Record"
+					},
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Add Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

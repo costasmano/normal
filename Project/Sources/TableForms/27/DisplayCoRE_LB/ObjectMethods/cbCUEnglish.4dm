@@ -1,0 +1,4 @@
+
+[BMS Inspections:44]Metric:14:=False:C215
+DISPL_CUs
+REDRAW WINDOW:C456

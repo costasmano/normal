@@ -1,0 +1,223 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 18,
+	"markerBody": 90,
+	"markerBreak": 90,
+	"markerFooter": 92,
+	"events": [
+		"onValidate",
+		"onDisplayDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture5": {
+					"type": "picture",
+					"top": -5,
+					"left": 0,
+					"width": 874,
+					"height": 23,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Image titre liste.png"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 18,
+					"left": 0,
+					"width": 874,
+					"height": 72,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"Line1": {
+					"type": "line",
+					"top": -5,
+					"left": 874,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 14,
+					"width": 115,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Received / Assigned "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 151,
+					"width": 274,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Source / Structure Type : "
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 457,
+					"width": 274,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Comments : "
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 14,
+					"width": 95,
+					"height": 15,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Received_d:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 42,
+					"left": 14,
+					"width": 95,
+					"height": 15,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Distribution_d:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 151,
+					"width": 274,
+					"height": 15,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Source_s:6",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S4_Field1": {
+					"type": "input",
+					"top": 42,
+					"left": 151,
+					"width": 274,
+					"height": 15,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_StructureType_s:4",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 457,
+					"width": 364,
+					"height": 64,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Comments_txt:12",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Line11": {
+					"type": "line",
+					"top": -5,
+					"left": 441,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": -5,
+					"left": 440,
+					"width": 3,
+					"height": 95,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": -5,
+					"left": 135,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": -5,
+					"left": 134,
+					"width": 3,
+					"height": 95,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line8": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 88,
+					"left": 1,
+					"width": 873,
+					"height": 1,
+					"fill": "transparent"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group3": [
+				"Picture5",
+				"Rectangle6",
+				"Line1"
+			]
+		}
+	}
+}

@@ -1,0 +1,4589 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 200,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"ItemDescr": {
+					"type": "input",
+					"top": 82,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "LineDesc_Text",
+					"class": "Label12Plain",
+					"fill": "#EEEEEE",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WkHr_Real_1_7": {
+					"type": "input",
+					"top": 82,
+					"left": 420,
+					"width": 42,
+					"height": 14,
+					"dataSource": "WkHr_Real_7",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fill": "#FFFFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WkHr_Real_7": {
+					"type": "input",
+					"top": 82,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "WkHr_Real_1",
+					"class": "Label12Plain",
+					"fill": "#FFFFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WkHr_Real_2": {
+					"type": "input",
+					"top": 82,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "WkHr_Real_2",
+					"class": "Label12Plain",
+					"fill": "#FFFFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WkHr_Real_3": {
+					"type": "input",
+					"top": 82,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "WkHr_Real_3",
+					"class": "Label12Plain",
+					"fill": "#FFFFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WkHr_Real_4": {
+					"type": "input",
+					"top": 82,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "WkHr_Real_4",
+					"class": "Label12Plain",
+					"fill": "#FFFFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WkHr_Real_5": {
+					"type": "input",
+					"top": 82,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "WkHr_Real_5",
+					"class": "Label12Plain",
+					"fill": "#FFFFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ReviewItm_1_7": {
+					"type": "input",
+					"top": 110,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "ReviewItm_7",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ReviewItm_1_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReviewItm_7": {
+					"type": "input",
+					"top": 110,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "ReviewItm_1",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ReviewItm_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReviewItm_2": {
+					"type": "input",
+					"top": 110,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "ReviewItm_2",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ReviewItm_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReviewItm_3": {
+					"type": "input",
+					"top": 110,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "ReviewItm_3",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ReviewItm_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReviewItm_4": {
+					"type": "input",
+					"top": 110,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "ReviewItm_4",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ReviewItm_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReviewItm_5": {
+					"type": "input",
+					"top": 110,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "ReviewItm_5",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ReviewItm_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OfficeEstItm_7": {
+					"type": "input",
+					"top": 135,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OfficeEstItm_7",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OfficeEstItm_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OfficeEstItm_1": {
+					"type": "input",
+					"top": 135,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OfficeEstItm_1",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OfficeEstItm_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OfficeEstItm_2": {
+					"type": "input",
+					"top": 135,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OfficeEstItm_2",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OfficeEstItm_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OfficeEstItm_3": {
+					"type": "input",
+					"top": 135,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OfficeEstItm_3",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OfficeEstItm_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OfficeEstItm_4": {
+					"type": "input",
+					"top": 135,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OfficeEstItm_4",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OfficeEstItm_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OfficeEstItm_5": {
+					"type": "input",
+					"top": 135,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OfficeEstItm_5",
+					"class": "Label12Plain",
+					"fill": "#FFDFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OfficeEstItm_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OfficeEstItm_6": {
+					"type": "input",
+					"top": 135,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OfficeEstItm_6",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReviewItm_6": {
+					"type": "input",
+					"top": 110,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "ReviewItm_6",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Review_Label1": {
+					"type": "text",
+					"top": 107,
+					"left": 20,
+					"width": 393,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "right",
+					"text": "Reviewer Edits"
+				},
+				"Line_ItemNo1": {
+					"type": "input",
+					"top": 30,
+					"left": 138,
+					"width": 42,
+					"height": 17,
+					"dataSource": "Line_ItemNo",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Title_15": {
+					"type": "text",
+					"top": 30,
+					"left": 18,
+					"width": 109,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "center",
+					"text": "Item Number"
+				},
+				"BtnCancel1": {
+					"type": "button",
+					"top": 1,
+					"left": 685,
+					"width": 68,
+					"height": 21,
+					"dataSource": "BtnCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Plain",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OK1": {
+					"type": "button",
+					"top": 1,
+					"left": 765,
+					"width": 67,
+					"height": 21,
+					"dataSource": "BtnOK",
+					"action": "accept",
+					"text": "OK",
+					"class": "Label12Plain",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"WkHr_Real_6": {
+					"type": "input",
+					"top": 82,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "WkHr_Real_6",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.#;-##0.#;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Title_9": {
+					"type": "text",
+					"top": 46,
+					"left": 466,
+					"width": 49,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Prj.\rMgr "
+				},
+				"Title_10": {
+					"type": "text",
+					"top": 46,
+					"left": 516,
+					"width": 49,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Sr.\rEngr "
+				},
+				"Title_11": {
+					"type": "text",
+					"top": 46,
+					"left": 566,
+					"width": 49,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Des.\rEngr "
+				},
+				"Title_12": {
+					"type": "text",
+					"top": 46,
+					"left": 616,
+					"width": 49,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Jr.\rEngr "
+				},
+				"Title_13": {
+					"type": "text",
+					"top": 46,
+					"left": 666,
+					"width": 49,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Tech"
+				},
+				"Title_14": {
+					"type": "text",
+					"top": 46,
+					"left": 716,
+					"width": 48,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Total\rHrs"
+				},
+				"CTRLVForCmmtTxt1": {
+					"type": "button",
+					"top": 63,
+					"left": 3,
+					"width": 7,
+					"height": 8,
+					"dataSource": "CTRLVForCmmtTxt",
+					"display": false,
+					"method": "ObjectMethods/CTRLVForCmmtTxt1.4dm"
+				},
+				"Title_16": {
+					"type": "text",
+					"top": 62,
+					"left": 20,
+					"width": 393,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item Description"
+				},
+				"OfficeEstItm_Label": {
+					"type": "text",
+					"top": 132,
+					"left": 20,
+					"width": 393,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "right",
+					"text": "Office Estimate"
+				},
+				"OfficeEstItm_Ctrl": {
+					"type": "dropdown",
+					"top": 20,
+					"left": 471,
+					"width": 190,
+					"height": 20,
+					"dataSource": "OfficeEstItm_Ctrld",
+					"focusable": false,
+					"choiceList": [
+						"Engineer's Proposal",
+						"Office Estimate"
+					],
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/OfficeEstItm_Ctrl.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"OfficeEstItm_Ctrl1": {
+					"type": "text",
+					"top": 3,
+					"left": 471,
+					"width": 190,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "View/Edit Item BreakDown for : "
+				},
+				"WKHR_ItemsList_atxt": {
+					"type": "dropdown",
+					"top": 1,
+					"left": 1,
+					"width": 369,
+					"height": 21,
+					"dataSource": "WKHR_ItemsList_atxt",
+					"focusable": false,
+					"class": "Label12Bold",
+					"method": "ObjectMethods/WKHR_ItemsList_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIC_Title_7": {
+					"type": "text",
+					"top": 46,
+					"left": 416,
+					"width": 49,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Princ.\rMgr "
+				}
+			}
+		},
+		{
+			"objects": {
+				"SubItDsc_1": {
+					"type": "input",
+					"top": 162,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV1_7": {
+					"type": "input",
+					"top": 162,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV1_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV1_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV1_1": {
+					"type": "input",
+					"top": 162,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV1_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV1_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV1_2": {
+					"type": "input",
+					"top": 162,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV1_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV1_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV1_3": {
+					"type": "input",
+					"top": 162,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV1_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV1_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV1_4": {
+					"type": "input",
+					"top": 162,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV1_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV1_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV1_5": {
+					"type": "input",
+					"top": 162,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV1_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV1_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus1": {
+					"type": "button",
+					"top": 159,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus1",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus1": {
+					"type": "button",
+					"top": 159,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus1",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_2": {
+					"type": "input",
+					"top": 184,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV2_7": {
+					"type": "input",
+					"top": 184,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV2_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV2_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV2_1": {
+					"type": "input",
+					"top": 184,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV2_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV2_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV2_2": {
+					"type": "input",
+					"top": 184,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV2_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV2_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV2_3": {
+					"type": "input",
+					"top": 184,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV2_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV2_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV2_4": {
+					"type": "input",
+					"top": 184,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV2_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV2_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV2_5": {
+					"type": "input",
+					"top": 184,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV2_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV2_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus2": {
+					"type": "button",
+					"top": 181,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus2",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus2": {
+					"type": "button",
+					"top": 181,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus2",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_3": {
+					"type": "input",
+					"top": 206,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV3_7": {
+					"type": "input",
+					"top": 206,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV3_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV3_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV3_2": {
+					"type": "input",
+					"top": 206,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV3_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV3_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV3_3": {
+					"type": "input",
+					"top": 206,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV3_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV3_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV3_4": {
+					"type": "input",
+					"top": 206,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV3_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV3_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV3_5": {
+					"type": "input",
+					"top": 206,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV3_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV3_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV3_1": {
+					"type": "input",
+					"top": 206,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV3_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV3_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus3": {
+					"type": "button",
+					"top": 203,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus3",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus3": {
+					"type": "button",
+					"top": 203,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus3",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_4": {
+					"type": "input",
+					"top": 229,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV4_7": {
+					"type": "input",
+					"top": 229,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV4_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV4_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV4_1": {
+					"type": "input",
+					"top": 229,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV4_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV4_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV4_2": {
+					"type": "input",
+					"top": 229,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV4_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV4_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV4_3": {
+					"type": "input",
+					"top": 229,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV4_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV4_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV4_4": {
+					"type": "input",
+					"top": 229,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV4_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV4_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV4_5": {
+					"type": "input",
+					"top": 229,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV4_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV4_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus4": {
+					"type": "button",
+					"top": 225,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus4",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus4": {
+					"type": "button",
+					"top": 225,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus4",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_5": {
+					"type": "input",
+					"top": 252,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV5_7": {
+					"type": "input",
+					"top": 252,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV5_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV5_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV5_1": {
+					"type": "input",
+					"top": 252,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV5_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV5_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV5_2": {
+					"type": "input",
+					"top": 252,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV5_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV5_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV5_3": {
+					"type": "input",
+					"top": 252,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV5_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV5_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV5_4": {
+					"type": "input",
+					"top": 252,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV5_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV5_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV5_5": {
+					"type": "input",
+					"top": 252,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV5_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV5_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus5": {
+					"type": "button",
+					"top": 247,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus5",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus5": {
+					"type": "button",
+					"top": 247,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus5",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_6": {
+					"type": "input",
+					"top": 274,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_6",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV6_7": {
+					"type": "input",
+					"top": 274,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV6_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV6_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV6_1": {
+					"type": "input",
+					"top": 274,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV6_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV6_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV6_2": {
+					"type": "input",
+					"top": 274,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV6_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV6_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV6_3": {
+					"type": "input",
+					"top": 274,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV6_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV6_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV6_4": {
+					"type": "input",
+					"top": 274,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV6_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV6_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV6_5": {
+					"type": "input",
+					"top": 274,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV6_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV6_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus6": {
+					"type": "button",
+					"top": 269,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus6",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus6": {
+					"type": "button",
+					"top": 269,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus6",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_7": {
+					"type": "input",
+					"top": 296,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV7_7": {
+					"type": "input",
+					"top": 296,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV7_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV7_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV7_1": {
+					"type": "input",
+					"top": 296,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV7_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV7_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV7_2": {
+					"type": "input",
+					"top": 296,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV7_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV7_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV7_3": {
+					"type": "input",
+					"top": 296,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV7_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV7_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV7_4": {
+					"type": "input",
+					"top": 296,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV7_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV7_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV7_5": {
+					"type": "input",
+					"top": 296,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV7_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV7_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus7": {
+					"type": "button",
+					"top": 292,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus7",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus7": {
+					"type": "button",
+					"top": 292,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus7",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_8": {
+					"type": "input",
+					"top": 318,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_8",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV8_7": {
+					"type": "input",
+					"top": 318,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV8_7",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV8_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV8_1": {
+					"type": "input",
+					"top": 318,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV8_1",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV8_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV8_2": {
+					"type": "input",
+					"top": 318,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV8_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV8_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV8_3": {
+					"type": "input",
+					"top": 318,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV8_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV8_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV8_4": {
+					"type": "input",
+					"top": 318,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV8_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV8_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV8_5": {
+					"type": "input",
+					"top": 318,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV8_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV8_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus8": {
+					"type": "button",
+					"top": 315,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus8",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus8": {
+					"type": "button",
+					"top": 315,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus8",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubItDsc_9": {
+					"type": "input",
+					"top": 340,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "SubItDsc_9",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV9_7": {
+					"type": "input",
+					"top": 340,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV9_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV9_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV9_1": {
+					"type": "input",
+					"top": 340,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV9_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV9_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV9_2": {
+					"type": "input",
+					"top": 340,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV9_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV9_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV9_3": {
+					"type": "input",
+					"top": 340,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV9_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV9_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV9_4": {
+					"type": "input",
+					"top": 340,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV9_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV9_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV9_5": {
+					"type": "input",
+					"top": 340,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV9_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SubItmV9_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ButtonMinus9": {
+					"type": "button",
+					"top": 338,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonMinus9",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonMinus9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonPlus9": {
+					"type": "button",
+					"top": 338,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "ButtonPlus9",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ButtonPlus9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ItemComments": {
+					"type": "input",
+					"top": 367,
+					"left": 20,
+					"width": 772,
+					"height": 35,
+					"sizingY": "grow",
+					"dataSource": "ItemCmmts_Txt",
+					"class": "Label12Plain",
+					"textAlign": "left",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ItemComments.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDrop",
+						"onDataChange"
+					]
+				},
+				"SubItmV5_6": {
+					"type": "input",
+					"top": 252,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV5_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV6_6": {
+					"type": "input",
+					"top": 274,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV6_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SubItmV1_6": {
+					"type": "input",
+					"top": 162,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV1_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SubItmV9_6": {
+					"type": "input",
+					"top": 340,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV9_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SubItmV8_6": {
+					"type": "input",
+					"top": 318,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV8_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SubItmV7_6": {
+					"type": "input",
+					"top": 296,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV7_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SubItmV4_6": {
+					"type": "input",
+					"top": 229,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV4_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SubItmV3_6": {
+					"type": "input",
+					"top": 206,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV3_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SubItmV2_6": {
+					"type": "input",
+					"top": 184,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "SubItmV2_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AddSubItm": {
+					"type": "button",
+					"top": 76,
+					"left": 775,
+					"width": 38,
+					"height": 26,
+					"dataSource": "AddSubItm",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/AddSubItm.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AddCmtsBtn": {
+					"type": "checkbox",
+					"top": 34,
+					"left": 777,
+					"width": 76,
+					"height": 35,
+					"dataSource": "AddCmtsBtn",
+					"text": "Add Comments",
+					"class": "List9",
+					"focusable": false,
+					"method": "ObjectMethods/AddCmtsBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AccptReview": {
+					"type": "button",
+					"top": 106,
+					"left": 775,
+					"width": 36,
+					"height": 21,
+					"dataSource": "AccptReview",
+					"text": "A",
+					"class": "Label10Plain",
+					"focusable": false,
+					"method": "ObjectMethods/AccptReview.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AccptReview1": {
+					"type": "text",
+					"top": 106,
+					"left": 818,
+					"width": 75,
+					"height": 26,
+					"class": "List9",
+					"text": "Accept Reviewer Values"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 77,
+					"left": 818,
+					"width": 50,
+					"height": 26,
+					"class": "List9",
+					"text": "Use\rSub Items"
+				}
+			}
+		},
+		{
+			"objects": {
+				"OffEstAddSubItm": {
+					"type": "button",
+					"top": 128,
+					"left": 775,
+					"width": 38,
+					"height": 26,
+					"dataSource": "OffEstAddSubItm",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/OffEstAddSubItm.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstSubItDsc_1": {
+					"type": "input",
+					"top": 162,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV1_1": {
+					"type": "input",
+					"top": 162,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV1_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV1_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV1_2": {
+					"type": "input",
+					"top": 162,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV1_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV1_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV1_3": {
+					"type": "input",
+					"top": 162,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV1_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV1_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV1_4": {
+					"type": "input",
+					"top": 162,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV1_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV1_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV1_5": {
+					"type": "input",
+					"top": 162,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV1_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV1_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstButtonMinus1": {
+					"type": "button",
+					"top": 159,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus1",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus1": {
+					"type": "button",
+					"top": 159,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus1",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus2": {
+					"type": "button",
+					"top": 181,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus2",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus2": {
+					"type": "button",
+					"top": 181,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus2",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus3": {
+					"type": "button",
+					"top": 203,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus3",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus3": {
+					"type": "button",
+					"top": 203,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus3",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus4": {
+					"type": "button",
+					"top": 226,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus4",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus4": {
+					"type": "button",
+					"top": 226,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus4",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus5": {
+					"type": "button",
+					"top": 249,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus5",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus5": {
+					"type": "button",
+					"top": 249,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus5",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus6": {
+					"type": "button",
+					"top": 271,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus6",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus6": {
+					"type": "button",
+					"top": 271,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus6",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus7": {
+					"type": "button",
+					"top": 293,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus7",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus7": {
+					"type": "button",
+					"top": 293,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus7",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus8": {
+					"type": "button",
+					"top": 315,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus8",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus8": {
+					"type": "button",
+					"top": 315,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus8",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonMinus9": {
+					"type": "button",
+					"top": 337,
+					"left": 775,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonMinus9",
+					"text": "-",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonMinus9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstButtonPlus9": {
+					"type": "button",
+					"top": 337,
+					"left": 815,
+					"width": 35,
+					"height": 20,
+					"dataSource": "OffEstButtonPlus9",
+					"text": "+",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OffEstButtonPlus9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OffEstSubItDsc_2": {
+					"type": "input",
+					"top": 184,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV2_1": {
+					"type": "input",
+					"top": 184,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV2_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV2_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV2_2": {
+					"type": "input",
+					"top": 184,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV2_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV2_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV2_3": {
+					"type": "input",
+					"top": 184,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV2_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV2_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV2_4": {
+					"type": "input",
+					"top": 184,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV2_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV2_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV2_5": {
+					"type": "input",
+					"top": 184,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV2_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV2_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItDsc_3": {
+					"type": "input",
+					"top": 206,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV3_1": {
+					"type": "input",
+					"top": 206,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV3_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV3_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV3_2": {
+					"type": "input",
+					"top": 206,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV3_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV3_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV3_3": {
+					"type": "input",
+					"top": 206,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV3_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV3_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV3_4": {
+					"type": "input",
+					"top": 206,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV3_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV3_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV3_5": {
+					"type": "input",
+					"top": 206,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV3_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV3_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItDsc_4": {
+					"type": "input",
+					"top": 229,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV4_1": {
+					"type": "input",
+					"top": 229,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV4_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV4_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV4_2": {
+					"type": "input",
+					"top": 229,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV4_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV4_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV4_3": {
+					"type": "input",
+					"top": 229,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV4_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV4_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV4_4": {
+					"type": "input",
+					"top": 229,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV4_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV4_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV4_5": {
+					"type": "input",
+					"top": 229,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV4_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV4_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItDsc_5": {
+					"type": "input",
+					"top": 252,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV5_1": {
+					"type": "input",
+					"top": 252,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV5_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV5_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV5_2": {
+					"type": "input",
+					"top": 252,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV5_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV5_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV5_3": {
+					"type": "input",
+					"top": 252,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV5_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV5_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV5_4": {
+					"type": "input",
+					"top": 252,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV5_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV5_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV5_5": {
+					"type": "input",
+					"top": 252,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV5_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV5_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItDsc_6": {
+					"type": "input",
+					"top": 274,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_6",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV6_1": {
+					"type": "input",
+					"top": 274,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV6_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV6_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV6_2": {
+					"type": "input",
+					"top": 274,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV6_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV6_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV6_3": {
+					"type": "input",
+					"top": 274,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV6_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV6_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV6_4": {
+					"type": "input",
+					"top": 274,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV6_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV6_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV6_5": {
+					"type": "input",
+					"top": 274,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV6_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV6_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItDsc_7": {
+					"type": "input",
+					"top": 296,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV7_1": {
+					"type": "input",
+					"top": 296,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV7_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV7_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV7_2": {
+					"type": "input",
+					"top": 296,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV7_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV7_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV7_3": {
+					"type": "input",
+					"top": 296,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV7_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV7_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV7_4": {
+					"type": "input",
+					"top": 296,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV7_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV7_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV7_5": {
+					"type": "input",
+					"top": 296,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV7_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV7_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItDsc_8": {
+					"type": "input",
+					"top": 318,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_8",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV8_1": {
+					"type": "input",
+					"top": 318,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV8_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV8_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV8_2": {
+					"type": "input",
+					"top": 318,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV8_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV8_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV8_3": {
+					"type": "input",
+					"top": 318,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV8_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV8_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV8_4": {
+					"type": "input",
+					"top": 318,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV8_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV8_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV8_5": {
+					"type": "input",
+					"top": 318,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV8_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV8_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItDsc_9": {
+					"type": "input",
+					"top": 340,
+					"left": 20,
+					"width": 392,
+					"height": 16,
+					"dataSource": "OffEstSubItDsc_9",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV9_1": {
+					"type": "input",
+					"top": 340,
+					"left": 470,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV9_1",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV9_1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV9_2": {
+					"type": "input",
+					"top": 340,
+					"left": 520,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV9_2",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV9_2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV9_3": {
+					"type": "input",
+					"top": 340,
+					"left": 570,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV9_3",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV9_3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV9_4": {
+					"type": "input",
+					"top": 340,
+					"left": 620,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV9_4",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV9_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV9_5": {
+					"type": "input",
+					"top": 340,
+					"left": 670,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV9_5",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV9_5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV9_6": {
+					"type": "input",
+					"top": 340,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV9_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV8_6": {
+					"type": "input",
+					"top": 318,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV8_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV7_6": {
+					"type": "input",
+					"top": 296,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV7_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV6_6": {
+					"type": "input",
+					"top": 274,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV6_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV5_6": {
+					"type": "input",
+					"top": 252,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV5_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV4_6": {
+					"type": "input",
+					"top": 229,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV4_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV3_6": {
+					"type": "input",
+					"top": 206,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV3_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV2_6": {
+					"type": "input",
+					"top": 184,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV2_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV1_6": {
+					"type": "input",
+					"top": 162,
+					"left": 720,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV1_6",
+					"class": "Label12Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 129,
+					"left": 818,
+					"width": 50,
+					"height": 26,
+					"class": "List9",
+					"text": "Use\rSub Items"
+				},
+				"OffEstSubItmV1_7": {
+					"type": "input",
+					"top": 162,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV1_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV1_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV2_7": {
+					"type": "input",
+					"top": 184,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV2_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV2_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV3_7": {
+					"type": "input",
+					"top": 206,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV3_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV3_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV4_7": {
+					"type": "input",
+					"top": 229,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV4_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV4_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV5_7": {
+					"type": "input",
+					"top": 252,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV5_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV5_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV6_7": {
+					"type": "input",
+					"top": 274,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV6_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV6_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV7_7": {
+					"type": "input",
+					"top": 296,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV7_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV7_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV8_7": {
+					"type": "input",
+					"top": 318,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV8_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV8_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OffEstSubItmV9_7": {
+					"type": "input",
+					"top": 340,
+					"left": 420,
+					"width": 42,
+					"height": 16,
+					"dataSource": "OffEstSubItmV9_7",
+					"class": "Label12Plain",
+					"fill": "#C5FFC0",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/OffEstSubItmV9_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

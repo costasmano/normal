@@ -1,0 +1,569 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 199,
+	"markerBreak": 199,
+	"markerFooter": 209,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"top": 83,
+					"left": 24,
+					"width": 573,
+					"height": 19,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Label16BoldItalic",
+					"fontWeight": "bold",
+					"text": "Personnel User Groups"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 652,
+					"sizingX": "grow"
+				},
+				"bFirst1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bFirst1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrevious1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bNext1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bLast1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelGroupBtn": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 290,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelGroupBtn",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelGroupBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 353,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 416,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 3,
+					"left": 273,
+					"width": 2,
+					"height": 73,
+					"sizingX": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 86,
+					"left": 217,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Group ID : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 106,
+					"left": 24,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Group Name : "
+				},
+				"GroupName_s": {
+					"type": "input",
+					"top": 106,
+					"left": 140,
+					"width": 454,
+					"height": 17,
+					"dataSource": "[PERS_Groups:109]PERS_GroupName_s:2",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/GroupName_s.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ActingTitle": {
+					"type": "input",
+					"top": 171,
+					"left": 140,
+					"width": 454,
+					"height": 17,
+					"dataSource": "[PERS_Groups:109]PERS_ActingTitle:6",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ActingTitle.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GroupID_I": {
+					"type": "input",
+					"top": 86,
+					"left": 333,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[PERS_Groups:109]PERS_GroupID_I:1",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"All Personnel List1": {
+					"type": "list",
+					"top": 219,
+					"left": 24,
+					"width": 270,
+					"height": 240,
+					"sizingY": "grow",
+					"dataSource": "AllPersonnelList_hL",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"class": "List12Plain",
+					"borderStyle": "none",
+					"method": "ObjectMethods/All Personnel List1.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onDragOver"
+					]
+				},
+				"Group Member List1": {
+					"type": "list",
+					"top": 219,
+					"left": 365,
+					"width": 270,
+					"height": 240,
+					"sizingY": "grow",
+					"dataSource": "GroupMemberList_hL",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"class": "List12Plain",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Group Member List1.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onDragOver"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 200,
+					"left": 365,
+					"width": 255,
+					"height": 17,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Group Members"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 200,
+					"left": 24,
+					"width": 255,
+					"height": 17,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Available Personnel"
+				},
+				"AddToGroup2": {
+					"type": "button",
+					"top": 288,
+					"left": 306,
+					"width": 47,
+					"height": 20,
+					"dataSource": "AddToGroup_Btn",
+					"text": ">",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/AddToGroup2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RemoveFromGroup2": {
+					"type": "button",
+					"top": 327,
+					"left": 306,
+					"width": 47,
+					"height": 20,
+					"dataSource": "RemoveFromGroupBtn",
+					"text": "<",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/RemoveFromGroup2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AddToGroup1": {
+					"type": "button",
+					"top": 378,
+					"left": 306,
+					"width": 47,
+					"height": 16,
+					"dataSource": "AddToGroup_InvBtn",
+					"shortcutKey": "[right arrow]",
+					"display": false,
+					"method": "ObjectMethods/AddToGroup1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RemoveFromGroup1": {
+					"type": "button",
+					"top": 397,
+					"left": 306,
+					"width": 47,
+					"height": 16,
+					"dataSource": "RemoveFromGroupInvBtn",
+					"shortcutKey": "[left arrow]",
+					"display": false,
+					"method": "ObjectMethods/RemoveFromGroup1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MakePrimary_L": {
+					"type": "button",
+					"top": 219,
+					"left": 636,
+					"width": 20,
+					"height": 28,
+					"dataSource": "MakePrimary_L",
+					"text": "P",
+					"class": "List12Bold",
+					"method": "ObjectMethods/MakePrimary_L.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MakeActing_L": {
+					"type": "button",
+					"top": 264,
+					"left": 636,
+					"width": 20,
+					"height": 28,
+					"dataSource": "MakeActing_L",
+					"text": "A",
+					"class": "List12Bold",
+					"method": "ObjectMethods/MakeActing_L.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Display1": {
+					"type": "input",
+					"top": 127,
+					"left": 521,
+					"width": 74,
+					"height": 17,
+					"dataSource": "[PERS_Groups:109]PERS_Primary:4",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#######;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 127,
+					"left": 24,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Primary Role : "
+				},
+				"Text2": {
+					"type": "text",
+					"top": 149,
+					"left": 24,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Acting Role : "
+				},
+				"Display": {
+					"type": "input",
+					"top": 149,
+					"left": 521,
+					"width": 74,
+					"height": 17,
+					"dataSource": "[PERS_Groups:109]PERS_Acting:3",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "#######;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 171,
+					"left": 24,
+					"width": 111,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Acting Title : "
+				},
+				"PERS_Primary_txt": {
+					"type": "text",
+					"top": 127,
+					"left": 140,
+					"width": 374,
+					"height": 17,
+					"fill": "#DDDDDD",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"text": "PERS_Primary_txt"
+				},
+				"PERS_Acting_txt": {
+					"type": "text",
+					"top": 149,
+					"left": 140,
+					"width": 374,
+					"height": 17,
+					"fill": "#DDDDDD",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"text": "PERS_Acting_txt"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

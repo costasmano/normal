@@ -1,0 +1,480 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 261,
+	"markerBreak": 261,
+	"markerFooter": 271,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle38": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 559,
+					"height": 344,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFFFDF",
+					"stroke": "transparent"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 90,
+					"left": 15,
+					"width": 530,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 9,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 93,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 81,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 153,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 237,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 225,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Last"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 326,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 314,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Delete"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 398,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 386,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 470,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 458,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Validate"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 129,
+					"left": 24,
+					"width": 133,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Report Type : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 151,
+					"left": 24,
+					"width": 133,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Received : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 173,
+					"left": 24,
+					"width": 133,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Approved By : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 195,
+					"left": 24,
+					"width": 133,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Approved : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 217,
+					"left": 24,
+					"width": 133,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Source : "
+				},
+				"RPT_ReportType_s": {
+					"type": "input",
+					"top": 129,
+					"left": 162,
+					"width": 349,
+					"height": 13,
+					"dataSource": "[PRJ_ReportData:118]RPT_ReportType_s:2",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"RPT_Received_d": {
+					"type": "input",
+					"top": 151,
+					"left": 162,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[PRJ_ReportData:118]RPT_Received_d:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"RPT_ApprovedBy_s": {
+					"type": "input",
+					"top": 173,
+					"left": 162,
+					"width": 349,
+					"height": 13,
+					"dataSource": "[PRJ_ReportData:118]RPT_ApprovedBy_s:5",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"RPT_Approved_d": {
+					"type": "input",
+					"top": 195,
+					"left": 162,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[PRJ_ReportData:118]RPT_Approved_d:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"RPT_Source_s": {
+					"type": "input",
+					"top": 217,
+					"left": 162,
+					"width": 349,
+					"height": 13,
+					"dataSource": "[PRJ_ReportData:118]RPT_Source_s:7",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 239,
+					"left": 24,
+					"width": 133,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Comments : "
+				},
+				"RPT_Source_s1": {
+					"type": "input",
+					"top": 239,
+					"left": 162,
+					"width": 349,
+					"height": 72,
+					"dataSource": "[PRJ_ReportData:118]RPT_Comments_txt:6",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 194,
+					"left": 269,
+					"width": 51,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 98,
+					"left": 206,
+					"width": 148,
+					"height": 17,
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "REPORT DATA"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 3,
+					"left": 304,
+					"width": 2,
+					"height": 86,
+					"sizingX": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,319 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text11": {
+					"type": "text",
+					"top": 93,
+					"left": 15,
+					"width": 113,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Project Number :"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 93,
+					"left": 295,
+					"width": 137,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Project Manager :"
+				},
+				"DE Field6": {
+					"type": "input",
+					"top": 60,
+					"left": 110,
+					"width": 85,
+					"height": 17,
+					"dataSource": "PRV_ADD_Contract_txt",
+					"stroke": "#000099",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field7": {
+					"type": "input",
+					"top": 60,
+					"left": 380,
+					"width": 25,
+					"height": 17,
+					"dataSource": "PRV_ADD_AssignNo_L",
+					"stroke": "#000099",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field": {
+					"type": "input",
+					"top": 93,
+					"left": 131,
+					"width": 85,
+					"height": 17,
+					"dataSource": "PRV_ADD_ProjInfoNum_txt",
+					"stroke": "#000099",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PRVCancel": {
+					"type": "button",
+					"top": 256,
+					"left": 453,
+					"width": 126,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "PRVContinue",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRVContinue": {
+					"type": "button",
+					"top": 256,
+					"left": 643,
+					"width": 196,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "PRVContinue",
+					"text": "Continue",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/PRVContinue.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PRV_BDEPT9": {
+					"type": "input",
+					"top": 94,
+					"left": 438,
+					"width": 392,
+					"height": 16,
+					"dataSource": "PRV_ProjMgr_txt",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SummaryDisplayPage0_1": {
+					"type": "pictureButton",
+					"top": 93,
+					"left": 232,
+					"width": 51,
+					"height": 17,
+					"dataSource": "PRJ_GotoPrjInfo_FN",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GotoProjInfo"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/projbtn.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SummaryDisplayPage0_1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 60,
+					"left": 425,
+					"width": 83,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Consultant :"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 60,
+					"left": 15,
+					"width": 93,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Contract No. :"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 60,
+					"left": 265,
+					"width": 113,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Assignment No. :"
+				},
+				"PRV_BDEPT15": {
+					"type": "input",
+					"top": 60,
+					"left": 503,
+					"width": 327,
+					"height": 17,
+					"dataSource": "PRV_Consultant_txt",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SummaryDisplayPage0_3": {
+					"type": "pictureButton",
+					"top": 60,
+					"left": 208,
+					"width": 51,
+					"height": 17,
+					"dataSource": "PRJ_GotoPrjInfo_FN",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GotoProjInfo"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/projbtn.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SummaryDisplayPage0_3.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 28,
+					"left": 15,
+					"width": 244,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "Create New Assignment :"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 123,
+					"left": 295,
+					"width": 137,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Project Description :"
+				},
+				"PRV_BDEPT1": {
+					"type": "input",
+					"top": 124,
+					"left": 438,
+					"width": 392,
+					"height": 106,
+					"sizingY": "grow",
+					"dataSource": "PRV_ProjDescr_txt",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

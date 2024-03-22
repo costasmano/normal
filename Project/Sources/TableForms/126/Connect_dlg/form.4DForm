@@ -1,0 +1,358 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 309,
+	"markerBreak": 309,
+	"markerFooter": 319,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line9": {
+					"type": "line",
+					"top": 90,
+					"left": 19,
+					"width": 740,
+					"sizingX": "grow"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 328,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 316,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 400,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 388,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Validate"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 140,
+					"left": 22,
+					"width": 135,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": " User Name : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 165,
+					"left": 22,
+					"width": 135,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Password : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 190,
+					"left": 22,
+					"width": 135,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "OBDC Name : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 215,
+					"left": 22,
+					"width": 135,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "DatabaseName : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 265,
+					"left": 22,
+					"width": 135,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Last Update : "
+				},
+				"SQL_UserName_s": {
+					"type": "input",
+					"top": 140,
+					"left": 164,
+					"width": 384,
+					"height": 15,
+					"dataSource": "[SQL_Connections:126]SQL_UserName_s:2",
+					"stroke": "#000000",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SQL_Password_s": {
+					"type": "input",
+					"top": 165,
+					"left": 162,
+					"width": 384,
+					"height": 15,
+					"dataSource": "[SQL_Connections:126]SQL_Password_s:3",
+					"stroke": "#000000",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"method": "ObjectMethods/SQL_Password_s.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"SQL_OBDCName_txt": {
+					"type": "input",
+					"top": 190,
+					"left": 162,
+					"width": 384,
+					"height": 15,
+					"dataSource": "[SQL_Connections:126]SQL_OBDCName_s:4",
+					"stroke": "#000000",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SQL_DatabaseName_txt": {
+					"type": "input",
+					"top": 215,
+					"left": 164,
+					"width": 384,
+					"height": 15,
+					"dataSource": "[SQL_Connections:126]SQL_DatabaseName_s:1",
+					"stroke": "#000000",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SQL_DatabaseName_txt1": {
+					"type": "input",
+					"top": 240,
+					"left": 164,
+					"width": 384,
+					"height": 15,
+					"dataSource": "[SQL_Connections:126]SQL_SCHEMA_s:6",
+					"stroke": "#000000",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SQL_LastUpdate_d": {
+					"type": "input",
+					"top": 265,
+					"left": 162,
+					"width": 84,
+					"height": 15,
+					"dataSource": "[SQL_Connections:126]SQL_LastUpdate_d:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "DataEntry12APlain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 240,
+					"left": 22,
+					"width": 135,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"text": "Schema : "
+				},
+				"Text": {
+					"type": "text",
+					"top": 100,
+					"left": 567,
+					"width": 192,
+					"height": 238,
+					"class": "DataEntry12Plain",
+					"text": "Notes:\r\r1. ODBC Name must be available in the ODBC sources of the local machine.\r\r2. The database schema must include the period \".\" at the end. Ex \"maximo.\""
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 3,
+					"left": 304,
+					"width": 2,
+					"height": 86,
+					"sizingX": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,178 @@
+{
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 39,
+					"left": 5,
+					"width": 231,
+					"height": 100,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 31,
+					"left": 12,
+					"width": 48,
+					"height": 17,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "SI & A:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 5,
+					"left": 7,
+					"width": 225,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Print all records in selection using:"
+				},
+				"CBSIANormal": {
+					"type": "checkbox",
+					"top": 52,
+					"left": 14,
+					"width": 93,
+					"height": 23,
+					"dataSource": "CBSIANormal",
+					"text": "Inventory",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CBSIAInsp": {
+					"type": "checkbox",
+					"top": 79,
+					"left": 14,
+					"width": 117,
+					"height": 23,
+					"dataSource": "CBSIAInsp",
+					"text": "For Inspection",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 168,
+					"left": 42,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 168,
+					"left": 144,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bPrint",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Print",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CBSIAMA": {
+					"type": "checkbox",
+					"top": 106,
+					"left": 14,
+					"width": 117,
+					"height": 23,
+					"dataSource": "CBSIAMA",
+					"text": "MA Specific",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,317 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 27,
+	"markerBody": 51,
+	"markerBreak": 56,
+	"markerFooter": 56,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onGettingFocus",
+		"onBeforeKeystroke",
+		"onDataChange",
+		"onDragOver",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 642,
+					"height": 55,
+					"fill": "transparent"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 642
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 53,
+					"width": 424,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Description"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 498,
+					"height": 55
+				},
+				"Above Label": {
+					"type": "text",
+					"top": 3,
+					"left": 501,
+					"width": 24,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Cur"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 536,
+					"height": 55
+				},
+				"Text4": {
+					"type": "text",
+					"top": 3,
+					"left": 541,
+					"width": 37,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Def"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 582,
+					"width": 1,
+					"height": 55
+				},
+				"Text5": {
+					"type": "text",
+					"top": 3,
+					"left": 616,
+					"width": 22,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "T"
+				},
+				"DE Above Field": {
+					"type": "input",
+					"top": 30,
+					"left": 507,
+					"width": 13,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Rating:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\"0-9;N;X;H;R\"#",
+					"method": "ObjectMethods/DE Above Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Deficiency": {
+					"type": "input",
+					"top": 30,
+					"left": 541,
+					"width": 37,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Deficiency:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/DeficiencyHelp"
+					},
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\" ;C;M;N;S;H;-\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Deficiency Codes"
+					},
+					"method": "ObjectMethods/DE Deficiency.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Priority": {
+					"type": "input",
+					"top": 30,
+					"left": 589,
+					"width": 18,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Priority:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\" ;I;A;P\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Urgency of Repair Codes"
+					},
+					"method": "ObjectMethods/DE Priority.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"ItemNo": {
+					"type": "input",
+					"top": 30,
+					"left": 2,
+					"width": 46,
+					"height": 17,
+					"dataSource": "vItemNo",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vElmDescr": {
+					"type": "input",
+					"top": 30,
+					"left": 52,
+					"width": 444,
+					"height": 17,
+					"dataSource": "vElmDescr",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "checkbox",
+					"top": 30,
+					"left": 620,
+					"width": 24,
+					"height": 19,
+					"dataSource": "[ElementsSafety:29]Comment Flag:6",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#001EFF",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 50,
+					"width": 1,
+					"height": 55
+				},
+				"Text3": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 46,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Item No"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 0,
+					"left": 613,
+					"width": 1,
+					"height": 55
+				},
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 585,
+					"width": 25,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Prio"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,357 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"MHDItem31_txt": {
+					"type": "input",
+					"top": 101,
+					"left": 21,
+					"width": 32,
+					"height": 16,
+					"dataSource": "MHDItem31_txt",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"FHWAItem31_txt": {
+					"type": "input",
+					"top": 101,
+					"left": 231,
+					"width": 32,
+					"height": 16,
+					"dataSource": "FHWAItem31_txt",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/FHWAItem31_txt.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 370,
+					"left": 15,
+					"width": 50,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "List10Plain",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 370,
+					"left": 83,
+					"width": 50,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"text": "Update",
+					"class": "List10Plain",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 370,
+					"left": 220,
+					"width": 50,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "OK",
+					"class": "List10Plain",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 18,
+					"left": 15,
+					"width": 255,
+					"height": 48,
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "Translation Table for Item 31 between MHD and FHWA codes"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 67,
+					"left": 15,
+					"width": 45,
+					"height": 36,
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "MHD\rCode"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 67,
+					"left": 225,
+					"width": 45,
+					"height": 36,
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "FHWA\rCode"
+				},
+				"MHDItem31TransLB": {
+					"type": "listbox",
+					"top": 130,
+					"left": 15,
+					"width": 255,
+					"height": 230,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "MHDItem31TransLB",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#DFFFFF",
+					"alternateFill": "#FFFFC0",
+					"class": "Default",
+					"method": "ObjectMethods/MHDItem31TransLB.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "MHDItem31_atxt",
+							"width": 45,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "MHDItem31Desc_atxt",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "FHWAItem31_atxt",
+							"width": 45,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 370,
+					"left": 151,
+					"width": 50,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"text": "Apply",
+					"class": "List10Plain",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MHDItem31Desc_txt": {
+					"type": "input",
+					"top": 101,
+					"left": 61,
+					"width": 166,
+					"height": 16,
+					"dataSource": "MHDItem31Desc_txt",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 67,
+					"left": 61,
+					"width": 166,
+					"height": 36,
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "MHD\rDescription"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,263 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line10": {
+					"type": "line",
+					"top": 77,
+					"left": 16,
+					"width": 453,
+					"sizingX": "grow"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 353,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 416,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 96,
+					"left": 43,
+					"width": 187,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "EWO : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 122,
+					"left": 43,
+					"width": 187,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Advertised : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 148,
+					"left": 43,
+					"width": 187,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Scheduled Advertising  : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 174,
+					"left": 43,
+					"width": 187,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Completion : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 200,
+					"left": 43,
+					"width": 187,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Bid Opened : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 226,
+					"left": 43,
+					"width": 187,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Estimated Total Cost : "
+				},
+				"PF_EWO_s": {
+					"type": "input",
+					"top": 96,
+					"left": 235,
+					"width": 178,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectFile:117]PF_EWO_s:4",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PF_Advertised_d": {
+					"type": "input",
+					"top": 122,
+					"left": 235,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectFile:117]PF_Advertised_d:14",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PF_ScheduledAdvertising_d": {
+					"type": "input",
+					"top": 148,
+					"left": 235,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectFile:117]PF_ScheduledAdvertising_d:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"[PRJ_ProjectDetails]PRJ_Complet": {
+					"type": "input",
+					"top": 174,
+					"left": 235,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectDetails:115]PRJ_Completion_d:37",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PF_BidOpened_d": {
+					"type": "input",
+					"top": 200,
+					"left": 235,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectFile:117]PF_BidOpened_d:12",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PF_EstTotalCost_r": {
+					"type": "input",
+					"top": 226,
+					"left": 235,
+					"width": 72,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectFile:117]PF_EstTotalCost_r:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.00",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+	  by: Susie Hwang  	  created: 3/10/2006  	  modified: 4/21/2006  	  purpose: Creates Scour Report records

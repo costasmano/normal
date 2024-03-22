@@ -1,0 +1,1 @@
+Aug-2002 : Created to  check for Data File being locked by another app.  Jan-2003 : Added Unload Record command. Added declaration of $0.

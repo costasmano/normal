@@ -1,0 +1,493 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 18,
+	"markerBody": 240,
+	"markerBreak": 264,
+	"markerFooter": 288,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 252,
+					"width": 220,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 248,
+					"width": 221,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"DE Button Accept": {
+					"type": "button",
+					"top": 10,
+					"left": 320,
+					"width": 22,
+					"height": 23,
+					"dataSource": "bzAccept",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SaveExit"
+					},
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Button Accept.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 4,
+					"left": 627,
+					"width": 87,
+					"height": 52,
+					"sizingX": "move",
+					"fill": "transparent"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 10,
+					"left": 627,
+					"width": 87,
+					"height": 15,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "BR. DEPT. NO"
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 10,
+					"left": 184,
+					"width": 3,
+					"height": 3,
+					"dataSource": "ZZ6",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Page"
+					},
+					"action": "previousPage",
+					"shortcutKey": "[Page up]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 10,
+					"left": 197,
+					"width": 3,
+					"height": 3,
+					"dataSource": "ZZ7",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Page"
+					},
+					"action": "nextPage",
+					"shortcutKey": "[Page down]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 28,
+					"left": 628,
+					"width": 85,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle12": {
+					"type": "rectangle",
+					"top": 4,
+					"left": 60,
+					"width": 50,
+					"height": 52,
+					"fill": "transparent"
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 4,
+					"left": 8,
+					"width": 50,
+					"height": 52,
+					"fill": "transparent"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 28,
+					"left": 20,
+					"width": 27,
+					"height": 20,
+					"dataSource": "[Bridge MHD NBIS:1]Item2:60",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 28,
+					"left": 66,
+					"width": 39,
+					"height": 20,
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"TrapCmd-Period": {
+					"type": "button",
+					"top": 3,
+					"left": 183,
+					"width": 3,
+					"height": 3,
+					"dataSource": "viTrapcmdP",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 42,
+					"left": 160,
+					"width": 369,
+					"height": 28,
+					"dataSource": "vInspTitle",
+					"stroke": "#000000",
+					"class": "Times24Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 10,
+					"left": 11,
+					"width": 44,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "2-DIST"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 10,
+					"left": 63,
+					"width": 44,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "B.I.N."
+				},
+				"Variable15": {
+					"type": "button",
+					"top": 8,
+					"left": 577,
+					"width": 42,
+					"height": 42,
+					"sizingX": "move",
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintInspect"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/MassDOTPrint.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"borderStyle": "raised",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE Button Delete": {
+					"type": "button",
+					"top": 10,
+					"left": 257,
+					"width": 23,
+					"height": 23,
+					"dataSource": "bzDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Button Delete.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 10,
+					"left": 439,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE Button Save": {
+					"type": "button",
+					"top": 10,
+					"left": 379,
+					"width": 22,
+					"height": 23,
+					"dataSource": "vSaveContinue",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SaveContinue"
+					},
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveContinue 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Button Save.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"InspHelpButton": {
+					"type": "button",
+					"top": 12,
+					"left": 115,
+					"width": 32,
+					"height": 32,
+					"dataSource": "bInspHelp",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RatingGuide"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Help 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"borderStyle": "raised",
+					"method": "ObjectMethods/InspHelpButton.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail"
+					]
+				},
+				"TrapCmd-Period1": {
+					"type": "button",
+					"top": 3,
+					"left": 193,
+					"width": 3,
+					"height": 3,
+					"dataSource": "viTrapESC",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ExportBtn": {
+					"type": "button",
+					"top": 10,
+					"left": 477,
+					"width": 43,
+					"height": 28,
+					"dataSource": "vExportBtn",
+					"text": ">>",
+					"class": "Label9Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ExportBtn.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group3": [
+				"Rectangle1",
+				"Rectangle2"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,455 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 245,
+					"left": 216,
+					"width": 19,
+					"height": 17,
+					"dataSource": "vItem92CA_L",
+					"text": " ",
+					"class": "Label12Plain",
+					"focusable": false
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 245,
+					"left": 321,
+					"width": 18,
+					"height": 17,
+					"dataSource": "vItem92CA_new_L",
+					"text": " ",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 275,
+					"left": 315,
+					"width": 30,
+					"height": 16,
+					"dataSource": "vItem92CB_new_L",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 275,
+					"left": 210,
+					"width": 30,
+					"height": 16,
+					"dataSource": "vItem92CB_L",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 205,
+					"left": 184,
+					"width": 82,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Current SIA values"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 205,
+					"left": 284,
+					"width": 92,
+					"height": 33,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Recommended  values"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 304,
+					"left": 132,
+					"width": 96,
+					"height": 31,
+					"dataSource": "vCancel",
+					"action": "cancel",
+					"text": "Leave As Is",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 304,
+					"left": 252,
+					"width": 128,
+					"height": 31,
+					"dataSource": "vAccept",
+					"action": "cancel",
+					"text": "Accept Changes",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 57,
+					"left": 23,
+					"width": 355,
+					"height": 66,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Note: It is recommended that when an Item rating is 4 or less, a Special Member Inspection will be needed every 12 Mo's.  If a rating falls to 3 or below, the inspection frequency should be at least 6 Mo's."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 245,
+					"left": 24,
+					"width": 180,
+					"height": 13,
+					"class": "Label12Plain",
+					"text": "Item 92 C A (OnOff)"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 275,
+					"left": 24,
+					"width": 180,
+					"height": 13,
+					"class": "Label12Plain",
+					"text": "Item 92 C B (Frequency)"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 360,
+					"height": 38,
+					"class": "Arial14Bold",
+					"textAlign": "center",
+					"text": "Review of Special Member Inspection Frequency based on SIA Ratings"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 180,
+					"left": 38,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem58",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 180,
+					"left": 248,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem61",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 180,
+					"left": 318,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem62",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 180,
+					"left": 178,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem60",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 180,
+					"left": 108,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem59",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 145,
+					"left": 38,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r58"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 145,
+					"left": 248,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r61"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 145,
+					"left": 318,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r62"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 145,
+					"left": 178,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r60"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 145,
+					"left": 108,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r59"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 127,
+					"left": 73,
+					"width": 255,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "New SIA Ratings"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text15": {
+					"type": "text",
+					"top": 245,
+					"left": 24,
+					"width": 180,
+					"height": 13,
+					"class": "Label12Plain",
+					"text": "UW Spec. Memb. Insp. (OnOff)"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 275,
+					"left": 24,
+					"width": 180,
+					"height": 13,
+					"class": "Label12Plain",
+					"text": "UW Spec. Memb. Insp. (Freq.)"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 360,
+					"height": 38,
+					"class": "Arial14Bold",
+					"textAlign": "center",
+					"text": "Review of UW Special Member Inspection Frequency based on UW Insp. Ratings"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 180,
+					"left": 178,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem61",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 180,
+					"left": 248,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem62",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 180,
+					"left": 108,
+					"width": 45,
+					"height": 16,
+					"dataSource": "vItem60",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 145,
+					"left": 178,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r61"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 145,
+					"left": 248,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r62"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 145,
+					"left": 108,
+					"width": 45,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Item\r60"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 127,
+					"left": 73,
+					"width": 255,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "New UW Inspection Ratings"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

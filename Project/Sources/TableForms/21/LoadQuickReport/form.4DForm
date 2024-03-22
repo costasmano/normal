@@ -1,0 +1,333 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"menuBar": "BlankMenu",
+	"markerBody": 173,
+	"markerBreak": 173,
+	"markerFooter": 183,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"EXISTITEMSLIST_ATXT": {
+					"type": "dropdown",
+					"top": 234,
+					"left": 407,
+					"width": 24,
+					"height": 20,
+					"dataSource": "EXISTITEMSLIST_ATXT",
+					"focusable": false,
+					"class": "Label12Plain"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text6": {
+					"type": "text",
+					"top": 31,
+					"left": 143,
+					"width": 162,
+					"height": 20,
+					"stroke": "#0099FF",
+					"class": "Times16Bold",
+					"textAlign": "center",
+					"text": "ADD REPORT"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 411,
+					"sizingX": "grow"
+				},
+				"BAddQuickReport": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 383,
+					"width": 48,
+					"height": 48,
+					"dataSource": "BAddQuickReport",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/BAddQuickReport.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 24,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"PURPOSELIST_ATXT": {
+					"type": "dropdown",
+					"top": 103,
+					"left": 211,
+					"width": 185,
+					"height": 22,
+					"dataSource": "PURPOSELIST_ATXT",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/PURPOSELIST_ATXT.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PURPOSE_TXT": {
+					"type": "input",
+					"top": 134,
+					"left": 215,
+					"width": 177,
+					"height": 16,
+					"dataSource": "PURPOSE_TXT",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PURPOSE_TXT.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SUBCATEGLIST_ATXT": {
+					"type": "dropdown",
+					"top": 163,
+					"left": 211,
+					"width": 185,
+					"height": 22,
+					"dataSource": "SUBCATEGLIST_ATXT",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/SUBCATEGLIST_ATXT.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SUBCATEGORY_TXT": {
+					"type": "input",
+					"top": 194,
+					"left": 215,
+					"width": 177,
+					"height": 16,
+					"dataSource": "SUBCATEGORY_TXT",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"MENUNAME_TXT": {
+					"type": "input",
+					"top": 234,
+					"left": 215,
+					"width": 177,
+					"height": 16,
+					"dataSource": "MENUNAME_TXT",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"REPORTNAME_TXT": {
+					"type": "input",
+					"top": 264,
+					"left": 215,
+					"width": 177,
+					"height": 16,
+					"dataSource": "REPORTNAME_TXT",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"A-Z;0-9; ;,;.;-;_\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SOURCEFILEbtn": {
+					"type": "button",
+					"top": 296,
+					"left": 26,
+					"width": 166,
+					"height": 20,
+					"dataSource": "SOURCEFILEbtn",
+					"text": "SOURCE FILE",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/SOURCEFILEbtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TEMPLDESCR_TXT": {
+					"type": "input",
+					"top": 352,
+					"left": 26,
+					"width": 366,
+					"height": 37,
+					"dataSource": "TEMPLDESCR_TXT",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LONGDESCR_TXT": {
+					"type": "input",
+					"top": 416,
+					"left": 26,
+					"width": 366,
+					"height": 128,
+					"sizingY": "grow",
+					"dataSource": "LONGDESCR_TXT",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"SOURCEFILE_TXT": {
+					"type": "input",
+					"top": 300,
+					"left": 215,
+					"width": 177,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "SOURCEFILE_TXT",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 106,
+					"left": 26,
+					"width": 174,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "PURPOSE"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 166,
+					"left": 26,
+					"width": 174,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "SUB CATEGORY"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 234,
+					"left": 26,
+					"width": 174,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "MENU NAME"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 264,
+					"left": 26,
+					"width": 174,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "REPORT NAME"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 398,
+					"left": 26,
+					"width": 174,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "LONG MENU DESCRIPTION"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 334,
+					"left": 26,
+					"width": 174,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "TEMPLATE DESCRIPTION"
+				}
+			}
+		}
+	]
+}

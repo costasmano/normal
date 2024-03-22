@@ -1,0 +1,1 @@
+Dec-2000 - CM : Modified to use the Progress Bar dialog, and to allow processing of cmd-period to abort the Initialization process.

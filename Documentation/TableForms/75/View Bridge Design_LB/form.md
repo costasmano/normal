@@ -1,0 +1,1 @@
+2003-09-24 : Centered buttons. Added form method to Cancel and update files pallette. Added events on activate and on deactivate.2004-02-12 : Removed unused Del Btn.2004-03-16 : Added sort buttons.2004-04-02 : Used On Outside Call event to check for fQuit.2004-05-10 : Added on Open Detail to set [Bridge MHD NBIS] to ReadOnly.

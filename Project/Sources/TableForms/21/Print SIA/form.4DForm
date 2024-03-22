@@ -1,0 +1,221 @@
+{
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerBody": 192,
+	"markerBreak": 220,
+	"markerFooter": 236,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 14,
+					"left": 5,
+					"width": 232,
+					"height": 138,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 5,
+					"left": 12,
+					"width": 81,
+					"height": 17,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Print SI & A:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 112,
+					"left": 14,
+					"width": 74,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Page of:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 132,
+					"left": 14,
+					"width": 74,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "of Pages:"
+				},
+				"Variable1": {
+					"type": "checkbox",
+					"top": 24,
+					"left": 14,
+					"width": 93,
+					"height": 23,
+					"dataSource": "CBSIANormal",
+					"text": "Inventory",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "checkbox",
+					"top": 53,
+					"left": 14,
+					"width": 117,
+					"height": 23,
+					"dataSource": "CBSIAInsp",
+					"text": "For Inspection",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "checkbox",
+					"top": 83,
+					"left": 14,
+					"width": 93,
+					"height": 23,
+					"dataSource": "CBSIAMA",
+					"text": "MA Specific",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 112,
+					"left": 90,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vPgs",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 132,
+					"left": 90,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vPgf",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 162,
+					"left": 42,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 162,
+					"left": 144,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bPrint",
+					"action": "accept",
+					"text": "Print",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

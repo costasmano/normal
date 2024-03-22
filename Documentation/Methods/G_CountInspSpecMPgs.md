@@ -1,0 +1,1 @@
+2003-12-05 : Created to count Spec Memb pages in a Combined inspection.  2004-03-03 : Changed to count only elements w/ a rating.

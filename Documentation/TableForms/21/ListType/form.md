@@ -1,0 +1,1 @@
+Dialog used by the M_LoadBINfile to select type of Input text file25-jan-01 : removed radio button for Bridge key , re-aligned buttons31-jan-01 : restored Bridge key button

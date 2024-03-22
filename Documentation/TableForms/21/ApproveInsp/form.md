@@ -1,0 +1,1 @@
+Jan-2002 : Created to approve - reject inspections.Apr-2003 : Added buttons to trap Enter, Cmd-. and Esc.May-2003 : Added text variable to display previous reviewer comments. Re-arranged objects so that action buttons are at the bottom of the dialog. 

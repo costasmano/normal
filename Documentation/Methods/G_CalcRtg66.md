@@ -1,0 +1,1 @@
+2004-05-23 : Created to be used in object methods of RatingReport In.

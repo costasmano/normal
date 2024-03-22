@@ -1,0 +1,598 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text22": {
+					"type": "text",
+					"top": 10,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr text inside margin"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 190,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr footer bottom margin"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 310,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr printable height"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 450,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr footer 1st page bottom mg"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 430,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr footer 1st page top margin"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 410,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr header 1st page bottom mg"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 390,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr header 1st page top margin"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 370,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr first page bottom margin"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 350,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr first page top margin"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 290,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr printable width"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 270,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr dead top margin"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 250,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr dead left margin"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 230,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr paper height"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 210,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr paper width"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 170,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr footer top margin"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 150,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr header bottom margin"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 130,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr header top margin"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 110,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr text bottom margin"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 90,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr text top margin"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 70,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr text right margin"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 50,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr text left margin"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 30,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr text outside margin"
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 10,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_TxtInside_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 30,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_TxtOutside_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 50,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_TxtLeft_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 70,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_TxtRight_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 90,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_TxtTop_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 110,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_TxtBot_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 130,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_HeaderTop_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 150,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_HeaderBot_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 170,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FooterTop_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 190,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FooterBot_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 210,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_PaperW_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 230,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_PaperH_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 250,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_DeadLeft_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 270,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_DeadTop_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 290,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_PrintW_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 310,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_PrintH_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 330,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_DiffFirstPg_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 350,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FirstTop_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 370,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FirstBot_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 390,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FirstHeadTop_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 410,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FirstHeadBot_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 430,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FirstFootTop_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 450,
+					"left": 243,
+					"width": 93,
+					"height": 13,
+					"dataSource": "QR_FirstFootBot_r",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 485,
+					"left": 13,
+					"width": 80,
+					"height": 27,
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 485,
+					"left": 134,
+					"width": 80,
+					"height": 27,
+					"dataSource": "Button1",
+					"text": "Apply",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 485,
+					"left": 256,
+					"width": 80,
+					"height": 27,
+					"dataSource": "Button1",
+					"action": "accept",
+					"text": "OK",
+					"class": "Label12Bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text21": {
+					"type": "text",
+					"top": 330,
+					"left": 13,
+					"width": 221,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "wr different on first page"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

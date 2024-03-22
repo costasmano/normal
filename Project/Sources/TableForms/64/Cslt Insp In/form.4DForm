@@ -1,0 +1,2795 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 720,
+	"windowMinHeight": 530,
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"menuBar": "BlankMenu",
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onDoubleClick",
+		"onDataChange",
+		"onUnload",
+		"onCloseDetail",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": -13,
+					"left": 0,
+					"width": 703,
+					"height": 55,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarGreen.png"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 62,
+					"left": 241,
+					"width": 300,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 59,
+					"left": 237,
+					"width": 301,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"Text12": {
+					"type": "text",
+					"top": 55,
+					"left": 588,
+					"width": 65,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "AASHTO\r"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 2,
+					"left": 3,
+					"width": 700,
+					"height": 34,
+					"sizingX": "grow",
+					"stroke": "#FFFF00",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Consultant Inspection"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 80,
+					"left": 604,
+					"width": 76,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Select List\r"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 53,
+					"left": 655,
+					"width": 47,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]AASHTO:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000.0",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "checkbox",
+					"top": 78,
+					"left": 683,
+					"width": 20,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]FHWA Select:4",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 100,
+					"left": 9,
+					"width": 55,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Town"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 57,
+					"left": 9,
+					"width": 55,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "BDEPT"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 78,
+					"left": 9,
+					"width": 55,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "B.I.N."
+				},
+				"Field1": {
+					"type": "input",
+					"top": 55,
+					"left": 72,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 76,
+					"left": 72,
+					"width": 45,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]BIN:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 98,
+					"left": 72,
+					"width": 154,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 67,
+					"left": 246,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 FirstRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 67,
+					"left": 269,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 67,
+					"left": 292,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 67,
+					"left": 315,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ4",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 LastRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE btnDelete": {
+					"type": "button",
+					"top": 67,
+					"left": 358,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnConsInspDel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnDelete.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 67,
+					"left": 401,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ6",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Page"
+					},
+					"action": "previousPage",
+					"shortcutKey": "[Page up]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousPage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 67,
+					"left": 424,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ7",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Page"
+					},
+					"action": "nextPage",
+					"shortcutKey": "[Page down]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextPage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE btnSave": {
+					"type": "button",
+					"top": 67,
+					"left": 467,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnConsInspSave",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnSave.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnCancel": {
+					"type": "button",
+					"top": 67,
+					"left": 510,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnConsInspCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btnCancel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnPrint": {
+					"type": "button",
+					"top": 54,
+					"left": 546,
+					"width": 42,
+					"height": 42,
+					"dataSource": "btnConsInspPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintConsInsp"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/MassDOTPrint.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btnPrint.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 134,
+					"left": 16,
+					"width": 684,
+					"height": 163,
+					"fill": "transparent"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 195,
+					"left": 24,
+					"width": 84,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Consultant"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 170,
+					"left": 24,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Contract No."
+				},
+				"Text10": {
+					"type": "text",
+					"top": 170,
+					"left": 250,
+					"width": 94,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Assignment No."
+				},
+				"Text19": {
+					"type": "text",
+					"top": 141,
+					"left": 24,
+					"width": 114,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Project manager"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 220,
+					"left": 24,
+					"width": 132,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Type of inspection"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 272,
+					"left": 24,
+					"width": 132,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Inspection month"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 272,
+					"left": 242,
+					"width": 118,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Inspection year"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 141,
+					"left": 250,
+					"width": 99,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Contract Type"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 300,
+					"left": 16,
+					"width": 684,
+					"height": 223,
+					"sizingY": "grow",
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 332,
+					"left": 24,
+					"width": 174,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Request fee proposal"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 446,
+					"left": 24,
+					"width": 174,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Request by B.I.E."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 355,
+					"left": 24,
+					"width": 174,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Fee proposal received"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 332,
+					"left": 337,
+					"width": 132,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Inspection date"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 378,
+					"left": 24,
+					"width": 174,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "NTP issued (written)"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 471,
+					"left": 24,
+					"width": 78,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Remarks"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 400,
+					"left": 24,
+					"width": 180,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "NTP issued (verbal)"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 400,
+					"left": 337,
+					"width": 222,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Report given to D.B.I.E."
+				},
+				"Field6": {
+					"type": "input",
+					"top": 141,
+					"left": 138,
+					"width": 60,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]ProjManager:26",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE cboContractType": {
+					"type": "dropdown",
+					"top": 139,
+					"left": 372,
+					"width": 114,
+					"height": 24,
+					"dataSource": "cboContractType",
+					"choiceList": [
+						"",
+						"Regular",
+						"Complex",
+						"BRI"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE cboContractType.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 169,
+					"left": 138,
+					"width": 60,
+					"height": 18,
+					"dataSource": "[Cons Inspection:64]ConContractNo:7",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					],
+					"enterable": false,
+					"focusable": false,
+					"right": 198
+				},
+				"Field11": {
+					"type": "input",
+					"top": 169,
+					"left": 352,
+					"width": 42,
+					"height": 18,
+					"dataSource": "[Cons Inspection:64]AssignConNumber:6",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onDataChange"
+					],
+					"enterable": false,
+					"focusable": false
+				},
+				"Field15": {
+					"type": "input",
+					"top": 169,
+					"left": 582,
+					"width": 24,
+					"height": 18,
+					"dataSource": "[Cons Inspection:64]AssignPhase:38",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 195,
+					"left": 138,
+					"width": 550,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]AssignConName:5",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Rating Cnslts"
+					},
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE chkRoutine": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 176,
+					"width": 120,
+					"height": 20,
+					"dataSource": "chkRoutine",
+					"text": "Routine",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE chkRoutine.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE chkSM": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 302,
+					"width": 156,
+					"height": 20,
+					"dataSource": "chkSM",
+					"text": "Special Member",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE chkSM.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE chkFC": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 464,
+					"width": 156,
+					"height": 20,
+					"dataSource": "chkFC",
+					"text": "Fracture Critical",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE chkFC.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE chkMec": {
+					"type": "checkbox",
+					"top": 244,
+					"left": 176,
+					"width": 120,
+					"height": 20,
+					"dataSource": "chkMec",
+					"text": "Mechanical",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE chkMec.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE chkElec": {
+					"type": "checkbox",
+					"top": 244,
+					"left": 302,
+					"width": 120,
+					"height": 20,
+					"dataSource": "chkElec",
+					"text": "Electrical",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE chkElec.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE chkTesting": {
+					"type": "checkbox",
+					"top": 244,
+					"left": 464,
+					"width": 156,
+					"height": 20,
+					"dataSource": "chkTesting",
+					"text": "Testing",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE chkTesting.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 272,
+					"left": 176,
+					"width": 36,
+					"height": 17,
+					"dataSource": "vMonth",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "##;##;",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 12,
+					"method": "ObjectMethods/Field16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 272,
+					"left": 368,
+					"width": 54,
+					"height": 17,
+					"dataSource": "vYear",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "####;####;",
+					"entryFilter": "&9",
+					"min": 1900,
+					"method": "ObjectMethods/Field17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FieldLRI1": {
+					"type": "checkbox",
+					"top": 271,
+					"left": 464,
+					"width": 160,
+					"height": 20,
+					"dataSource": "[Cons Inspection:64]LoadRatingInfo:12",
+					"text": "Load Rating Info",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/FieldLRI1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE cboAssignmentStatus": {
+					"type": "dropdown",
+					"top": 304,
+					"left": 210,
+					"width": 300,
+					"height": 24,
+					"dataSource": "cboAssignmentStatus",
+					"focusable": false,
+					"choiceList": [
+						"",
+						"Will be Assigned",
+						"Active",
+						"Rescinded",
+						"Insp. Notification Received",
+						"Partially Submitted",
+						"Completed"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE cboAssignmentStatus.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 332,
+					"left": 471,
+					"width": 216,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]InspectionDate:28",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 355,
+					"left": 567,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]InspectionRecvd:29",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field18": {
+					"type": "input",
+					"top": 378,
+					"left": 567,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]InspRecvd_ME:37",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 400,
+					"left": 567,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]ReportToDBIE:31",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 423,
+					"left": 567,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]ConsltScore:30",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 471,
+					"left": 116,
+					"width": 546,
+					"height": 42,
+					"sizingY": "grow",
+					"dataSource": "[Cons Inspection:64]ConInspRemarks:10",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field21": {
+					"type": "input",
+					"top": 332,
+					"left": 210,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]ReqFeeProposal:25",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					],
+					"enterable": false,
+					"focusable": false
+				},
+				"Field7": {
+					"type": "input",
+					"top": 355,
+					"left": 210,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]FeeProposalRecvd:27",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vInspRecvd1": {
+					"type": "input",
+					"top": 355,
+					"left": 337,
+					"width": 228,
+					"height": 18,
+					"dataSource": "vInspRecvd1",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 378,
+					"left": 210,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]ProceedConDate:8",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					],
+					"enterable": false,
+					"focusable": false
+				},
+				"vInspRecvd2": {
+					"type": "input",
+					"top": 378,
+					"left": 337,
+					"width": 228,
+					"height": 18,
+					"dataSource": "vInspRecvd2",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field22": {
+					"type": "input",
+					"top": 400,
+					"left": 210,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]NTPdate_verbal:35",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					],
+					"enterable": false,
+					"focusable": false
+				},
+				"Field23": {
+					"type": "input",
+					"top": 423,
+					"left": 210,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]ReqByDBIE:22",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field23.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field24": {
+					"type": "input",
+					"top": 446,
+					"left": 210,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection:64]ReqByBIE:23",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field24.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 307,
+					"left": 24,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Assignment status"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 423,
+					"left": 337,
+					"width": 222,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Consultant score"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 423,
+					"left": 24,
+					"width": 180,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Request by District B.I.E."
+				},
+				"Text27": {
+					"type": "text",
+					"top": 170,
+					"left": 438,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Assignment Phase"
+				},
+				"DE contrno_list": {
+					"type": "dropdown",
+					"left": 207,
+					"top": 166,
+					"width": 22,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/DE contrno_list.4dm"
+				},
+				"DE assign_list": {
+					"type": "dropdown",
+					"left": 396,
+					"top": 166,
+					"width": 22,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/DE assign_list.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text28": {
+					"type": "text",
+					"top": 171,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Work hours"
+				},
+				"costsNegWorkHours": {
+					"type": "input",
+					"top": 171,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg WorkHours:2",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"max": 9999,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"overheadRate": {
+					"type": "input",
+					"top": 195,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "overheadRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegSalary": {
+					"type": "input",
+					"top": 272,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Salary:3",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegSalary.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegIndirectCost": {
+					"type": "input",
+					"top": 297,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg IndirectCost:4",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegIndirectCost.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegNetFee": {
+					"type": "input",
+					"top": 322,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg NetFee:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegNetFee.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text29": {
+					"type": "text",
+					"top": 273,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Salary"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 298,
+					"left": 32,
+					"width": 144,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Indirect cost"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 324,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee"
+				},
+				"costsNegFlagging": {
+					"type": "input",
+					"top": 138,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Flagging:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegFlagging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegTotalLimitFee": {
+					"type": "input",
+					"top": 360,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg TotalLimitFee:6",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text32": {
+					"type": "text",
+					"top": 361,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total limit fee"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 139,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Flagging"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 160,
+					"left": 428,
+					"width": 150,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Rigging"
+				},
+				"costsNegRigging": {
+					"type": "input",
+					"top": 159,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Rigging:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegRigging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text35": {
+					"type": "text",
+					"top": 182,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Lifts"
+				},
+				"costsNegLifts": {
+					"type": "input",
+					"top": 181,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Lifts:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegLifts.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text36": {
+					"type": "text",
+					"top": 204,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Traffic control"
+				},
+				"costsNegTrafficControl": {
+					"type": "input",
+					"top": 202,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg TrafficControl:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegTrafficControl.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text37": {
+					"type": "text",
+					"top": 225,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Police"
+				},
+				"costsNegPolice": {
+					"type": "input",
+					"top": 224,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Police:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPolice.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text38": {
+					"type": "text",
+					"top": 246,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Printing"
+				},
+				"costsNegPrinting": {
+					"type": "input",
+					"top": 246,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Printing:12",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPrinting.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text39": {
+					"type": "text",
+					"top": 267,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Mileage"
+				},
+				"costsNegMileage": {
+					"type": "input",
+					"top": 267,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Mileage:13",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMileage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text40": {
+					"type": "text",
+					"top": 289,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Lodging"
+				},
+				"costsNegLodging": {
+					"type": "input",
+					"top": 289,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Lodging:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegLodging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text41": {
+					"type": "text",
+					"top": 310,
+					"left": 428,
+					"width": 150,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Postage"
+				},
+				"costsNegPostage": {
+					"type": "input",
+					"top": 310,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Postage:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPostage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text42": {
+					"type": "text",
+					"top": 332,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Meals"
+				},
+				"costsNegMeals": {
+					"type": "input",
+					"top": 332,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Meals:16",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMeals.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegMileage1": {
+					"type": "input",
+					"top": 354,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Barge:41",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMileage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegLodging1": {
+					"type": "input",
+					"top": 375,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg SafetyBoat:42",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegLodging1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegPostage1": {
+					"type": "input",
+					"top": 397,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Snooper:43",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegPostage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegMeals1": {
+					"type": "input",
+					"top": 418,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg RRflagging:44",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMeals1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegMisc": {
+					"type": "input",
+					"top": 440,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg Misc:17",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsNegMisc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegComments": {
+					"type": "input",
+					"top": 412,
+					"left": 12,
+					"width": 324,
+					"height": 108,
+					"sizingY": "grow",
+					"dataSource": "[Cons Inspection Cost:76]Neg Comments:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegTotalDirectCost": {
+					"type": "input",
+					"top": 471,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg TotalDirectCost:18",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsNegTotalCost": {
+					"type": "input",
+					"top": 494,
+					"left": 580,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Neg TotalCost:19",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text43": {
+					"type": "text",
+					"top": 471,
+					"left": 428,
+					"width": 156,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total direct cost"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 494,
+					"left": 373,
+					"width": 204,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total Negotiated Cost"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 393,
+					"left": 12,
+					"width": 120,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Comments"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 141,
+					"left": 12,
+					"width": 270,
+					"height": 18,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "NEGOTIATED COSTS"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 248,
+					"left": 12,
+					"width": 144,
+					"height": 16,
+					"class": "Label12Italic",
+					"fontStyle": "italic",
+					"text": "Limiting Fees"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 117,
+					"left": 408,
+					"width": 144,
+					"height": 16,
+					"class": "Label12Italic",
+					"fontStyle": "italic",
+					"text": "Direct Expenses"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 440,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Miscellaneous"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 350,
+					"left": 27,
+					"width": 276
+				},
+				"Line2": {
+					"type": "line",
+					"top": 464,
+					"left": 426,
+					"width": 250
+				},
+				"Line3": {
+					"type": "line",
+					"top": 516,
+					"left": 580,
+					"width": 96
+				},
+				"Line4": {
+					"type": "line",
+					"top": 519,
+					"left": 580,
+					"width": 96
+				},
+				"Text50": {
+					"type": "text",
+					"top": 196,
+					"left": 32,
+					"width": 144,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Overhead rate %"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 354,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Barge"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 375,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Safety boat"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 397,
+					"left": 428,
+					"width": 150,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Snooper"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 418,
+					"left": 428,
+					"width": 150,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "RR Flagging/Permits"
+				},
+				"Text55": {
+					"type": "text",
+					"top": 219,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee rate %"
+				},
+				"netFeeRate": {
+					"type": "input",
+					"top": 219,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "netFeeRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bEditRates": {
+					"type": "button",
+					"top": 198,
+					"left": 298,
+					"width": 94,
+					"height": 26,
+					"dataSource": "bEditRates",
+					"text": "Edit Rates",
+					"class": "Default",
+					"method": "ObjectMethods/bEditRates.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onUnload"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"costsActWorkHours": {
+					"type": "input",
+					"top": 171,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Act WorkHours:21",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"max": 9999,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActSalary": {
+					"type": "input",
+					"top": 272,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Act Salary:22",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActSalary.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActIndirectCost": {
+					"type": "input",
+					"top": 297,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Act IndirectCost:23",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActIndirectCost.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActNetFee": {
+					"type": "input",
+					"top": 322,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Act NetFee:24",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActNetFee.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActTotalLimitFee": {
+					"type": "input",
+					"top": 360,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Act TotalLimitFee:25",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActFlagging": {
+					"type": "input",
+					"top": 108,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Flagging:26",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActFlagging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActRigging": {
+					"type": "input",
+					"top": 129,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Rigging:27",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActRigging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActLifts": {
+					"type": "input",
+					"top": 151,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Lifts:28",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActLifts.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActTrafficControl": {
+					"type": "input",
+					"top": 172,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act TrafficControl:29",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActTrafficControl.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPolice": {
+					"type": "input",
+					"top": 194,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Police:30",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPolice.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPrinting": {
+					"type": "input",
+					"top": 216,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Printing:31",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPrinting.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMileage": {
+					"type": "input",
+					"top": 237,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Mileage:32",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMileage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActLodging": {
+					"type": "input",
+					"top": 259,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Lodging:33",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActLodging.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPostage": {
+					"type": "input",
+					"top": 280,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Postage:34",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPostage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMeals": {
+					"type": "input",
+					"top": 302,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Meals:35",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMeals.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMileage1": {
+					"type": "input",
+					"top": 324,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Barge:45",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMileage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActLodging1": {
+					"type": "input",
+					"top": 345,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act SafetyBoat:46",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActLodging1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActPostage1": {
+					"type": "input",
+					"top": 367,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Snooper:47",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActPostage1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMeals1": {
+					"type": "input",
+					"top": 388,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act RRflagging:48",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMeals1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsDIR_ActMisc": {
+					"type": "input",
+					"top": 410,
+					"left": 690,
+					"width": 10,
+					"height": 8,
+					"dataSource": "[Cons Inspection Cost:76]Act Misc:36",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsDIR_ActMisc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActTotalDirectCost": {
+					"type": "input",
+					"top": 401,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Act TotalDirectCost:37",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"method": "ObjectMethods/costsActTotalDirectCost.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActTotalCost": {
+					"type": "input",
+					"top": 424,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Cons Inspection Cost:76]Act TotalCost:38",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActComments": {
+					"type": "input",
+					"top": 472,
+					"left": 12,
+					"width": 664,
+					"height": 43,
+					"sizingY": "grow",
+					"dataSource": "[Cons Inspection Cost:76]Act Comments:39",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 141,
+					"left": 12,
+					"width": 270,
+					"height": 18,
+					"class": "List12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "ACTUAL COSTS"
+				},
+				"Text56": {
+					"type": "text",
+					"top": 171,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Work hours"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 273,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Salary"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 298,
+					"left": 32,
+					"width": 144,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Indirect cost"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 324,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 361,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total limit fee"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 401,
+					"left": 32,
+					"width": 156,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total direct cost"
+				},
+				"Text62": {
+					"type": "text",
+					"top": 424,
+					"left": 12,
+					"width": 168,
+					"height": 18,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Total Actual Cost"
+				},
+				"Text63": {
+					"type": "text",
+					"top": 453,
+					"left": 12,
+					"width": 504,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Comments"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 248,
+					"left": 12,
+					"width": 144,
+					"height": 16,
+					"class": "Label12Italic",
+					"fontStyle": "italic",
+					"text": "Limiting Fees"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 350,
+					"left": 27,
+					"width": 276
+				},
+				"Line6": {
+					"type": "line",
+					"top": 389,
+					"left": 27,
+					"width": 276
+				},
+				"Line7": {
+					"type": "line",
+					"top": 446,
+					"left": 160,
+					"width": 120
+				},
+				"Line8": {
+					"type": "line",
+					"top": 449,
+					"left": 160,
+					"width": 120
+				},
+				"Text65": {
+					"type": "text",
+					"top": 196,
+					"left": 32,
+					"width": 144,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Overhead rate %"
+				},
+				"Text66": {
+					"type": "text",
+					"top": 219,
+					"left": 32,
+					"width": 144,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Net fee rate %"
+				},
+				"netFeeRate1": {
+					"type": "input",
+					"top": 219,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "netFeeRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"overheadRate1": {
+					"type": "input",
+					"top": 195,
+					"left": 160,
+					"width": 120,
+					"height": 17,
+					"dataSource": "overheadRate",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"costsActFinalCost": {
+					"type": "checkbox",
+					"top": 401,
+					"left": 336,
+					"width": 276,
+					"height": 18,
+					"dataSource": "[Cons Inspection Cost:76]FinalCost_B:49",
+					"text": "Costs Entered are Final",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CRTG_AutoCalc_L": {
+					"type": "checkbox",
+					"top": 246,
+					"left": 110,
+					"width": 235,
+					"height": 17,
+					"dataSource": "CRTG_AutoCalc_L",
+					"text": "Disable Automatic Calculation",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE CRTG_AutoCalc_L.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 76
+}

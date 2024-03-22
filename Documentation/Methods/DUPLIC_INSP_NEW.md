@@ -1,0 +1,1 @@
+Jun-2002: Copied from old and modified to copy the selected BMS inspection.  Modified error message if Inspection ID is not found or more than one found.  Aug-2003 : Modified to use FlushGrpChgs method.

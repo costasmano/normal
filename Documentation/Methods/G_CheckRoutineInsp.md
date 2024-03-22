@@ -1,0 +1,1 @@
+2002-11 : Created to Verify a Routine Inspection report before it is marked as complete.  2002-12 : Added checks for Items 43 and 107.  2003-03 : Fixed error message for Item 58-(said 59). Modified for Arch insp to allow N for Item 58.  2003-08 : v3.3f2 - Check Item 58 only if item 107#N.  2004-02-20 : Allow 'Minor' (R) LoadVibration and LoadDeflection w/out comments.

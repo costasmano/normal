@@ -1,0 +1,80 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Web Area": {
+					"type": "webArea",
+					"top": 32,
+					"left": 10,
+					"width": 420,
+					"height": 33,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Web Area",
+					"urlSource": "Web Area_url",
+					"progressSource": "Web Area_progress",
+					"contextMenu": "none",
+					"borderStyle": "none"
+				},
+				"Text": {
+					"type": "text",
+					"top": 7,
+					"left": 14,
+					"width": 413,
+					"height": 17,
+					"textAlign": "center",
+					"text": "Computer time "
+				},
+				"Web Area1": {
+					"type": "webArea",
+					"top": 72,
+					"left": 10,
+					"width": 420,
+					"height": 233,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Web Area",
+					"urlSource": "http :   //www.google.com",
+					"progressSource": "Web Area_progress",
+					"contextMenu": "none",
+					"borderStyle": "none",
+					"events": [
+						"onWindowOpeningDenied"
+					]
+				}
+			}
+		}
+	]
+}

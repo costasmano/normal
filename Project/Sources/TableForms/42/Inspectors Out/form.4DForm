@@ -1,0 +1,819 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 250,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "BlankMenu",
+	"markerHeader": 30,
+	"markerBody": 53,
+	"markerBreak": 53,
+	"markerFooter": 114,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture11": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 601,
+					"height": 29,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarGreen.png"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 56,
+					"left": 0,
+					"width": 601,
+					"height": 58,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarGreen.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 3,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzAdd",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Add Record"
+					},
+					"shortcutKey": "n",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Add Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 78,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzSearchLay",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 128,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzSort",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SortEdit"
+					},
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Order By.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 178,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AllRegion"
+					},
+					"shortcutKey": "g",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show All.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 228,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzSub",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Showsub"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show Subset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 278,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzOmit",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OmitSub"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Omit Subset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 534,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"shortcutKey": "[Enter]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 600,
+					"height": 54,
+					"fill": "transparent"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 28,
+					"left": 1,
+					"width": 600
+				},
+				"Text1": {
+					"type": "text",
+					"top": 6,
+					"left": 3,
+					"width": 35,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "ID"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 38,
+					"height": 53
+				},
+				"Text2": {
+					"type": "text",
+					"top": 6,
+					"left": 40,
+					"width": 32,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Prefix"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 73,
+					"height": 53
+				},
+				"Text3": {
+					"type": "text",
+					"top": 6,
+					"left": 75,
+					"width": 90,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "First"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 166,
+					"height": 53
+				},
+				"Text4": {
+					"type": "text",
+					"top": 6,
+					"left": 168,
+					"width": 33,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "M.I."
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 202,
+					"height": 53
+				},
+				"Text5": {
+					"type": "text",
+					"top": 6,
+					"left": 204,
+					"width": 118,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Last"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 0,
+					"left": 323,
+					"height": 53
+				},
+				"Text6": {
+					"type": "text",
+					"top": 6,
+					"left": 325,
+					"width": 38,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Suffix"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 0,
+					"left": 365,
+					"height": 53
+				},
+				"Text7": {
+					"type": "text",
+					"top": 6,
+					"left": 367,
+					"width": 28,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "Div."
+				},
+				"Line8": {
+					"type": "line",
+					"top": 0,
+					"left": 396,
+					"height": 53
+				},
+				"Text8": {
+					"type": "text",
+					"top": 6,
+					"left": 399,
+					"width": 27,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "Code"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 0,
+					"left": 427,
+					"height": 53
+				},
+				"Text9": {
+					"type": "text",
+					"top": 6,
+					"left": 429,
+					"width": 129,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Employer"
+				},
+				"Field11": {
+					"type": "input",
+					"top": 32,
+					"left": 2,
+					"width": 35,
+					"height": 21,
+					"dataSource": "[Personnel:42]Person ID:1",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 32,
+					"left": 40,
+					"width": 32,
+					"height": 21,
+					"dataSource": "[Personnel:42]Prefix:2",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 32,
+					"left": 75,
+					"width": 90,
+					"height": 21,
+					"dataSource": "[Personnel:42]First Name:3",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 32,
+					"left": 168,
+					"width": 33,
+					"height": 21,
+					"dataSource": "[Personnel:42]Middle Name:4",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 32,
+					"left": 204,
+					"width": 118,
+					"height": 21,
+					"dataSource": "[Personnel:42]Last Name:5",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 32,
+					"left": 325,
+					"width": 38,
+					"height": 21,
+					"dataSource": "[Personnel:42]Suffix:6",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 32,
+					"left": 367,
+					"width": 28,
+					"height": 21,
+					"dataSource": "[Personnel:42]Division No:7",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 32,
+					"left": 399,
+					"width": 27,
+					"height": 21,
+					"dataSource": "[Personnel:42]Job Code:8",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 32,
+					"left": 429,
+					"width": 129,
+					"height": 21,
+					"dataSource": "[Personnel:42]Employer:9",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#EEEEEE",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Employers"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "checkbox",
+					"top": 32,
+					"left": 569,
+					"width": 20,
+					"height": 19,
+					"dataSource": "[Personnel:42]Active:11",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "List10Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PersTools": {
+					"type": "dropdown",
+					"top": 90,
+					"left": 334,
+					"width": 124,
+					"height": 19,
+					"dataSource": "PersTools_atxt",
+					"choiceList": [
+						". Select from List below",
+						"PERS_ChangeEmployerName",
+						"PERS_EditGroups",
+						"ADDUSER_Utils"
+					],
+					"class": "Label10Plain",
+					"method": "ObjectMethods/PersTools.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 118,
+					"left": 8,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bzEscape",
+					"shortcutKey": "[Esc]",
+					"text": "Escape",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 118,
+					"left": 108,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bzReturn",
+					"shortcutKey": "[Return]",
+					"text": "Return",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 118,
+					"left": 198,
+					"width": 100,
+					"height": 20,
+					"dataSource": "bzEscape",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "CMD-period",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line10": {
+					"type": "line",
+					"top": 0,
+					"left": 559,
+					"height": 53
+				},
+				"Text10": {
+					"type": "text",
+					"top": 6,
+					"left": 563,
+					"width": 32,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"text": "Active"
+				},
+				"QRPrintButton": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 464,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bzQRPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Quick Report"
+					},
+					"shortcutKey": "r",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Report.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/QRPrintButton.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

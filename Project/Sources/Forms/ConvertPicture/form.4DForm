@@ -1,0 +1,251 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 293,
+	"markerBreak": 293,
+	"markerFooter": 293,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 95,
+					"left": 31,
+					"width": 84,
+					"height": 14,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Start Date: "
+				},
+				"Text1": {
+					"type": "text",
+					"top": 115,
+					"left": 31,
+					"width": 84,
+					"height": 14,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "End Date: "
+				},
+				"Text2": {
+					"type": "text",
+					"top": 7,
+					"left": 24,
+					"width": 342,
+					"height": 79,
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Enter Selection criteria to convert\rPhotos from PICT to JPG\rSketches from PICT to PNG\rCharts from PICT to PNG\r"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 37,
+					"width": 159,
+					"height": 22,
+					"dataSource": "CNV_All_L",
+					"text": "All Types",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 169,
+					"left": 97,
+					"width": 159,
+					"height": 22,
+					"dataSource": "CNV_Photos_L",
+					"text": "Photos ",
+					"class": "Default",
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 195,
+					"left": 97,
+					"width": 159,
+					"height": 22,
+					"dataSource": "CNV_Sketches_L",
+					"text": "Sketches",
+					"class": "Default",
+					"method": "ObjectMethods/Check Box2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 221,
+					"left": 97,
+					"width": 159,
+					"height": 22,
+					"dataSource": "CNV_Charts_L",
+					"text": "Charts",
+					"class": "Default",
+					"method": "ObjectMethods/Check Box3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 97,
+					"left": 130,
+					"width": 119,
+					"height": 14,
+					"dataSource": "CNV_Start_d",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 117,
+					"left": 130,
+					"width": 119,
+					"height": 14,
+					"dataSource": "CNV_End_d",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 256,
+					"left": 123,
+					"width": 96,
+					"height": 22,
+					"dataSource": "Button",
+					"text": "Get Count",
+					"class": "Default",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 353,
+					"left": 123,
+					"width": 96,
+					"height": 22,
+					"dataSource": "Button",
+					"text": "Cancel",
+					"class": "Default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ForDesigner": {
+					"type": "input",
+					"top": 298,
+					"left": 13,
+					"width": 530,
+					"height": 43,
+					"sizingY": "move",
+					"dataSource": "ColumnWidths_txt",
+					"class": "Default",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 353,
+					"left": 283,
+					"width": 96,
+					"height": 22,
+					"dataSource": "Button1",
+					"text": "Proceed",
+					"class": "Default",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 8,
+					"left": 24,
+					"width": 342,
+					"height": 39,
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Enter Selection Criteria to Import Photos\r"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

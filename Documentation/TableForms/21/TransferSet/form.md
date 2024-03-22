@@ -1,0 +1,1 @@
+Mar-2001 : changed appearance to platinum ; Deleted Plug-in around OK button ; made OK button default

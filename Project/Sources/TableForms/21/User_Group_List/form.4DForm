@@ -1,0 +1,288 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 120,
+	"windowMinHeight": 350,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"User_group_list": {
+					"type": "list",
+					"top": 20,
+					"left": 20,
+					"width": 295,
+					"height": 408,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "User_group_list",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"class": "List12Plain",
+					"borderStyle": "solid",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DONE1": {
+					"type": "button",
+					"top": 438,
+					"left": 20,
+					"width": 110,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "DONE",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DONE1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DONE2": {
+					"type": "button",
+					"top": 471,
+					"left": 20,
+					"width": 110,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "Button2",
+					"action": "cancel",
+					"text": "RELOAD",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DONE2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OtherScreen": {
+					"type": "button",
+					"top": 504,
+					"left": 20,
+					"width": 110,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "OtherScreen",
+					"action": "cancel",
+					"text": "USERS",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OtherScreen.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OtherScreen2": {
+					"type": "button",
+					"top": 538,
+					"left": 20,
+					"width": 110,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "OtherScreen",
+					"text": "Load File",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OtherScreen2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OtherScreen1": {
+					"type": "button",
+					"top": 572,
+					"left": 20,
+					"width": 110,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "OtherScreen",
+					"text": "Export",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OtherScreen1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ChangePWDBtn": {
+					"type": "button",
+					"top": 438,
+					"left": 186,
+					"width": 130,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "ChangePWDBtn",
+					"text": "ChangePassword",
+					"class": "Label12Italic",
+					"method": "ObjectMethods/ChangePWDBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ChangeUNAmeBtn": {
+					"type": "button",
+					"top": 473,
+					"left": 186,
+					"width": 130,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "ChangeUNAmeBtn",
+					"text": "Change UserNAme",
+					"class": "Label12Italic",
+					"method": "ObjectMethods/ChangeUNAmeBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RemoveFrGroupBtn": {
+					"type": "button",
+					"top": 508,
+					"left": 186,
+					"width": 130,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "RemoveFrGroupBtn",
+					"text": "RemoveFromGroup",
+					"class": "Label12Italic",
+					"method": "ObjectMethods/RemoveFrGroupBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AddToGroupBtn": {
+					"type": "button",
+					"top": 543,
+					"left": 186,
+					"width": 130,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "AddToGroupBtn",
+					"text": "AddToGroup",
+					"class": "Label12Italic",
+					"method": "ObjectMethods/AddToGroupBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AddUserBtn": {
+					"type": "button",
+					"top": 578,
+					"left": 186,
+					"width": 130,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "AddUserBtn",
+					"text": "Add User",
+					"class": "Label12Italic",
+					"method": "ObjectMethods/AddUserBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OtherScreen3": {
+					"type": "button",
+					"top": 612,
+					"left": 20,
+					"width": 110,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "OtherScreen",
+					"text": "SaveOnServer",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/OtherScreen3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

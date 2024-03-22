@@ -1,0 +1,102 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 25,
+	"markerBody": 75,
+	"markerBreak": 75,
+	"markerFooter": 80,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 30,
+					"left": 5,
+					"width": 663,
+					"height": 40,
+					"fill": "transparent"
+				},
+				"FRZ_ELEMENTDESC_TXT": {
+					"type": "input",
+					"top": 40,
+					"left": 9,
+					"width": 649,
+					"height": 24,
+					"dataSource": "FRZ_ELEMENTDESC_TXT",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "checkbox",
+					"top": 40,
+					"left": 522,
+					"width": 21,
+					"height": 21,
+					"dataSource": "[ElementsSafety:29]Crack:9",
+					"text": "Crack",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 5,
+					"left": 473,
+					"width": 118,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Not Applicable"
+				}
+			}
+		}
+	]
+}

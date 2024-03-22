@@ -1,0 +1,1 @@
+DCM_CompTable_ADDDELROW("ADD")

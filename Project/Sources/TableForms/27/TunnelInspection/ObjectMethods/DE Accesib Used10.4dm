@@ -1,0 +1,1 @@
+G_Accesibil_Obj(Self:C308; ->[TunnelInspection:152]EscapeAir_s:13; 2; 5)  //part 2, ptr_changes{1}

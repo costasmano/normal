@@ -1,0 +1,423 @@
+{
+	"destination": "listScreen",
+	"bottomMargin": 20,
+	"markerHeader": 48,
+	"markerBody": 72,
+	"markerBreak": 76,
+	"markerFooter": 76,
+	"events": [
+		"onDisplayDetail",
+		"onPrintingDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 690,
+					"height": 75
+				},
+				"Line4": {
+					"type": "line",
+					"top": 46,
+					"left": 0,
+					"width": 690
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 2,
+					"width": 48,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Assign\rNo."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 10,
+					"left": 55,
+					"width": 72,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Actual or\rNegotiated?"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 132,
+					"height": 75
+				},
+				"Text3": {
+					"type": "text",
+					"top": 10,
+					"left": 135,
+					"width": 72,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Req for Fee\rProposal"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 51,
+					"left": 52,
+					"width": 78,
+					"height": 17,
+					"dataSource": "[Contract Assignments:83]AcutalOrEstimate:20",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 4,
+					"left": 212,
+					"width": 156,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Notice to Proceed Date"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 27,
+					"left": 225,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Written"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 210,
+					"height": 75
+				},
+				"Field1": {
+					"type": "input",
+					"top": 51,
+					"left": 135,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Contract Assignments:83]ReqFeeProposalDate:16",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 51,
+					"left": 214,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Contract Assignments:83]NTPdate_written:17",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 51,
+					"left": 292,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Contract Assignments:83]NTPdate_verbal:18",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 51,
+					"left": 15,
+					"width": 18,
+					"height": 17,
+					"dataSource": "[Contract Assignments:83]AssignNo:2",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 24,
+					"left": 288,
+					"height": 50
+				},
+				"Line6": {
+					"type": "line",
+					"top": 0,
+					"left": 367,
+					"height": 75
+				},
+				"Line1": {
+					"type": "line",
+					"top": 22,
+					"left": 210,
+					"width": 158
+				},
+				"Line7": {
+					"type": "line",
+					"top": 0,
+					"left": 50,
+					"height": 75
+				},
+				"vLimitFee": {
+					"type": "input",
+					"top": 51,
+					"left": 370,
+					"width": 95,
+					"height": 17,
+					"dataSource": "vLimitFee",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;-$###,###,##0.00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 27,
+					"left": 303,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Verbal"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 10,
+					"left": 370,
+					"width": 95,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Total\rLimiting Fee"
+				},
+				"vDirectExp": {
+					"type": "input",
+					"top": 51,
+					"left": 474,
+					"width": 95,
+					"height": 17,
+					"dataSource": "vDirectExp",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;-$###,###,##0.00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vTotal": {
+					"type": "input",
+					"top": 51,
+					"left": 579,
+					"width": 106,
+					"height": 17,
+					"dataSource": "vTotal",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;-$###,###,##0.00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 10,
+					"left": 474,
+					"width": 95,
+					"height": 37,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Direct\rExpense"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 27,
+					"left": 579,
+					"width": 106,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 0,
+					"left": 470,
+					"height": 75
+				},
+				"Line9": {
+					"type": "line",
+					"top": 0,
+					"left": 574,
+					"height": 75
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

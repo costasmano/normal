@@ -1,0 +1,1 @@
+2004-05-17 : Remove ControlMenuBar call, added Close Window,Change window type to -(palette window)

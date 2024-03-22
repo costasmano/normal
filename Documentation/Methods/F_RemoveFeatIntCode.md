@@ -1,0 +1,1 @@
+2003-12-23:  Created for the Rating/Posting letter templates.

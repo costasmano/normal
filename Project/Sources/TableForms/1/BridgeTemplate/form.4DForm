@@ -1,0 +1,427 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"BridgeTemplate_2": {
+					"type": "rectangle",
+					"top": 53,
+					"left": 255,
+					"width": 198,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"BridgeTemplate_1": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 251,
+					"width": 198,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"BridgeTemplate_21": {
+					"type": "text",
+					"top": 146,
+					"left": 12,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Item 8"
+				},
+				"BridgeTemplate_13": {
+					"type": "text",
+					"top": 102,
+					"left": 12,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "BDEPT#"
+				},
+				"BridgeTemplate_17": {
+					"type": "text",
+					"top": 124,
+					"left": 12,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "B.I.N."
+				},
+				"BridgeTemplate_23": {
+					"type": "text",
+					"top": 167,
+					"left": 12,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "Town"
+				},
+				"BridgeTemplate_14": {
+					"type": "input",
+					"top": 102,
+					"left": 80,
+					"width": 89,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#7800FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_18": {
+					"type": "input",
+					"top": 124,
+					"left": 80,
+					"width": 46,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#7800FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_22": {
+					"type": "input",
+					"top": 146,
+					"left": 80,
+					"width": 197,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#7800FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_24": {
+					"type": "input",
+					"top": 167,
+					"left": 80,
+					"width": 222,
+					"height": 17,
+					"dataSource": "vTown",
+					"stroke": "#7800FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/BridgeTemplate_24.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"BridgeTemplate_3": {
+					"type": "button",
+					"top": 58,
+					"left": 260,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/bms 20 firstrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_4": {
+					"type": "button",
+					"top": 58,
+					"left": 283,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/bms 20 previousrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_5": {
+					"type": "button",
+					"top": 58,
+					"left": 306,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/bms 20 nextrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_6": {
+					"type": "button",
+					"top": 58,
+					"left": 329,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ4",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/bms 20 Lastrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_7": {
+					"type": "button",
+					"top": 58,
+					"left": 421,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Close"
+					},
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/bms 20 cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BridgeTemplate_7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_16": {
+					"type": "input",
+					"top": 102,
+					"left": 480,
+					"width": 225,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item7:65",
+					"stroke": "#7800FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_20": {
+					"type": "input",
+					"top": 124,
+					"left": 480,
+					"width": 225,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item6A:63",
+					"stroke": "#7800FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BridgeTemplate_15": {
+					"type": "text",
+					"top": 102,
+					"left": 412,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "ITEM 7"
+				},
+				"BridgeTemplate_19": {
+					"type": "text",
+					"top": 124,
+					"left": 412,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"text": "ITEM 6A"
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

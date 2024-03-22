@@ -1,0 +1,847 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 465,
+	"markerBreak": 465,
+	"markerFooter": 475,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDragOver",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle38": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 649,
+					"height": 464,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFFFDF",
+					"stroke": "transparent"
+				},
+				"Line15": {
+					"type": "line",
+					"top": 90,
+					"left": 22,
+					"width": 606,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 9,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 93,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 81,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 153,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 237,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 225,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Last"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 326,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 314,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Delete"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 398,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 386,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 470,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 458,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Validate"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 150,
+					"left": 7,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Received : "
+				},
+				"Text17": {
+					"type": "text",
+					"top": 180,
+					"left": 7,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Assigned : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 210,
+					"left": 7,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Assigned To Geotech : "
+				},
+				"Text19": {
+					"type": "text",
+					"top": 210,
+					"left": 326,
+					"width": 145,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Received From Geotech : "
+				},
+				"Text21": {
+					"type": "text",
+					"top": 240,
+					"left": 326,
+					"width": 145,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Received From Hydraulic : "
+				},
+				"Text20": {
+					"type": "text",
+					"top": 240,
+					"left": 7,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Assigned To Hydraulic : "
+				},
+				"Text22": {
+					"type": "text",
+					"top": 300,
+					"left": 8,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Chief Engineer Approval : "
+				},
+				"ReviewerDD1": {
+					"type": "dropdown",
+					"top": 120,
+					"left": 473,
+					"width": 144,
+					"height": 14,
+					"dataSource": "PRJ_StructReviewers_atxt",
+					"class": "PRJ_InputBoldLabel",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ReviewerDD1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_Recieved_d": {
+					"type": "input",
+					"top": 150,
+					"left": 187,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_Recieved_d:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"SKT_Assigned_d": {
+					"type": "input",
+					"top": 180,
+					"left": 187,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_Assigned_d:6",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 179,
+					"left": 269,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_AssToGeotech_d": {
+					"type": "input",
+					"top": 210,
+					"left": 187,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_AssToGeotech_d:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 209,
+					"left": 269,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_ReceivedFromGeotech_d": {
+					"type": "input",
+					"top": 210,
+					"left": 476,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_ReceivedFromGeotech_d:9",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button7": {
+					"type": "button",
+					"top": 209,
+					"left": 559,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_AssToHydro_d": {
+					"type": "input",
+					"top": 240,
+					"left": 187,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_AssToHydro_d:8",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 239,
+					"left": 269,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_ReceivedFromHydro_d": {
+					"type": "input",
+					"top": 240,
+					"left": 476,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_ReceivedFromHydro_d:10",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button8": {
+					"type": "button",
+					"top": 239,
+					"left": 559,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_CommentsToDE_d": {
+					"type": "input",
+					"top": 268,
+					"left": 187,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_CommentsToDE_d:11",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button4": {
+					"type": "button",
+					"top": 267,
+					"left": 269,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ReviewerDD3": {
+					"type": "dropdown",
+					"top": 267,
+					"left": 473,
+					"width": 144,
+					"height": 14,
+					"dataSource": "PRJ_GradingStatus_atxt",
+					"class": "PRJ_InputBoldLabel",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ReviewerDD3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_ChiefEngApproval_d": {
+					"type": "input",
+					"top": 300,
+					"left": 188,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_ChiefEngApproval_d:13",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button5": {
+					"type": "button",
+					"top": 299,
+					"left": 269,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_DistributionForSignature_d": {
+					"type": "input",
+					"top": 330,
+					"left": 188,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_DistributionForSignature_d:12",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button6": {
+					"type": "button",
+					"top": 329,
+					"left": 269,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SKT_Comments_txt": {
+					"type": "input",
+					"top": 360,
+					"left": 189,
+					"width": 434,
+					"height": 92,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_Comments_txt:4",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 330,
+					"left": 8,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Distribution For Signature : "
+				},
+				"Text23": {
+					"type": "text",
+					"top": 266,
+					"left": 7,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Comments To Design Engineer : "
+				},
+				"Text24": {
+					"type": "text",
+					"top": 360,
+					"left": 7,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Comments : "
+				},
+				"Text26": {
+					"type": "text",
+					"top": 120,
+					"left": 7,
+					"width": 175,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Submission Number : "
+				},
+				"NDSKT_SubmissionNumber_l": {
+					"type": "input",
+					"top": 120,
+					"left": 187,
+					"width": 27,
+					"height": 13,
+					"dataSource": "[PRJ_SketchPlans:120]SKT_SubmissionNumber_l:3",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ReviewerDD": {
+					"type": "text",
+					"top": 120,
+					"left": 333,
+					"width": 138,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Select a Reviewer-> : "
+				},
+				"PRJ_Reviewer_txt": {
+					"type": "input",
+					"top": 150,
+					"left": 340,
+					"width": 276,
+					"height": 13,
+					"dataSource": "PRJ_Reviewer_txt",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"focusable": false,
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ReviewerDD2": {
+					"type": "text",
+					"top": 266,
+					"left": 363,
+					"width": 108,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Grading Status> : "
+				},
+				"Button9": {
+					"type": "pictureButton",
+					"top": 263,
+					"left": 328,
+					"width": 20,
+					"height": 22,
+					"dataSource": "Button9",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/BMS Letter.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Button9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "pictureButton",
+					"top": 323,
+					"left": 328,
+					"width": 20,
+					"height": 22,
+					"dataSource": "Button9",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/BMS Letter.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button11": {
+					"type": "pictureButton",
+					"top": 293,
+					"left": 328,
+					"width": 20,
+					"height": 22,
+					"dataSource": "Button9",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/BMS Letter.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 98,
+					"left": 221,
+					"width": 208,
+					"height": 16,
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "SKETCH PLAN SUBMITTAL"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 3,
+					"left": 304,
+					"width": 2,
+					"height": 86,
+					"sizingX": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

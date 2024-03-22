@@ -1,0 +1,1 @@
+This method is created to select from a 4D selection records based on BINs , BRKEYS, or BRNOs, that are in a text file as a list.  25-jan-01 : Removed reference to bridge key  31-jan-01 : Restored reference to br key.  Oct-2002  :  Reseting the Query destination to the current selection was missing. Added it at the end.

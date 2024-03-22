@@ -1,0 +1,1 @@
+G_Accesibil_Obj(Self:C308; ->[TunnelInfo:151]ScissorLift_s:17; 1; 2)  //part 1, ptr_changes{2}

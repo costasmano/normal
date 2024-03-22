@@ -1,0 +1,1 @@
+Feb-2002 : Created to set thermometers used in Inspection Reports for rating of Items.

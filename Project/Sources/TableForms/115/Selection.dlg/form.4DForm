@@ -1,0 +1,407 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerHeader": 17,
+	"markerBody": 514,
+	"markerBreak": 515,
+	"markerFooter": 580,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button1": {
+					"type": "button",
+					"top": 524,
+					"left": 7,
+					"width": 151,
+					"height": 20,
+					"dataSource": "Button1",
+					"text": "Select",
+					"class": "Default",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PRJ_Item1_atxt": {
+					"type": "listbox",
+					"top": 20,
+					"left": 0,
+					"width": 180,
+					"height": 488,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Default",
+					"borderStyle": "none",
+					"method": "ObjectMethods/PRJ_Item1_atxt.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "PRJ_Item1_atxt_Column1",
+							"dataSource": "PRJ_Item1_atxt",
+							"width": 163,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Default",
+							"events": [
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							}
+						}
+					]
+				},
+				"PRJ_Item2_atxt": {
+					"type": "listbox",
+					"top": 20,
+					"left": 180,
+					"width": 170,
+					"height": 488,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Default",
+					"borderStyle": "none",
+					"method": "ObjectMethods/PRJ_Item2_atxt.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "PRJ_Item2_atxt_Column1",
+							"dataSource": "PRJ_Item2_atxt",
+							"width": 153,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Default",
+							"events": [
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							}
+						}
+					]
+				},
+				"PRJ_Item3_atxt": {
+					"type": "listbox",
+					"top": 20,
+					"left": 350,
+					"width": 170,
+					"height": 488,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Default",
+					"borderStyle": "none",
+					"method": "ObjectMethods/PRJ_Item3_atxt.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "PRJ_Item3_atxt_Column1",
+							"dataSource": "PRJ_Item3_atxt",
+							"width": 153,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Default",
+							"events": [
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							}
+						}
+					]
+				},
+				"PRJ_Item4_atxt": {
+					"type": "listbox",
+					"top": 20,
+					"left": 520,
+					"width": 186,
+					"height": 488,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Default",
+					"borderStyle": "none",
+					"method": "ObjectMethods/PRJ_Item4_atxt.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "PRJ_Item4_atxt_Column1",
+							"dataSource": "PRJ_Item4_atxt",
+							"width": 169,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Default",
+							"events": [
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "6",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							}
+						}
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 554,
+					"left": 7,
+					"width": 151,
+					"height": 20,
+					"dataSource": "Button2",
+					"text": "New Entry",
+					"class": "Default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 524,
+					"left": 167,
+					"width": 151,
+					"height": 20,
+					"dataSource": "Button1",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "Default",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"PRJ_ItemDescription_atxt": {
+					"type": "listbox",
+					"top": 22,
+					"left": 9,
+					"width": 576,
+					"height": 488,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"class": "Default",
+					"borderStyle": "none",
+					"method": "ObjectMethods/PRJ_ItemDescription_atxt.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "PRJ_ItemDescription_atxt_Column1",
+							"dataSource": "PRJ_ItemDescription_atxt",
+							"width": 559,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Default",
+							"events": [
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							},
+							"footer": {
+								"name": "9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Default"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

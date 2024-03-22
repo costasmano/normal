@@ -1,0 +1,1 @@
+SCPOA_TextVar_OM(->SCPOA_DetourDesc_txt)

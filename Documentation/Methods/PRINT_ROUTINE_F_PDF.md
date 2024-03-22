@@ -1,0 +1,1 @@
+2003-03 : Added initialization of PrintPreview Error variable in form method. Added declaration of vPrintSIA var.  2003-09-26 : Use new method G_CountInspImagePgs for counting image pages.  2003-11-25 : Use new methodology for combined inspections.  2004-01-20 : Skip printing Image pages if not wanted ; use pagecount variables to adjust vPageNo.  2004-02-13 : Cleaned up code.

@@ -1,0 +1,2 @@
+C_TEXT:C284(IDv7FDescr)  // Command Replaced was o_C_STRING length was 30
+SIA_Feature_OM(->[NBIS Secondary:3]Item7:7; ->IDa7FDescr_; ->IDv7FDescr; ->IDa7FCodes_; ->IDv7RteNum; ->IDv7suffix; ->IDv7Descr)

@@ -1,0 +1,438 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 753,
+	"markerBreak": 753,
+	"markerFooter": 753,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 306,
+					"left": 63,
+					"width": 488,
+					"height": 278,
+					"fill": "transparent"
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 314,
+					"left": 74,
+					"width": 472,
+					"height": 104,
+					"resizingMode": "legacy",
+					"dataSource": "LBGeneric_ab",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#000000",
+					"verticalLineStroke": "#000000",
+					"fill": "transparent",
+					"class": "Arial9",
+					"borderStyle": "solid",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "v_1_001_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "BDEPT",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "v_1_003_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "BIN",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "v_1_008_atxt",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Posting Status",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "v_1_015_ar",
+							"dataSourceTypeHint": "number",
+							"width": 112,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "####;;",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "OprH20",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						}
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 454,
+					"left": 74,
+					"width": 472,
+					"height": 124,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "SelectListBox",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"table": 1,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#000000",
+					"verticalLineStroke": "#000000",
+					"fill": "transparent",
+					"class": "Arial9",
+					"borderStyle": "solid",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column5",
+							"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "BDEPT",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "BIN",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "[Bridge MHD NBIS:1]PostingStatus:8",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Posting Status",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "[Bridge MHD NBIS:1]OprH20:15",
+							"dataSourceTypeHint": "number",
+							"width": 112,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "####;;",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Arial9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "OprH20",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Arial9"
+							}
+						}
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 591,
+					"left": 66,
+					"width": 480,
+					"height": 93,
+					"fill": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 31,
+					"left": 19,
+					"width": 527,
+					"height": 72,
+					"fill": "transparent"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 151,
+					"left": 22,
+					"width": 524,
+					"height": 70,
+					"fill": "transparent"
+				},
+				"Text": {
+					"type": "text",
+					"top": 118,
+					"left": 42,
+					"width": 159,
+					"height": 17,
+					"text": "Sample Text:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 234,
+					"left": 207,
+					"width": 204,
+					"height": 33,
+					"text": "Sample Text:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 625,
+					"left": 212,
+					"width": 209,
+					"height": 17,
+					"text": "Sample Text:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 19,
+					"left": 334,
+					"width": 181,
+					"height": 17,
+					"text": "Sample Text:"
+				}
+			}
+		}
+	]
+}

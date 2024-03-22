@@ -1,0 +1,1 @@
+2002-03 : Fixed to properly use Element comments Blob field.  2002-12 : Fix call to LogDeletion.  2003-04 : Modified method of deleting. Use a series of Query selections instead of cycling through and adding to an empty set.  2004-05-17 : Moved code cleaning Inspection comments to object method of approve button in InspeReview form.

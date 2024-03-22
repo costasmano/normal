@@ -1,0 +1,1 @@
+2004-2-10:  Used style sheet for form objects (text, field, variable, dropdown list, etc)2004-2-26:  Changed Detail Marker Label to 107 from 1102004-3-18 : Changed the Display Format of the currency fields

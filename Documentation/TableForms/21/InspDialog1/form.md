@@ -1,0 +1,1 @@
+2001-01-31 : modified because now TWN and MUN bridges are not differentiated from the new Item 8 coding.  Also changed to platinum appearance. Moved code from an object method to the form method.2004-01-09 : Added Options for State or NBI bridges and CheckBox for Complex Bridges. Added object methods to resolve conflict between State or NBI bridge and NBI only CheckBox.

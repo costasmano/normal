@@ -1,0 +1,1 @@
+2003-12-05 : Use Input Form command to display dialog instead of Dialog.  2004-02-02 : Use Plain Window constant.

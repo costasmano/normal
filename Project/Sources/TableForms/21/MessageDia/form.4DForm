@@ -1,0 +1,83 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 233,
+	"markerBreak": 233,
+	"markerFooter": 233,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDragOver",
+		"onTimer",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ButtonOK": {
+					"type": "button",
+					"top": 194,
+					"left": 119,
+					"width": 111,
+					"height": 34,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "accept",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "OK",
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Message": {
+					"type": "input",
+					"top": 20,
+					"left": 20,
+					"width": 309,
+					"height": 158,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtMessage",
+					"class": "Label12Plain",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible"
+				}
+			},
+			"entryOrder": [
+				"Message"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

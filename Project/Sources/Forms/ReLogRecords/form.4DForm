@@ -1,0 +1,544 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 34,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Main Table"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 279,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Destination"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 329,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Transfer type"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 254,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Log Deletion first"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 184,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "New Record Relation"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 209,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Flush/Delete Relation"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 159,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Parent Key"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 134,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Foreign Key"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 109,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Parent Table"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 59,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Key Field"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 84,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Sequence"
+				},
+				"TableList_atxt": {
+					"type": "dropdown",
+					"top": 33,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "TableList_atxt",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/TableList_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"KeyFieldList_atxt": {
+					"type": "dropdown",
+					"top": 58,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "KeyFieldList_atxt",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"Sequence_atxt": {
+					"type": "dropdown",
+					"top": 83,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "Sequence_atxt",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"ParentTableList_atxt": {
+					"type": "dropdown",
+					"top": 108,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "ParentTableList_atxt",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/ParentTableList_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ForeignKeyList_atxt": {
+					"type": "dropdown",
+					"top": 133,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "ForeignKeyList_atxt",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/ForeignKeyList_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ParentKeyList_atxt": {
+					"type": "dropdown",
+					"top": 158,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "ParentKeyList_atxt",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"RelationsList_atxt": {
+					"type": "dropdown",
+					"top": 183,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "RelationsList_atxt",
+					"choiceList": [
+						"0",
+						"1",
+						"2",
+						"3",
+						"4"
+					],
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"RelationsFlushList_atxt": {
+					"type": "dropdown",
+					"top": 208,
+					"left": 178,
+					"width": 265,
+					"height": 20,
+					"dataSource": "RelationsFlushList_atxt",
+					"choiceList": [
+						"0",
+						"1",
+						"2",
+						"3",
+						"4"
+					],
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"LogNewRecfirst_L": {
+					"type": "checkbox",
+					"top": 234,
+					"left": 178,
+					"width": 29,
+					"height": 18,
+					"dataSource": "LogNewRecfirst_L",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"LogDelfirst_L": {
+					"type": "checkbox",
+					"top": 254,
+					"left": 178,
+					"width": 29,
+					"height": 18,
+					"dataSource": "LogDelfirst_L",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"RelogDestination_txt": {
+					"type": "input",
+					"top": 279,
+					"left": 178,
+					"width": 261,
+					"height": 18,
+					"dataSource": "RelogDestination_txt",
+					"class": "Label12Plain",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RelogForward_txt": {
+					"type": "input",
+					"top": 304,
+					"left": 178,
+					"width": 261,
+					"height": 18,
+					"dataSource": "RelogForward_txt",
+					"class": "Label12Plain",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RelogTransfer_L": {
+					"type": "input",
+					"top": 329,
+					"left": 178,
+					"width": 31,
+					"height": 18,
+					"dataSource": "RelogTransfer_L",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RelogSearch": {
+					"type": "button",
+					"top": 418,
+					"left": 49,
+					"width": 100,
+					"height": 25,
+					"dataSource": "RelogSearch",
+					"class": "Label12Bold",
+					"focusable": false,
+					"text": "Search",
+					"style": "bevel",
+					"method": "ObjectMethods/RelogSearch.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RelogDo": {
+					"type": "button",
+					"top": 458,
+					"left": 339,
+					"width": 100,
+					"height": 25,
+					"dataSource": "RelogDo",
+					"class": "Label12Bold",
+					"focusable": false,
+					"text": "Re-LOG",
+					"style": "bevel",
+					"method": "ObjectMethods/RelogDo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ReLOGCancel": {
+					"type": "button",
+					"top": 458,
+					"left": 49,
+					"width": 100,
+					"height": 25,
+					"dataSource": "ReLOGCancel",
+					"action": "cancel",
+					"class": "Label12Bold",
+					"focusable": false,
+					"text": "CLOSE",
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"RELOG_RecsFound_L": {
+					"type": "input",
+					"top": 423,
+					"left": 278,
+					"width": 120,
+					"height": 18,
+					"dataSource": "RELOG_RecsFound_L",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 423,
+					"left": 161,
+					"width": 107,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Records Found"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 304,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Forward"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 234,
+					"left": 13,
+					"width": 157,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Log New Record"
+				},
+				"logfields": {
+					"type": "button",
+					"top": 359,
+					"left": 49,
+					"width": 80,
+					"height": 38,
+					"class": "Label12Plain",
+					"focusable": false,
+					"text": "Select Fields\\to log",
+					"style": "bevel",
+					"method": "ObjectMethods/logfields.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"fieldsToLog": {
+					"type": "input",
+					"top": 364,
+					"left": 7,
+					"width": 12,
+					"height": 17,
+					"visibility": "hidden",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"linkfields": {
+					"type": "button",
+					"top": 359,
+					"left": 132,
+					"width": 80,
+					"height": 38,
+					"class": "Label12Plain",
+					"focusable": false,
+					"text": "Select Fields\\to link",
+					"style": "bevel",
+					"method": "ObjectMethods/linkfields.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LinkTablemenu": {
+					"type": "dropdown",
+					"top": 359,
+					"left": 416,
+					"width": 23,
+					"height": 19,
+					"dataSourceTypeHint": "integer",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/LinkTablemenu.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 361,
+					"left": 214,
+					"width": 197,
+					"height": 18,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Select Link-To Field"
+				},
+				"LinkToField": {
+					"type": "text",
+					"top": 380,
+					"left": 222,
+					"width": 217,
+					"height": 30,
+					"class": "Label12Plain",
+					"textAlign": "left",
+					"borderStyle": "sunken",
+					"text": "LinkToField"
+				},
+				"ClearParent": {
+					"type": "button",
+					"top": 108,
+					"left": 0,
+					"width": 82,
+					"height": 69,
+					"focusable": false,
+					"text": "Clear\\Parent\\data",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/ClearParent.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

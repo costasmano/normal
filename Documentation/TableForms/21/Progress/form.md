@@ -1,0 +1,1 @@
+Progress Bar Dialog added 11-29-2000Oct-2001 : Modified to allow on page 4 a different Item description instead of the default "Records to be processed:"Sep-2003 : V3.3f2 : Show Estimated TimeRemaining.2004-04-26 : Added hidden buttons to capture Enter/Return/Esc.

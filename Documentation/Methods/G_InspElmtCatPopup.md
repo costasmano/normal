@@ -1,0 +1,1 @@
+2003-10-23 : Added to be used in all Inspection forms.  2004-04-16 : Changed the sorting code for [ElementDict].  It uses ORDER BY full label instead of ORDER BY FORUMLA.

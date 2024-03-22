@@ -1,0 +1,1 @@
+G_Accesibil_Obj(Self:C308; ->[TunnelInspection:152]AirMeter_s:12; 1; 5)  //part 1, ptr_changes{1}

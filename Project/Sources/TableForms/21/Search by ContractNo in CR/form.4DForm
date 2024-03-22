@@ -1,0 +1,269 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 220,
+	"markerBreak": 220,
+	"markerFooter": 220,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 58,
+					"left": 171,
+					"width": 120,
+					"height": 49,
+					"fill": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 58,
+					"left": 41,
+					"width": 120,
+					"height": 49,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 50,
+					"left": 59,
+					"width": 85,
+					"height": 16,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Contract No."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 23,
+					"left": 44,
+					"width": 250,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Search by Contract No. & Assign No."
+				},
+				"Text5": {
+					"type": "text",
+					"top": 161,
+					"left": 17,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "* Hit Return for Find"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 177,
+					"left": 17,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "** Hit Enter for OK"
+				},
+				"vContractNo": {
+					"type": "input",
+					"top": 76,
+					"left": 71,
+					"width": 60,
+					"height": 18,
+					"dataSource": "vContractNo",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#####",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vsAssignNo": {
+					"type": "input",
+					"top": 76,
+					"left": 209,
+					"width": 40,
+					"height": 18,
+					"dataSource": "vsAssignNo",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "##",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 116,
+					"left": 56,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bFind",
+					"shortcutKey": "[Return]",
+					"text": "Find *",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "checkbox",
+					"top": 113,
+					"left": 158,
+					"width": 133,
+					"height": 26,
+					"dataSource": "CBAddTo",
+					"text": "Add to Selection",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 166,
+					"left": 130,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 166,
+					"left": 232,
+					"width": 90,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK **",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 50,
+					"left": 177,
+					"width": 105,
+					"height": 16,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Assignment No."
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

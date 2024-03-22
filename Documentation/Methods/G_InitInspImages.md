@@ -1,0 +1,1 @@
+2002-10 : Created to be used in inspection for methods at on load event.  2002-11 : Added Clear named Selection command.  2003-05 : Use function F_ImageSort to sort Images.  2003-10-21 : Added declaration of Image counter variables.  2004-02-13 : Use method G_SortInspImages.

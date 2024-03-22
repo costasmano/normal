@@ -1,0 +1,236 @@
+{
+	"windowMinWidth": 385,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onDeactivate",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 20,
+					"left": 20,
+					"width": 410,
+					"height": 22,
+					"sizingX": "grow",
+					"dataSource": "vsExtraTextLabel",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MultistyleText": {
+					"type": "input",
+					"top": 46,
+					"left": 20,
+					"width": 500,
+					"height": 154,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtExtraText",
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"styledText": true,
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ButtonOK": {
+					"type": "button",
+					"top": 210,
+					"left": 275,
+					"width": 70,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "vbOK",
+					"action": "accept",
+					"text": "OK",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ButtonCancel": {
+					"type": "button",
+					"top": 210,
+					"left": 195,
+					"width": 70,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "vbCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PlainText": {
+					"type": "input",
+					"top": 46,
+					"left": 20,
+					"width": 500,
+					"height": 154,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtExtraText",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#C0C0C0",
+					"borderStyle": "double",
+					"spellcheck": true,
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 2,
+					"left": 0,
+					"width": 423,
+					"height": 13,
+					"visibility": "selectedRows",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "designer note: There are two areas with vtExtratext a multisyle and a plain one"
+				},
+				"MultistyletextBold": {
+					"type": "checkbox",
+					"top": 209,
+					"left": 20,
+					"width": 24,
+					"height": 24,
+					"sizingY": "move",
+					"tooltip": "Bold",
+					"action": "fontBold",
+					"shortcutKey": "b",
+					"shortcutAccel": true,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar2/Home/Bold.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"MultistyletextItalic": {
+					"type": "checkbox",
+					"top": 209,
+					"left": 45,
+					"width": 24,
+					"height": 24,
+					"sizingY": "move",
+					"tooltip": "Italic",
+					"action": "fontItalic",
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar2/Home/Italic.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"MultistyletextUnderline": {
+					"type": "checkbox",
+					"top": 209,
+					"left": 70,
+					"width": 24,
+					"height": 24,
+					"sizingY": "move",
+					"tooltip": "Underline",
+					"action": "fontUnderline",
+					"shortcutKey": "u",
+					"shortcutAccel": true,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar2/Home/Underline.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+2003-10-21: Created.  Used for retrieving/entering consultant addresses.    2003-10-28: Changed vContactName to include suffix ("P.E.").  Added code to include prefix ("Mr.")    2003-11-4:   Added this line near the end (vPrefix:=[Conslt Address]ContactPrefix)  2003-11-26 : Fixed syntax errors in substring calls.

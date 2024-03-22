@@ -1,0 +1,1 @@
+2-feb-2001 : modified to show Item8 Owner and Bridge Cat instead of Bridge Key9-feb-2001 : added Item 62, Removed object methods used for formating in Oper, Inv Rating and Aashto rating.9-Oct-2003 : Increased width of BDEPT to 37 to fit on Win printouts.2004-02-13 : Made form type List Form for Printing.

@@ -1,0 +1,759 @@
+{
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 409,
+	"markerBreak": 409,
+	"markerFooter": 419,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable10": {
+					"type": "button",
+					"top": 156,
+					"left": 431,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Accept.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 156,
+					"left": 37,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzFirst",
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg 1st Rec.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 156,
+					"left": 77,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzPrev",
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Lg Prev Rec.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 156,
+					"left": 117,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzNext",
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Next Rec.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 156,
+					"left": 157,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzLast",
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Last Rec.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 156,
+					"left": 198,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzPage1",
+					"action": "previousPage",
+					"shortcutKey": "[Page up]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Prev Pg.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 156,
+					"left": 240,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzPage2",
+					"action": "nextPage",
+					"shortcutKey": "[Page down]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Nxt Pg.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 156,
+					"left": 282,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzDelete",
+					"action": "deleteRecord",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Del Rec.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 156,
+					"left": 324,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bzPrint",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Print Rec.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 156,
+					"left": 389,
+					"width": 40,
+					"height": 40,
+					"dataSource": "bziEscape",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 319,
+					"left": 482,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Done.png"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 319,
+					"left": 79,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Query.png"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 319,
+					"left": 329,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Omit Subset.png"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 319,
+					"left": 279,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Show Subset.png"
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 319,
+					"left": 229,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS All Recs.png"
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 319,
+					"left": 179,
+					"width": 39,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Order By.png"
+				},
+				"Picture7": {
+					"type": "picture",
+					"top": 319,
+					"left": 130,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Query by Key.png"
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 319,
+					"left": 29,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS New Record.png"
+				},
+				"Picture9": {
+					"type": "picture",
+					"top": 319,
+					"left": 430,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Delete.png"
+				},
+				"Picture20": {
+					"type": "picture",
+					"top": 319,
+					"left": 379,
+					"width": 38,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Print.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 88,
+					"width": 99,
+					"height": 23,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "  Buttons\r"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 86,
+					"left": 36,
+					"width": 163,
+					"height": 31,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 83,
+					"left": 33,
+					"width": 163,
+					"height": 31,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"Picture30": {
+					"type": "picture",
+					"top": 89,
+					"left": 39,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form First Record.png"
+				},
+				"Variable20": {
+					"type": "button",
+					"top": 49,
+					"left": 39,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ1",
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture31": {
+					"type": "picture",
+					"top": 89,
+					"left": 58,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Prev Record.png"
+				},
+				"Picture32": {
+					"type": "picture",
+					"top": 89,
+					"left": 77,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Next Record.png"
+				},
+				"Picture33": {
+					"type": "picture",
+					"top": 89,
+					"left": 96,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Last Record.png"
+				},
+				"Picture34": {
+					"type": "picture",
+					"top": 89,
+					"left": 114,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Prev Page.png"
+				},
+				"Picture35": {
+					"type": "picture",
+					"top": 89,
+					"left": 133,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Next Page.png"
+				},
+				"Picture36": {
+					"type": "picture",
+					"top": 89,
+					"left": 152,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Accept.png"
+				},
+				"Picture37": {
+					"type": "picture",
+					"top": 89,
+					"left": 171,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Cancel.png"
+				},
+				"Variable21": {
+					"type": "button",
+					"top": 49,
+					"left": 58,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ2",
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable22": {
+					"type": "button",
+					"top": 49,
+					"left": 77,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ3",
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "button",
+					"top": 49,
+					"left": 96,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ4",
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "button",
+					"top": 49,
+					"left": 114,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ6",
+					"action": "previousPage",
+					"shortcutKey": "[Page up]",
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 49,
+					"left": 133,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ7",
+					"action": "nextPage",
+					"shortcutKey": "[Page down]",
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "button",
+					"top": 49,
+					"left": 152,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ8",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable27": {
+					"type": "button",
+					"top": 49,
+					"left": 171,
+					"width": 19,
+					"height": 19,
+					"dataSource": "ZZ9",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture38": {
+					"type": "picture",
+					"top": 289,
+					"left": 39,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form First Record.png"
+				},
+				"Picture39": {
+					"type": "picture",
+					"top": 289,
+					"left": 58,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Prev Record.png"
+				},
+				"Picture40": {
+					"type": "picture",
+					"top": 289,
+					"left": 77,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Next Record.png"
+				},
+				"Picture41": {
+					"type": "picture",
+					"top": 289,
+					"left": 96,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Last Record.png"
+				},
+				"Picture42": {
+					"type": "picture",
+					"top": 289,
+					"left": 115,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Del Record.png"
+				},
+				"Picture43": {
+					"type": "picture",
+					"top": 289,
+					"left": 134,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Prev Page.png"
+				},
+				"Picture44": {
+					"type": "picture",
+					"top": 289,
+					"left": 153,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Next Page.png"
+				},
+				"Picture45": {
+					"type": "picture",
+					"top": 289,
+					"left": 172,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Accept.png"
+				},
+				"Picture46": {
+					"type": "picture",
+					"top": 289,
+					"left": 191,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Button BMS Form Cancel.png"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 283,
+					"left": 218,
+					"width": 99,
+					"height": 23,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "  Icons\r"
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

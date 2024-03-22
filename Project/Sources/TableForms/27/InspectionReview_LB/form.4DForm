@@ -1,0 +1,958 @@
+{
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"menuBar": "BlankMenu",
+	"markerBody": 281,
+	"markerBreak": 281,
+	"markerFooter": 281,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onHeader",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"InspResp Select Button": {
+					"type": "dropdown",
+					"top": 236,
+					"left": 3,
+					"width": 74,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "InspRespDescSel_atxt",
+					"class": "List11Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/InspResp Select Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"QRPrintButton": {
+					"type": "button",
+					"top": 219,
+					"left": 451,
+					"width": 58,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzQRPrint",
+					"tooltip": "Quick Report editor ; click on arrow for more options.",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX Report.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "custom",
+					"method": "ObjectMethods/QRPrintButton.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"ApproveButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 523,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzApprove",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/ApproveSele"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Approve.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/ApproveButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FindButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 87,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzSearchLay",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Search4D"
+					},
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/FindButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OmitButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 347,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzOmit",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OmitSub"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Omit Subset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/OmitButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SubButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 295,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzSub",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Showsub"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show Subset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SubButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AllButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 243,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AllRegion"
+					},
+					"shortcutKey": "g",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Show All.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/AllButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SortButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 191,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzSort",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SortEdit"
+					},
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Order By.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SortButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PrintButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 399,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintInspect"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Print.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/PrintButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DoneButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 575,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"SearchButton": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 139,
+					"width": 48,
+					"height": 48,
+					"sizingY": "move",
+					"dataSource": "bzSearch",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SearchKey"
+					},
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Custom Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SearchButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"InspResp Select1Button": {
+					"type": "text",
+					"top": 218,
+					"left": 3,
+					"width": 69,
+					"height": 13,
+					"sizingY": "move",
+					"class": "List11Bold",
+					"fontWeight": "bold",
+					"text": "Select By"
+				},
+				"DesignerToolsButton": {
+					"type": "button",
+					"top": 219,
+					"left": 628,
+					"width": 40,
+					"height": 42,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "DesignerTools_L",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX ToolSet.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/DesignerToolsButton.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"ReAssignButton": {
+					"type": "button",
+					"top": 268,
+					"left": 30,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "ReAssignButton",
+					"shortcutKey": "r",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"display": false,
+					"method": "ObjectMethods/ReAssignButton.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"GetAllDistrInspButton": {
+					"type": "button",
+					"top": 268,
+					"left": 90,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "GetAllDistrInsp",
+					"shortcutKey": "g",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"display": false,
+					"method": "ObjectMethods/GetAllDistrInspButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SetToLevel1Button": {
+					"type": "button",
+					"top": 268,
+					"left": 150,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "SetToLevel1",
+					"shortcutKey": "1",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"display": false,
+					"method": "ObjectMethods/SetToLevel1Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SetToLevel2Button": {
+					"type": "button",
+					"top": 268,
+					"left": 210,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "SetToLevel2",
+					"shortcutKey": "2",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"display": false,
+					"method": "ObjectMethods/SetToLevel2Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Search2Button": {
+					"type": "button",
+					"top": 268,
+					"left": 270,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "bzSearch",
+					"shortcutKey": "ƒ",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"display": false,
+					"method": "ObjectMethods/Search2Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"InspUtilToolButton": {
+					"type": "button",
+					"top": 268,
+					"left": 323,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "InspUtilTool",
+					"shortcutKey": "¨",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"display": false,
+					"method": "ObjectMethods/InspUtilToolButton.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"InspectionReview": {
+					"type": "listbox",
+					"top": 2,
+					"left": 2,
+					"width": 849,
+					"height": 211,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "2em",
+					"staticColumnCount": 14,
+					"table": 27,
+					"highlightSet": "UserSet",
+					"alternateFill": "#C0FFFF",
+					"method": "ObjectMethods/InspectionReview.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "vInspTitle",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header1_L",
+								"text": "Type",
+								"dataSource": "LB_Header1_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[Inspections:27]BIN:1",
+							"width": 45,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header2_L",
+								"text": "BIN",
+								"dataSource": "LB_Header2_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header3_L",
+								"text": "BDEPT",
+								"dataSource": "LB_Header3_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[Inspections:27]Insp Date:78",
+							"dataSourceTypeHint": "date",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header4_L",
+								"text": "Insp.\\Date",
+								"dataSource": "LB_Header4_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "vTmLeader",
+							"dataSource": "vTmLeader",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header5_l",
+								"text": "Team\\Leader",
+								"dataSource": "LB_Header5_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "[Inspections:27]InspComplete:168",
+							"dataSourceTypeHint": "boolean",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"controlType": "checkbox",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header6_L",
+								"text": "Compl.",
+								"dataSource": "LB_Header6_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[Inspections:27]InspCompleteDate:221",
+							"dataSourceTypeHint": "date",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Compl.\\Date",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Picture Button1",
+							"dataSource": "LB_Detail7_pct",
+							"dataSourceTypeHint": "picture",
+							"saveAs": "reference",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header7_L",
+								"text": "DBIE\\Review",
+								"dataSource": "LB_Header7_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "[Inspections:27]InspDBIE1stApprDate:225",
+							"dataSourceTypeHint": "date",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "DBIE 1st\\Apprv Date",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label10Plain"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "LB_Detail8_pct",
+							"dataSourceTypeHint": "picture",
+							"saveAs": "reference",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header8_L",
+								"text": "Final\\Review",
+								"dataSource": "LB_Header8_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "[Inspections:27]InspAreaEngApprDate:207",
+							"dataSourceTypeHint": "date",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "AE Approve\\Date",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+							"width": 115,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header9_L",
+								"text": "Town",
+								"dataSource": "LB_Header9_l",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "[Bridge MHD NBIS:1]Item7:65",
+							"width": 175,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header10_L",
+								"text": "Item 7",
+								"dataSource": "LB_Header10_L",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Tahoma",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "[Bridge MHD NBIS:1]Item6A:63",
+							"width": 237,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_Header11_L",
+								"text": "Item 6A",
+								"dataSource": "LB_Header11_L",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Bold",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

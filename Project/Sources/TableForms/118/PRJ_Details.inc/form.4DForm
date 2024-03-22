@@ -1,0 +1,330 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 18,
+	"markerBody": 90,
+	"markerBreak": 90,
+	"markerFooter": 92,
+	"events": [
+		"onValidate",
+		"onDisplayDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture6": {
+					"type": "picture",
+					"top": -5,
+					"left": -1,
+					"width": 781,
+					"height": 23,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Image titre liste.png"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 18,
+					"left": -1,
+					"width": 781,
+					"height": 74,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"Line1": {
+					"type": "line",
+					"top": -5,
+					"left": 780,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 24,
+					"width": 134,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Source : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 180,
+					"width": 134,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Approved By / Date"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 336,
+					"width": 81,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Rec. Date : "
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 424,
+					"width": 124,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": "Report Type : "
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 334,
+					"width": 80,
+					"height": 17,
+					"dataSource": "[PRJ_ReportData:118]RPT_Received_d:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 424,
+					"width": 124,
+					"height": 17,
+					"dataSource": "[PRJ_ReportData:118]RPT_ReportType_s:2",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Line10": {
+					"type": "line",
+					"top": -5,
+					"left": 418,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": -5,
+					"left": 417,
+					"width": 3,
+					"height": 95,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": -5,
+					"left": 563,
+					"width": 3,
+					"height": 95,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": -5,
+					"left": 564,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"S5_Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 570,
+					"width": 124,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"text": " Comments : "
+				},
+				"S5_Field1": {
+					"type": "input",
+					"top": 22,
+					"left": 570,
+					"width": 204,
+					"height": 64,
+					"dataSource": "[PRJ_ReportData:118]RPT_Comments_txt:6",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 24,
+					"width": 134,
+					"height": 17,
+					"dataSource": "[PRJ_ReportData:118]RPT_Source_s:7",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 180,
+					"width": 134,
+					"height": 17,
+					"dataSource": "[PRJ_ReportData:118]RPT_ApprovedBy_s:5",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 42,
+					"left": 180,
+					"width": 117,
+					"height": 17,
+					"dataSource": "[PRJ_ReportData:118]RPT_Approved_d:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_IncludedList",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Line8": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 0,
+					"left": 781,
+					"height": 90,
+					"stroke": "#A8A8A8"
+				},
+				"Line12": {
+					"type": "line",
+					"top": -5,
+					"left": 330,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": -5,
+					"left": 329,
+					"width": 3,
+					"height": 95,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line13": {
+					"type": "line",
+					"top": -5,
+					"left": 174,
+					"height": 95,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter5": {
+					"type": "button",
+					"top": -5,
+					"left": 173,
+					"width": 3,
+					"height": 95,
+					"dataSource": "Splitter5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 88,
+					"left": 1,
+					"width": 780,
+					"height": 1,
+					"fill": "transparent"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group6": [
+				"Picture6",
+				"Rectangle7",
+				"Line1"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

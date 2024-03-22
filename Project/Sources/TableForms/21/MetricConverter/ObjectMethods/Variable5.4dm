@@ -1,0 +1,1 @@
+vMiles:=vKilometers*0.62

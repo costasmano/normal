@@ -1,0 +1,1090 @@
+{
+	"destination": "detailPrinter",
+	"inheritedForm": "PrintTemplate",
+	"inheritedFormTable": 132,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 764,
+	"markerBreak": 764,
+	"markerFooter": 764,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 161,
+					"left": 20,
+					"width": 560,
+					"height": 41,
+					"fill": "transparent"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 57,
+					"left": 20,
+					"width": 373,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "3d. Scour Monitoring Criteria for Consideration of Bridge Closure  :"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 209,
+					"left": 19,
+					"width": 553,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "3e. Person / Area Responsible for Closure  (Name, Title, Agency/organization, Telephone, Pager, Email):"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 250,
+					"left": 19,
+					"width": 533,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "3f. Notify in Case of Closure ( Name, Title, Agency/organization) :"
+				},
+				"SCPOA_OthScCritElev_p_txt": {
+					"type": "input",
+					"top": 82,
+					"left": 204,
+					"width": 208,
+					"height": 11,
+					"dataSource": "SCPOA_OthScCritElev_p_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_CLCri_Other_txt": {
+					"type": "input",
+					"top": 145,
+					"left": 83,
+					"width": 497,
+					"height": 11,
+					"dataSource": "SCPOA_CLCri_Other_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_ClosureResp_txt": {
+					"type": "input",
+					"top": 221,
+					"left": 19,
+					"width": 560,
+					"height": 24,
+					"dataSource": "SCPOA_ClosureResp_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_Contacts_txt": {
+					"type": "input",
+					"top": 262,
+					"left": 19,
+					"width": 560,
+					"height": 31,
+					"dataSource": "SCPOA_Contacts_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 93,
+					"left": 204,
+					"width": 208,
+					"strokeWidth": 0.1
+				},
+				"Line1": {
+					"type": "line",
+					"top": 156,
+					"left": 83,
+					"width": 497,
+					"strokeWidth": 0.1
+				},
+				"Line8": {
+					"type": "line",
+					"top": 208,
+					"left": 15,
+					"width": 569
+				},
+				"Line9": {
+					"type": "line",
+					"top": 246,
+					"left": 15,
+					"width": 569
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 38,
+					"left": 16,
+					"width": 568,
+					"height": 17,
+					"sizingY": "move",
+					"fill": "#DDDDDD"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 41,
+					"left": 15,
+					"width": 569,
+					"height": 14,
+					"class": "Helvetica12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "3. BRIDGE CLOSURE PLAN (Cont'd)"
+				},
+				"Picture Button1": {
+					"type": "pictureButton",
+					"top": 72,
+					"left": 420,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_Over_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button2": {
+					"type": "pictureButton",
+					"top": 85,
+					"left": 420,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_RipLoss_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button3": {
+					"type": "pictureButton",
+					"top": 109,
+					"left": 420,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_EmbkLoss_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button4": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_Settlm_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button5": {
+					"type": "pictureButton",
+					"top": 108,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_ScMeas_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button6": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_wSurf_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button8": {
+					"type": "pictureButton",
+					"top": 133,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_Debris_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button9": {
+					"type": "pictureButton",
+					"top": 146,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_Other_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text28": {
+					"type": "text",
+					"top": 70,
+					"left": 432,
+					"width": 138,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Overtopping road or structure"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 146,
+					"left": 49,
+					"width": 33,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Other"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 133,
+					"left": 49,
+					"width": 208,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Debris Accumulation / Ice Jam"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 108,
+					"left": 432,
+					"width": 138,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Loss of Approach Embankment"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 83,
+					"left": 432,
+					"width": 138,
+					"height": 23,
+					"class": "Arial9",
+					"text": "Movement of Riprap / Other Armor Protection"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 82,
+					"left": 49,
+					"width": 157,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Water Level at or Above Critical WSE:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 120,
+					"left": 49,
+					"width": 268,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Observed Structure Movement / Settlement"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 107,
+					"left": 49,
+					"width": 268,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Scour Measurement Results / Monitoring Device"
+				},
+				"SCPOA_CLCri_WLvl_p_txt": {
+					"type": "input",
+					"top": 70,
+					"left": 244,
+					"width": 158,
+					"height": 11,
+					"dataSource": "SCPOA_CLCri_WLvl_p_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_CLCri_WLvl_L_P": {
+					"type": "pictureButton",
+					"top": 71,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_WLvl_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text66": {
+					"type": "text",
+					"top": 70,
+					"left": 49,
+					"width": 197,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Water Level at or Above Low Chord Elevation :"
+				},
+				"Picture Button16": {
+					"type": "pictureButton",
+					"top": 164,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_USGSNo_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text67": {
+					"type": "text",
+					"top": 163,
+					"left": 49,
+					"width": 93,
+					"height": 11,
+					"class": "Arial9",
+					"text": "USGS Gage Station # "
+				},
+				"SCPOA_USGSStationNo_s": {
+					"type": "input",
+					"top": 163,
+					"left": 144,
+					"width": 58,
+					"height": 11,
+					"dataSource": "SCPOA_USGSStationNo_s",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button21": {
+					"type": "pictureButton",
+					"top": 176,
+					"left": 47,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_USGSG_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text68": {
+					"type": "text",
+					"top": 175,
+					"left": 59,
+					"width": 93,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Stage (WSE) at Gage :"
+				},
+				"SCPOA_CLCri_wSurf_txt2": {
+					"type": "input",
+					"top": 175,
+					"left": 154,
+					"width": 58,
+					"height": 11,
+					"dataSource": "SCPOA_CLCri_USGSG_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button22": {
+					"type": "pictureButton",
+					"top": 190,
+					"left": 47,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_USGSD_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text69": {
+					"type": "text",
+					"top": 189,
+					"left": 59,
+					"width": 93,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Discharge at Gage :"
+				},
+				"SCPOA_CLCri_wSurf_txt3": {
+					"type": "input",
+					"top": 189,
+					"left": 154,
+					"width": 58,
+					"height": 11,
+					"dataSource": "SCPOA_CLCri_USGSD_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button23": {
+					"type": "pictureButton",
+					"top": 164,
+					"left": 227,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_NOAANo_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text70": {
+					"type": "text",
+					"top": 163,
+					"left": 239,
+					"width": 93,
+					"height": 21,
+					"class": "Arial9",
+					"text": "NOAA Gage Station #\r(Tidal) "
+				},
+				"SCPOA_USGSStationNo2_s": {
+					"type": "input",
+					"top": 163,
+					"left": 334,
+					"width": 58,
+					"height": 11,
+					"dataSource": "SCPOA_USGSStationNo2_s",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button33": {
+					"type": "pictureButton",
+					"top": 188,
+					"left": 237,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_NOAAG_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text71": {
+					"type": "text",
+					"top": 187,
+					"left": 249,
+					"width": 93,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Storm Surge at Gage :"
+				},
+				"SCPOA_CLCri_wSurf_txt5": {
+					"type": "input",
+					"top": 187,
+					"left": 344,
+					"width": 58,
+					"height": 11,
+					"dataSource": "SCPOA_CLCri_NOAAG_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button36": {
+					"type": "pictureButton",
+					"top": 164,
+					"left": 417,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_NWS_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text72": {
+					"type": "text",
+					"top": 163,
+					"left": 429,
+					"width": 143,
+					"height": 11,
+					"class": "Arial9",
+					"text": "NWS River Forecast Info:"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 657,
+					"left": 20,
+					"width": 373,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Agency or Person Responsible For Permanent Re-opening :"
+				},
+				"SCPOA_BrgCloDiveCompl_txt": {
+					"type": "input",
+					"top": 609,
+					"left": 194,
+					"width": 100,
+					"height": 11,
+					"dataSource": "SCPOA_BrgCloDiveCompl_txt",
+					"class": "Arial9",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 298,
+					"left": 16,
+					"width": 568,
+					"height": 17,
+					"sizingY": "move",
+					"fill": "#DDDDDD"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 301,
+					"left": 15,
+					"width": 569,
+					"height": 14,
+					"class": "Helvetica12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "4. BRIDGE REOPENING PLAN"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 316,
+					"left": 20,
+					"width": 320,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "4a. Criteria for Consideration to Complete Interim Bridge Reopening :"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 584,
+					"left": 20,
+					"width": 333,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "4b. Criteria for Completing Bridge Reopening Process :"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 583,
+					"left": 15,
+					"width": 569
+				},
+				"Picture Button7": {
+					"type": "pictureButton",
+					"top": 329,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloWater_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button10": {
+					"type": "pictureButton",
+					"top": 355,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloReasAbate_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button11": {
+					"type": "pictureButton",
+					"top": 342,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloCritElev_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button18": {
+					"type": "pictureButton",
+					"top": 611,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloDiveCompl_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button19": {
+					"type": "pictureButton",
+					"top": 598,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloInspCompl_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 328,
+					"left": 49,
+					"width": 198,
+					"height": 11,
+					"class": "Arial9",
+					"text": "WSE Dropping"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 354,
+					"left": 49,
+					"width": 238,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Reasons for Closure  Have Abated"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 341,
+					"left": 49,
+					"width": 198,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Critical WSE Marker Is Visible"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 596,
+					"left": 49,
+					"width": 158,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Complete Post Flood Assessment"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 609,
+					"left": 49,
+					"width": 138,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Complete Dive Inspection within"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 622,
+					"left": 49,
+					"width": 198,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Conditionally Open Pending Dive Inspection"
+				},
+				"Picture Button17": {
+					"type": "pictureButton",
+					"top": 623,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgOpenPendDive_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 444,
+					"left": 20,
+					"width": 158,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Pre-Existing Conditions at the Bridge:"
+				},
+				"SCPOA_PreExistCond_txt": {
+					"type": "input",
+					"top": 457,
+					"left": 20,
+					"width": 560,
+					"height": 123,
+					"dataSource": "SCPOA_PreExistCond_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button20": {
+					"type": "pictureButton",
+					"top": 367,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgRailStraight_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 366,
+					"left": 49,
+					"width": 238,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Bridge Rails Remaining Straight and Consistent"
+				},
+				"Picture Button24": {
+					"type": "pictureButton",
+					"top": 379,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_ApproachNotSettl_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 378,
+					"left": 49,
+					"width": 238,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Approach Section Not Settling"
+				},
+				"Picture Button25": {
+					"type": "pictureButton",
+					"top": 391,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_EmbErosOK_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 390,
+					"left": 49,
+					"width": 238,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Embankment Erosion Not Endangering Abutment"
+				},
+				"Picture Button26": {
+					"type": "pictureButton",
+					"top": 403,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_substrPlumb_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 402,
+					"left": 49,
+					"width": 238,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Abutments and Piers are Plumb and Stable"
+				},
+				"Picture Button27": {
+					"type": "pictureButton",
+					"top": 415,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_AssessRvrBedOK_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 414,
+					"left": 49,
+					"width": 238,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Assess Riverbed Elevations (Dropline Readings)"
+				},
+				"Picture Button28": {
+					"type": "pictureButton",
+					"top": 427,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CritStrElmOK_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 426,
+					"left": 49,
+					"width": 238,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Critical Structural Elements Appear to be Intact"
+				},
+				"SCPOA_CLCri_wSurf_txt6": {
+					"type": "input",
+					"top": 176,
+					"left": 417,
+					"width": 158,
+					"height": 21,
+					"dataSource": "SCPOA_CLCri_NOAAI_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 316,
+					"left": 321,
+					"width": 261,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "(Refer to Post Flood Assessment Form for Detailed Procedures)"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 584,
+					"left": 321,
+					"width": 261,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "(Refer to Post Flood Assessment Form for Detailed Procedures)"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 669,
+					"left": 20,
+					"width": 373,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "MassDOT District Bridge Engineer"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 95,
+					"left": 49,
+					"width": 367,
+					"height": 11,
+					"class": "Arial9",
+					"text": "Distance from Low Chord (see Attach J) equal to or less than : <SCPOA_LowChordDistFt_r> ft."
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

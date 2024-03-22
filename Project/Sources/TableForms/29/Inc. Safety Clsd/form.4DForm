@@ -1,0 +1,277 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 22,
+	"markerBody": 44,
+	"markerBreak": 49,
+	"markerFooter": 49,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "791pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 570,
+					"height": 46,
+					"fill": "transparent"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 21,
+					"left": 0,
+					"width": 570
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 4,
+					"width": 424,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Description"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 430,
+					"height": 46
+				},
+				"Above Label": {
+					"type": "text",
+					"top": 3,
+					"left": 435,
+					"width": 24,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Cur"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 464,
+					"height": 46
+				},
+				"Text4": {
+					"type": "text",
+					"top": 3,
+					"left": 469,
+					"width": 37,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Def"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 510,
+					"width": 1,
+					"height": 46
+				},
+				"Text5": {
+					"type": "text",
+					"top": 3,
+					"left": 544,
+					"width": 22,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "T"
+				},
+				"DE Above Field": {
+					"type": "input",
+					"top": 25,
+					"left": 439,
+					"width": 13,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Rating:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\"0-9;N;X;H;R\"#",
+					"method": "ObjectMethods/DE Above Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Deficiency": {
+					"type": "input",
+					"top": 25,
+					"left": 469,
+					"width": 37,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Deficiency:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/DeficiencyHelp"
+					},
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###",
+					"entryFilter": "! ~\" ;C;M;N;S;H;-\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Deficiency Codes"
+					},
+					"method": "ObjectMethods/DE Deficiency.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Priority": {
+					"type": "input",
+					"top": 25,
+					"left": 517,
+					"width": 18,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Priority:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\" ;I;A;P\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Urgency of Repair Codes"
+					},
+					"method": "ObjectMethods/DE Priority.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "checkbox",
+					"top": 25,
+					"left": 546,
+					"width": 17,
+					"height": 19,
+					"dataSource": "[ElementsSafety:29]Comment Flag:6",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vElmDescr": {
+					"type": "input",
+					"top": 25,
+					"left": 4,
+					"width": 424,
+					"height": 17,
+					"dataSource": "vElmDescr",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 541,
+					"width": 1,
+					"height": 46
+				},
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 513,
+					"width": 25,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Prio"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+2003-06 : After v3.3 : Added indenting second line of Photo descriptions by 0.7 inches.  2004-02-13 : Use method G_SortInspImages.  2004-4-1 : Changed the label inden to 0.9 from 0.7 inches when calling G_addItemtoWr ($mainarea;$vsLabel;$vtIndex;0.9)

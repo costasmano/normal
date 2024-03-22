@@ -1,0 +1,1 @@
+Jun-2003 : Added declaration of $1 and $MyArea variables.

@@ -1,0 +1,1 @@
+ut_OpenProjInfo_OM("PROJECT"; [Contract_Assignment_Maintenance:101]ProjectIS:4; Self:C308)

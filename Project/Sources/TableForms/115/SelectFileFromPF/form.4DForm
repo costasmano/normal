@@ -1,0 +1,190 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 16,
+					"left": 24,
+					"width": 456,
+					"height": 36,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "Select Design Contract for the selcted project file \r<[PRJ_ProjectFile]PF_FileNumber_l>"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 270,
+					"left": 16,
+					"width": 453,
+					"sizingX": "grow",
+					"sizingY": "move"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 57,
+					"left": 25,
+					"width": 435,
+					"height": 108,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "PRJ_FileMessage_txt",
+					"class": "Default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 180,
+					"left": 27,
+					"width": 176,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "right",
+					"fontFamily": "Tahoma",
+					"fontSize": 13,
+					"text": "Select a file Number -->"
+				},
+				"PRJ_DesignContract_al": {
+					"type": "dropdown",
+					"top": 182,
+					"left": 231,
+					"width": 244,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "PRJ_DesignContract_al",
+					"dataSourceTypeHint": "arrayNumber",
+					"class": "PRJ_InputVariable",
+					"method": "ObjectMethods/PRJ_DesignContract_al.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 289,
+					"left": 261,
+					"width": 95,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "PRJ_InputVariable",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 289,
+					"left": 381,
+					"width": 95,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "accept",
+					"text": "Select",
+					"class": "PRJ_InputVariable",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"DC_Description": {
+					"type": "input",
+					"top": 209,
+					"left": 25,
+					"width": 435,
+					"height": 48,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "[PRJ_DesignContracts:123]DC_Description_txt:4",
+					"class": "Default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text4",
+					"Line5"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

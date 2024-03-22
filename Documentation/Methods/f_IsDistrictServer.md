@@ -1,0 +1,1 @@
+2004-01-15 : Created. Determine whether executing on a district server.  2004-02-11 : Fixed syntax error.

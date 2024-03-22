@@ -1,0 +1,144 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 90,
+	"rightMargin": 25,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onDragOver",
+		"onTimer",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ButtonCancel": {
+					"type": "button",
+					"top": 209,
+					"left": 255,
+					"width": 110,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "ButtonCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "DataEntry14Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"ButtonOK": {
+					"type": "button",
+					"top": 209,
+					"left": 380,
+					"width": 110,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "ButtonOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "DataEntry14Plain",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": -12,
+					"left": 344,
+					"width": 39,
+					"height": 11,
+					"dataSource": "vButtonOK_txt",
+					"stroke": "#DDDDDD",
+					"class": "DataEntry14Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": -12,
+					"left": 174,
+					"width": 39,
+					"height": 11,
+					"dataSource": "vButtonCancel_txt",
+					"stroke": "#DDDDDD",
+					"class": "DataEntry14Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Message": {
+					"type": "input",
+					"top": 20,
+					"left": 60,
+					"width": 430,
+					"height": 177,
+					"sizingY": "grow",
+					"dataSource": "vtMessage",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"printFrame": "variable",
+					"scrollbarVertical": "visible"
+				},
+				"Picture Button1": {
+					"type": "pictureButton",
+					"top": 21,
+					"left": 15,
+					"width": 28,
+					"height": 62,
+					"picture": "/RESOURCES/Images/library/BMS Question.png",
+					"switchBackWhenReleased": true
+				}
+			},
+			"entryOrder": [
+				"ButtonCancel",
+				"ButtonOK",
+				"Variable1",
+				"Variable2",
+				"Message"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

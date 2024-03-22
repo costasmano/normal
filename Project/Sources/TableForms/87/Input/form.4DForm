@@ -1,0 +1,630 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 346,
+	"markerBreak": 346,
+	"markerFooter": 356,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onLosingFocus",
+		"onDataChange",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"bCancel": {
+					"type": "button",
+					"top": 51,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 83,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 115,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 First Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 147,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Previous Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 179,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Next Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 211,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Last Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 243,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Delete Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviousPage": {
+					"type": "button",
+					"top": 275,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bPreviousPage",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Page"
+					},
+					"action": "previousPage",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Previous Page.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextPage": {
+					"type": "button",
+					"top": 307,
+					"left": 15,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bNextPage",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Page"
+					},
+					"action": "nextPage",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Next Page.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 5,
+					"width": 527,
+					"height": 369,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle14": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 10,
+					"width": 507,
+					"height": 36,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle15": {
+					"type": "rectangle",
+					"top": 45,
+					"left": 10,
+					"width": 37,
+					"height": 318,
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle16": {
+					"type": "rectangle",
+					"top": 45,
+					"left": 11,
+					"width": 35,
+					"height": 2,
+					"fill": "automatic",
+					"stroke": "transparent"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 33,
+					"left": 407,
+					"width": 100,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"class": "List9Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 11,
+					"left": 57,
+					"width": 420,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Geneva20B",
+					"fontWeight": "bold",
+					"text": "ServerProcesses"
+				},
+				"Rectangle19": {
+					"type": "rectangle",
+					"top": 51,
+					"left": 50,
+					"width": 467,
+					"height": 313,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 66,
+					"left": 57,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Process Name"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 88,
+					"left": 57,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Last Run Time Stamp"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 110,
+					"left": 57,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Process Run Schedule"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 132,
+					"left": 57,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Next Run Time Stamp"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 154,
+					"left": 57,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Process Running"
+				},
+				"ProcessName_s": {
+					"type": "input",
+					"top": 66,
+					"left": 198,
+					"width": 287,
+					"height": 16,
+					"dataSource": "[ServerProcesses:87]ProcessName_s:1",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LastServerProcessRunDate_d": {
+					"type": "input",
+					"top": 88,
+					"left": 343,
+					"width": 92,
+					"height": 16,
+					"dataSource": "LastServerProcessRunDate_d",
+					"dataSourceTypeHint": "date",
+					"class": "Label12Plain",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/LastServerProcessRunDate_d.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"LastServerProcessRunDate_t": {
+					"type": "input",
+					"top": 88,
+					"left": 439,
+					"width": 67,
+					"height": 16,
+					"dataSource": "LastServerProcessRunDate_t",
+					"dataSourceTypeHint": "time",
+					"class": "Label12Plain",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"entryFilter": "!0&9##:##",
+					"method": "ObjectMethods/LastServerProcessRunDate_t.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"ProcessRunSchedule_atxt": {
+					"type": "combo",
+					"top": 108,
+					"left": 309,
+					"width": 172,
+					"height": 19,
+					"dataSource": "ProcessRunSchedule_atxt",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/ProcessRunSchedule_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NextServerProcessRunDate_d": {
+					"type": "input",
+					"top": 132,
+					"left": 343,
+					"width": 92,
+					"height": 16,
+					"dataSource": "NextServerProcessRunDate_d",
+					"dataSourceTypeHint": "date",
+					"class": "Label12Plain",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/NextServerProcessRunDate_d.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"NextServerProcessRunDate_t": {
+					"type": "input",
+					"top": 132,
+					"left": 439,
+					"width": 67,
+					"height": 16,
+					"dataSource": "NextServerProcessRunDate_t",
+					"dataSourceTypeHint": "time",
+					"class": "Label12Plain",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"entryFilter": "!0&9##:##",
+					"method": "ObjectMethods/NextServerProcessRunDate_t.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"LastRunTimeStamp_s": {
+					"type": "input",
+					"top": 88,
+					"left": 198,
+					"width": 134,
+					"height": 16,
+					"dataSource": "[ServerProcesses:87]LastRunTimeStamp_s:3",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "####:##:## ##.##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NextProcessRun_s": {
+					"type": "input",
+					"top": 110,
+					"left": 198,
+					"width": 91,
+					"height": 16,
+					"dataSource": "[ServerProcesses:87]ProcessRunSchedule_s:2",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NextRunTimeStamp_s": {
+					"type": "input",
+					"top": 132,
+					"left": 198,
+					"width": 134,
+					"height": 16,
+					"dataSource": "[ServerProcesses:87]NextRunTimeStamp_s:4",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "####:##:## ##.##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ProcessRunning_b": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 198,
+					"width": 56,
+					"height": 20,
+					"dataSource": "[ServerProcesses:87]ProcessRunning_b:5",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 178,
+					"left": 198,
+					"width": 100,
+					"height": 16,
+					"dataSource": "[ServerProcesses:87]ControlProcessDelay_l:6",
+					"dataSourceTypeHint": "integer",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"min": 1,
+					"max": 60
+				},
+				"Text25": {
+					"type": "text",
+					"top": 177,
+					"left": 57,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Process Delay"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 177,
+					"left": 303,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "(Minutes)"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 11,
+					"left": 11,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/SP_Picture.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

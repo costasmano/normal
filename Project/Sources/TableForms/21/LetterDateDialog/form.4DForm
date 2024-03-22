@@ -1,0 +1,91 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 175,
+	"markerBreak": 175,
+	"markerFooter": 175,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text54": {
+					"type": "text",
+					"top": 33,
+					"left": 31,
+					"width": 381,
+					"height": 32,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Please confirm the date for the letter you are generating.  The default date is today's date + <vAdvanceDays_s> days."
+				},
+				"vToday": {
+					"type": "input",
+					"top": 77,
+					"left": 174,
+					"width": 95,
+					"height": 18,
+					"dataSource": "vToday",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					]
+				},
+				"btnOK": {
+					"type": "button",
+					"top": 113,
+					"left": 174,
+					"width": 95,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "OK",
+					"class": "DataEntry12Plain",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

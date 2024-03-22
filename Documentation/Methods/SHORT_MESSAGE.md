@@ -1,0 +1,1 @@
+3/22/01 : Changed pixel values for Mac OS - ASL

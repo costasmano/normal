@@ -1,0 +1,3942 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "AboveWater Template",
+	"inheritedFormTable": 27,
+	"windowMinWidth": 740,
+	"windowMinHeight": 530,
+	"rightMargin": 10,
+	"bottomMargin": 15,
+	"menuBar": "BlankMenu",
+	"markerBody": 489,
+	"markerBreak": 513,
+	"markerFooter": 537,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Insp Pages": {
+					"type": "tab",
+					"top": 74,
+					"left": 1,
+					"width": 731,
+					"height": 439,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vTabRoutingPages",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"General",
+						"Postings",
+						"Element Info",
+						"Damage, Rating Rpt",
+						"General Cmnts",
+						"Images",
+						"Review Cmnts",
+						"Boston Office"
+					],
+					"class": "TabText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Page Preview Btn": {
+					"type": "button",
+					"top": 11,
+					"left": 528,
+					"width": 40,
+					"height": 40,
+					"sizingX": "move",
+					"dataSource": "vbPGPreview",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Preview"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/spyglassbutton.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Page Preview Btn.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 150,
+					"left": 398,
+					"width": 312,
+					"height": 32,
+					"fill": "transparent"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 185,
+					"left": 398,
+					"width": 312,
+					"height": 92,
+					"fill": "#C0CAFF"
+				},
+				"Rectangle15": {
+					"type": "rectangle",
+					"top": 188,
+					"left": 402,
+					"width": 109,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 4,
+					"width": 190,
+					"height": 45,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 196,
+					"width": 176,
+					"height": 45,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 374,
+					"width": 84,
+					"height": 45,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 460,
+					"width": 111,
+					"height": 45,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 573,
+					"width": 137,
+					"height": 45,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 150,
+					"left": 302,
+					"width": 92,
+					"height": 39,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 193,
+					"left": 302,
+					"width": 92,
+					"height": 39,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 236,
+					"left": 302,
+					"width": 92,
+					"height": 39,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 296,
+					"left": 4,
+					"width": 425,
+					"height": 59,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle12": {
+					"type": "rectangle",
+					"top": 296,
+					"left": 431,
+					"width": 279,
+					"height": 59,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 357,
+					"left": 4,
+					"width": 706,
+					"height": 44,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle14": {
+					"type": "rectangle",
+					"top": 404,
+					"left": 4,
+					"width": 706,
+					"height": 82,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Text12": {
+					"type": "text",
+					"top": 296,
+					"left": 431,
+					"width": 278,
+					"height": 65,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": " Item 107"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 296,
+					"left": 4,
+					"width": 424,
+					"height": 65,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": " Item 43"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 236,
+					"left": 302,
+					"width": 93,
+					"height": 45,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "  Yr REHAB'd"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 193,
+					"left": 302,
+					"width": 93,
+					"height": 45,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "  TEMP[air]"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 150,
+					"left": 302,
+					"width": 93,
+					"height": 45,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "  WEATHER"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 102,
+					"left": 4,
+					"width": 189,
+					"height": 50,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "CITY/TOWN"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 102,
+					"left": 196,
+					"width": 175,
+					"height": 50,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "8-STRUCTURE NO."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 102,
+					"left": 460,
+					"width": 110,
+					"height": 50,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "41-STATUS"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 102,
+					"left": 573,
+					"width": 136,
+					"height": 50,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "93-DAMAGE INSP DATE"
+				},
+				"DE DBIE dropdown": {
+					"type": "dropdown",
+					"top": 159,
+					"left": 8,
+					"width": 269,
+					"height": 24,
+					"dataSource": "aBIE",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE DBIE dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 160,
+					"left": 10,
+					"width": 245,
+					"height": 23,
+					"dataSource": "vBIE",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE Agency dropdown": {
+					"type": "dropdown",
+					"top": 196,
+					"left": 8,
+					"width": 269,
+					"height": 24,
+					"dataSource": "aAgency",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Agency dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 197,
+					"left": 10,
+					"width": 245,
+					"height": 23,
+					"dataSource": "vAgency",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE TeamLdr dropdown": {
+					"type": "dropdown",
+					"top": 233,
+					"left": 8,
+					"width": 269,
+					"height": 24,
+					"dataSource": "aTeamLeader",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE TeamLdr dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 234,
+					"left": 10,
+					"width": 245,
+					"height": 23,
+					"dataSource": "vTmLeader",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE TeamLdr dropdown1": {
+					"type": "dropdown",
+					"top": 271,
+					"left": 8,
+					"width": 269,
+					"height": 24,
+					"dataSource": "TnlInspPrjMgr_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE TeamLdr dropdown1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 272,
+					"left": 10,
+					"width": 245,
+					"height": 23,
+					"dataSource": "vTnlInspProjMgr",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 120,
+					"left": 7,
+					"width": 185,
+					"height": 23,
+					"dataSource": "sTOWN",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 123,
+					"left": 200,
+					"width": 169,
+					"height": 22,
+					"dataSource": "INSP_Item8_s",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE Item41": {
+					"type": "dropdown",
+					"top": 120,
+					"left": 464,
+					"width": 103,
+					"height": 24,
+					"dataSource": "aItem41Des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Item41.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE InspDate1": {
+					"type": "input",
+					"top": 157,
+					"left": 577,
+					"width": 127,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[Inspections:27]Item 90:142",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE InspDate1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE EditTm Button": {
+					"type": "button",
+					"top": 188,
+					"left": 608,
+					"width": 96,
+					"height": 24,
+					"dataSource": "bEditTeam",
+					"text": "Edit Team",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE EditTm Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Weather": {
+					"type": "input",
+					"top": 168,
+					"left": 312,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Inspections:27]Weather:7",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE Weather.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Temperature": {
+					"type": "input",
+					"top": 211,
+					"left": 312,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Inspections:27]TempA:8",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##00",
+					"entryFilter": "&\"0-9;-\"",
+					"min": -50,
+					"max": 140,
+					"method": "ObjectMethods/DE Temperature.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE YearRehabed": {
+					"type": "input",
+					"top": 254,
+					"left": 312,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Inspections:27]YrRehab:158",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"entryFilter": "&9####",
+					"method": "ObjectMethods/DE YearRehabed.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable24": {
+					"type": "listbox",
+					"top": 216,
+					"left": 404,
+					"width": 300,
+					"height": 56,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable24_Column1",
+							"dataSource": "aInspTeam",
+							"width": 285,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 189,
+					"left": 403,
+					"width": 107,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Team Members"
+				},
+				"NonMBTAText": {
+					"type": "text",
+					"top": 147,
+					"left": 10,
+					"width": 152,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "District Bridge Insp. Eng'r"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 221,
+					"left": 10,
+					"width": 80,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Team Leader"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 184,
+					"left": 10,
+					"width": 140,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Inspecting Agency"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 305,
+					"left": 9,
+					"width": 409,
+					"height": 47,
+					"dataSource": "vItem43",
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 305,
+					"left": 436,
+					"width": 272,
+					"height": 47,
+					"dataSource": "vItem107",
+					"stroke": "#009900",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE Get Str Type": {
+					"type": "button",
+					"top": 295,
+					"left": 525,
+					"width": 185,
+					"height": 22,
+					"dataSource": "bGetStrType",
+					"text": "Get Struct Type from SIA",
+					"fontFamily": "Tahoma Negreta",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/DE Get Str Type.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text21": {
+					"type": "text",
+					"top": 159,
+					"left": 420,
+					"width": 152,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "90 INSPECTION DATE :"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 357,
+					"left": 4,
+					"width": 706,
+					"height": 40,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"fontWeight": "bold",
+					"text": " List of Field Tests  Performed"
+				},
+				"DE FieldTests": {
+					"type": "input",
+					"top": 375,
+					"left": 8,
+					"width": 673,
+					"height": 17,
+					"dataSource": "[Inspections:27]FieldTests:104",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE FieldTests.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE DamageCmts_DMC": {
+					"type": "input",
+					"top": 422,
+					"left": 8,
+					"width": 673,
+					"height": 58,
+					"dataSource": "[Inspections:27]DamageCmtsPg1:132",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE DamageCmts_DMC.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Orientation_first": {
+					"type": "radio",
+					"top": 490,
+					"left": 188,
+					"width": 90,
+					"height": 18,
+					"dataSource": "[Inspections:27]OrientationNS:133",
+					"text": "North - South    ",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/DE Orientation.4dm",
+					"radioGroup": "DE Orientation_group",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE Orientation": {
+					"type": "radio",
+					"top": 490,
+					"left": 298,
+					"width": 218,
+					"height": 18,
+					"dataSource": "Not:C34([Inspections:27]OrientationNS:133)",
+					"text": "East - West",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/DE Orientation.4dm",
+					"radioGroup": "DE Orientation_group",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 489,
+					"left": 4,
+					"width": 706,
+					"height": 19,
+					"class": "Label14Bold",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"text": " Bridge Orientation"
+				},
+				"Text49_DMC": {
+					"type": "text",
+					"top": 404,
+					"left": 4,
+					"width": 706,
+					"height": 76,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"fontWeight": "bold",
+					"text": " Damage Comments"
+				},
+				"INSP_KiloPtLblInp_txt1": {
+					"type": "input",
+					"top": 103,
+					"left": 375,
+					"width": 83,
+					"height": 42,
+					"dataSource": "INSP_KiloPtLblInp_txt",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onDataChange"
+					]
+				},
+				"INSP_KiloPtVal_r": {
+					"type": "input",
+					"top": 123,
+					"left": 384,
+					"width": 63,
+					"height": 17,
+					"dataSource": "INSP_KiloPtVal_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000.000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MBTAText": {
+					"type": "text",
+					"top": 148,
+					"left": 10,
+					"width": 152,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "MBTA QC Engineer"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 258,
+					"left": 11,
+					"width": 99,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Project Manager"
+				},
+				"DE InspDate": {
+					"type": "input",
+					"top": 123,
+					"left": 577,
+					"width": 127,
+					"height": 17,
+					"defaultValue": "#D",
+					"dataSource": "[Inspections:27]Insp Date:78",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE InspDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"DE DBIE dropdown",
+				"Variable6",
+				"DE Agency dropdown",
+				"Variable4",
+				"DE TeamLdr dropdown",
+				"Variable2",
+				"DE TeamLdr dropdown1",
+				"Variable1",
+				"Field5",
+				"Field6",
+				"DE Item41",
+				"DE InspDate1",
+				"DE EditTm Button",
+				"DE Weather",
+				"DE Temperature",
+				"DE YearRehabed",
+				"Variable24",
+				"Field1",
+				"Field2",
+				"DE Get Str Type",
+				"DE FieldTests",
+				"DE DamageCmts_DMC",
+				"DE Orientation",
+				"INSP_KiloPtLblInp_txt1",
+				"INSP_KiloPtVal_r",
+				"DE InspDate"
+			]
+		},
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"top": 104,
+					"left": 8,
+					"width": 700,
+					"height": 180,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": " Weight Posting"
+				},
+				"Rectangle16": {
+					"type": "rectangle",
+					"top": 272,
+					"left": 406,
+					"width": 302,
+					"height": 100,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle17": {
+					"type": "rectangle",
+					"top": 272,
+					"left": 8,
+					"width": 393,
+					"height": 230,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"WTPostingArea": {
+					"type": "rectangle",
+					"top": 104,
+					"left": 8,
+					"width": 700,
+					"height": 163,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Text76": {
+					"type": "text",
+					"top": 272,
+					"left": 8,
+					"width": 393,
+					"height": 254,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": " Clearance Posting"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 272,
+					"left": 406,
+					"width": 302,
+					"height": 109,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": " Existing Media"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 147,
+					"left": 171,
+					"width": 147,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Actual Posting"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 169,
+					"left": 171,
+					"width": 148,
+					"height": 33,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Recommended Posting from Rating Book"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 213,
+					"left": 170,
+					"width": 123,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Waived Date:"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 213,
+					"left": 283,
+					"width": 109,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "EJDMT Date:"
+				},
+				"DE WtPost Chkbox": {
+					"type": "checkbox",
+					"top": 150,
+					"left": 14,
+					"width": 145,
+					"height": 21,
+					"dataSource": "CBWeightPos",
+					"text": "Not Applicable",
+					"class": "Geneva14",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE WtPost Chkbox.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE WtActPost H": {
+					"type": "input",
+					"top": 149,
+					"left": 320,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]ActualPostH:26",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE WtActPost H.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtActPost 3": {
+					"type": "input",
+					"top": 149,
+					"left": 350,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]ActualPost3:27",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE WtActPost 3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtActPost 3S2": {
+					"type": "input",
+					"top": 149,
+					"left": 381,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]ActualPost3S2:28",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE WtActPost 3S2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtActPost Single": {
+					"type": "input",
+					"top": 149,
+					"left": 432,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[Inspections:27]ActualPostSgl:29",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE WtActPost Single.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE RecPost H": {
+					"type": "input",
+					"top": 177,
+					"left": 320,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]RecomPostingH:31",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE RecPost H.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE RecPost 3": {
+					"type": "input",
+					"top": 177,
+					"left": 350,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]RecomPosting3:32",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE RecPost 3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE RecPost 3S2": {
+					"type": "input",
+					"top": 177,
+					"left": 381,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]RecomPosting3S2:33",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE RecPost 3S2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE RecPost Single": {
+					"type": "input",
+					"top": 177,
+					"left": 432,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[Inspections:27]RecomPostingSgl:34",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0;#0;N",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE RecPost Single.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text90": {
+					"type": "text",
+					"top": 144,
+					"left": 475,
+					"width": 100,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Signs In Place"
+				},
+				"Text91": {
+					"type": "text",
+					"top": 167,
+					"left": 475,
+					"width": 100,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Legibility"
+				},
+				"Text92": {
+					"type": "text",
+					"top": 189,
+					"left": 475,
+					"width": 100,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Visibility"
+				},
+				"Text93": {
+					"type": "text",
+					"top": 110,
+					"left": 577,
+					"width": 60,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "At bridge"
+				},
+				"Text94": {
+					"type": "text",
+					"top": 110,
+					"left": 648,
+					"width": 55,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Advance"
+				},
+				"DE WtBrPostSignsN chkbox": {
+					"type": "input",
+					"top": 141,
+					"left": 578,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrPostSignsNE:37",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE WtBrPostSignsN chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtBrPostLegibN": {
+					"type": "input",
+					"top": 165,
+					"left": 584,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrPostNELeg:41",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtBrPostLegibN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtBrPostVisN": {
+					"type": "input",
+					"top": 188,
+					"left": 584,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrPostNEVis:42",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtBrPostVisN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtBrPostSignsS chkbox": {
+					"type": "input",
+					"top": 141,
+					"left": 610,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrPostSignsSW:38",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE WtBrPostSignsS chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtBrPostLegibS": {
+					"type": "input",
+					"top": 165,
+					"left": 616,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrPostSWLeg:43",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtBrPostLegibS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtBrPostVisS": {
+					"type": "input",
+					"top": 188,
+					"left": 616,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrPostSWVis:44",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtBrPostVisS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtAdPostSignsN chkbox": {
+					"type": "input",
+					"top": 141,
+					"left": 648,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdPostSignNE:39",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE WtAdPostSignsN chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtAdPostLegibN": {
+					"type": "input",
+					"top": 165,
+					"left": 654,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdPostNELeg:45",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtAdPostLegibN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtAdPostVisN": {
+					"type": "input",
+					"top": 188,
+					"left": 654,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdPostNEVis:46",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtAdPostVisN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtAdPostSignsS chkbox": {
+					"type": "input",
+					"top": 141,
+					"left": 681,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdPostSignSW:40",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE WtAdPostSignsS chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtAdPostLegibS": {
+					"type": "input",
+					"top": 165,
+					"left": 687,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdPostSWLeg:47",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtAdPostLegibS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE WtAdPostVisS": {
+					"type": "input",
+					"top": 188,
+					"left": 687,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdPostSWVis:48",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0;0;N",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE WtAdPostVisS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"North-East": {
+					"type": "input",
+					"top": 126,
+					"left": 578,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsNorthEast",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"South-West": {
+					"type": "input",
+					"top": 126,
+					"left": 681,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsSouthWest",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"North-East1": {
+					"type": "input",
+					"top": 126,
+					"left": 646,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsNorthEast",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"South-West1": {
+					"type": "input",
+					"top": 126,
+					"left": 610,
+					"width": 26,
+					"height": 17,
+					"dataSource": "vsSouthWest",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE WaivedDate": {
+					"type": "input",
+					"top": 232,
+					"left": 171,
+					"width": 99,
+					"height": 17,
+					"dataSource": "[Inspections:27]WaivedDate:35",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE WaivedDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE EDJMT Date": {
+					"type": "input",
+					"top": 232,
+					"left": 285,
+					"width": 99,
+					"height": 17,
+					"dataSource": "[Inspections:27]EDJMT Date:36",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE EDJMT Date.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectangle44": {
+					"type": "rectangle",
+					"top": 299,
+					"left": 299,
+					"width": 66,
+					"height": 75,
+					"fill": "transparent"
+				},
+				"Rectangle45": {
+					"type": "rectangle",
+					"top": 299,
+					"left": 231,
+					"width": 66,
+					"height": 75,
+					"fill": "transparent"
+				},
+				"Text67": {
+					"type": "text",
+					"top": 423,
+					"left": 37,
+					"width": 106,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Signs In Place"
+				},
+				"Text68": {
+					"type": "text",
+					"top": 446,
+					"left": 37,
+					"width": 76,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Legibility"
+				},
+				"Text69": {
+					"type": "text",
+					"top": 468,
+					"left": 37,
+					"width": 77,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Visibility"
+				},
+				"Text70": {
+					"type": "text",
+					"top": 389,
+					"left": 180,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "At bridge"
+				},
+				"Text71": {
+					"type": "text",
+					"top": 389,
+					"left": 315,
+					"width": 56,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Advance"
+				},
+				"Text77": {
+					"type": "text",
+					"top": 324,
+					"left": 37,
+					"width": 178,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Actual Field Measurement"
+				},
+				"Text78": {
+					"type": "text",
+					"top": 353,
+					"left": 37,
+					"width": 118,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Posted Clearance"
+				},
+				"Text79": {
+					"type": "text",
+					"top": 303,
+					"left": 242,
+					"width": 18,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "ft"
+				},
+				"Text80": {
+					"type": "text",
+					"top": 303,
+					"left": 269,
+					"width": 20,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "in"
+				},
+				"DE ClrPost chkbox": {
+					"type": "checkbox",
+					"top": 290,
+					"left": 37,
+					"width": 145,
+					"height": 22,
+					"dataSource": "CBClrPost",
+					"text": "Not Applicable",
+					"class": "Geneva14",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE ClrPost chkbox.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE ActFTN": {
+					"type": "input",
+					"top": 320,
+					"left": 239,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[Inspections:27]NEClrFldFT:50",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE ActFTN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ActINN": {
+					"type": "input",
+					"top": 320,
+					"left": 267,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]NEClrFldIN:51",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"max": 11,
+					"method": "ObjectMethods/DE ActINN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ActFTS": {
+					"type": "input",
+					"top": 320,
+					"left": 306,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]SWClrFldFT:160",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE ActFTS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ActINS": {
+					"type": "input",
+					"top": 320,
+					"left": 335,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[Inspections:27]SWClrFldIN:161",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"max": 11,
+					"method": "ObjectMethods/DE ActINS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrPostFTN": {
+					"type": "input",
+					"top": 349,
+					"left": 239,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[Inspections:27]NEClrPostedFT:52",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE ClrPostFTN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrPostInN": {
+					"type": "input",
+					"top": 349,
+					"left": 267,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]NEClrPostedIN:53",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"max": 11,
+					"method": "ObjectMethods/DE ClrPostInN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrPostFTS": {
+					"type": "input",
+					"top": 349,
+					"left": 306,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Inspections:27]SWClrPostedFT:162",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE ClrPostFTS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrPostInS": {
+					"type": "input",
+					"top": 349,
+					"left": 335,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[Inspections:27]SWClrPostedIN:163",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#0",
+					"entryFilter": "&9##",
+					"max": 11,
+					"method": "ObjectMethods/DE ClrPostInS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignBrN chkbox": {
+					"type": "input",
+					"top": 419,
+					"left": 169,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrClrSignsNE:54",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE ClrSignBrN chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignLegBrN": {
+					"type": "input",
+					"top": 442,
+					"left": 175,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrClrSignNELeg:58",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignLegBrN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignVisBrN": {
+					"type": "input",
+					"top": 466,
+					"left": 175,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrClrSignNEVis:59",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignVisBrN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignBrS chkbox": {
+					"type": "input",
+					"top": 419,
+					"left": 228,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrClrSignsSW:55",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE ClrSignBrS chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignLegBrS": {
+					"type": "input",
+					"top": 442,
+					"left": 234,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrClrSignSWLeg:60",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignLegBrS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignVisBrS": {
+					"type": "input",
+					"top": 466,
+					"left": 234,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]BrClrSignSWVis:61",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignVisBrS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignAdN chkbox": {
+					"type": "input",
+					"top": 419,
+					"left": 297,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdClrSignNE:56",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE ClrSignAdN chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignLegAdN": {
+					"type": "input",
+					"top": 442,
+					"left": 303,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdClrSignNELeg:62",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignLegAdN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignVisAdN": {
+					"type": "input",
+					"top": 466,
+					"left": 303,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdClrSignNEVis:63",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignVisAdN.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignAdS chkbox": {
+					"type": "input",
+					"top": 419,
+					"left": 356,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdClrSignSW:57",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;NR\"",
+					"method": "ObjectMethods/DE ClrSignAdS chkbox.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignLegAdS": {
+					"type": "input",
+					"top": 442,
+					"left": 362,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdClrSignSWLeg:64",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignLegAdS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ClrSignVisAdS": {
+					"type": "input",
+					"top": 466,
+					"left": 362,
+					"width": 12,
+					"height": 17,
+					"dataSource": "[Inspections:27]AdClrSignSWVis:65",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE ClrSignVisAdS.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text104": {
+					"type": "text",
+					"top": 372,
+					"left": 37,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Min Field Clr (M)"
+				},
+				"Field87": {
+					"type": "input",
+					"top": 386,
+					"left": 71,
+					"width": 46,
+					"height": 17,
+					"dataSource": "[Inspections:27]ClrMinM:164",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "00.00",
+					"entryFilter": "&9##.##",
+					"max": 11,
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"North-East2": {
+					"type": "input",
+					"top": 283,
+					"left": 252,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsNESideWlk",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"South-West2": {
+					"type": "input",
+					"top": 283,
+					"left": 319,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsSWSideWlk",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"North-East3": {
+					"type": "input",
+					"top": 405,
+					"left": 169,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsNESideWlk",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"North-East4": {
+					"type": "input",
+					"top": 405,
+					"left": 297,
+					"width": 26,
+					"height": 17,
+					"dataSource": "vsNESideWlk",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"South-West3": {
+					"type": "input",
+					"top": 405,
+					"left": 356,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsSWSideWlk",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"South-West4": {
+					"type": "input",
+					"top": 405,
+					"left": 228,
+					"width": 25,
+					"height": 17,
+					"dataSource": "vsSWSideWlk",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text40": {
+					"type": "text",
+					"top": 332,
+					"left": 490,
+					"width": 65,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Tape #"
+				},
+				"DE Plans": {
+					"type": "checkbox",
+					"top": 303,
+					"left": 425,
+					"width": 74,
+					"height": 18,
+					"dataSource": "[Inspections:27]Plans:69",
+					"text": "Plans",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Plans.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE VCR": {
+					"type": "checkbox",
+					"top": 332,
+					"left": 425,
+					"width": 58,
+					"height": 18,
+					"dataSource": "[Inspections:27]VCR:70",
+					"text": "VCR",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE VCR.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE VCR Tape No": {
+					"type": "input",
+					"top": 332,
+					"left": 557,
+					"width": 50,
+					"height": 17,
+					"dataSource": "[Inspections:27]VCR Tape No:71",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#####",
+					"entryFilter": "~\"A-Z;0-9; ;,;.;-\"#####",
+					"method": "ObjectMethods/DE VCR Tape No.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 303,
+					"left": 309,
+					"width": 18,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "ft"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 303,
+					"left": 336,
+					"width": 20,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "in"
+				},
+				"WP_3S2_s": {
+					"type": "input",
+					"top": 134,
+					"left": 381,
+					"width": 23,
+					"height": 18,
+					"dataSource": "WP_3S2_s",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"WP_H_s": {
+					"type": "input",
+					"top": 134,
+					"left": 320,
+					"width": 23,
+					"height": 18,
+					"dataSource": "WP_H_s",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WP_3_s": {
+					"type": "input",
+					"top": 134,
+					"left": 350,
+					"width": 23,
+					"height": 18,
+					"dataSource": "WP_3_s",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WP_Single_s": {
+					"type": "input",
+					"top": 134,
+					"left": 420,
+					"width": 50,
+					"height": 17,
+					"dataSource": "WP_Single_s",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE FieldWorkComplete1": {
+					"type": "text",
+					"top": 394,
+					"left": 425,
+					"width": 146,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "right",
+					"text": "Field Work Complete : "
+				},
+				"DE FieldWorkComplete": {
+					"type": "input",
+					"top": 394,
+					"left": 581,
+					"width": 99,
+					"height": 17,
+					"dataSource": "[Inspections:27]InspFldWorkComplDate:224",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE FieldWorkComplete.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListOfElements": {
+					"type": "subform",
+					"top": 102,
+					"left": 32,
+					"width": 680,
+					"height": 407,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 29,
+					"detailForm": "ElementSafetyCM_SUB",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/ListOfElements.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text39": {
+					"type": "text",
+					"top": 281,
+					"left": 8,
+					"width": 702,
+					"height": 160,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"text": "  Rating"
+				},
+				"Rect_Rev4": {
+					"type": "rectangle",
+					"top": 284,
+					"left": 498,
+					"width": 207,
+					"height": 138,
+					"fill": "transparent",
+					"strokeDashArray": "1 1"
+				},
+				"Text65": {
+					"type": "text",
+					"top": 106,
+					"left": 15,
+					"width": 77,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Damage"
+				},
+				"Text66": {
+					"type": "text",
+					"top": 131,
+					"left": 37,
+					"width": 44,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Cause:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 199,
+					"left": 30,
+					"width": 116,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "right",
+					"text": "Date of damage:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 228,
+					"left": 120,
+					"width": 26,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "right",
+					"text": "By:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 256,
+					"left": 30,
+					"width": 116,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "right",
+					"text": "Reimbursable No:"
+				},
+				"DE CauDamage": {
+					"type": "input",
+					"top": 131,
+					"left": 85,
+					"width": 597,
+					"height": 57,
+					"dataSource": "[Inspections:27]CauDamage:146",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE CauDamage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE D_Damage": {
+					"type": "input",
+					"top": 196,
+					"left": 151,
+					"width": 103,
+					"height": 17,
+					"dataSource": "[Inspections:27]D_Damage:147",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE D_Damage.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE AccidentRep": {
+					"type": "checkbox",
+					"top": 197,
+					"left": 272,
+					"width": 178,
+					"height": 18,
+					"dataSource": "[Inspections:27]AccidentRep:149",
+					"text": "Accident Report",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE AccidentRep.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE DamageBy": {
+					"type": "input",
+					"top": 224,
+					"left": 151,
+					"width": 287,
+					"height": 17,
+					"dataSource": "[Inspections:27]DamageBy:148",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE DamageBy.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ReimburseNo": {
+					"type": "input",
+					"top": 252,
+					"left": 151,
+					"width": 287,
+					"height": 17,
+					"dataSource": "[Inspections:27]ReimburseNo:150",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE ReimburseNo.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Get Rating Values": {
+					"type": "button",
+					"top": 281,
+					"left": 374,
+					"width": 123,
+					"height": 22,
+					"dataSource": "bGetRatings",
+					"text": "Get Rating Values",
+					"class": "Label10Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/DE Get Rating Values.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE RatReport chkbox": {
+					"type": "checkbox",
+					"top": 289,
+					"left": 81,
+					"width": 120,
+					"height": 20,
+					"dataSource": "[Inspections:27]Rating Report:73",
+					"text": "Rating Report",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE RatReport chkbox.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE RatingDate ": {
+					"type": "input",
+					"top": 290,
+					"left": 261,
+					"width": 103,
+					"height": 17,
+					"dataSource": "[Inspections:27]Rating Date:74",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE RatingDate .4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE RatingRequest chkbox": {
+					"type": "checkbox",
+					"top": 316,
+					"left": 28,
+					"width": 276,
+					"height": 20,
+					"dataSource": "[Inspections:27]Rerating:75",
+					"text": "Recommend for Rating or Re-rating",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE RatingRequest chkbox.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE RatingReqReason": {
+					"type": "input",
+					"top": 347,
+					"left": 84,
+					"width": 401,
+					"height": 44,
+					"dataSource": "[Inspections:27]RatingTxt:76",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE RatingReqReason.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE RatPrio Hi": {
+					"type": "radio",
+					"top": 396,
+					"left": 144,
+					"width": 88,
+					"height": 24,
+					"dataSource": "x1",
+					"text": "High",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"radioGroup": "Group10",
+					"method": "ObjectMethods/DE RatPrio Hi.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE RatPrio Med": {
+					"type": "radio",
+					"top": 396,
+					"left": 237,
+					"width": 89,
+					"height": 24,
+					"dataSource": "x2",
+					"text": "Medium",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"radioGroup": "Group10",
+					"method": "ObjectMethods/DE RatPrio Med.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE RatPrio Low": {
+					"type": "radio",
+					"top": 396,
+					"left": 331,
+					"width": 89,
+					"height": 24,
+					"dataSource": "x3",
+					"text": "Low",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"radioGroup": "Group10",
+					"method": "ObjectMethods/DE RatPrio Low.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Item58Rtg_Rev4": {
+					"type": "input",
+					"top": 312,
+					"left": 686,
+					"width": 14,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item58_r:210",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/DE Item58Rtg_Rev4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item59Rtg_Rev4": {
+					"type": "input",
+					"top": 334,
+					"left": 686,
+					"width": 14,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item59_r:211",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/DE Item59Rtg_Rev4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item60Rtg_Rev4": {
+					"type": "input",
+					"top": 356,
+					"left": 686,
+					"width": 14,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item60_r:212",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/DE Item60Rtg_Rev4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item62Rtg_Rev4": {
+					"type": "input",
+					"top": 378,
+					"left": 686,
+					"width": 14,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item62_r:213",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/DE Item62Rtg_Rev4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE InspDRtg_Rev4": {
+					"type": "input",
+					"top": 400,
+					"left": 605,
+					"width": 95,
+					"height": 17,
+					"dataSource": "[Inspections:27]InspDate_r:214",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE InspDRtg_Rev4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item58i": {
+					"type": "input",
+					"top": 464,
+					"left": 495,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item58_i:151",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item58i.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item59_i": {
+					"type": "input",
+					"top": 464,
+					"left": 555,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item59_i:143",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item59_i.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item60_i": {
+					"type": "input",
+					"top": 464,
+					"left": 615,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item60_i:144",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item60_i.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item62_i": {
+					"type": "input",
+					"top": 464,
+					"left": 676,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item62_i:174",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item62_i.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item58": {
+					"type": "input",
+					"top": 487,
+					"left": 495,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item 58:79",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item58.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item 59": {
+					"type": "input",
+					"top": 487,
+					"left": 555,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item 59:80",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item 59.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item 60": {
+					"type": "input",
+					"top": 487,
+					"left": 615,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item 60:81",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item 60.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item62": {
+					"type": "input",
+					"top": 487,
+					"left": 676,
+					"width": 15,
+					"height": 17,
+					"dataSource": "[Inspections:27]Item 62:113",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9#",
+					"method": "ObjectMethods/DE Item62.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text36": {
+					"type": "text",
+					"top": 292,
+					"left": 222,
+					"width": 37,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Date:"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 348,
+					"left": 27,
+					"width": 53,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Reason:"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 401,
+					"left": 27,
+					"width": 117,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"text": "Rating Priority"
+				},
+				"lbl_Item58": {
+					"type": "text",
+					"top": 442,
+					"left": 486,
+					"width": 36,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "I-58"
+				},
+				"lblPreviousCondition": {
+					"type": "text",
+					"top": 466,
+					"left": 282,
+					"width": 204,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Overall Previous Condition"
+				},
+				"lblCurrentCondition": {
+					"type": "text",
+					"top": 488,
+					"left": 282,
+					"width": 204,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Overall Current Condition"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 442,
+					"left": 546,
+					"width": 36,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "I-59"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 442,
+					"left": 606,
+					"width": 36,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "I-60"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 442,
+					"left": 667,
+					"width": 36,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "I-62"
+				},
+				"Label_Rev4": {
+					"type": "text",
+					"top": 283,
+					"left": 500,
+					"width": 204,
+					"height": 32,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Inspection data at time of existing rating"
+				},
+				"Label2_Rev4": {
+					"type": "text",
+					"top": 315,
+					"left": 502,
+					"width": 56,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Item 58"
+				},
+				"Label5_Rev4": {
+					"type": "text",
+					"top": 403,
+					"left": 502,
+					"width": 106,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Inspection Date"
+				},
+				"Label3_Rev4": {
+					"type": "text",
+					"top": 337,
+					"left": 502,
+					"width": 56,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Item 59"
+				},
+				"Label4_Rev4": {
+					"type": "text",
+					"top": 359,
+					"left": 502,
+					"width": 56,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Item 60"
+				},
+				"Label7_Rev4": {
+					"type": "text",
+					"top": 381,
+					"left": 502,
+					"width": 56,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Item 62"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable34": {
+					"type": "button",
+					"top": 487,
+					"left": 630,
+					"width": 76,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bInfo",
+					"text": "Info",
+					"class": "Label14Bold",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable34.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Show On first page": {
+					"type": "input",
+					"top": 496,
+					"left": 9,
+					"width": 277,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "vsOnPageOne",
+					"class": "Helvetica9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE View All Cmts1": {
+					"type": "button",
+					"top": 487,
+					"left": 289,
+					"width": 216,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bViewAllCmts",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "View All Comments",
+					"popupPlacement": "separated",
+					"style": "bevel",
+					"method": "ObjectMethods/DE View All Cmts1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"SpaceHolderButton_OR": {
+					"type": "button",
+					"top": 133,
+					"left": 722,
+					"width": 5,
+					"height": 95,
+					"sizingX": "move",
+					"dataSource": "Button1",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SpaceHolderButton1": {
+					"type": "button",
+					"top": 386,
+					"left": 722,
+					"width": 5,
+					"height": 105,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button2",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text9_GR1": {
+					"type": "text",
+					"top": 302,
+					"left": 9,
+					"width": 16,
+					"height": 189,
+					"sizingY": "grow",
+					"class": "Arial14Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textAngle": 270,
+					"text": "General Remarks"
+				},
+				"DE GenRemarks_WP": {
+					"type": "write",
+					"top": 300,
+					"left": 29,
+					"width": 690,
+					"height": 181,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/DE GenRemarks_WP.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"Text9_OR1": {
+					"type": "text",
+					"top": 149,
+					"left": 9,
+					"width": 16,
+					"height": 146,
+					"sizingY": "grow",
+					"class": "Arial14Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textAngle": 270,
+					"text": "Orientation"
+				},
+				"DE Orientation_WP": {
+					"type": "write",
+					"top": 143,
+					"left": 29,
+					"width": 690,
+					"height": 144,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/DE Orientation_WP.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"WPToolbar": {
+					"type": "subform",
+					"top": 109,
+					"left": 29,
+					"width": 691,
+					"height": 28,
+					"dataSourceTypeHint": "undefined",
+					"detailForm": "WPToolbar",
+					"focusable": false,
+					"hideFocusRing": true,
+					"enterableInList": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Splitter_Pg5_OR": {
+					"type": "splitter",
+					"top": 293,
+					"left": 2,
+					"width": 730,
+					"height": 3,
+					"sizingX": "grow",
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable34",
+				"Show On first page",
+				"DE GenRemarks_WP",
+				"DE Orientation_WP",
+				"WPToolbar",
+				"Splitter_Pg5_OR"
+			]
+		},
+		{
+			"objects": {
+				"ListOfImages": {
+					"type": "subform",
+					"top": 105,
+					"left": 25,
+					"width": 687,
+					"height": 390,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 36,
+					"detailForm": "LBStdPhotos",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text8": {
+					"type": "text",
+					"top": 107,
+					"left": 210,
+					"width": 277,
+					"height": 18,
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Review Comments"
+				},
+				"Variable15": {
+					"type": "button",
+					"top": 108,
+					"left": 649,
+					"width": 33,
+					"height": 33,
+					"sizingX": "move",
+					"dataSource": "bPrintReviewCmts",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button BMS Form Lg Print Rec 32.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 157,
+					"left": 12,
+					"width": 673,
+					"height": 150,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Inspections:27]InspRevCmts:170",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NonMBTAText1": {
+					"type": "text",
+					"top": 139,
+					"left": 12,
+					"width": 215,
+					"height": 16,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "DBIE Comments"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 349,
+					"left": 12,
+					"width": 673,
+					"height": 150,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Inspections:27]InspApprCmts:169",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NonMBTAText2": {
+					"type": "text",
+					"top": 331,
+					"left": 12,
+					"width": 215,
+					"height": 16,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Area Engineer Comments"
+				},
+				"DE ReplyDBIE": {
+					"type": "button",
+					"top": 129,
+					"left": 231,
+					"width": 233,
+					"height": 24,
+					"dataSource": "vbReplyDBIE",
+					"text": "Enter Reply",
+					"class": "Label14Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/DE ReplyDBIE.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Reply Area": {
+					"type": "button",
+					"top": 322,
+					"left": 231,
+					"width": 233,
+					"height": 24,
+					"dataSource": "vbReplyArea",
+					"text": "Enter Reply",
+					"class": "Label14Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/DE Reply Area.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter_Pg8": {
+					"type": "splitter",
+					"top": 315,
+					"left": 2,
+					"width": 712,
+					"height": 3,
+					"sizingX": "grow",
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SpaceHolderButton2": {
+					"type": "button",
+					"top": 129,
+					"left": 704,
+					"width": 5,
+					"height": 95,
+					"sizingX": "move",
+					"dataSource": "Button1",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SpaceHolderButton3": {
+					"type": "button",
+					"top": 394,
+					"left": 704,
+					"width": 5,
+					"height": 105,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button2",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"MBTAText3": {
+					"type": "text",
+					"top": 139,
+					"left": 12,
+					"width": 215,
+					"height": 16,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "QC Engineer Comments"
+				},
+				"MBTAText22": {
+					"type": "text",
+					"top": 331,
+					"left": 12,
+					"width": 215,
+					"height": 16,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "QA Engineer Comments"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 132,
+					"left": 54,
+					"width": 618,
+					"height": 324,
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "Boston Office Use Only"
+				},
+				"Dam Boston Fwd To": {
+					"type": "input",
+					"top": 186,
+					"left": 218,
+					"width": 253,
+					"height": 17,
+					"dataSource": "[Inspections:27]Dam_Boston_Office_Fwd:185",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Dam Boston Fwd To.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Dam Boston Date": {
+					"type": "input",
+					"top": 223,
+					"left": 218,
+					"width": 103,
+					"height": 17,
+					"dataSource": "[Inspections:27]Dam_Boston_Office_Date:184",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Dam Boston Date.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text51": {
+					"type": "text",
+					"top": 225,
+					"left": 90,
+					"width": 126,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Completion Date: "
+				},
+				"Text28": {
+					"type": "text",
+					"top": 187,
+					"left": 90,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Copy Forwarded To: "
+				},
+				"Dam Boston Remarks": {
+					"type": "input",
+					"top": 261,
+					"left": 218,
+					"width": 396,
+					"height": 150,
+					"dataSource": "[Inspections:27]Dam_Boston_Office_Remarks:186",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Dam Boston Remarks.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text29": {
+					"type": "text",
+					"top": 263,
+					"left": 90,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Remarks: "
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group10": [
+				"DE RatPrio Hi",
+				"DE RatPrio Med",
+				"DE RatPrio Low"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"ListOfElements",
+					"ListOfImages"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

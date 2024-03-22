@@ -1,0 +1,517 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"CombinedBMSButton": {
+					"type": "button",
+					"top": 127,
+					"left": 170,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOpenBMS",
+					"text": "Open BMS",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/CombinedBMSButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OpenInspButton": {
+					"type": "button",
+					"top": 127,
+					"left": 51,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOpenInsp",
+					"text": "Open NBIS",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/OpenInspButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 46,
+					"left": 15,
+					"width": 58,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "BIN"
+				},
+				"BIN": {
+					"type": "input",
+					"top": 46,
+					"left": 141,
+					"width": 31,
+					"height": 17,
+					"dataSource": "[Combined Inspections:90]BIN:1",
+					"stroke": "#000099",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text20": {
+					"type": "text",
+					"top": 70,
+					"left": 15,
+					"width": 98,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Inspection Date"
+				},
+				"InspDate": {
+					"type": "input",
+					"top": 70,
+					"left": 141,
+					"width": 108,
+					"height": 17,
+					"dataSource": "[Combined Inspections:90]InspDate:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000099",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 91,
+					"left": 15,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Safety Inspection Type"
+				},
+				"InspType": {
+					"type": "input",
+					"top": 91,
+					"left": 141,
+					"width": 168,
+					"height": 17,
+					"dataSource": "[Inspection Type:31]Description:2",
+					"stroke": "#000099",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 14,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ1",
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 64,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ2",
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 114,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ3",
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 164,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ4",
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 214,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ8",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 265,
+					"width": 48,
+					"height": 48,
+					"dataSource": "ZZ9",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 29,
+					"width": 195,
+					"height": 23,
+					"class": "Label18Bold",
+					"text": "Combined Inspections"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 193,
+					"left": 19,
+					"width": 120,
+					"height": 16,
+					"dataSource": "[Combined Inspections:90]NBISInspID:2",
+					"dataSourceTypeHint": "integer",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 193,
+					"left": 193,
+					"width": 120,
+					"height": 16,
+					"dataSource": "[Combined Inspections:90]BMSInspID:3",
+					"dataSourceTypeHint": "integer",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Pop-up/Drop-down List1": {
+					"type": "dropdown",
+					"top": 192,
+					"left": 147,
+					"width": 23,
+					"height": 21,
+					"dataSource": "aNBI_descr",
+					"focusable": false,
+					"class": "Label10Plain",
+					"method": "ObjectMethods/Pop-up%2FDrop-down List1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Pop-up/Drop-down List2": {
+					"type": "dropdown",
+					"top": 192,
+					"left": 327,
+					"width": 23,
+					"height": 21,
+					"dataSource": "aBMS_descr",
+					"focusable": false,
+					"class": "Label10Plain",
+					"method": "ObjectMethods/Pop-up%2FDrop-down List2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"3D Button1": {
+					"type": "checkbox",
+					"top": 164,
+					"left": 110,
+					"width": 121,
+					"height": 15,
+					"dataSource": "vSetEnterable",
+					"text": "Allow entry to IDs",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/3D Button1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Delete Button1": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 316,
+					"width": 48,
+					"height": 48,
+					"dataSource": "CombDelButton",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Delete Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 46,
+					"left": 285,
+					"width": 28,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "ID"
+				},
+				"BIN1": {
+					"type": "input",
+					"top": 46,
+					"left": 321,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Combined Inspections:90]ID:6",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000099",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SetToNoBMS": {
+					"type": "button",
+					"top": 185,
+					"left": 360,
+					"width": 138,
+					"height": 33,
+					"dataSource": "SetToNoBMS",
+					"text": "Set BMS ID to -1",
+					"class": "List12Plain",
+					"method": "ObjectMethods/SetToNoBMS.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

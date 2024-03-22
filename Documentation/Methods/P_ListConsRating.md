@@ -1,0 +1,1 @@
+Create June-2003 : Brings up "View Cslt Rating" form. This method is called by "M_ListConsRating"    24-Sep-2003 : Added call to Menu BAR(4) for a utilities menu.    11-4-2003:  Changed the NewWindow width from 720 to 775.    2004-04-21 : Increased the NewWindow height to 550 from 450.  Added SET WINDOW RECT code.

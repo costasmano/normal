@@ -1,0 +1,1282 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 527,
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerBody": 530,
+	"markerBreak": 530,
+	"markerFooter": 530,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture14": {
+					"type": "picture",
+					"top": -2,
+					"left": 0,
+					"width": 730,
+					"height": 44,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarBlue.png"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 1,
+					"left": 0,
+					"width": 730,
+					"height": 34,
+					"stroke": "#FFFF00",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Select Town or Enter BDEPT:"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 48,
+					"left": 330,
+					"width": 60,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 45,
+					"left": 326,
+					"width": 61,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"Save": {
+					"type": "button",
+					"top": 53,
+					"left": 336,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ8",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"shortcutKey": "[Enter]",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 saverecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Save.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 53,
+					"left": 359,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Tab Control1": {
+					"type": "tab",
+					"top": 87,
+					"left": 0,
+					"width": 730,
+					"height": 440,
+					"dataSource": "Tab Control1",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"MassDOT Items",
+						"Bridge Key - Agency Items"
+					],
+					"class": "DataEntry14Plain",
+					"action": "gotoPage",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text19": {
+					"type": "groupBox",
+					"top": 119,
+					"left": 200,
+					"width": 512,
+					"height": 128,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Structure Number (Item 8)"
+				},
+				"Variable18": {
+					"type": "listbox",
+					"top": 139,
+					"left": 5,
+					"width": 180,
+					"height": 134,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"hideExtraBlankRows": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "transparent",
+					"class": "Geneva12",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onMouseEnter"
+					],
+					"columns": [
+						{
+							"name": "Variable18_Column1",
+							"dataSource": "aTownName_",
+							"width": 165,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Geneva12",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva12"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva12"
+							}
+						}
+					]
+				},
+				"Combo Box1": {
+					"type": "dropdown",
+					"top": 146,
+					"left": 298,
+					"width": 406,
+					"height": 22,
+					"dataSource": "aIt8OwnerDes_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Combo Box1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "dropdown",
+					"top": 183,
+					"left": 330,
+					"width": 374,
+					"height": 22,
+					"dataSource": "aIt8BrCatDes_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 252,
+					"left": 195,
+					"width": 162,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "bGetRef",
+					"text": "Get a Ref Bridge",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 259,
+					"left": 436,
+					"width": 126,
+					"height": 19,
+					"dataSource": "ReplacementBin_l",
+					"text": "Replacement Bin",
+					"class": "DataEntry12APlain",
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 259,
+					"left": 575,
+					"width": 146,
+					"height": 19,
+					"dataSource": "NonReplacementBin_l",
+					"text": "New Bridge structure",
+					"class": "DataEntry12APlain",
+					"method": "ObjectMethods/Check Box2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 286,
+					"left": 69,
+					"width": 113,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BDept"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "dropdown",
+					"top": 286,
+					"left": 189,
+					"width": 234,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "RefBINSelector_atxt",
+					"class": "Label10Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Replacementbdept2": {
+					"type": "input",
+					"top": 284,
+					"left": 613,
+					"width": 98,
+					"height": 15,
+					"dataSource": "PRJ_DEBridgeNo_s",
+					"class": "DataEntry12APlain",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"method": "ObjectMethods/Replacementbdept2.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Variable5": {
+					"type": "dropdown",
+					"top": 362,
+					"left": 117,
+					"width": 150,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "BINa7FDescr_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 363,
+					"left": 270,
+					"width": 32,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "BINv7Rtenum",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9; ;\"###",
+					"method": "ObjectMethods/Variable23.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Variable25": {
+					"type": "checkbox",
+					"top": 363,
+					"left": 312,
+					"width": 19,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "BINv7Suffix",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 363,
+					"left": 338,
+					"width": 196,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "BINv7Descr",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Item6_7"
+					},
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 415,
+					"left": 117,
+					"width": 150,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "BINaFeatDescr_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 417,
+					"left": 270,
+					"width": 32,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "BINvRteNum",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9; ;\"###",
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "checkbox",
+					"top": 417,
+					"left": 312,
+					"width": 19,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "BINvSuffix",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 416,
+					"left": 338,
+					"width": 241,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "BINv6Descr",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Item6_7"
+					},
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Variable19": {
+					"type": "dropdown",
+					"top": 467,
+					"left": 202,
+					"width": 357,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "aInspRdes_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field10": {
+					"type": "checkbox",
+					"top": 496,
+					"left": 34,
+					"width": 258,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]FHWARecord:174",
+					"text": "In National Bridge Inventory",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 121,
+					"left": 70,
+					"width": 51,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Town"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 286,
+					"left": 9,
+					"width": 60,
+					"height": 20,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "BDEPT"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 219,
+					"left": 208,
+					"width": 165,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(8) Structure Number"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 469,
+					"left": 13,
+					"width": 185,
+					"height": 21,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "Inspection Responsibility"
+				},
+				"Field14": {
+					"type": "input",
+					"top": 470,
+					"left": 562,
+					"width": 48,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]InspResp:173",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 219,
+					"left": 415,
+					"width": 264,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "######-###-###-###",
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 148,
+					"left": 208,
+					"width": 87,
+					"height": 21,
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Owner Code"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 175,
+					"left": 208,
+					"width": 122,
+					"height": 42,
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Bridge Category Code"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 319,
+					"left": 334,
+					"width": 119,
+					"height": 21,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(3) County Code"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 319,
+					"left": 462,
+					"width": 35,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]Item3:61",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 318,
+					"left": 9,
+					"width": 259,
+					"height": 21,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(2) State Highway Department District"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 319,
+					"left": 517,
+					"width": 120,
+					"height": 21,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(4) Place Code"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 320,
+					"left": 634,
+					"width": 76,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]Item4:62",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "#####",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 319,
+					"left": 284,
+					"width": 28,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]Item2:60",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 407,
+					"left": 9,
+					"width": 91,
+					"height": 45,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "right",
+					"text": "(6) Features\rIntersected"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 361,
+					"left": 13,
+					"width": 87,
+					"height": 45,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "right",
+					"text": "(7) Facility\rCarried"
+				},
+				"Field13": {
+					"type": "input",
+					"top": 386,
+					"left": 117,
+					"width": 390,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]Item7:65",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/Field13.4dm"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 439,
+					"left": 117,
+					"width": 390,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "[Bridge MHD NBIS:1]Item6A:63",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/Field7.4dm"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 346,
+					"left": 117,
+					"width": 35,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Code"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 345,
+					"left": 338,
+					"width": 154,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Description"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 346,
+					"left": 270,
+					"width": 33,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Rte#"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 345,
+					"left": 310,
+					"width": 22,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Sfx"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 54,
+					"left": 467,
+					"width": 52,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "B.I.N."
+				},
+				"Field2": {
+					"type": "input",
+					"top": 54,
+					"left": 530,
+					"width": 45,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Replacementbdept1": {
+					"type": "text",
+					"top": 281,
+					"left": 436,
+					"width": 175,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "BDEPT being Replaced :"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable12": {
+					"type": "dropdown",
+					"top": 222,
+					"left": 222,
+					"width": 193,
+					"height": 22,
+					"dataSource": "aDirDescr_",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 222,
+					"left": 20,
+					"width": 155,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Directional Indicator"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 164,
+					"left": 20,
+					"width": 50,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Prefix"
+				},
+				"Variable11": {
+					"type": "dropdown",
+					"top": 164,
+					"left": 116,
+					"width": 299,
+					"height": 22,
+					"dataSource": "aKeyDescr_",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 166,
+					"left": 118,
+					"width": 275,
+					"height": 17,
+					"dataSource": "vKeyDescr",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 195,
+					"left": 20,
+					"width": 155,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "BRI/CUL Owner Code"
+				},
+				"Variable13": {
+					"type": "dropdown",
+					"top": 193,
+					"left": 200,
+					"width": 215,
+					"height": 22,
+					"dataSource": "aOwnerDescr",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 195,
+					"left": 202,
+					"width": 191,
+					"height": 17,
+					"dataSource": "vOwnerDescr",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 132,
+					"left": 64,
+					"width": 332,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14BoldU",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Bridge Key Number"
+				},
+				"Variable15": {
+					"type": "checkbox",
+					"top": 252,
+					"left": 147,
+					"width": 33,
+					"height": 18,
+					"dataSource": "vNumbrdRt",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 252,
+					"left": 20,
+					"width": 119,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Numbered Route"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 279,
+					"left": 20,
+					"width": 200,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Bridge Key Number"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 279,
+					"left": 226,
+					"width": 200,
+					"height": 17,
+					"defaultValue": "000000000100",
+					"dataSource": "[Bridge MHD NBIS:1]Bridge Key:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "###-###-###-###",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BrKey"
+					},
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 373,
+					"left": 20,
+					"width": 133,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "Agency Bridge No :"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 373,
+					"left": 168,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]AgencyBrNo:209",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 405,
+					"left": 20,
+					"width": 85,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "RR Branch :"
+				},
+				"Field15": {
+					"type": "input",
+					"top": 405,
+					"left": 168,
+					"width": 535,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]RRBranch:210",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 438,
+					"left": 20,
+					"width": 109,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"fontWeight": "bold",
+					"text": "RR Bridge No:"
+				},
+				"Field16": {
+					"type": "input",
+					"top": 438,
+					"left": 168,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]RRBridgeNo:211",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###,##0.000",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group17": [
+				"Text5",
+				"Field2"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

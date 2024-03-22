@@ -1,0 +1,1 @@
+Dec-2001 : Modified to retrieve only Visible Tables.  Feb-2002 : Removed ARRAY XXXX declarations of parameters and replaced them with INSERT ELEMENT commands to get rid of compilation warning messages

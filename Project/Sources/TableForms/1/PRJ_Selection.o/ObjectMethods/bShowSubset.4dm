@@ -1,0 +1,2 @@
+USE SET:C118("UserSet")
+ORDER BY:C49([Bridge MHD NBIS:1]; [Bridge MHD NBIS:1]BDEPT:1; >; [Bridge MHD NBIS:1]BIN:3; >)

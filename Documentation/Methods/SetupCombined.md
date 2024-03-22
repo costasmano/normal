@@ -1,0 +1,1 @@
+2005/1/18 - ASL  Created. Setup up table of ConbinedInspections. Run only once, and distribute to all.

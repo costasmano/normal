@@ -1,0 +1,367 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "SafetyElmtTemplate",
+	"inheritedFormTable": 29,
+	"windowMinWidth": 740,
+	"windowMinHeight": 550,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"WeldRectangle": {
+					"type": "rectangle",
+					"top": 115,
+					"left": 433,
+					"width": 222,
+					"height": 30,
+					"visibility": "hidden",
+					"fill": "transparent"
+				},
+				"WeldLabel": {
+					"type": "text",
+					"top": 123,
+					"left": 529,
+					"width": 93,
+					"height": 15,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"text": "Weld's Condition"
+				},
+				"DE WeldCheckBox": {
+					"type": "checkbox",
+					"top": 120,
+					"left": 438,
+					"width": 80,
+					"height": 18,
+					"visibility": "hidden",
+					"dataSource": "[ElementsSafety:29]Crack:9",
+					"text": "Crack",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE WeldCheckBox.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE WeldCondField": {
+					"type": "input",
+					"top": 121,
+					"left": 627,
+					"width": 22,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "[ElementsSafety:29]Weld Condition:10",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N;H\"#",
+					"method": "ObjectMethods/DE WeldCondField.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ElementComments_WP": {
+					"type": "write",
+					"top": 278,
+					"left": 5,
+					"width": 707,
+					"height": 247,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/DE ElementComments_WP.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"WPToolbar": {
+					"type": "subform",
+					"top": 246,
+					"left": 5,
+					"width": 691,
+					"height": 28,
+					"dataSourceTypeHint": "undefined",
+					"detailForm": "WPToolbar",
+					"focusable": false,
+					"hideFocusRing": true,
+					"enterableInList": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				}
+			},
+			"entryOrder": [
+				"DE WeldCheckBox",
+				"DE WeldCondField",
+				"DE ElementComments_WP",
+				"WPToolbar"
+			]
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 220,
+					"left": 9,
+					"width": 121,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Urgency of Repair"
+				},
+				"AboveRating Label": {
+					"type": "text",
+					"top": 123,
+					"left": 9,
+					"width": 121,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Rating"
+				},
+				"DE AboveRating Field": {
+					"type": "input",
+					"top": 121,
+					"left": 136,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Rating:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\"0-9;X;N;H;R\"#",
+					"method": "ObjectMethods/DE AboveRating Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE AboveRating Drop": {
+					"type": "dropdown",
+					"top": 118,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aRatCAT1_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE AboveRating Drop.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE PrevRating Field": {
+					"type": "input",
+					"top": 150,
+					"left": 136,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Rating_i:15",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\"0-9;X;H;R\"#",
+					"method": "ObjectMethods/DE PrevRating Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE PrevRating Drop": {
+					"type": "dropdown",
+					"top": 148,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aRatCAT2_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE PrevRating Drop.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Deficiency fld": {
+					"type": "input",
+					"top": 185,
+					"left": 136,
+					"width": 33,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Deficiency:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "! ~\" ;C;M;N;S;H;-\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Deficiency Codes"
+					},
+					"method": "ObjectMethods/DE Deficiency fld.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Deficiency Cat": {
+					"type": "dropdown",
+					"top": 183,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aDefCAT_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Deficiency Cat.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Priority Fld.": {
+					"type": "input",
+					"top": 217,
+					"left": 136,
+					"width": 22,
+					"height": 17,
+					"dataSource": "[ElementsSafety:29]Priority:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "! ~\" ;I;A;P\"",
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Urgency of Repair Codes"
+					},
+					"method": "ObjectMethods/DE Priority Fld..4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Urgency Cat": {
+					"type": "dropdown",
+					"top": 215,
+					"left": 180,
+					"width": 223,
+					"height": 24,
+					"dataSource": "aUORCAT_",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE Urgency Cat.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Cond Rating Label": {
+					"type": "text",
+					"top": 93,
+					"left": 136,
+					"width": 267,
+					"height": 17,
+					"class": "Label14BoldU",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Condition Ratings"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 188,
+					"left": 9,
+					"width": 121,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Deficiency"
+				},
+				"PrevRating Label": {
+					"type": "text",
+					"top": 153,
+					"left": 9,
+					"width": 121,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Previous Rating"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

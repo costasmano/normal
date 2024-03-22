@@ -1,0 +1,1 @@
+2-jan-01 : changed appearance to platinum.2004-05-17 : Gave Window title, Form type=Detail.

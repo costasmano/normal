@@ -1,0 +1,630 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text13": {
+					"type": "text",
+					"top": 20,
+					"left": 13,
+					"width": 189,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Current Structure Number : "
+				},
+				"LSS_StructureNumber_s": {
+					"type": "input",
+					"top": 20,
+					"left": 207,
+					"width": 180,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_StructureNumber_s:6",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_IdNumber": {
+					"type": "input",
+					"top": 80,
+					"left": 205,
+					"width": 82,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_IdentificationNumber_L:5",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000000",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 80,
+					"left": 23,
+					"width": 169,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Current <LSS_SIN_Label_txt> : "
+				},
+				"ApplyButton": {
+					"type": "button",
+					"top": 200,
+					"left": 343,
+					"width": 154,
+					"height": 27,
+					"dataSource": "Button",
+					"text": "Apply Changes",
+					"class": "DataEntry12APlain",
+					"focusable": false,
+					"method": "ObjectMethods/ApplyButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 200,
+					"left": 233,
+					"width": 84,
+					"height": 27,
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "DataEntry12APlain",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_SIN_2_L": {
+					"type": "input",
+					"top": 80,
+					"left": 407,
+					"width": 82,
+					"height": 17,
+					"dataSource": "LSS_SIN_2_L",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"contextMenu": "none",
+					"numberFormat": "00000",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 99999,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/LSS_SIN_2_L.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 80,
+					"left": 291,
+					"width": 111,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Enter New I.N.  :"
+				},
+				"VerifyButton": {
+					"type": "button",
+					"top": 200,
+					"left": 63,
+					"width": 144,
+					"height": 27,
+					"dataSource": "Button1",
+					"text": "Verify Changes",
+					"class": "DataEntry12APlain",
+					"focusable": false,
+					"method": "ObjectMethods/VerifyButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 20,
+					"left": 393,
+					"width": 169,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "New Structure Number : "
+				},
+				"LSS_StructureNumber_s1": {
+					"type": "input",
+					"top": 20,
+					"left": 567,
+					"width": 220,
+					"height": 19,
+					"dataSource": "v_165_006_txt",
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_IdNumber1": {
+					"type": "input",
+					"top": 80,
+					"left": 645,
+					"width": 82,
+					"height": 19,
+					"dataSource": "v_165_005_l",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000000",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 80,
+					"left": 503,
+					"width": 129,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "New <LSS_SIN_Label_txt> : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 140,
+					"left": 589,
+					"width": 69,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Route : "
+				},
+				"Text19": {
+					"type": "text",
+					"top": 140,
+					"left": 9,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Route Direction : "
+				},
+				"LSS_Route_txt": {
+					"type": "input",
+					"top": 140,
+					"left": 663,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_Route_s:9",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_RouteDirectionId_s": {
+					"type": "input",
+					"top": 140,
+					"left": 163,
+					"width": 117,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_RouteDirection_s:14",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LSS_RouteDesignation_atxt": {
+					"type": "dropdown",
+					"top": 107,
+					"left": 162,
+					"width": 143,
+					"height": 23,
+					"dataSource": "LSS_RouteDesignation_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteDesignation_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Route_L": {
+					"type": "input",
+					"top": 140,
+					"left": 396,
+					"width": 71,
+					"height": 17,
+					"dataSource": "LSS_Route_L",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"min": 1,
+					"max": 9999,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/LSS_Route_L.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"LSS_RouteSuffix_L": {
+					"type": "checkbox",
+					"top": 137,
+					"left": 565,
+					"width": 20,
+					"height": 20,
+					"dataSource": "LSS_RouteSuffix_L",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteSuffix_L.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_RouteDirection_as": {
+					"type": "dropdown",
+					"top": 137,
+					"left": 282,
+					"width": 23,
+					"height": 23,
+					"dataSource": "LSS_RouteDirection_as",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteDirection_as.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 110,
+					"left": 9,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Route Designation : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 140,
+					"left": 319,
+					"width": 69,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Rte # : "
+				},
+				"Text7": {
+					"type": "text",
+					"top": 141,
+					"left": 475,
+					"width": 79,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Rte Sfx : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 170,
+					"left": 73,
+					"width": 85,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Kilo Point : "
+				},
+				"Text17": {
+					"type": "text",
+					"top": 170,
+					"left": 244,
+					"width": 80,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Mile Point : "
+				},
+				"v_165_007_r": {
+					"type": "input",
+					"top": 170,
+					"left": 163,
+					"width": 71,
+					"height": 17,
+					"dataSource": "v_165_007_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"contextMenu": "none",
+					"min": 1E-06,
+					"max": 1607.734656,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/v_165_007_r.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"v_165_008_r": {
+					"type": "input",
+					"top": 170,
+					"left": 330,
+					"width": 71,
+					"height": 17,
+					"dataSource": "v_165_008_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"contextMenu": "none",
+					"min": 1E-06,
+					"max": 999,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/v_165_008_r.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"LSS_RouteDesignation_s": {
+					"type": "input",
+					"top": 109,
+					"left": 325,
+					"width": 22,
+					"height": 19,
+					"dataSource": "LSS_RouteDesignation_s",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_TownName_atxt1": {
+					"type": "dropdown",
+					"top": 48,
+					"left": 530,
+					"width": 23,
+					"height": 23,
+					"dataSource": "LSS_TownName_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_TownName_atxt1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 50,
+					"left": 9,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "City / Town : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 50,
+					"left": 579,
+					"width": 119,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "District : "
+				},
+				"LSS_District_L": {
+					"type": "input",
+					"top": 50,
+					"left": 703,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_District_L:3",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"LSS_Town_s": {
+					"type": "input",
+					"top": 50,
+					"left": 163,
+					"width": 364,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_Town_s:4",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"StructureClass2": {
+					"type": "dropdown",
+					"top": 102,
+					"left": 162,
+					"width": 173,
+					"height": 23,
+					"dataSource": "LSS_StructureClass_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/StructureClass2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"StructureClass1": {
+					"type": "text",
+					"top": 105,
+					"left": 9,
+					"width": 149,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Structure Class : "
+				},
+				"StructureClass3": {
+					"type": "input",
+					"top": 105,
+					"left": 346,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_InventoryType_s:28",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"StructureClass5": {
+					"type": "input",
+					"top": 105,
+					"left": 403,
+					"width": 104,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_Category_s:2",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"StructureClass4": {
+					"type": "text",
+					"top": 104,
+					"left": 380,
+					"width": 23,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "/"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

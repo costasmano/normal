@@ -1,0 +1,201 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 83,
+					"left": 20,
+					"width": 450,
+					"height": 59,
+					"class": "List12Bold",
+					"text": "Re-Send Act Log entries For Combined Inspection ID :"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 20,
+					"left": 20,
+					"width": 450,
+					"height": 59,
+					"class": "List12Bold",
+					"text": "Re-Send Act Log entries starting from :"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 45,
+					"left": 30,
+					"width": 309,
+					"height": 17,
+					"dataSource": "vsStartRefID",
+					"class": "DataEntry12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 108,
+					"left": 30,
+					"width": 309,
+					"height": 17,
+					"dataSource": "vsCombInspID",
+					"class": "DataEntry12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 146,
+					"left": 20,
+					"width": 450,
+					"height": 59,
+					"class": "List12Bold",
+					"text": "Re-Send Act Log entries For Inspection ID :"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 171,
+					"left": 30,
+					"width": 309,
+					"height": 17,
+					"dataSource": "vsInspID",
+					"class": "DataEntry12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 210,
+					"left": 20,
+					"width": 450,
+					"height": 59,
+					"class": "List12Bold",
+					"text": "Re-Send Act Log entries For Pontis Inspection ID :"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 235,
+					"left": 30,
+					"width": 309,
+					"height": 17,
+					"dataSource": "vsBMSInspID",
+					"class": "DataEntry12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 298,
+					"left": 348,
+					"width": 122,
+					"height": 22,
+					"dataSource": "vOKButton",
+					"action": "accept",
+					"text": "OK",
+					"class": "List12Bold",
+					"fontWeight": "bold",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 298,
+					"left": 20,
+					"width": 122,
+					"height": 22,
+					"dataSource": "vCancelButton",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "List12Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,120 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "TypInputTemplate2",
+	"inheritedFormTable": 21,
+	"rightMargin": 10,
+	"bottomMargin": 20,
+	"markerBody": 409,
+	"markerBreak": 409,
+	"markerFooter": 419,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 226,
+					"width": 143,
+					"height": 23,
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "  Design Load  "
+				},
+				"Text3": {
+					"type": "text",
+					"top": 55,
+					"left": 16,
+					"width": 88,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "Code"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 81,
+					"left": 16,
+					"width": 88,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "Description"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 55,
+					"left": 106,
+					"width": 18,
+					"height": 16,
+					"dataSource": "[Design Load:6]Code:1",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 81,
+					"left": 106,
+					"width": 145,
+					"height": 16,
+					"dataSource": "[Design Load:6]Description:2",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

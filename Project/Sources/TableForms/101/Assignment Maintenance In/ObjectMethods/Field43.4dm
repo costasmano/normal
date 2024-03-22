@@ -1,0 +1,3 @@
+[Contract_Assignment_Maintenance:101]Est_Total:15:=[Contract_Assignment_Maintenance:101]Est_TotalLimitFee:13+[Contract_Assignment_Maintenance:101]Est_ConstrTotalLimitFee:30+[Contract_Assignment_Maintenance:101]Est_DirectExpense:14
+
+CM_CalculateNegotiatedCosts

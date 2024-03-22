@@ -1,0 +1,758 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 710,
+	"windowMinHeight": 470,
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerHeader": 18,
+	"markerBody": 240,
+	"markerBreak": 264,
+	"markerFooter": 288,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 128,
+					"left": 22,
+					"width": 629,
+					"height": 324,
+					"sizingY": "grow"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": -25,
+					"left": 0,
+					"width": 705,
+					"height": 67,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarBlue.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 166,
+					"left": 28,
+					"width": 112,
+					"height": 18,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Received Date"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 213,
+					"left": 103,
+					"width": 38,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "From"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 191,
+					"left": 28,
+					"width": 112,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "Date of Service"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 237,
+					"left": 103,
+					"width": 38,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "To"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 2,
+					"left": 3,
+					"width": 700,
+					"height": 35,
+					"stroke": "#FFFF00",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Payments / Invoices"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 142,
+					"left": 28,
+					"width": 112,
+					"height": 18,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Invoice No."
+				},
+				"Field9": {
+					"type": "input",
+					"top": 142,
+					"left": 147,
+					"width": 108,
+					"height": 17,
+					"dataSource": "[Contract Invoice:84]InvoiceNo:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 166,
+					"left": 147,
+					"width": 108,
+					"height": 17,
+					"dataSource": "[Contract Invoice:84]DateReceived:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 213,
+					"left": 146,
+					"width": 108,
+					"height": 17,
+					"dataSource": "[Contract Invoice:84]DateServiceFrom:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 237,
+					"left": 146,
+					"width": 108,
+					"height": 17,
+					"dataSource": "[Contract Invoice:84]DateServiceTo:6",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 270,
+					"left": 228,
+					"width": 110,
+					"height": 17,
+					"dataSource": "[Contract Invoice:84]DateProcessFoward:9",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/Field4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 294,
+					"left": 228,
+					"width": 110,
+					"height": 17,
+					"dataSource": "[Contract Invoice:84]DateSentBackToConslt:10",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/####",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 318,
+					"left": 228,
+					"width": 110,
+					"height": 17,
+					"dataSource": "[Contract Invoice:84]TotalAmount:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,###,##0.00;-$###,###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 383,
+					"left": 124,
+					"width": 500,
+					"height": 60,
+					"sizingY": "grow",
+					"dataSource": "[Contract Invoice:84]Comments:13",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "$###,##0.00;-$###,##0.00",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 294,
+					"left": 31,
+					"width": 200,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Date Sent Back to Consultant"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 318,
+					"left": 31,
+					"width": 200,
+					"height": 19,
+					"class": "Label12Plain",
+					"text": "Total Amount"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 270,
+					"left": 31,
+					"width": 200,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Date Processed & Forwarded"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 383,
+					"left": 31,
+					"width": 84,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Comments"
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 142,
+					"left": 487,
+					"width": 137,
+					"height": 204,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 85,
+					"detailForm": "Invoice",
+					"listForm": "Invoice",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"borderStyle": "sunken"
+				},
+				"Field10": {
+					"type": "checkbox",
+					"top": 347,
+					"left": 31,
+					"width": 108,
+					"height": 18,
+					"dataSource": "[Contract Invoice:84]Accepted:12",
+					"text": "Accepted",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE AddRatingBtn": {
+					"type": "button",
+					"top": 142,
+					"left": 378,
+					"width": 96,
+					"height": 24,
+					"dataSource": "bAdd",
+					"text": "Add",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/DE AddRatingBtn.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 50,
+					"left": 9,
+					"width": 96,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Contract No."
+				},
+				"Field1": {
+					"type": "input",
+					"top": 50,
+					"left": 108,
+					"width": 104,
+					"height": 17,
+					"dataSource": "[Contracts:79]ContractNo:1",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 69,
+					"left": 9,
+					"width": 96,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Contract Type"
+				},
+				"Field11": {
+					"type": "input",
+					"top": 69,
+					"left": 108,
+					"width": 130,
+					"height": 17,
+					"dataSource": "[Contracts:79]ContractType:2",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 50,
+					"left": 504,
+					"width": 126,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Consultant"
+				},
+				"Field12": {
+					"type": "input",
+					"top": 65,
+					"left": 504,
+					"width": 198,
+					"height": 56,
+					"dataSource": "[Contracts:79]ConsltName:3",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 88,
+					"left": 9,
+					"width": 96,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Status"
+				},
+				"Field13": {
+					"type": "input",
+					"top": 88,
+					"left": 108,
+					"width": 130,
+					"height": 17,
+					"dataSource": "[Contracts:79]ContractStatus:7",
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 58,
+					"left": 251,
+					"width": 220,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 247,
+					"width": 221,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"DE btnSave": {
+					"type": "button",
+					"top": 63,
+					"left": 417,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnSave",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnSave.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE btnDelete": {
+					"type": "button",
+					"top": 63,
+					"left": 348,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnDelete",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnDelete.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE DelInvPctBtn": {
+					"type": "button",
+					"top": 172,
+					"left": 378,
+					"width": 96,
+					"height": 24,
+					"dataSource": "DelInvPctBtn",
+					"action": "deleteSubrecord",
+					"text": "Delete",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE MailNotice": {
+					"type": "button",
+					"top": 268,
+					"left": 346,
+					"width": 95,
+					"height": 20,
+					"dataSource": "MailNotice",
+					"text": "Mail Notice",
+					"class": "List12Plain",
+					"method": "ObjectMethods/DE MailNotice.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 372,
+					"left": 22,
+					"width": 629,
+					"height": 5,
+					"dataSource": "Splitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 63,
+					"left": 256,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ1",
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 FirstRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 63,
+					"left": 279,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ2",
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 63,
+					"left": 302,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 63,
+					"left": 325,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ4",
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 LastRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnCancel": {
+					"type": "button",
+					"top": 63,
+					"left": 440,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

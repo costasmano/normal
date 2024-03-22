@@ -1,0 +1,121 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Forward": {
+					"type": "input",
+					"top": 36,
+					"left": 20,
+					"width": 400,
+					"height": 57,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"v_1_230_txt": {
+					"type": "input",
+					"top": 131,
+					"left": 20,
+					"width": 400,
+					"height": 97,
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Undobutton": {
+					"type": "button",
+					"top": 238,
+					"left": 20,
+					"width": 128,
+					"height": 35,
+					"text": "Undo changes",
+					"focusable": false,
+					"method": "ObjectMethods/Undobutton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ResetButton": {
+					"type": "button",
+					"top": 238,
+					"left": 156,
+					"width": 128,
+					"height": 35,
+					"text": "Reset vsForward",
+					"focusable": false,
+					"method": "ObjectMethods/ResetButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OKButton": {
+					"type": "button",
+					"top": 238,
+					"left": 292,
+					"width": 128,
+					"height": 35,
+					"text": "OK",
+					"focusable": false,
+					"method": "ObjectMethods/OKButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 9,
+					"left": 20,
+					"width": 400,
+					"height": 17,
+					"text": "Current Setting for vsForward"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 106,
+					"left": 20,
+					"width": 400,
+					"height": 17,
+					"text": "Enter additional Districts etc below separated by comma"
+				}
+			}
+		}
+	]
+}

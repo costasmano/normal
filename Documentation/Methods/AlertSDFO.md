@@ -1,0 +1,1 @@
+Feb 2001 : Added message that Saving record will update SD FO fields  Oct 2001 : Made this a simple check. No change in the SD FO status is done here any more.  Jun-2003 : Placed If(false) around commented code.

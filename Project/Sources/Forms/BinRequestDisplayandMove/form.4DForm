@@ -1,0 +1,152 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"CopyButton": {
+					"type": "button",
+					"top": 16,
+					"left": 479,
+					"width": 163,
+					"height": 31,
+					"text": "Copy Document",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/CopyButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ExistingBinDropDown": {
+					"type": "dropdown",
+					"top": 27,
+					"left": 866,
+					"width": 444,
+					"height": 24,
+					"dataSource": "MatchedDocuments_atxt",
+					"class": "Geneva14",
+					"method": "ObjectMethods/ExistingBinDropDown.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"NewBinRequest": {
+					"type": "webArea",
+					"top": 67,
+					"left": 20,
+					"width": 620,
+					"height": 620,
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"events": [
+						"onOpenExternalLink"
+					]
+				},
+				"ExistingBinRequest": {
+					"type": "webArea",
+					"top": 67,
+					"left": 690,
+					"width": 620,
+					"height": 620,
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"events": [
+						"onOpenExternalLink"
+					]
+				},
+				"CopyTo": {
+					"type": "text",
+					"top": 741,
+					"left": 106,
+					"width": 535,
+					"height": 36,
+					"fill": "automatic",
+					"class": "List12Plain",
+					"text": " "
+				},
+				"CopyFrom": {
+					"type": "text",
+					"top": 702,
+					"left": 106,
+					"width": 535,
+					"height": 36,
+					"fill": "automatic",
+					"class": "List12Plain",
+					"text": " "
+				},
+				"Text": {
+					"type": "text",
+					"top": 26,
+					"left": 37,
+					"width": 275,
+					"height": 21,
+					"class": "DCM_FormTitle",
+					"text": "Selected Document"
+				},
+				"Existing": {
+					"type": "text",
+					"top": 17,
+					"left": 693,
+					"width": 164,
+					"height": 41,
+					"class": "DCM_FormTitle",
+					"text": "Potential Matched Document"
+				},
+				"Title": {
+					"type": "text",
+					"top": 702,
+					"left": 6,
+					"width": 75,
+					"height": 16,
+					"fill": "automatic",
+					"class": "List12Plain",
+					"textAlign": "right",
+					"text": " Copy From"
+				},
+				"Title1": {
+					"type": "text",
+					"top": 741,
+					"left": 6,
+					"width": 75,
+					"height": 16,
+					"fill": "automatic",
+					"class": "List12Plain",
+					"textAlign": "right",
+					"text": " Copy To"
+				}
+			}
+		}
+	]
+}

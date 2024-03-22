@@ -1,0 +1,506 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 715,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 1,
+	"markerBreak": 1,
+	"markerFooter": 342,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 5,
+					"width": 696,
+					"height": 318,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent",
+					"strokeWidth": 4
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 11,
+					"left": 10,
+					"width": 686,
+					"height": 26,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 36,
+					"left": 10,
+					"width": 36,
+					"height": 283,
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 13,
+					"left": 56,
+					"width": 638,
+					"height": 22,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "ServerProcesses"
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 45,
+					"left": 11,
+					"width": 34,
+					"height": 2,
+					"fill": "automatic",
+					"stroke": "transparent"
+				},
+				"bDone": {
+					"type": "button",
+					"top": 288,
+					"left": 51,
+					"width": 27,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Done.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuery": {
+					"type": "button",
+					"top": 288,
+					"left": 83,
+					"width": 27,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Query.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBy": {
+					"type": "button",
+					"top": 288,
+					"left": 115,
+					"width": 27,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "bOrderBy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Order By.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowAll": {
+					"type": "button",
+					"top": 288,
+					"left": 147,
+					"width": 27,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "bShowAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"shortcutKey": "g",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Show All.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubset": {
+					"type": "button",
+					"top": 288,
+					"left": 179,
+					"width": 27,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "bShowSubset",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show Subset"
+					},
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Show Subset.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowSubset.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAdd": {
+					"type": "button",
+					"top": 288,
+					"left": 211,
+					"width": 27,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "bAdd",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Add Record"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Add Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 11,
+					"left": 11,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/SP_Picture.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"SelectListBox": {
+					"type": "listbox",
+					"top": 47,
+					"left": 54,
+					"width": 641,
+					"height": 236,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "SelectListBox",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 87,
+					"highlightSet": "UserSet",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#DFFFFF",
+					"alternateFill": "#E2FFDF",
+					"class": "List12Plain",
+					"method": "ObjectMethods/SelectListBox.4dm",
+					"events": [
+						"onLoad",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[ServerProcesses:87]ProcessName_s:1",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Process Name",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[ServerProcesses:87]LastRunTimeStamp_s:3",
+							"width": 110,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "####-##-## ##:##",
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Last Run",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[ServerProcesses:87]ProcessRunSchedule_s:2",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Schedule",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[ServerProcesses:87]NextRunTimeStamp_s:4",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "####-##-## ##:##",
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Next Scheduled Run",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[ServerProcesses:87]ProcessRunning_b:5",
+							"dataSourceTypeHint": "boolean",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Running?",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "4",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "[ServerProcesses:87]ControlProcessDelay_l:6",
+							"dataSourceTypeHint": "integer",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Delay",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

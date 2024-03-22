@@ -1,0 +1,316 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerHeader": 23,
+	"markerBody": 40,
+	"markerBreak": 46,
+	"markerFooter": 46,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 21,
+					"left": 2,
+					"width": 527,
+					"height": 19,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": -2,
+					"left": 85,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter1",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": -2,
+					"left": 184,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": -2,
+					"left": 304,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": -2,
+					"left": 416,
+					"width": 1,
+					"height": 42,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line7": {
+					"type": "line",
+					"top": 19,
+					"left": -2,
+					"width": 534,
+					"sizingX": "grow"
+				},
+				"Splitter1_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 85,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"Splitter2_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 184,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"Splitter3_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 304,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"Splitter4_Line2": {
+					"type": "line",
+					"top": -4,
+					"left": 416,
+					"height": 43,
+					"stroke": "#AAAAAA"
+				},
+				"Rectangle12": {
+					"type": "rectangle",
+					"top": -4,
+					"left": -2,
+					"width": 534,
+					"height": 47,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 39,
+					"left": 0,
+					"width": 529,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 3,
+					"width": 80,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "TYP_Received_d"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 89,
+					"width": 93,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "TYP_Distribution_d"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 188,
+					"width": 114,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "TYP_RecFromGeotech_d"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 308,
+					"width": 106,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "TYP_RecFromHydro_d"
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 420,
+					"width": 108,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "TYP_CommentsToDE_d"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 3,
+					"width": 80,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Received_d:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 89,
+					"width": 93,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Distribution_d:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 188,
+					"width": 114,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_TypeStudy:121]TYP_RecFromGeotech_d:9",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 308,
+					"width": 106,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_TypeStudy:121]TYP_RecFromHydro_d:8",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 25,
+					"left": 420,
+					"width": 108,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[PRJ_TypeStudy:121]TYP_CommentsToDE_d:11",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	]
+}

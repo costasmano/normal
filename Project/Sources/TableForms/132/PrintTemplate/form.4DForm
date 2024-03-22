@@ -1,0 +1,279 @@
+{
+	"destination": "detailPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 764,
+	"markerBreak": 764,
+	"markerFooter": 764,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle25": {
+					"type": "rectangle",
+					"top": 4,
+					"left": 461,
+					"width": 124,
+					"height": 30,
+					"fill": "transparent"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 5,
+					"left": 461,
+					"width": 123,
+					"height": 29,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "BR. DEPT. NO."
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 4,
+					"left": 15,
+					"width": 35,
+					"height": 30,
+					"fill": "transparent"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 4,
+					"left": 54,
+					"width": 47,
+					"height": 30,
+					"fill": "transparent"
+				},
+				"Brg Dept1": {
+					"type": "input",
+					"top": 19,
+					"left": 461,
+					"width": 123,
+					"height": 15,
+					"dataSource": "SCPOA_BDEPT_txt",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-#####-##-#####-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 15,
+					"width": 35,
+					"height": 12,
+					"dataSource": "SCPOA_Dist_txt",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 19,
+					"left": 54,
+					"width": 47,
+					"height": 12,
+					"dataSource": "SCPOA_BIN_txt",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 15,
+					"left": 101,
+					"width": 360,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times16Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "BRIDGE SCOUR PLAN OF ACTION"
+				},
+				"Rectangle46": {
+					"type": "rectangle",
+					"top": 37,
+					"left": 15,
+					"width": 570,
+					"height": 715,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"Text4": {
+					"type": "text",
+					"top": 5,
+					"left": 15,
+					"width": 35,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "2-DIST"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 5,
+					"left": 61,
+					"width": 33,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "B.I.N."
+				},
+				"PAGENUMBERLABEL": {
+					"type": "text",
+					"top": 752,
+					"left": 15,
+					"width": 566,
+					"height": 7,
+					"sizingY": "move",
+					"class": "Arial7",
+					"textAlign": "center",
+					"text": "PAGE <SCPOA_PRINTPAGENO_TXT> OF 7"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 752,
+					"left": 465,
+					"width": 65,
+					"height": 7,
+					"sizingY": "move",
+					"class": "Arial7",
+					"text": "POA COMPLETED :  "
+				},
+				"Field6": {
+					"type": "input",
+					"top": 752,
+					"left": 524,
+					"width": 56,
+					"height": 7,
+					"dataSource": "SCPOA_ComplDate_txt",
+					"stroke": "#000000",
+					"class": "Arial7",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text173": {
+					"type": "text",
+					"top": 752,
+					"left": 15,
+					"width": 140,
+					"height": 9,
+					"class": "Arial7",
+					"text": "DATE PRINTED : <SCPOA_PrintReportDate_txt>"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

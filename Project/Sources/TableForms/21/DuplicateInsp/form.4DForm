@@ -1,0 +1,298 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"CopySpMemOnly": {
+					"type": "checkbox",
+					"top": 124,
+					"left": 37,
+					"width": 167,
+					"height": 18,
+					"dataSource": "DupInsp_CopySpecMem_L",
+					"text": "Only Special Members",
+					"class": "Label12Plain",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CopySpMemOnlyTxt": {
+					"type": "text",
+					"top": 124,
+					"left": 194,
+					"width": 233,
+					"height": 18,
+					"class": "Label12Plain",
+					"text": "(Create a Special Member Inspection)"
+				},
+				"CopySketches2": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 37,
+					"width": 123,
+					"height": 18,
+					"dataSource": "DupInsp_CopySketches_L",
+					"text": "Copy Sketches",
+					"class": "Label12Plain",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CopyCharts": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 170,
+					"width": 123,
+					"height": 18,
+					"dataSource": "DupInsp_CopyCharts_L",
+					"text": "Copy Charts",
+					"class": "Label12Plain",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CopyPhotos": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 303,
+					"width": 123,
+					"height": 18,
+					"dataSource": "DupInsp_CopyPhotos_L",
+					"text": "Copy Photos",
+					"class": "Label12Plain",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CopyAsIS": {
+					"type": "checkbox",
+					"top": 184,
+					"left": 37,
+					"width": 390,
+					"height": 18,
+					"dataSource": "DupInsp_CopyAsIS_L",
+					"text": "Copy Inspection AS IS",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 20,
+					"left": 50,
+					"width": 365,
+					"height": 19,
+					"class": "DataEntry14Plain",
+					"textAlign": "center",
+					"text": "Copy Inspection Options"
+				},
+				"Cancel2": {
+					"type": "button",
+					"top": 217,
+					"left": 37,
+					"width": 75,
+					"height": 28,
+					"dataSource": "vCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"DoCopy": {
+					"type": "button",
+					"top": 217,
+					"left": 242,
+					"width": 185,
+					"height": 28,
+					"dataSource": "DupInsp_DoCopy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "accept",
+					"text": "Proceed with Copy",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 45,
+					"left": 20,
+					"width": 424,
+					"height": 75,
+					"dataSource": "vTextMsg",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 20,
+					"left": 60,
+					"width": 344,
+					"height": 65,
+					"dataSource": "vTextMsg",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 117,
+					"left": 20,
+					"width": 75,
+					"height": 28,
+					"dataSource": "vCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Combined Inspection Button": {
+					"type": "button",
+					"top": 117,
+					"left": 120,
+					"width": 153,
+					"height": 28,
+					"dataSource": "vbCombined",
+					"action": "accept",
+					"text": "Combined Inspection",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Special Inspection Button": {
+					"type": "button",
+					"top": 117,
+					"left": 291,
+					"width": 153,
+					"height": 28,
+					"dataSource": "vbSpecial",
+					"action": "accept",
+					"text": "Special Inspection",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

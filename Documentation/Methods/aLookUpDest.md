@@ -1,0 +1,1 @@
+Dec-2002 : Commented the ALL Records command.  Jan-2003 : Added switching table to read-only and then read-write state.

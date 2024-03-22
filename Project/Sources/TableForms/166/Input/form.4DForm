@@ -1,0 +1,574 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 19,
+	"bottomMargin": 25,
+	"menuBar": "BlankMenu",
+	"markerBody": 302,
+	"markerBreak": 302,
+	"markerFooter": 312,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"bDelete": {
+					"type": "button",
+					"top": 20,
+					"left": 395,
+					"width": 56,
+					"height": 64,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/library/GLASS - Delete Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 20,
+					"left": 458,
+					"width": 56,
+					"height": 64,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/library/GLASS - Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 20,
+					"left": 521,
+					"width": 56,
+					"height": 64,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Save",
+					"icon": "/RESOURCES/Images/library/GLASS - OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 101,
+					"left": 22,
+					"width": 132,
+					"height": 17,
+					"visibility": "hidden",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Photo ID : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 101,
+					"left": 282,
+					"width": 132,
+					"height": 17,
+					"visibility": "hidden",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Inspection ID : "
+				},
+				"LSS_IDs_01": {
+					"type": "input",
+					"top": 101,
+					"left": 159,
+					"width": 104,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "[LSS_Photos:166]LSS_PhotoId_s:1",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LSS_IDs_02": {
+					"type": "input",
+					"top": 101,
+					"left": 419,
+					"width": 104,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "[LSS_Photos:166]LSS_InspectionId_s:2",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Line9": {
+					"type": "line",
+					"top": 92,
+					"left": 19,
+					"width": 574,
+					"sizingX": "grow"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 126,
+					"left": 22,
+					"width": 132,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Image Type : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 151,
+					"left": 22,
+					"width": 132,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Description : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 126,
+					"left": 342,
+					"width": 132,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Sequence No. : "
+				},
+				"LSS_Photo_txt": {
+					"type": "input",
+					"top": 151,
+					"left": 159,
+					"width": 404,
+					"height": 57,
+					"sizingX": "grow",
+					"dataSource": "[LSS_Photos:166]LSS_Photo_txt:4",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LSS_PhotoSequence_L": {
+					"type": "input",
+					"top": 126,
+					"left": 479,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[LSS_Photos:166]LSS_PhotoSequence_L:6",
+					"dataSourceTypeHint": "integer",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LSS_Photo": {
+					"type": "input",
+					"top": 255,
+					"left": 64,
+					"width": 510,
+					"height": 364,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Photo_pct",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/LSS_Photo.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver",
+						"onAfterEdit",
+						"onBeginDragOver"
+					]
+				},
+				"LSS_PhotosInstructions": {
+					"type": "text",
+					"top": 215,
+					"left": 134,
+					"width": 371,
+					"height": 34,
+					"sizingX": "grow",
+					"stroke": "#00BB00",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "To import an image, right click on area below and use the options available in the menu that is displayed."
+				},
+				"LSS_PhotoTypes_atxt": {
+					"type": "dropdown",
+					"top": 126,
+					"left": 159,
+					"width": 173,
+					"height": 18,
+					"dataSource": "LSS_PhotoTypes_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_PhotoTypes_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 20,
+					"left": 16,
+					"width": 56,
+					"height": 64,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page up]",
+					"shortcutAccel": true,
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "First",
+					"icon": "/RESOURCES/Images/library/GLASS - First Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bFirst.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 20,
+					"left": 79,
+					"width": 56,
+					"height": 64,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page up]",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Previous",
+					"icon": "/RESOURCES/Images/library/GLASS - Previous Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bPrevious.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 20,
+					"left": 142,
+					"width": 56,
+					"height": 64,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page down]",
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Next",
+					"icon": "/RESOURCES/Images/library/GLASS - Next Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 20,
+					"left": 205,
+					"width": 56,
+					"height": 64,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"shortcutKey": "[Page down]",
+					"shortcutAccel": true,
+					"class": "Arial11",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Last",
+					"icon": "/RESOURCES/Images/library/GLASS - Last Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bLast.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				}
+			},
+			"entryOrder": [
+				"LSS_Photo_txt",
+				"LSS_PhotoTypes_atxt"
+			]
+		},
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 151,
+					"left": 22,
+					"width": 132,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Description : "
+				},
+				"LSS_Photo_txt1": {
+					"type": "input",
+					"top": 151,
+					"left": 159,
+					"width": 404,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[LSS_Photos:166]LSS_Photo_txt:4",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LSS_Photo1": {
+					"type": "input",
+					"top": 255,
+					"left": 64,
+					"width": 510,
+					"height": 364,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Photo_pct",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/LSS_Photo1.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver",
+						"onAfterEdit",
+						"onBeginDragOver"
+					]
+				},
+				"LSS_PhotosInstructions1": {
+					"type": "text",
+					"top": 215,
+					"left": 134,
+					"width": 371,
+					"height": 34,
+					"sizingX": "grow",
+					"stroke": "#00BB00",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "To import an image, right click on area below and use the options available in the menu that is displayed."
+				},
+				"ImageTypeDesc ": {
+					"type": "text",
+					"top": 26,
+					"left": 102,
+					"width": 192,
+					"height": 25,
+					"class": "DataEntry19Plain",
+					"textAlign": "center",
+					"text": "Image Type : "
+				}
+			},
+			"entryOrder": [
+				"LSS_Photo_txt1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line9"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bDelete",
+					"bCancel",
+					"bValidate",
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

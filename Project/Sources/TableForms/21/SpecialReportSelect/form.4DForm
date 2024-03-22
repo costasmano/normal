@@ -1,0 +1,166 @@
+{
+	"windowMinWidth": 255,
+	"windowMinHeight": 360,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 141,
+	"markerBreak": 141,
+	"markerFooter": 151,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 255,
+					"height": 360,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFF0DF",
+					"stroke": "transparent",
+					"strokeWidth": 0.1
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture Button1": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 9,
+					"width": 48,
+					"height": 48,
+					"dataSource": "Picture Button1",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Print.png",
+					"switchBackWhenReleased": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 320,
+					"left": 34,
+					"width": 80,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": "Tahoma",
+					"fontSize": 13,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 320,
+					"left": 139,
+					"width": 80,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "DefaultBold",
+					"stroke": "#000000",
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 31,
+					"left": 68,
+					"width": 148,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "vsSpecialReportTitle",
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "list",
+					"top": 62,
+					"left": 14,
+					"width": 228,
+					"height": 240,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "SpecialReports_HL",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "List12Plain",
+					"borderStyle": "solid",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,297 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 425,
+	"windowMinHeight": 410,
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 5,
+					"left": 10,
+					"width": 410,
+					"height": 94,
+					"dataSource": "vTextMsg",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ReviewComments": {
+					"type": "input",
+					"top": 233,
+					"left": 10,
+					"width": 393,
+					"height": 155,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtRevComments",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Cancel Btn": {
+					"type": "button",
+					"top": 393,
+					"left": 10,
+					"width": 95,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "vCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Reject btn": {
+					"type": "button",
+					"top": 393,
+					"left": 136,
+					"width": 95,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "vbReject",
+					"action": "accept",
+					"text": "REJECT",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Accept btn": {
+					"type": "button",
+					"top": 393,
+					"left": 262,
+					"width": 95,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "vbAccept",
+					"action": "accept",
+					"text": "ACCEPT",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Accept btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 200,
+					"left": 10,
+					"width": 410,
+					"height": 16,
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Reviewer Comments"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 216,
+					"left": 10,
+					"width": 410,
+					"height": 15,
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "(Comments will be appended to the previous ones if Inspection is Rejected.)"
+				},
+				"ReviewComments1": {
+					"type": "input",
+					"top": 117,
+					"left": 10,
+					"width": 393,
+					"height": 75,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtPrevRevComments",
+					"class": "Label12Plain",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"spellcheck": true,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 100,
+					"left": 10,
+					"width": 410,
+					"height": 16,
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Previous Comments"
+				},
+				"Splitter1": {
+					"type": "splitter",
+					"top": 194,
+					"left": 10,
+					"width": 410,
+					"height": 2,
+					"sizingX": "grow",
+					"dataSource": "Splitter1",
+					"borderStyle": "raised",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrintReviewCmts": {
+					"type": "pictureButton",
+					"top": 388,
+					"left": 384,
+					"width": 36,
+					"height": 36,
+					"sizingY": "move",
+					"dataSource": "bPrintReviewCmts",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Print.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrintReviewCmts.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Trap Enter": {
+					"type": "button",
+					"top": 9,
+					"left": 0,
+					"width": 5,
+					"height": 10,
+					"dataSource": "TrapEnter",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Trap Esc": {
+					"type": "button",
+					"top": 31,
+					"left": 0,
+					"width": 5,
+					"height": 10,
+					"dataSource": "Invisible Button2",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Trap Cmd-.": {
+					"type": "button",
+					"top": 51,
+					"left": 0,
+					"width": 5,
+					"height": 10,
+					"dataSource": "Invisible Button3",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

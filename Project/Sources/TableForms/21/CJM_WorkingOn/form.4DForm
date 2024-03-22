@@ -1,0 +1,537 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture5": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 530,
+					"height": 31,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical XP.png"
+				},
+				"S1_Text6": {
+					"type": "text",
+					"top": 7,
+					"left": 0,
+					"width": 530,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Project Search Dialog"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 100,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Town Name : "
+				},
+				"Field7": {
+					"type": "input",
+					"top": 50,
+					"left": 179,
+					"width": 157,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_BDEPT_s",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BDept"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 75,
+					"left": 179,
+					"width": 157,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_PFile_s",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNum"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 99,
+					"left": 179,
+					"width": 157,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_TownName_s",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 125,
+					"left": 179,
+					"width": 157,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_Program_s",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 150,
+					"left": 179,
+					"width": 157,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_Consltant_s",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 176,
+					"left": 179,
+					"width": 157,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_Contractor_s",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumPlus"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 201,
+					"left": 179,
+					"width": 157,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_DistrNo_s",
+					"class": "PRJ_IncludedList",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"1-5\"#",
+					"min": 1,
+					"max": 5,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PRJ_SRCH_StrPrjMgr_atxt": {
+					"type": "dropdown",
+					"top": 226,
+					"left": 179,
+					"width": 179,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_StrPrjMgr_atxt",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/PRJ_SRCH_StrPrjMgr_atxt.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PRJ_SearchCurr_rb": {
+					"type": "radio",
+					"top": 280,
+					"left": 86,
+					"width": 169,
+					"height": 14,
+					"dataSource": "PRJ_SearchCurr_rb",
+					"text": "Search Current list",
+					"class": "PRJ_IncludedList",
+					"radioGroup": "Group3",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PRJ_SearchAll_rb": {
+					"type": "radio",
+					"top": 280,
+					"left": 276,
+					"width": 168,
+					"height": 14,
+					"dataSource": "PRJ_SearchAll_rb",
+					"text": "Search all records",
+					"class": "PRJ_IncludedList",
+					"radioGroup": "Group3",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 318,
+					"left": 177,
+					"width": 94,
+					"height": 24,
+					"dataSource": "PRJ_FindBtn_l",
+					"shortcutKey": "[Return]",
+					"text": "Find *",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "checkbox",
+					"top": 317,
+					"left": 289,
+					"width": 142,
+					"height": 26,
+					"dataSource": "CBAddTo",
+					"text": "Add to Selection",
+					"class": "FormData12",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 361,
+					"left": 297,
+					"width": 94,
+					"height": 24,
+					"dataSource": "vCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 361,
+					"left": 426,
+					"width": 94,
+					"height": 24,
+					"dataSource": "PRJ_DoneBtn",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Done **",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 361,
+					"left": 171,
+					"width": 106,
+					"height": 13,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "* Hit Return for Find"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 373,
+					"left": 171,
+					"width": 106,
+					"height": 13,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "List9",
+					"text": "** Hit Enter for Done"
+				},
+				"S1_Text2": {
+					"type": "text",
+					"top": 150,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Design Consultant : "
+				},
+				"S1_Text3": {
+					"type": "text",
+					"top": 175,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Constr. Contractor : "
+				},
+				"S1_Text5": {
+					"type": "text",
+					"top": 33,
+					"left": 368,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Search Results"
+				},
+				"PRJ_SRCH_Result_txt": {
+					"type": "input",
+					"top": 56,
+					"left": 369,
+					"width": 153,
+					"height": 110,
+					"dataSource": "PRJ_SRCH_Result_txt",
+					"class": "PRJ_IncludedList",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"S1_Text4": {
+					"type": "text",
+					"top": 125,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Program : "
+				},
+				"S1_Text7": {
+					"type": "text",
+					"top": 200,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "District :"
+				},
+				"S1_Text8": {
+					"type": "text",
+					"top": 225,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Str. Project Manager :"
+				},
+				"S1_Text9": {
+					"type": "text",
+					"top": 50,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "BDEPT : "
+				},
+				"S1_Text1": {
+					"type": "text",
+					"top": 75,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Project File No : "
+				},
+				"PRJ_SRCH_Attributes_atxt": {
+					"type": "dropdown",
+					"top": 251,
+					"left": 179,
+					"width": 179,
+					"height": 17,
+					"dataSource": "PRJ_SRCH_Attributes_atxt",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/PRJ_SRCH_Attributes_atxt.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"S1_Text10": {
+					"type": "text",
+					"top": 250,
+					"left": 8,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Attribute :"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group3": [
+				"PRJ_SearchCurr_rb",
+				"PRJ_SearchAll_rb"
+			]
+		}
+	}
+}

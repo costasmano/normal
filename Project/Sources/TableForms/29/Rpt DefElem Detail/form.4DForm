@@ -1,0 +1,495 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerHeader": 197,
+	"markerBody": 213,
+	"markerBreak": 213,
+	"markerFooter": 213,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 170,
+					"left": 0,
+					"width": 520,
+					"height": 200
+				},
+				"vItemNo": {
+					"type": "input",
+					"top": 199,
+					"left": 7,
+					"width": 40,
+					"height": 13,
+					"dataSource": "vItemNo",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 199,
+					"left": 278,
+					"width": 45,
+					"height": 12,
+					"dataSource": "[ElementsSafety:29]Deficiency:3",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 199,
+					"left": 328,
+					"width": 35,
+					"height": 12,
+					"dataSource": "[ElementsSafety:29]Priority:20",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 170,
+					"left": 52,
+					"height": 200
+				},
+				"Line1": {
+					"type": "line",
+					"top": 194,
+					"left": 0,
+					"width": 520
+				},
+				"Line2": {
+					"type": "line",
+					"top": 170,
+					"left": 325,
+					"height": 50
+				},
+				"vElmDescr": {
+					"type": "input",
+					"top": 199,
+					"left": 56,
+					"width": 200,
+					"height": 13,
+					"dataSource": "vElmDescr",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line4": {
+					"type": "line",
+					"top": 170,
+					"left": 275,
+					"height": 50
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 107,
+					"left": 0,
+					"width": 520,
+					"height": 55
+				},
+				"Line5": {
+					"type": "line",
+					"top": 107,
+					"left": 52,
+					"height": 55
+				},
+				"Line6": {
+					"type": "line",
+					"top": 134,
+					"left": 0,
+					"width": 520
+				},
+				"Line7": {
+					"type": "line",
+					"top": 107,
+					"left": 325,
+					"height": 55
+				},
+				"Text2": {
+					"type": "text",
+					"top": 121,
+					"left": 271,
+					"width": 60,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Deficiency"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 121,
+					"left": 1,
+					"width": 50,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Item No."
+				},
+				"Text1": {
+					"type": "text",
+					"top": 121,
+					"left": 326,
+					"width": 40,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Priority"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 121,
+					"left": 56,
+					"width": 160,
+					"height": 11,
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Element Description"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 107,
+					"left": 275,
+					"height": 55
+				},
+				"Text5": {
+					"type": "text",
+					"top": 110,
+					"left": 368,
+					"width": 35,
+					"height": 22,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Current\rRating"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 110,
+					"left": 408,
+					"width": 35,
+					"height": 22,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Prev\rRating"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 110,
+					"left": 445,
+					"width": 35,
+					"height": 22,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "\rDive"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 110,
+					"left": 482,
+					"width": 35,
+					"height": 22,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Prev\rDive"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 107,
+					"left": 365,
+					"height": 55
+				},
+				"Line10": {
+					"type": "line",
+					"top": 107,
+					"left": 365,
+					"height": 55
+				},
+				"Line11": {
+					"type": "line",
+					"top": 107,
+					"left": 405,
+					"height": 55
+				},
+				"Line12": {
+					"type": "line",
+					"top": 107,
+					"left": 445,
+					"height": 55
+				},
+				"Line13": {
+					"type": "line",
+					"top": 107,
+					"left": 479,
+					"height": 55
+				},
+				"Line14": {
+					"type": "line",
+					"top": 170,
+					"left": 365,
+					"height": 55
+				},
+				"Line15": {
+					"type": "line",
+					"top": 170,
+					"left": 405,
+					"height": 55
+				},
+				"Line16": {
+					"type": "line",
+					"top": 170,
+					"left": 445,
+					"height": 55
+				},
+				"Line17": {
+					"type": "line",
+					"top": 170,
+					"left": 479,
+					"height": 55
+				},
+				"Field3": {
+					"type": "input",
+					"top": 199,
+					"left": 368,
+					"width": 35,
+					"height": 12,
+					"dataSource": "[ElementsSafety:29]Rating:2",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 199,
+					"left": 408,
+					"width": 35,
+					"height": 12,
+					"dataSource": "[ElementsSafety:29]Rating_i:15",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 199,
+					"left": 447,
+					"width": 30,
+					"height": 12,
+					"dataSource": "[ElementsSafety:29]AltRating:21",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 199,
+					"left": 483,
+					"width": 35,
+					"height": 12,
+					"dataSource": "[ElementsSafety:29]AltRating_i:24",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

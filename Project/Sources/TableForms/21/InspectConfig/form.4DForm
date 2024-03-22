@@ -1,0 +1,337 @@
+{
+	"formSizeAnchor": "TitleLabel",
+	"rightMargin": 15,
+	"bottomMargin": 20,
+	"markerBody": 413,
+	"markerBreak": 413,
+	"markerFooter": 413,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "791pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"TitleLabel": {
+					"type": "text",
+					"top": 10,
+					"left": 15,
+					"width": 185,
+					"height": 212,
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"text": "Inspection Form Type Selection"
+				},
+				"bSelectType": {
+					"type": "button",
+					"top": 142,
+					"left": 62,
+					"width": 90,
+					"height": 25,
+					"dataSource": "bSelectType",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bSelectType.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel button": {
+					"type": "button",
+					"top": 172,
+					"left": 62,
+					"width": 90,
+					"height": 25,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"RadioGroup": {
+					"type": "groupBox",
+					"top": 52,
+					"left": 15,
+					"width": 185,
+					"height": 300,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Inspection Type:"
+				},
+				"RoutineBtn": {
+					"type": "radio",
+					"top": 78,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r1",
+					"text": "Routine",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"RoutineArchBtn": {
+					"type": "radio",
+					"top": 98,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r10",
+					"text": "Routine Arch ",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"FracCritBtn": {
+					"type": "radio",
+					"top": 118,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r2",
+					"text": "Fracture Critical",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"SpecMemBtn": {
+					"type": "radio",
+					"top": 138,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r3",
+					"text": "Special Member",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"CulvertBtn": {
+					"type": "radio",
+					"top": 158,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r4",
+					"text": "Culvert",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"ClosedBtn": {
+					"type": "radio",
+					"top": 178,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r5",
+					"text": "Closed",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"DamageBtn": {
+					"type": "radio",
+					"top": 198,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r6",
+					"text": "Damage",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"OtherMemBtn": {
+					"type": "radio",
+					"top": 218,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r11",
+					"text": "Other",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"FreezeThawBtn": {
+					"type": "radio",
+					"top": 238,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r12",
+					"text": "Annual Freeze Thaw",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"UnderWaterBtn": {
+					"type": "radio",
+					"top": 258,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r7",
+					"text": "Underwater",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"UWLowClrBtn": {
+					"type": "radio",
+					"top": 278,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r8",
+					"text": "UW Low Clearance",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"UWSpecMemberBtn": {
+					"type": "radio",
+					"top": 298,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r9",
+					"text": "UW Special Member",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"UWFloodBtn": {
+					"type": "radio",
+					"top": 318,
+					"left": 30,
+					"width": 152,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "r13",
+					"text": "UW Divers Activity",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ChooseTypeBox": {
+					"type": "groupBox",
+					"top": 52,
+					"left": 15,
+					"width": 185,
+					"height": 70,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Choose Inspection Type:"
+				},
+				"INSP_SelType_atxt": {
+					"type": "dropdown",
+					"top": 82,
+					"left": 28,
+					"width": 159,
+					"height": 25,
+					"dataSource": "INSP_SelType_atxt",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/INSP_SelType_atxt.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

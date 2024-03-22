@@ -1,0 +1,749 @@
+//%attributes = {"invisible":true}
+Begin SQL
+	ALTER TABLE [Bridge MHD NBIS] ADD Bridge_MHD_NBIS_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Town Data] ADD Town_Data_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [NBIS Secondary] ADD NBIS_Secondary_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [MaintOwnerCode] ADD MaintOwnerCode_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [FunctionalClass] ADD FunctionalClass_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Design Load] ADD Design_Load_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Posting Code] ADD Posting_Code_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Service Over] ADD Service_Over_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Service Under] ADD Service_Under_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Material] ADD Material_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Design] ADD Design_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Truck Code] ADD Truck_Code_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Direction] ADD Direction_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Deck Structure] ADD Deck_Structure_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Wearing Surface] ADD Wearing_Surface_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Membrane] ADD Membrane_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Deck Protection] ADD Deck_Protection_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Type of Work] ADD Type_of_Work_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Work Done By] ADD Work_Done_By_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Insp Resp] ADD Insp_Resp_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Dialogs] ADD Dialogs_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Item 20 Tolls] ADD Item_20_Tolls_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Item 33 Median] ADD Item_33_Median_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Item 38] ADD Item_38_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [HistSig] ADD HistSig_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Months] ADD Months_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Inspections] ADD Inspections_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Sequences] ADD Sequences_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ElementsSafety] ADD ElementsSafety_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ElementDict] ADD ElementDict_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Inspection Type] ADD Inspection_Type_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Element Cat] ADD Element_Cat_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Item 100] ADD Item_100_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Item 101] ADD Item_101_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Item 111] ADD Item_111_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Standard Photos] ADD Standard_Photos_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [RAILBridgeInfo] ADD RAILBridgeInfo_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Foundation Type] ADD Foundation_Type_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Bed Material] ADD Bed_Material_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Pontis_Metric_Data] ADD Pontis_Metric_Data_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Pontis_Metrics] ADD Pontis_Metrics_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Personnel] ADD Personnel_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Field Trip] ADD Field_Trip_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BMS Inspections] ADD BMS_Inspections_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Cond Units] ADD Cond_Units_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Cond State Insp] ADD Cond_State_Insp_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BMS Elements] ADD BMS_Elements_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Environments] ADD Environments_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BMS Categories] ADD BMS_Categories_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Element Costs] ADD Element_Costs_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Cond States] ADD Cond_States_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [CS Actions] ADD CS_Actions_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [CS Notes] ADD CS_Notes_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Common Notes] ADD Common_Notes_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Cat CS Notes] ADD Cat_CS_Notes_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BMS Field Trip] ADD BMS_Field_Trip_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Preferences] ADD Preferences_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Error Codes] ADD Error_Codes_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Activity Log] ADD Activity_Log_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [FileIDRes Table] ADD FileIDRes_Table_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PostingStatus] ADD PostingStatus_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Owners of Data] ADD Owners_of_Data_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Conslt Rating] ADD Conslt_Rating_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Cons Inspection] ADD Cons_Inspection_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [RatingReports] ADD RatingReports_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [RatingMember] ADD RatingMember_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Rating Method] ADD Rating_Method_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [zDialogs] ADD zDialogs_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Status Report] ADD Status_Report_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Out of Freq] ADD Out_of_Freq_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Integral Bridge] ADD Integral_Bridge_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [RPCs] ADD RPCs_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [TownLineInfo] ADD TownLineInfo_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Conslt Rating Cost] ADD Conslt_Rating_Cost_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Bridge Design] ADD Bridge_Design_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Cons Inspection Cost] ADD Cons_Inspection_Cost_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Conslt Address] ADD Conslt_Address_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Town Address] ADD Town_Address_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contracts] ADD Contracts_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract FundTransfer] ADD Contract_FundTransfer_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract ExtendTime] ADD Contract_ExtendTime_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract AddFund] ADD Contract_AddFund_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract Assignments] ADD Contract_Assignments_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract Invoice] ADD Contract_Invoice_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract Invoice AssignNo] ADD Contract_Invoice_Assi_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Templates] ADD Templates_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ServerProcesses] ADD ServerProcesses_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ClientAccess] ADD ClientAccess_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [SD_History] ADD SD_History_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Combined Inspections] ADD Combined_Inspections_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ACTMODLS] ADD ACTMODLS_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ELEMDEFS] ADD ELEMDEFS_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [CONDUMDL] ADD CONDUMDL_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Invoice_AssignNo_Maintenance] ADD Invoice_AssignNo_Main_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Invoice_Maintenance] ADD Invoice_Maintenance_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [FundTransfer_Maintenance] ADD FundTransfer_Maintena_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract_Maintenance] ADD Contract_Maintenance_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ExtendTime_Maintenance] ADD ExtendTime_Maintenanc_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [AddFund_Maintenance] ADD AddFund_Maintenance_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract_Project_Maintenance] ADD Contract_Project_Main_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Contract_Assignment_Maintenance] ADD Contract_Assignment_M_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Addendum_Maintenance] ADD Addendum_Maintenance_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Work_Estimate] ADD Work_Estimate_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [WorkHour_Config] ADD WorkHour_Config_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [WorkHour_Summary] ADD WorkHour_Summary_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [zSpecialReports] ADD zSpecialReports_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Parameters] ADD Parameters_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ScourPriorityRank] ADD ScourPriorityRank_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PERS_Groups] ADD PERS_Groups_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PERS_GroupMembers] ADD PERS_GroupMembers_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [CM_ExtTimeFYAlloc] ADD CM_ExtTimeFYAlloc_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [InventoryPhotoInsp] ADD InventoryPhotoInsp_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [InventoryPhotos] ADD InventoryPhotos_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_Contractor] ADD PRJ_Contractor_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ProjectDetails] ADD PRJ_ProjectDetails_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ConstructionProject] ADD PRJ_ConstructionProje_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ProjectFile] ADD PRJ_ProjectFile_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ReportData] ADD PRJ_ReportData_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_StructuralReview] ADD PRJ_StructuralReview_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_SketchPlans] ADD PRJ_SketchPlans_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_TypeStudy] ADD PRJ_TypeStudy_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ProjectDetailsIncludedBINS] ADD PRJ_ProjectDetailsInc_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_DesignContracts] ADD PRJ_DesignContracts_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ProjectTimeTracking] ADD PRJ_ProjectTimeTracki_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [TableOfLists] ADD TableOfLists_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [SQL_Connections] ADD SQL_Connections_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Conslt_Name] ADD Conslt_Name_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_StrPrjManagerHistory] ADD PRJ_StrPrjManagerHist_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Scour Report] ADD Scour_Report_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_Attributes] ADD PRJ_Attributes_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ATTRFileNoXrefs] ADD PRJ_ATTRFileNoXrefs_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ScourPOA] ADD ScourPOA_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ScourPOA_DetourBridge] ADD ScourPOA_DetourBridge_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ScourPOA_Images] ADD ScourPOA_Images_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_DCPFJoin] ADD PRJ_DCPFJoin_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [DCM_Contracts] ADD DCM_Contracts_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [DCM_WorkOrders] ADD DCM_WorkOrders_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [DCM_Project] ADD DCM_Project_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BridgeMHDNBISArchive] ADD BridgeMHDNBISArchive_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [NBISSecondaryArchive] ADD NBISSecondaryArchive_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PRJ_ProjectTypes] ADD PRJ_ProjectTypes_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [DCM_ProjDailyHrs] ADD DCM_ProjDailyHrs_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [DCM_ProjDailys] ADD DCM_ProjDailys_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [DCM_ProjDailyItems] ADD DCM_ProjDailyItems_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Preservation_Reviews] ADD Preservation_Reviews_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ONSQLAuthenticationErrors] ADD ONSQLAuthenticationEr_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LB_QueryTable] ADD LB_QueryTable_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [Preservation_Meetings] ADD Preservation_Meetings_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BridgeInfoLink] ADD BridgeInfoLink_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ScourCriticalInfo] ADD ScourCriticalInfo_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [TunnelInfo] ADD TunnelInfo_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [TunnelInspection] ADD TunnelInspection_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [IS_ControlProcess] ADD IS_ControlProcess_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [RatingRequests] ADD RatingRequests_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [AddtlRatingRequests] ADD AddtlRatingRequests_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BridgeRankCalc] ADD BridgeRankCalc_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [BridgeRankResult] ADD BridgeRankResult_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [ElmtRatingLoads] ADD ElmtRatingLoads_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_Accessibility] ADD LSS_Accessibility_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_AccessibilityElement] ADD LSS_AccessibilityElem_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_DMeter] ADD LSS_DMeter_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_Element] ADD LSS_Element_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_ElementInspection] ADD LSS_ElementInspection_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_Inspection] ADD LSS_Inspection_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_Inventory] ADD LSS_Inventory_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_Photos] ADD LSS_Photos_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_refInspectionType] ADD LSS_refInspectionType_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_refRouteDirection] ADD LSS_refRouteDirection_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_refStructureCoating] ADD LSS_refStructureCoati_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_refStructureMaterial] ADD LSS_refStructureMater_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_refStructureTypes] ADD LSS_refStructureTypes_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_SignPanel] ADD LSS_SignPanel_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_TeamMembers] ADD LSS_TeamMembers_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_TowerDistance] ADD LSS_TowerDistance_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_UT] ADD LSS_UT_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_UtResult] ADD LSS_UtResult_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [LSS_VerticalClearance] ADD LSS_VerticalClearance_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PON_ELEM_DEFS] ADD PON_ELEM_DEFS_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PON_ELEM_INSP] ADD PON_ELEM_INSP_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [PON_ELEM_COSTS] ADD PON_ELEM_COSTS_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [NTI_TunnelInfo] ADD NTI_TunnelInfo_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [NTI_ELEM_DEFS] ADD NTI_ELEM_DEFS_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [NTI_ELEM_BIN_INSP] ADD NTI_ELEM_BIN_INSP_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [TIN_Inspections] ADD TIN_Inspections_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [NTI_ELEM_TIN_INSP] ADD NTI_ELEM_TIN_INSP_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [TIN_Insp_Images] ADD TIN_Insp_Images_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+Begin SQL
+	ALTER TABLE [TIN_Insp_TmMembers] ADD TIN_Insp_TmMembers_UUIDKey_s UUID AUTO_GENERATE PRIMARY KEY;
+End SQL
+EXECUTE FORMULA:C63("SET INDEX([Bridge MHD NBIS]Bridge_MHD_NBIS_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Town Data]Town_Data_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([NBIS Secondary]NBIS_Secondary_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([MaintOwnerCode]MaintOwnerCode_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([FunctionalClass]FunctionalClass_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Design Load]Design_Load_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Posting Code]Posting_Code_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Service Over]Service_Over_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Service Under]Service_Under_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Material]Material_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Design]Design_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Truck Code]Truck_Code_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Direction]Direction_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Deck Structure]Deck_Structure_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Wearing Surface]Wearing_Surface_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Membrane]Membrane_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Deck Protection]Deck_Protection_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Type of Work]Type_of_Work_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Work Done By]Work_Done_By_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Insp Resp]Insp_Resp_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Dialogs]Dialogs_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Item 20 Tolls]Item_20_Tolls_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Item 33 Median]Item_33_Median_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Item 38]Item_38_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([HistSig]HistSig_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Months]Months_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Inspections]Inspections_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Sequences]Sequences_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ElementsSafety]ElementsSafety_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ElementDict]ElementDict_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Inspection Type]Inspection_Type_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Element Cat]Element_Cat_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Item 100]Item_100_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Item 101]Item_101_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Item 111]Item_111_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Standard Photos]Standard_Photos_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([RAILBridgeInfo]RAILBridgeInfo_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Foundation Type]Foundation_Type_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Bed Material]Bed_Material_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Pontis_Metric_Data]Pontis_Metric_Data_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Pontis_Metrics]Pontis_Metrics_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Personnel]Personnel_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Field Trip]Field_Trip_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BMS Inspections]BMS_Inspections_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Cond Units]Cond_Units_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Cond State Insp]Cond_State_Insp_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BMS Elements]BMS_Elements_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Environments]Environments_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BMS Categories]BMS_Categories_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Element Costs]Element_Costs_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Cond States]Cond_States_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([CS Actions]CS_Actions_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([CS Notes]CS_Notes_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Common Notes]Common_Notes_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Cat CS Notes]Cat_CS_Notes_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BMS Field Trip]BMS_Field_Trip_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Preferences]Preferences_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Error Codes]Error_Codes_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Activity Log]Activity_Log_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([FileIDRes Table]FileIDRes_Table_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PostingStatus]PostingStatus_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Owners of Data]Owners_of_Data_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Conslt Rating]Conslt_Rating_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Cons Inspection]Cons_Inspection_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([RatingReports]RatingReports_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([RatingMember]RatingMember_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Rating Method]Rating_Method_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([zDialogs]zDialogs_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Status Report]Status_Report_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Out of Freq]Out_of_Freq_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Integral Bridge]Integral_Bridge_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([RPCs]RPCs_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([TownLineInfo]TownLineInfo_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Conslt Rating Cost]Conslt_Rating_Cost_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Bridge Design]Bridge_Design_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Cons Inspection Cost]Cons_Inspection_Cost_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Conslt Address]Conslt_Address_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Town Address]Town_Address_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contracts]Contracts_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract FundTransfer]Contract_FundTransfer_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract ExtendTime]Contract_ExtendTime_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract AddFund]Contract_AddFund_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract Assignments]Contract_Assignments_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract Invoice]Contract_Invoice_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract Invoice AssignNo]Contract_Invoice_Assi_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Templates]Templates_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ServerProcesses]ServerProcesses_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ClientAccess]ClientAccess_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([SD_History]SD_History_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Combined Inspections]Combined_Inspections_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ACTMODLS]ACTMODLS_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ELEMDEFS]ELEMDEFS_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([CONDUMDL]CONDUMDL_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Invoice_AssignNo_Maintenance]Invoice_AssignNo_Main_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Invoice_Maintenance]Invoice_Maintenance_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([FundTransfer_Maintenance]FundTransfer_Maintena_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract_Maintenance]Contract_Maintenance_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ExtendTime_Maintenance]ExtendTime_Maintenanc_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([AddFund_Maintenance]AddFund_Maintenance_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract_Project_Maintenance]Contract_Project_Main_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Contract_Assignment_Maintenance]Contract_Assignment_M_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Addendum_Maintenance]Addendum_Maintenance_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Work_Estimate]Work_Estimate_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([WorkHour_Config]WorkHour_Config_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([WorkHour_Summary]WorkHour_Summary_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([zSpecialReports]zSpecialReports_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Parameters]Parameters_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ScourPriorityRank]ScourPriorityRank_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PERS_Groups]PERS_Groups_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PERS_GroupMembers]PERS_GroupMembers_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([CM_ExtTimeFYAlloc]CM_ExtTimeFYAlloc_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([InventoryPhotoInsp]InventoryPhotoInsp_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([InventoryPhotos]InventoryPhotos_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_Contractor]PRJ_Contractor_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ProjectDetails]PRJ_ProjectDetails_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ConstructionProject]PRJ_ConstructionProje_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ProjectFile]PRJ_ProjectFile_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ReportData]PRJ_ReportData_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_StructuralReview]PRJ_StructuralReview_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_SketchPlans]PRJ_SketchPlans_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_TypeStudy]PRJ_TypeStudy_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ProjectDetailsIncludedBINS]PRJ_ProjectDetailsInc_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_DesignContracts]PRJ_DesignContracts_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ProjectTimeTracking]PRJ_ProjectTimeTracki_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([TableOfLists]TableOfLists_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([SQL_Connections]SQL_Connections_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Conslt_Name]Conslt_Name_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_StrPrjManagerHistory]PRJ_StrPrjManagerHist_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Scour Report]Scour_Report_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_Attributes]PRJ_Attributes_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ATTRFileNoXrefs]PRJ_ATTRFileNoXrefs_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ScourPOA]ScourPOA_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ScourPOA_DetourBridge]ScourPOA_DetourBridge_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ScourPOA_Images]ScourPOA_Images_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_DCPFJoin]PRJ_DCPFJoin_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([DCM_Contracts]DCM_Contracts_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([DCM_WorkOrders]DCM_WorkOrders_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([DCM_Project]DCM_Project_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BridgeMHDNBISArchive]BridgeMHDNBISArchive_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([NBISSecondaryArchive]NBISSecondaryArchive_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PRJ_ProjectTypes]PRJ_ProjectTypes_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([DCM_ProjDailyHrs]DCM_ProjDailyHrs_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([DCM_ProjDailys]DCM_ProjDailys_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([DCM_ProjDailyItems]DCM_ProjDailyItems_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Preservation_Reviews]Preservation_Reviews_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ONSQLAuthenticationErrors]ONSQLAuthenticationEr_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LB_QueryTable]LB_QueryTable_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([Preservation_Meetings]Preservation_Meetings_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BridgeInfoLink]BridgeInfoLink_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ScourCriticalInfo]ScourCriticalInfo_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([TunnelInfo]TunnelInfo_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([TunnelInspection]TunnelInspection_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([IS_ControlProcess]IS_ControlProcess_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([RatingRequests]RatingRequests_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([AddtlRatingRequests]AddtlRatingRequests_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BridgeRankCalc]BridgeRankCalc_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([BridgeRankResult]BridgeRankResult_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([ElmtRatingLoads]ElmtRatingLoads_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_Accessibility]LSS_Accessibility_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_AccessibilityElement]LSS_AccessibilityElem_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_DMeter]LSS_DMeter_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_Element]LSS_Element_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_ElementInspection]LSS_ElementInspection_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_Inspection]LSS_Inspection_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_Inventory]LSS_Inventory_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_Photos]LSS_Photos_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_refInspectionType]LSS_refInspectionType_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_refRouteDirection]LSS_refRouteDirection_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_refStructureCoating]LSS_refStructureCoati_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_refStructureMaterial]LSS_refStructureMater_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_refStructureTypes]LSS_refStructureTypes_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_SignPanel]LSS_SignPanel_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_TeamMembers]LSS_TeamMembers_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_TowerDistance]LSS_TowerDistance_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_UT]LSS_UT_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_UtResult]LSS_UtResult_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([LSS_VerticalClearance]LSS_VerticalClearance_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PON_ELEM_DEFS]PON_ELEM_DEFS_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PON_ELEM_INSP]PON_ELEM_INSP_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([PON_ELEM_COSTS]PON_ELEM_COSTS_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([NTI_TunnelInfo]NTI_TunnelInfo_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([NTI_ELEM_DEFS]NTI_ELEM_DEFS_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([NTI_ELEM_BIN_INSP]NTI_ELEM_BIN_INSP_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([TIN_Inspections]TIN_Inspections_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([NTI_ELEM_TIN_INSP]NTI_ELEM_TIN_INSP_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([TIN_Insp_Images]TIN_Insp_Images_UUIDKey_s;true)")
+EXECUTE FORMULA:C63("SET INDEX([TIN_Insp_TmMembers]TIN_Insp_TmMembers_UUIDKey_s;true)")

@@ -1,0 +1,203 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Report Editor",
+	"windowMinWidth": 790,
+	"windowMinHeight": 400,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 536,
+	"markerBreak": 536,
+	"markerFooter": 536,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Hierarchical List1": {
+					"type": "list",
+					"top": 31,
+					"left": 20,
+					"width": 225,
+					"height": 160,
+					"sizingY": "grow",
+					"dataSource": "Report_FieldsList_l",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Hierarchical List1.4dm",
+					"events": [
+						"onDrop",
+						"onDragOver"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 12,
+					"left": 19,
+					"width": 129,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Select the Fields:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 12,
+					"left": 262,
+					"width": 129,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Sort Order:"
+				},
+				"Hierarchical List3": {
+					"type": "list",
+					"top": 31,
+					"left": 260,
+					"width": 225,
+					"height": 160,
+					"sizingY": "grow",
+					"dataSource": "Report_SortList_l",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Hierarchical List3.4dm",
+					"events": [
+						"onLoad",
+						"onDrop",
+						"onDragOver"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 32,
+					"left": 499,
+					"width": 90,
+					"height": 27,
+					"dataSource": "ClearBtn",
+					"text": "Clear",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 72,
+					"left": 499,
+					"width": 90,
+					"height": 27,
+					"dataSource": "SetDest",
+					"text": "Set to Print",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 112,
+					"left": 499,
+					"width": 90,
+					"height": 27,
+					"dataSource": "GenBtn",
+					"text": "Print",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter1": {
+					"type": "splitter",
+					"top": 198,
+					"left": 10,
+					"width": 830,
+					"height": 5,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"splitterMode": "move",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Plug-in Area1": {
+					"type": "plugin",
+					"top": 214,
+					"left": 20,
+					"width": 810,
+					"height": 304,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Report_Area_l",
+					"pluginAreaKind": "%Report",
+					"dropping": "automatic",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Plug-in Area1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onPluginArea",
+						"onDragOver"
+					]
+				},
+				"SendtoExcel": {
+					"type": "button",
+					"top": 152,
+					"left": 499,
+					"width": 90,
+					"height": 27,
+					"text": "-> Excel",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/SendtoExcel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Preview": {
+					"type": "button",
+					"top": 112,
+					"left": 599,
+					"width": 90,
+					"height": 27,
+					"text": "Preview",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/Preview.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

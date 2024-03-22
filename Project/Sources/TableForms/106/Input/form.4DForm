@@ -1,0 +1,258 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "TypInputTemplate",
+	"inheritedFormTable": 21,
+	"windowMinWidth": 605,
+	"windowMinHeight": 410,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 183,
+	"markerBreak": 183,
+	"markerFooter": 193,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onDataChange",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text8": {
+					"type": "text",
+					"top": 18,
+					"left": 18,
+					"width": 473,
+					"height": 18,
+					"sizingX": "grow",
+					"stroke": "#FFC000",
+					"class": "DataEntry14Plain",
+					"text": "zSpecialReports"
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 349,
+					"left": 333,
+					"width": 63,
+					"height": 46,
+					"sizingY": "move",
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Draft/DeleteSelection.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text10": {
+					"type": "text",
+					"top": 72,
+					"left": 20,
+					"width": 111,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"text": "Purpose"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 99,
+					"left": 20,
+					"width": 111,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"text": "ReportName"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 126,
+					"left": 20,
+					"width": 111,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"text": "MethodName"
+				},
+				"Purpose": {
+					"type": "input",
+					"top": 72,
+					"left": 147,
+					"width": 400,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[zSpecialReports:106]Purpose:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Purpose.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReportName": {
+					"type": "input",
+					"top": 99,
+					"left": 147,
+					"width": 400,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[zSpecialReports:106]ReportName:2",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ReportName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"MethodName": {
+					"type": "input",
+					"top": 126,
+					"left": 147,
+					"width": 400,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[zSpecialReports:106]MethodName:3",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/MethodName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"MethodName2": {
+					"type": "input",
+					"top": 151,
+					"left": 147,
+					"width": 400,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "[zSpecialReports:106]SubCategory:5",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/MethodName2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"MethodName1": {
+					"type": "input",
+					"top": 181,
+					"left": 147,
+					"width": 400,
+					"height": 132,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[zSpecialReports:106]LongDescription:4",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/MethodName1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 181,
+					"left": 20,
+					"width": 111,
+					"height": 28,
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"text": "Description"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 151,
+					"left": 20,
+					"width": 111,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "DataEntry14Plain",
+					"text": "SubCategory"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 22,
+					"left": 387,
+					"width": 96,
+					"height": 14,
+					"dataSource": "[zSpecialReports:106]Record_ID:7",
+					"dataSourceTypeHint": "integer",
+					"class": "Default",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

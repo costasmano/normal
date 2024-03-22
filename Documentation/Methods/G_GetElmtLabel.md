@@ -1,0 +1,1 @@
+Nov-2002 : Get the Label for the current record of [ElementsSafety]  Feb-2003 : Adjusted for Traffic items, new format of title.

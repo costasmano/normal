@@ -1,0 +1,1 @@
+Mar-2002 : Created to trim trailing blank lines in a 4D Write area.  Oct-2002 : Added tabs to the trimmed chars.  Jun-2003 : Added declaration of $1 and $MyArea variables; And Cleaning up of page breaks.

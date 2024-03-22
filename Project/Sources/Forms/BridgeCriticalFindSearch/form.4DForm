@@ -1,0 +1,181 @@
+{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 34,
+	"markerBreak": 34,
+	"markerFooter": 34,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"StartDate": {
+					"type": "subform",
+					"top": 22,
+					"left": 91,
+					"width": 138,
+					"height": 25,
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateEntry",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/StartDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"EndDate": {
+					"type": "subform",
+					"top": 49,
+					"left": 91,
+					"width": 138,
+					"height": 25,
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateEntry",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/EndDate.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Deficiency": {
+					"type": "dropdown",
+					"top": 76,
+					"left": 163,
+					"width": 66,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Priority": {
+					"type": "dropdown",
+					"top": 96,
+					"left": 163,
+					"width": 66,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"OKButton1": {
+					"type": "button",
+					"top": 142,
+					"left": 15,
+					"width": 62,
+					"height": 31,
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"OKButton": {
+					"type": "button",
+					"top": 142,
+					"left": 167,
+					"width": 62,
+					"height": 31,
+					"action": "accept",
+					"text": "OK",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"StartDateTitle": {
+					"type": "text",
+					"top": 25,
+					"left": 15,
+					"width": 72,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"text": "Start Date"
+				},
+				"EndDateTitle": {
+					"type": "text",
+					"top": 50,
+					"left": 15,
+					"width": 72,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"text": "End Date"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 73,
+					"left": 15,
+					"width": 72,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"text": "Deficiency"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 96,
+					"left": 15,
+					"width": 72,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"text": "Priority"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {
+				"objects": [
+					"StartDate",
+					"EndDate"
+				]
+			},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

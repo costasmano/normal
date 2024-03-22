@@ -1,0 +1,1 @@
+Aug-2003 : Modified to check BINs if Item8 does not match. Also for FED records their Item8 is CEPNED@. Check a match for the last 6 digits of the bridgekey.

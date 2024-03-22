@@ -1,0 +1,741 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 443,
+	"markerBreak": 443,
+	"markerFooter": 453,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDragOver",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle38": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 689,
+					"height": 474,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFFFDF",
+					"stroke": "transparent"
+				},
+				"Line16": {
+					"type": "line",
+					"top": 90,
+					"left": 10,
+					"width": 670,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 9,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 93,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 81,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 153,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 237,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 225,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Last"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 326,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 314,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Delete"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 398,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 386,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 470,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 458,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Validate"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 119,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Received : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 144,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Assigned : "
+				},
+				"Text19": {
+					"type": "text",
+					"top": 169,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Source : "
+				},
+				"Text20": {
+					"type": "text",
+					"top": 194,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Study Type : "
+				},
+				"Text21": {
+					"type": "text",
+					"top": 219,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Structure Type : "
+				},
+				"Text24": {
+					"type": "text",
+					"top": 244,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Received From Geot. : "
+				},
+				"Text25": {
+					"type": "text",
+					"top": 269,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Received From Hydraulic : "
+				},
+				"Text26": {
+					"type": "text",
+					"top": 319,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": " Bridge Engineer Approval : "
+				},
+				"Text27": {
+					"type": "text",
+					"top": 294,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": " Comments To Design Engineer : "
+				},
+				"TYP_Received_d": {
+					"type": "input",
+					"top": 119,
+					"left": 192,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Received_d:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ReviewerDD1": {
+					"type": "dropdown",
+					"top": 117,
+					"left": 517,
+					"width": 134,
+					"height": 17,
+					"dataSource": "PRJ_StructReviewers_atxt",
+					"class": "PRJ_InputVariable",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ReviewerDD1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TYP_Assigned_d": {
+					"type": "input",
+					"top": 144,
+					"left": 192,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Distribution_d:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Btoday": {
+					"type": "button",
+					"top": 143,
+					"left": 276,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Btoday",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Btoday.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TYP_Source_s": {
+					"type": "input",
+					"top": 169,
+					"left": 194,
+					"width": 349,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Source_s:6",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"TYP_StudyType_s": {
+					"type": "input",
+					"top": 194,
+					"left": 194,
+					"width": 349,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_StudyType_s:3",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"TYP_StructureType_s": {
+					"type": "input",
+					"top": 219,
+					"left": 194,
+					"width": 349,
+					"height": 12,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_StructureType_s:4",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/TYP_StructureType_s.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"TYP_AssToHydro_d": {
+					"type": "input",
+					"top": 244,
+					"left": 192,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_RecFromGeotech_d:9",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 243,
+					"left": 276,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Btoday",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TYP_AssToGeotech_d": {
+					"type": "input",
+					"top": 269,
+					"left": 192,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_RecFromHydro_d:8",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 268,
+					"left": 276,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Btoday",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TYP_RecFromHydro_d": {
+					"type": "input",
+					"top": 294,
+					"left": 192,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_CommentsToDE_d:11",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button4": {
+					"type": "button",
+					"top": 293,
+					"left": 276,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Btoday",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ReviewerDD3": {
+					"type": "dropdown",
+					"top": 294,
+					"left": 508,
+					"width": 144,
+					"height": 18,
+					"dataSource": "PRJ_GradingStatus_atxt",
+					"class": "PRJ_InputBoldLabel",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ReviewerDD3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TYP_AssToGeotech_d1": {
+					"type": "input",
+					"top": 319,
+					"left": 192,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Approved_d:10",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"CEButton": {
+					"type": "button",
+					"top": 318,
+					"left": 276,
+					"width": 50,
+					"height": 16,
+					"dataSource": "Button1",
+					"text": "Today",
+					"class": "Default",
+					"method": "ObjectMethods/CEButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TYP_RecFromHydro_d1": {
+					"type": "input",
+					"top": 344,
+					"left": 192,
+					"width": 448,
+					"height": 106,
+					"dataSource": "[PRJ_TypeStudy:121]TYP_Comments_txt:12",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ReviewerDD": {
+					"type": "text",
+					"top": 119,
+					"left": 364,
+					"width": 148,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Select a Reviewer-> : "
+				},
+				"PRJ_Reviewer": {
+					"type": "input",
+					"top": 144,
+					"left": 364,
+					"width": 306,
+					"height": 13,
+					"dataSource": "PRJ_Reviewer_txt",
+					"stroke": "#000000",
+					"class": "PRJ_InputVariable",
+					"focusable": false,
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 344,
+					"left": 12,
+					"width": 175,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": " Comments  : "
+				},
+				"ReviewerDD2": {
+					"type": "text",
+					"top": 294,
+					"left": 371,
+					"width": 135,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Select Grading Status -> : "
+				},
+				"CEButton1": {
+					"type": "pictureButton",
+					"top": 313,
+					"left": 328,
+					"width": 20,
+					"height": 22,
+					"dataSource": "Button9",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/BMS Letter.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/CEButton1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CEHelpText": {
+					"type": "text",
+					"top": 318,
+					"left": 281,
+					"width": 329,
+					"height": 23,
+					"class": "PRJ_InputBoldLabel",
+					"text": "You may not enter an approval date unless structure type has been entered"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 98,
+					"left": 251,
+					"width": 188,
+					"height": 18,
+					"class": "PRJ_IncludedList",
+					"textAlign": "center",
+					"text": "TYPE STUDY SUBMITTAL"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 3,
+					"left": 304,
+					"width": 2,
+					"height": 86,
+					"sizingX": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				}
+			}
+		}
+	]
+}

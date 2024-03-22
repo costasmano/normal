@@ -1,0 +1,1 @@
+SCPOA_TextVar_OM(->SCPOA_PostFldWatch_txt)

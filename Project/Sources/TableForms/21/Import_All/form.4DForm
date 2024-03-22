@@ -1,0 +1,92 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button1": {
+					"type": "button",
+					"top": 170,
+					"left": 302,
+					"width": 134,
+					"height": 24,
+					"dataSource": "Button1",
+					"text": "Import Data Check",
+					"class": "PRJ_InputBoldLabel",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 171,
+					"left": 152,
+					"width": 134,
+					"height": 24,
+					"dataSource": "Done",
+					"action": "cancel",
+					"text": "Done",
+					"class": "PRJ_InputBoldLabel",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 29,
+					"left": 69,
+					"width": 395,
+					"height": 120,
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"text": "This form is used to control importing all data into a new data file from files exported by data check. These exported files will be named ExportData_Raw, ExportData_Raw_1, ExportData_Raw_2, etc.  Continue to press the Import Data Check button until all files have been processed. Then, press the Done button"
+				}
+			}
+		}
+	]
+}

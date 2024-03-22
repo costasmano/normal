@@ -1,0 +1,1 @@
+Mar-2002 : Generated to copy comments from text fields in the Inspections and ElementSafety tables to the corresponding BLOB fields.

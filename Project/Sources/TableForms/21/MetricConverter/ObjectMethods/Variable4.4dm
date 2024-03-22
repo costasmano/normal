@@ -1,0 +1,1 @@
+vKilometers:=1.6093*vMiles

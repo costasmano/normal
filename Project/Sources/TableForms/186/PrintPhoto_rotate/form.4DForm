@@ -1,0 +1,442 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 760,
+	"markerBreak": 760,
+	"markerFooter": 760,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 80,
+					"left": 3,
+					"width": 10,
+					"height": 40,
+					"stroke": "#000000",
+					"class": "Arial9",
+					"textAngle": 270,
+					"text": "PAGE"
+				},
+				"PageNumber1": {
+					"type": "input",
+					"top": 59,
+					"left": 2,
+					"width": 10,
+					"height": 27,
+					"dataSource": "vPageNo",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 36,
+					"left": 3,
+					"width": 10,
+					"height": 29,
+					"stroke": "#000000",
+					"class": "Arial9",
+					"textAlign": "center",
+					"textAngle": 270,
+					"text": "OF"
+				},
+				"TotalPages1": {
+					"type": "input",
+					"top": 12,
+					"left": 2,
+					"width": 10,
+					"height": 31,
+					"dataSource": "vTotalPages",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line8": {
+					"type": "line",
+					"top": 58,
+					"left": 15,
+					"height": 24
+				},
+				"24Line9": {
+					"type": "line",
+					"top": 12,
+					"left": 15,
+					"height": 24
+				},
+				"Line9": {
+					"type": "line",
+					"top": 12,
+					"left": 20,
+					"width": 2,
+					"height": 746,
+					"strokeWidth": 2,
+					"startPoint": "bottomLeft"
+				},
+				"MAC_InspDateLBL": {
+					"type": "text",
+					"top": 22,
+					"left": 21,
+					"width": 10,
+					"height": 127,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAngle": 270,
+					"text": "INSPECTION DATE"
+				},
+				"Line23": {
+					"type": "line",
+					"top": 126,
+					"left": 21,
+					"width": 29
+				},
+				"MAC_TunnelNoLbl": {
+					"type": "text",
+					"top": 372,
+					"left": 21,
+					"width": 10,
+					"height": 114,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAngle": 270,
+					"text": "I1.-TUNNEL NO."
+				},
+				"Line7": {
+					"type": "line",
+					"top": 468,
+					"left": 21,
+					"width": 29
+				},
+				"MAC_CityLbl": {
+					"type": "text",
+					"top": 683,
+					"left": 21,
+					"width": 10,
+					"height": 94,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAngle": 270,
+					"text": "CITY/TOWN"
+				},
+				"Insp Date": {
+					"type": "input",
+					"top": 21,
+					"left": 33,
+					"width": 14,
+					"height": 99,
+					"dataSource": "[TIN_Inspections:184]InspDate:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "abbreviated",
+					"events": [
+						"onHeader"
+					]
+				},
+				"Item8": {
+					"type": "input",
+					"top": 265,
+					"left": 33,
+					"width": 12,
+					"height": 195,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i1_s:6",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###-###-###-###-###",
+					"events": [
+						"onHeader"
+					]
+				},
+				"Town name": {
+					"type": "input",
+					"top": 496,
+					"left": 33,
+					"width": 12,
+					"height": 258,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_TownName_s:71",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Town name.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 10,
+					"left": 21,
+					"width": 539,
+					"height": 2,
+					"strokeWidth": 2
+				},
+				"Line22": {
+					"type": "line",
+					"top": 10,
+					"left": 49,
+					"width": 2,
+					"height": 748,
+					"strokeWidth": 2
+				},
+				"Page Title": {
+					"type": "input",
+					"top": 116,
+					"left": 54,
+					"width": 15,
+					"height": 531,
+					"dataSource": "vPage2Title",
+					"stroke": "#FFFFFF",
+					"class": "Times14Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#000000",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 756,
+					"left": 21,
+					"width": 539,
+					"height": 2,
+					"strokeWidth": 2
+				},
+				"Picture1": {
+					"type": "input",
+					"top": 32,
+					"left": 73,
+					"width": 447,
+					"height": 717,
+					"dataSource": "vPicture1",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Title1": {
+					"type": "input",
+					"top": 153,
+					"left": 525,
+					"width": 28,
+					"height": 385,
+					"dataSource": "[TIN_Insp_Images:186]ImageDescr:4",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PhotoNum 1": {
+					"type": "input",
+					"top": 546,
+					"left": 525,
+					"width": 12,
+					"height": 62,
+					"dataSource": "vPhotoNum1",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 10,
+					"left": 558,
+					"width": 2,
+					"height": 748,
+					"strokeWidth": 2,
+					"startPoint": "bottomLeft"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 703,
+					"left": 561,
+					"width": 6,
+					"height": 64,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "Arial5",
+					"textAngle": 270,
+					"text": "IMG(1)02-21"
+				},
+				"WIN_CityLbl": {
+					"type": "text",
+					"top": 651,
+					"left": 21,
+					"width": 10,
+					"height": 103,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAngle": 270,
+					"text": "CITY/TOWN"
+				},
+				"WIN_TunnelNoLbl": {
+					"type": "text",
+					"top": 332,
+					"left": 21,
+					"width": 10,
+					"height": 128,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAngle": 270,
+					"text": "I1.-TUNNEL NO."
+				},
+				"WIN_InspDateLBL": {
+					"type": "text",
+					"top": 5,
+					"left": 21,
+					"width": 10,
+					"height": 115,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAngle": 270,
+					"text": "INSPECTION DATE"
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

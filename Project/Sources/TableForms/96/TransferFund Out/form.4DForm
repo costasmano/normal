@@ -1,0 +1,299 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerHeader": 45,
+	"markerBody": 72,
+	"markerBreak": 76,
+	"markerFooter": 76,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 660,
+					"height": 75,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 9,
+					"left": 1,
+					"width": 84,
+					"height": 32,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Date of\rConslt Letter"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 9,
+					"left": 88,
+					"width": 108,
+					"height": 32,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Document Sent to Contracts"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 9,
+					"left": 202,
+					"width": 84,
+					"height": 32,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Date of Approval"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 22,
+					"left": 296,
+					"width": 226,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Transfer Direction"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 22,
+					"left": 532,
+					"width": 123,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Transfer Amount"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 51,
+					"left": 91,
+					"width": 102,
+					"height": 16,
+					"dataSource": "[FundTransfer_Maintenance:96]DateDocSentToContracts:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 51,
+					"left": 202,
+					"width": 84,
+					"height": 16,
+					"dataSource": "[FundTransfer_Maintenance:96]DateApproval:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 51,
+					"left": 296,
+					"width": 230,
+					"height": 16,
+					"dataSource": "[FundTransfer_Maintenance:96]TransferDirection:6",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 51,
+					"left": 533,
+					"width": 110,
+					"height": 16,
+					"dataSource": "[FundTransfer_Maintenance:96]TransferAmount:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;-$###,##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 51,
+					"left": 6,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[FundTransfer_Maintenance:96]DateCsltLetter:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "List12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 46,
+					"left": 0,
+					"width": 660
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 85,
+					"height": 75
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 198,
+					"height": 75
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 290,
+					"height": 75
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 528,
+					"height": 75
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

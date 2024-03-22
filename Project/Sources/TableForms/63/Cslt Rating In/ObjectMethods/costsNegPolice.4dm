@@ -1,0 +1,3 @@
+[Conslt Rating Cost:74]Neg TotalDirectCost:17:=[Conslt Rating Cost:74]Neg Flagging:7+[Conslt Rating Cost:74]Neg Rigging:8+[Conslt Rating Cost:74]Neg Lifts:9+[Conslt Rating Cost:74]Neg TrafficControl:10+[Conslt Rating Cost:74]Neg Police:11+[Conslt Rating Cost:74]Neg Printing:12+[Conslt Rating Cost:74]Neg Mileage:13+[Conslt Rating Cost:74]Neg Lodging:14+[Conslt Rating Cost:74]Neg Postage:15+[Conslt Rating Cost:74]Neg Meals:16+[Conslt Rating Cost:74]Neg Barge:42+[Conslt Rating Cost:74]Neg SafetyBoat:43+[Conslt Rating Cost:74]Neg Snooper:44+[Conslt Rating Cost:74]Neg RRflagging:45+[Conslt Rating Cost:74]Neg Misc:37
+
+[Conslt Rating Cost:74]Neg TotalCost:18:=[Conslt Rating Cost:74]Neg TotalDirectCost:17+[Conslt Rating Cost:74]Neg TotalLimitFee:6

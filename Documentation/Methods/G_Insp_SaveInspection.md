@@ -1,0 +1,1 @@
+2003-10-03 : Added info about current completion status in the prompt.  2003-10-23 : Added showing of busy cursor while Flushing and saving transaction.

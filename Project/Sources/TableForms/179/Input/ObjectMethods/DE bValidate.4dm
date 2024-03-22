@@ -1,0 +1,3 @@
+If (PON_ELEMINP_SAVE)
+	ACCEPT:C269
+End if 

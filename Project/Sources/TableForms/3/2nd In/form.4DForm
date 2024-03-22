@@ -1,0 +1,2218 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 745,
+	"windowMinHeight": 470,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onDataChange",
+		"onDragOver",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture32": {
+					"type": "picture",
+					"top": -9,
+					"left": 0,
+					"width": 745,
+					"height": 47,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarGreen.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 100,
+					"left": 9,
+					"width": 51,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "Town"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 57,
+					"left": 9,
+					"width": 54,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "BDEPT"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 78,
+					"left": 9,
+					"width": 52,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "Times14Bold",
+					"fontWeight": "bold",
+					"text": "B.I.N."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 1,
+					"left": 0,
+					"width": 745,
+					"height": 37,
+					"sizingX": "grow",
+					"stroke": "#5F78FF",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Secondary Records"
+				},
+				"DisplayOnly12": {
+					"type": "input",
+					"top": 55,
+					"left": 72,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###"
+				},
+				"DisplayOnly13": {
+					"type": "input",
+					"top": 76,
+					"left": 72,
+					"width": 45,
+					"height": 24,
+					"dataSource": "[NBIS Secondary:3]BIN:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DE Field3": {
+					"type": "input",
+					"top": 98,
+					"left": 72,
+					"width": 154,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 148,
+					"left": 10,
+					"width": 725,
+					"sizingX": "grow",
+					"strokeWidth": 4
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 63,
+					"left": 251,
+					"width": 220,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 60,
+					"left": 247,
+					"width": 221,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 54,
+					"left": 496,
+					"width": 42,
+					"height": 42,
+					"dataSource": "bPr2nd",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Print.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Delete": {
+					"type": "button",
+					"top": 68,
+					"left": 258,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ5",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Delete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 68,
+					"left": 311,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ6",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Page"
+					},
+					"action": "previousPage",
+					"shortcutKey": "[Page up]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousPage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 68,
+					"left": 334,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ7",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Page"
+					},
+					"action": "nextPage",
+					"shortcutKey": "[Page down]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextPage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE SAVE": {
+					"type": "button",
+					"top": 68,
+					"left": 397,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ8",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SaveExit"
+					},
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE SAVE.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 68,
+					"left": 440,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SIAGoogle": {
+					"type": "pictureButton",
+					"top": 93,
+					"left": 659,
+					"width": 40,
+					"height": 55,
+					"dataSource": "SIAGoogle_L",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SIAGoogleBIN"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/GoogleMaps.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SIAGoogle.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"DisplayOnly": {
+					"type": "input",
+					"top": 165,
+					"left": 522,
+					"width": 178,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item8:38",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 256,
+					"left": 8,
+					"width": 128,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(3) County Code"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 165,
+					"left": 8,
+					"width": 166,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(8) Structure Number"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 190,
+					"left": 8,
+					"width": 151,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(5) Inventory Route"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 256,
+					"left": 503,
+					"width": 120,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(4) Place Code"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 290,
+					"left": 8,
+					"width": 172,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(6) Features Intersected"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 339,
+					"left": 8,
+					"width": 170,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(7) Facility Carried"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 388,
+					"left": 8,
+					"width": 258,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(9) Location"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 413,
+					"left": 8,
+					"width": 151,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(11) Kilometerpoint"
+				},
+				"DisplayOnly1": {
+					"type": "input",
+					"top": 256,
+					"left": 138,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item3:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DisplayOnly3": {
+					"type": "input",
+					"top": 256,
+					"left": 624,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item4:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 463,
+					"left": 8,
+					"width": 205,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(43) Structure Type Main:"
+				},
+				"DisplayOnly14": {
+					"type": "input",
+					"top": 190,
+					"left": 606,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item5:4",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "~\"A-Z;0-9\"#########",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE Field15": {
+					"type": "input",
+					"top": 438,
+					"left": 176,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item16B:13",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field16": {
+					"type": "input",
+					"top": 438,
+					"left": 240,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item16C:35",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Field16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field17": {
+					"type": "input",
+					"top": 438,
+					"left": 464,
+					"width": 36,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item17A:14",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9###",
+					"method": "ObjectMethods/DE Field17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field18": {
+					"type": "input",
+					"top": 438,
+					"left": 542,
+					"width": 27,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item17B:15",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE Field18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field19": {
+					"type": "input",
+					"top": 438,
+					"left": 607,
+					"width": 51,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item17C:36",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Field19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Variable12": {
+					"type": "dropdown",
+					"top": 463,
+					"left": 213,
+					"width": 320,
+					"height": 24,
+					"dataSource": "aItem43ades",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Variable12.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Field1": {
+					"type": "dropdown",
+					"top": 490,
+					"left": 213,
+					"width": 320,
+					"height": 24,
+					"dataSource": "aItem43bdes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Field1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DisplayOnly2": {
+					"type": "input",
+					"top": 493,
+					"left": 666,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item43:24",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 493,
+					"left": 623,
+					"width": 40,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "center",
+					"text": "Code"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 438,
+					"left": 352,
+					"width": 108,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(17) Longitude"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 438,
+					"left": 8,
+					"width": 114,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(16) Latitude"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 438,
+					"left": 136,
+					"width": 37,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "DEG"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 438,
+					"left": 204,
+					"width": 37,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "MIN"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 438,
+					"left": 503,
+					"width": 38,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "DEG"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 438,
+					"left": 572,
+					"width": 37,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "MIN"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 438,
+					"left": 293,
+					"width": 37,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "SEC"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 438,
+					"left": 662,
+					"width": 38,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "SEC"
+				},
+				"DisplayOnly10": {
+					"type": "input",
+					"top": 313,
+					"left": 185,
+					"width": 260,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item6A:5",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DisplayOnly11": {
+					"type": "input",
+					"top": 361,
+					"left": 185,
+					"width": 244,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item7:7",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text33": {
+					"type": "text",
+					"top": 274,
+					"left": 191,
+					"width": 45,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Code"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 274,
+					"left": 392,
+					"width": 155,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Description"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 275,
+					"left": 321,
+					"width": 43,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Rte#"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 274,
+					"left": 360,
+					"width": 23,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Sfx"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 125,
+					"left": 240,
+					"width": 230,
+					"height": 27,
+					"stroke": "#000000",
+					"class": "Times24Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Identification"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 216,
+					"left": 14,
+					"width": 25,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "right",
+					"text": "5A"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 216,
+					"left": 86,
+					"width": 25,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "right",
+					"text": "5B"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 216,
+					"left": 288,
+					"width": 25,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "right",
+					"text": "5C"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 216,
+					"left": 460,
+					"width": 25,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "right",
+					"text": "5D"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 216,
+					"left": 575,
+					"width": 25,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"textAlign": "right",
+					"text": "5E"
+				},
+				"DE Variable8": {
+					"type": "input",
+					"top": 217,
+					"left": 47,
+					"width": 20,
+					"height": 17,
+					"dataSource": "Item5A_txt",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "!_~\"2;A-Z\"#",
+					"min": 0,
+					"max": 999,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/DE Variable8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item5B_atxt": {
+					"type": "dropdown",
+					"top": 214,
+					"left": 116,
+					"width": 162,
+					"height": 23,
+					"dataSource": "Item5B_atxt",
+					"choiceList": [
+						"1 Interstate",
+						"2 U.S.",
+						"3 State",
+						"4 County",
+						"5 City",
+						"6 Federal lands",
+						"7 State lands",
+						"8  Other (include toll roads not otherwise indicated or identified above)"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Item5B_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Item5C_atxt": {
+					"type": "dropdown",
+					"top": 214,
+					"left": 318,
+					"width": 132,
+					"height": 23,
+					"dataSource": "Item5C_atxt",
+					"choiceList": [
+						"0 None of the below",
+						"1 Mainline",
+						"2 Alternate",
+						"3 Bypass",
+						"4 Spur",
+						"6 Business",
+						"7 Ramp, Wye, Connector, etc.",
+						"8 Service and/or unclassified frontage road"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Item5C_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Item5D_L": {
+					"type": "input",
+					"top": 217,
+					"left": 490,
+					"width": 70,
+					"height": 17,
+					"dataSource": "Item5D_txt",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#####",
+					"entryFilter": "!0&\"0-9\"####~\"0-9,A-Z\"#",
+					"min": 0,
+					"max": 999,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/DE Item5D_L.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item5E_atxt": {
+					"type": "dropdown",
+					"top": 214,
+					"left": 605,
+					"width": 92,
+					"height": 23,
+					"dataSource": "Item5E_atxt",
+					"choiceList": [
+						"0 Not Applicable",
+						"1 North",
+						"2 East",
+						"3 South",
+						"4 West"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Item5E_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Features": {
+					"type": "dropdown",
+					"top": 288,
+					"left": 185,
+					"width": 132,
+					"height": 21,
+					"dataSource": "IDaFeatDescr_",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Features.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Features1": {
+					"type": "input",
+					"top": 290,
+					"left": 322,
+					"width": 31,
+					"height": 17,
+					"dataSource": "IDvRteNum",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9; ;\"###",
+					"method": "ObjectMethods/Features1.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Features2": {
+					"type": "checkbox",
+					"top": 290,
+					"left": 363,
+					"width": 19,
+					"height": 19,
+					"dataSource": "IDvSuffix",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Features2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Features3": {
+					"type": "input",
+					"top": 290,
+					"left": 392,
+					"width": 210,
+					"height": 17,
+					"dataSource": "IDv6Descr",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/Features3.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Field10": {
+					"type": "checkbox",
+					"top": 290,
+					"left": 621,
+					"width": 42,
+					"height": 20,
+					"dataSource": "[NBIS Secondary:3]Item6B:6",
+					"text": "*",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Field10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Features4": {
+					"type": "dropdown",
+					"top": 337,
+					"left": 185,
+					"width": 132,
+					"height": 21,
+					"dataSource": "IDa7FDescr_",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Features4.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Features5": {
+					"type": "input",
+					"top": 339,
+					"left": 322,
+					"width": 31,
+					"height": 17,
+					"dataSource": "IDv7Rtenum",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9; ;\"###",
+					"method": "ObjectMethods/Features5.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Features6": {
+					"type": "checkbox",
+					"top": 339,
+					"left": 364,
+					"width": 20,
+					"height": 20,
+					"dataSource": "IDv7Suffix",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Features6.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Features7": {
+					"type": "input",
+					"top": 339,
+					"left": 392,
+					"width": 210,
+					"height": 17,
+					"dataSource": "IDv7Descr",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/Features7.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Field12": {
+					"type": "input",
+					"top": 388,
+					"left": 522,
+					"width": 178,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item9:8",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/DE Field12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field13": {
+					"type": "input",
+					"top": 413,
+					"left": 614,
+					"width": 86,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item11:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000.000",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Field13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field14": {
+					"type": "input",
+					"top": 438,
+					"left": 104,
+					"width": 26,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item16A:12",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE Field14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 68,
+					"left": 311,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ6",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Page"
+					},
+					"action": "lastPage",
+					"shortcutKey": "[Page up]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousPage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"VariableCopyLatLon": {
+					"type": "button",
+					"top": 436,
+					"left": 1,
+					"width": 1,
+					"height": 9,
+					"dataSource": "SIA_CopyLatLon",
+					"shortcutKey": "v",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"display": false,
+					"method": "ObjectMethods/VariableCopyLatLon.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 297,
+					"left": 7,
+					"width": 693,
+					"height": 53,
+					"fill": "transparent"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 203,
+					"left": 192,
+					"width": 60,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "Under -"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 180,
+					"left": 8,
+					"width": 162,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(42) Type of Service:"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 180,
+					"left": 192,
+					"width": 36,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "On -"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 249,
+					"left": 8,
+					"width": 210,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(29) Average Daily Traffic"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 226,
+					"left": 8,
+					"width": 192,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(28) Lanes: On Structure"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 157,
+					"left": 8,
+					"width": 115,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(27) Year Built"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 125,
+					"left": 216,
+					"width": 278,
+					"height": 27,
+					"stroke": "#000000",
+					"class": "Times24Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Age and Service"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 226,
+					"left": 509,
+					"width": 132,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "Under Structure"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 203,
+					"left": 632,
+					"width": 42,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "Code"
+				},
+				"DisplayOnly4": {
+					"type": "input",
+					"top": 203,
+					"left": 676,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item42:23",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE Field24": {
+					"type": "input",
+					"top": 157,
+					"left": 656,
+					"width": 44,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item27:19",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9####",
+					"min": 1400,
+					"max": 2099,
+					"method": "ObjectMethods/DE Field24.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Variable13": {
+					"type": "dropdown",
+					"top": 174,
+					"left": 270,
+					"width": 220,
+					"height": 24,
+					"dataSource": "aItem42aDes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Variable13.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE Variable14": {
+					"type": "dropdown",
+					"top": 199,
+					"left": 270,
+					"width": 220,
+					"height": 24,
+					"dataSource": "aItem42bDes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Variable14.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Item28a": {
+					"type": "input",
+					"top": 226,
+					"left": 360,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item28A:20",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/Item28a.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field26": {
+					"type": "input",
+					"top": 226,
+					"left": 676,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item28B:21",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE Field26.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field27": {
+					"type": "input",
+					"top": 249,
+					"left": 636,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item29:22",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9######",
+					"method": "ObjectMethods/DE Field27.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Item30": {
+					"type": "input",
+					"top": 272,
+					"left": 162,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item30:37",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"entryFilter": "&9####",
+					"method": "ObjectMethods/DE Item30.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field29": {
+					"type": "input",
+					"top": 272,
+					"left": 648,
+					"width": 26,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item109:10",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE Field29.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field30": {
+					"type": "input",
+					"top": 303,
+					"left": 625,
+					"width": 36,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item19:16",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9###",
+					"method": "ObjectMethods/DE Field30.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Variable26": {
+					"type": "radio",
+					"top": 324,
+					"left": 44,
+					"width": 166,
+					"height": 20,
+					"dataSource": "wItem19a",
+					"text": "Bypass available",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE Variable26.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Variable27": {
+					"type": "radio",
+					"top": 324,
+					"left": 212,
+					"width": 194,
+					"height": 20,
+					"dataSource": "wItem19b",
+					"text": "Twin bridge available",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE Variable27.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Variable28": {
+					"type": "radio",
+					"top": 324,
+					"left": 410,
+					"width": 148,
+					"height": 20,
+					"dataSource": "wItem19c",
+					"text": "199 KM or more",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE Variable28.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Field31": {
+					"type": "input",
+					"top": 393,
+					"left": 627,
+					"width": 54,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item48:26",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12APlain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Field31.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field32": {
+					"type": "input",
+					"top": 414,
+					"left": 609,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item49:27",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00000.0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Field32.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Variable25": {
+					"type": "checkbox",
+					"top": 432,
+					"left": 306,
+					"width": 132,
+					"height": 24,
+					"dataSource": "CBItem10",
+					"text": "Unrestricted",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE Variable25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Field33": {
+					"type": "input",
+					"top": 436,
+					"left": 627,
+					"width": 54,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item10:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 99,
+					"method": "ObjectMethods/DE Field33.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Variable29": {
+					"type": "checkbox",
+					"top": 458,
+					"left": 306,
+					"width": 194,
+					"height": 20,
+					"dataSource": "CBItem47",
+					"text": "Greater than 100 M",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE Variable29.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Field34": {
+					"type": "input",
+					"top": 458,
+					"left": 633,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item47:25",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00.0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Field34.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text37": {
+					"type": "text",
+					"top": 436,
+					"left": 8,
+					"width": 280,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(10) Inventory Route MIN Vert Clear"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 380,
+					"left": 10,
+					"width": 690,
+					"strokeWidth": 4
+				},
+				"Text38": {
+					"type": "text",
+					"top": 358,
+					"left": 216,
+					"width": 278,
+					"height": 27,
+					"stroke": "#000000",
+					"class": "Times24Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Geometric Data"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 436,
+					"left": 684,
+					"width": 16,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "M"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 301,
+					"left": 9,
+					"width": 210,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(19) Bypass, detour length"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 303,
+					"left": 663,
+					"width": 31,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "KMI"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 458,
+					"left": 8,
+					"width": 280,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(47) Inventory Route Total Horiz Clear"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 458,
+					"left": 684,
+					"width": 16,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "M"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 414,
+					"left": 8,
+					"width": 280,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(49) Structure Length"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 393,
+					"left": 8,
+					"width": 280,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(48) Length of maximum span"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 393,
+					"left": 684,
+					"width": 16,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "M"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 414,
+					"left": 684,
+					"width": 16,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "M"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 272,
+					"left": 8,
+					"width": 138,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(30) Year of ADT"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 272,
+					"left": 682,
+					"width": 18,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "%"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 272,
+					"left": 515,
+					"width": 129,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(109) Truck ADT"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text55": {
+					"type": "text",
+					"top": 353,
+					"left": 9,
+					"width": 84,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(20) Toll"
+				},
+				"DE DropDown4": {
+					"type": "dropdown",
+					"top": 350,
+					"left": 154,
+					"width": 500,
+					"height": 24,
+					"dataSource": "aItem20des_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE DropDown4.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DisplayOnly9": {
+					"type": "input",
+					"top": 353,
+					"left": 675,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item20:17",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text56": {
+					"type": "text",
+					"top": 326,
+					"left": 9,
+					"width": 270,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(110) Designated National Network"
+				},
+				"DE Field44": {
+					"type": "checkbox",
+					"top": 326,
+					"left": 675,
+					"width": 18,
+					"height": 24,
+					"dataSource": "[NBIS Secondary:3]Item110:33",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Field44.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text57": {
+					"type": "text",
+					"top": 299,
+					"left": 9,
+					"width": 215,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(103) Temporary Structure"
+				},
+				"DE Field43": {
+					"type": "checkbox",
+					"top": 299,
+					"left": 675,
+					"width": 18,
+					"height": 24,
+					"dataSource": "[NBIS Secondary:3]Item103:31",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Field43.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text58": {
+					"type": "text",
+					"top": 272,
+					"left": 9,
+					"width": 215,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(102) Direction of Traffic - "
+				},
+				"DisplayOnly8": {
+					"type": "input",
+					"top": 272,
+					"left": 676,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item102:30",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE DropDown3": {
+					"type": "dropdown",
+					"top": 269,
+					"left": 246,
+					"width": 230,
+					"height": 24,
+					"dataSource": "aItem102Des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE DropDown3.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text59": {
+					"type": "text",
+					"top": 245,
+					"left": 9,
+					"width": 215,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(101) Parallel Structure"
+				},
+				"DisplayOnly7": {
+					"type": "input",
+					"top": 245,
+					"left": 675,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item101:29",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE DropDown2": {
+					"type": "dropdown",
+					"top": 242,
+					"left": 246,
+					"width": 408,
+					"height": 24,
+					"dataSource": "aItem101d_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE DropDown2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text60": {
+					"type": "text",
+					"top": 218,
+					"left": 9,
+					"width": 215,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(100) Defense Highway"
+				},
+				"DisplayOnly6": {
+					"type": "input",
+					"top": 218,
+					"left": 675,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item100:28",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE DropDown1": {
+					"type": "dropdown",
+					"top": 215,
+					"left": 246,
+					"width": 408,
+					"height": 24,
+					"dataSource": "aItem100d_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE DropDown1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text61": {
+					"type": "text",
+					"top": 191,
+					"left": 9,
+					"width": 215,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(26) Functional Class - "
+				},
+				"DisplayOnly5": {
+					"type": "input",
+					"top": 191,
+					"left": 669,
+					"width": 31,
+					"height": 17,
+					"dataSource": "[NBIS Secondary:3]Item26:18",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE DropDown": {
+					"type": "dropdown",
+					"top": 188,
+					"left": 246,
+					"width": 230,
+					"height": 24,
+					"dataSource": "aItem26Des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE DropDown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text62": {
+					"type": "text",
+					"top": 164,
+					"left": 9,
+					"width": 215,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Times16",
+					"text": "(104) Highway System"
+				},
+				"DE Field42": {
+					"type": "checkbox",
+					"top": 164,
+					"left": 675,
+					"width": 18,
+					"height": 24,
+					"dataSource": "[NBIS Secondary:3]Item104:32",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Field42.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text63": {
+					"type": "text",
+					"top": 125,
+					"left": 217,
+					"width": 277,
+					"height": 27,
+					"stroke": "#000000",
+					"class": "Times24Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Classification"
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 68,
+					"left": 334,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ7",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Page"
+					},
+					"action": "firstPage",
+					"shortcutKey": "[Page down]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextPage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group5": [
+				"Text25",
+				"Text32"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

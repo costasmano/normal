@@ -1,0 +1,1308 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "PrintTemplate",
+	"inheritedFormTable": 132,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 764,
+	"markerBreak": 764,
+	"markerFooter": 764,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture Button32": {
+					"type": "pictureButton",
+					"top": 119,
+					"left": 360,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummPFldMonY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button7": {
+					"type": "pictureButton",
+					"top": 119,
+					"left": 405,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummPFldMonN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button33": {
+					"type": "pictureButton",
+					"top": 107,
+					"left": 360,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummFldMonY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button8": {
+					"type": "pictureButton",
+					"top": 107,
+					"left": 405,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummFldMonN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button36": {
+					"type": "pictureButton",
+					"top": 95,
+					"left": 360,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummFixMonY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button9": {
+					"type": "pictureButton",
+					"top": 95,
+					"left": 405,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummFixMonN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button37": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 360,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummUWIncrY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button10": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 405,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummUWIncrN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button6": {
+					"type": "pictureButton",
+					"top": 70,
+					"left": 360,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummChannelIncrY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"switchContinuously": true,
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button1": {
+					"type": "pictureButton",
+					"top": 70,
+					"left": 405,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummChannelIncrN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text38": {
+					"type": "text",
+					"top": 69,
+					"left": 372,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 106,
+					"left": 372,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 94,
+					"left": 372,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 82,
+					"left": 372,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 69,
+					"left": 417,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 118,
+					"left": 417,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 106,
+					"left": 417,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 94,
+					"left": 417,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 82,
+					"left": 417,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 118,
+					"left": 372,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 56,
+					"left": 24,
+					"width": 193,
+					"height": 12,
+					"class": "Arial10Bold",
+					"textAlign": "left",
+					"text": "Monitoring Plan Summary:"
+				},
+				"Text123": {
+					"type": "text",
+					"top": 69,
+					"left": 26,
+					"width": 289,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "a. Recommended Change in Channel Scour Frequency  (Section 2a.) :"
+				},
+				"Text127": {
+					"type": "text",
+					"top": 118,
+					"left": 26,
+					"width": 249,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "e. Post Flood Assessment (Section 2e.) :"
+				},
+				"Text126": {
+					"type": "text",
+					"top": 106,
+					"left": 26,
+					"width": 249,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "d. Flood Monitoring Program (Section 2d.)  :"
+				},
+				"Text125": {
+					"type": "text",
+					"top": 94,
+					"left": 26,
+					"width": 249,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "c. Fixed Monitoring Device (Section  2c.) :"
+				},
+				"Text124": {
+					"type": "text",
+					"top": 82,
+					"left": 26,
+					"width": 329,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "b. Recommended Change in Underwater Inspection Frequency (Section 2b.) :"
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 38,
+					"left": 16,
+					"width": 568,
+					"height": 17,
+					"sizingY": "move",
+					"fill": "#DDDDDD"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 40,
+					"left": 41,
+					"width": 518,
+					"height": 13,
+					"class": "Helvetica12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "2. MONITORING PLAN"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text26": {
+					"type": "text",
+					"top": 181,
+					"left": 48,
+					"width": 120,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Recommended Frequency"
+				},
+				"SCPOA_ChannelFreqRec_L1": {
+					"type": "input",
+					"top": 181,
+					"left": 171,
+					"width": 24,
+					"height": 12,
+					"dataSource": "[ScourPOA:132]ChannelInspRec:32",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_ChannelFreqCurr_L": {
+					"type": "input",
+					"top": 167,
+					"left": 141,
+					"width": 24,
+					"height": 11,
+					"dataSource": "[ScourPOA:132]ChannelInspCurr:31",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###;;"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 154,
+					"left": 35,
+					"width": 193,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Channel Scour Inspection"
+				},
+				"Picture Button12": {
+					"type": "pictureButton",
+					"top": 119,
+					"left": 493,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLPFldMonY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button17": {
+					"type": "pictureButton",
+					"top": 119,
+					"left": 538,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLPFldMonN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button13": {
+					"type": "pictureButton",
+					"top": 107,
+					"left": 493,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLFldMonY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button18": {
+					"type": "pictureButton",
+					"top": 107,
+					"left": 538,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLFldMonN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button14": {
+					"type": "pictureButton",
+					"top": 95,
+					"left": 493,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLFixMonY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button19": {
+					"type": "pictureButton",
+					"top": 95,
+					"left": 538,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLFixMonN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button15": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 493,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLUWIncrY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button20": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 538,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLUWIncrN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_UWInspPrg_L": {
+					"type": "pictureButton",
+					"top": 376,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_UWInspPrg_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_UWIncrInspPrg_L": {
+					"type": "pictureButton",
+					"top": 388,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_UWIncrInspPrg_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_FixMonitDev_L": {
+					"type": "pictureButton",
+					"top": 518,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_FixMonitDev_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text67": {
+					"type": "text",
+					"top": 154,
+					"left": 238,
+					"width": 39,
+					"height": 26,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Items to Watch:"
+				},
+				"SCPOA_WatchReg_txt": {
+					"type": "input",
+					"top": 154,
+					"left": 280,
+					"width": 300,
+					"height": 202,
+					"dataSource": "SCPOA_WatchReg_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text72": {
+					"type": "text",
+					"top": 363,
+					"left": 35,
+					"width": 150,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Underwater Inspection Program"
+				},
+				"Text73": {
+					"type": "text",
+					"top": 375,
+					"left": 171,
+					"width": 21,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "mo."
+				},
+				"SCPOA_UWInspPrgFreq_L": {
+					"type": "input",
+					"top": 375,
+					"left": 142,
+					"width": 23,
+					"height": 11,
+					"dataSource": "SCPOA_UWInspPrgFreq_L",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###,###;;",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 386,
+					"left": 141,
+					"width": 24,
+					"strokeWidth": 0.1
+				},
+				"Text74": {
+					"type": "text",
+					"top": 363,
+					"left": 238,
+					"width": 38,
+					"height": 31,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Items to Watch:"
+				},
+				"SCPOA_WatchIncr_txt2": {
+					"type": "input",
+					"top": 363,
+					"left": 280,
+					"width": 300,
+					"height": 146,
+					"dataSource": "SCPOA_WatchUW_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text76": {
+					"type": "text",
+					"top": 517,
+					"left": 48,
+					"width": 240,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Fixed Monitoring Device in Place"
+				},
+				"Text77": {
+					"type": "text",
+					"top": 549,
+					"left": 38,
+					"width": 98,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Type of Instrument:"
+				},
+				"SCPOA_InstTYpe_txt": {
+					"type": "input",
+					"top": 549,
+					"left": 138,
+					"width": 442,
+					"height": 12,
+					"dataSource": "SCPOA_InstTYpe_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text78": {
+					"type": "text",
+					"top": 561,
+					"left": 38,
+					"width": 98,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Installation location(s):"
+				},
+				"SCPOA_InstLoc_txt": {
+					"type": "input",
+					"top": 561,
+					"left": 138,
+					"width": 442,
+					"height": 12,
+					"dataSource": "SCPOA_InstLoc_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text82": {
+					"type": "text",
+					"top": 640,
+					"left": 26,
+					"width": 551,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Action(s) required if scour-critical streambed elevation detected :"
+				},
+				"SCPOA_ScCritAction_txt": {
+					"type": "input",
+					"top": 652,
+					"left": 26,
+					"width": 551,
+					"height": 33,
+					"dataSource": "SCPOA_ScCritAction_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 688,
+					"left": 26,
+					"width": 551,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Criteria of Termination For Fixed Monitoring :"
+				},
+				"SCPOA_FixedTerm_txt": {
+					"type": "input",
+					"top": 700,
+					"left": 26,
+					"width": 551,
+					"height": 43,
+					"dataSource": "SCPOA_FixedTerm_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line10": {
+					"type": "line",
+					"top": 132,
+					"left": 15,
+					"width": 570
+				},
+				"Text128": {
+					"type": "text",
+					"top": 56,
+					"left": 349,
+					"width": 100,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"textDecoration": "underline",
+					"text": "Recommended"
+				},
+				"Text129": {
+					"type": "text",
+					"top": 56,
+					"left": 479,
+					"width": 100,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"textDecoration": "underline",
+					"text": "Implemented"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 134,
+					"left": 24,
+					"width": 553,
+					"height": 12,
+					"class": "Arial10Bold",
+					"textAlign": "center",
+					"textDecoration": "underline",
+					"text": "Recommended Monitoring Program"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 388,
+					"left": 201,
+					"width": 21,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "mo."
+				},
+				"SCPOA_UWIncrInspPrgFreq_L": {
+					"type": "input",
+					"top": 388,
+					"left": 171,
+					"width": 24,
+					"height": 11,
+					"dataSource": "SCPOA_UWIncrInspPrgFreq_L",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###,###;;",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": 399,
+					"left": 171,
+					"width": 24,
+					"strokeWidth": 0.1
+				},
+				"Line15": {
+					"type": "line",
+					"top": 148,
+					"left": 15,
+					"width": 570
+				},
+				"Picture Button11": {
+					"type": "pictureButton",
+					"top": 70,
+					"left": 493,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLChanIncrY_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button16": {
+					"type": "pictureButton",
+					"top": 70,
+					"left": 538,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_SummIMPLChanIncrN_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 69,
+					"left": 505,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 106,
+					"left": 505,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 94,
+					"left": 505,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 82,
+					"left": 505,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 118,
+					"left": 505,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "Yes"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 69,
+					"left": 550,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 118,
+					"left": 550,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 106,
+					"left": 550,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 94,
+					"left": 550,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 82,
+					"left": 550,
+					"width": 22,
+					"height": 11,
+					"class": "Arial9Bold",
+					"text": "No"
+				},
+				"Line16": {
+					"type": "line",
+					"top": 514,
+					"left": 15,
+					"width": 570
+				},
+				"Text46": {
+					"type": "text",
+					"top": 154,
+					"left": 19,
+					"width": 15,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "2a."
+				},
+				"Text47": {
+					"type": "text",
+					"top": 363,
+					"left": 18,
+					"width": 16,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "2b."
+				},
+				"Text48": {
+					"type": "text",
+					"top": 517,
+					"left": 18,
+					"width": 16,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "2c."
+				},
+				"Line5": {
+					"type": "line",
+					"top": 361,
+					"left": 15,
+					"width": 570
+				},
+				"SCPOA_IncrInspPrg_Addtl_L": {
+					"type": "pictureButton",
+					"top": 229,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_IncrInspPrg_Addtl_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 228,
+					"left": 48,
+					"width": 112,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Additional Tasks:"
+				},
+				"SCPOA_IncrInspPrg_Addtl_txt": {
+					"type": "input",
+					"top": 240,
+					"left": 48,
+					"width": 190,
+					"height": 116,
+					"dataSource": "SCPOA_IncrInspPrg_Addtl_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 407,
+					"left": 48,
+					"width": 186,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Underwater Inspection Reports Available"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 420,
+					"left": 48,
+					"width": 82,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Dates of Reports : "
+				},
+				"SCPOA_UWInspRptAvail_L": {
+					"type": "pictureButton",
+					"top": 408,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_UWInspRptAvail_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_UWInspRptAvailDates_txt": {
+					"type": "input",
+					"top": 421,
+					"left": 130,
+					"width": 74,
+					"height": 81,
+					"dataSource": "SCPOA_UWInspRptAvailDates_txt",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_RecFixMonitDev_L_P": {
+					"type": "pictureButton",
+					"top": 530,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_RecFixMonitDev_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 529,
+					"left": 48,
+					"width": 240,
+					"height": 11,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Recommend Installation of Fixed Monitoring Device"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 576,
+					"left": 26,
+					"width": 551,
+					"height": 11,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Procedure for Use of Fixed Monitoring Device :"
+				},
+				"SCPOA_FixedDevProced_txt": {
+					"type": "input",
+					"top": 588,
+					"left": 26,
+					"width": 551,
+					"height": 49,
+					"dataSource": "SCPOA_FixedDevProced_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 167,
+					"left": 168,
+					"width": 24,
+					"height": 11,
+					"class": "Arial10Bold",
+					"textAlign": "left",
+					"text": "mo."
+				},
+				"Line4": {
+					"type": "line",
+					"top": 178,
+					"left": 141,
+					"width": 24,
+					"strokeWidth": 0.1
+				},
+				"Text7": {
+					"type": "text",
+					"top": 167,
+					"left": 48,
+					"width": 93,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Present Frequency"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 181,
+					"left": 198,
+					"width": 24,
+					"height": 11,
+					"class": "Arial10Bold",
+					"textAlign": "left",
+					"text": "mo."
+				},
+				"Text28": {
+					"type": "text",
+					"top": 196,
+					"left": 48,
+					"width": 209,
+					"height": 31,
+					"class": "Arial9",
+					"textAlign": "left",
+					"text": "Note: Channel Scour Inspection should consist of updating Attachment H Channel profile and underminining forms"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 191,
+					"left": 171,
+					"width": 24,
+					"strokeWidth": 0.1
+				},
+				"SCPOA_ChannelFreqCur_L": {
+					"type": "pictureButton",
+					"top": 167,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_ChannelFreqCur_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_ChannelFreqRec_L": {
+					"type": "pictureButton",
+					"top": 182,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_ChannelFreqRec_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/checkbox.png",
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 376,
+					"left": 48,
+					"width": 93,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Present Frequency"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 388,
+					"left": 48,
+					"width": 120,
+					"height": 10,
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"text": "Recommended Frequency"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

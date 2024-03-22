@@ -1,0 +1,1 @@
+Form Created Sep 2001 : to replace the Old form. Attempts to add field names and table names of parent and local ids.Apr-2003 : Fixed some naming of variables and added initialization of variables.2004-04-02 : Made subform for OwnersofDataa double clickable and enterable.

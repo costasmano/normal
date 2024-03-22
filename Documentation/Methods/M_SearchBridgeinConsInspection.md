@@ -1,0 +1,1 @@
+Created July-2003 : search bridges in [Cons Inspection] by BIN and BDEPT  23-Sep-2003 : Adjusted code to use method CreateRandomsetConsInsp.  3-Oct-2003 : Name of form was too long by 1 char.

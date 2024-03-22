@@ -1,0 +1,1 @@
+25-jan-2001: modified to display Item 8 instead of Bridge Key.2004-02-13 : Made form type Detail Form for Printing.

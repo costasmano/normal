@@ -1,0 +1,1 @@
+2004-02-17 : Changed the Vertical and Horizontal Sizing Property from None to Grow.2004-02-23 : Changed scope of Record Id resolution in data transfers to 0 (Global ID).2004-04-27 : Applied 120% form scaling and changed the button images.

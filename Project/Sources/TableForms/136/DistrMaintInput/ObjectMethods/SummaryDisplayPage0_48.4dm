@@ -1,0 +1,1 @@
+ut_OpenProjInfo_OM("CONTRACT"; [DCM_Contracts:136]ContractNo:1; Self:C308)

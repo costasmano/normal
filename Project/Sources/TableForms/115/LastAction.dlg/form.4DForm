@@ -1,0 +1,128 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle38": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 439,
+					"height": 314,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFFFDF",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text6": {
+					"type": "text",
+					"top": 36,
+					"left": 108,
+					"width": 206,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "center",
+					"text": "Last Action Description : "
+				},
+				"Button1": {
+					"type": "button",
+					"top": 271,
+					"left": 290,
+					"width": 124,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"text": "Save",
+					"class": "PRJ_InputVariable",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onPrintingFooter",
+						"onDisplayDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 271,
+					"left": 160,
+					"width": 124,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "PRJ_InputVariable",
+					"events": [
+						"onClick",
+						"onPrintingFooter",
+						"onDisplayDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 58,
+					"left": 22,
+					"width": 383,
+					"height": 202,
+					"dataSource": "PRJ_EditAction_txt",
+					"class": "PRJ_InputVariable",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

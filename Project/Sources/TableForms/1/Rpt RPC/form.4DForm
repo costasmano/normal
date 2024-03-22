@@ -1,0 +1,733 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": [
+		61,
+		71
+	],
+	"markerBody": 79,
+	"markerBreak": 79,
+	"markerFooter": 82,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 0,
+					"width": 735,
+					"height": 42,
+					"fill": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 4,
+					"left": 0,
+					"width": 346,
+					"height": 35,
+					"dataSource": "vRptHeader",
+					"stroke": "#000000",
+					"class": "Helvetica9",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 4,
+					"left": 654,
+					"width": 76,
+					"height": 35,
+					"dataSource": "vDtTmPg",
+					"stroke": "#000000",
+					"class": "Helvetica8",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 62,
+					"left": 2,
+					"width": 302,
+					"height": 10,
+					"dataSource": "vTwnName",
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 71,
+					"left": 13,
+					"width": 42,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 71,
+					"left": 63,
+					"width": 21,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Item8": {
+					"type": "input",
+					"top": 71,
+					"left": 87,
+					"width": 79,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 71,
+					"left": 169,
+					"width": 88,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item7:65",
+					"stroke": "#000000",
+					"class": "Courier06",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 71,
+					"left": 260,
+					"width": 101,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item6A:63",
+					"stroke": "#000000",
+					"class": "Courier06",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 71,
+					"left": 365,
+					"width": 18,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item22:128",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 71,
+					"left": 386,
+					"width": 93,
+					"height": 8,
+					"dataSource": "vOwnerTrans",
+					"stroke": "#000000",
+					"fontFamily": "Courier",
+					"fontSize": 6,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 71,
+					"left": 483,
+					"width": 18,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item37:129",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 71,
+					"left": 504,
+					"width": 18,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item26:120",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 71,
+					"left": 525,
+					"width": 84,
+					"height": 10,
+					"dataSource": "vFCTrans",
+					"stroke": "#000000",
+					"class": "Courier06",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 71,
+					"left": 613,
+					"width": 25,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item27:83",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "####;;?",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 71,
+					"left": 641,
+					"width": 25,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]Item106:84",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "####;;",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 71,
+					"left": 669,
+					"width": 33,
+					"height": 10,
+					"dataSource": "[Bridge MHD NBIS:1]AASHTO:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##0.0  ",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 71,
+					"left": 705,
+					"width": 27,
+					"height": 10,
+					"dataSource": "vDeficTrans",
+					"stroke": "#000000",
+					"class": "Courier07",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 59,
+					"left": 0,
+					"width": 735
+				},
+				"Line2": {
+					"type": "line",
+					"top": 40,
+					"left": 61,
+					"height": 19
+				},
+				"Text1": {
+					"type": "text",
+					"top": 40,
+					"left": 63,
+					"width": 21,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "\rBIN"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 40,
+					"left": 85,
+					"height": 19
+				},
+				"Text2": {
+					"type": "text",
+					"top": 40,
+					"left": 87,
+					"width": 79,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "\rItem 8 Code"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 40,
+					"left": 2,
+					"width": 57,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "Town Name\r    Bridge Dept.  #"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 40,
+					"left": 167,
+					"height": 19
+				},
+				"Text4": {
+					"type": "text",
+					"top": 40,
+					"left": 169,
+					"width": 88,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "Over\r(Facility Carried)"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 40,
+					"left": 258,
+					"height": 19
+				},
+				"Text5": {
+					"type": "text",
+					"top": 40,
+					"left": 260,
+					"width": 101,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "Under\r(Facility Intersected)"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 40,
+					"left": 363,
+					"height": 19
+				},
+				"Text6": {
+					"type": "text",
+					"top": 40,
+					"left": 365,
+					"width": 18,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Own.\rCode"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 40,
+					"left": 481,
+					"height": 19
+				},
+				"Text7": {
+					"type": "text",
+					"top": 40,
+					"left": 483,
+					"width": 18,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Hist.\rCode"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 40,
+					"left": 502,
+					"height": 19
+				},
+				"Text8": {
+					"type": "text",
+					"top": 40,
+					"left": 504,
+					"width": 18,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "FC\rCode"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 40,
+					"left": 611,
+					"height": 19
+				},
+				"Text9": {
+					"type": "text",
+					"top": 40,
+					"left": 613,
+					"width": 25,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Year\rBuilt"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 40,
+					"left": 639,
+					"height": 19
+				},
+				"Text10": {
+					"type": "text",
+					"top": 40,
+					"left": 641,
+					"width": 25,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Year\rRebuilt"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 40,
+					"left": 667,
+					"height": 19
+				},
+				"Text11": {
+					"type": "text",
+					"top": 40,
+					"left": 669,
+					"width": 33,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "AASHTO\rRating"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 40,
+					"left": 703,
+					"height": 19
+				},
+				"Text12": {
+					"type": "text",
+					"top": 40,
+					"left": 705,
+					"width": 27,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"textAlign": "center",
+					"text": "Defic-\riency"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 40,
+					"left": 384,
+					"height": 19
+				},
+				"Line14": {
+					"type": "line",
+					"top": 40,
+					"left": 523,
+					"height": 19
+				},
+				"Text13": {
+					"type": "text",
+					"top": 40,
+					"left": 525,
+					"width": 84,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "Functional\rClassification"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 40,
+					"left": 386,
+					"width": 93,
+					"height": 20,
+					"stroke": "#000000",
+					"class": "Helvetica7",
+					"text": "\rOwner"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

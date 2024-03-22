@@ -1,0 +1,1 @@
+2004-02-10 :  Used style sheet for form objects (text, field, variable, dropdown list, etc).2004-02-13 :  Removed unused Del Btn, Changed Add Record btn to 3D Button, re-positioned buttons, changed Qr pic to Button BMS QR/977.2004-02-26 : Associated menu #6 and made it active. Removed (Before) event from form method.2004-04-02 : Used On Outside Call event to check for fQuit.

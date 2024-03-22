@@ -1,0 +1,1 @@
+Created June-2003 : search bridges in [Conslt Rating] by BIN and BDEPT  23-Sep-2003 : Adjusted code to use method CreateRandomsetConsRating.

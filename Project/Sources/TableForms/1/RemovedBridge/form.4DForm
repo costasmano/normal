@@ -1,0 +1,128 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Button",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 14,
+					"left": 20,
+					"width": 495,
+					"height": 41,
+					"class": "Lucinda_14_Plain",
+					"text": "Bridge Category Code was changed to REM (Structure Removed).  Item 7 and 6A will be changed to the following values."
+				},
+				"Label": {
+					"type": "text",
+					"top": 72,
+					"left": 20,
+					"width": 90,
+					"height": 18,
+					"class": "Lucinda_14_Plain",
+					"text": "ITEM 7 :"
+				},
+				"Label1": {
+					"type": "text",
+					"top": 101,
+					"left": 20,
+					"width": 90,
+					"height": 18,
+					"class": "Lucinda_14_Plain",
+					"text": "ITEM 6A :"
+				},
+				"Item6A_2": {
+					"type": "input",
+					"top": 101,
+					"left": 180,
+					"width": 335,
+					"height": 18,
+					"dataSource": "IDv6Descr",
+					"class": "DataEntry12Plain",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Item6A_2.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 138,
+					"left": 376,
+					"width": 139,
+					"height": 27,
+					"action": "accept",
+					"text": "Continue",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Item7": {
+					"type": "text",
+					"top": 72,
+					"left": 120,
+					"width": 395,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"text": "ITEM 7"
+				},
+				"Item1": {
+					"type": "text",
+					"top": 101,
+					"left": 120,
+					"width": 60,
+					"height": 18,
+					"class": "DataEntry12Plain",
+					"text": "OTHER"
+				}
+			},
+			"entryOrder": [
+				"Button"
+			]
+		}
+	]
+}

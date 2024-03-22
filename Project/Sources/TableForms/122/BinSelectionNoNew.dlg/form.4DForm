@@ -1,0 +1,393 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onDrop"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Available": {
+					"type": "listbox",
+					"top": 40,
+					"left": 7,
+					"width": 831,
+					"height": 130,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"borderStyle": "double",
+					"method": "ObjectMethods/Available.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onDragOver"
+					],
+					"columns": [
+						{
+							"name": "Available_Column1",
+							"dataSource": "PRJ_AvailableBins_atxt",
+							"width": 816,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_IncludedList",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDrop",
+								"onDataChange",
+								"onDragOver"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"Available1": {
+					"type": "text",
+					"top": 21,
+					"left": 7,
+					"width": 237,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"text": "Available Bins"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 401,
+					"left": 537,
+					"width": 151,
+					"height": 21,
+					"dataSource": "Button1",
+					"text": "Finished",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 401,
+					"left": 697,
+					"width": 151,
+					"height": 21,
+					"dataSource": "Button1",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MovetoAssigned1": {
+					"type": "button",
+					"top": 183,
+					"left": 242,
+					"width": 184,
+					"height": 21,
+					"dataSource": "Move_l",
+					"text": "Move to Assigned",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/MovetoAssigned1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MovetoAssigned1a": {
+					"type": "picture",
+					"top": 183,
+					"left": 234,
+					"width": 20,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/MoveToExistingPicture.png"
+				},
+				"MovetoAvailable1": {
+					"type": "button",
+					"top": 183,
+					"left": 437,
+					"width": 148,
+					"height": 21,
+					"dataSource": "Move_l",
+					"text": "Move to Available",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/MovetoAvailable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MovetoAvailable1a": {
+					"type": "picture",
+					"top": 174,
+					"left": 577,
+					"width": 20,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/MoveFromNewPicture.png"
+				},
+				"MoveAllToAssigned1": {
+					"type": "checkbox",
+					"top": 183,
+					"left": 601,
+					"width": 237,
+					"height": 21,
+					"dataSource": "MoveExisting_l",
+					"text": "Include All To Assigned",
+					"class": "PRJ_IncludedList",
+					"method": "ObjectMethods/MoveAllToAssigned1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NewBinAreas4": {
+					"type": "text",
+					"top": 12,
+					"left": 627,
+					"width": 97,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "File Number: "
+				},
+				"Field1": {
+					"type": "input",
+					"top": 12,
+					"left": 735,
+					"width": 93,
+					"height": 13,
+					"dataSource": "[PRJ_ProjectFile:117]PF_FileNumber_l:3",
+					"dataSourceTypeHint": "integer",
+					"class": "PRJ_InputVariable",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Unassigned": {
+					"type": "listbox",
+					"top": 220,
+					"left": 7,
+					"width": 838,
+					"height": 130,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "PRJ_IncludedList",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"borderStyle": "double",
+					"method": "ObjectMethods/Unassigned.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onDragOver"
+					],
+					"columns": [
+						{
+							"name": "Unassigned_Column1",
+							"dataSource": "PRJ_UnassignedBins_atxt",
+							"width": 823,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "PRJ_IncludedList",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDrop",
+								"onDataChange",
+								"onDragOver"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "PRJ_IncludedList",
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"MoveToAssigned1a1": {
+					"type": "text",
+					"top": 201,
+					"left": 10,
+					"width": 237,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"text": "Assigned Bins"
+				},
+				"MoveAllToAssigned1a": {
+					"type": "picture",
+					"top": 183,
+					"left": 828,
+					"width": 20,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/MoveToExistingPicture.png"
+				},
+				"PRJ_PrimaryBin_txt1": {
+					"type": "input",
+					"top": 372,
+					"left": 37,
+					"width": 628,
+					"height": 21,
+					"dataSource": "PRJ_PrimaryBin_txt",
+					"class": "PRJ_InputVariable",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Available2": {
+					"type": "text",
+					"top": 355,
+					"left": 7,
+					"width": 237,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"text": "Primary BIN"
+				},
+				"PRJ_DEBridgeNo_s": {
+					"type": "input",
+					"top": 12,
+					"left": 471,
+					"width": 148,
+					"height": 13,
+					"dataSource": "PRJ_DEBridgeNo_s",
+					"class": "PRJ_InputVariable",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"NewBinAreas1": {
+					"type": "text",
+					"top": 12,
+					"left": 367,
+					"width": 97,
+					"height": 13,
+					"class": "PRJ_InputBoldLabel",
+					"textAlign": "right",
+					"text": "Bridge Number: "
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

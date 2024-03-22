@@ -1,0 +1,301 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "TypInputTemplate",
+	"inheritedFormTable": 21,
+	"windowMinWidth": 475,
+	"windowMinHeight": 355,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 441,
+	"markerBreak": 441,
+	"markerFooter": 441,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 23,
+					"left": 483,
+					"width": 100,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 11,
+					"left": 57,
+					"width": 512,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"text": "ClientAccess"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 66,
+					"left": 67,
+					"width": 159,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"text": "Message Start Times stamp"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 88,
+					"left": 67,
+					"width": 169,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"text": "Message End Times stamp"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 110,
+					"left": 67,
+					"width": 109,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"text": "Disable Logins"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 136,
+					"left": 67,
+					"width": 109,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"text": "Completed"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 162,
+					"left": 67,
+					"width": 109,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"text": "Message"
+				},
+				"CA_MessageStart_s": {
+					"type": "input",
+					"top": 66,
+					"left": 251,
+					"width": 104,
+					"height": 16,
+					"dataSource": "[ClientAccess:88]CA_MessageStart_s:2",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"textFormat": "####-##-##",
+					"entryFilter": "&9####-##-##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CA_LimitAccess_s": {
+					"type": "input",
+					"top": 88,
+					"left": 251,
+					"width": 104,
+					"height": 16,
+					"dataSource": "[ClientAccess:88]CA_LimitAccess_s:3",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"textFormat": "####-##-## ##:##",
+					"entryFilter": "&9####-##-## ##:##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CA_DisableLogins_b": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 261,
+					"width": 56,
+					"height": 19,
+					"dataSource": "[ClientAccess:88]CA_DisableLogins_b:4",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CA_Completed_b": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 261,
+					"width": 56,
+					"height": 19,
+					"dataSource": "[ClientAccess:88]CA_Completed_b:5",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CA_Message_txt": {
+					"type": "input",
+					"top": 162,
+					"left": 181,
+					"width": 374,
+					"height": 169,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[ClientAccess:88]CA_Message_txt:1",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"styledText": true,
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 275,
+					"left": 15,
+					"width": 146,
+					"height": 24,
+					"text": "Test Message display",
+					"class": "Arial11",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 11,
+					"left": 11,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/SP_Picture.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

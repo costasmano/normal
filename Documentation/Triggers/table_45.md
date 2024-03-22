@@ -1,0 +1,1 @@
+CoRE Element inspection data - linked to table [BMS Inspections]

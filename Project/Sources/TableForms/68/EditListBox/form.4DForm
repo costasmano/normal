@@ -1,0 +1,340 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Custom Variable Editor",
+	"windowMinHeight": 170,
+	"rightMargin": 19,
+	"bottomMargin": 15,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onGettingFocus",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"EditListbox": {
+					"type": "listbox",
+					"top": 40,
+					"left": 10,
+					"width": 630,
+					"height": 261,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "EditListbox",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 3,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#663300",
+					"verticalLineStroke": "#663300",
+					"stroke": "#000000",
+					"fill": "#FFFFDF",
+					"alternateFill": "#DFFFFF",
+					"class": "List12Plain",
+					"method": "ObjectMethods/EditListbox.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onColumnResize",
+						"onBeforeDataEntry",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "PVarNamesTypes_atxt",
+							"width": 180,
+							"minWidth": 110,
+							"maxWidth": 260,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#FFFFDF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onLoad",
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Variable  [Type]",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "PVarInputs_atxt",
+							"width": 210,
+							"minWidth": 120,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#FFFFDF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"method": "ObjectMethods/Column2.4dm",
+							"header": {
+								"name": "Header2",
+								"text": "New Value",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "PVarResults_atxt",
+							"width": 120,
+							"minWidth": 120,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFDF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "List12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Current Value",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "List12Plain"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"PDONEBUTTON": {
+					"type": "button",
+					"top": 312,
+					"left": 569,
+					"width": 71,
+					"height": 25,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "PDONEBUTTON",
+					"action": "accept",
+					"text": "Done",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 10,
+					"left": 190,
+					"width": 120,
+					"height": 26,
+					"dataSource": "PEDITBUTTON",
+					"shortcutKey": "[Return]",
+					"text": "Edit New Value",
+					"class": "List12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DBG_Variable1": {
+					"type": "input",
+					"top": 310,
+					"left": 20,
+					"width": 163,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "EDLISTFORMEVENT_TXT",
+					"class": "Default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DBG_Variable2": {
+					"type": "input",
+					"top": 326,
+					"left": 20,
+					"width": 23,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "EDLISTBOXROW_L",
+					"dataSourceTypeHint": "number",
+					"class": "Default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DBG_Variable3": {
+					"type": "input",
+					"top": 310,
+					"left": 200,
+					"width": 43,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "EDLISTFORMEVENT_L",
+					"dataSourceTypeHint": "number",
+					"class": "Default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DBG_Variable4": {
+					"type": "input",
+					"top": 326,
+					"left": 60,
+					"width": 424,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "EDLISTFILTER_TXT",
+					"class": "Default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 10,
+					"left": 400,
+					"width": 120,
+					"height": 26,
+					"dataSource": "PRESETBUTTON",
+					"shortcutKey": "[Return]",
+					"text": "Reset Curr Value",
+					"class": "List12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

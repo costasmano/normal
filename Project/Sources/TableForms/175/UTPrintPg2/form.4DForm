@@ -1,0 +1,2283 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "LSS_FormTemplate",
+	"inheritedFormTable": 164,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 759,
+	"markerBreak": 759,
+	"markerFooter": 759,
+	"events": [
+		"onPrintingDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Page2Title": {
+					"type": "text",
+					"top": 56,
+					"left": 118,
+					"width": 351,
+					"height": 14,
+					"fill": "#111111",
+					"stroke": "#FFFFFF",
+					"class": "Times12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "ULTRASONIC TESTING OF ANCHOR RODS (cont'd)"
+				}
+			}
+		},
+		{
+			"objects": {
+				"LSS_UTPicture_pct": {
+					"type": "input",
+					"top": 83,
+					"left": 32,
+					"width": 535,
+					"height": 230,
+					"dataSource": "LSS_UTPicture_pct",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 318,
+					"left": 30,
+					"width": 522,
+					"height": 26,
+					"dataSource": "LSS_UTPictureDesc_txt",
+					"class": "Label10Bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 729,
+					"left": 24,
+					"width": 65,
+					"height": 6,
+					"stroke": "#000000",
+					"class": "Arial5",
+					"text": "LSS_UT (1)1-2015"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 345,
+					"left": 101,
+					"height": 381
+				},
+				"Line23": {
+					"type": "line",
+					"top": 345,
+					"left": 283,
+					"height": 381
+				},
+				"Line2": {
+					"type": "line",
+					"top": 345,
+					"left": 325,
+					"height": 381
+				},
+				"Line3": {
+					"type": "line",
+					"top": 345,
+					"left": 367,
+					"height": 381
+				},
+				"Line6": {
+					"type": "line",
+					"top": 345,
+					"left": 32,
+					"width": 525
+				},
+				"Line7": {
+					"type": "line",
+					"top": 345,
+					"left": 32,
+					"height": 381
+				},
+				"Line8": {
+					"type": "line",
+					"top": 345,
+					"left": 557,
+					"height": 381
+				},
+				"Line9": {
+					"type": "line",
+					"top": 366,
+					"left": 32,
+					"width": 525
+				},
+				"Line11": {
+					"type": "line",
+					"top": 386,
+					"left": 32,
+					"width": 525
+				},
+				"Line18": {
+					"type": "line",
+					"top": 726,
+					"left": 32,
+					"width": 525
+				},
+				"Line17": {
+					"type": "line",
+					"top": 706,
+					"left": 32,
+					"width": 525
+				},
+				"Line16": {
+					"type": "line",
+					"top": 686,
+					"left": 32,
+					"width": 525
+				},
+				"Line15": {
+					"type": "line",
+					"top": 666,
+					"left": 32,
+					"width": 525
+				},
+				"Line14": {
+					"type": "line",
+					"top": 646,
+					"left": 32,
+					"width": 525
+				},
+				"Line13": {
+					"type": "line",
+					"top": 626,
+					"left": 32,
+					"width": 525
+				},
+				"Line1": {
+					"type": "line",
+					"top": 606,
+					"left": 32,
+					"width": 525
+				},
+				"Line19": {
+					"type": "line",
+					"top": 586,
+					"left": 32,
+					"width": 525
+				},
+				"Line10": {
+					"type": "line",
+					"top": 566,
+					"left": 32,
+					"width": 525
+				},
+				"Line20": {
+					"type": "line",
+					"top": 546,
+					"left": 32,
+					"width": 525
+				},
+				"Line21": {
+					"type": "line",
+					"top": 526,
+					"left": 32,
+					"width": 525
+				},
+				"Line22": {
+					"type": "line",
+					"top": 506,
+					"left": 32,
+					"width": 525
+				},
+				"Line24": {
+					"type": "line",
+					"top": 486,
+					"left": 32,
+					"width": 525
+				},
+				"Line5": {
+					"type": "line",
+					"top": 466,
+					"left": 32,
+					"width": 525
+				},
+				"Line4": {
+					"type": "line",
+					"top": 446,
+					"left": 32,
+					"width": 525
+				},
+				"Line25": {
+					"type": "line",
+					"top": 426,
+					"left": 32,
+					"width": 525
+				},
+				"Line26": {
+					"type": "line",
+					"top": 406,
+					"left": 32,
+					"width": 525
+				},
+				"Text15": {
+					"type": "text",
+					"top": 353,
+					"left": 34,
+					"width": 63,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "POST BOLT NO."
+				},
+				"Text17": {
+					"type": "text",
+					"top": 353,
+					"left": 191,
+					"width": 89,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "LOCATION OF POST"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 353,
+					"left": 284,
+					"width": 40,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "ACCEPT"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 353,
+					"left": 326,
+					"width": 40,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "REJECT"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 353,
+					"left": 368,
+					"width": 188,
+					"height": 9,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "REMARKS"
+				},
+				"Line27": {
+					"type": "line",
+					"top": 345,
+					"left": 189,
+					"height": 381
+				},
+				"LSS_Location_txt1": {
+					"type": "input",
+					"top": 371,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt1",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt18": {
+					"type": "input",
+					"top": 711,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt18",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt17": {
+					"type": "input",
+					"top": 691,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt17",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt16": {
+					"type": "input",
+					"top": 671,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt16",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt15": {
+					"type": "input",
+					"top": 651,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt15",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt14": {
+					"type": "input",
+					"top": 631,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt14",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt13": {
+					"type": "input",
+					"top": 611,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt13",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt12": {
+					"type": "input",
+					"top": 591,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt12",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt11": {
+					"type": "input",
+					"top": 571,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt11",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt10": {
+					"type": "input",
+					"top": 551,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt10",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt9": {
+					"type": "input",
+					"top": 531,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt9",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt8": {
+					"type": "input",
+					"top": 511,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt8",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt7": {
+					"type": "input",
+					"top": 491,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt7",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt6": {
+					"type": "input",
+					"top": 471,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt6",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt5": {
+					"type": "input",
+					"top": 451,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt5",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt4": {
+					"type": "input",
+					"top": 431,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt4",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt3": {
+					"type": "input",
+					"top": 411,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt3",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Location_txt2": {
+					"type": "input",
+					"top": 391,
+					"left": 191,
+					"width": 89,
+					"height": 10,
+					"dataSource": "LSS_Location_txt2",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L1": {
+					"type": "input",
+					"top": 371,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L1",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L18": {
+					"type": "input",
+					"top": 711,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L18",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L17": {
+					"type": "input",
+					"top": 691,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L17",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L16": {
+					"type": "input",
+					"top": 671,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L16",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L15": {
+					"type": "input",
+					"top": 651,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L15",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L14": {
+					"type": "input",
+					"top": 631,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L14",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L13": {
+					"type": "input",
+					"top": 611,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L13",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L12": {
+					"type": "input",
+					"top": 591,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L12",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L11": {
+					"type": "input",
+					"top": 571,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L11",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L10": {
+					"type": "input",
+					"top": 551,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L10",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L9": {
+					"type": "input",
+					"top": 531,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L9",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L8": {
+					"type": "input",
+					"top": 511,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L8",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L7": {
+					"type": "input",
+					"top": 491,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L7",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L6": {
+					"type": "input",
+					"top": 471,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L6",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L5": {
+					"type": "input",
+					"top": 451,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L5",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L4": {
+					"type": "input",
+					"top": 431,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L4",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L3": {
+					"type": "input",
+					"top": 411,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L3",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_PostBolt_L2": {
+					"type": "input",
+					"top": 391,
+					"left": 34,
+					"width": 63,
+					"height": 10,
+					"dataSource": "LSS_PostBolt_L2",
+					"dataSourceTypeHint": "number",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt1": {
+					"type": "input",
+					"top": 371,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt1",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt18": {
+					"type": "input",
+					"top": 711,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt18",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt17": {
+					"type": "input",
+					"top": 691,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt17",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt16": {
+					"type": "input",
+					"top": 671,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt16",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt15": {
+					"type": "input",
+					"top": 651,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt15",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt14": {
+					"type": "input",
+					"top": 631,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt14",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt13": {
+					"type": "input",
+					"top": 611,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt13",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt12": {
+					"type": "input",
+					"top": 591,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt12",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt11": {
+					"type": "input",
+					"top": 571,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt11",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt10": {
+					"type": "input",
+					"top": 551,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt10",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt9": {
+					"type": "input",
+					"top": 531,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt9",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt8": {
+					"type": "input",
+					"top": 511,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt8",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt7": {
+					"type": "input",
+					"top": 491,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt7",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt6": {
+					"type": "input",
+					"top": 471,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt6",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt5": {
+					"type": "input",
+					"top": 451,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt5",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt4": {
+					"type": "input",
+					"top": 431,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt4",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt3": {
+					"type": "input",
+					"top": 411,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt3",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Indication_txt2": {
+					"type": "input",
+					"top": 391,
+					"left": 105,
+					"width": 80,
+					"height": 10,
+					"dataSource": "LSS_Indication_txt2",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Accept_b1": {
+					"type": "checkbox",
+					"top": 369,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b1",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b18": {
+					"type": "checkbox",
+					"top": 709,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b18",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b17": {
+					"type": "checkbox",
+					"top": 689,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b17",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b16": {
+					"type": "checkbox",
+					"top": 669,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b16",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b15": {
+					"type": "checkbox",
+					"top": 649,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b15",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b14": {
+					"type": "checkbox",
+					"top": 629,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b14",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b13": {
+					"type": "checkbox",
+					"top": 609,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b13",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b12": {
+					"type": "checkbox",
+					"top": 589,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b12",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b11": {
+					"type": "checkbox",
+					"top": 569,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b11",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b10": {
+					"type": "checkbox",
+					"top": 549,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b10",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b9": {
+					"type": "checkbox",
+					"top": 529,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b9",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b8": {
+					"type": "checkbox",
+					"top": 509,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b8",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b7": {
+					"type": "checkbox",
+					"top": 489,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b7",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b6": {
+					"type": "checkbox",
+					"top": 469,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b6",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b5": {
+					"type": "checkbox",
+					"top": 449,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b5",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b4": {
+					"type": "checkbox",
+					"top": 429,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b4",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b3": {
+					"type": "checkbox",
+					"top": 409,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b3",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Accept_b2": {
+					"type": "checkbox",
+					"top": 389,
+					"left": 294,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Accept_b2",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b1": {
+					"type": "checkbox",
+					"top": 369,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b1",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b18": {
+					"type": "checkbox",
+					"top": 709,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b18",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b17": {
+					"type": "checkbox",
+					"top": 689,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b17",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b16": {
+					"type": "checkbox",
+					"top": 669,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b16",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b15": {
+					"type": "checkbox",
+					"top": 649,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b15",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b14": {
+					"type": "checkbox",
+					"top": 629,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b14",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b13": {
+					"type": "checkbox",
+					"top": 609,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b13",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b12": {
+					"type": "checkbox",
+					"top": 589,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b12",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b11": {
+					"type": "checkbox",
+					"top": 569,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b11",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b10": {
+					"type": "checkbox",
+					"top": 549,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b10",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b9": {
+					"type": "checkbox",
+					"top": 529,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b9",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b8": {
+					"type": "checkbox",
+					"top": 509,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b8",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b7": {
+					"type": "checkbox",
+					"top": 489,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b7",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b6": {
+					"type": "checkbox",
+					"top": 469,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b6",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b5": {
+					"type": "checkbox",
+					"top": 449,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b5",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b4": {
+					"type": "checkbox",
+					"top": 429,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b4",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b3": {
+					"type": "checkbox",
+					"top": 409,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b3",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Reject_b2": {
+					"type": "checkbox",
+					"top": 389,
+					"left": 336,
+					"width": 20,
+					"height": 14,
+					"dataSource": "LSS_Reject_b2",
+					"style": "flat",
+					"text": " ",
+					"class": "Arial9",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Remarks_txt1": {
+					"type": "input",
+					"top": 371,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt1",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt18": {
+					"type": "input",
+					"top": 711,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt18",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt17": {
+					"type": "input",
+					"top": 691,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt17",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt16": {
+					"type": "input",
+					"top": 671,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt16",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt15": {
+					"type": "input",
+					"top": 651,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt15",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt14": {
+					"type": "input",
+					"top": 631,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt14",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt13": {
+					"type": "input",
+					"top": 611,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt13",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt12": {
+					"type": "input",
+					"top": 591,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt12",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt11": {
+					"type": "input",
+					"top": 571,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt11",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt10": {
+					"type": "input",
+					"top": 551,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt10",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt9": {
+					"type": "input",
+					"top": 531,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt9",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt8": {
+					"type": "input",
+					"top": 511,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt8",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt7": {
+					"type": "input",
+					"top": 491,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt7",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt6": {
+					"type": "input",
+					"top": 471,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt6",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt5": {
+					"type": "input",
+					"top": 451,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt5",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt4": {
+					"type": "input",
+					"top": 431,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt4",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt3": {
+					"type": "input",
+					"top": 411,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt3",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_Remarks_txt2": {
+					"type": "input",
+					"top": 391,
+					"left": 368,
+					"width": 188,
+					"height": 10,
+					"dataSource": "LSS_Remarks_txt2",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 347,
+					"left": 105,
+					"width": 80,
+					"height": 17,
+					"class": "Arial8",
+					"textAlign": "center",
+					"text": "INDICATION AND LOCATION"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

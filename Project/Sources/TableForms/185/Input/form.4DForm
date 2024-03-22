@@ -1,0 +1,1748 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 782,
+	"windowMinHeight": 565,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 620,
+	"markerBreak": 620,
+	"markerFooter": 630,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Line66": {
+					"type": "line",
+					"top": 83,
+					"left": 16,
+					"width": 745,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"class": "Arial11",
+					"textAlign": "center",
+					"focusable": false,
+					"text": "First",
+					"icon": "/RESOURCES/Images/library/GLASS - First Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bFirst.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"class": "Arial11",
+					"textAlign": "center",
+					"focusable": false,
+					"text": "Previous",
+					"icon": "/RESOURCES/Images/library/GLASS - Previous Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bPrevious.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"class": "Arial11",
+					"textAlign": "center",
+					"focusable": false,
+					"text": "Next",
+					"icon": "/RESOURCES/Images/library/GLASS - Next Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"class": "Arial11",
+					"textAlign": "center",
+					"focusable": false,
+					"text": "Last",
+					"icon": "/RESOURCES/Images/library/GLASS - Last Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bLast.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE bDelete": {
+					"type": "button",
+					"top": 16,
+					"left": 349,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"class": "Arial11",
+					"textAlign": "center",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/library/GLASS - Delete Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 412,
+					"width": 48,
+					"height": 64,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"class": "Arial11",
+					"textAlign": "center",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/library/GLASS - Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE bValidate": {
+					"type": "button",
+					"top": 16,
+					"left": 475,
+					"width": 68,
+					"height": 64,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"shortcutKey": "[Enter]",
+					"class": "Arial11",
+					"textAlign": "center",
+					"focusable": false,
+					"text": "Save & Exit",
+					"icon": "/RESOURCES/Images/library/GLASS - OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RecordInfo": {
+					"type": "button",
+					"top": 28,
+					"left": 566,
+					"width": 84,
+					"height": 30,
+					"dataSource": "Button1",
+					"text": "Info",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/RecordInfo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"HELPBUTTON": {
+					"type": "button",
+					"top": 28,
+					"left": 666,
+					"width": 84,
+					"height": 30,
+					"dataSource": "Button1",
+					"text": "Help",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/HELPBUTTON.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_ELEMSELECT_atxt": {
+					"type": "dropdown",
+					"top": 96,
+					"left": 200,
+					"width": 556,
+					"height": 24,
+					"dataSource": "PON_ELEMSELECT_atxt",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PON_ELEMSELECT_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ELEM_KEY1": {
+					"type": "input",
+					"top": 101,
+					"left": 131,
+					"width": 52,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_KEY:3",
+					"dataSourceTypeHint": "integer",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ELEM_SCALE_FACTOR1": {
+					"type": "input",
+					"top": 136,
+					"left": 131,
+					"width": 32,
+					"height": 15,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_SCALE_FACTOR:22",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PON_ELEM_PARENT_key": {
+					"type": "input",
+					"top": 136,
+					"left": 369,
+					"width": 44,
+					"height": 15,
+					"visibility": "hidden",
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_PARENT_KEY:7",
+					"dataSourceTypeHint": "integer",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PON_ELEM_PARENT_txt1": {
+					"type": "input",
+					"top": 136,
+					"left": 422,
+					"width": 330,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "PON_ELEMPARENT_txt",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PON_ELEM_GRANDPARENT_key": {
+					"type": "input",
+					"top": 160,
+					"left": 369,
+					"width": 44,
+					"height": 15,
+					"visibility": "hidden",
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_GRANDPARENT_KEY:25",
+					"dataSourceTypeHint": "integer",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PON_ELEM_GRANDPARENT_txt1": {
+					"type": "input",
+					"top": 160,
+					"left": 422,
+					"width": 330,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "PON_ELEMGRANDP_txt",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"DE bQuantity": {
+					"type": "radio",
+					"top": 183,
+					"left": 491,
+					"width": 83,
+					"height": 16,
+					"dataSource": "bQuantity",
+					"text": "Quantity",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/DE bQuantity.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE bPercent": {
+					"type": "radio",
+					"top": 183,
+					"left": 572,
+					"width": 103,
+					"height": 16,
+					"dataSource": "bPercent",
+					"text": "Percentage",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/DE bPercent.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_ELEMUNIT_txt": {
+					"type": "input",
+					"top": 200,
+					"left": 323,
+					"width": 131,
+					"height": 15,
+					"dataSource": "PON_ELEMUNIT_txt",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"DE ELEM_QUANTITY": {
+					"type": "input",
+					"top": 224,
+					"left": 343,
+					"width": 90,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_QUANTITY:21",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,###,##0.0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_QUANTITY.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ELEM_PCTSTATE1": {
+					"type": "input",
+					"top": 224,
+					"left": 460,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_PCTSTATE1:12",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "##0.00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE ELEM_QTYSTATE1": {
+					"type": "input",
+					"top": 224,
+					"left": 460,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_QTYSTATE1:17",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,###,##0.0;;0",
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_QTYSTATE1.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE ELEM_PCTSTATE2": {
+					"type": "input",
+					"top": 224,
+					"left": 531,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_PCTSTATE2:13",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "##0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_PCTSTATE2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ELEM_QTYSTATE2": {
+					"type": "input",
+					"top": 224,
+					"left": 531,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_QTYSTATE2:18",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,###,##0.0;;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_QTYSTATE2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ELEM_PCTSTATE3": {
+					"type": "input",
+					"top": 224,
+					"left": 603,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_PCTSTATE3:14",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "##0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_PCTSTATE3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ELEM_QTYSTATE3": {
+					"type": "input",
+					"top": 224,
+					"left": 603,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_QTYSTATE3:19",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,###,##0.0;;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_QTYSTATE3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ELEM_PCTSTATE4": {
+					"type": "input",
+					"top": 224,
+					"left": 675,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_PCTSTATE4:15",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "##0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_PCTSTATE4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE ELEM_QTYSTATE4": {
+					"type": "input",
+					"top": 224,
+					"left": 675,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_QTYSTATE4:20",
+					"dataSourceTypeHint": "number",
+					"class": "Label12Plain",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,###,##0.0;;0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/DE ELEM_QTYSTATE4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WPToolbar": {
+					"type": "subform",
+					"top": 524,
+					"left": 7,
+					"width": 691,
+					"height": 28,
+					"dataSourceTypeHint": "undefined",
+					"detailForm": "WPToolbar",
+					"focusable": false,
+					"hideFocusRing": true,
+					"enterableInList": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"DE ElementComments_WP": {
+					"type": "write",
+					"top": 553,
+					"left": 7,
+					"width": 747,
+					"height": 130,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/DE ElementComments_WP.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 136,
+					"left": 12,
+					"width": 109,
+					"height": 15,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "SCALE FACTOR : "
+				},
+				"PON_ELEM_PARENT_txt": {
+					"type": "text",
+					"top": 136,
+					"left": 195,
+					"width": 169,
+					"height": 15,
+					"visibility": "hidden",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "PARENT ELEMENT No : "
+				},
+				"Text26": {
+					"type": "text",
+					"top": 101,
+					"left": 12,
+					"width": 111,
+					"height": 15,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "ELEMENT No : "
+				},
+				"Text30": {
+					"type": "text",
+					"top": 183,
+					"left": 319,
+					"width": 139,
+					"height": 15,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "TOTAL QUANTITY"
+				},
+				"ELEM_STATE1": {
+					"type": "text",
+					"top": 203,
+					"left": 460,
+					"width": 65,
+					"height": 15,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "STATE 1"
+				},
+				"ELEM_STATE2": {
+					"type": "text",
+					"top": 203,
+					"left": 531,
+					"width": 65,
+					"height": 15,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "STATE 2"
+				},
+				"ELEM_STATE3": {
+					"type": "text",
+					"top": 203,
+					"left": 603,
+					"width": 65,
+					"height": 15,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "STATE 3"
+				},
+				"ELEM_STATE4": {
+					"type": "text",
+					"top": 203,
+					"left": 675,
+					"width": 65,
+					"height": 15,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "STATE 4"
+				},
+				"CondRating": {
+					"type": "text",
+					"top": 183,
+					"left": 219,
+					"width": 99,
+					"height": 32,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Condition Rating (0-9)"
+				},
+				"CondRatingField": {
+					"type": "input",
+					"top": 224,
+					"left": 243,
+					"width": 50,
+					"height": 17,
+					"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_RATING:24",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PON_ELEM_GRANDPARENT_txt": {
+					"type": "text",
+					"top": 160,
+					"left": 200,
+					"width": 169,
+					"height": 15,
+					"visibility": "hidden",
+					"class": "Label12Plain",
+					"text": "GRANDPARENT ELEMENT No : "
+				}
+			},
+			"entryOrder": [
+				"RecordInfo",
+				"HELPBUTTON",
+				"PON_ELEMSELECT_atxt",
+				"ELEM_KEY1",
+				"ELEM_SCALE_FACTOR1",
+				"PON_ELEM_PARENT_key",
+				"PON_ELEM_PARENT_txt1",
+				"PON_ELEM_GRANDPARENT_key",
+				"PON_ELEM_GRANDPARENT_txt1",
+				"DE bQuantity",
+				"DE bPercent",
+				"PON_ELEMUNIT_txt",
+				"DE ELEM_QUANTITY",
+				"ELEM_PCTSTATE1",
+				"DE ELEM_QTYSTATE1",
+				"DE ELEM_PCTSTATE2",
+				"DE ELEM_QTYSTATE2",
+				"DE ELEM_PCTSTATE3",
+				"DE ELEM_QTYSTATE3",
+				"DE ELEM_PCTSTATE4",
+				"DE ELEM_QTYSTATE4",
+				"WPToolbar",
+				"DE ElementComments_WP"
+			]
+		},
+		{
+			"objects": {
+				"PON_NBE_DAM_LB_lbl": {
+					"type": "text",
+					"top": 239,
+					"left": 56,
+					"width": 115,
+					"height": 14,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"text": "DEFECTS"
+				},
+				"DE PON_NBE_DAM_LB_add": {
+					"type": "button",
+					"top": 261,
+					"left": 15,
+					"width": 25,
+					"height": 30,
+					"dataSource": "PON_NBE_DAM_LB_add",
+					"text": "+",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/DE PON_NBE_DAM_LB_add.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_NBE_DAM_LB": {
+					"type": "listbox",
+					"top": 261,
+					"left": 56,
+					"width": 695,
+					"height": 110,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "namedSelection",
+					"dataSource": "PON_NBE_DAM_LB",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"selectionName": "PON_NBE_DAMAGE",
+					"highlightSet": "$NBEDamage0",
+					"selectionMode": "single",
+					"fill": "#E2FFDF",
+					"alternateFill": "#FFFFFF",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"method": "ObjectMethods/PON_NBE_DAM_LB.4dm",
+					"events": [
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "PON_NBE_DAM_LB_key",
+							"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_KEY:3",
+							"dataSourceTypeHint": "integer",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_key_hdr",
+								"text": "No",
+								"dataSource": "PON_NBE_DAM_LB_key_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_desc",
+							"dataSource": "PON_NBE_DAM_LB_desc_txt",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_desc_hdr",
+								"text": "Desc",
+								"dataSource": "PON_NBE_DAM_LB_desc_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_unit",
+							"dataSource": "PON_NBE_DAM_LB_unit_txt",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_unit_hdr",
+								"text": "Units",
+								"dataSource": "PON_NBE_DAM_LB_unit_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_totq",
+							"dataSource": "PON_NBE_LB_Q_r",
+							"dataSourceTypeHint": "number",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_totq_hdr",
+								"text": "Total Q",
+								"dataSource": "PON_NBE_DAM_LB_totq_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_QP",
+							"dataSource": "PON_NBE_DAM_LB_QP_txt",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_QP_hdr",
+								"text": "Q/%",
+								"dataSource": "PON_NBE_DAM_LB_QP_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "4",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_s1",
+							"dataSource": "PON_NBE_DAM_LB_CS1_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_s1_hdr",
+								"text": "State 1",
+								"dataSource": "PON_NBE_DAM_LB_s1_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_s2",
+							"dataSource": "PON_NBE_DAM_LB_CS2_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_s2_hdr",
+								"text": "State 2",
+								"dataSource": "PON_NBE_DAM_LB_s2_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "6",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_s3",
+							"dataSource": "PON_NBE_DAM_LB_CS3_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_s3_hdr",
+								"text": "State 3",
+								"dataSource": "PON_NBE_DAM_LB_s3_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "7",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_DAM_LB_s4",
+							"dataSource": "PON_NBE_DAM_LB_CS4_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_DAM_LB_s4_hdr",
+								"text": "State 4",
+								"dataSource": "PON_NBE_DAM_LB_s4_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "8",
+								"stroke": "automatic",
+								"fill": "#E2FFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						}
+					]
+				},
+				"PON_NBE_DAM_LB_Splitter1": {
+					"type": "splitter",
+					"top": 378,
+					"left": 3,
+					"width": 758,
+					"height": 3,
+					"sizingX": "grow",
+					"dataSource": "Splitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE PON_NBE_Prot_LB_Add": {
+					"type": "button",
+					"top": 411,
+					"left": 15,
+					"width": 25,
+					"height": 30,
+					"dataSource": "PON_NBE_Prot_LB_Add",
+					"text": "+",
+					"class": "Label12Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/DE PON_NBE_Prot_LB_Add.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_NBE_Prot_LB": {
+					"type": "listbox",
+					"top": 411,
+					"left": 56,
+					"width": 695,
+					"height": 100,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "namedSelection",
+					"dataSource": "PON_NBE_Prot_LB",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"selectionName": "PON_NBE_PROTSYS",
+					"highlightSet": "$NBEProtSys0",
+					"detailForm": "in",
+					"selectionMode": "single",
+					"stroke": "#000000",
+					"fill": "#DFFFFF",
+					"alternateFill": "#FFFFFF",
+					"class": "Label12Plain",
+					"borderStyle": "none",
+					"method": "ObjectMethods/PON_NBE_Prot_LB.4dm",
+					"events": [
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "PON_NBE_Prot_LB_key",
+							"dataSource": "[NTI_ELEM_TIN_INSP:185]ELEM_KEY:3",
+							"dataSourceTypeHint": "integer",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_Key_hdr",
+								"text": "No",
+								"dataSource": "PON_NBE_Prot_LB_Key_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "10",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_Prot_LB_desc",
+							"dataSource": "PON_NBE_PROT_LB_desc_txt",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_Desc_hdr",
+								"text": "Desc",
+								"dataSource": "PON_NBE_Prot_LB_Desc_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "12",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_Prot_LB_unit",
+							"dataSource": "PON_NBE_PROT_LB_unit_txt",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_unit_hdr",
+								"text": "Units",
+								"dataSource": "PON_NBE_Prot_LB_unit_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "13",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_Prot_LB_totq",
+							"dataSource": "PON_NBE_LB_Q_r",
+							"dataSourceTypeHint": "number",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_totQ_hdr",
+								"text": "Total Q",
+								"dataSource": "PON_NBE_Prot_LB_totQ_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "14",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_PROT_LB_QP",
+							"dataSource": "PON_NBE_PROT_LB_QP_txt",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_QP_hdr",
+								"text": "Q/%",
+								"dataSource": "PON_NBE_Prot_LB_QP_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "15",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_Prot_LB_s1",
+							"dataSource": "PON_NBE_PROT_LB_CS1_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_s1_hdr",
+								"text": "State 1",
+								"dataSource": "PON_NBE_Prot_LB_s1_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "16",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_Prot_LB_s2",
+							"dataSource": "PON_NBE_PROT_LB_CS2_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_s2_hdr",
+								"text": "State 2",
+								"dataSource": "PON_NBE_Prot_LB_s2_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "17",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_Prot_LB_s3",
+							"dataSource": "PON_NBE_PROT_LB_CS3_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_s3_hdr",
+								"text": "State 3",
+								"dataSource": "PON_NBE_Prot_LB_s3_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "18",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "PON_NBE_Prot_LB_s4",
+							"dataSource": "PON_NBE_PROT_LB_CS4_r",
+							"dataSourceTypeHint": "number",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "###,###,##0.0",
+							"stroke": "automatic",
+							"fill": "#DFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "PON_NBE_Prot_LB_s4_hdr",
+								"text": "State 4",
+								"dataSource": "PON_NBE_Prot_LB_s4_hdr",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "19",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						}
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 518,
+					"left": 3,
+					"width": 758,
+					"height": 3,
+					"sizingX": "grow",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Actions": {
+					"type": "button",
+					"top": 229,
+					"left": 191,
+					"width": 32,
+					"height": 27,
+					"dataSource": "Button",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/Action.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "bevel",
+					"method": "ObjectMethods/DE Actions.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onLongClick"
+					]
+				},
+				"Invisible Button": {
+					"type": "button",
+					"top": 261,
+					"left": 5,
+					"width": 2,
+					"height": 50,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_NBE_Prot_LB_LBL": {
+					"type": "text",
+					"top": 387,
+					"left": 56,
+					"width": 565,
+					"height": 15,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"text": "PROTECTIVE SYSTEMS"
+				},
+				"PON_NBE_Prot_spacer": {
+					"type": "button",
+					"top": 411,
+					"left": 5,
+					"width": 2,
+					"height": 50,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"defaultView": "View 1",
+		"activeView": "CSPercent",
+		"views": {
+			"View 1": {},
+			"CSQuantity": {
+				"objects": [
+					"DE ELEM_QTYSTATE1",
+					"DE ELEM_QTYSTATE2",
+					"DE ELEM_QTYSTATE3",
+					"DE ELEM_QTYSTATE4",
+					"PON_NBE_Prot_LB_LBL"
+				]
+			},
+			"Buttons": {
+				"objects": [
+					"Line66",
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"DE bDelete",
+					"bCancel",
+					"DE bValidate",
+					"RecordInfo",
+					"HELPBUTTON"
+				]
+			},
+			"CSPercent": {
+				"objects": [
+					"ELEM_PCTSTATE1",
+					"DE ELEM_PCTSTATE2",
+					"DE ELEM_PCTSTATE3",
+					"DE ELEM_PCTSTATE4"
+				]
+			},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {
+				"selectable": false
+			},
+			"View 9": {}
+		}
+	}
+}

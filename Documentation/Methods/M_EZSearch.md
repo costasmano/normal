@@ -1,0 +1,1 @@
+2000-11-30 : Modified  to make the search window a window with title and fixed size movable.  2003-10-10 : Increased string Array size of aFileNames to 32.

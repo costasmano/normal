@@ -1,0 +1,1 @@
+2002-02 : Added checks for total=0 of DEM and DNR bridges.  2004-03-09 : Added checks for total=0 for all other bridge groupings.

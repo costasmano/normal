@@ -1,0 +1,268 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onMenuSelect",
+		"onDataChange",
+		"onUnload",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 55,
+					"left": 3,
+					"width": 674,
+					"height": 443,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"fontWeight": "bold",
+					"borderStyle": "solid"
+				},
+				"ElmtSelector": {
+					"type": "dropdown",
+					"top": 5,
+					"left": 183,
+					"width": 23,
+					"height": 21,
+					"dataSource": "asElmtSftyPulldwnName",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/ElmSftyPulldown"
+					},
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ElmtSelector.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 8,
+					"left": 6,
+					"width": 174,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"fontWeight": "bold",
+					"text": "Choose Freeze Thaw Item :"
+				},
+				"3D Button": {
+					"type": "button",
+					"top": 5,
+					"left": 627,
+					"width": 48,
+					"height": 48,
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Label12Bold",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/3D Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Button1": {
+					"type": "button",
+					"top": 5,
+					"left": 537,
+					"width": 48,
+					"height": 48,
+					"dataSource": "Button",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"class": "Label12Bold",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/GLASS - Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text10": {
+					"type": "text",
+					"top": 178,
+					"left": 6,
+					"width": 664,
+					"height": 294,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"text": "Description :"
+				},
+				"DE NotAppl": {
+					"type": "checkbox",
+					"top": 83,
+					"left": 18,
+					"width": 150,
+					"height": 20,
+					"dataSource": "FRZNotAppl_L",
+					"text": "Not Applicable",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE NotAppl.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE FRZ FieldAction": {
+					"type": "input",
+					"top": 196,
+					"left": 8,
+					"width": 638,
+					"height": 230,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[ElementsSafety:29]Comments:5",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/DE FRZ FieldAction.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"FRZ_ELEMENTDESC_TXT": {
+					"type": "input",
+					"top": 60,
+					"left": 9,
+					"width": 665,
+					"height": 18,
+					"dataSource": "FRZ_ELEMENTDESC_TXT",
+					"class": "Label14BoldU",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE FRZ NoProblem2": {
+					"type": "checkbox",
+					"top": 83,
+					"left": 308,
+					"width": 347,
+					"height": 20,
+					"dataSource": "FRZ_Problem_Yes",
+					"text": "All Necessary Action taken",
+					"fontFamily": "Tahoma",
+					"fontSize": 14,
+					"method": "ObjectMethods/DE FRZ NoProblem2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE FRZ NoProblem4": {
+					"type": "checkbox",
+					"top": 83,
+					"left": 168,
+					"width": 127,
+					"height": 20,
+					"dataSource": "FRZ_Problem_No",
+					"text": "No Problem",
+					"fontFamily": "Tahoma",
+					"fontSize": 14,
+					"method": "ObjectMethods/DE FRZ NoProblem4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 135,
+					"left": 6,
+					"width": 658,
+					"height": 37,
+					"class": "Label12Plain",
+					"text": "Note 1: With each problem area, include a photo (with clear description) after action is taken.\rNote 2: Describe each problem area with action taken at each area, or any further action required."
+				},
+				"DE FRZ NoProblem1": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 308,
+					"width": 347,
+					"height": 20,
+					"dataSource": "FRZ_FURTHERACTION",
+					"text": "Further Action Required",
+					"fontFamily": "Tahoma",
+					"fontSize": 14,
+					"method": "ObjectMethods/DE FRZ NoProblem1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

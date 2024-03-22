@@ -1,0 +1,1 @@
+7-21-2003 ASLCreated to handle inspections that have only structure type and no ratings.7-21-2003 ASL: Added do not show this dialog again checkbox.7-23-2003 ASL: Added DoNotShowDialogDependency check.

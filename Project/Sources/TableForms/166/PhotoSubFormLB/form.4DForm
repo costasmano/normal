@@ -1,0 +1,540 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 5,
+	"markerHeader": 1,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ImageSortWarning": {
+					"type": "text",
+					"top": 3,
+					"left": 33,
+					"width": 634,
+					"height": 32,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"stroke": "#EE0000",
+					"class": "Label12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "New image sequence will be applied if you click the \"Apply New Sequence\" button, move to another Tab, or Save the inspection. If you ADD/OPEN an image or EXIT without saving, the changes will be lost!!"
+				},
+				"PHotos_LB": {
+					"type": "listbox",
+					"top": 37,
+					"left": 9,
+					"width": 755,
+					"height": 569,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "PHotos_LB",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 166,
+					"highlightSet": "ImgListBoxSet",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#C0FFFF",
+					"alternateFill": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/PHotos_LB.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[LSS_Photos:166]LSS_PhotoType_s:3",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#C0FFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Tahoma",
+							"fontSize": 14,
+							"fontStyle": "italic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Image Type",
+								"dataSource": "Header12",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#C0FFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[LSS_Photos:166]LSS_PhotoSequence_L:6",
+							"dataSourceTypeHint": "integer",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#C0FFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Sequence",
+								"dataSource": "Header14",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#C0FFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[LSS_Photos:166]LSS_Photo_txt:4",
+							"width": 543,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#C0FFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Description",
+								"dataSource": "Header13",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "#000000",
+								"fill": "#C0FFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[LSS_Photos:166]LSS_PhotoId_s:1",
+							"width": 248,
+							"minWidth": 5,
+							"maxWidth": 248,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#C0FFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header15",
+								"dataSource": "Header15",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "4",
+								"stroke": "#000000",
+								"fill": "#C0FFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"DE PlusButton": {
+					"type": "button",
+					"top": 10,
+					"left": 9,
+					"width": 25,
+					"height": 24,
+					"dataSource": "PlusButton_L",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "+",
+					"style": "bevel",
+					"method": "ObjectMethods/DE PlusButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE SequenceNumberUpdate": {
+					"type": "button",
+					"top": 10,
+					"left": 664,
+					"width": 141,
+					"height": 25,
+					"sizingX": "move",
+					"class": "Default",
+					"focusable": false,
+					"text": "Apply New Sequence",
+					"style": "bevel",
+					"method": "ObjectMethods/DE SequenceNumberUpdate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE MoveUp btn": {
+					"type": "button",
+					"top": 69,
+					"left": 772,
+					"width": 33,
+					"height": 25,
+					"sizingX": "move",
+					"dataSource": "Button",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"class": "Default",
+					"focusable": false,
+					"text": "Up",
+					"style": "bevel",
+					"method": "ObjectMethods/DE MoveUp btn.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"DE MoveDn btn": {
+					"type": "button",
+					"top": 99,
+					"left": 772,
+					"width": 33,
+					"height": 25,
+					"sizingX": "move",
+					"dataSource": "Button",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GenericHelpMsg1"
+					},
+					"class": "Default",
+					"focusable": false,
+					"text": "Dn",
+					"style": "bevel",
+					"method": "ObjectMethods/DE MoveDn btn.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"PHotos_LB2": {
+					"type": "listbox",
+					"top": 50,
+					"left": 19,
+					"width": 708,
+					"height": 489,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "PHotos_LB",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"table": 166,
+					"highlightSet": "ListboxSet1",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "DataEntry12Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/PHotos_LB2.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column12",
+							"dataSource": "[LSS_Photos:166]LSS_PhotoType_s:3",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Image Type",
+								"dataSource": "Header12",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "24",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column14",
+							"dataSource": "[LSS_Photos:166]LSS_PhotoSequence_L:6",
+							"dataSourceTypeHint": "integer",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Sequence",
+								"dataSource": "Header14",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "25",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column13",
+							"dataSource": "[LSS_Photos:166]LSS_Photo_txt:4",
+							"width": 543,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Description",
+								"dataSource": "Header13",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "26",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column15",
+							"dataSource": "[LSS_Photos:166]LSS_PhotoId_s:1",
+							"width": 248,
+							"minWidth": 5,
+							"maxWidth": 248,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "DataEntry12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Header15",
+								"dataSource": "Header15",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "27",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "DataEntry12Plain",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"SequenceNumberUpdate2": {
+					"type": "text",
+					"top": 7,
+					"left": 55,
+					"width": 623,
+					"height": 23,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Note that Sequence Numbers will be updated on Save of Inspection"
+				},
+				"PlusButton_Photo": {
+					"type": "button",
+					"top": 14,
+					"left": 19,
+					"width": 30,
+					"height": 24,
+					"text": "+",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/PlusButton_Photo.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

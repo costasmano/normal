@@ -1,0 +1,1 @@
+2003-11-10 : Created to Print Page 1 of Spec Memb and FCR Inspections.  2004-01-05 : Check for PrintPreviewError before printing.  2004-01-08 : Have at least one grouping of elements-even if no spec members found.  2004-04-16 : Changed the sorting code for [ElementDict].  It uses ORDER BY FullLabel instead of ElementNo.

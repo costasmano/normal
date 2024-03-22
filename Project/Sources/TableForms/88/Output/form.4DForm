@@ -1,0 +1,396 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 425,
+	"windowMinHeight": 153,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 69,
+	"markerBody": 100,
+	"markerBreak": 153,
+	"markerFooter": 153,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 5,
+					"width": 410,
+					"height": 138,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 10,
+					"width": 400,
+					"height": 36,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 45,
+					"left": 10,
+					"width": 36,
+					"height": 93,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 45,
+					"left": 11,
+					"width": 34,
+					"height": 2,
+					"fill": "automatic",
+					"stroke": "transparent"
+				},
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 47,
+					"width": 113,
+					"height": 28,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 163,
+					"width": 120,
+					"height": 28,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle15": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 286,
+					"width": 119,
+					"height": 28,
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"bDone": {
+					"type": "button",
+					"top": 103,
+					"left": 51,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "cancel",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Done.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuery": {
+					"type": "button",
+					"top": 103,
+					"left": 83,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Query.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBy": {
+					"type": "button",
+					"top": 103,
+					"left": 115,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bOrderBy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Order By.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowAll": {
+					"type": "button",
+					"top": 103,
+					"left": 147,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bShowAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Show All.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubset": {
+					"type": "button",
+					"top": 103,
+					"left": 179,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bShowSubset",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show Subset"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Show Subset.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowSubset.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAdd": {
+					"type": "button",
+					"top": 103,
+					"left": 211,
+					"width": 27,
+					"height": 27,
+					"dataSource": "bAdd",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Add Record"
+					},
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/Button 2000 Add Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 11,
+					"left": 56,
+					"width": 344,
+					"height": 14,
+					"sizingX": "grow",
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Form_Header",
+					"text": "ClientAccess"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 51,
+					"left": 161,
+					"height": 49
+				},
+				"Line14": {
+					"type": "line",
+					"top": 51,
+					"left": 284,
+					"height": 49
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 51,
+					"left": 51,
+					"width": 106,
+					"height": 15,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"fontWeight": "bold",
+					"text": "Start Time"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 51,
+					"left": 166,
+					"width": 114,
+					"height": 15,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"fontWeight": "bold",
+					"text": "Diable log in Time"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 51,
+					"left": 289,
+					"width": 113,
+					"height": 15,
+					"fill": "automatic",
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"fontWeight": "bold",
+					"text": "Login's disabled"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 68,
+					"left": 51,
+					"width": 353
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 75,
+					"left": 51,
+					"width": 106,
+					"height": 16,
+					"dataSource": "[ClientAccess:88]CA_MessageStart_s:2",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "####-##-##",
+					"entryFilter": "&9########",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 75,
+					"left": 166,
+					"width": 114,
+					"height": 16,
+					"dataSource": "[ClientAccess:88]CA_LimitAccess_s:3",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "####-##-## ##:##",
+					"entryFilter": "&9############",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "checkbox",
+					"top": 75,
+					"left": 289,
+					"width": 113,
+					"height": 14,
+					"dataSource": "[ClientAccess:88]CA_DisableLogins_b:4",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 11,
+					"left": 11,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/SP_Picture.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

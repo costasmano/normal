@@ -1,0 +1,1 @@
+2004-01-13 : Use process var vsForward instead of ◊Forward.

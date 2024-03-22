@@ -1,0 +1,7368 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 723,
+	"windowMinHeight": 526,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"menuBar": "BlankMenu",
+	"markerHeader": 18,
+	"markerBody": 240,
+	"markerBreak": 264,
+	"markerFooter": 288,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape",
+		"scale": 80
+	},
+	"pages": [
+		{
+			"objects": {
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 158,
+					"left": 6,
+					"width": 707,
+					"height": 358,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#DDDDDD",
+					"stroke": "#DDDDDD",
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"Text6": {
+					"type": "text",
+					"top": 95,
+					"left": 9,
+					"width": 51,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Town"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 49,
+					"left": 9,
+					"width": 54,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "BDEPT"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 72,
+					"left": 9,
+					"width": 52,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "B.I.N."
+				},
+				"DisplayOnly43": {
+					"type": "input",
+					"top": 47,
+					"left": 654,
+					"width": 47,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "[Bridge MHD NBIS:1]AASHTO:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000.0"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 50,
+					"left": 587,
+					"width": 65,
+					"height": 13,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "AASHTO\r"
+				},
+				"DisplayOnly42": {
+					"type": "checkbox",
+					"top": 69,
+					"left": 684,
+					"width": 17,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "[Bridge MHD NBIS:1]FHWA Select:4",
+					"enterable": false,
+					"text": "FHWA Select",
+					"stroke": "#000000",
+					"class": "DataEntry12APlain",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SelectListInfo"
+					}
+				},
+				"Text24": {
+					"type": "text",
+					"top": 70,
+					"left": 587,
+					"width": 96,
+					"height": 13,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Select List\r"
+				},
+				"DisplayOnly40": {
+					"type": "input",
+					"top": 72,
+					"left": 66,
+					"width": 45,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly39": {
+					"type": "input",
+					"top": 95,
+					"left": 66,
+					"width": 178,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly41": {
+					"type": "input",
+					"top": 49,
+					"left": 66,
+					"width": 112,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BDept"
+					}
+				},
+				"Text32": {
+					"type": "text",
+					"top": 119,
+					"left": 9,
+					"width": 52,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Item 8"
+				},
+				"DisplayOnly44": {
+					"type": "input",
+					"top": 119,
+					"left": 66,
+					"width": 192,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BrKey"
+					}
+				},
+				"SIAGoogle": {
+					"type": "pictureButton",
+					"top": 112,
+					"left": 683,
+					"width": 22,
+					"height": 31,
+					"dataSource": "SIAGoogle_L",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SIAGoogleBIN"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/GoogleMaps.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SIAGoogle.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 713,
+					"height": 45,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarBlue.png"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 3,
+					"left": 3,
+					"width": 710,
+					"height": 40,
+					"sizingX": "grow",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 28,
+					"fontWeight": "bold",
+					"text": "Railroad Structure Inventory Data"
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 53,
+					"left": 475,
+					"width": 36,
+					"height": 36,
+					"dataSource": "bPr2nd",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print SI &A"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Print.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"DE SIA_RR_Save": {
+					"type": "pictureButton",
+					"top": 53,
+					"left": 280,
+					"width": 36,
+					"height": 36,
+					"dataSource": "SIA_RR_Save",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SaveData"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/DE SIA_RR_Save.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SIA_RR_Cancel": {
+					"type": "pictureButton",
+					"top": 53,
+					"left": 377,
+					"width": 36,
+					"height": 36,
+					"dataSource": "SIA_RR_Cancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/ExitForm"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/SIA_RR_Cancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RailSIATabs_atxt": {
+					"type": "dropdown",
+					"top": 145,
+					"left": 209,
+					"width": 296,
+					"height": 23,
+					"dataSource": "RailSIATabs_atxt",
+					"choiceList": [
+						"Identification",
+						"Structure Type and Material",
+						"Age and Service",
+						"Geometric data",
+						"Navigation Data",
+						"Classification",
+						"Condition / Load Rating",
+						"Appraisal / Proposed Improvements",
+						"Inspections",
+						"Bridge Specifics / Accessibility"
+					],
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"DisplayOnly2": {
+					"type": "input",
+					"top": 226,
+					"left": 148,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item3:61",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 397,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(9) Location"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 465,
+					"left": 9,
+					"width": 254,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(98) Border Bridge State Code"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 443,
+					"left": 354,
+					"width": 121,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(17) Longitude"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 465,
+					"left": 588,
+					"width": 54,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Share"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 443,
+					"left": 9,
+					"width": 114,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(16) Latitude"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 226,
+					"left": 9,
+					"width": 138,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(3) County Code"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 180,
+					"left": 9,
+					"width": 186,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(8) Structure Number"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 204,
+					"left": 9,
+					"width": 315,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(2) State Highway Department District"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 226,
+					"left": 504,
+					"width": 120,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(4) Place Code"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 419,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(11) Mile Point"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 487,
+					"left": 9,
+					"width": 302,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(99) Border Bridge Structure No.    #"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 465,
+					"left": 685,
+					"width": 19,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "%"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 443,
+					"left": 156,
+					"width": 37,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "DEG"
+				},
+				"DisplayOnly": {
+					"type": "input",
+					"top": 204,
+					"left": 676,
+					"width": 28,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item2:60",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Features": {
+					"type": "dropdown",
+					"top": 257,
+					"left": 153,
+					"width": 150,
+					"height": 20,
+					"dataSource": "aFeatDescr_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Features.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Features1": {
+					"type": "input",
+					"top": 258,
+					"left": 310,
+					"width": 31,
+					"height": 17,
+					"dataSource": "vRteNum",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9; ;\"###",
+					"method": "ObjectMethods/Features1.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Features2": {
+					"type": "checkbox",
+					"top": 258,
+					"left": 357,
+					"width": 17,
+					"height": 18,
+					"dataSource": "vSuffix",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Features2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Features3": {
+					"type": "input",
+					"top": 258,
+					"left": 390,
+					"width": 190,
+					"height": 17,
+					"dataSource": "v6Descr",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/Features3.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Features5": {
+					"type": "dropdown",
+					"top": 301,
+					"left": 153,
+					"width": 150,
+					"height": 20,
+					"dataSource": "a7FDescr_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Features5.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Features6": {
+					"type": "input",
+					"top": 302,
+					"left": 310,
+					"width": 31,
+					"height": 17,
+					"dataSource": "v7Rtenum",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9; ;\"###",
+					"method": "ObjectMethods/Features6.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Features7": {
+					"type": "checkbox",
+					"top": 302,
+					"left": 357,
+					"width": 17,
+					"height": 18,
+					"dataSource": "v7Suffix",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Features7.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Features8": {
+					"type": "input",
+					"top": 302,
+					"left": 390,
+					"width": 210,
+					"height": 17,
+					"dataSource": "v7Descr",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/Features8.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"ID_INP_RRBRanch": {
+					"type": "input",
+					"top": 352,
+					"left": 173,
+					"width": 495,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]RRBranch:210",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ID_INP_RRBRanch.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ID_INP_RRBridgeNo": {
+					"type": "input",
+					"top": 377,
+					"left": 173,
+					"width": 120,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]RRBridgeNo:211",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,###,##0.000",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/ID_INP_RRBridgeNo.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 397,
+					"left": 173,
+					"width": 249,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item9:66",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/Field14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE MilePt": {
+					"type": "input",
+					"top": 419,
+					"left": 173,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]MilePt:2",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE MilePt.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 443,
+					"left": 124,
+					"width": 26,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item16A:68",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/Field19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 443,
+					"left": 196,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item16B:69",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"min": 0,
+					"max": 59,
+					"method": "ObjectMethods/Field20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field21": {
+					"type": "input",
+					"top": 443,
+					"left": 260,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item16C:109",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 59.9999,
+					"method": "ObjectMethods/Field21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field22": {
+					"type": "input",
+					"top": 443,
+					"left": 475,
+					"width": 36,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item17A:70",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9###",
+					"method": "ObjectMethods/Field22.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field23": {
+					"type": "input",
+					"top": 443,
+					"left": 553,
+					"width": 27,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item17B:71",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"min": 0,
+					"max": 60,
+					"method": "ObjectMethods/Field23.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field24": {
+					"type": "input",
+					"top": 443,
+					"left": 618,
+					"width": 51,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item17C:136",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 59.9999,
+					"method": "ObjectMethods/Field24.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field25": {
+					"type": "input",
+					"top": 465,
+					"left": 262,
+					"width": 31,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item98A:72",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9; \"###",
+					"method": "ObjectMethods/Field25.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "checkbox",
+					"top": 465,
+					"left": 302,
+					"width": 72,
+					"height": 18,
+					"dataSource": "CBItem98",
+					"text": "Blank",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field26": {
+					"type": "input",
+					"top": 465,
+					"left": 652,
+					"width": 26,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item98B:73",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9; \"##",
+					"method": "ObjectMethods/Field26.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field27": {
+					"type": "input",
+					"top": 487,
+					"left": 547,
+					"width": 157,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item99:74",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9;A-Z; \"###############",
+					"method": "ObjectMethods/Field27.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text27": {
+					"type": "text",
+					"top": 443,
+					"left": 224,
+					"width": 37,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "MIN"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 443,
+					"left": 514,
+					"width": 38,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "DEG"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 443,
+					"left": 583,
+					"width": 37,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "MIN"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 443,
+					"left": 313,
+					"width": 37,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "SEC"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 443,
+					"left": 673,
+					"width": 37,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "SEC"
+				},
+				"DisplayOnly1": {
+					"type": "input",
+					"top": 226,
+					"left": 628,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item4:62",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "#####"
+				},
+				"DisplayOnly5": {
+					"type": "input",
+					"top": 180,
+					"left": 514,
+					"width": 190,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BrKey"
+					}
+				},
+				"Text33": {
+					"type": "text",
+					"top": 243,
+					"left": 164,
+					"width": 35,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Code"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 274,
+					"left": 28,
+					"width": 102,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Intersected"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 300,
+					"left": 9,
+					"width": 141,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(7) Facility"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 257,
+					"left": 9,
+					"width": 141,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(6) Features"
+				},
+				"Features4": {
+					"type": "checkbox",
+					"top": 258,
+					"left": 597,
+					"width": 31,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Item6B:64",
+					"enterable": false,
+					"text": "*",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"method": "ObjectMethods/Features4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NonEnterable4": {
+					"type": "input",
+					"top": 322,
+					"left": 153,
+					"width": 393,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item7:65",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/NonEnterable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text34": {
+					"type": "text",
+					"top": 243,
+					"left": 388,
+					"width": 154,
+					"height": 15,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Description"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 243,
+					"left": 310,
+					"width": 43,
+					"height": 15,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Rte#"
+				},
+				"NonEnterable3": {
+					"type": "input",
+					"top": 278,
+					"left": 153,
+					"width": 393,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item6A:63",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AlphaNumA"
+					},
+					"method": "ObjectMethods/NonEnterable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text36": {
+					"type": "text",
+					"top": 315,
+					"left": 28,
+					"width": 84,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Carried"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 243,
+					"left": 354,
+					"width": 23,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Sfx"
+				},
+				"VariableCopyLatLon": {
+					"type": "button",
+					"top": 442,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"dataSource": "SIA_CopyLatLon",
+					"shortcutKey": "v",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"display": false,
+					"method": "ObjectMethods/VariableCopyLatLon.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 351,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "RR Branch"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 373,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "RR Bridge No"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text38": {
+					"type": "text",
+					"top": 180,
+					"left": 9,
+					"width": 216,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(43) Structure Type Main:"
+				},
+				"DisplayOnly12": {
+					"type": "input",
+					"top": 469,
+					"left": 686,
+					"width": 18,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item108C:82",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 369,
+					"left": 9,
+					"width": 290,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(107) Deck Structure Type"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 231,
+					"left": 9,
+					"width": 216,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(44) Structure Type Appr:"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 321,
+					"left": 9,
+					"width": 284,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(45) Number of spans in main unit"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 345,
+					"left": 9,
+					"width": 284,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(46) Number of approach spans"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 469,
+					"left": 33,
+					"width": 254,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "C) Type of deck protection"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 447,
+					"left": 9,
+					"width": 356,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(108) Wearing Surface / Protective System:"
+				},
+				"DisplayOnly6": {
+					"type": "input",
+					"top": 204,
+					"left": 670,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item43:75",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly7": {
+					"type": "input",
+					"top": 255,
+					"left": 670,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item44:76",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly9": {
+					"type": "input",
+					"top": 369,
+					"left": 686,
+					"width": 18,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item107:79",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable28": {
+					"type": "dropdown",
+					"top": 180,
+					"left": 233,
+					"width": 310,
+					"height": 21,
+					"dataSource": "aItem43ades",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable28.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable27": {
+					"type": "dropdown",
+					"top": 204,
+					"left": 233,
+					"width": 310,
+					"height": 21,
+					"dataSource": "aItem43bdes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable27.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable30": {
+					"type": "dropdown",
+					"top": 231,
+					"left": 233,
+					"width": 310,
+					"height": 21,
+					"dataSource": "aItem44ades",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable30.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "dropdown",
+					"top": 255,
+					"left": 233,
+					"width": 310,
+					"height": 21,
+					"dataSource": "aItem44bdes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable26.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field39": {
+					"type": "checkbox",
+					"top": 294,
+					"left": 13,
+					"width": 156,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]JointlessBridge:176",
+					"text": "Jointless Bridge",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field39.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable46": {
+					"type": "dropdown",
+					"top": 292,
+					"left": 190,
+					"width": 251,
+					"height": 21,
+					"dataSource": "aIntegralD_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable46.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field40": {
+					"type": "input",
+					"top": 321,
+					"left": 670,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item45:77",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/ListOfSCannedRt"
+					},
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9###",
+					"method": "ObjectMethods/Field40.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field41": {
+					"type": "input",
+					"top": 345,
+					"left": 664,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item46:78",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"entryFilter": "&9####",
+					"method": "ObjectMethods/Field41.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable29": {
+					"type": "dropdown",
+					"top": 366,
+					"left": 446,
+					"width": 228,
+					"height": 22,
+					"dataSource": "aItem107Des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable29.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text48": {
+					"type": "text",
+					"top": 204,
+					"left": 620,
+					"width": 47,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Code"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 255,
+					"left": 620,
+					"width": 47,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Code"
+				},
+				"Variable33": {
+					"type": "dropdown",
+					"top": 466,
+					"left": 446,
+					"width": 228,
+					"height": 22,
+					"dataSource": "aItem108cD",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable33.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DisplayOnly8": {
+					"type": "input",
+					"top": 292,
+					"left": 688,
+					"width": 16,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]JointlessType:202",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text56": {
+					"type": "text",
+					"top": 293,
+					"left": 621,
+					"width": 47,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Code"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 396,
+					"left": 9,
+					"width": 135,
+					"height": 17,
+					"class": "Geneva14",
+					"textAlign": "left",
+					"text": "Ballast : "
+				},
+				"DE Ballast": {
+					"type": "input",
+					"top": 396,
+					"left": 524,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Ballast:5",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE Ballast.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TypeOfTies": {
+					"type": "input",
+					"top": 422,
+					"left": 370,
+					"width": 334,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]TypeOfTies:4",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE TypeOfTies.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text44": {
+					"type": "text",
+					"top": 422,
+					"left": 9,
+					"width": 135,
+					"height": 17,
+					"class": "Geneva14",
+					"textAlign": "left",
+					"text": "Type Of Ties : "
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text58": {
+					"type": "text",
+					"top": 255,
+					"left": 192,
+					"width": 60,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Under -"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 231,
+					"left": 9,
+					"width": 192,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(42) Type of Service:"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 201,
+					"left": 9,
+					"width": 234,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(106) Year Reconstructed"
+				},
+				"Text65": {
+					"type": "text",
+					"top": 180,
+					"left": 9,
+					"width": 145,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(27) Year Built"
+				},
+				"Text71": {
+					"type": "text",
+					"top": 255,
+					"left": 636,
+					"width": 42,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Code"
+				},
+				"DisplayOnly13": {
+					"type": "input",
+					"top": 253,
+					"left": 680,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item42:85",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text72": {
+					"type": "text",
+					"top": 231,
+					"left": 192,
+					"width": 66,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "On -"
+				},
+				"Field50": {
+					"type": "input",
+					"top": 180,
+					"left": 660,
+					"width": 44,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item27:83",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"entryFilter": "&9####",
+					"min": 1400,
+					"max": 2099,
+					"method": "ObjectMethods/Field50.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable51": {
+					"type": "checkbox",
+					"top": 198,
+					"left": 240,
+					"width": 132,
+					"height": 24,
+					"dataSource": "CBItem106",
+					"text": "Blank",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable51.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field51": {
+					"type": "input",
+					"top": 201,
+					"left": 660,
+					"width": 44,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item106:84",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"entryFilter": "&9####",
+					"min": 0,
+					"max": 2099,
+					"method": "ObjectMethods/Field51.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable49": {
+					"type": "dropdown",
+					"top": 228,
+					"left": 270,
+					"width": 210,
+					"height": 22,
+					"dataSource": "aItem42aDes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable49.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable50": {
+					"type": "dropdown",
+					"top": 252,
+					"left": 270,
+					"width": 210,
+					"height": 22,
+					"dataSource": "aItem42bDes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable50.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text45": {
+					"type": "text",
+					"top": 285,
+					"left": 9,
+					"width": 135,
+					"height": 17,
+					"class": "Geneva14",
+					"textAlign": "left",
+					"text": "No. Tracks On : "
+				},
+				"Text50": {
+					"type": "text",
+					"top": 285,
+					"left": 324,
+					"width": 145,
+					"height": 17,
+					"class": "Geneva14",
+					"textAlign": "left",
+					"text": "No. Tracks Under : "
+				},
+				"DE NoTracksOn": {
+					"type": "input",
+					"top": 285,
+					"left": 192,
+					"width": 64,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]NoTracksOn:3",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE NoTracksOn.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE NoTracksUnder": {
+					"type": "input",
+					"top": 285,
+					"left": 474,
+					"width": 64,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]NoTracksUnder:7",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE NoTracksUnder.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text80": {
+					"type": "text",
+					"top": 356,
+					"left": 9,
+					"width": 241,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(55) Min Lat Underclear RT ref"
+				},
+				"Text81": {
+					"type": "text",
+					"top": 334,
+					"left": 9,
+					"width": 222,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(54) Min Vert Underclear ref"
+				},
+				"Text82": {
+					"type": "text",
+					"top": 313,
+					"left": 9,
+					"width": 286,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(53) Min Vert Clear Over Bridge Rdwy"
+				},
+				"Text83": {
+					"type": "text",
+					"top": 224,
+					"left": 408,
+					"width": 204,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(52) Deck Width Out to Out"
+				},
+				"Text84": {
+					"type": "text",
+					"top": 224,
+					"left": 9,
+					"width": 286,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(51) Bridge Roadway Width Curb to Curb"
+				},
+				"Text86": {
+					"type": "text",
+					"top": 268,
+					"left": 9,
+					"width": 283,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(10) Inventory Route MIN Vert Clear"
+				},
+				"Text87": {
+					"type": "text",
+					"top": 378,
+					"left": 9,
+					"width": 264,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(56) Min Lat Underclear LT"
+				},
+				"Text88": {
+					"type": "text",
+					"top": 290,
+					"left": 9,
+					"width": 276,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(47) Inventory Route Total Horiz Clear"
+				},
+				"Text89": {
+					"type": "text",
+					"top": 246,
+					"left": 9,
+					"width": 90,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(34) Skew"
+				},
+				"Text91": {
+					"type": "text",
+					"top": 202,
+					"left": 9,
+					"width": 172,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(50) Curb or sidewalk"
+				},
+				"Text92": {
+					"type": "text",
+					"top": 180,
+					"left": 408,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(49) Structure Length"
+				},
+				"Text93": {
+					"type": "text",
+					"top": 180,
+					"left": 9,
+					"width": 236,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(48) Length of maximum span"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 180,
+					"left": 365,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text66": {
+					"type": "text",
+					"top": 180,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text67": {
+					"type": "text",
+					"top": 202,
+					"left": 365,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text69": {
+					"type": "text",
+					"top": 224,
+					"left": 365,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text70": {
+					"type": "text",
+					"top": 224,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text55": {
+					"type": "text",
+					"top": 268,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "IN"
+				},
+				"Text73": {
+					"type": "text",
+					"top": 290,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"DE Var19": {
+					"type": "input",
+					"top": 180,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem48_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var20": {
+					"type": "input",
+					"top": 180,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem49_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var21": {
+					"type": "input",
+					"top": 202,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem50A_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var21.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var18": {
+					"type": "input",
+					"top": 202,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem50B_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var22": {
+					"type": "input",
+					"top": 224,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem51_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var22.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var23": {
+					"type": "input",
+					"top": 224,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem52_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var23.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var6": {
+					"type": "input",
+					"top": 246,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem34_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE var": {
+					"type": "checkbox",
+					"top": 246,
+					"left": 658,
+					"width": 20,
+					"height": 17,
+					"dataSource": "SIA_RRItem35_L",
+					"text": " ",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/DE var.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Var7": {
+					"type": "input",
+					"top": 268,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem10Ft_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE var1": {
+					"type": "checkbox",
+					"top": 268,
+					"left": 397,
+					"width": 100,
+					"height": 17,
+					"dataSource": "SIA_Item10Over30_L",
+					"text": "  > 30 M",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE var1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Var9": {
+					"type": "input",
+					"top": 268,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem10In_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 11.9999,
+					"method": "ObjectMethods/DE Var9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var8": {
+					"type": "input",
+					"top": 290,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem47_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var14": {
+					"type": "input",
+					"top": 312,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem53Ft_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE var2": {
+					"type": "checkbox",
+					"top": 313,
+					"left": 397,
+					"width": 100,
+					"height": 17,
+					"dataSource": "SIA_Item53Over30_L",
+					"text": "  > 30 M",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE var2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Var10": {
+					"type": "input",
+					"top": 312,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem53In_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 11.9999,
+					"method": "ObjectMethods/DE Var10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE SIA_RRITem54A_atxt": {
+					"type": "dropdown",
+					"top": 332,
+					"left": 263,
+					"width": 23,
+					"height": 20,
+					"dataSource": "SIA_RRITem54A_atxt",
+					"choiceList": [
+						"Highway",
+						"Rail Road",
+						"Neither"
+					],
+					"class": "List10Plain",
+					"method": "ObjectMethods/DE SIA_RRITem54A_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Var15": {
+					"type": "input",
+					"top": 334,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem54Ft_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE var3": {
+					"type": "checkbox",
+					"top": 334,
+					"left": 397,
+					"width": 100,
+					"height": 17,
+					"dataSource": "SIA_Item54Over30_L",
+					"text": "  > 30 M",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE var3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Var11": {
+					"type": "input",
+					"top": 334,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem54In_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"max": 11.9999,
+					"method": "ObjectMethods/DE Var11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE SIA_RRITem55A_atxt": {
+					"type": "dropdown",
+					"top": 354,
+					"left": 263,
+					"width": 23,
+					"height": 20,
+					"dataSource": "SIA_RRITem55A_atxt",
+					"choiceList": [
+						"Highway",
+						"Rail Road",
+						"Neither"
+					],
+					"class": "List10Plain",
+					"method": "ObjectMethods/DE SIA_RRITem55A_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE var4": {
+					"type": "checkbox",
+					"top": 356,
+					"left": 397,
+					"width": 100,
+					"height": 17,
+					"dataSource": "SIA_Item55Over30_L",
+					"text": "  > 30 M",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE var4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Var12": {
+					"type": "input",
+					"top": 356,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem55_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE var5": {
+					"type": "checkbox",
+					"top": 378,
+					"left": 397,
+					"width": 100,
+					"height": 17,
+					"dataSource": "SIA_Item56Over30_L",
+					"text": "  > 30 M",
+					"class": "Geneva14",
+					"method": "ObjectMethods/DE var5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE Var13": {
+					"type": "input",
+					"top": 378,
+					"left": 608,
+					"width": 70,
+					"height": 18,
+					"dataSource": "SIA_RRItem56_r",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/DE Var13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text101": {
+					"type": "text",
+					"top": 246,
+					"left": 450,
+					"width": 172,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(35) Structure Flared"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 246,
+					"left": 365,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "DEG"
+				},
+				"Text74": {
+					"type": "text",
+					"top": 268,
+					"left": 365,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text75": {
+					"type": "text",
+					"top": 312,
+					"left": 365,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 334,
+					"left": 365,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 312,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "IN"
+				},
+				"Text62": {
+					"type": "text",
+					"top": 334,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "IN"
+				},
+				"Text63": {
+					"type": "text",
+					"top": 356,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text76": {
+					"type": "text",
+					"top": 378,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"DE Var16": {
+					"type": "input",
+					"top": 334,
+					"left": 220,
+					"width": 30,
+					"height": 18,
+					"dataSource": "SIA_RRItem54A_s",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Var17": {
+					"type": "input",
+					"top": 356,
+					"left": 220,
+					"width": 30,
+					"height": 18,
+					"dataSource": "SIA_RRItem55A_s",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text77": {
+					"type": "text",
+					"top": 202,
+					"left": 683,
+					"width": 25,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "FT"
+				},
+				"Text78": {
+					"type": "text",
+					"top": 202,
+					"left": 208,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Left"
+				},
+				"Text79": {
+					"type": "text",
+					"top": 202,
+					"left": 528,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Right"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text120": {
+					"type": "text",
+					"top": 180,
+					"left": 9,
+					"width": 190,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(38) Navigation Control"
+				},
+				"Text121": {
+					"type": "text",
+					"top": 276,
+					"left": 9,
+					"width": 308,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(40) Navigation Horizontal Clearance"
+				},
+				"Text122": {
+					"type": "text",
+					"top": 252,
+					"left": 9,
+					"width": 336,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(116) Vert-lift Bridge Nav Min Vert Clear"
+				},
+				"Text123": {
+					"type": "text",
+					"top": 228,
+					"left": 9,
+					"width": 286,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(39) Navigation Vertical Clearance"
+				},
+				"Text124": {
+					"type": "text",
+					"top": 204,
+					"left": 9,
+					"width": 190,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(111) Pier Protection"
+				},
+				"Text125": {
+					"type": "text",
+					"top": 180,
+					"left": 638,
+					"width": 46,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Code"
+				},
+				"DisplayOnly15": {
+					"type": "input",
+					"top": 178,
+					"left": 686,
+					"width": 18,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item38:113",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text126": {
+					"type": "text",
+					"top": 204,
+					"left": 638,
+					"width": 46,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Code"
+				},
+				"DisplayOnly16": {
+					"type": "input",
+					"top": 202,
+					"left": 686,
+					"width": 18,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item111:114",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text127": {
+					"type": "text",
+					"top": 228,
+					"left": 690,
+					"width": 15,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "M"
+				},
+				"Text128": {
+					"type": "text",
+					"top": 252,
+					"left": 690,
+					"width": 15,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "M"
+				},
+				"Text129": {
+					"type": "text",
+					"top": 276,
+					"left": 690,
+					"width": 15,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "M"
+				},
+				"Variable101": {
+					"type": "dropdown",
+					"top": 177,
+					"left": 202,
+					"width": 342,
+					"height": 22,
+					"dataSource": "aItem38des_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable101.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable102": {
+					"type": "dropdown",
+					"top": 201,
+					"left": 202,
+					"width": 342,
+					"height": 22,
+					"dataSource": "aItem111d_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable102.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field90": {
+					"type": "input",
+					"top": 228,
+					"left": 638,
+					"width": 49,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item39:115",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000.0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field90.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field91": {
+					"type": "input",
+					"top": 252,
+					"left": 638,
+					"width": 49,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item116:116",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000.0;;",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field91.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field92": {
+					"type": "input",
+					"top": 276,
+					"left": 621,
+					"width": 66,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item40:117",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000.0",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"method": "ObjectMethods/Field92.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text138": {
+					"type": "text",
+					"top": 324,
+					"left": 9,
+					"width": 229,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(37) Historical Significance"
+				},
+				"Text139": {
+					"type": "text",
+					"top": 298,
+					"left": 9,
+					"width": 140,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(22) Owner - "
+				},
+				"Text140": {
+					"type": "text",
+					"top": 274,
+					"left": 9,
+					"width": 140,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(21) Maintain - "
+				},
+				"Text143": {
+					"type": "text",
+					"top": 249,
+					"left": 9,
+					"width": 300,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(103) Temporary Structure"
+				},
+				"Text144": {
+					"type": "text",
+					"top": 225,
+					"left": 9,
+					"width": 212,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(102) Direction of Traffic - "
+				},
+				"Text145": {
+					"type": "text",
+					"top": 201,
+					"left": 9,
+					"width": 212,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(101) Parallel Structure"
+				},
+				"Text149": {
+					"type": "text",
+					"top": 180,
+					"left": 9,
+					"width": 212,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(112) NBIS Bridge Length"
+				},
+				"DisplayOnly19": {
+					"type": "input",
+					"top": 201,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item101:122",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly20": {
+					"type": "input",
+					"top": 225,
+					"left": 680,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item102:123",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly22": {
+					"type": "input",
+					"top": 274,
+					"left": 673,
+					"width": 31,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item21:127",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly23": {
+					"type": "input",
+					"top": 298,
+					"left": 673,
+					"width": 31,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item22:128",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly24": {
+					"type": "input",
+					"top": 324,
+					"left": 249,
+					"width": 339,
+					"height": 17,
+					"dataSource": "vItem37",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/DisplayOnly24.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field107": {
+					"type": "checkbox",
+					"top": 181,
+					"left": 687,
+					"width": 17,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Item112:118",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field107.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable124": {
+					"type": "dropdown",
+					"top": 198,
+					"left": 246,
+					"width": 408,
+					"height": 22,
+					"dataSource": "aItem101d_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable124.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable118": {
+					"type": "dropdown",
+					"top": 222,
+					"left": 246,
+					"width": 220,
+					"height": 22,
+					"dataSource": "aItem102Des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable118.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field109": {
+					"type": "checkbox",
+					"top": 250,
+					"left": 687,
+					"width": 17,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Item103:124",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field109.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable119": {
+					"type": "dropdown",
+					"top": 271,
+					"left": 150,
+					"width": 240,
+					"height": 22,
+					"dataSource": "aItem21des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable119.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable120": {
+					"type": "dropdown",
+					"top": 295,
+					"left": 150,
+					"width": 240,
+					"height": 22,
+					"dataSource": "aItem22des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable120.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field101": {
+					"type": "input",
+					"top": 324,
+					"left": 680,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item37:129",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"fill": "#C0C0C0",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text159": {
+					"type": "text",
+					"top": 304,
+					"left": 160,
+					"width": 401,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Geneva18B",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Load Rating"
+				},
+				"Text160": {
+					"type": "text",
+					"top": 290,
+					"left": 9,
+					"width": 134,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(62) Culverts"
+				},
+				"Text161": {
+					"type": "text",
+					"top": 268,
+					"left": 9,
+					"width": 284,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(61) Channel & Channel Protection"
+				},
+				"Text162": {
+					"type": "text",
+					"top": 246,
+					"left": 9,
+					"width": 170,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(60) Substructure"
+				},
+				"Text163": {
+					"type": "text",
+					"top": 224,
+					"left": 9,
+					"width": 176,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(59) Superstructure"
+				},
+				"Text164": {
+					"type": "text",
+					"top": 202,
+					"left": 9,
+					"width": 110,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(58) Deck"
+				},
+				"Text165": {
+					"type": "text",
+					"top": 339,
+					"left": 9,
+					"width": 182,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(41) Structure -"
+				},
+				"DisplayOnly28": {
+					"type": "input",
+					"top": 339,
+					"left": 680,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item41:141",
+					"stroke": "#0128FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 329,
+					"left": 14,
+					"width": 690,
+					"strokeWidth": 4
+				},
+				"Field123": {
+					"type": "input",
+					"top": 202,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item58:130",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/Field123.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field124": {
+					"type": "input",
+					"top": 224,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item59:131",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/Field124.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field125": {
+					"type": "input",
+					"top": 246,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item60:132",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/Field125.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field126": {
+					"type": "input",
+					"top": 268,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item61:133",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/Field126.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field127": {
+					"type": "input",
+					"top": 290,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item62:134",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#",
+					"method": "ObjectMethods/Field127.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable139": {
+					"type": "dropdown",
+					"top": 336,
+					"left": 338,
+					"width": 250,
+					"height": 20,
+					"dataSource": "aItem41Des",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable139.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text53": {
+					"type": "text",
+					"top": 360,
+					"left": 14,
+					"width": 135,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Rating Date : "
+				},
+				"DE CommutRtg_RatingDate": {
+					"type": "input",
+					"top": 360,
+					"left": 154,
+					"width": 88,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]RatingDate:16",
+					"dataSourceTypeHint": "date",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"method": "ObjectMethods/DE CommutRtg_RatingDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R1Desc": {
+					"type": "input",
+					"top": 413,
+					"left": 114,
+					"width": 135,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar_desc_s:30",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R1Desc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R1inv": {
+					"type": "input",
+					"top": 438,
+					"left": 114,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar_inv_r:27",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R1inv.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R1oper": {
+					"type": "input",
+					"top": 463,
+					"left": 114,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar_oper_r:28",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R1oper.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R1fatg": {
+					"type": "input",
+					"top": 488,
+					"left": 114,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar_fatigue_r:29",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R1fatg.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R2Desc": {
+					"type": "input",
+					"top": 413,
+					"left": 259,
+					"width": 135,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar2_desc_s:56",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R2Desc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R2inv": {
+					"type": "input",
+					"top": 438,
+					"left": 259,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar2_inv_r:53",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R2inv.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R2oper": {
+					"type": "input",
+					"top": 463,
+					"left": 259,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar2_oper_r:54",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R2oper.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R2fatg": {
+					"type": "input",
+					"top": 488,
+					"left": 259,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar2_fatigue_r:55",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R2fatg.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R3Desc": {
+					"type": "input",
+					"top": 413,
+					"left": 405,
+					"width": 135,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar3_desc_s:60",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R3Desc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R3inv": {
+					"type": "input",
+					"top": 438,
+					"left": 405,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar3_inv_r:57",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R3inv.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R3oper": {
+					"type": "input",
+					"top": 463,
+					"left": 405,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar3_oper_r:58",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R3oper.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_R3fatg": {
+					"type": "input",
+					"top": 488,
+					"left": 405,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_RevCar3_fatigue_r:59",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_R3fatg.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_WCDesc": {
+					"type": "input",
+					"top": 413,
+					"left": 551,
+					"width": 135,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_WorkCar_desc_s:40",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE TransitRtg_Rating_WCDesc.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_WCinv": {
+					"type": "input",
+					"top": 438,
+					"left": 551,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_WorkCar_inv_r:37",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_WCinv.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_WCoper": {
+					"type": "input",
+					"top": 463,
+					"left": 551,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_WorkCar_oper_r:38",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_WCoper.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE TransitRtg_Rating_WCfatg": {
+					"type": "input",
+					"top": 488,
+					"left": 551,
+					"width": 72,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_WorkCar_fatigue_r:39",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE TransitRtg_Rating_WCfatg.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"TransitRtg_2": {
+					"type": "text",
+					"top": 438,
+					"left": 14,
+					"width": 85,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Inventory "
+				},
+				"TransitRtg_3": {
+					"type": "text",
+					"top": 463,
+					"left": 14,
+					"width": 85,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Operating"
+				},
+				"TransitRtg_4": {
+					"type": "text",
+					"top": 488,
+					"left": 14,
+					"width": 85,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Fatigue"
+				},
+				"TransitRtg_": {
+					"type": "text",
+					"top": 383,
+					"left": 114,
+					"width": 110,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Revenue Car 1"
+				},
+				"TransitRtg_1": {
+					"type": "text",
+					"top": 383,
+					"left": 551,
+					"width": 160,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Work Car Combination"
+				},
+				"TransitRtg_5": {
+					"type": "text",
+					"top": 413,
+					"left": 14,
+					"width": 85,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Description "
+				},
+				"DE TransitRtg_RatingDate1": {
+					"type": "input",
+					"top": 360,
+					"left": 154,
+					"width": 88,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]RatingDate:16",
+					"dataSourceTypeHint": "date",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"method": "ObjectMethods/DE TransitRtg_RatingDate1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E1": {
+					"type": "input",
+					"top": 413,
+					"left": 134,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]InvH20:19",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E2": {
+					"type": "input",
+					"top": 413,
+					"left": 209,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]InvType3:20",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E3": {
+					"type": "input",
+					"top": 413,
+					"left": 284,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Inv3S2:21",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E4": {
+					"type": "input",
+					"top": 413,
+					"left": 359,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]InvHS:22",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E5": {
+					"type": "input",
+					"top": 413,
+					"left": 434,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_NEOPLAN_inv_r:31",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E6": {
+					"type": "input",
+					"top": 413,
+					"left": 509,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_NABI_inv_r:34",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E7": {
+					"type": "input",
+					"top": 413,
+					"left": 584,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_HybridArtic_inv_r:44",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E80_Max2": {
+					"type": "input",
+					"top": 438,
+					"left": 134,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]OprH20:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E80_Max2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E80_Max7": {
+					"type": "input",
+					"top": 438,
+					"left": 209,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]OprType3:16",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E80_Max7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E80_Max3": {
+					"type": "input",
+					"top": 438,
+					"left": 284,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Opr3S2:17",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E80_Max3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E80_Max4": {
+					"type": "input",
+					"top": 438,
+					"left": 359,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]OprHS:18",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E80_Max4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E80_Max5": {
+					"type": "input",
+					"top": 438,
+					"left": 434,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_NEOPLAN_oper_r:32",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E80_Max5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E80_Max6": {
+					"type": "input",
+					"top": 438,
+					"left": 509,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_NEOPLAN_oper_r:32",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E80_Max6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE HWYRtg_Rating_E80_Max1": {
+					"type": "input",
+					"top": 438,
+					"left": 584,
+					"width": 65,
+					"height": 18,
+					"dataSource": "[RAILBridgeInfo:37]Rating_HybridArtic_oper_r:45",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "#,##0.0",
+					"method": "ObjectMethods/DE HWYRtg_Rating_E80_Max1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"HWYRtg_4": {
+					"type": "text",
+					"top": 414,
+					"left": 14,
+					"width": 105,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Inventory "
+				},
+				"HWYRtg_5": {
+					"type": "text",
+					"top": 439,
+					"left": 14,
+					"width": 105,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Operating"
+				},
+				"HWYRtg_": {
+					"type": "text",
+					"top": 381,
+					"left": 134,
+					"width": 65,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "H20"
+				},
+				"HWYRtg_3": {
+					"type": "text",
+					"top": 381,
+					"left": 359,
+					"width": 65,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "HS20"
+				},
+				"HWYRtg_7": {
+					"type": "text",
+					"top": 381,
+					"left": 509,
+					"width": 65,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "TBusB"
+				},
+				"HWYRtg_2": {
+					"type": "text",
+					"top": 381,
+					"left": 434,
+					"width": 65,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "TBusA"
+				},
+				"HWYRtg_8": {
+					"type": "text",
+					"top": 381,
+					"left": 284,
+					"width": 65,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Type 3S2"
+				},
+				"HWYRtg_1": {
+					"type": "text",
+					"top": 381,
+					"left": 209,
+					"width": 65,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Type 3"
+				},
+				"DE HWYRtg_RatingDate2": {
+					"type": "input",
+					"top": 360,
+					"left": 154,
+					"width": 88,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]DateRatReport:205",
+					"dataSourceTypeHint": "date",
+					"stroke": "#0000FF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE HWYRtg_RatingDate2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 487,
+					"left": 18,
+					"width": 690,
+					"height": 27,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"class": "DCM_InputVariable",
+					"text": "Designer note : Rating blocks are in different views 1 2 3 this note is in view 9"
+				},
+				"Text68": {
+					"type": "text",
+					"top": 170,
+					"left": 160,
+					"width": 401,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Geneva18B",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Condition"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 193,
+					"left": 14,
+					"width": 690,
+					"strokeWidth": 4
+				},
+				"HWYRtg_6": {
+					"type": "text",
+					"top": 381,
+					"left": 584,
+					"width": 65,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "TBusC"
+				},
+				"DE CommutRtg_Rating_E80": {
+					"type": "input",
+					"top": 413,
+					"left": 114,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_E80:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_E80.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_F40PH": {
+					"type": "input",
+					"top": 413,
+					"left": 219,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_F40PH:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_F40PH.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_286K": {
+					"type": "input",
+					"top": 413,
+					"left": 319,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_286K:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_286K.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_263K": {
+					"type": "input",
+					"top": 413,
+					"left": 419,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_HSP46:47",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_263K.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_315K": {
+					"type": "input",
+					"top": 413,
+					"left": 519,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_315K:41",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_315K.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_ES44AC": {
+					"type": "input",
+					"top": 413,
+					"left": 619,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_ES44AC:50",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_ES44AC.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_E80_Max": {
+					"type": "input",
+					"top": 438,
+					"left": 114,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_E80_Max:12",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_E80_Max.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_F40PH_Max": {
+					"type": "input",
+					"top": 438,
+					"left": 219,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_F40PH_Max:13",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_F40PH_Max.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_286K_Max": {
+					"type": "input",
+					"top": 438,
+					"left": 319,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_286K_Max:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_286K_Max.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_263K_Max": {
+					"type": "input",
+					"top": 438,
+					"left": 419,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_HSP46_Max:48",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_263K_Max.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_315K_Max": {
+					"type": "input",
+					"top": 438,
+					"left": 519,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_315K_Max:42",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_315K_Max.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_ES44AC_Max": {
+					"type": "input",
+					"top": 438,
+					"left": 619,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_ES44AC_Max:51",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_ES44AC_Max.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_E80_Max1": {
+					"type": "input",
+					"top": 463,
+					"left": 114,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_E80_fatigue_r:23",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_E80_Max1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_F40PH_Max1": {
+					"type": "input",
+					"top": 463,
+					"left": 219,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_F40PH_fatigue_r:24",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_F40PH_Max1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_286K_Max1": {
+					"type": "input",
+					"top": 463,
+					"left": 319,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_286K_fatigue_r:25",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_286K_Max1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_263K_Max1": {
+					"type": "input",
+					"top": 463,
+					"left": 419,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_HSP46_fatigue_r:49",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_263K_Max1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_315K_Max1": {
+					"type": "input",
+					"top": 463,
+					"left": 519,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_315K_fatigue_R:43",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_315K_Max1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE CommutRtg_Rating_ES44AC_Max1": {
+					"type": "input",
+					"top": 463,
+					"left": 619,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[RAILBridgeInfo:37]Rating_ES44AC_fatigue_r:52",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##,##0.0",
+					"method": "ObjectMethods/DE CommutRtg_Rating_ES44AC_Max1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CommutRtg_3": {
+					"type": "text",
+					"top": 413,
+					"left": 14,
+					"width": 85,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Normal "
+				},
+				"CommutRtg_4": {
+					"type": "text",
+					"top": 438,
+					"left": 14,
+					"width": 85,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Max"
+				},
+				"CommutRtg_5": {
+					"type": "text",
+					"top": 463,
+					"left": 14,
+					"width": 85,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Fatigue"
+				},
+				"CommutRtg_": {
+					"type": "text",
+					"top": 383,
+					"left": 114,
+					"width": 90,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Cooper E80"
+				},
+				"CommutRtg_9": {
+					"type": "text",
+					"top": 383,
+					"left": 419,
+					"width": 90,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "HSP-46"
+				},
+				"CommutRtg_2": {
+					"type": "text",
+					"top": 383,
+					"left": 319,
+					"width": 90,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "286K Rail Car"
+				},
+				"CommutRtg_1": {
+					"type": "text",
+					"top": 383,
+					"left": 219,
+					"width": 90,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "F40PH (mod)"
+				},
+				"CommutRtg_6": {
+					"type": "text",
+					"top": 383,
+					"left": 519,
+					"width": 90,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "315K Rail Car"
+				},
+				"CommutRtg_7": {
+					"type": "text",
+					"top": 383,
+					"left": 619,
+					"width": 90,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "ES44AC"
+				},
+				"TransitRtg_6": {
+					"type": "text",
+					"top": 383,
+					"left": 259,
+					"width": 110,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Revenue Car 2"
+				},
+				"TransitRtg_7": {
+					"type": "text",
+					"top": 383,
+					"left": 405,
+					"width": 110,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Revenue Car 3"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text181": {
+					"type": "text",
+					"top": 430,
+					"left": 9,
+					"width": 343,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(97) Year of Improvement Cost Estimate"
+				},
+				"Text182": {
+					"type": "text",
+					"top": 327,
+					"left": 9,
+					"width": 164,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(75) Type of Work"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 317,
+					"left": 12,
+					"width": 692,
+					"strokeWidth": 4
+				},
+				"Text184": {
+					"type": "text",
+					"top": 251,
+					"left": 9,
+					"width": 343,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(36) Traffic Safety Features"
+				},
+				"Text188": {
+					"type": "text",
+					"top": 210,
+					"left": 9,
+					"width": 241,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(71) Waterway adequacy"
+				},
+				"Text189": {
+					"type": "text",
+					"top": 230,
+					"left": 9,
+					"width": 343,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(72) Approach Roadway Alignment"
+				},
+				"Text190": {
+					"type": "text",
+					"top": 271,
+					"left": 9,
+					"width": 344,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(113) Scour Critical Bridges"
+				},
+				"Text191": {
+					"type": "text",
+					"top": 290,
+					"left": 214,
+					"width": 338,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Geneva18B",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Proposed Improvements"
+				},
+				"Text192": {
+					"type": "text",
+					"top": 348,
+					"left": 9,
+					"width": 343,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(76) Length of Structure Improvement"
+				},
+				"Text193": {
+					"type": "text",
+					"top": 369,
+					"left": 9,
+					"width": 343,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(94) Bridge Improvement Cost (K)"
+				},
+				"Text194": {
+					"type": "text",
+					"top": 389,
+					"left": 9,
+					"width": 343,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(95) Roadway Improvement Cost (K)"
+				},
+				"Text195": {
+					"type": "text",
+					"top": 409,
+					"left": 9,
+					"width": 343,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(96) Total Project Cost (K)"
+				},
+				"Text196": {
+					"type": "text",
+					"top": 450,
+					"left": 9,
+					"width": 344,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(114) Future ADT"
+				},
+				"Text197": {
+					"type": "text",
+					"top": 471,
+					"left": 9,
+					"width": 344,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(115) Year of Future ADT"
+				},
+				"DisplayOnly32": {
+					"type": "input",
+					"top": 327,
+					"left": 656,
+					"width": 30,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item75A:152",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DisplayOnly33": {
+					"type": "input",
+					"top": 327,
+					"left": 687,
+					"width": 17,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item75B:153",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N\"#"
+				},
+				"Text204": {
+					"type": "text",
+					"top": 349,
+					"left": 691,
+					"width": 15,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "M"
+				},
+				"Field141": {
+					"type": "input",
+					"top": 210,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item71:145",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0;2-9;N\"#",
+					"method": "ObjectMethods/Field141.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field142": {
+					"type": "input",
+					"top": 230,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item72:146",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0;2-9;N\"#",
+					"method": "ObjectMethods/Field142.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field143": {
+					"type": "input",
+					"top": 251,
+					"left": 633,
+					"width": 17,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item36A:147",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"01N\"#",
+					"method": "ObjectMethods/Field143.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field144": {
+					"type": "input",
+					"top": 251,
+					"left": 651,
+					"width": 17,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item36B:148",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"01N\"#",
+					"method": "ObjectMethods/Field144.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field145": {
+					"type": "input",
+					"top": 251,
+					"left": 669,
+					"width": 17,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item36C:149",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"01N\"#",
+					"method": "ObjectMethods/Field145.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field146": {
+					"type": "input",
+					"top": 251,
+					"left": 687,
+					"width": 17,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item36D:150",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"01N\"#",
+					"method": "ObjectMethods/Field146.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field147": {
+					"type": "input",
+					"top": 271,
+					"left": 679,
+					"width": 25,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item113:151",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "#",
+					"entryFilter": "~\"0-9;N;U;T;D\"#",
+					"method": "ObjectMethods/Field147.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable157": {
+					"type": "dropdown",
+					"top": 324,
+					"left": 162,
+					"width": 282,
+					"height": 22,
+					"dataSource": "aItem75aDes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable157.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable158": {
+					"type": "dropdown",
+					"top": 324,
+					"left": 450,
+					"width": 198,
+					"height": 22,
+					"dataSource": "aItem75bDes",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Variable158.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field148": {
+					"type": "input",
+					"top": 348,
+					"left": 616,
+					"width": 70,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item76:154",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000000",
+					"entryFilter": "&9######",
+					"method": "ObjectMethods/Field148.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field149": {
+					"type": "input",
+					"top": 369,
+					"left": 628,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item94:155",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0;-$###,##0",
+					"entryFilter": "&9######",
+					"method": "ObjectMethods/Field149.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field150": {
+					"type": "input",
+					"top": 389,
+					"left": 628,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item95:156",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0;-$###,##0",
+					"entryFilter": "&9######",
+					"method": "ObjectMethods/Field150.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field151": {
+					"type": "input",
+					"top": 409,
+					"left": 628,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item96:157",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "$###,##0;-$###,##0",
+					"entryFilter": "&9######",
+					"method": "ObjectMethods/Field151.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field152": {
+					"type": "input",
+					"top": 430,
+					"left": 663,
+					"width": 41,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item97:158",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"entryFilter": "&9####",
+					"method": "ObjectMethods/Field152.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field153": {
+					"type": "input",
+					"top": 450,
+					"left": 628,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item114:159",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000000",
+					"entryFilter": "&9######",
+					"method": "ObjectMethods/Field153.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field154": {
+					"type": "input",
+					"top": 471,
+					"left": 664,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item115:160",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000",
+					"entryFilter": "&9####",
+					"method": "ObjectMethods/Field154.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 200,
+					"left": 12,
+					"width": 692,
+					"strokeWidth": 4
+				},
+				"Text14": {
+					"type": "text",
+					"top": 173,
+					"left": 214,
+					"width": 338,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Geneva18B",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Appraisal"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text206": {
+					"type": "text",
+					"top": 364,
+					"left": 16,
+					"width": 145,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Inspection Waiver"
+				},
+				"DE BridgeInsp": {
+					"type": "input",
+					"top": 180,
+					"left": 185,
+					"width": 125,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item90:161",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE BridgeInsp.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text211": {
+					"type": "text",
+					"top": 221,
+					"left": 9,
+					"width": 229,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "   A) Fracture Critical Detail "
+				},
+				"Text212": {
+					"type": "text",
+					"top": 201,
+					"left": 524,
+					"width": 138,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(93) CFI DATE"
+				},
+				"Text213": {
+					"type": "text",
+					"top": 262,
+					"left": 9,
+					"width": 231,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "   C) Other Special Inspection"
+				},
+				"Text214": {
+					"type": "text",
+					"top": 242,
+					"left": 9,
+					"width": 229,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "   B) Underwater Inspection "
+				},
+				"Text215": {
+					"type": "text",
+					"top": 182,
+					"left": 674,
+					"width": 31,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"textAlign": "right",
+					"text": "MO"
+				},
+				"Text216": {
+					"type": "text",
+					"top": 201,
+					"left": 9,
+					"width": 278,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(92) Critical Feature Inspection:"
+				},
+				"Text218": {
+					"type": "text",
+					"top": 180,
+					"left": 524,
+					"width": 124,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(91) Frequency"
+				},
+				"DisplayOnly34": {
+					"type": "input",
+					"top": 180,
+					"left": 652,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item91:162",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##"
+				},
+				"Text219": {
+					"type": "text",
+					"top": 220,
+					"left": 288,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text220": {
+					"type": "text",
+					"top": 240,
+					"left": 288,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text221": {
+					"type": "text",
+					"top": 261,
+					"left": 288,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text222": {
+					"type": "text",
+					"top": 222,
+					"left": 566,
+					"width": 24,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "A)"
+				},
+				"Text223": {
+					"type": "text",
+					"top": 243,
+					"left": 566,
+					"width": 24,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "B)"
+				},
+				"Text224": {
+					"type": "text",
+					"top": 263,
+					"left": 566,
+					"width": 19,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "C)"
+				},
+				"Text225": {
+					"type": "text",
+					"top": 282,
+					"left": 16,
+					"width": 224,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Other Inspection "
+				},
+				"Text226": {
+					"type": "text",
+					"top": 303,
+					"left": 16,
+					"width": 232,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Closed Bridge"
+				},
+				"Text227": {
+					"type": "text",
+					"top": 342,
+					"left": 16,
+					"width": 212,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Damage Inspection"
+				},
+				"Text228": {
+					"type": "text",
+					"top": 281,
+					"left": 240,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text229": {
+					"type": "text",
+					"top": 302,
+					"left": 240,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text230": {
+					"type": "text",
+					"top": 342,
+					"left": 240,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text231": {
+					"type": "text",
+					"top": 281,
+					"left": 288,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text232": {
+					"type": "text",
+					"top": 302,
+					"left": 288,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text233": {
+					"type": "text",
+					"top": 342,
+					"left": 288,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text234": {
+					"type": "text",
+					"top": 364,
+					"left": 187,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Reason for waiver:"
+				},
+				"Text239": {
+					"type": "text",
+					"top": 364,
+					"left": 536,
+					"width": 142,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "   Complex Bridge"
+				},
+				"DE BridgeInsp1": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 262,
+					"width": 17,
+					"height": 19,
+					"dataSource": "[Bridge MHD NBIS:1]Item92AA:163",
+					"text": "  ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/DE BridgeInsp1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE BridgeInsp5": {
+					"type": "input",
+					"top": 220,
+					"left": 307,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item92AB:164",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE BridgeInsp5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp10": {
+					"type": "input",
+					"top": 220,
+					"left": 586,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item93A:169",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE BridgeInsp10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"UW Inspection Item": {
+					"type": "checkbox",
+					"top": 240,
+					"left": 262,
+					"width": 17,
+					"height": 19,
+					"dataSource": "[Bridge MHD NBIS:1]Item92BA:165",
+					"text": "  ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/UW Inspection Item.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UW Inspection Item1": {
+					"type": "input",
+					"top": 240,
+					"left": 307,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item92BB:166",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/UW Inspection Item1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"UW Inspection Item2": {
+					"type": "input",
+					"top": 240,
+					"left": 586,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item93B:170",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/UW Inspection Item2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp2": {
+					"type": "checkbox",
+					"top": 261,
+					"left": 262,
+					"width": 17,
+					"height": 19,
+					"dataSource": "[Bridge MHD NBIS:1]Item92CA:167",
+					"text": "  ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/DE BridgeInsp2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE BridgeInsp6": {
+					"type": "input",
+					"top": 261,
+					"left": 307,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item92CB:168",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE BridgeInsp6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp11": {
+					"type": "input",
+					"top": 261,
+					"left": 586,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item93C:171",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE BridgeInsp11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp3": {
+					"type": "checkbox",
+					"top": 281,
+					"left": 262,
+					"width": 17,
+					"height": 19,
+					"dataSource": "[Bridge MHD NBIS:1]OtherInsp:42",
+					"text": "  ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/DE BridgeInsp3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE BridgeInsp7": {
+					"type": "input",
+					"top": 281,
+					"left": 307,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]OtherIFreq:43",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE BridgeInsp7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp9": {
+					"type": "input",
+					"top": 281,
+					"left": 392,
+					"width": 156,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]OtherInspType:215",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE BridgeInsp9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp12": {
+					"type": "input",
+					"top": 281,
+					"left": 586,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]OtherIDate:41",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE BridgeInsp12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp4": {
+					"type": "checkbox",
+					"top": 302,
+					"left": 262,
+					"width": 17,
+					"height": 19,
+					"dataSource": "[Bridge MHD NBIS:1]ClosedInsp:45",
+					"text": "  ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/DE BridgeInsp4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE BridgeInsp8": {
+					"type": "input",
+					"top": 302,
+					"left": 307,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]ClosedIFreq:46",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/DE BridgeInsp8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp13": {
+					"type": "input",
+					"top": 302,
+					"left": 586,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]ClosedIDate:44",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE BridgeInsp13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"UW Inspection Item3": {
+					"type": "checkbox",
+					"top": 322,
+					"left": 262,
+					"width": 17,
+					"height": 19,
+					"dataSource": "[Bridge MHD NBIS:1]UWSpInsp:212",
+					"text": "  ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/UW Inspection Item3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UW Inspection Item4": {
+					"type": "input",
+					"top": 322,
+					"left": 307,
+					"width": 23,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]UWSpInspFreq:213",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9##",
+					"method": "ObjectMethods/UW Inspection Item4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"UW Inspection Item5": {
+					"type": "input",
+					"top": 322,
+					"left": 586,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]UWSpInspDate:214",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/UW Inspection Item5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE BridgeInsp14": {
+					"type": "input",
+					"top": 342,
+					"left": 586,
+					"width": 96,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]DamageInsp:47",
+					"dataSourceTypeHint": "date",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/DE BridgeInsp14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field179": {
+					"type": "checkbox",
+					"top": 363,
+					"left": 164,
+					"width": 15,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]InspWaiver:48",
+					"text": " ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/Field179.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field180": {
+					"type": "input",
+					"top": 385,
+					"left": 18,
+					"width": 570,
+					"height": 34,
+					"dataSource": "[Bridge MHD NBIS:1]InspWaiverText:49",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field180.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text246": {
+					"type": "text",
+					"top": 180,
+					"left": 9,
+					"width": 176,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "(90) Inspection Date"
+				},
+				"Field181": {
+					"type": "checkbox",
+					"top": 365,
+					"left": 681,
+					"width": 17,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Complex Bridge:178",
+					"text": " ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"method": "ObjectMethods/Field181.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text85": {
+					"type": "text",
+					"top": 220,
+					"left": 240,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text90": {
+					"type": "text",
+					"top": 240,
+					"left": 240,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text94": {
+					"type": "text",
+					"top": 261,
+					"left": 240,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text95": {
+					"type": "text",
+					"top": 323,
+					"left": 16,
+					"width": 232,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "UW Special Inspection"
+				},
+				"Text96": {
+					"type": "text",
+					"top": 322,
+					"left": 240,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text97": {
+					"type": "text",
+					"top": 322,
+					"left": 288,
+					"width": 10,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "-"
+				},
+				"Text98": {
+					"type": "text",
+					"top": 282,
+					"left": 346,
+					"width": 42,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Type :"
+				},
+				"Text99": {
+					"type": "text",
+					"top": 462,
+					"left": 536,
+					"width": 142,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "   Complex Rating"
+				},
+				"Field1": {
+					"type": "checkbox",
+					"top": 463,
+					"left": 681,
+					"width": 17,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Complex Rating:219",
+					"text": " ",
+					"stroke": "#001EFF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text248": {
+					"type": "text",
+					"top": 312,
+					"left": 226,
+					"width": 278,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Geneva18B",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Accessibility"
+				},
+				"Text251": {
+					"type": "text",
+					"top": 409,
+					"left": 420,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Inspection HRS"
+				},
+				"Text252": {
+					"type": "text",
+					"top": 360,
+					"left": 210,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Rigging"
+				},
+				"Text253": {
+					"type": "text",
+					"top": 360,
+					"left": 9,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Liftbucket"
+				},
+				"Text254": {
+					"type": "text",
+					"top": 220,
+					"left": 9,
+					"width": 106,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Bridge Name"
+				},
+				"Text257": {
+					"type": "text",
+					"top": 242,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Anti-missile fence"
+				},
+				"Text258": {
+					"type": "text",
+					"top": 262,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Acrow Panel"
+				},
+				"Text259": {
+					"type": "text",
+					"top": 282,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Parallel Bridge BIN"
+				},
+				"Line15": {
+					"type": "line",
+					"top": 338,
+					"left": 7,
+					"width": 697,
+					"strokeWidth": 4
+				},
+				"Text260": {
+					"type": "text",
+					"top": 382,
+					"left": 9,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Ladder"
+				},
+				"Text261": {
+					"type": "text",
+					"top": 403,
+					"left": 9,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Boat"
+				},
+				"Text262": {
+					"type": "text",
+					"top": 425,
+					"left": 9,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Wader"
+				},
+				"Text263": {
+					"type": "text",
+					"top": 446,
+					"left": 9,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Inspector 50"
+				},
+				"Text264": {
+					"type": "text",
+					"top": 382,
+					"left": 210,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Staging"
+				},
+				"Text265": {
+					"type": "text",
+					"top": 403,
+					"left": 210,
+					"width": 118,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Traffic Control"
+				},
+				"Text266": {
+					"type": "text",
+					"top": 425,
+					"left": 210,
+					"width": 118,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "RR Flagperson"
+				},
+				"Text267": {
+					"type": "text",
+					"top": 446,
+					"left": 210,
+					"width": 108,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Police"
+				},
+				"Text268": {
+					"type": "text",
+					"top": 347,
+					"left": 416,
+					"width": 54,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Other:"
+				},
+				"Text269": {
+					"type": "text",
+					"top": 242,
+					"left": 248,
+					"width": 128,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Overhead Signs"
+				},
+				"Field202": {
+					"type": "input",
+					"top": 220,
+					"left": 114,
+					"width": 378,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Bridge Name:29",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/AllASCII32to126"
+					},
+					"method": "ObjectMethods/Field202.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field203": {
+					"type": "checkbox",
+					"top": 241,
+					"left": 168,
+					"width": 16,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]AntiMissile:26",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field203.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field204": {
+					"type": "checkbox",
+					"top": 241,
+					"left": 378,
+					"width": 16,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]OvrHeadSigns:184",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field204.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field205": {
+					"type": "checkbox",
+					"top": 261,
+					"left": 168,
+					"width": 16,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Acrow Panel:28",
+					"text": " ",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field205.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE FreezeThawList": {
+					"type": "dropdown",
+					"top": 261,
+					"left": 380,
+					"width": 322,
+					"height": 21,
+					"dataSource": "aFreezeThawDesc_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE FreezeThawList.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field206": {
+					"type": "input",
+					"top": 282,
+					"left": 168,
+					"width": 30,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]ParallelBIN:27",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "###",
+					"method": "ObjectMethods/Field206.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Accesib N1": {
+					"type": "input",
+					"top": 360,
+					"left": 128,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN1",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N1.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used1": {
+					"type": "input",
+					"top": 360,
+					"left": 174,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU1",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used1.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N2": {
+					"type": "input",
+					"top": 382,
+					"left": 128,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN2",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N2.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used2": {
+					"type": "input",
+					"top": 382,
+					"left": 174,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU2",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used2.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N3": {
+					"type": "input",
+					"top": 403,
+					"left": 128,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN3",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N3.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used3": {
+					"type": "input",
+					"top": 403,
+					"left": 174,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU3",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used3.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N4": {
+					"type": "input",
+					"top": 425,
+					"left": 128,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN4",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N4.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used4": {
+					"type": "input",
+					"top": 425,
+					"left": 174,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU4",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used4.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N5": {
+					"type": "input",
+					"top": 446,
+					"left": 128,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN5",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N5.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used5": {
+					"type": "input",
+					"top": 446,
+					"left": 174,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU5",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used5.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N6": {
+					"type": "input",
+					"top": 360,
+					"left": 332,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN6",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N6.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used6": {
+					"type": "input",
+					"top": 360,
+					"left": 378,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU6",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used6.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N7": {
+					"type": "input",
+					"top": 382,
+					"left": 332,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN7",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N7.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used7": {
+					"type": "input",
+					"top": 382,
+					"left": 378,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU7",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used7.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N8": {
+					"type": "input",
+					"top": 403,
+					"left": 332,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN8",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N8.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used8": {
+					"type": "input",
+					"top": 403,
+					"left": 378,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU8",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used8.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N9": {
+					"type": "input",
+					"top": 425,
+					"left": 332,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN9",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N9.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used9": {
+					"type": "input",
+					"top": 425,
+					"left": 378,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU9",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used9.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib N10": {
+					"type": "input",
+					"top": 446,
+					"left": 332,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibN10",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N10.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used10": {
+					"type": "input",
+					"top": 446,
+					"left": 378,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU10",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used10.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field217": {
+					"type": "input",
+					"top": 368,
+					"left": 421,
+					"width": 195,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]AccessOther:180",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-\"",
+					"method": "ObjectMethods/Field217.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Accesib N11": {
+					"type": "input",
+					"top": 368,
+					"left": 628,
+					"width": 15,
+					"height": 17,
+					"dataSource": "vAccesibN11",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N;P\"#",
+					"method": "ObjectMethods/DE Accesib N11.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"DE Accesib Used11": {
+					"type": "input",
+					"top": 368,
+					"left": 674,
+					"width": 14,
+					"height": 17,
+					"dataSource": "vAccesibU11",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~\"Y;N\"#",
+					"method": "ObjectMethods/DE Accesib Used11.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field219": {
+					"type": "input",
+					"top": 409,
+					"left": 627,
+					"width": 33,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]InspectionHRS:40",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Field219.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text100": {
+					"type": "text",
+					"top": 345,
+					"left": 107,
+					"width": 56,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"text": "Needed"
+				},
+				"Text102": {
+					"type": "text",
+					"top": 345,
+					"left": 158,
+					"width": 46,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"text": "Used"
+				},
+				"Text103": {
+					"type": "text",
+					"top": 345,
+					"left": 311,
+					"width": 56,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"text": "Needed"
+				},
+				"Text104": {
+					"type": "text",
+					"top": 345,
+					"left": 362,
+					"width": 46,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"text": "Used"
+				},
+				"Text105": {
+					"type": "text",
+					"top": 345,
+					"left": 609,
+					"width": 53,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"text": "Needed"
+				},
+				"Text106": {
+					"type": "text",
+					"top": 345,
+					"left": 658,
+					"width": 46,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Geneva12",
+					"textAlign": "center",
+					"text": "Used"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 262,
+					"left": 248,
+					"width": 128,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Freeze/Thaw List"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 220,
+					"left": 546,
+					"width": 106,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Geneva14",
+					"text": "Legacy Owner"
+				},
+				"DisplayOnly3": {
+					"type": "input",
+					"top": 221,
+					"left": 652,
+					"width": 52,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]LegacyOwner:226",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text46": {
+					"type": "text",
+					"top": 175,
+					"left": 226,
+					"width": 278,
+					"height": 22,
+					"stroke": "#000000",
+					"class": "Geneva18B",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Bridge Specifics"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 201,
+					"left": 7,
+					"width": 697,
+					"strokeWidth": 4
+				}
+			},
+			"entryOrder": [
+				"Field202",
+				"Field203",
+				"Field204",
+				"Field205",
+				"DE FreezeThawList",
+				"Field206",
+				"DE Accesib N1",
+				"DE Accesib Used1",
+				"DE Accesib N2",
+				"DE Accesib Used2",
+				"DE Accesib N3",
+				"DE Accesib Used3",
+				"DE Accesib N4",
+				"DE Accesib Used4",
+				"DE Accesib N5",
+				"DE Accesib Used5",
+				"DE Accesib N6",
+				"DE Accesib Used6",
+				"DE Accesib N7",
+				"DE Accesib Used7",
+				"DE Accesib N8",
+				"DE Accesib Used8",
+				"DE Accesib N9",
+				"DE Accesib Used9",
+				"DE Accesib N10",
+				"DE Accesib Used10",
+				"Field217",
+				"DE Accesib N11",
+				"DE Accesib Used11",
+				"Field219",
+				"DisplayOnly3"
+			]
+		}
+	],
+	"editor": {
+		"defaultView": "Commuter",
+		"activeView": "Transit",
+		"views": {
+			"Commuter": {
+				"visible": false,
+				"selectable": false
+			},
+			"Transit": {
+				"objects": [
+					"DE TransitRtg_Rating_R1Desc",
+					"DE TransitRtg_Rating_R1inv",
+					"DE TransitRtg_Rating_R1oper",
+					"DE TransitRtg_Rating_R1fatg",
+					"DE TransitRtg_Rating_R2Desc",
+					"DE TransitRtg_Rating_R2inv",
+					"DE TransitRtg_Rating_R2oper",
+					"DE TransitRtg_Rating_R2fatg",
+					"DE TransitRtg_Rating_R3Desc",
+					"DE TransitRtg_Rating_R3inv",
+					"DE TransitRtg_Rating_R3oper",
+					"DE TransitRtg_Rating_R3fatg",
+					"DE TransitRtg_Rating_WCDesc",
+					"DE TransitRtg_Rating_WCinv",
+					"DE TransitRtg_Rating_WCoper",
+					"DE TransitRtg_Rating_WCfatg",
+					"TransitRtg_2",
+					"TransitRtg_3",
+					"TransitRtg_4",
+					"TransitRtg_",
+					"TransitRtg_1",
+					"TransitRtg_5",
+					"DE TransitRtg_RatingDate1",
+					"TransitRtg_6",
+					"TransitRtg_7"
+				]
+			},
+			"HWY": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"DE HWYRtg_Rating_E1",
+					"DE HWYRtg_Rating_E2",
+					"DE HWYRtg_Rating_E3",
+					"DE HWYRtg_Rating_E4",
+					"DE HWYRtg_Rating_E5",
+					"DE HWYRtg_Rating_E6",
+					"DE HWYRtg_Rating_E7",
+					"DE HWYRtg_Rating_E80_Max2",
+					"DE HWYRtg_Rating_E80_Max7",
+					"DE HWYRtg_Rating_E80_Max3",
+					"DE HWYRtg_Rating_E80_Max4",
+					"DE HWYRtg_Rating_E80_Max5",
+					"DE HWYRtg_Rating_E80_Max6",
+					"DE HWYRtg_Rating_E80_Max1",
+					"HWYRtg_4",
+					"HWYRtg_5",
+					"HWYRtg_",
+					"HWYRtg_3",
+					"HWYRtg_7",
+					"HWYRtg_2",
+					"HWYRtg_8",
+					"HWYRtg_1",
+					"DE HWYRtg_RatingDate2",
+					"HWYRtg_6"
+				]
+			},
+			"View 4": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 5": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 6": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 7": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 8": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 9": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"Text"
+				]
+			}
+		}
+	}
+}

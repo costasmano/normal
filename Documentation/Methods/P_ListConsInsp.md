@@ -1,0 +1,1 @@
+24-Sep-2003 : Added call to Menu BAR(3) for a blank menu.    30-Sep-2003 : Fixed call to save Selection "UserRegionA" - was using [Inspections] table.    10-30-2003:  Changed the NewWindow width from 720 to 775     2004-04-21 : Increased the NewWindow height to 550 from 450.  Added SET WINDOW RECT code.

@@ -1,0 +1,1 @@
+1999-12-01 : per memo from Cambridge Systematics dated 23-Jun-1999.  2000-09 : Edited to match FHWA's edit/update program  2001-03-23 : If Items 54a and 55a are not coded as R or H , set Item69 to N instead of ?  2004-03-01 : Replaced Relate Many([Bridge MHD NBIS]) with Query(..) to avoid resetting selections of other tables related to [Bridge MHD NBIS].

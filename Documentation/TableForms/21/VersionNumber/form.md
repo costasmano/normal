@@ -1,0 +1,1 @@
+2-feb-01 : switched to platinum. deleted add-in around OK button. made OK button default.

@@ -1,0 +1,3 @@
+If (NTI_ELEMINP_SAVE)
+	ACCEPT:C269
+End if 

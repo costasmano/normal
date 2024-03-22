@@ -1,0 +1,3 @@
+INV_SavePhoto(True:C214)
+
+CANCEL:C270

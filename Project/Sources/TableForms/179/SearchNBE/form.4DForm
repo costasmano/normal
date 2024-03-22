@@ -1,0 +1,1277 @@
+{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"top": 656,
+					"left": 82,
+					"width": 100,
+					"height": 11,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "* Hit Return for Find"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 672,
+					"left": 82,
+					"width": 100,
+					"height": 11,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"text": "** Hit Enter for OK"
+				},
+				"ApprovalLevel": {
+					"type": "dropdown",
+					"top": 498,
+					"left": 31,
+					"width": 282,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "vApprovalLevel",
+					"choiceList": [
+						"Search Any Completed Inspection",
+						"Search Inspection Approved by DBIE",
+						"Search Inspection with Final Approval"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ApprovalLevel.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbIncludeComments1": {
+					"type": "checkbox",
+					"top": 523,
+					"left": 32,
+					"width": 280,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "cbIncludeComments",
+					"text": "Include Element Comments in the Report",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbIncludeComments1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"cbPrintNow1": {
+					"type": "checkbox",
+					"top": 548,
+					"left": 32,
+					"width": 280,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "cbPrintNow",
+					"text": "Print Report Now",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbPrintNow1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 621,
+					"left": 35,
+					"width": 90,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bFind",
+					"shortcutKey": "[Return]",
+					"text": "Find *",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "checkbox",
+					"top": 618,
+					"left": 134,
+					"width": 182,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "cbAddTo",
+					"text": "Add to Selection",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 661,
+					"left": 297,
+					"width": 90,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK **",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 661,
+					"left": 195,
+					"width": 90,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 498,
+					"left": 332,
+					"width": 120,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bClearAll",
+					"shortcutKey": "[Return]",
+					"text": "Clear Criteria",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Search Results": {
+					"type": "input",
+					"top": 603,
+					"left": 331,
+					"width": 251,
+					"height": 41,
+					"sizingY": "move",
+					"dataSource": "vtSearchResultCnt",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Search Results.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbOpenList": {
+					"type": "checkbox",
+					"top": 573,
+					"left": 32,
+					"width": 280,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "cbOpenList",
+					"text": "Open New Window with Results",
+					"class": "Label12Plain",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 79,
+					"left": 15,
+					"width": 126,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "Environment"
+				},
+				"PON_MASTERELEM_Desc_atxt": {
+					"type": "dropdown",
+					"top": 46,
+					"left": 141,
+					"width": 290,
+					"height": 20,
+					"dataSource": "PON_MASTERELEM_Desc_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PON_MASTERELEM_Desc_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 5,
+					"left": 20,
+					"width": 690,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"text": "Search For Bridges by NBE Element"
+				},
+				"cboElmtEnv": {
+					"type": "dropdown",
+					"top": 77,
+					"left": 141,
+					"width": 110,
+					"height": 20,
+					"dataSource": "cboElmtEnv",
+					"choiceList": [
+						"",
+						"1) No Road Salt",
+						"2) Normal Road Salt",
+						"3) Under Joint or Ocean & Road Salt",
+						"4) Under Joint and Ocean & Road Salt"
+					],
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboElmtStateOp": {
+					"type": "dropdown",
+					"top": 139,
+					"left": 141,
+					"width": 190,
+					"height": 20,
+					"dataSource": "cboElmtStateOp",
+					"choiceList": [
+						"",
+						"In State",
+						"At Most State",
+						"At State and After",
+						"Past State",
+						"Before State"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboElmtStateOp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboElmtState": {
+					"type": "dropdown",
+					"top": 139,
+					"left": 351,
+					"width": 160,
+					"height": 20,
+					"dataSource": "cboElmtState",
+					"choiceList": [
+						"State 1",
+						"State 2",
+						"State 3",
+						"State 4"
+					],
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"cboElmtQtyOp": {
+					"type": "dropdown",
+					"top": 171,
+					"left": 141,
+					"width": 190,
+					"height": 20,
+					"dataSource": "cboElmtQtyOp",
+					"choiceList": [
+						"",
+						"equal to",
+						"not equal to",
+						"less than",
+						"less or equal",
+						"greater than",
+						"greater and equal"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboElmtQtyOp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vrSearchElmtQty": {
+					"type": "input",
+					"top": 175,
+					"left": 351,
+					"width": 91,
+					"height": 17,
+					"dataSource": "vrSearchElmtQty",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "##0 %;;",
+					"min": 0,
+					"max": 100,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 48,
+					"left": 15,
+					"width": 126,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "Element"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 141,
+					"left": 15,
+					"width": 66,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "State"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 173,
+					"left": 15,
+					"width": 96,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "State Quantity %"
+				},
+				"cboElmtQtyOp1": {
+					"type": "dropdown",
+					"top": 111,
+					"left": 141,
+					"width": 190,
+					"height": 20,
+					"dataSource": "cboElmttotQtyOp",
+					"choiceList": [
+						"",
+						"equal to",
+						"not equal to",
+						"less than",
+						"less or equal",
+						"greater than",
+						"greater and equal"
+					],
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/cboElmtQtyOp1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vrSearchElmtQty1": {
+					"type": "input",
+					"top": 115,
+					"left": 351,
+					"width": 91,
+					"height": 17,
+					"dataSource": "vrSearchElmttotQty",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 113,
+					"left": 15,
+					"width": 96,
+					"height": 16,
+					"class": "Label12Plain",
+					"text": "Total Quantity"
+				},
+				"NBESearch_ProtSys_L": {
+					"type": "checkbox",
+					"top": 215,
+					"left": 32,
+					"width": 154,
+					"height": 14,
+					"dataSource": "NBESearch_ProtSys_L",
+					"text": "Protective system",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/NBESearch_ProtSys_L.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NBESearch_Defect_1": {
+					"type": "checkbox",
+					"top": 215,
+					"left": 212,
+					"width": 154,
+					"height": 14,
+					"dataSource": "NBESearch_Defect_1",
+					"text": "Defect",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/NBESearch_Defect_1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NBESearch_LB1": {
+					"type": "listbox",
+					"top": 239,
+					"left": 8,
+					"width": 688,
+					"height": 103,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "NBESearch_LB1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/NBESearch_LB1.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column15",
+							"dataSource": "NBESRC_LB1_ElemKey_aL",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "KEY",
+								"dataSource": "Header15",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "NBESRC_LB1_Descr_atxt",
+							"width": 145,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Description",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "NBESRC_LB1_TotQ_atxt",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Tot Q ?",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "NBESRC_LB1_TotQv_ar",
+							"dataSourceTypeHint": "number",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Tot Q value",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "NBESRC_LB1_State_atxt",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "State ?",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "4",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "NBESRC_LB1_StateN_aL",
+							"dataSourceTypeHint": "number",
+							"width": 67,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "#;;",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "State #",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "NBESRC_LB1_StateQ_atxt",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "State Q ?",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "6",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "NBESRC_LB1_StateQV_ar",
+							"dataSourceTypeHint": "number",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "State Q %",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "7",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						}
+					]
+				},
+				"NBESearch_LB2": {
+					"type": "listbox",
+					"top": 379,
+					"left": 8,
+					"width": 708,
+					"height": 103,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "NBESearch_LB2",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/NBESearch_LB2.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "NBESRC_LB2_PSYSKEY_aL",
+							"dataSource": "NBESRC_LB2_PSYSKEY_aL",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header17",
+								"text": "P.SYS",
+								"dataSource": "Header17",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "8",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column16",
+							"dataSource": "NBESRC_LB2_ElemKey_aL",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "KEY",
+								"dataSource": "Header16",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "9",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "NBESRC_LB2_Descr_atxt",
+							"width": 145,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "Description",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "10",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "NBESRC_LB2_TotQ_atxt",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Tot Q ?",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "11",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "NBESRC_LB2_TotQV_ar",
+							"dataSourceTypeHint": "number",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Tot Q value",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "12",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "NBESRC_LB2_State_atxt",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "State ?",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "13",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "NBESRC_LB2_StateN_aL",
+							"dataSourceTypeHint": "number",
+							"width": 67,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "State #",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "14",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column13",
+							"dataSource": "NBESRC_LB2_StateQ_atxt",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "State Q ?",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "15",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column14",
+							"dataSource": "NBESRC_LB2_StateQV_ar",
+							"dataSourceTypeHint": "number",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "State Q %",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "16",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						}
+					]
+				},
+				"NBESearch_Defect_2": {
+					"type": "checkbox",
+					"top": 355,
+					"left": 32,
+					"width": 214,
+					"height": 14,
+					"dataSource": "NBESearch_Defect_2",
+					"text": "Protective system with Defect",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/NBESearch_Defect_2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vrSearchElmtQty2": {
+					"type": "input",
+					"top": 115,
+					"left": 461,
+					"width": 101,
+					"height": 17,
+					"dataSource": "[PON_ELEM_DEFS:178]ELEM_SCALEUNIT:13",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 498,
+					"left": 482,
+					"width": 150,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bClearAll",
+					"shortcutKey": "[Return]",
+					"text": "Clear Results",
+					"class": "Label12Bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_CATEGORIES_Desc_atxt": {
+					"type": "dropdown",
+					"top": 45,
+					"left": 461,
+					"width": 250,
+					"height": 20,
+					"dataSource": "PON_CATEGORIES_Desc_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PON_CATEGORIES_Desc_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_TYPES_Desc_atxt": {
+					"type": "dropdown",
+					"top": 68,
+					"left": 461,
+					"width": 250,
+					"height": 20,
+					"dataSource": "PON_TYPES_Desc_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PON_TYPES_Desc_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PON_MATERIALS_Desc_atxt": {
+					"type": "dropdown",
+					"top": 92,
+					"left": 461,
+					"width": 250,
+					"height": 20,
+					"dataSource": "PON_MATERIALS_Desc_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/PON_MATERIALS_Desc_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 28,
+					"left": 461,
+					"width": 250,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Element Filters"
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 351,
+					"left": 1,
+					"width": 720,
+					"height": 3,
+					"dataSource": "Splitter",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

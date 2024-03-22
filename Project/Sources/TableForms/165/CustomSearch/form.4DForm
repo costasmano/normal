@@ -1,0 +1,480 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Search Ancillary Structures",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 36,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Town Code"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 284,
+					"left": 24,
+					"width": 125,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Sequence Number"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 256,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "District"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 228,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "End Milemarker"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 200,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Start Milemarker"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 172,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Route Direction"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 144,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Route Number"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 117,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Route Designation"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 63,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Town Name"
+				},
+				"LSS_SearchTwnCode_txt": {
+					"type": "input",
+					"top": 37,
+					"left": 176,
+					"width": 45,
+					"height": 17,
+					"dataSource": "LSS_SearchTwnCode_txt",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"textFormat": "###",
+					"entryFilter": "~\"A-Z\"#&\"0-9\"##",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/LSS_SearchTwnCode_txt.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"aTownName_": {
+					"type": "dropdown",
+					"top": 61,
+					"left": 176,
+					"width": 260,
+					"height": 21,
+					"dataSource": "aTownName_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/aTownName_.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_StructureClass_atxt": {
+					"type": "dropdown",
+					"top": 88,
+					"left": 176,
+					"width": 130,
+					"height": 21,
+					"dataSource": "LSS_StructureClass_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_StructureClass_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_RouteDesignation_atxt": {
+					"type": "dropdown",
+					"top": 115,
+					"left": 176,
+					"width": 120,
+					"height": 21,
+					"dataSource": "LSS_RouteDesignation_atxt",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteDesignation_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_SearchRouteNum_L": {
+					"type": "input",
+					"top": 144,
+					"left": 176,
+					"width": 65,
+					"height": 17,
+					"dataSource": "LSS_SearchRouteNum_L",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_RouteDirection_as": {
+					"type": "dropdown",
+					"top": 170,
+					"left": 176,
+					"width": 80,
+					"height": 21,
+					"dataSource": "LSS_RouteDirection_as",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_RouteDirection_as.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_SearchStartMile_r": {
+					"type": "input",
+					"top": 200,
+					"left": 176,
+					"width": 145,
+					"height": 17,
+					"dataSource": "LSS_SearchStartMile_r",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/LSS_SearchStartMile_r.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_SearchEndMile_r": {
+					"type": "input",
+					"top": 228,
+					"left": 176,
+					"width": 145,
+					"height": 17,
+					"dataSource": "LSS_SearchEndMile_r",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/LSS_SearchEndMile_r.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_SearchDistr_aL": {
+					"type": "dropdown",
+					"top": 254,
+					"left": 176,
+					"width": 50,
+					"height": 21,
+					"dataSource": "LSS_SearchDistr_aL",
+					"dataSourceTypeHint": "arrayNumber",
+					"numberFormat": "#;;",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/LSS_SearchDistr_aL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_SearchSIN_L": {
+					"type": "input",
+					"top": 285,
+					"left": 176,
+					"width": 55,
+					"height": 17,
+					"dataSource": "LSS_SearchSIN_L",
+					"dataSourceTypeHint": "number",
+					"class": "DataEntry12Plain",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 5,
+					"left": 24,
+					"width": 412,
+					"height": 17,
+					"class": "Label14Bold",
+					"textAlign": "center",
+					"text": "Search Parameters"
+				},
+				"Button": {
+					"type": "button",
+					"top": 346,
+					"left": 22,
+					"width": 107,
+					"height": 28,
+					"dataSource": "Button",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 346,
+					"left": 175,
+					"width": 107,
+					"height": 28,
+					"dataSource": "Button",
+					"text": "Find",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_DoneSearch": {
+					"type": "button",
+					"top": 346,
+					"left": 329,
+					"width": 107,
+					"height": 28,
+					"dataSource": "LSS_DoneSearch",
+					"text": "Done",
+					"class": "Label12Bold",
+					"method": "ObjectMethods/LSS_DoneSearch.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 90,
+					"left": 24,
+					"width": 145,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"text": "Structure Class"
+				},
+				"LSS_SearchStrClass_txt": {
+					"type": "input",
+					"top": 90,
+					"left": 336,
+					"width": 45,
+					"height": 17,
+					"dataSource": "LSS_SearchStrClass_txt",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!_~\"A-Z\"#&\"0-9\"##",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_SearchRoutType_txt": {
+					"type": "input",
+					"top": 117,
+					"left": 336,
+					"width": 45,
+					"height": 17,
+					"dataSource": "LSS_SearchRoutType_txt",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!_~\"A-Z\"#&\"0-9\"##",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LSS_SearchRoutDir_txt": {
+					"type": "input",
+					"top": 172,
+					"left": 336,
+					"width": 45,
+					"height": 17,
+					"dataSource": "LSS_SearchRoutDir_txt",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!_~\"A-Z\"#&\"0-9\"##",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 314,
+					"left": 179,
+					"width": 257,
+					"height": 24,
+					"class": "DataEntry12Plain",
+					"text": "Records Found : <LSS_SearchNumFound_L>"
+				},
+				"LSS_ClearResults_L": {
+					"type": "button",
+					"top": 313,
+					"left": 22,
+					"width": 138,
+					"height": 25,
+					"dataSource": "LSS_ClearResults_L",
+					"text": "Clear Results",
+					"class": "DataEntry14Plain",
+					"fontWeight": "bold",
+					"stroke": "#EE0000",
+					"method": "ObjectMethods/LSS_ClearResults_L.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 277,
+					"left": 244,
+					"width": 185,
+					"height": 30,
+					"class": "Label12Plain",
+					"text": "Enter the number for the last 5 digits of the Inventory Number"
+				},
+				"LSS_RouteSuffix_L": {
+					"type": "checkbox",
+					"top": 144,
+					"left": 340,
+					"width": 20,
+					"height": 20,
+					"dataSource": "LSS_RouteSuffix_L",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 144,
+					"left": 255,
+					"width": 79,
+					"height": 17,
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"text": "Rte Sfx : "
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

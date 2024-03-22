@@ -1,0 +1,5 @@
+If (EDLISTBOXROW_L>0)
+	EDLISTFORMEVENT_TXT:=fGetFormEvent
+	PvarInputs_atxt{EDLISTBOXROW_L}:=PVarResults_atxt{EDLISTBOXROW_L}
+	EDIT ITEM:C870(PvarInputs_atxt; EDLISTBOXROW_L)
+End if 

@@ -1,0 +1,2462 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 766,
+	"markerBreak": 766,
+	"markerFooter": 766,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle46": {
+					"type": "rectangle",
+					"top": 47,
+					"left": 16,
+					"width": 570,
+					"height": 706,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"Rectangle25": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 462,
+					"width": 124,
+					"height": 30,
+					"fill": "transparent"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 4,
+					"left": 462,
+					"width": 123,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "BR. DEPT. NO."
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 395,
+					"left": 16,
+					"width": 24,
+					"height": 152,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/actioncriteria.png"
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 70,
+					"left": 16,
+					"width": 24,
+					"height": 188,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/genbridgeinfo.png"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 16,
+					"width": 35,
+					"height": 30,
+					"fill": "transparent"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 55,
+					"width": 47,
+					"height": 30,
+					"fill": "transparent"
+				},
+				"Brg Dept1": {
+					"type": "input",
+					"top": 15,
+					"left": 462,
+					"width": 123,
+					"height": 15,
+					"dataSource": "SCPOA_BDEPT_txt",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-#####-##-#####-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 15,
+					"left": 16,
+					"width": 35,
+					"height": 15,
+					"dataSource": "SCPOA_Dist_txt",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 15,
+					"left": 55,
+					"width": 47,
+					"height": 15,
+					"dataSource": "SCPOA_BIN_txt",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 5,
+					"left": 102,
+					"width": 360,
+					"height": 39,
+					"stroke": "#000000",
+					"class": "Times12Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION\rATTACHMENT A: FIELD VERIFICATION CARD"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 4,
+					"left": 16,
+					"width": 35,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "2-DIST"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 4,
+					"left": 62,
+					"width": 33,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "B.I.N."
+				},
+				"Line": {
+					"type": "line",
+					"top": 315,
+					"left": 16,
+					"width": 570,
+					"strokeWidth": 2
+				},
+				"Line2": {
+					"type": "line",
+					"top": 47,
+					"left": 38,
+					"height": 679,
+					"strokeWidth": 2
+				},
+				"Line51": {
+					"type": "line",
+					"top": 726,
+					"left": 16,
+					"width": 570,
+					"strokeWidth": 2
+				},
+				"Text15": {
+					"type": "text",
+					"top": 754,
+					"left": 379,
+					"width": 204,
+					"height": 11,
+					"class": "Times9",
+					"textAlign": "right",
+					"text": "Refer to POA Completed <SCPOA_ComplDate_txt>"
+				},
+				"Text76": {
+					"type": "text",
+					"top": 754,
+					"left": 269,
+					"width": 65,
+					"height": 11,
+					"class": "Times9",
+					"textAlign": "center",
+					"text": "Page 1 of 2"
+				},
+				"Text75": {
+					"type": "text",
+					"top": 754,
+					"left": 16,
+					"width": 75,
+					"height": 11,
+					"class": "Times9",
+					"text": "Ver20140830"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 155,
+					"left": 41,
+					"width": 542,
+					"height": 65,
+					"fill": "transparent"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 171,
+					"left": 41,
+					"width": 542
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 330,
+					"left": 41,
+					"width": 542,
+					"height": 184,
+					"fill": "transparent"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 347,
+					"left": 41,
+					"width": 542
+				},
+				"Text66": {
+					"type": "text",
+					"top": 740,
+					"left": 243,
+					"width": 117,
+					"height": 13,
+					"class": "Arial9",
+					"textAlign": "center",
+					"text": "REFERENCE PHOTOS"
+				},
+				"Text67": {
+					"type": "text",
+					"top": 739,
+					"left": 19,
+					"width": 211,
+					"height": 13,
+					"class": "Arial9",
+					"text": "(Convention: Left to Right Looking Downstream)"
+				},
+				"Text81": {
+					"type": "text",
+					"top": 729,
+					"left": 19,
+					"width": 174,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Note: WSE = Water Surface Elevation"
+				},
+				"Text173": {
+					"type": "text",
+					"top": 754,
+					"left": 105,
+					"width": 140,
+					"height": 11,
+					"class": "Times9",
+					"text": "Date Printed : <SCPOA_PrintReportDate_txt>"
+				}
+			}
+		},
+		{
+			"objects": {
+				"SCPOA_FlMonLookFor_txt1": {
+					"type": "input",
+					"top": 253,
+					"left": 124,
+					"width": 458,
+					"height": 60,
+					"dataSource": "SCPOA_FlMonLookFor_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 645,
+					"left": 45,
+					"width": 537,
+					"height": 98,
+					"class": "Arial9",
+					"text": "Pre- Existing Conditions at the Bridge:  <SCPOA_PreExistCond_txt>"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 330,
+					"left": 314,
+					"height": 184
+				},
+				"Text6": {
+					"type": "text",
+					"top": 49,
+					"left": 56,
+					"width": 123,
+					"height": 13,
+					"class": "Arial9",
+					"text": "GENERAL INFORMATION"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 62,
+					"left": 46,
+					"width": 72,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Structure No.:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 62,
+					"left": 313,
+					"width": 69,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Facility Carried:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 77,
+					"left": 46,
+					"width": 44,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Owner:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 77,
+					"left": 313,
+					"width": 89,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Feature Intersected:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 92,
+					"left": 46,
+					"width": 59,
+					"height": 13,
+					"class": "Arial9",
+					"text": "City/Town:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 92,
+					"left": 313,
+					"width": 50,
+					"height": 13,
+					"class": "Arial9",
+					"text": "113 Rating:"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 108,
+					"left": 46,
+					"width": 39,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Detour:"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 108,
+					"left": 188,
+					"width": 47,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Last ADT:"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 108,
+					"left": 317,
+					"width": 46,
+					"height": 13,
+					"class": "Arial9",
+					"text": "ADT Year:"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 391,
+					"left": 324,
+					"width": 123,
+					"height": 13,
+					"class": "Arial9",
+					"text": "USGS Station Prox. to Bridge:"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 124,
+					"left": 46,
+					"width": 75,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Number of Spans:\r"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 497,
+					"left": 324,
+					"width": 151,
+					"height": 13,
+					"class": "Arial9",
+					"text": "NOAA Station Prox. to Bridge:"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 124,
+					"left": 188,
+					"width": 63,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Bridge Length:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 140,
+					"left": 46,
+					"width": 92,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Diving Insp. Reports"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 140,
+					"left": 188,
+					"width": 119,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Diving Inspection  Frequency:"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 140,
+					"left": 387,
+					"width": 60,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Date:"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 171,
+					"left": 253,
+					"height": 49
+				},
+				"Line6": {
+					"type": "line",
+					"top": 187,
+					"left": 253,
+					"width": 330
+				},
+				"Line7": {
+					"type": "line",
+					"top": 204,
+					"left": 253,
+					"width": 330
+				},
+				"Line9": {
+					"type": "line",
+					"top": 171,
+					"left": 418,
+					"height": 49
+				},
+				"Text24": {
+					"type": "text",
+					"top": 226,
+					"left": 46,
+					"width": 129,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Critical WSE Marker Location:"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 240,
+					"left": 46,
+					"width": 102,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Scour Critical Feature:"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 254,
+					"left": 46,
+					"width": 87,
+					"height": 13,
+					"class": "Arial9",
+					"text": "What To Look For:"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 318,
+					"left": 56,
+					"width": 524,
+					"height": 13,
+					"class": "Arial9",
+					"text": "CRITERIA FOR CONSIDERATION OF BRIDGE CLOSURE: (Refer to Post Flood Assessment Form for Detailed Procedures)"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 334,
+					"left": 46,
+					"width": 193,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Field Observation at the Bridge"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 334,
+					"left": 319,
+					"width": 181,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Real - Time Flood Conditions/Indicators"
+				},
+				"Check Box1": {
+					"type": "pictureButton",
+					"top": 353,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_WLvl_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box2": {
+					"type": "pictureButton",
+					"top": 366,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_wSurf_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box3": {
+					"type": "pictureButton",
+					"top": 413,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_Over_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box4": {
+					"type": "pictureButton",
+					"top": 426,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_ScMeas_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box5": {
+					"type": "pictureButton",
+					"top": 440,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_Settlm_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box6": {
+					"type": "pictureButton",
+					"top": 454,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_Debris_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box7": {
+					"type": "pictureButton",
+					"top": 468,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_RipLoss_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box8": {
+					"type": "pictureButton",
+					"top": 482,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_EmbkLoss_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box9": {
+					"type": "pictureButton",
+					"top": 350,
+					"left": 318,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_USGSNo_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box10": {
+					"type": "pictureButton",
+					"top": 363,
+					"left": 334,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_USGSG_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box11": {
+					"type": "pictureButton",
+					"top": 376,
+					"left": 334,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_USGSD_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box12": {
+					"type": "pictureButton",
+					"top": 407,
+					"left": 318,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_NWS_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box13": {
+					"type": "pictureButton",
+					"top": 473,
+					"left": 318,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_NOAAStation_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box14": {
+					"type": "pictureButton",
+					"top": 483,
+					"left": 334,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CLCri_NOAAG_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 353,
+					"left": 56,
+					"width": 158,
+					"height": 13,
+					"class": "Arial9",
+					"text": "WSE At or Above Low Chord Elevation:"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 366,
+					"left": 56,
+					"width": 256,
+					"height": 28,
+					"class": "Arial9",
+					"text": "Water Level at or Above Critical WSE: <SCPOA_OthScCritElev_p_txt>"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 413,
+					"left": 56,
+					"width": 178,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Overtopping Road or Structure"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 426,
+					"left": 56,
+					"width": 198,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Scour Measurement Results / Monitoring Device"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 440,
+					"left": 56,
+					"width": 202,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Observed Structure Movement / Settlement"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 454,
+					"left": 56,
+					"width": 178,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Debris Accumulation / Ice Jam"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 468,
+					"left": 56,
+					"width": 206,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Movement of Riprap / Other Armor Protection"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 482,
+					"left": 56,
+					"width": 205,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Loss of Approach Embankment"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 495,
+					"left": 45,
+					"width": 28,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Other:"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 350,
+					"left": 334,
+					"width": 94,
+					"height": 13,
+					"class": "Arial9",
+					"text": "USGS Gage Station #"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 363,
+					"left": 348,
+					"width": 89,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Stage at Gage (WSE):"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 376,
+					"left": 349,
+					"width": 81,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Discharge at Gage:"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 407,
+					"left": 334,
+					"width": 245,
+					"height": 78,
+					"class": "Arial9",
+					"text": "NWS River Forecast info:  \r<SCPOA_CLCri_NOAAI_txt>"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 472,
+					"left": 334,
+					"width": 121,
+					"height": 13,
+					"class": "Arial9",
+					"text": "NOAA (Tidal) Gage Station #"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 484,
+					"left": 349,
+					"width": 91,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Storm Surge at Gage:"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 523,
+					"left": 46,
+					"width": 230,
+					"height": 13,
+					"class": "Arial9",
+					"text": "MassDOT District Bridge Engineer    Office Phone No. : "
+				},
+				"Line10": {
+					"type": "line",
+					"top": 540,
+					"left": 38,
+					"width": 548
+				},
+				"Text46": {
+					"type": "text",
+					"top": 543,
+					"left": 51,
+					"width": 67,
+					"height": 13,
+					"class": "Arial9",
+					"text": "NEXT ACTION"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 543,
+					"left": 142,
+					"width": 122,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Post Flood Assessment"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 543,
+					"left": 297,
+					"width": 150,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Recommended Revisit Bridge Every"
+				},
+				"Check Box15": {
+					"type": "pictureButton",
+					"top": 544,
+					"left": 129,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_FLMTerm_RecPost_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box16": {
+					"type": "pictureButton",
+					"top": 544,
+					"left": 283,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_FLMTerm_Revisit_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box17": {
+					"type": "pictureButton",
+					"top": 580,
+					"left": 45,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloWater_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box18": {
+					"type": "pictureButton",
+					"top": 593,
+					"left": 45,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloCritElev_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box19": {
+					"type": "pictureButton",
+					"top": 606,
+					"left": 45,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgCloReasAbate_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box20": {
+					"type": "pictureButton",
+					"top": 619,
+					"left": 45,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_BrgRailStraight_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box21": {
+					"type": "pictureButton",
+					"top": 633,
+					"left": 45,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_CritStrElmOK_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box22": {
+					"type": "pictureButton",
+					"top": 580,
+					"left": 313,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_ApproachNotSettl_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box23": {
+					"type": "pictureButton",
+					"top": 596,
+					"left": 313,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_EmbErosOK_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Check Box24": {
+					"type": "pictureButton",
+					"top": 612,
+					"left": 313,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_substrPlumb_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 580,
+					"left": 57,
+					"width": 92,
+					"height": 13,
+					"class": "Arial9",
+					"text": "WSE Dropping"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 593,
+					"left": 57,
+					"width": 166,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Critical WSE Marker is Visible"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 606,
+					"left": 57,
+					"width": 137,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Reason for Closure Have Abated"
+				},
+				"Text53": {
+					"type": "text",
+					"top": 619,
+					"left": 57,
+					"width": 206,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Bridge Rails Remaining Straight and Consistent"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 633,
+					"left": 57,
+					"width": 206,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Critical Structural Element Appear to be Intact"
+				},
+				"Text55": {
+					"type": "text",
+					"top": 580,
+					"left": 325,
+					"width": 139,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Approach Section Not Settling"
+				},
+				"Text56": {
+					"type": "text",
+					"top": 596,
+					"left": 325,
+					"width": 213,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Embankment Erosion Not Endangering Abutment"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 612,
+					"left": 325,
+					"width": 182,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Abutment and Piers are Plumb and Stable"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 628,
+					"left": 325,
+					"width": 238,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Assess Riverbed Elevation (drop line readings)"
+				},
+				"Text68": {
+					"type": "text",
+					"top": 158,
+					"left": 49,
+					"width": 124,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Foundation Details:"
+				},
+				"Text69": {
+					"type": "text",
+					"top": 176,
+					"left": 50,
+					"width": 87,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Foundation Type:"
+				},
+				"Text70": {
+					"type": "text",
+					"top": 190,
+					"left": 50,
+					"width": 93,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Foundation Material:"
+				},
+				"Text71": {
+					"type": "text",
+					"top": 174,
+					"left": 257,
+					"width": 70,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Worst Abutment:"
+				},
+				"Text72": {
+					"type": "text",
+					"top": 174,
+					"left": 423,
+					"width": 76,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Worst Pier:"
+				},
+				"Text73": {
+					"type": "text",
+					"top": 190,
+					"left": 257,
+					"width": 80,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Embedment (feet):"
+				},
+				"Text74": {
+					"type": "text",
+					"top": 190,
+					"left": 423,
+					"width": 79,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Embedment (feet):"
+				},
+				"Text77": {
+					"type": "text",
+					"top": 207,
+					"left": 257,
+					"width": 58,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Exposure:"
+				},
+				"Text78": {
+					"type": "text",
+					"top": 207,
+					"left": 423,
+					"width": 58,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Exposure:"
+				},
+				"Line16": {
+					"type": "line",
+					"top": 234,
+					"left": 173,
+					"width": 409,
+					"strokeWidth": 0.1
+				},
+				"Line17": {
+					"type": "line",
+					"top": 249,
+					"left": 142,
+					"width": 440,
+					"strokeWidth": 0.1
+				},
+				"Line18": {
+					"type": "line",
+					"top": 263,
+					"left": 124,
+					"width": 458,
+					"strokeWidth": 0.1
+				},
+				"SCPOA_PrioMonitor_L_P3": {
+					"type": "pictureButton",
+					"top": 34,
+					"left": 466,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_PrioMonitor_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Text82": {
+					"type": "text",
+					"top": 33,
+					"left": 482,
+					"width": 98,
+					"height": 14,
+					"class": "Arial10",
+					"fontWeight": "bold",
+					"text": "Priority Monitoring"
+				},
+				"Line19": {
+					"type": "line",
+					"top": 72,
+					"left": 118,
+					"width": 171,
+					"strokeWidth": 0.1
+				},
+				"Line20": {
+					"type": "line",
+					"top": 655,
+					"left": 200,
+					"width": 382,
+					"strokeWidth": 0.1
+				},
+				"Line21": {
+					"type": "line",
+					"top": 665,
+					"left": 45,
+					"width": 537,
+					"strokeWidth": 0.1
+				},
+				"Line22": {
+					"type": "line",
+					"top": 534,
+					"left": 281,
+					"width": 200,
+					"strokeWidth": 0.1
+				},
+				"Line23": {
+					"type": "line",
+					"top": 554,
+					"left": 452,
+					"width": 80,
+					"strokeWidth": 0.1
+				},
+				"Line24": {
+					"type": "line",
+					"top": 151,
+					"left": 311,
+					"width": 56,
+					"strokeWidth": 0.1
+				},
+				"Line25": {
+					"type": "line",
+					"top": 150,
+					"left": 412,
+					"width": 171,
+					"height": 1,
+					"strokeWidth": 0.1
+				},
+				"Line26": {
+					"type": "line",
+					"top": 117,
+					"left": 365,
+					"width": 40,
+					"strokeWidth": 0.1
+				},
+				"Line27": {
+					"type": "line",
+					"top": 87,
+					"left": 86,
+					"width": 203,
+					"strokeWidth": 0.1
+				},
+				"Line28": {
+					"type": "line",
+					"top": 101,
+					"left": 100,
+					"width": 189,
+					"strokeWidth": 0.1
+				},
+				"Line29": {
+					"type": "line",
+					"top": 117,
+					"left": 85,
+					"width": 95,
+					"strokeWidth": 0.1
+				},
+				"Line30": {
+					"type": "line",
+					"top": 117,
+					"left": 238,
+					"width": 60,
+					"strokeWidth": 0.1
+				},
+				"Line31": {
+					"type": "line",
+					"top": 135,
+					"left": 253,
+					"width": 73,
+					"strokeWidth": 0.1
+				},
+				"Line32": {
+					"type": "line",
+					"top": 72,
+					"left": 376,
+					"width": 207,
+					"strokeWidth": 0.1
+				},
+				"Line33": {
+					"type": "line",
+					"top": 87,
+					"left": 401,
+					"width": 182,
+					"strokeWidth": 0.1
+				},
+				"Line34": {
+					"type": "line",
+					"top": 101,
+					"left": 360,
+					"width": 44,
+					"strokeWidth": 0.1
+				},
+				"SCPOA_UWInspRptAvail_L_P3": {
+					"type": "pictureButton",
+					"top": 140,
+					"left": 147,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_UWInspRptAvail_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Line35": {
+					"type": "line",
+					"top": 135,
+					"left": 123,
+					"width": 20,
+					"strokeWidth": 0.1
+				},
+				"Line36": {
+					"type": "line",
+					"top": 505,
+					"left": 76,
+					"width": 236,
+					"strokeWidth": 0.1
+				},
+				"Line37": {
+					"type": "line",
+					"top": 374,
+					"left": 441,
+					"width": 138,
+					"strokeWidth": 0.1
+				},
+				"Line38": {
+					"type": "line",
+					"top": 388,
+					"left": 441,
+					"width": 138,
+					"strokeWidth": 0.1
+				},
+				"Line40": {
+					"type": "line",
+					"top": 416,
+					"left": 451,
+					"width": 128,
+					"strokeWidth": 0.1
+				},
+				"Line41": {
+					"type": "line",
+					"top": 481,
+					"left": 454,
+					"width": 125,
+					"strokeWidth": 0.1
+				},
+				"Line42": {
+					"type": "line",
+					"top": 494,
+					"left": 445,
+					"width": 134,
+					"strokeWidth": 0.1
+				},
+				"Line43": {
+					"type": "line",
+					"top": 426,
+					"left": 334,
+					"width": 245,
+					"strokeWidth": 0.1
+				},
+				"Line44": {
+					"type": "line",
+					"top": 507,
+					"left": 446,
+					"width": 133,
+					"strokeWidth": 0.1
+				},
+				"Line45": {
+					"type": "line",
+					"top": 361,
+					"left": 430,
+					"width": 149,
+					"strokeWidth": 0.1
+				},
+				"Line46": {
+					"type": "line",
+					"top": 186,
+					"left": 119,
+					"width": 131,
+					"strokeWidth": 0.1
+				},
+				"Line47": {
+					"type": "line",
+					"top": 200,
+					"left": 134,
+					"width": 116,
+					"strokeWidth": 0.1
+				},
+				"Line48": {
+					"type": "line",
+					"top": 557,
+					"left": 39,
+					"width": 547
+				},
+				"Field4": {
+					"type": "input",
+					"top": 61,
+					"left": 118,
+					"width": 148,
+					"height": 13,
+					"dataSource": "SCPOA_Item8_txt",
+					"stroke": "#000000",
+					"class": "Arial10Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 61,
+					"left": 381,
+					"width": 202,
+					"height": 13,
+					"dataSource": "SCPOA_Item7_txt",
+					"stroke": "#000000",
+					"class": "Arial10Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Town Name1": {
+					"type": "input",
+					"top": 90,
+					"left": 100,
+					"width": 189,
+					"height": 13,
+					"dataSource": "SCPOA_Town_txt",
+					"stroke": "#000000",
+					"class": "Arial10Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"F Item 1": {
+					"type": "input",
+					"top": 90,
+					"left": 363,
+					"width": 31,
+					"height": 13,
+					"dataSource": "SCPOA_Item113_txt",
+					"stroke": "#000000",
+					"class": "Arial10Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 76,
+					"left": 399,
+					"width": 184,
+					"height": 13,
+					"dataSource": "SCPOA_Item6a_txt",
+					"stroke": "#000000",
+					"class": "Arial10Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SCPOA_BrADT_txt3": {
+					"type": "input",
+					"top": 107,
+					"left": 238,
+					"width": 60,
+					"height": 12,
+					"dataSource": "SCPOA_BrADT_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 124,
+					"left": 123,
+					"width": 20,
+					"height": 12,
+					"dataSource": "SCPOA_BrNoSpans_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"SCPOA_BrADTYr_txt3": {
+					"type": "input",
+					"top": 107,
+					"left": 365,
+					"width": 40,
+					"height": 12,
+					"dataSource": "SCPOA_BrADTYr_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"SCPOA_USGSStationNo_s2": {
+					"type": "input",
+					"top": 350,
+					"left": 430,
+					"width": 149,
+					"height": 14,
+					"dataSource": "SCPOA_USGSStationNo_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_CLCri_USGSG_txt3": {
+					"type": "input",
+					"top": 363,
+					"left": 441,
+					"width": 138,
+					"height": 14,
+					"dataSource": "SCPOA_CLCri_USGSG_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_CLCri_USGSD_txt3": {
+					"type": "input",
+					"top": 376,
+					"left": 441,
+					"width": 138,
+					"height": 14,
+					"dataSource": "SCPOA_CLCri_USGSD_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_USGSStationNo_s3": {
+					"type": "input",
+					"top": 470,
+					"left": 454,
+					"width": 125,
+					"height": 13,
+					"dataSource": "SCPOA_USGSStationNo2_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_CLCri_NOAAG_txt3": {
+					"type": "input",
+					"top": 484,
+					"left": 445,
+					"width": 134,
+					"height": 13,
+					"dataSource": "SCPOA_CLCri_NOAAG_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 176,
+					"left": 124,
+					"width": 126,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "[ScourPOA:132]FoundationType:19",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 190,
+					"left": 137,
+					"width": 113,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "[ScourPOA:132]FoundationMat:20",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_UWInspPrgFreq_L3": {
+					"type": "input",
+					"top": 141,
+					"left": 310,
+					"width": 23,
+					"height": 13,
+					"dataSource": "SCPOA_UWInspPrgFreq_L",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###,###;;",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_UWInspRptAvailDates_txt3": {
+					"type": "input",
+					"top": 141,
+					"left": 410,
+					"width": 173,
+					"height": 13,
+					"dataSource": "SCPOA_UWInspRptAvailDates_txt",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_AbutSCCritical_txt3": {
+					"type": "input",
+					"top": 174,
+					"left": 329,
+					"width": 83,
+					"height": 13,
+					"dataSource": "SCPOA_AbutSCCritical_txt",
+					"stroke": "#000000",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SCPOA_PierSCCritical_txt3": {
+					"type": "input",
+					"top": 174,
+					"left": 471,
+					"width": 107,
+					"height": 13,
+					"dataSource": "SCPOA_PierSCCritical_txt",
+					"stroke": "#000000",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SCPOA_AbutSCCritiEmbed_txt3": {
+					"type": "input",
+					"top": 190,
+					"left": 336,
+					"width": 76,
+					"height": 13,
+					"dataSource": "SCPOA_AbutSCCritiEmbed_txt",
+					"stroke": "#000000",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SCPOA_AbutSCCritiExpos_txt3": {
+					"type": "input",
+					"top": 207,
+					"left": 301,
+					"width": 111,
+					"height": 13,
+					"dataSource": "SCPOA_AbutSCCritiExpos_txt",
+					"stroke": "#000000",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SCPOA_PierSCCritiEmbed_txt3": {
+					"type": "input",
+					"top": 190,
+					"left": 500,
+					"width": 78,
+					"height": 13,
+					"dataSource": "SCPOA_PierSCCritiEmbed_txt",
+					"stroke": "#000000",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SCPOA_PierSCCritiExpos_txt3": {
+					"type": "input",
+					"top": 207,
+					"left": 471,
+					"width": 107,
+					"height": 13,
+					"dataSource": "SCPOA_PierSCCritiExpos_txt",
+					"stroke": "#000000",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SCPOA_CritWSEMarkLoc_txt3": {
+					"type": "input",
+					"top": 224,
+					"left": 173,
+					"width": 410,
+					"height": 13,
+					"dataSource": "SCPOA_CritWSEMarkLoc_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_ScourCritFeat_txt3": {
+					"type": "input",
+					"top": 238,
+					"left": 142,
+					"width": 441,
+					"height": 13,
+					"dataSource": "SCPOA_ScourCritFeat_txt",
+					"class": "Arial9",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_USGSSt2ProxBrg_s3": {
+					"type": "input",
+					"top": 496,
+					"left": 446,
+					"width": 133,
+					"height": 14,
+					"dataSource": "SCPOA_USGSSt2ProxBrg_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field23": {
+					"type": "input",
+					"top": 124,
+					"left": 253,
+					"width": 58,
+					"height": 12,
+					"dataSource": "SCPOA_BrLen_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"SCPOA_CLCri_WLvl_p_txt": {
+					"type": "input",
+					"top": 353,
+					"left": 214,
+					"width": 98,
+					"height": 14,
+					"dataSource": "SCPOA_CLCri_WLvl_p_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_CLCri_Other_txt3": {
+					"type": "input",
+					"top": 495,
+					"left": 76,
+					"width": 236,
+					"height": 13,
+					"dataSource": "SCPOA_CLCri_Other_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_TrafEqDBE_txt3": {
+					"type": "input",
+					"top": 523,
+					"left": 281,
+					"width": 200,
+					"height": 14,
+					"dataSource": "SCPOA_TrafEqDBE_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SCPOA_ReviitEvery_txt3": {
+					"type": "input",
+					"top": 543,
+					"left": 451,
+					"width": 80,
+					"height": 14,
+					"dataSource": "SCPOA_ReviitEvery_txt",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Check Box27": {
+					"type": "pictureButton",
+					"top": 628,
+					"left": 313,
+					"width": 10,
+					"height": 10,
+					"dataSource": "SCPOA_AssessRvrBedOK_L_P",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/library/checkbox.png"
+				},
+				"Town Name6": {
+					"type": "input",
+					"top": 106,
+					"left": 85,
+					"width": 69,
+					"height": 13,
+					"dataSource": "SCPOA_DetourBrgLen_R",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Arial10Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###.00;;",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text84": {
+					"type": "text",
+					"top": 106,
+					"left": 161,
+					"width": 19,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Mi"
+				},
+				"SCPOA_Owner_txt3": {
+					"type": "input",
+					"top": 76,
+					"left": 118,
+					"width": 148,
+					"height": 13,
+					"dataSource": "SCPOA_Owner_txt",
+					"stroke": "#000000",
+					"class": "Arial10Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text85": {
+					"type": "text",
+					"top": 559,
+					"left": 56,
+					"width": 438,
+					"height": 27,
+					"class": "Arial9",
+					"text": "CRITERIA FOR CONSIDERATION TO COMPLETE INTERIM BRIDGE RE-OPENING:\r (Refer to Post Flood Assessment for Detailed Procedures)"
+				},
+				"Line49": {
+					"type": "line",
+					"top": 675,
+					"left": 45,
+					"width": 537,
+					"strokeWidth": 0.1
+				},
+				"Text87": {
+					"type": "text",
+					"top": 141,
+					"left": 338,
+					"width": 33,
+					"height": 13,
+					"class": "Arial9",
+					"text": "months"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 123,
+					"left": 314,
+					"width": 12,
+					"height": 13,
+					"class": "Arial9",
+					"text": "ft"
+				},
+				"SCPOA_BrADTYr_txt2": {
+					"type": "input",
+					"top": 90,
+					"left": 468,
+					"width": 115,
+					"height": 12,
+					"dataSource": "SCPOA_BrLat_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"SCPOA_BrADTYr_txt4": {
+					"type": "input",
+					"top": 107,
+					"left": 468,
+					"width": 115,
+					"height": 12,
+					"dataSource": "SCPOA_BrLon_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"SCPOA_BrStructType_txt": {
+					"type": "input",
+					"top": 124,
+					"left": 401,
+					"width": 182,
+					"height": 12,
+					"dataSource": "SCPOA_BrStructType_txt",
+					"stroke": "#000000",
+					"class": "Arial9Bold",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Line103": {
+					"type": "line",
+					"top": 101,
+					"left": 468,
+					"width": 115,
+					"strokeWidth": 0.1
+				},
+				"Line104": {
+					"type": "line",
+					"top": 117,
+					"left": 468,
+					"width": 115,
+					"strokeWidth": 0.1
+				},
+				"Line105": {
+					"type": "line",
+					"top": 135,
+					"left": 401,
+					"width": 182,
+					"strokeWidth": 0.1
+				},
+				"Text149": {
+					"type": "text",
+					"top": 124,
+					"left": 335,
+					"width": 63,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Structure Type:"
+				},
+				"Text171": {
+					"type": "text",
+					"top": 92,
+					"left": 417,
+					"width": 48,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Latitude:"
+				},
+				"Text172": {
+					"type": "text",
+					"top": 108,
+					"left": 417,
+					"width": 48,
+					"height": 13,
+					"class": "Arial9",
+					"text": "Longitude:"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 273,
+					"left": 124,
+					"width": 458,
+					"strokeWidth": 0.1
+				},
+				"Line15": {
+					"type": "line",
+					"top": 436,
+					"left": 334,
+					"width": 245,
+					"strokeWidth": 0.1
+				},
+				"Text83": {
+					"type": "text",
+					"top": 739,
+					"left": 436,
+					"width": 147,
+					"height": 13,
+					"class": "Arial9",
+					"textAlign": "right",
+					"text": "(Continued on Next Page)"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 283,
+					"left": 124,
+					"width": 458,
+					"strokeWidth": 0.1
+				},
+				"Line12": {
+					"type": "line",
+					"top": 293,
+					"left": 124,
+					"width": 458,
+					"strokeWidth": 0.1
+				},
+				"Line13": {
+					"type": "line",
+					"top": 303,
+					"left": 124,
+					"width": 458,
+					"strokeWidth": 0.1
+				},
+				"Line14": {
+					"type": "line",
+					"top": 685,
+					"left": 45,
+					"width": 537,
+					"strokeWidth": 0.1
+				},
+				"Line106": {
+					"type": "line",
+					"top": 695,
+					"left": 45,
+					"width": 537,
+					"strokeWidth": 0.1
+				},
+				"Line107": {
+					"type": "line",
+					"top": 705,
+					"left": 45,
+					"width": 537,
+					"strokeWidth": 0.1
+				},
+				"Line108": {
+					"type": "line",
+					"top": 715,
+					"left": 45,
+					"width": 537,
+					"strokeWidth": 0.1
+				},
+				"Text60": {
+					"type": "text",
+					"top": 390,
+					"left": 56,
+					"width": 228,
+					"height": 28,
+					"class": "Arial9",
+					"text": "Distance from Low Chord (see Attach J) equal to or less than :  <SCPOA_LowChordDistFt_r>   ft."
+				},
+				"Line50": {
+					"type": "line",
+					"top": 446,
+					"left": 334,
+					"width": 245,
+					"strokeWidth": 0.1
+				},
+				"Line52": {
+					"type": "line",
+					"top": 456,
+					"left": 334,
+					"width": 245,
+					"strokeWidth": 0.1
+				},
+				"Line53": {
+					"type": "line",
+					"top": 466,
+					"left": 334,
+					"width": 245,
+					"strokeWidth": 0.1
+				},
+				"Line39": {
+					"type": "line",
+					"top": 402,
+					"left": 447,
+					"width": 132,
+					"strokeWidth": 0.1
+				},
+				"SCPOA_USGSStProxBrg_s3": {
+					"type": "input",
+					"top": 391,
+					"left": 447,
+					"width": 132,
+					"height": 14,
+					"dataSource": "SCPOA_USGSStProxBrg_s",
+					"class": "Arial9",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"min": 0,
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

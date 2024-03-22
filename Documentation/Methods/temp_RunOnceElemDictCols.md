@@ -1,0 +1,1 @@
+2004-04-27 : Created.  Calls temp_SetFullLabelInElemDict method only once during OnStartUp.

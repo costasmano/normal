@@ -1,0 +1,15 @@
+If (False:C215)
+	Mods_2011_06
+End if 
+Case of 
+	: (Form event code:C388=On Clicked:K2:4)
+		SRC_NBEKEY_L:=PON_MASTERELEM_KEY_aL{PON_MASTERELEM_Desc_atxt}
+		C_LONGINT:C283(SRC_NBEKEY_L)
+		OBJECT SET ENABLED:C1123(*; "NBESearch_ProtSys_L"; True:C214)  // Command Replaced was o_ENABLE BUTTON 
+		OBJECT SET ENABLED:C1123(*; "NBESearch_Defect_1"; True:C214)  // Command Replaced was o_ENABLE BUTTON 
+		
+		READ ONLY:C145([PON_ELEM_DEFS:178])
+		QUERY:C277([PON_ELEM_DEFS:178]; [PON_ELEM_DEFS:178]ELEM_KEY:1=SRC_NBEKEY_L)
+		
+		REDRAW WINDOW:C456
+End case 

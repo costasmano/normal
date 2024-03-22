@@ -1,0 +1,1 @@
+2003-11-18 : Created for 4D Write templates.    2003-11-20: Modified AND in IF statement to OR    2003-11-25: Corrected the initial to BBC

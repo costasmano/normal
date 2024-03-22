@@ -1,0 +1,303 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"File_SourceFile": {
+					"type": "input",
+					"top": 48,
+					"left": 19,
+					"width": 300,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "SourceFile_txt",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Units": {
+					"type": "dropdown",
+					"top": 160,
+					"left": 134,
+					"width": 130,
+					"height": 19,
+					"dataSource": "UnitsList_as",
+					"choiceList": [
+						"Miles",
+						"Feet",
+						"KiloMeters",
+						"Meters"
+					],
+					"class": "Label12Plain"
+				},
+				"Radius": {
+					"type": "input",
+					"top": 162,
+					"left": 20,
+					"width": 100,
+					"height": 16,
+					"dataSource": "vRadiusR",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"min": 0,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"File_MaxArraySize": {
+					"type": "input",
+					"top": 48,
+					"left": 331,
+					"width": 100,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "MaxArraySize",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 6000,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"CHK_FileInput": {
+					"type": "checkbox",
+					"top": 5,
+					"left": 17,
+					"width": 158,
+					"height": 21,
+					"dataSource": "FileInput",
+					"text": "Load from text file",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/CHK_FileInput.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CHK_Center_chk": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 19,
+					"width": 156,
+					"height": 18,
+					"dataSource": "Center_chk",
+					"text": "Use a Center point",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/CHK_Center_chk.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Center_Lat": {
+					"type": "input",
+					"top": 116,
+					"left": 201,
+					"width": 100,
+					"height": 16,
+					"dataSource": "Center_Lat",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Center_Lat1": {
+					"type": "input",
+					"top": 116,
+					"left": 331,
+					"width": 100,
+					"height": 16,
+					"dataSource": "Center_Lon",
+					"class": "Label12Plain",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PosReals"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 99,
+					"left": 201,
+					"width": 100,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Lat"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 99,
+					"left": 331,
+					"width": 100,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Lon"
+				},
+				"OKBtn": {
+					"type": "button",
+					"top": 203,
+					"left": 308,
+					"width": 120,
+					"height": 23,
+					"dataSource": "OKBtn",
+					"text": "OK",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/OKBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CancBtn": {
+					"type": "button",
+					"top": 203,
+					"left": 168,
+					"width": 120,
+					"height": 23,
+					"dataSource": "CancBtn",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Label12Plain",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 142,
+					"left": 19,
+					"width": 100,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Search Radius"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 142,
+					"left": 134,
+					"width": 130,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Units"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 29,
+					"left": 19,
+					"width": 300,
+					"height": 16,
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Source File"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 29,
+					"left": 331,
+					"width": 100,
+					"height": 16,
+					"sizingX": "move",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"text": "Max Array Size"
+				},
+				"File_SelectSource": {
+					"type": "button",
+					"top": 48,
+					"left": 19,
+					"width": 300,
+					"height": 16,
+					"dataSource": "File_SelectSource",
+					"display": false,
+					"method": "ObjectMethods/File_SelectSource.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"File_Header": {
+					"type": "checkbox",
+					"top": 69,
+					"left": 19,
+					"width": 154,
+					"height": 18,
+					"dataSource": "File_Header",
+					"text": "First Line is a Header",
+					"class": "Label12Plain",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Center_Lat",
+				"Center_Lat1",
+				"Text1",
+				"Text2"
+			]
+		}
+	}
+}

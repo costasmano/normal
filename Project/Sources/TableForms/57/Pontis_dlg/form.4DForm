@@ -1,0 +1,595 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line9": {
+					"type": "line",
+					"top": 90,
+					"left": 19,
+					"width": 500,
+					"sizingX": "grow"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 368,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 356,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 440,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 428,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Validate"
+				},
+				"Pontis_Username_s": {
+					"type": "input",
+					"top": 125,
+					"left": 154,
+					"width": 349,
+					"height": 16,
+					"dataSource": "[Preferences:57]DataFileKEY_s:14",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_Password_s": {
+					"type": "input",
+					"top": 150,
+					"left": 152,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Preferences:57]Pontis_Password_s:15",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_ODBCName_txt": {
+					"type": "input",
+					"top": 175,
+					"left": 152,
+					"width": 234,
+					"height": 64,
+					"dataSource": "[Preferences:57]Pontis_ODBCName_txt:17",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_DatabaseName_txt": {
+					"type": "input",
+					"top": 248,
+					"left": 152,
+					"width": 234,
+					"height": 64,
+					"dataSource": "[Preferences:57]Pontis_DatabaseName_txt:16",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_LastUpdate_d": {
+					"type": "input",
+					"top": 321,
+					"left": 152,
+					"width": 108,
+					"height": 16,
+					"dataSource": "[Preferences:57]Pontis_LastUpdate_d:18",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 100,
+					"left": 23,
+					"width": 529,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "PONTIS - Data base information entry"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 125,
+					"left": 35,
+					"width": 112,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Username : "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 150,
+					"left": 35,
+					"width": 112,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Password : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 175,
+					"left": 35,
+					"width": 112,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "ODBC Name : "
+				},
+				"Text7": {
+					"type": "text",
+					"top": 248,
+					"left": 35,
+					"width": 112,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Database Name : "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 321,
+					"left": 35,
+					"width": 112,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Last Update : "
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture10": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 88,
+					"height": 313,
+					"sizingY": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Barre Page XP.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 529,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Label12Bold",
+					"fontWeight": "bold",
+					"text": "PONTIS - Data base information entry"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 313,
+					"sizingY": "grow"
+				},
+				"bCancel1": {
+					"type": "pictureButton",
+					"top": 181,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel1": {
+					"type": "text",
+					"top": 229,
+					"left": 8,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate1": {
+					"type": "pictureButton",
+					"top": 242,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel1": {
+					"type": "text",
+					"top": 290,
+					"left": 8,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label10Plain",
+					"textAlign": "center",
+					"text": "Validate"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 120,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Username : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 70,
+					"left": 115,
+					"width": 120,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Password : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 95,
+					"left": 115,
+					"width": 120,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "ODBC Name : "
+				},
+				"Text17": {
+					"type": "text",
+					"top": 168,
+					"left": 115,
+					"width": 120,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Database Name : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 241,
+					"left": 115,
+					"width": 120,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Last Update : "
+				},
+				"Pontis_Username_s1": {
+					"type": "input",
+					"top": 45,
+					"left": 230,
+					"width": 416,
+					"height": 16,
+					"dataSource": "[Preferences:57]DataFileKEY_s:14",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_Password_s1": {
+					"type": "input",
+					"top": 70,
+					"left": 230,
+					"width": 150,
+					"height": 16,
+					"dataSource": "[Preferences:57]Pontis_Password_s:15",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_ODBCName_txt1": {
+					"type": "input",
+					"top": 95,
+					"left": 230,
+					"width": 274,
+					"height": 64,
+					"dataSource": "[Preferences:57]Pontis_ODBCName_txt:17",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_DatabaseName_txt1": {
+					"type": "input",
+					"top": 168,
+					"left": 230,
+					"width": 274,
+					"height": 64,
+					"dataSource": "[Preferences:57]Pontis_DatabaseName_txt:16",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pontis_LastUpdate_d1": {
+					"type": "input",
+					"top": 241,
+					"left": 230,
+					"width": 92,
+					"height": 16,
+					"dataSource": "[Preferences:57]Pontis_LastUpdate_d:18",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

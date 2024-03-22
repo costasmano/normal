@@ -1,0 +1,1 @@
+12-dec-2000 - CM : modified to Platinum style;  changed fill colors to 'Automatic'.2-Jan-01 : copied from old version. removed plug-in around Print Button, made Print Button default.1-feb-01 : added button for MA specific form. added code in Form method

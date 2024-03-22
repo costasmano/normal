@@ -1,0 +1,1 @@
+Created Sep-2001 : To print a blank page 1 for the current Inspection.Nov-2001 : Increased width of BIN field and made alignment to center.Mar-2003 : Adjusted size and location of Item6A.Jun-2003 : Adjusted form method to better print Current field.2004-03-11: Added style sheet.

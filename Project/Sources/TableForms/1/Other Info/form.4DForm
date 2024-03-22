@@ -1,0 +1,1148 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 680,
+	"windowMinHeight": 545,
+	"rightMargin": 0,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 490,
+	"markerBreak": 490,
+	"markerFooter": 502,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onDataChange",
+		"onDragOver",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 95
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 58,
+					"left": 264,
+					"width": 198,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 260,
+					"width": 198,
+					"height": 37,
+					"fill": "transparent",
+					"stroke": "#D700FF",
+					"strokeWidth": 4
+				},
+				"Text2": {
+					"type": "text",
+					"top": 2,
+					"left": 0,
+					"width": 712,
+					"height": 34,
+					"sizingX": "grow",
+					"fill": "#0000FF",
+					"stroke": "#FFFF00",
+					"class": "Label28Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Other Information"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 148,
+					"left": 0,
+					"width": 712,
+					"sizingX": "grow",
+					"strokeWidth": 4
+				},
+				"Text4": {
+					"type": "text",
+					"top": 99,
+					"left": 9,
+					"width": 61,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Item 8"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 55,
+					"left": 9,
+					"width": 61,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "BDEPT"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 77,
+					"left": 9,
+					"width": 61,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "B.I.N."
+				},
+				"Text9": {
+					"type": "text",
+					"top": 122,
+					"left": 9,
+					"width": 61,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Town"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 55,
+					"left": 72,
+					"width": 94,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 77,
+					"left": 72,
+					"width": 45,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BIN:3",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 99,
+					"left": 72,
+					"width": 190,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Item8:206",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Item8"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 122,
+					"left": 72,
+					"width": 178,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 55,
+					"left": 583,
+					"width": 65,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "AASHTO\r"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 82,
+					"left": 594,
+					"width": 76,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Select List\r"
+				},
+				"Field15": {
+					"type": "input",
+					"top": 55,
+					"left": 650,
+					"width": 47,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]AASHTO:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000.0",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field17": {
+					"type": "checkbox",
+					"top": 81,
+					"left": 678,
+					"width": 18,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]FHWA Select:4",
+					"enterable": false,
+					"text": "Select List",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 123,
+					"left": 457,
+					"width": 82,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Bridge Key\r"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 122,
+					"left": 542,
+					"width": 155,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Bridge Key:2",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###-###-###-###",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 63,
+					"left": 269,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 firstrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 63,
+					"left": 292,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 previousrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 63,
+					"left": 315,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 nextrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 63,
+					"left": 361,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ6",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Page"
+					},
+					"action": "previousPage",
+					"shortcutKey": "[Page up]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 previouspage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 63,
+					"left": 384,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ7",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Page"
+					},
+					"action": "nextPage",
+					"shortcutKey": "[Page down]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 nextpage 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 63,
+					"left": 407,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ8",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 saverecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 63,
+					"left": 430,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 63,
+					"left": 335,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/madoticons/bms 20 lastrecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 317,
+					"left": 10,
+					"width": 279,
+					"height": 194,
+					"class": "List12Plain",
+					"text": "Town Information  \r"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 321,
+					"left": 296,
+					"width": 380,
+					"height": 120,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 194,
+					"left": 20,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Inspection Responsibility"
+				},
+				"DE Variable12": {
+					"type": "button",
+					"top": 333,
+					"left": 310,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAreaCheck",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/DeleteRecs"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/AreaEngReviewed.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE Field10": {
+					"type": "checkbox",
+					"top": 333,
+					"left": 362,
+					"width": 212,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]AreaEngVal:13",
+					"enterable": false,
+					"text": "Area Engineer Reviewed",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE Variable13": {
+					"type": "button",
+					"top": 384,
+					"left": 310,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bInspCheck",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/DeleteRecs"
+					},
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/StateBIEReviewed.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE Variable13.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE Field11": {
+					"type": "checkbox",
+					"top": 384,
+					"left": 362,
+					"width": 311,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]BrgInspEngVal:14",
+					"enterable": false,
+					"text": "Bridge Inspection Engineer Reviewed",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE Variable10": {
+					"type": "dropdown",
+					"top": 189,
+					"left": 183,
+					"width": 317,
+					"height": 24,
+					"dataSource": "aInspRdes_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Variable10.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 192,
+					"left": 502,
+					"width": 54,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]InspResp:173",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE Field8": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 21,
+					"width": 258,
+					"height": 24,
+					"dataSource": "[Bridge MHD NBIS:1]FHWARecord:174",
+					"text": "In National Bridge Inventory",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Field8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE TownLineAdd": {
+					"type": "button",
+					"top": 372,
+					"left": 20,
+					"width": 96,
+					"height": 24,
+					"dataSource": "bAdd",
+					"text": "Add",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/DE TownLineAdd.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE TownLineOn": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 21,
+					"width": 135,
+					"height": 20,
+					"dataSource": "[Bridge MHD NBIS:1]OnTwnLine:177",
+					"text": "On Town Line",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE TownLineOn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 520,
+					"left": 600,
+					"width": 96,
+					"height": 24,
+					"dataSource": "bInfo",
+					"text": "Info",
+					"class": "DataEntry12Plain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 162,
+					"left": 19,
+					"width": 231,
+					"height": 21,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "(2) State Highway Department District"
+				},
+				"Field12": {
+					"type": "input",
+					"top": 162,
+					"left": 256,
+					"width": 28,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Item2:60",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE TownLineList": {
+					"type": "subform",
+					"top": 372,
+					"left": 137,
+					"width": 105,
+					"height": 123,
+					"dataSourceTypeHint": "text",
+					"table": 73,
+					"detailForm": "TownLineInfoIN",
+					"listForm": "TownLineOUT",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"printFrame": "fixed"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 524,
+					"left": 12,
+					"width": 140,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Historical Significance"
+				},
+				"DE Variable15": {
+					"type": "dropdown",
+					"top": 520,
+					"left": 151,
+					"width": 390,
+					"height": 24,
+					"dataSource": "aItem37des_",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE Variable15.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 522,
+					"left": 548,
+					"width": 42,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]Item37:129",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 444,
+					"left": 310,
+					"width": 162,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "MPO (s) :"
+				},
+				"BridgeMPOList_txt": {
+					"type": "input",
+					"top": 462,
+					"left": 310,
+					"width": 358,
+					"height": 52,
+					"sizingX": "grow",
+					"dataSource": "BridgeMPOList_txt",
+					"stroke": "#001EFF",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DE InspRequired": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 341,
+					"width": 318,
+					"height": 24,
+					"dataSource": "[Bridge MHD NBIS:1]InspRequired:227",
+					"text": "Non-NBI bridge - Inspection Required",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE InspRequired.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 253,
+					"left": 12,
+					"width": 122,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Funding Source"
+				},
+				"DE Field1": {
+					"type": "input",
+					"top": 252,
+					"left": 139,
+					"width": 529,
+					"height": 19,
+					"sizingX": "grow",
+					"dataSource": "[Bridge MHD NBIS:1]FundingSource:228",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"multiline": "no",
+					"method": "ObjectMethods/DE Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 281,
+					"left": 12,
+					"width": 122,
+					"height": 18,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Legacy Owner"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 280,
+					"left": 139,
+					"width": 54,
+					"height": 18,
+					"dataSource": "[Bridge MHD NBIS:1]LegacyOwner:226",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ID_LegacyOwner": {
+					"type": "dropdown",
+					"top": 277,
+					"left": 194,
+					"width": 405,
+					"height": 24,
+					"dataSource": "aIt8OwnerDes_",
+					"focusable": false,
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/ID_LegacyOwner.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"DE Field10",
+				"DE Field11",
+				"DE Variable10",
+				"Field7",
+				"DE Field8",
+				"DE TownLineAdd",
+				"DE TownLineOn",
+				"Variable14",
+				"Field12",
+				"DE TownLineList",
+				"DE Variable15",
+				"Field13",
+				"BridgeMPOList_txt",
+				"DE InspRequired",
+				"DE Field1",
+				"Field4",
+				"ID_LegacyOwner"
+			]
+		},
+		{
+			"objects": {
+				"Text19": {
+					"type": "text",
+					"top": 166,
+					"left": 20,
+					"width": 156,
+					"height": 35,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Maintenance comments from District:"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 273,
+					"left": 20,
+					"width": 156,
+					"height": 35,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "Maintenance comments from Boston:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 381,
+					"left": 20,
+					"width": 156,
+					"height": 34,
+					"stroke": "#000000",
+					"class": "List12Plain",
+					"text": "General comments:"
+				},
+				"DE Field20": {
+					"type": "input",
+					"top": 168,
+					"left": 199,
+					"width": 489,
+					"height": 96,
+					"sizingX": "grow",
+					"dataSource": "[Bridge MHD NBIS:1]MaintTxtDist:54",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE Field20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field21": {
+					"type": "input",
+					"top": 274,
+					"left": 199,
+					"width": 489,
+					"height": 96,
+					"sizingX": "grow",
+					"dataSource": "[Bridge MHD NBIS:1]MaintTxtBoston:55",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE Field21.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Field22": {
+					"type": "input",
+					"top": 382,
+					"left": 199,
+					"width": 489,
+					"height": 96,
+					"sizingX": "grow",
+					"dataSource": "[Bridge MHD NBIS:1]General Comment:172",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/DE Field22.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

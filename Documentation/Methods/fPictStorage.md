@@ -1,0 +1,1 @@
+May-2002 : Created. Get storage used by Images of an Inspection.  26-Sep-2003 : Added saving Elmt Selection.  2004-4-6 : Commented out named selection for Inspections. 

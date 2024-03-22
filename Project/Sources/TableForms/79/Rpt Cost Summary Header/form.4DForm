@@ -1,0 +1,246 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerBody": 71,
+	"markerBreak": 96,
+	"markerFooter": 96,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 0,
+					"width": 730,
+					"height": 55
+				},
+				"Line4": {
+					"type": "line",
+					"top": 50,
+					"left": 210,
+					"height": 19
+				},
+				"Text4": {
+					"type": "text",
+					"top": 58,
+					"left": 210,
+					"width": 105,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Indirect Costs"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 50,
+					"left": 315,
+					"height": 19
+				},
+				"Text5": {
+					"type": "text",
+					"top": 58,
+					"left": 315,
+					"width": 105,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Net Fee"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 50,
+					"left": 420,
+					"height": 19
+				},
+				"Line7": {
+					"type": "line",
+					"top": 50,
+					"left": 525,
+					"height": 19
+				},
+				"Line9": {
+					"type": "line",
+					"top": 50,
+					"left": 630,
+					"height": 19
+				},
+				"Text13": {
+					"type": "text",
+					"top": 58,
+					"left": 525,
+					"width": 105,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Direct Expenses"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 58,
+					"left": 419,
+					"width": 105,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Total Limiting Fee"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 4,
+					"left": 0,
+					"width": 250,
+					"height": 40,
+					"dataSource": "vRptHeader",
+					"stroke": "#000000",
+					"class": "ContractPrintTitle",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 4,
+					"left": 654,
+					"width": 76,
+					"height": 36,
+					"dataSource": "vDtTmPg",
+					"stroke": "#000000",
+					"class": "ContractPrintTitle",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 50,
+					"left": 105,
+					"height": 19
+				},
+				"Text2": {
+					"type": "text",
+					"top": 58,
+					"left": 105,
+					"width": 105,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Salary Costs"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 58,
+					"left": 1,
+					"width": 105,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Assignment No."
+				},
+				"Text9": {
+					"type": "text",
+					"top": 58,
+					"left": 629,
+					"width": 100,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "ContractPrintHeader",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 69,
+					"left": 0,
+					"width": 730
+				},
+				"vRateInfo": {
+					"type": "input",
+					"top": 4,
+					"left": 259,
+					"width": 200,
+					"height": 36,
+					"dataSource": "vRateInfo",
+					"stroke": "#000000",
+					"class": "ContractPrintTitle",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

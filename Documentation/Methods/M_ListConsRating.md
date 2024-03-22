@@ -1,0 +1,1 @@
+2003-06 :  Created. This method is called when the user selects "Consultant Rating" from the Special menu.  It calls P_ListConsRating method which displays "View Cslt Rating" form.  2003-10-17 : Added If(False) to have a reference to the P_ method.

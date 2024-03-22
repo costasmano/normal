@@ -1,0 +1,1 @@
+2004-04-21 : Increased the NewWindow height to 550 from 450.   Added SET WINDOW RECT code.

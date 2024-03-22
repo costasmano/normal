@@ -1,0 +1,1 @@
+2003-11-18 : Created for 4D Write templates.  2003-11-26 :  Changed call to GetAreaBIEinfo to use a string as parameter.

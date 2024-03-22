@@ -1,0 +1,622 @@
+{
+	"windowSizingX": "fixed",
+	"windowMinHeight": 300,
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerBody": 300,
+	"markerBreak": 300,
+	"markerFooter": 300,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 5,
+					"left": 9,
+					"width": 349,
+					"height": 15,
+					"class": "DataEntry12APlain",
+					"text": "<sDlogText1>"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 22,
+					"left": 5,
+					"width": 440
+				},
+				"Variable1": {
+					"type": "listbox",
+					"top": 42,
+					"left": 15,
+					"width": 149,
+					"height": 156,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "Geneva9",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable1_Column1",
+							"dataSource": "asFields",
+							"width": 107,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Geneva9",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Variable1_Column1.4dm",
+							"header": {
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva9"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva9"
+							}
+						},
+						{
+							"name": "Variable2_Column2",
+							"dataSource": "asFldTypes",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Geneva9",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Variable2_Column2.4dm",
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva9"
+							},
+							"footer": {
+								"name": "Pied1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva9"
+							}
+						}
+					]
+				},
+				"Variable3": {
+					"type": "listbox",
+					"top": 42,
+					"left": 308,
+					"width": 127,
+					"height": 156,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"class": "Geneva9",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable3_Column1",
+							"dataSource": "asExpImpFld",
+							"width": 110,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Geneva9",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva9"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Geneva9"
+							}
+						}
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 69,
+					"left": 202,
+					"width": 96,
+					"height": 18,
+					"dataSource": "bCopyAll",
+					"shortcutKey": "g",
+					"shortcutAccel": true,
+					"text": "Copy All >>",
+					"class": "DataEntry12APlain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 98,
+					"left": 202,
+					"width": 96,
+					"height": 18,
+					"dataSource": "bAppend",
+					"shortcutKey": "a",
+					"shortcutAccel": true,
+					"text": "Append >>",
+					"class": "DataEntry12APlain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 127,
+					"left": 202,
+					"width": 96,
+					"height": 18,
+					"dataSource": "bInsert",
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Insert >>",
+					"class": "DataEntry12APlain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 156,
+					"left": 202,
+					"width": 96,
+					"height": 18,
+					"dataSource": "bRemove",
+					"text": "Remove",
+					"class": "DataEntry12APlain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 219,
+					"left": 118,
+					"width": 24,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "sFldDel",
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 265,
+					"width": 140,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "ckLayout",
+					"text": "Use Layout",
+					"class": "Label9Bold",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 237,
+					"left": 118,
+					"width": 24,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "sRecDel",
+					"stroke": "#000000",
+					"class": "Geneva9",
+					"fill": "#FFFFFF",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "checkbox",
+					"top": 238,
+					"left": 265,
+					"width": 140,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "ck4DFormat",
+					"text": "Use 4D Format",
+					"class": "Label9Bold",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "checkbox",
+					"top": 257,
+					"left": 10,
+					"width": 140,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "ckInclude",
+					"text": "Include Header Record",
+					"class": "Label9Bold",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 266,
+					"left": 252,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "DataEntry12APlain",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 266,
+					"left": 346,
+					"width": 85,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bExport",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "DataEntry12APlain",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "checkbox",
+					"top": 276,
+					"left": 10,
+					"width": 140,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "ckCRLF",
+					"text": "Include LF after CR",
+					"class": "Label9Bold",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 28,
+					"left": 308,
+					"width": 127,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label9Bold",
+					"fontWeight": "bold",
+					"text": "<sDlogText3>"
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 3,
+					"left": 162,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "bEscape",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 3,
+					"left": 249,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "bUpArrow",
+					"shortcutKey": "[up arrow]",
+					"display": false,
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 3,
+					"left": 341,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "bDownArrow",
+					"shortcutKey": "[down arrow]",
+					"display": false,
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 3,
+					"left": 434,
+					"width": 2,
+					"height": 2,
+					"sizingY": "move",
+					"dataSource": "bReturn",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 208,
+					"left": 5,
+					"width": 440,
+					"height": 1,
+					"sizingY": "move",
+					"startPoint": "bottomLeft"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 28,
+					"left": 15,
+					"width": 141,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Label9Bold",
+					"fontWeight": "bold",
+					"text": "<sDlogText2>"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 219,
+					"left": 25,
+					"width": 88,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Label9Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Field Delimiter:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 237,
+					"left": 14,
+					"width": 99,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "Label9Bold",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Record Delimiter:"
+				}
+			}
+		}
+	]
+}

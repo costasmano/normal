@@ -1,0 +1,1 @@
+2004-01-20 : Created.  2004-03-19 : Uses the current record for printing.  No need to use UserSet.  Removed 'Assignment' from vAssignDesc.

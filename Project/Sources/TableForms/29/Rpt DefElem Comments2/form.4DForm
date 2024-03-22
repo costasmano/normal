@@ -1,0 +1,120 @@
+{
+	"destination": "listPrinter",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 46,
+	"markerBody": 719,
+	"markerBreak": 719,
+	"markerFooter": 719,
+	"events": [
+		"onHeader",
+		"onDragOver",
+		"onPrintingDetail",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text6": {
+					"type": "text",
+					"top": 6,
+					"left": 236,
+					"width": 33,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Arial9",
+					"text": "PAGE"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 18,
+					"left": 266,
+					"width": 24
+				},
+				"PageNumber": {
+					"type": "input",
+					"top": 5,
+					"left": 269,
+					"width": 21,
+					"height": 13,
+					"dataSource": "vPageNo",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 3,
+					"left": 11,
+					"width": 140,
+					"height": 40,
+					"dataSource": "vBridgeHeader",
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Page2Title": {
+					"type": "text",
+					"top": 26,
+					"left": 205,
+					"width": 171,
+					"height": 18,
+					"fill": "#111111",
+					"stroke": "#FFFFFF",
+					"class": "Times14Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "REMARKS"
+				},
+				"CmtsArea": {
+					"type": "plugin",
+					"top": 54,
+					"left": 18,
+					"width": 533,
+					"height": 661,
+					"dataSource": "vCmtsArea",
+					"pluginAreaKind": "_4D Write",
+					"focusable": false,
+					"borderStyle": "none",
+					"events": [
+						"onPluginArea"
+					]
+				}
+			}
+		}
+	]
+}

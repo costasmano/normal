@@ -1,0 +1,1 @@
+2003-01 : Use method G_Accessibility2SIA.  2003-10-10 : Added recalculation of AASHTO when making changes to SIA.  2004-03-03 : Added updating Item93C (spec insp date) when special members present.

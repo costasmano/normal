@@ -1,0 +1,1 @@
+Dec-2002 : Instead of Relate many selection use Query with array.  Jun-2003 : Fixed 3rd Logchange argument for ElementsSafety changes.  Sep-2003 : v3.3f3 : Option to show alert or not.

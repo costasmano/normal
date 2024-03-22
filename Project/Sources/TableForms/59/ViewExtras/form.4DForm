@@ -1,0 +1,188 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 161,
+	"markerBreak": 161,
+	"markerFooter": 171,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"OKView": {
+					"type": "button",
+					"top": 16,
+					"left": 557,
+					"width": 49,
+					"height": 66,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "OK",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Validate.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/OKView.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 95,
+					"left": 10,
+					"width": 595,
+					"sizingX": "grow"
+				},
+				"Button": {
+					"type": "button",
+					"top": 17,
+					"left": 39,
+					"width": 154,
+					"height": 40,
+					"focusable": false,
+					"text": "Change Data View",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 105,
+					"left": 15,
+					"width": 585,
+					"height": 615,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "v_58_005_txt",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"v_36_003_p": {
+					"type": "input",
+					"top": 105,
+					"left": 15,
+					"width": 585,
+					"height": 615,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "v_36_003_p",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Plugin Area": {
+					"type": "plugin",
+					"top": 105,
+					"left": 15,
+					"width": 585,
+					"height": 615,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "AreaGeneralRemarks",
+					"pluginAreaKind": "_4D Write",
+					"borderStyle": "sunken",
+					"events": [
+						"onPluginArea"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"WPArea": {
+					"type": "write",
+					"top": 105,
+					"left": 15,
+					"width": 585,
+					"height": 615,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded"
+				}
+			}
+		},
+		{
+			"objects": {
+				"QuickReport": {
+					"type": "plugin",
+					"top": 105,
+					"left": 15,
+					"width": 585,
+					"height": 615,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"pluginAreaKind": "%Report",
+					"borderStyle": "sunken",
+					"events": [
+						"onPluginArea"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line5"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"OKView"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

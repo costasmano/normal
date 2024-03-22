@@ -1,0 +1,798 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 710,
+	"windowMinHeight": 437,
+	"rightMargin": 0,
+	"bottomMargin": 20,
+	"menuBar": "BlankMenu",
+	"markerBody": 403,
+	"markerBreak": 403,
+	"markerFooter": 413,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": -6,
+					"left": 0,
+					"width": 697,
+					"height": 73,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarGreen.png"
+				},
+				"TabBackGround": {
+					"type": "rectangle",
+					"top": 181,
+					"left": 25,
+					"width": 670,
+					"height": 324,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFFFC0",
+					"stroke": "transparent"
+				},
+				"TrapReturn": {
+					"type": "button",
+					"top": 24,
+					"left": 672,
+					"width": 13,
+					"height": 9,
+					"sizingX": "move",
+					"dataSource": "dddd",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"TrapCmdPeriod": {
+					"type": "button",
+					"top": 44,
+					"left": 672,
+					"width": 13,
+					"height": 9,
+					"sizingX": "move",
+					"dataSource": "dddd",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDone": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 642,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_Close"
+					},
+					"shortcutKey": "[Enter]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDone.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Tab Control1": {
+					"type": "tab",
+					"top": 171,
+					"left": 25,
+					"width": 670,
+					"height": 334,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Tab Control1",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Photos",
+						"Review Comments"
+					],
+					"class": "DataEntry12Plain",
+					"action": "gotoPage",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line6": {
+					"type": "line",
+					"top": 66,
+					"left": 5,
+					"width": 692,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 10,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_FirstRec"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bFirst.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 81,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_PrevRec"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrevious.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 152,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_NextRec"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 223,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_LastRec"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bLast.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 149,
+					"left": 4,
+					"width": 141,
+					"height": 17,
+					"class": "Lucinda_13",
+					"textAlign": "right",
+					"text": " Bridge Orientation :"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 76,
+					"left": 4,
+					"width": 141,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Lucinda_13",
+					"textAlign": "right",
+					"text": "Date Photos Taken: "
+				},
+				"DE_InvPhotoDate": {
+					"type": "input",
+					"top": 76,
+					"left": 149,
+					"width": 101,
+					"height": 17,
+					"dataSource": "[InventoryPhotoInsp:112]InvPhotoDate_D:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"method": "ObjectMethods/DE_InvPhotoDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DE Orientation_first": {
+					"type": "radio",
+					"top": 150,
+					"left": 149,
+					"width": 90,
+					"height": 18,
+					"dataSource": "[InventoryPhotoInsp:112]OrientationNS_b:4",
+					"text": "North - South",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/DE Orientation.4dm",
+					"radioGroup": "DE Orientation_group",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"DE Orientation": {
+					"type": "radio",
+					"top": 150,
+					"left": 259,
+					"width": 188,
+					"height": 18,
+					"dataSource": "Not:C34([InventoryPhotoInsp:112]OrientationNS_b:4)",
+					"text": "East - West",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/DE Orientation.4dm",
+					"radioGroup": "DE Orientation_group",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 76,
+					"left": 255,
+					"width": 38,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Lucinda_13",
+					"textAlign": "right",
+					"text": "BIN : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 76,
+					"left": 331,
+					"width": 55,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Lucinda_13",
+					"textAlign": "right",
+					"text": "BDEPT : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 76,
+					"left": 443,
+					"width": 92,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Lucinda_13",
+					"textAlign": "right",
+					"text": "Town Name : "
+				},
+				"BIN": {
+					"type": "input",
+					"top": 76,
+					"left": 297,
+					"width": 34,
+					"height": 17,
+					"dataSource": "[InventoryPhotoInsp:112]BIN:2",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"[Bridge MHD NBIS]BDEPT": {
+					"type": "input",
+					"top": 76,
+					"left": 389,
+					"width": 57,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]BDEPT:1",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"[Bridge MHD NBIS]Town Name": {
+					"type": "input",
+					"top": 76,
+					"left": 537,
+					"width": 158,
+					"height": 17,
+					"dataSource": "[Bridge MHD NBIS:1]Town Name:175",
+					"stroke": "#000099",
+					"class": "DataEntry12Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 100,
+					"left": 4,
+					"width": 141,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Lucinda_13",
+					"textAlign": "right",
+					"text": "Team Leader : "
+				},
+				"DE TeamLdr dropdown": {
+					"type": "dropdown",
+					"top": 99,
+					"left": 411,
+					"width": 23,
+					"height": 24,
+					"dataSource": "aTeamLeader",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE TeamLdr dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 102,
+					"left": 149,
+					"width": 261,
+					"height": 17,
+					"dataSource": "vTmLeader",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"DE Completed": {
+					"type": "checkbox",
+					"top": 102,
+					"left": 489,
+					"width": 206,
+					"height": 18,
+					"dataSource": "[InventoryPhotoInsp:112]Complete_B:9",
+					"text": "Photos Completed",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"method": "ObjectMethods/DE Completed.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 123,
+					"left": 4,
+					"width": 141,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Lucinda_13",
+					"textAlign": "right",
+					"text": "Team Member : "
+				},
+				"DE TeamMbr dropdown": {
+					"type": "dropdown",
+					"top": 122,
+					"left": 411,
+					"width": 23,
+					"height": 24,
+					"dataSource": "aTeamMbr",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE TeamMbr dropdown.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 125,
+					"left": 149,
+					"width": 261,
+					"height": 17,
+					"dataSource": "vTmMember",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 0,
+					"left": 287,
+					"width": 2,
+					"height": 66,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 0,
+					"left": 298,
+					"width": 2,
+					"height": 66,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical mac.png"
+				},
+				"DE bDelete": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 317,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_DeleteRec"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/DE bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DE bValidate1": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 451,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bSave1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SaveContinue"
+					},
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/BMS SaveToDB.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/DE bValidate1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrint": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 511,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_Print"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Print.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrint.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture3_move": {
+					"type": "picture",
+					"top": 205,
+					"left": 93,
+					"width": 505,
+					"height": 23,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Image titre liste.png"
+				},
+				"S1_Text_move": {
+					"type": "text",
+					"top": 207,
+					"left": 103,
+					"width": 470,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Label12Plain",
+					"text": "Photo Description : "
+				},
+				"DE bAddPhoto_move": {
+					"type": "pictureButton",
+					"top": 209,
+					"left": 617,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAddPhoto",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/GEN_AddSubRec"
+					},
+					"shortcutKey": "a",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Add Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/DE bAddPhoto_move.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CMDO": {
+					"type": "button",
+					"top": 183,
+					"left": 29,
+					"width": 5,
+					"height": 5,
+					"dataSource": "CMDO",
+					"shortcutKey": "o",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/CMDO.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"InventoyPhotos_LB": {
+					"type": "listbox",
+					"top": 228,
+					"left": 94,
+					"width": 503,
+					"height": 255,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "SelectListBox",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"showHeaders": false,
+					"table": 113,
+					"highlightSet": "$ListboxSet0",
+					"detailForm": "Input",
+					"selectionMode": "single",
+					"method": "ObjectMethods/InventoyPhotos_LB.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[InventoryPhotos:113]PhotoDescr_txt:3",
+							"width": 488,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text3_move": {
+					"type": "text",
+					"top": 192,
+					"left": 55,
+					"width": 205,
+					"height": 17,
+					"class": "Lucinda_13",
+					"textAlign": "left",
+					"text": "Review Comments / Reply"
+				},
+				"INV_ReviewCommtsDisp_txt_resize": {
+					"type": "input",
+					"top": 214,
+					"left": 52,
+					"width": 615,
+					"height": 266,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "INV_ReviewCommtsDisp_txt",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible"
+				},
+				"DE INV_ReplyComments_move": {
+					"type": "button",
+					"top": 185,
+					"left": 476,
+					"width": 191,
+					"height": 22,
+					"sizingX": "move",
+					"dataSource": "INV_ReplyComments",
+					"text": "Reply",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/DE INV_ReplyComments_move.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

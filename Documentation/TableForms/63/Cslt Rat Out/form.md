@@ -1,0 +1,1 @@
+2003-06 : Modified the form.2003-11-18 : Added additional columns and decreased the font size (request from FR)2003-11-20 : Changed the "Enterable" property of the fields.  2004-02-10 :  Used style sheet for form objects (text, field, variable, dropdown list, etc)2004-04-13 : Applied form scaling - 120%. 2004-04-15 : Increased the font size.  

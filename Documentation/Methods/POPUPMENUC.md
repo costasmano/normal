@@ -1,0 +1,1 @@
+5/13/2001 ASL : Fixed bug where popup pointer should default to 1 not 0.  Oct-2002 : Added on Data change event when called from a related field. Added declarations for parameters.  May-2003 : On Load event do not show anything if the field value is not found in the list.  Aug-2003 : v 3.3f2 On Clicked event check that a valid index was selected.

@@ -1,0 +1,1 @@
+NTI_ElemInp_AddChild(True:C214)  //adding prot system

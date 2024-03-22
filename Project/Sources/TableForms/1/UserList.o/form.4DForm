@@ -1,0 +1,439 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 61,
+					"left": 0,
+					"width": 636,
+					"height": 22,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/OldOutputBackground.png"
+				},
+				"bDone": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 556,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 66,
+					"left": 24,
+					"width": 52,
+					"height": 12,
+					"sizingX": "grow",
+					"class": "PRJ_InputBoldLabel",
+					"text": "PM_Bin_s : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 66,
+					"left": 108,
+					"width": 96,
+					"height": 12,
+					"sizingX": "grow",
+					"class": "PRJ_InputBoldLabel",
+					"text": "PM_ImportDate_d : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 66,
+					"left": 236,
+					"width": 76,
+					"height": 12,
+					"sizingX": "grow",
+					"class": "PRJ_InputBoldLabel",
+					"text": "PM_RunKey_s : "
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 66,
+					"left": 344,
+					"width": 68,
+					"height": 12,
+					"sizingX": "grow",
+					"class": "PRJ_InputBoldLabel",
+					"text": "PM_SCKey_s : "
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 66,
+					"left": 444,
+					"width": 52,
+					"height": 12,
+					"sizingX": "grow",
+					"class": "PRJ_InputBoldLabel",
+					"text": "PM_Tev_l : "
+				},
+				"S6_Text": {
+					"type": "text",
+					"top": 66,
+					"left": 528,
+					"width": 92,
+					"height": 12,
+					"sizingX": "grow",
+					"class": "PRJ_InputBoldLabel",
+					"text": "PM_UniqueKey_s : "
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 0,
+					"width": 636,
+					"height": 20,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 84,
+					"left": 24,
+					"width": 52,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[Pontis_Metrics:41]PM_Bin_s:3",
+					"class": "PRJ_InputVariable",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 84,
+					"left": 108,
+					"width": 96,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[Pontis_Metrics:41]PM_ImportDate_d:4",
+					"dataSourceTypeHint": "date",
+					"class": "PRJ_InputVariable",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 84,
+					"left": 236,
+					"width": 76,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[Pontis_Metrics:41]PM_RunKey_l:1",
+					"dataSourceTypeHint": "integer",
+					"class": "PRJ_InputVariable",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 84,
+					"left": 344,
+					"width": 68,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[Pontis_Metrics:41]PM_SCKey_s:5",
+					"class": "PRJ_InputVariable",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 84,
+					"left": 444,
+					"width": 52,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[Pontis_Metrics:41]PM_Tev_r:6",
+					"dataSourceTypeHint": "number",
+					"class": "PRJ_InputVariable",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Field": {
+					"type": "input",
+					"top": 84,
+					"left": 528,
+					"width": 92,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[Pontis_Metrics:41]PM_UniqueKey_s:2",
+					"class": "PRJ_InputVariable",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": 61,
+					"left": 0,
+					"height": 39,
+					"stroke": "#A8A8A8"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 61,
+					"left": 636,
+					"height": 39,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 61,
+					"left": 512,
+					"height": 39,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 61,
+					"left": 511,
+					"width": 3,
+					"height": 39,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": 61,
+					"left": 428,
+					"height": 39,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": 61,
+					"left": 427,
+					"width": 3,
+					"height": 39,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line13": {
+					"type": "line",
+					"top": 61,
+					"left": 328,
+					"height": 39,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": 61,
+					"left": 327,
+					"width": 3,
+					"height": 39,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line14": {
+					"type": "line",
+					"top": 61,
+					"left": 220,
+					"height": 39,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter5": {
+					"type": "button",
+					"top": 61,
+					"left": 219,
+					"width": 3,
+					"height": 39,
+					"dataSource": "Splitter5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line15": {
+					"type": "line",
+					"top": 61,
+					"left": 92,
+					"height": 39,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter6": {
+					"type": "button",
+					"top": 61,
+					"left": 91,
+					"width": 3,
+					"height": 39,
+					"dataSource": "Splitter6",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bDone"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+2001-06 : Print a sketch in landscape mode. One sketch per page.2002-10 : Changed sBDEPT1 var to sBDEPT.2003-10-10 : Fixed Page OF block (split in two).2004-02-13 : Made form type Detail Form for Printing.2004-03-11: Added style sheet.2004-04-06 : Adjusted horizontal line.2004-05-04 : Fixed width of InspDate Lbl and transparency of pageno.

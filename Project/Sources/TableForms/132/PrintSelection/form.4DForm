@@ -1,0 +1,192 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"SCPOA_PrintSummbtn_L": {
+					"type": "checkbox",
+					"top": 56,
+					"left": 97,
+					"width": 200,
+					"height": 20,
+					"dataSource": "SCPOA_PrintSummbtn_L",
+					"text": "Summary Sheet",
+					"class": "Arial14Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_PrintFLDNotesbtn_L": {
+					"type": "checkbox",
+					"top": 168,
+					"left": 97,
+					"width": 200,
+					"height": 20,
+					"dataSource": "SCPOA_PrintFLDNotesbtn_L",
+					"text": "Attachments",
+					"class": "Arial14Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_PrintDetourbtn_L": {
+					"type": "checkbox",
+					"top": 140,
+					"left": 97,
+					"width": 200,
+					"height": 20,
+					"dataSource": "SCPOA_PrintDetourbtn_L",
+					"text": "Detour(s)",
+					"class": "Arial14Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_PrintLocusbtn_L": {
+					"type": "checkbox",
+					"top": 112,
+					"left": 97,
+					"width": 200,
+					"height": 20,
+					"dataSource": "SCPOA_PrintLocusbtn_L",
+					"text": "Site Locus",
+					"class": "Arial14Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"SCPOA_PrintPOAbtn_L": {
+					"type": "checkbox",
+					"top": 84,
+					"left": 97,
+					"width": 200,
+					"height": 20,
+					"dataSource": "SCPOA_PrintPOAbtn_L",
+					"text": "Bridge Scour POA",
+					"class": "Arial14Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 241,
+					"left": 193,
+					"width": 102,
+					"height": 33,
+					"dataSource": "vbOK",
+					"action": "accept",
+					"text": "Print",
+					"class": "Arial14Bold",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 241,
+					"left": 33,
+					"width": 102,
+					"height": 33,
+					"dataSource": "vbCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Arial14Bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 12,
+					"left": 11,
+					"width": 306,
+					"height": 32,
+					"class": "Arial14Bold",
+					"textAlign": "center",
+					"text": "Select Sections to <SCPOA_Prn_Prv_txt>"
+				},
+				"SCPOA_PrintFVCBtn_L": {
+					"type": "checkbox",
+					"top": 196,
+					"left": 97,
+					"width": 200,
+					"height": 20,
+					"dataSource": "SCPOA_PrintFVCBtn_L",
+					"text": "Field Verification Card",
+					"class": "Arial14Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

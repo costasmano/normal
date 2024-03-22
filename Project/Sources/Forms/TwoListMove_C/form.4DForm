@@ -1,0 +1,257 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 640,
+	"windowMinHeight": 200,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"MoveR": {
+					"type": "button",
+					"top": 40,
+					"left": 300,
+					"width": 45,
+					"height": 20,
+					"shortcutKey": "[right arrow]",
+					"text": ">",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/MoveR.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveRAll": {
+					"type": "button",
+					"top": 70,
+					"left": 300,
+					"width": 45,
+					"height": 20,
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"text": ">>",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/MoveRAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveL": {
+					"type": "button",
+					"top": 100,
+					"left": 300,
+					"width": 45,
+					"height": 20,
+					"shortcutKey": "[left arrow]",
+					"text": "<",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/MoveL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MoveLAll": {
+					"type": "button",
+					"top": 130,
+					"left": 300,
+					"width": 45,
+					"height": 20,
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"text": "<<",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/MoveLAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OKBtn": {
+					"type": "button",
+					"top": 218,
+					"left": 510,
+					"width": 120,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancelbtn": {
+					"type": "button",
+					"top": 218,
+					"left": 360,
+					"width": 120,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "List12Plain",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"UseLB": {
+					"type": "listbox",
+					"top": 15,
+					"left": 15,
+					"width": 275,
+					"height": 195,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.UseC",
+					"currentItemSource": "UseCcurr",
+					"currentItemPositionSource": "UseCpos",
+					"selectedItemsSource": "UseCselected",
+					"scrollbarHorizontal": "automatic",
+					"columns": [
+						{
+							"name": "Column1",
+							"width": 260,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"OmitLB": {
+					"type": "listbox",
+					"top": 15,
+					"left": 360,
+					"width": 275,
+					"height": 195,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.OmitC",
+					"currentItemSource": "OmitCcurritem",
+					"currentItemPositionSource": "OmitCpos",
+					"selectedItemsSource": "OmitCselected",
+					"scrollbarHorizontal": "automatic",
+					"columns": [
+						{
+							"name": "Column2",
+							"width": 260,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

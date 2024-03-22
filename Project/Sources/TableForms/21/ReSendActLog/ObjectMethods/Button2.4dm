@@ -1,0 +1,4 @@
+vsStartRefID:=""
+vsInspID:=""
+vsBMSInspID:=""
+vsCombInspID:=""

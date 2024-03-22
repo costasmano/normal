@@ -1,0 +1,78 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 28,
+	"markerBody": 50,
+	"markerBreak": 57,
+	"markerFooter": 62,
+	"events": [
+		"onDisplayDetail",
+		"onDragOver",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 132,
+					"height": 55
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 132
+				},
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 125,
+					"height": 19,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"text": "Other BDEPTs"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 30,
+					"left": 4,
+					"width": 94,
+					"height": 17,
+					"dataSource": "sBDEPT",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#-##-###",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onDisplayDetail",
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

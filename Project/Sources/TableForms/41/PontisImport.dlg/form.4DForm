@@ -1,0 +1,227 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 360,
+					"height": 40,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/BarBlue.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 16,
+					"left": 24,
+					"width": 191,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "Pontis Metrics Import"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 130,
+					"left": 16,
+					"width": 328,
+					"sizingX": "grow",
+					"sizingY": "move"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 135,
+					"left": 186,
+					"width": 2,
+					"height": 41,
+					"sizingY": "move",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Separateur vertical autres.png"
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 57,
+					"left": 33,
+					"width": 81,
+					"height": 14,
+					"dataSource": "PM_Run_l",
+					"text": "New",
+					"class": "Default",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 57,
+					"left": 133,
+					"width": 81,
+					"height": 14,
+					"dataSource": "PM_ReRun_l",
+					"text": "Rerun",
+					"class": "Default",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 146,
+					"left": 274,
+					"width": 71,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"text": "Run",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 146,
+					"left": 200,
+					"width": 63,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"text": "Exit",
+					"class": "Label12Plain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"RerunSelect02": {
+					"type": "dropdown",
+					"top": 95,
+					"left": 191,
+					"width": 127,
+					"height": 19,
+					"dataSource": "PM_ImportDate_ad",
+					"dataSourceTypeHint": "arrayDate",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"RerunSelect01": {
+					"type": "text",
+					"top": 96,
+					"left": 24,
+					"width": 158,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "Select Import Date -->"
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 57,
+					"left": 213,
+					"width": 81,
+					"height": 14,
+					"dataSource": "PM_DeleteRun_l",
+					"text": "Delete Run",
+					"class": "Default",
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text4",
+					"Line5"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"Picture1",
+					"bValidate",
+					"bCancel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

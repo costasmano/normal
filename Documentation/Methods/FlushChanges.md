@@ -1,0 +1,1 @@
+Dec-2002 : FLush buffers only if not in transaction.

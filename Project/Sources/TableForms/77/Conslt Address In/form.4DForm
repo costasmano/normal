@@ -1,0 +1,966 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 770,
+	"windowMinHeight": 550,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"menuBar": "BlankMenu",
+	"markerHeader": 18,
+	"markerBody": 240,
+	"markerBreak": 264,
+	"markerFooter": 288,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 415,
+					"left": 8,
+					"width": 693,
+					"height": 108,
+					"borderRadius": 5
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 91,
+					"left": 8,
+					"width": 693,
+					"height": 318,
+					"borderRadius": 5
+				},
+				"Text10": {
+					"type": "text",
+					"top": 2,
+					"left": 3,
+					"width": 700,
+					"height": 40,
+					"fill": "#0000FF",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 28,
+					"fontWeight": "bold",
+					"text": "Consultant Address"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 212,
+					"left": 350,
+					"width": 96,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "First Name"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 239,
+					"left": 350,
+					"width": 96,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Middle Name"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 157,
+					"left": 464,
+					"width": 180,
+					"height": 19,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Contact Info"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 486,
+					"left": 18,
+					"width": 96,
+					"height": 19,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Phone No. 3"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 430,
+					"left": 322,
+					"width": 86,
+					"height": 20,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Fax No. 1"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 458,
+					"left": 322,
+					"width": 86,
+					"height": 19,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Fax No. 2"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 322,
+					"left": 350,
+					"width": 122,
+					"height": 20,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Contact Function"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 458,
+					"left": 18,
+					"width": 96,
+					"height": 19,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Phone No. 2"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 430,
+					"left": 18,
+					"width": 96,
+					"height": 20,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Phone No. 1"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 266,
+					"left": 350,
+					"width": 96,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Last Name"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 294,
+					"left": 350,
+					"width": 96,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Suffix"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 188,
+					"left": 18,
+					"width": 67,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Street 1"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 215,
+					"left": 18,
+					"width": 67,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Street 2"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 242,
+					"left": 18,
+					"width": 67,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "City"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 270,
+					"left": 18,
+					"width": 67,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "State"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 297,
+					"left": 18,
+					"width": 67,
+					"height": 20,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Zip"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 486,
+					"left": 322,
+					"width": 86,
+					"height": 19,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"text": "Email"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 157,
+					"left": 110,
+					"width": 180,
+					"height": 19,
+					"fontFamily": "Geneva",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Address Info"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 188,
+					"left": 88,
+					"width": 228,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]Street1:8",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 215,
+					"left": 88,
+					"width": 228,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]Street2:9",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 242,
+					"left": 88,
+					"width": 228,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]City:10",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 270,
+					"left": 88,
+					"width": 228,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]State:11",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 297,
+					"left": 88,
+					"width": 228,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]Zip:12",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 188,
+					"left": 455,
+					"width": 200,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]ContactPrefix:6",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Prefixes"
+					},
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 212,
+					"left": 455,
+					"width": 200,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]ContactFName:3",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 239,
+					"left": 455,
+					"width": 200,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]ContactMName:5",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 266,
+					"left": 455,
+					"width": 200,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]ContactLName:4",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 294,
+					"left": 455,
+					"width": 200,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]ContactTitle:7",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Suffixes"
+					},
+					"method": "ObjectMethods/Field13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "checkbox",
+					"top": 322,
+					"left": 475,
+					"width": 200,
+					"height": 18,
+					"dataSource": "[Conslt Address:77]Func_Rating:19",
+					"text": "Rating",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field14.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "checkbox",
+					"top": 350,
+					"left": 475,
+					"width": 200,
+					"height": 18,
+					"dataSource": "[Conslt Address:77]Func_Insp:20",
+					"text": "Inspection",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "checkbox",
+					"top": 380,
+					"left": 475,
+					"width": 200,
+					"height": 18,
+					"dataSource": "[Conslt Address:77]Func_Design:21",
+					"text": "Design",
+					"stroke": "#000000",
+					"class": "DataEntry12Plain",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 430,
+					"left": 138,
+					"width": 144,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]PhoneNo1:13",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 458,
+					"left": 138,
+					"width": 144,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]PhoneNo2:14",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 486,
+					"left": 138,
+					"width": 144,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]PhoneNo3:15",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field18": {
+					"type": "input",
+					"top": 430,
+					"left": 418,
+					"width": 144,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]FaxNo1:16",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 458,
+					"left": 418,
+					"width": 144,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]FaxNo2:17",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 486,
+					"left": 418,
+					"width": 264,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]Email:18",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"fill": "#AAAAAA",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 188,
+					"left": 350,
+					"width": 96,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Prefix"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 53,
+					"left": 251,
+					"width": 220,
+					"height": 37,
+					"stroke": "#6500FF",
+					"strokeWidth": 4,
+					"strokeDashArray": "1 1",
+					"borderRadius": 5
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 247,
+					"width": 221,
+					"height": 37,
+					"stroke": "#D700FF",
+					"strokeWidth": 4,
+					"borderRadius": 5
+				},
+				"btnPrint": {
+					"type": "button",
+					"top": 44,
+					"left": 486,
+					"width": 42,
+					"height": 42,
+					"dataSource": "btnPrint",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/MassDOTPrint.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btnPrint.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 58,
+					"left": 256,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ1",
+					"action": "firstRecord",
+					"shortcutKey": "[Home]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 FirstRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 58,
+					"left": 279,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ2",
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 PreviousRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 58,
+					"left": 302,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ3",
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 NextRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 58,
+					"left": 325,
+					"width": 23,
+					"height": 23,
+					"dataSource": "ZZ4",
+					"action": "lastRecord",
+					"shortcutKey": "[End]",
+					"shortcutAccel": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 LastRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 58,
+					"left": 371,
+					"width": 5,
+					"height": 5,
+					"dataSource": "ZZ6",
+					"action": "previousPage",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 58,
+					"left": 394,
+					"width": 5,
+					"height": 5,
+					"dataSource": "ZZ7",
+					"action": "nextPage",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE btnSave": {
+					"type": "button",
+					"top": 58,
+					"left": 417,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnSave",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 SaveRecord 4state.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnSave.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnCancel": {
+					"type": "button",
+					"top": 58,
+					"left": 440,
+					"width": 22,
+					"height": 23,
+					"dataSource": "ZZ9",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 Cancel 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"DE btnDelete": {
+					"type": "button",
+					"top": 58,
+					"left": 348,
+					"width": 23,
+					"height": 23,
+					"dataSource": "btnDelete",
+					"action": "deleteRecord",
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/MADOTIcons/BMS 20 DeleteRecord 4states.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/DE btnDelete.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"FieldvCompanyName": {
+					"type": "input",
+					"top": 102,
+					"left": 190,
+					"width": 350,
+					"height": 17,
+					"dataSource": "vCompanyName",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/FieldvCompanyName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ConsNames_HL": {
+					"type": "dropdown",
+					"top": 102,
+					"left": 548,
+					"width": 147,
+					"height": 21,
+					"dataSource": "ConsNames_HL",
+					"dataSourceTypeHint": "integer",
+					"class": "Label10Plain",
+					"method": "ObjectMethods/ConsNames_HL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 102,
+					"left": 19,
+					"width": 148,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]ConsultantNameID_l:22",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field20.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"DATABTN1": {
+					"type": "button",
+					"top": 131,
+					"left": 547,
+					"width": 128,
+					"height": 20,
+					"dataSource": "Button1",
+					"text": "Edit Company Name",
+					"class": "Default",
+					"method": "ObjectMethods/DATABTN1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field21": {
+					"type": "input",
+					"top": 132,
+					"left": 190,
+					"width": 350,
+					"height": 17,
+					"dataSource": "[Conslt Address:77]ConsltName:2",
+					"stroke": "#001EFF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field21.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 132,
+					"left": 18,
+					"width": 163,
+					"height": 19,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Mailing Company Name"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

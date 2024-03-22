@@ -1,0 +1,1 @@
+10-nov-2000 : Form modified to fix problems printing on Macs and PCs with parts of the form being outside print margins26-jan-01 : Changed Brkey to Item 8.May-2003 : Moved Break down one point to avoid printing phantom line.2004-03-16 : Applied style sheet.2004-05-02 : Changed fill pattern of label texts to blank; made fields and variables transparent.

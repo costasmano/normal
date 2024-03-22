@@ -1,0 +1,1 @@
+25-Jan-01 : modified to use Item 8 instead of BrKey, added (>) parameter to the PAGE BREAK command so that the whole printing is in one job.  5-feb-01 : modified to use progress bar; allow user to select where the output files will be placed.

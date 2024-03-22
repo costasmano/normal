@@ -1,0 +1,188 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 5,
+	"bottomMargin": 10,
+	"markerHeader": 27,
+	"markerBody": 51,
+	"markerBreak": 56,
+	"markerFooter": 56,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onHeader",
+		"onDisplayDetail",
+		"onDoubleClick",
+		"onDataChange",
+		"onDragOver",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "791pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 489,
+					"height": 55
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 489
+				},
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 54,
+					"height": 17,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "Type"
+				},
+				"ImgType": {
+					"type": "input",
+					"top": 30,
+					"left": 2,
+					"width": 54,
+					"height": 17,
+					"dataSource": "vImgType",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 57,
+					"height": 55
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 61,
+					"width": 323,
+					"height": 17,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "Description"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 30,
+					"left": 61,
+					"width": 339,
+					"height": 17,
+					"dataSource": "vImageDescr",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 3,
+					"left": 406,
+					"width": 80,
+					"height": 17,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "Sequence"
+				},
+				"DE Seq Num": {
+					"type": "input",
+					"top": 30,
+					"left": 406,
+					"width": 80,
+					"height": 17,
+					"dataSource": "[Standard Photos:36]SeqNum:6",
+					"stroke": "#0000FF",
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"min": 1,
+					"method": "ObjectMethods/DE Seq Num.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 403,
+					"height": 55
+				}
+			},
+			"entryOrder": [
+				"ImgType",
+				"Field2",
+				"DE Seq Num"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

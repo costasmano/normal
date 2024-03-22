@@ -1,0 +1,1 @@
+Created 6/26/2003:  creates a random set of bridges from the Search Bridge dialog  23-Sep-2003 : Removed reference to BridgeKey. Use [Consl Rating]Bin instead of [BridgeMHDNBIS]Bin for search. Use built-in Replace String function instead of fRemoveChar; for vBDEPT remove "_" instead of " ".

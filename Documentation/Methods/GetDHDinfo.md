@@ -1,0 +1,1 @@
+2003-11-18 : Created for 4D Write templates.  2004-04-27 : Added vDistrictLocation (used in UW Bridge Inspection Letter to Town)

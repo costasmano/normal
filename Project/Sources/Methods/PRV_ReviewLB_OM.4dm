@@ -1,0 +1,103 @@
+//%attributes = {"invisible":true}
+// Method: PRV_ReviewLB_OM
+// Description
+// 
+// 
+// Parameters
+// $1 : $FormEvent_L
+// ----------------------------------------------------
+If (False:C215)
+	// User name (OS): Costas Manousakis
+	// User name (4D): Designer
+	// Date and time: 06/04/12, 15:54:39
+	// ----------------------------------------------------
+	// First Release
+	Mods_2012_06
+	// Modified by: Costas Manousakis-(Designer)-(9/25/13 15:02:54)
+	Mods_2013_09
+	//  `Copied to DEV
+	Mods_2017_07_bug  //Add InDoubleClick_B so that user can nor double click into a list box. This is a workaround to a 4D bug
+	//Modified by: Chuck Miller (7/14/17 11:50:35)
+End if 
+C_LONGINT:C283($FormEvent_L)
+C_TEXT:C284($LBName_txt)
+C_LONGINT:C283($1)
+$FormEvent_L:=$1
+C_TEXT:C284($2)
+$LBName_txt:=$2
+C_POINTER:C301($3; $Tbl_ptr)
+$Tbl_ptr:=$3
+C_TEXT:C284($4; $FormName_txt)
+$FormName_txt:=$4
+Case of 
+	: ($FormEvent_L=On Load:K2:1)
+		
+	: ($FormEvent_L=On Data Change:K2:15)
+		
+	: ($FormEvent_L=On Clicked:K2:4)
+		
+	: ($FormEvent_L=On Display Detail:K2:22)
+		
+		Case of 
+			: ($LBName_txt="INVOICES")
+				//Variable LB_Detail5_r total TLF
+				LB_INVOICES_Det05_r:=[Invoice_Maintenance:95]TotalLimFeeConstr:14+[Invoice_Maintenance:95]TotalLimFeeDes:8
+				LB_INVOICES_Det07_r:=[Invoice_Maintenance:95]TotalLimFeeConstr:14+[Invoice_Maintenance:95]TotalLimFeeDes:8+[Invoice_Maintenance:95]DirectExpenses:15
+		End case 
+		
+	: ($FormEvent_L=On Double Clicked:K2:5)
+		If (Not:C34(InDoubleClick_B))
+			InDoubleClick_B:=True:C214
+			
+			C_TEXT:C284($LBName_txt; $SetName_txt; PRV_NEWREVIEWTYPE_s; $LBSelection_txt)
+			C_LONGINT:C283($Dumm_L; $LBCol_L; $LBRow_L; $LbTableNum_L)
+			//ALERT("doubleClicked on "+$LBName_txt)
+			PRV_NEWREVIEWTYPE_s:=$LBName_txt
+			$SetName_txt:="PRV_"+$LBName_txt+"_HS"
+			$LBName_txt:="PRV_"+$LBName_txt+"_LB"
+			If (Records in set:C195($SetName_txt)>0)
+				LISTBOX GET TABLE SOURCE:C1014(*; $LBName_txt; $LbTableNum_L; $LBSelection_txt)
+				If ($LBSelection_txt#"")
+					USE NAMED SELECTION:C332($LBSelection_txt)
+				End if 
+				LISTBOX GET CELL POSITION:C971(*; $LBName_txt; $LBCol_L; $LBRow_L)
+				If ($LBRow_L>0)
+					GOTO SELECTED RECORD:C245($Tbl_ptr->; $LBRow_L)
+					FORM SET INPUT:C55($Tbl_ptr->; $FormName_txt)
+					
+					If (Read only state:C362([Contract_Assignment_Maintenance:101]))
+						READ ONLY:C145($Tbl_ptr->)
+						LOAD RECORD:C52($Tbl_ptr->)
+						DIALOG:C40($Tbl_ptr->; $FormName_txt)
+					Else 
+						C_LONGINT:C283($LoadRecResult_L)
+						$LoadRecResult_L:=ut_LoadRecordInteractiveV2($Tbl_ptr)
+						Case of 
+							: ($LoadRecResult_L=1)
+								MODIFY RECORD:C57($Tbl_ptr->)
+							: ($LoadRecResult_L=2)
+								LOAD RECORD:C52($Tbl_ptr->)
+								DIALOG:C40($Tbl_ptr->; $FormName_txt)
+						End case 
+					End if 
+					InDoubleClick_B:=False:C215
+					PRV_CTRLSelections(PRV_NEWREVIEWTYPE_s)
+					
+					Case of 
+						: ((PRV_NEWREVIEWTYPE_s="ADDENDUMS") | (PRV_NEWREVIEWTYPE_s="INVOICES"))
+							PRV_Variables("TOTALCOSTS")
+							PRV_Variables("TOTALHRS")
+						Else 
+							PRV_Variables("SUMM"+PRV_NEWREVIEWTYPE_s)
+					End case 
+					
+				End if 
+				
+			End if 
+			
+		Else 
+			//ALERT("Nothing")
+		End if 
+		
+End case 
+//End PRV_ReviewLB_OM

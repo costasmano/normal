@@ -1,0 +1,1 @@
+Oct-2001 : Made all Fields non-enterable. To avoid problems with updating the NBI records. Made date format forced to mm/dd/yyyy. 2003-03-16 : Applied 'DataEntry12Plain' style sheet to input fields.2004-04-13 : Applied form scaling - 120%.2004-04-15 : Decresed text box height.

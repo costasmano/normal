@@ -1,0 +1,13 @@
+<!--#4DEVAL xxx:="<!--"--><!--4DEVAL xxx--> INSP ID: <!--#4DTEXT [Inspections]InspID--> Date: <!--#4DTEXT [Inspections]Insp Date--> Type: <!--#4DTEXT [Inspections]Insp Type--> -->
+<!--#4DLOOP PON_SUMParentAndKEY_AL--><FHWAED>
+<STATE>25</STATE>
+<STRUCNUM><!--#4DTEXT FHWAITEM8_txt--></STRUCNUM>
+<EN><!--#4DTEXT PON_SUMEN_AL{PON_SUMParentAndKEY_AL}--></EN>
+<!--#4DIF (PON_SUMEPN_AL{PON_SUMParentAndKEY_AL} >0)--><EPN><!--#4DTEXT PON_SUMEPN_AL{PON_SUMParentAndKEY_AL}--></EPN>
+<!--#4DENDIF--><TOTALQTY><!--#4DTEXT PON_SUMTotQ_Ar{PON_SUMParentAndKEY_AL}--></TOTALQTY>
+<CS1><!--#4DTEXT PON_SUMCS1_Ar{PON_SUMParentAndKEY_AL}--></CS1>
+<CS2><!--#4DTEXT PON_SUMCS2_Ar{PON_SUMParentAndKEY_AL}--></CS2>
+<CS3><!--#4DTEXT PON_SUMCS3_Ar{PON_SUMParentAndKEY_AL}--></CS3>
+<CS4><!--#4DTEXT PON_SUMCS4_Ar{PON_SUMParentAndKEY_AL}--></CS4>
+</FHWAED>
+<!--#4DENDLOOP-->

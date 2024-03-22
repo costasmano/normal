@@ -1,0 +1,1 @@
+2004-03-04 : Created to confirm the dates on the letter/memo templates.2004-04-27 : Changed the platform to automatic. 

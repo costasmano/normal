@@ -1,0 +1,358 @@
+{
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerBody": 188,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 34,
+					"left": 5,
+					"width": 198,
+					"height": 321,
+					"fill": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "dropdown",
+					"top": 9,
+					"left": 35,
+					"width": 138,
+					"height": 20,
+					"dataSource": "<>asWindows",
+					"class": "DataEntry12APlain",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Bridge_Dist1": {
+					"type": "button",
+					"top": 77,
+					"left": 9,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bDist1",
+					"text": "District 1",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_Dist1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_ALL": {
+					"type": "button",
+					"top": 77,
+					"left": 109,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bAllBridges",
+					"text": "All Bridges",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_ALL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_Dist2": {
+					"type": "button",
+					"top": 102,
+					"left": 9,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bDist2",
+					"text": "District 2",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_Dist2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_MADOT": {
+					"type": "button",
+					"top": 102,
+					"left": 109,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bMHD",
+					"text": "MaDOT",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_MADOT.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_Dist3": {
+					"type": "button",
+					"top": 127,
+					"left": 9,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bDist3",
+					"text": "District 3",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_Dist3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_Dist4": {
+					"type": "button",
+					"top": 152,
+					"left": 9,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bDist4",
+					"text": "District 4",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_Dist4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_MBTA": {
+					"type": "button",
+					"top": 127,
+					"left": 109,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bMBTA",
+					"text": "MBTA",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_MBTA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_Dist5": {
+					"type": "button",
+					"top": 177,
+					"left": 9,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bDist5",
+					"text": "District 5",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_Dist5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_DCR": {
+					"type": "button",
+					"top": 152,
+					"left": 109,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bMDC",
+					"text": "DCR",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_DCR.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 202,
+					"left": 109,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bSaved",
+					"text": "Saved",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bridge_Other": {
+					"type": "button",
+					"top": 177,
+					"left": 109,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bOther",
+					"text": "Other Agc",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_Other.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Personnel": {
+					"type": "button",
+					"top": 245,
+					"left": 59,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bPersonnel",
+					"text": "Personnel",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Personnel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 36,
+					"left": 9,
+					"width": 186,
+					"height": 34,
+					"class": "DataEntry12Plain",
+					"textAlign": "center",
+					"text": "Bridges Listed By Current Inspection Responsibility"
+				},
+				"Bridge_Dist6": {
+					"type": "button",
+					"top": 202,
+					"left": 9,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bDist6",
+					"text": "District 6",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Bridge_Dist6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAncillary": {
+					"type": "button",
+					"top": 285,
+					"left": 29,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bAncillary",
+					"text": "Ancillary Structures",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bAncillary.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"bTunnelInfo": {
+					"type": "button",
+					"top": 325,
+					"left": 29,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bTunnelInfo",
+					"text": "Tunnel Information",
+					"class": "DataEntry12APlain",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bTunnelInfo.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 235,
+					"left": 5,
+					"width": 198
+				},
+				"Line1": {
+					"type": "line",
+					"top": 275,
+					"left": 5,
+					"width": 198
+				},
+				"Line2": {
+					"type": "line",
+					"top": 315,
+					"left": 5,
+					"width": 198
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+2004-04-16 : Assigns values to two new columns in ElementDict table. 

@@ -1,0 +1,1 @@
+2003-01 : Created to Verify a Culvert Inspection report before it is marked as complete.  2004-02-20 : Allow 'Minor' (R) LoadVibration w/out comments.

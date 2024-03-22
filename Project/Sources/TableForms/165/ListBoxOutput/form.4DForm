@@ -1,0 +1,826 @@
+{
+	"destination": "listScreen",
+	"windowMinWidth": 970,
+	"windowMinHeight": 200,
+	"rightMargin": 10,
+	"bottomMargin": 19,
+	"menuBar": "BlankMenu",
+	"markerBody": 400,
+	"markerBreak": 400,
+	"markerFooter": 400,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bCustomSearch": {
+					"type": "button",
+					"top": 8,
+					"left": 340,
+					"width": 60,
+					"height": 78,
+					"dataSource": "bCustomSearch",
+					"class": "Lucinda_10",
+					"focusable": false,
+					"text": "Custom\\Search",
+					"icon": "/RESOURCES/Images/library/XP Query.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "custom",
+					"method": "ObjectMethods/bCustomSearch.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"bAdd": {
+					"type": "button",
+					"top": 8,
+					"left": 10,
+					"width": 60,
+					"height": 63,
+					"dataSource": "bAdd",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Add Record"
+					},
+					"class": "Lucinda_10",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Add",
+					"icon": "/RESOURCES/Images/library/GLASS - Add Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowAll": {
+					"type": "button",
+					"top": 8,
+					"left": 142,
+					"width": 60,
+					"height": 63,
+					"dataSource": "bShowAll",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"class": "Lucinda_10",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Show all",
+					"icon": "/RESOURCES/Images/library/GLASS - Show All.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubset": {
+					"type": "button",
+					"top": 8,
+					"left": 208,
+					"width": 60,
+					"height": 77,
+					"dataSource": "bShowSubset",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show Subset"
+					},
+					"class": "Lucinda_10",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Show\\subset",
+					"icon": "/RESOURCES/Images/library/GLASS - Show Subset.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bShowSubset.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuery": {
+					"type": "button",
+					"top": 8,
+					"left": 274,
+					"width": 60,
+					"height": 63,
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"class": "Lucinda_10",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Query",
+					"icon": "/RESOURCES/Images/library/GLASS - Query.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBy": {
+					"type": "button",
+					"top": 8,
+					"left": 407,
+					"width": 60,
+					"height": 63,
+					"dataSource": "bOrderBy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"class": "Lucinda_10",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Order by",
+					"icon": "/RESOURCES/Images/library/GLASS - Order By.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDone": {
+					"type": "button",
+					"top": 8,
+					"left": 1080,
+					"width": 50,
+					"height": 63,
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "cancel",
+					"class": "Lucinda_10",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Finish",
+					"icon": "/RESOURCES/Images/library/GLASS - Done.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Categories_as": {
+					"type": "dropdown",
+					"top": 31,
+					"left": 676,
+					"width": 112,
+					"height": 20,
+					"dataSource": "LSS_Categories_as",
+					"focusable": false,
+					"class": "Label12Plain",
+					"method": "ObjectMethods/LSS_Categories_as.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_Districts_as": {
+					"type": "dropdown",
+					"top": 5,
+					"left": 676,
+					"width": 52,
+					"height": 20,
+					"dataSource": "LSS_Districts_as",
+					"focusable": false,
+					"class": "Label12Plain",
+					"method": "ObjectMethods/LSS_Districts_as.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 88,
+					"left": 10,
+					"width": 1125,
+					"sizingX": "grow",
+					"stroke": "#000099",
+					"strokeWidth": 2
+				},
+				"Text": {
+					"type": "text",
+					"top": 8,
+					"left": 603,
+					"width": 70,
+					"height": 14,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "District -->"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 34,
+					"left": 601,
+					"width": 72,
+					"height": 14,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Category -->"
+				},
+				"LSS_StructType_atxt": {
+					"type": "dropdown",
+					"top": 57,
+					"left": 676,
+					"width": 172,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "LSS_StructType_atxt",
+					"focusable": false,
+					"class": "Label12Plain",
+					"method": "ObjectMethods/LSS_StructType_atxt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LSS_StructType_Lbl": {
+					"type": "text",
+					"top": 60,
+					"left": 561,
+					"width": 112,
+					"height": 14,
+					"visibility": "hidden",
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Structure Type -->"
+				},
+				"Inventory_LB": {
+					"type": "listbox",
+					"top": 96,
+					"left": 10,
+					"width": 1125,
+					"height": 196,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "namedSelection",
+					"dataSource": "Inventory_LB",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"selectionName": "InventorySet",
+					"highlightSet": "InventorySet",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#DFFFFF",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/Inventory_LB.4dm",
+					"events": [
+						"onLoad",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[LSS_Inventory:165]LSS_StructureNumber_s:6",
+							"width": 170,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Structure Number",
+								"text": "Structure Number",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "[LSS_Inventory:165]LSS_Status_s:35",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"truncateMode": "none",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"rowStrokeSource": "LSS_StatusTextColor",
+							"rowFillSource": "LSS_StatusColor",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "status",
+								"text": "Status",
+								"dataSource": "Header8",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[LSS_Inventory:165]LSS_Town_s:4",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Town",
+								"text": "Town",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "[LSS_Inventory:165]LSS_YearBuilt_s:11",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "YrBuiltHdr",
+								"text": "YR Built",
+								"dataSource": "Header9",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[LSS_Inventory:165]LSS_Category_s:2",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Category",
+								"text": "Cat.",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "v_171_003_txt",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onHeaderClick"
+							],
+							"header": {
+								"name": "Structure Type",
+								"text": "Structure Type",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "[LSS_Inventory:165]LSS_ProjNoBuilt_L:37",
+							"dataSourceTypeHint": "integer",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "#######;;",
+							"truncateMode": "none",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "ProjNumBuiltHdr",
+								"text": "Proj # built",
+								"dataSource": "Header10",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[LSS_Inventory:165]LSS_District_L:3",
+							"dataSourceTypeHint": "integer",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "District",
+								"text": "Dist.",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "4",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "[LSS_Inventory:165]LSS_Owner_s:34",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Owner",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[LSS_Inventory:165]LSS_StructureLocation_txt:10",
+							"width": 318,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"class": "Label12Plain",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Structure Location",
+								"text": "Structure Location",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"class": "Label12Plain"
+							}
+						}
+					]
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 8,
+					"left": 76,
+					"width": 60,
+					"height": 64,
+					"visibility": "hidden",
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/library/GLASS - Delete Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 7,
+					"left": 1023,
+					"width": 50,
+					"height": 78,
+					"dataSource": "Button",
+					"class": "Lucinda_10",
+					"focusable": false,
+					"text": "Review\\Screen",
+					"icon": "/RESOURCES/Images/library/OSX Approve.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Tools": {
+					"type": "button",
+					"top": 13,
+					"left": 539,
+					"width": 38,
+					"height": 43,
+					"class": "Lucinda_10",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/library/OSX ToolSet.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Tools.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bReport": {
+					"type": "button",
+					"top": 8,
+					"left": 474,
+					"width": 60,
+					"height": 78,
+					"dataSource": "bReport",
+					"tooltip": "Quick Report editor; click on arrow for more options.",
+					"class": "Lucinda_10",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Quick\\reports",
+					"icon": "/RESOURCES/Images/library/GLASS - Report.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "custom",
+					"method": "ObjectMethods/bReport.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 8,
+					"left": 836,
+					"width": 60,
+					"height": 14,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Status -->"
+				},
+				"LSS_Status": {
+					"type": "dropdown",
+					"top": 5,
+					"left": 898,
+					"width": 100,
+					"height": 20,
+					"focusable": false,
+					"choiceList": [
+						"ALL",
+						"Active",
+						"Removed",
+						"Proposed"
+					],
+					"class": "Label12Plain",
+					"method": "ObjectMethods/LSS_Status.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 34,
+					"left": 856,
+					"width": 60,
+					"height": 14,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "ProjNo -->"
+				},
+				"LSS_ProjNumdropdwn": {
+					"type": "dropdown",
+					"top": 31,
+					"left": 918,
+					"width": 80,
+					"height": 20,
+					"dataSourceTypeHint": "arrayNumber",
+					"focusable": false,
+					"numberFormat": "#######;ALL;Any Project",
+					"class": "Label12Plain",
+					"method": "ObjectMethods/LSS_ProjNumdropdwn.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bAdd",
+					"bShowAll",
+					"bShowSubset",
+					"bQuery",
+					"bOrderBy",
+					"bDone",
+					"bDelete",
+					"bReport"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

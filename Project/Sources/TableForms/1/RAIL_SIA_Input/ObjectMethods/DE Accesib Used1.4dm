@@ -1,0 +1,1 @@
+G_Accesibil_Obj(Self:C308; ->[Bridge MHD NBIS:1]LiftBucket:30; 2; 1)  //part 2, ptr_changes{1}

@@ -1,0 +1,1 @@
+Mar-2001 : Modified form to make field BDEPT not Enterable ; Changed display format of BDEPT to #-##-### and adjusted width to fit.2003-03-16 : Applied 'DataEntry12Plain' style sheet to input fields.2004-04-13 : Applied form scaling - 120%.  

@@ -1,0 +1,393 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 569,
+	"markerBreak": 569,
+	"markerFooter": 569,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"top": 21,
+					"left": 6,
+					"width": 73,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "Times9",
+					"text": "CITY/TOWN"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 21,
+					"left": 642,
+					"width": 98,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "Times9",
+					"text": "INSPECTION DATE"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 3,
+					"left": 651,
+					"width": 31,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "Arial9",
+					"text": "PAGE"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 15,
+					"left": 726,
+					"width": 24
+				},
+				"Line6": {
+					"type": "line",
+					"top": 15,
+					"left": 680,
+					"width": 24
+				},
+				"Text7": {
+					"type": "text",
+					"top": 561,
+					"left": 4,
+					"width": 35,
+					"height": 6,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"class": "Arial5",
+					"text": "REM.(2)7-96"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 558,
+					"left": 4,
+					"width": 748,
+					"height": 2,
+					"strokeWidth": 2,
+					"startPoint": "bottomLeft"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 21,
+					"left": 4,
+					"width": 2,
+					"height": 539,
+					"strokeWidth": 2
+				},
+				"Line3": {
+					"type": "line",
+					"top": 21,
+					"left": 750,
+					"width": 2,
+					"height": 539,
+					"strokeWidth": 2
+				},
+				"Line4": {
+					"type": "line",
+					"top": 20,
+					"left": 4,
+					"width": 748,
+					"height": 2,
+					"strokeWidth": 2,
+					"startPoint": "bottomLeft"
+				},
+				"PageNumber": {
+					"type": "input",
+					"top": 2,
+					"left": 682,
+					"width": 21,
+					"height": 10,
+					"dataSource": "vPageNo",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TotalPages": {
+					"type": "input",
+					"top": 2,
+					"left": 726,
+					"width": 24,
+					"height": 10,
+					"dataSource": "vTotalPages",
+					"class": "Arial9",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Title1": {
+					"type": "input",
+					"top": 525,
+					"left": 224,
+					"width": 385,
+					"height": 28,
+					"dataSource": "[TIN_Insp_Images:186]ImageDescr:4",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PhotoNum 1": {
+					"type": "input",
+					"top": 525,
+					"left": 154,
+					"width": 62,
+					"height": 12,
+					"dataSource": "vPhotoNum1",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 3,
+					"left": 703,
+					"width": 23,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "Arial9",
+					"textAlign": "center",
+					"text": "OF"
+				},
+				"Line22": {
+					"type": "line",
+					"top": 49,
+					"left": 4,
+					"width": 748,
+					"height": 2,
+					"strokeWidth": 2
+				},
+				"Line23": {
+					"type": "line",
+					"top": 21,
+					"left": 636,
+					"height": 29
+				},
+				"Picture1": {
+					"type": "input",
+					"top": 73,
+					"left": 13,
+					"width": 717,
+					"height": 447,
+					"dataSource": "vPicture1",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Item8": {
+					"type": "input",
+					"top": 33,
+					"left": 302,
+					"width": 195,
+					"height": 12,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_i1_s:6",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###-###-###-###-###",
+					"events": [
+						"onHeader"
+					]
+				},
+				"Town name": {
+					"type": "input",
+					"top": 33,
+					"left": 8,
+					"width": 278,
+					"height": 12,
+					"dataSource": "[NTI_TunnelInfo:181]NTI_TownName_s:71",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Town name.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onPrintingDetail"
+					]
+				},
+				"Insp Date": {
+					"type": "input",
+					"top": 33,
+					"left": 642,
+					"width": 99,
+					"height": 14,
+					"dataSource": "[TIN_Inspections:184]InspDate:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "Arial11Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "abbreviated",
+					"events": [
+						"onHeader"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 21,
+					"left": 302,
+					"width": 88,
+					"height": 10,
+					"stroke": "#000000",
+					"class": "Times9",
+					"text": "I1.-TUNNEL NO."
+				},
+				"Line7": {
+					"type": "line",
+					"top": 21,
+					"left": 294,
+					"height": 29
+				},
+				"Page Title": {
+					"type": "input",
+					"top": 54,
+					"left": 115,
+					"width": 531,
+					"height": 15,
+					"dataSource": "vPage2Title",
+					"stroke": "#FFFFFF",
+					"class": "Times14Bold",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#000000",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

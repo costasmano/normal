@@ -1,0 +1,1 @@
+3/17/2001 ASL : Changed controls to automatic look and feel5/24/2001 : Moved page buttons and OK to page 0. Fixed and re-alligned boxes to center in screen.1/2002 : Added Tab control.2004-04-06 : Increased the width of the labels.  Re-named the tab control to 'HelpTabControl1'.2004-04-15 : Increased the label size in page 2.2004-04-21 : Deleted prev/next page buttons.
