@@ -1,5 +1,4 @@
 //%attributes = {"invisible":true}
-
 //comparison ORDA vs SQL
 //  SQL WINS!
 C_LONGINT:C283($s; $e; $e1; $e2)

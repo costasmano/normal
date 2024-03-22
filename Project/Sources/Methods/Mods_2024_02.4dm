@@ -13,4 +13,3 @@
 //  `before running a Quick report check to see if there are any records in the current selection
 //  `of the quick report table.
 //  `clean up code to define the offscreen qr area once.
-
