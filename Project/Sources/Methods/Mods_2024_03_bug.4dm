@@ -29,4 +29,22 @@
 // [LSS_Inventory];"Input".LSS_Duplicate_L - copied from v18Bug 2024-03-22
 //  `disabled all calls related to activity log
 
+//**********`Modified by: Costas Manousakis-(Designer)-(2024-03-21)
+// M_WRT_CsltInsp_ComplexNTP - copied from v18Bug 2024-03-26
+//  `moved getting the Get selected menu item parameter before the call to CSLTINSP_ProceedWithLetter
+//  `confirm dialogs would 'loose' the parameter
+// M_WRT_CsltInsp_ComplexReqFee - copied from v18Bug 2024-03-26
+//  `moved getting the Get selected menu item parameter before the call to CSLTINSP_ProceedWithLetter
+//  `confirm dialogs would 'loose' the parameter
+
+//**********`Modified by: Costas Manousakis-(Designer)-(2024-03-26)
+// PRINT_SIA - copied from v18Bug 2024-03-26
+//  `added Open/Close printing job and spooler doc name to prevent crash when printing to Adobe PDF
+// with MS print to pdf the save as dialog shows at the Open print job command and user can cancel here
+// other pdf printers show the save as dialog at the Close print job command. 
+
+// M_PrintRecords - copied from v18Bug 2024-03-26
+//  `added Open/Close printing job and spooler doc name to prevent crash when printing to Adobe PDF
+
+
 //End Mods_2024_03_bug

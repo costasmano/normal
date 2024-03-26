@@ -21,6 +21,10 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(10/14/15 12:26:19)
 	Mods_2015_10_bug
 	//  `use method SIA_PrintForms
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-26 13:17:01)
+	Mods_2024_03_bug
+	//  `added Open/Close printing job and spooler doc name to prevent crash when printing to Adobe PDF
+	//  `
 End if 
 
 C_LONGINT:C283($i)  //Command Replaced was o_C_INTEGER
@@ -53,25 +57,42 @@ If ($Recs>0)
 			PRINT SETTINGS:C106
 		End if 
 		If (OK=1)
-			FIRST RECORD:C50([Bridge MHD NBIS:1])
-			For ($i; 1; $Recs)
+			
+			//start of Mods_2024_03_bug
+			SET PRINT OPTION:C733(Spooler document name option:K47:10; "SIA print for "+Get window title:C450)
+			OPEN PRINTING JOB:C995
+			
+			// with MS print to pdf the save as dialog shows at the Open print job command and user can cancel here
+			// other pdf printers show the save as dialog at the Close print job command. 
+			
+			If (OK=1)
+				//end of Mods_2024_03_bug
 				
-				Case of 
-					: ([Bridge MHD NBIS:1]Item8 BridgeCat:207="@RO")
-						READ ONLY:C145([RAILBridgeInfo:37])
-						QUERY:C277([RAILBridgeInfo:37]; [RAILBridgeInfo:37]BIN:1=[Bridge MHD NBIS:1]BIN:3)
-						Print form:C5([Bridge MHD NBIS:1]; "RailTransitSIA")
-					: (([Bridge MHD NBIS:1]Item8 BridgeCat:207="TNL") | ([Bridge MHD NBIS:1]Item8 BridgeCat:207="BTS"))
-						READ ONLY:C145([TunnelInfo:151])
-						QUERY:C277([TunnelInfo:151]; [TunnelInfo:151]BIN:1=[Bridge MHD NBIS:1]BIN:3)
-						Print form:C5([Bridge MHD NBIS:1]; "TunnelSIA")
-					Else 
-						SIA_PrintForms(CBSIANormal; CBSIAInsp; CBSIAMA)
-				End case 
+				FIRST RECORD:C50([Bridge MHD NBIS:1])
+				For ($i; 1; $Recs)
+					
+					Case of 
+						: ([Bridge MHD NBIS:1]Item8 BridgeCat:207="@RO")
+							READ ONLY:C145([RAILBridgeInfo:37])
+							QUERY:C277([RAILBridgeInfo:37]; [RAILBridgeInfo:37]BIN:1=[Bridge MHD NBIS:1]BIN:3)
+							Print form:C5([Bridge MHD NBIS:1]; "RailTransitSIA")
+						: (([Bridge MHD NBIS:1]Item8 BridgeCat:207="TNL") | ([Bridge MHD NBIS:1]Item8 BridgeCat:207="BTS"))
+							READ ONLY:C145([TunnelInfo:151])
+							QUERY:C277([TunnelInfo:151]; [TunnelInfo:151]BIN:1=[Bridge MHD NBIS:1]BIN:3)
+							Print form:C5([Bridge MHD NBIS:1]; "TunnelSIA")
+						Else 
+							SIA_PrintForms(CBSIANormal; CBSIAInsp; CBSIAMA)
+					End case 
+					
+					NEXT RECORD:C51([Bridge MHD NBIS:1])
+				End for 
 				
-				NEXT RECORD:C51([Bridge MHD NBIS:1])
-			End for 
-			PAGE BREAK:C6
+				//start of Mods_2024_03_bug
+			End if 
+			
+			CLOSE PRINTING JOB:C996
+			//PAGE BREAK
+			//end of Mods_2024_03_bug
 			
 		End if   //if OK from print settings      
 	End if   //if OK from Dialog

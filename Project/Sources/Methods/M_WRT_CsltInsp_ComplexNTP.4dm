@@ -18,6 +18,10 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(2022-04-20 18:01:01)
 	Mods_2022_04
 	//  `make [Templates] Read only
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-21 18:59:16)
+	Mods_2024_03_bug
+	//  `moved getting the Get selected menu item parameter before the call to CSLTINSP_ProceedWithLetter
+	//  `confirm dialogs would 'loose' the parameter
 	
 End if 
 C_TEXT:C284(vPlural)  // Command Replaced was o_C_STRING length was 1
@@ -34,6 +38,11 @@ C_LONGINT:C283($Recs)
 C_BOOLEAN:C305($bCreateLetter)
 C_TEXT:C284(vVerbalAuthSentence)  // Command Replaced was o_C_STRING length was 100
 
+//start of Mods_2024_03_bug
+C_TEXT:C284($template)
+$template:=Get selected menu item parameter:C1005
+//start of Mods_2024_03_bug
+
 C_OBJECT:C1216($results_o)
 $results_o:=CSLTINSP_ProceedWithLetter
 
@@ -41,9 +50,6 @@ $Recs:=OB Get:C1224($results_o; "records"; Is longint:K8:6)
 $bCreateLetter:=OB Get:C1224($results_o; "createLtr"; Is boolean:K8:9)
 
 If ($bCreateLetter=True:C214)
-	C_TEXT:C284($template)
-	
-	$template:=Get selected menu item parameter:C1005
 	
 	COPY NAMED SELECTION:C331([Cons Inspection:64]; "PrePrintBrgList")
 	//USE SET("UserSet") 

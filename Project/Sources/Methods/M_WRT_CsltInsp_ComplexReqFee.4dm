@@ -21,6 +21,11 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(2022-04-20 17:57:24)
 	Mods_2022_04
 	//  `made Templates table Readonly
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-21 18:59:16)
+	Mods_2024_03_bug
+	//  `moved getting the Get selected menu item parameter before the call to CSLTINSP_ProceedWithLetter
+	//  `confirm dialogs would 'loose' the parameter
+	
 End if 
 
 C_TEXT:C284(vPlural)  // Command Replaced was o_C_STRING length was 1
@@ -36,6 +41,11 @@ C_LONGINT:C283(vAssignNo)  //Command Replaced was o_C_INTEGER
 C_LONGINT:C283($Recs)
 C_BOOLEAN:C305($bCreateLetter)
 
+//start of Mods_2024_03_bug
+C_TEXT:C284($template)
+$template:=Get selected menu item parameter:C1005
+//start of Mods_2024_03_bug
+
 C_OBJECT:C1216($results_o)
 $results_o:=CSLTINSP_ProceedWithLetter
 
@@ -46,9 +56,6 @@ If ($bCreateLetter=True:C214)
 	
 	COPY NAMED SELECTION:C331([Cons Inspection:64]; "PrePrintBrgList")
 	//USE SET("UserSet")
-	C_TEXT:C284($template)
-	
-	$template:=Get selected menu item parameter:C1005
 	
 	//change to Write Pro template naming 
 	Case of 

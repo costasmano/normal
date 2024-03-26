@@ -30,33 +30,52 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(10/2/15 16:05:19)
 	Mods_2015_10_bug
 	//  `use method SIA_PrintForms
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-26 14:41:42)
+	Mods_2024_03_bug
+	//  `added Open/Close printing job and spooler doc name to prevent crash when printing to Adobe PDF
+	// with MS print to pdf the save as dialog shows at the Open print job command and user can cancel here
+	// other pdf printers show the save as dialog at the Close print job command. 
 End if 
+
+C_TEXT:C284($spoolerdocname_txt)
+$spoolerdocname_txt:=[Bridge MHD NBIS:1]BDEPT:1+"-"+[Bridge MHD NBIS:1]BIN:3+"-SIA"
+G_PrintOptions
+SET PRINT OPTION:C733(Spooler document name option:K47:10; $spoolerdocname_txt)
 
 Case of 
 	: ([Bridge MHD NBIS:1]Item8 BridgeCat:207="@RO")
-		G_PrintOptions
 		//PAGE SETUP([Bridge MHD NBIS];"SI & A (Normal)")
 		If (<>ShowPrint)
 			PRINT SETTINGS:C106
 		End if 
 		If (OK=1)
-			//READ ONLY([RAILBridgeInfo])
-			//QUERY([RAILBridgeInfo];[RAILBridgeInfo]BIN=[Bridge MHD NBIS]BIN)
-			Print form:C5([Bridge MHD NBIS:1]; "RailTransitSIA")
-			PAGE BREAK:C6
+			OPEN PRINTING JOB:C995  // change Mods_2024_03_bug
+			
+			If (OK=1)  // change Mods_2024_03_bug
+				//READ ONLY([RAILBridgeInfo])
+				//QUERY([RAILBridgeInfo];[RAILBridgeInfo]BIN=[Bridge MHD NBIS]BIN)
+				Print form:C5([Bridge MHD NBIS:1]; "RailTransitSIA")
+				
+			End if   // change Mods_2024_03_bug
+			CLOSE PRINTING JOB:C996  // change Mods_2024_03_bug
+			
 		End if 
 		
 	: ([Bridge MHD NBIS:1]Item8 BridgeCat:207="TNL") | ([Bridge MHD NBIS:1]Item8 BridgeCat:207="BTS")
-		G_PrintOptions
+		
 		//PAGE SETUP([Bridge MHD NBIS];"SI & A (Normal)")
 		If (<>ShowPrint)
 			PRINT SETTINGS:C106
 		End if 
 		If (OK=1)
+			OPEN PRINTING JOB:C995  // change Mods_2024_03_bug
 			//READ ONLY([TunnelInfo])
 			//QUERY([TunnelInfo];[TunnelInfo]BIN=[Bridge MHD NBIS]BIN)
-			Print form:C5([Bridge MHD NBIS:1]; "TunnelSIA")
-			PAGE BREAK:C6
+			If (OK=1)  // change Mods_2024_03_bug
+				Print form:C5([Bridge MHD NBIS:1]; "TunnelSIA")
+				
+			End if 
+			CLOSE PRINTING JOB:C996  // change Mods_2024_03_bug
 		End if 
 		
 	Else 
@@ -65,15 +84,20 @@ Case of
 		CLOSE WINDOW:C154
 		
 		If (Ok=1)
-			G_PrintOptions
 			//PAGE SETUP([Bridge MHD NBIS];"SI & A (Normal)")
 			If (<>ShowPrint)
 				PRINT SETTINGS:C106
 			End if 
 			If (Ok=1)  //Nov-2002 added check to see if canceled from Print Settings
-				SIA_PrintForms(CBSIANormal; CBSIAInsp; CBSIAMA)
-				//end of change
-				PAGE BREAK:C6
+				
+				OPEN PRINTING JOB:C995  // change Mods_2024_03_bug
+				If (ok=1)  // change Mods_2024_03_bug
+					SIA_PrintForms(CBSIANormal; CBSIAInsp; CBSIAMA)
+					//end of change Mods_2015_10_bug
+					
+				End if 
+				
+				CLOSE PRINTING JOB:C996  // change Mods_2024_03_bug
 			End if 
 		End if 
 End case 
