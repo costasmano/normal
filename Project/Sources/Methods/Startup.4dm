@@ -84,7 +84,11 @@ $ScrW:=Screen width:C187
 GET WINDOW RECT:C443($Wleft; $Wtop; $WRight; $Wbot)
 C_PICTURE:C286($Splash_pic)
 //GET PICTURE FROM LIBRARY("BMS Splash Image"; $Splash_pic)
-READ PICTURE FILE:C678("\\Resources\\Images\\library\\BMS Splash Image.png"; $Splash_pic)
+//READ PICTURE FILE("\\Resources\\Images\\library\\BMS Splash Image.png"; $Splash_pic)
+// change 2024_03_26  use platform agnostic code to get the splash
+READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+\
+"Images"+Folder separator:K24:12+\
+"library"+Folder separator:K24:12+"BMS Splash Image.png"; $Splash_pic)
 PICTURE PROPERTIES:C457($Splash_pic; $WWidt; $WHt)
 $Splash_pic:=$Splash_pic*0
 $Wleft:=($ScrW-$WWidt)/2
