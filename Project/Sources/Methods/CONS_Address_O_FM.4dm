@@ -23,6 +23,9 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(2021-10-01T00:00:00 14:46:17)
 	Mods_2021_10
 	//  `unload current record on load - remove setting of header vars
+	// Modified by: Costas Manousakis-(Designer)-(2024-04-30 16:50:17)
+	Mods_2024_04
+	//  `fixed wrong variable for the add button
 End if 
 C_TEXT:C284(vAddress; vCityStateZip; vContactFunction)  // Command Replaced was o_C_STRING length was 100
 C_TEXT:C284(vContact)  // Command Replaced was o_C_STRING length was 150
@@ -30,11 +33,12 @@ C_TEXT:C284(vContact)  // Command Replaced was o_C_STRING length was 150
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		If (Read only state:C362([Conslt Address:77]))
-			OBJECT SET ENABLED:C1123(bzAdd; False:C215)
+			OBJECT SET ENABLED:C1123(bzAddLay; False:C215)
 			
 		Else 
-			OBJECT SET ENABLED:C1123(bzAdd; True:C214)
+			OBJECT SET ENABLED:C1123(bzAddLay; True:C214)
 		End if 
+		
 		UNLOAD RECORD:C212([Conslt Address:77])
 		
 	: (Form event code:C388=On Display Detail:K2:22)

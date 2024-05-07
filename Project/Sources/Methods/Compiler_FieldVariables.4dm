@@ -28,7 +28,7 @@
 // Modified by: Charles Miller (5/6/10)
 If (False:C215)
 	//Modified by: Charles Miller (8/11/10 11:06:44) 
-	// Updated by clone_NewCreateSQLVariables on 9/19/23 - 19:01:00
+	// Updated by clone_NewCreateSQLVariables on 5/6/24 - 16:56:47
 End if 
 // 
 If (Count parameters:C259=0)
@@ -3550,6 +3550,8 @@ Else
 			ARRAY DATE:C224(v_83_017_ad; 0)  //NTPdate_written
 			C_DATE:C307(v_83_018_d)  //NTPdate_verbal
 			ARRAY DATE:C224(v_83_018_ad; 0)  //NTPdate_verbal
+			C_DATE:C307(v_83_025_d)  //ReqFeeProposalRcd
+			ARRAY DATE:C224(v_83_025_ad; 0)  //ReqFeeProposalRcd
 			C_BOOLEAN:C305(v_83_021_b)  //SpecialAssignment
 			ARRAY BOOLEAN:C223(v_83_021_ab; 0)  //SpecialAssignment
 		: ($1=84)  //Contract Invoice

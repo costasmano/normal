@@ -24,6 +24,9 @@ If (False:C215)
 	// Modified by: costasmanousakis-(Designer)-(4/6/11 11:07:20)
 	Mods_2011_04
 	//  `do on load for the ConsNames_HL hlist menu
+	// Modified by: Costas Manousakis-(Designer)-(2024-04-30 16:52:17)
+	Mods_2024_04
+	//  `run the code for the HL menu for all users. disable HL menu when in RO mode
 End if 
 
 C_TEXT:C284(vCompanyName)  // Command Replaced was o_C_STRING length was 100
@@ -32,7 +35,8 @@ Case of
 	: (Form event code:C388=On Load:K2:1)
 		utl_SetSpellandContextMenu
 		If ((Read only state:C362([Conslt Address:77])) & Not:C34(Is new record:C668([Conslt Address:77])))
-			OBJECT SET RGB COLORS:C628(*; "Field@"; Col_paletteToRGB(Abs:C99(<>Color_Not_Editable)%256); Col_paletteToRGB(Abs:C99(<>Color_Not_Editable)\256))  // **Replaced o OBJECT SET COLOR(*; "Field@"; <>Color_Not_Editable)
+			_O_OBJECT SET COLOR:C271(*; "Field@"; <>Color_Not_Editable)
+			OBJECT SET ENABLED:C1123(*; "ConsNames_HL"; False:C215)
 		Else 
 			InitChangeStack(1)
 			C_LONGINT:C283(ConsltNameID_L)
@@ -102,22 +106,22 @@ Case of
 			vCompanyName:=[Conslt_Name:127]ConsultantName_s:2
 		End if 
 		C_LONGINT:C283(ConsNames_HL)
-		If (Current user:C182="Designer")
-			OBJECT SET VISIBLE:C603(ConsNames_HL; True:C214)
-			ALL RECORDS:C47([Conslt_Name:127])
-			ARRAY TEXT:C222(ar_CName_atxt; 0)
-			ARRAY LONGINT:C221(a_CnameID_aL; 0)
-			SELECTION TO ARRAY:C260([Conslt_Name:127]ConsultantName_s:2; ar_CName_atxt; [Conslt_Name:127]ConsultantNameID_l:1; a_CnameID_aL)
-			SORT ARRAY:C229(ar_CName_atxt; a_CnameID_aL)
-			
-			INSERT IN ARRAY:C227(ar_CName_atxt; 0; 1)
-			INSERT IN ARRAY:C227(a_CnameID_aL; 0; 1)
-			ar_CName_atxt{1}:="  Clear ID"
-			a_CnameID_aL{1}:=0
-			ConsNames_HL:=ut_ArrayToHL(->ar_CName_atxt)
-		Else 
-			OBJECT SET VISIBLE:C603(ConsNames_HL; False:C215)
-		End if 
+		OBJECT SET VISIBLE:C603(ConsNames_HL; True:C214)
+		ALL RECORDS:C47([Conslt_Name:127])
+		ARRAY TEXT:C222(ar_CName_atxt; 0)
+		ARRAY LONGINT:C221(a_CnameID_aL; 0)
+		SELECTION TO ARRAY:C260([Conslt_Name:127]ConsultantName_s:2; ar_CName_atxt; [Conslt_Name:127]ConsultantNameID_l:1; a_CnameID_aL)
+		SORT ARRAY:C229(ar_CName_atxt; a_CnameID_aL)
+		
+		INSERT IN ARRAY:C227(ar_CName_atxt; 0; 1)
+		INSERT IN ARRAY:C227(a_CnameID_aL; 0; 1)
+		ar_CName_atxt{1}:="  Clear ID"
+		a_CnameID_aL{1}:=0
+		ConsNames_HL:=ut_ArrayToHL(->ar_CName_atxt)
+		//If (Current user="Designer")
+		//Else 
+		//OBJECT SET VISIBLE(ConsNames_HL;False)
+		//End if 
 		
 	: (Form event code:C388=On Validate:K2:3)
 		FlushGrpChgs(1; ->[Conslt Address:77]ConsltAddressID:1; ->[Conslt Address:77]ConsltAddressID:1; ->[Conslt Address:77]ConsltAddressID:1; 1)

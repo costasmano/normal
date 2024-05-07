@@ -1,6 +1,10 @@
 If (False:C215)
 	// Modified by: costasmanousakis-(Designer)-(10/7/08 12:58:03)
 	Mods_2008_CM_5404  // ("ACCESS")
+	// Modified by: manousakisc-(Designer)-(4/25/2024 18:40:14)
+	Mods_2024_04
+	//  `added label and field [Contract Assignments]ReqFeeProposalRcd; moved objects to fit.
+	//  `renamed the four date field objects to @_date
 End if 
 
 Case of 
@@ -21,13 +25,16 @@ Case of
 				: ([Contract Assignments:83]AcutalOrEstimate:20="Actual")
 					rdoActual:=1
 			End case 
+			
 		End if 
 		C_BOOLEAN:C305(InspRtgContrAccess_b)
+		
 		If (InspRtgContrAccess_b)
 			OBJECT SET ENABLED:C1123(*; "DE@"; False:C215)  // Command Replaced was o_DISABLE BUTTON 
 			OBJECT SET ENTERABLE:C238(*; "@"; False:C215)
 			OBJECT SET ENABLED:C1123(*; "rdo@"; False:C215)  // Command Replaced was o_DISABLE BUTTON 
 			OBJECT SET ENABLED:C1123(btnRetrieveCost; False:C215)  // Command Replaced was o_DISABLE BUTTON 
+			
 		End if 
 		
 	: (Form event code:C388=On Validate:K2:3)

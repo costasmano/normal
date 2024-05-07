@@ -34,9 +34,14 @@ If (False:C215)
 	//  `removed accept action from save button
 	//  `added dropdowns for contract no and assignment. 
 	//  `made fields [Cons Inspection]ConContractNo [Cons Inspection]AssignConNumber [Cons Inspection]ReqFeeProposal
-	//  ` [Cons Inspection]NTPdate_verbal [Cons Inspection]ProceedConDate  not enterable and transparent and deleted object methods.
+	//  ` [Cons Inspection]NTPdate_verbal [Cons Inspection]ProceedConDate not enterable and transparent and deleted object methods.
 	//  `added definition of dropdowns On Load for contract num and assignment num by searching for open inspection contracts.
 	//  //Move code in On Validate to the Save button
+	// Modified by: manousakisc-(Designer)-(4/25/2024 18:43:09)
+	Mods_2024_04
+	//  `made field [Cons Inspection]FeeProposalRecvd not enterable and transparent and deleted object methods.
+	//  `made all 4 date fields with format system date short
+	//  `added checkboxes for Initial, Freeze thaw and damage inspections - re-arranged the insp type checkboxes
 	
 End if 
 

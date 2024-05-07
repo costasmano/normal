@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
 //Method: GRP_GetMembersOfGrps
 //Description
-//
+// get list of members of groups in [PERS_Groups]
 // Parameters
 // $1 : $IDarray_ptr
 // $2 : $NameArray_ptr
@@ -19,6 +19,9 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(3/18/19 16:46:44)
 	Mods_2019_03_bug
 	//  `if the GrpSuffix is "@" , strip the base groupname passed in args 4 when building the name array.
+	// Modified by: Costas Manousakis-(Designer)-(2024-04-11 16:12:56)
+	Mods_2024_04
+	//  `use arrays to search instead of looping through [pers_group] records.
 End if 
 //
 C_POINTER:C301($1; $IDarray_ptr)
@@ -37,19 +40,22 @@ ARRAY LONGINT:C221($groupmem_aL; 0)
 ARRAY TEXT:C222($groupnames_atxt; 0)
 ARRAY LONGINT:C221($IDarray_ptr->; 0)
 ARRAY TEXT:C222($NameArray_ptr->; 0)
-C_LONGINT:C283($Grloop_L; $loop_L)
+C_LONGINT:C283($Grloop_L; $loop_L; $foundgrp_L)
 C_TEXT:C284($patt_txt)
 $patt_txt:="(.*)\\, (.*)"
-
+ARRAY TEXT:C222($matchgrpnames_atxt; 0)
 For ($Grloop_L; 4; $NumGroups_L)
 	$groupname_txt:=${$Grloop_L}
 	QUERY:C277([PERS_Groups:109]; [PERS_Groups:109]PERS_GroupName_s:2=($groupname_txt+$GrpSuffix_txt+"@"))
 	
 	If (Records in selection:C76([PERS_Groups:109])>0)
 		ORDER BY:C49([PERS_Groups:109]; [PERS_Groups:109]PERS_GroupName_s:2)
-		FIRST RECORD:C50([PERS_Groups:109])
-		While (Not:C34(End selection:C36([PERS_Groups:109])))
-			PRJ_FillPersonnelDropDowns(->$groupmem_aL; ->$groupnames_atxt; [PERS_Groups:109]PERS_GroupName_s:2)
+		SELECTION TO ARRAY:C260([PERS_Groups:109]PERS_GroupName_s:2; $matchgrpnames_atxt)
+		//FIRST RECORD([PERS_Groups])
+		C_LONGINT:C283($foundgrp_L)
+		For ($foundgrp_L; 1; Size of array:C274($matchgrpnames_atxt))
+			//$matchgrpnames_atxt{$foundgrp_L}
+			PRJ_FillPersonnelDropDowns(->$groupmem_aL; ->$groupnames_atxt; $matchgrpnames_atxt{$foundgrp_L})
 			If (Size of array:C274($groupmem_aL)>0)
 				C_LONGINT:C283($loop_L)
 				C_TEXT:C284($GrpIndex_txt)
@@ -69,9 +75,9 @@ For ($Grloop_L; 4; $NumGroups_L)
 						//Find the "index" after the suffix
 						
 						If ($GrpSuffix_txt="@")
-							$GrpIndex_txt:=Replace string:C233([PERS_Groups:109]PERS_GroupName_s:2; $groupname_txt; "")
+							$GrpIndex_txt:=Replace string:C233($matchgrpnames_atxt{$foundgrp_L}; $groupname_txt; "")
 						Else 
-							$GrpIndex_txt:=Replace string:C233([PERS_Groups:109]PERS_GroupName_s:2; ($groupname_txt+$GrpSuffix_txt); "")
+							$GrpIndex_txt:=Replace string:C233($matchgrpnames_atxt{$foundgrp_L}; ($groupname_txt+$GrpSuffix_txt); "")
 						End if 
 						
 						If ($GrpIndex_txt#"")
@@ -85,8 +91,8 @@ For ($Grloop_L; 4; $NumGroups_L)
 					APPEND TO ARRAY:C911($NameArray_ptr->; $MembDisplName_txt)
 				End for 
 			End if 
-			NEXT RECORD:C51([PERS_Groups:109])
-		End while 
+		End for 
+		
 	End if 
 	
 End for 

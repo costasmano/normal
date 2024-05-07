@@ -16,11 +16,14 @@ If (False:C215)
 	//Date and time: Jan 16, 2024, 17:35:19
 	Mods_2024_01
 	// ----------------------------------------------------
-	
+	// Modified by: manousakisc-(Designer)-(4/25/2024 18:34:15)
+	Mods_2024_04
+	//  `added code to account for new field [Contract Assignments]ReqFeeProposalRcd
 End if 
 //
 ARRAY POINTER:C280($fields_ptr; 0)
 APPEND TO ARRAY:C911($fields_ptr; ->[Contract Assignments:83]ReqFeeProposalDate:16)
+APPEND TO ARRAY:C911($fields_ptr; ->[Contract Assignments:83]ReqFeeProposalRcd:25)
 APPEND TO ARRAY:C911($fields_ptr; ->[Contract Assignments:83]NTPdate_verbal:18)
 APPEND TO ARRAY:C911($fields_ptr; ->[Contract Assignments:83]NTPdate_written:17)
 C_LONGINT:C283($loop_L)
@@ -46,7 +49,7 @@ If ($updateDates_b | $updateRates_b)
 	C_TEXT:C284($tablename_; $contrFld; $assignFld; $proceedFld; $NTPVerbalFld; $RFPFld; \
 		$costtable; $overheadfld; $Contracttype; $IDFld)
 	C_POINTER:C301($tbl_ptr; $Binfld_ptr; $IDFld_ptr; $ContrFld_ptr; $assignFld_ptr; \
-		$proceedFld_ptr; $NTPVerbalFld_ptr; $RFPFld_ptr)
+		$proceedFld_ptr; $NTPVerbalFld_ptr; $RFPFld_ptr; $RFPRcdFld_ptr)
 	If ([Contracts:79]ContractType:2="@Inspection")
 		//Inspection contract
 		$Contracttype:="Inspection"
@@ -62,6 +65,7 @@ If ($updateDates_b | $updateRates_b)
 		$proceedFld_ptr:=->[Cons Inspection:64]ProceedConDate:8
 		$NTPVerbalFld_ptr:=->[Cons Inspection:64]NTPdate_verbal:35
 		$RFPFld_ptr:=->[Cons Inspection:64]ReqFeeProposal:25
+		$RFPRcdFld_ptr:=->[Cons Inspection:64]FeeProposalRecvd:27
 	Else 
 		$Contracttype:="Rating"
 		$tablename_:=Table name:C256(->[Conslt Rating:63])
@@ -77,6 +81,8 @@ If ($updateDates_b | $updateRates_b)
 		$proceedFld_ptr:=->[Conslt Rating:63]ProceedRat:10
 		$NTPVerbalFld_ptr:=->[Conslt Rating:63]NTPdate_verbal:50
 		$RFPFld_ptr:=->[Conslt Rating:63]ReqFeeProposal:30
+		$RFPRcdFld_ptr:=->[Conslt Rating:63]FeeProposalRecvd:22
+		
 	End if 
 	$IDFld:=Field name:C257($IDFld_ptr)
 	
@@ -101,9 +107,12 @@ If ($updateDates_b | $updateRates_b)
 					$proceedFld_ptr->:=[Contract Assignments:83]NTPdate_written:17
 					$NTPVerbalFld_ptr->:=[Contract Assignments:83]NTPdate_verbal:18
 					$RFPFld_ptr->:=[Contract Assignments:83]ReqFeeProposalDate:16
+					$RFPRcdFld_ptr->:=[Contract Assignments:83]ReqFeeProposalRcd:25
+					
 					PushChange($changeStack_L; $proceedFld_ptr)
 					PushChange($changeStack_L; $NTPVerbalFld_ptr)
 					PushChange($changeStack_L; $RFPFld_ptr)
+					PushChange($changeStack_L; $RFPRcdFld_ptr)
 					FlushGrpChgs($changeStack_L; ->[Bridge MHD NBIS:1]BIN:3; $Binfld_ptr; $IDFld_ptr; 1)
 					SAVE RECORD:C53($tbl_ptr->)
 					UNLOAD RECORD:C212($tbl_ptr->)

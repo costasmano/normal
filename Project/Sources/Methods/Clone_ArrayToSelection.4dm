@@ -7,7 +7,7 @@
 // Description
 //This method is used to do array to selection during clone of tables
 If (False:C215)
-	// recreated on 09/19/2023
+	// recreated on 05/06/2024
 End if 
 C_LONGINT:C283($1)
 C_POINTER:C301($Array_Ptr)
@@ -1295,6 +1295,7 @@ Case of
 			ARRAY TO SELECTION:C261(v_83_022_ar; [Contract Assignments:83]NetFeeRate:22; v_83_023_ar; [Contract Assignments:83]OverHeadRate:23; *)
 			ARRAY TO SELECTION:C261(v_83_002_ai; [Contract Assignments:83]AssignNo:2; *)
 			ARRAY TO SELECTION:C261(v_83_016_ad; [Contract Assignments:83]ReqFeeProposalDate:16; v_83_017_ad; [Contract Assignments:83]NTPdate_written:17; v_83_018_ad; [Contract Assignments:83]NTPdate_verbal:18; *)
+			ARRAY TO SELECTION:C261(v_83_025_ad; [Contract Assignments:83]ReqFeeProposalRcd:25; *)
 			ARRAY TO SELECTION:C261(v_83_021_ab; [Contract Assignments:83]SpecialAssignment:21)
 		End if 
 	: ($1=84)  //Contract Invoice

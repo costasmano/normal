@@ -45,7 +45,7 @@
 				"Text13": {
 					"type": "text",
 					"top": 20,
-					"left": 13,
+					"left": 3,
 					"width": 189,
 					"height": 17,
 					"class": "DataEntry12Plain",
@@ -55,8 +55,8 @@
 				"LSS_StructureNumber_s": {
 					"type": "input",
 					"top": 20,
-					"left": 207,
-					"width": 180,
+					"left": 197,
+					"width": 200,
 					"height": 17,
 					"dataSource": "[LSS_Inventory:165]LSS_StructureNumber_s:6",
 					"class": "DataEntry12Plain",
@@ -72,7 +72,7 @@
 				"LSS_IdNumber": {
 					"type": "input",
 					"top": 80,
-					"left": 205,
+					"left": 165,
 					"width": 82,
 					"height": 17,
 					"dataSource": "[LSS_Inventory:165]LSS_IdentificationNumber_L:5",
@@ -92,7 +92,7 @@
 				"Text3": {
 					"type": "text",
 					"top": 80,
-					"left": 23,
+					"left": -17,
 					"width": 169,
 					"height": 17,
 					"class": "DataEntry12Plain",
@@ -105,7 +105,7 @@
 					"left": 343,
 					"width": 154,
 					"height": 27,
-					"dataSource": "Button",
+					"dataSource": "",
 					"text": "Apply Changes",
 					"class": "DataEntry12APlain",
 					"focusable": false,
@@ -120,7 +120,7 @@
 					"left": 233,
 					"width": 84,
 					"height": 27,
-					"dataSource": "Button1",
+					"dataSource": "",
 					"action": "cancel",
 					"text": "Cancel",
 					"class": "DataEntry12APlain",
@@ -132,7 +132,7 @@
 				"LSS_SIN_2_L": {
 					"type": "input",
 					"top": 80,
-					"left": 407,
+					"left": 387,
 					"width": 82,
 					"height": 17,
 					"dataSource": "LSS_SIN_2_L",
@@ -156,7 +156,7 @@
 				"Text1": {
 					"type": "text",
 					"top": 80,
-					"left": 291,
+					"left": 271,
 					"width": 111,
 					"height": 17,
 					"class": "DataEntry12Plain",
@@ -169,7 +169,7 @@
 					"left": 63,
 					"width": 144,
 					"height": 27,
-					"dataSource": "Button1",
+					"dataSource": "",
 					"text": "Verify Changes",
 					"class": "DataEntry12APlain",
 					"focusable": false,
@@ -181,7 +181,7 @@
 				"Text2": {
 					"type": "text",
 					"top": 20,
-					"left": 393,
+					"left": 402,
 					"width": 169,
 					"height": 17,
 					"class": "DataEntry12Plain",
@@ -191,8 +191,8 @@
 				"LSS_StructureNumber_s1": {
 					"type": "input",
 					"top": 20,
-					"left": 567,
-					"width": 220,
+					"left": 576,
+					"width": 210,
 					"height": 19,
 					"dataSource": "v_165_006_txt",
 					"textAlign": "left",
@@ -537,6 +537,19 @@
 					"contextMenu": "none",
 					"dragging": "none",
 					"dropping": "none"
+				},
+				"GetNEW_I_N": {
+					"type": "button",
+					"text": "Get New I.N.",
+					"top": 73,
+					"left": 478,
+					"width": 102,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/GetNEW_I_N.4dm",
+					"class": "DataEntry12APlain"
 				}
 			}
 		},
@@ -626,5 +639,10 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"geometryStamp": 57,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }

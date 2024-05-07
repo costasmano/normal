@@ -1,15 +1,15 @@
 //%attributes = {"invisible":true}
-
-//----------------------------------------------------
-//User name (OS): Charles Miller
-//Date and time: 04/29/14, 15:54:17
-//----------------------------------------------------
 //Method: LSS_SetInventoryNumber
 //Description
 //
 // Parameters
 // ----------------------------------------------------
 If (False:C215)
+	
+	//----------------------------------------------------
+	//User name (OS): Charles Miller
+	//Date and time: 04/29/14, 15:54:17
+	//----------------------------------------------------
 	Mods_2015_08_bug
 	//Make sure mile point truncates to be part of structure number
 	//Modified by: administrator (8/13/15 13:47:28)
@@ -20,7 +20,9 @@ If (False:C215)
 	//Modified by: Chuck Miller (2/27/18 13:53:23)
 	Mods_2018_03_bug  //Re-adjust how and when get next number
 	//Modified by: Chuck Miller (3/20/18 15:36:11)
-	
+	// Modified by: Costas Manousakis-(Designer)-(2024-04-11 19:33:36)
+	Mods_2024_04
+	//  `when getting next number make sure it is within the district 
 End if 
 C_BOOLEAN:C305($UpdateSIN_B)
 $UpdateSIN_B:=True:C214
@@ -85,6 +87,9 @@ Case of
 		$Distr_L:=[LSS_Inventory:165]LSS_District_L:3
 		$SINDistr_L:=([LSS_Inventory:165]LSS_IdentificationNumber_L:5\100000)
 		If ($GetaNewMaxNumber_B)
+			C_LONGINT:C283($lowlimit_L; $upperlimit_L)
+			$lowlimit_L:=$Distr_L*100000
+			$upperlimit_L:=($Distr_L+1)*100000
 			Begin SQL
 				select max ([LSS_Inventory].[LSS_IdentificationNumber_L])
 				from
@@ -95,8 +100,14 @@ Case of
 				[LSS_Inventory].[LSS_InventoryType_s] = :$Type_txt
 				and
 				[LSS_Inventory].[LSS_District_L] = :$Distr_L
+				and
+				[LSS_Inventory].[LSS_IdentificationNumber_L] > :$lowlimit_L
+				and
+				[LSS_Inventory].[LSS_IdentificationNumber_L] < :$upperlimit_L
+				
 				into :$MaxNumber_L;
 			End SQL
+			
 		End if 
 		Case of 
 			: ($MaxNumber_L=0)

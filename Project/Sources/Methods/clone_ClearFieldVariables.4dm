@@ -15,7 +15,7 @@
 // Modified by: Charles Miller (5/6/10)
 If (False:C215)
 	//Modified by: Charles Miller (8/11/10 11:34:45) 
-	// Updated by clone_NewCreateSQLVariables on 9/19/23 - 19:01:00
+	// Updated by clone_NewCreateSQLVariables on 5/6/24 - 16:56:47
 End if 
 // 
 If (Count parameters:C259=0)
@@ -3537,6 +3537,8 @@ Else
 			CLEAR VARIABLE:C89(v_83_017_ad)  //NTPdate_written
 			CLEAR VARIABLE:C89(v_83_018_d)  //NTPdate_verbal
 			CLEAR VARIABLE:C89(v_83_018_ad)  //NTPdate_verbal
+			CLEAR VARIABLE:C89(v_83_025_d)  //ReqFeeProposalRcd
+			CLEAR VARIABLE:C89(v_83_025_ad)  //ReqFeeProposalRcd
 			CLEAR VARIABLE:C89(v_83_021_b)  //SpecialAssignment
 			CLEAR VARIABLE:C89(v_83_021_ab)  //SpecialAssignment
 		: ($1=84)  //Contract Invoice

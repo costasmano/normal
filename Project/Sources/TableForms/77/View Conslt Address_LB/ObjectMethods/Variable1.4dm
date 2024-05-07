@@ -20,15 +20,18 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(2021-10-06)
 	Mods_2021_10
 	//  `unload record at end - reset LB headers
+	// Modified by: Costas Manousakis-(Designer)-(2024-04-30 16:47:37)
+	Mods_2024_04
+	//  `remove on load code - handled in form method
 End if 
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
-		If (Current user:C182="Designer")
-			OBJECT SET VISIBLE:C603(Self:C308->; True:C214)
-		Else 
-			OBJECT SET VISIBLE:C603(Self:C308->; False:C215)
-		End if 
+		//If (Current user="Designer")
+		//OBJECT SET VISIBLE(Self->;True)
+		//Else 
+		//OBJECT SET VISIBLE(Self->;False)
+		//End if 
 		
 	: (Form event code:C388=On Data Change:K2:15)
 		

@@ -110,8 +110,11 @@
 					"style": "custom",
 					"method": "ObjectMethods/bQuery.4dm",
 					"events": [
-						"onClick"
-					]
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					],
+					"popupPlacement": "separated"
 				},
 				"bOrderBy": {
 					"type": "button",
@@ -318,7 +321,8 @@
 								"fill": "#FFFFFF",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic",
-								"class": "List12Plain"
+								"class": "List12Plain",
+								"name": "Footer1"
 							}
 						},
 						{
@@ -558,5 +562,9 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }
