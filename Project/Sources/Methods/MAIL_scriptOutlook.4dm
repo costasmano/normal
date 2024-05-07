@@ -37,6 +37,9 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(2024-01-10 11:43:45)
 	Mods_2024_01
 	//  `user PROCESS 4D tags to convert body to HTML
+	// Modified by: Costas Manousakis-(Designer)-(2024-05-02 13:33:02)
+	Mods_2024_05
+	//  `if the body starts withh <HTML> use $4DHTML instead of $4DTEXT in PROCESS 4D tags
 End if 
 //
 
@@ -56,7 +59,14 @@ $0:=""
 //start of mods_2024_01
 $temp_txt:=tMailNote  //save this in case used elsewhere - need process var for PROCESS 4D tags
 tMailNote:=$4
-PROCESS 4D TAGS:C816("$4DTEXT(tMailNote)"; $body_txt)
+If (tMailNote="<HTML>@")
+	//$body_txt:=tMailNote
+	PROCESS 4D TAGS:C816("$4DHTML(tMailNote)"; $body_txt)
+Else 
+	PROCESS 4D TAGS:C816("$4DTEXT(tMailNote)"; $body_txt)
+	
+End if 
+
 $body_txt:=Replace string:C233($body_txt; (Char:C90(13)+Char:C90(10)); "<br>")
 $body_txt:=Replace string:C233($body_txt; Char:C90(13); "<br>")
 $body_txt:=Replace string:C233($body_txt; Char:C90(10); "<br>")

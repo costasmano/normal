@@ -45,6 +45,10 @@ If (False:C215)
 	// Modified by: manousakisc-(Designer)-(10/11/2023 13:04:24)
 	Mods_2023_10
 	//  `check if running as service or headless before showing Alert in case of error in email sending
+	// Modified by: manousakisc-(Designer)-(5/2/2024 18:12:12)
+	Mods_2024_05
+	//  `in the HTML message need to include  content-type = text/html -
+	//  `when parsing the Funding in comments try to put it in a table format and use the tabs to make columns
 End if 
 
 C_LONGINT:C283($err; $smtp_id; $i)
@@ -131,7 +135,7 @@ If (OK=1)
 	End if 
 	C_TEXT:C284($AmtFrmt_txt; $TblHeadr_txt; $Cellright_txt; $CellCenter_txt; $FontDef_txt)
 	$AmtFrmt_txt:="$###,###,##0.00"
-	$Cellright_txt:="<TD align=right> &nbsp &nbsp "
+	$Cellright_txt:="<TD align=right> &nbsp; &nbsp; "
 	$FontDef_txt:="<FONT FACE=&quot;Tahoma&quot; SIZE=2>"
 	//$FontDef_txt:=""
 	$TblHeadr_txt:="<TABLE border=0 cellpadding=0 cellspacing=5>"+$FontDef_txt
@@ -141,7 +145,10 @@ If (OK=1)
 	tMailNote:=Replace string:C233(tMailNote; "<vConsltName>"; [Contracts:79]ConsltName:3)
 	tMailNote:=Replace string:C233(tMailNote; "<vProcessDate>"; String:C10([Contract Invoice:84]DateProcessFoward:9))
 	tMailNote:=Replace string:C233(tMailNote; "<vInvoiceNo>"; String:C10([Contract Invoice:84]InvoiceNo:2))
-	tMailNote:="<HTML><BODY>"+$FontDef_txt+tMailNote+$TblHeadr_txt
+	
+	tMailNote:="<HTML>"+\
+		"<head><META HTTP-EQUIV=&quot;&quot;Content-Type&quot;&quot; CONTENT=&quot;&quot;text/html;charset=Windows-1252&quot;&quot;>"+\
+		"<BODY>"+$FontDef_txt+tMailNote+$TblHeadr_txt
 	
 	tMailNote:=tMailNote+"<TR><TD><B><U>Invoice Summary</B></U></TD></TR>"
 	tMailNote:=tMailNote+"<TR><TD>Dates of service</TD></TR>"
@@ -169,6 +176,29 @@ If (OK=1)
 			//not blank, no blank first line, no blank lines
 			$funding:=$cmts
 	End case 
+	
+	//build a table with rows and columns as indicated by tabs in the lines
+	C_COLLECTION:C1488($fundinglines_c; $fundingcols_c)
+	C_TEXT:C284($fundLine_; $fundCol_)
+	$fundinglines_c:=Split string:C1554($funding; Char:C90(Carriage return:K15:38))
+	$funding:="<TABLE border=0 cellpadding=0 cellspacing=5>"+$FontDef_txt
+	For each ($fundLine_; $fundinglines_c)
+		$fundingcols_c:=Split string:C1554($fundLine_; Char:C90(Tab:K15:37); sk ignore empty strings:K86:1)
+		
+		If ($fundingcols_c.length<=1)
+			$funding:=$funding+"<TR><TD>"+$fundLine_+"</TD></TR>"
+		Else 
+			//we have columns 1st col is left aligned the others right
+			$funding:=$funding+"<TR>"+"<TD>"+$fundingcols_c[0]+"</TD>"
+			For each ($fundCol_; $fundingcols_c; 1)
+				$funding:=$funding+$Cellright_txt+$fundCol_+"</TD>"
+			End for each 
+			$funding:=$funding+"</TR>"
+		End if 
+		
+	End for each 
+	$funding:=$funding+"</TABLE>"
+	
 	tMailNote:=tMailNote+"<BR>"+$funding+"<BR>"
 	
 	If (Size of array:C274($InvAssgnNo_aL)>0)
