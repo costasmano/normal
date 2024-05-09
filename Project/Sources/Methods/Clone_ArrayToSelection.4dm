@@ -7,7 +7,7 @@
 // Description
 //This method is used to do array to selection during clone of tables
 If (False:C215)
-	// recreated on 05/06/2024
+	// recreated on 05/09/2024
 End if 
 C_LONGINT:C283($1)
 C_POINTER:C301($Array_Ptr)
@@ -2596,7 +2596,8 @@ Case of
 			ARRAY TO SELECTION:C261(v_164_056_atxt; [LSS_Inspection:164]LSS_DamageCause_txt:56; v_164_057_atxt; [LSS_Inspection:164]LSS_DamBostonCopyForwardTo_s:57; v_164_059_atxt; [LSS_Inspection:164]LSS_DamBostonOfficeRemarks_txt:59; *)
 			ARRAY TO SELECTION:C261(v_164_027_ar; [LSS_Inspection:164]LSS_TotalAccessibilityHours_r:27; *)
 			ARRAY TO SELECTION:C261(v_164_005_aL; [LSS_Inspection:164]LSS_DistHWYEngineerId_L:5; v_164_008_aL; [LSS_Inspection:164]LSS_TeamLeaderId_L:8; v_164_009_aL; [LSS_Inspection:164]LSS_ProjectManagerId_L:9; *)
-			ARRAY TO SELECTION:C261(v_164_041_aL; [LSS_Inspection:164]LSS_Reviewed_L:41; v_164_043_aL; [LSS_Inspection:164]LSS_Approved_L:43; *)
+			ARRAY TO SELECTION:C261(v_164_041_aL; [LSS_Inspection:164]LSS_Reviewed_L:41; v_164_043_aL; [LSS_Inspection:164]LSS_Approved_L:43; v_164_060_aL; [LSS_Inspection:164]LSS_ContractNo_L:60; *)
+			ARRAY TO SELECTION:C261(v_164_061_aL; [LSS_Inspection:164]LSS_AssignmentNo_L:61; *)
 			ARRAY TO SELECTION:C261(v_164_004_ad; [LSS_Inspection:164]LSS_InspectionDate_d:4; v_164_030_ad; [LSS_Inspection:164]LSS_DateOfPhotos_d:30; v_164_040_ad; [LSS_Inspection:164]LSS_CompleteDate_d:40; *)
 			ARRAY TO SELECTION:C261(v_164_042_ad; [LSS_Inspection:164]LSS_ReviewDate_d:42; v_164_044_ad; [LSS_Inspection:164]LSS_ApprovedDate_d:44; v_164_052_ad; [LSS_Inspection:164]LSS_Damage_d:52; *)
 			ARRAY TO SELECTION:C261(v_164_058_ad; [LSS_Inspection:164]LSS_DamBostonOffice_d:58; *)
@@ -2623,7 +2624,8 @@ Case of
 			ARRAY TO SELECTION:C261(v_165_007_ar; [LSS_Inventory:165]LSS_KiloPoint_r:7; v_165_008_ar; [LSS_Inventory:165]LSS_MilePoint_r:8; v_165_018_ar; [LSS_Inventory:165]LSS_Longitude_r:18; *)
 			ARRAY TO SELECTION:C261(v_165_019_ar; [LSS_Inventory:165]LSS_Latitude_r:19; v_165_032_ar; [LSS_Inventory:165]LSS_Elevation_r:32; *)
 			ARRAY TO SELECTION:C261(v_165_003_aL; [LSS_Inventory:165]LSS_District_L:3; v_165_005_aL; [LSS_Inventory:165]LSS_IdentificationNumber_L:5; v_165_020_aL; [LSS_Inventory:165]LSS_NumberOfSpansArms_L:20; *)
-			ARRAY TO SELECTION:C261(v_165_037_aL; [LSS_Inventory:165]LSS_ProjNoBuilt_L:37; v_165_038_aL; [LSS_Inventory:165]LSS_ProjNoRemoved_L:38)
+			ARRAY TO SELECTION:C261(v_165_037_aL; [LSS_Inventory:165]LSS_ProjNoBuilt_L:37; v_165_038_aL; [LSS_Inventory:165]LSS_ProjNoRemoved_L:38; v_165_039_aL; [LSS_Inventory:165]LSS_Cycle_L:39; *)
+			ARRAY TO SELECTION:C261(v_165_040_ad; [LSS_Inventory:165]LSS_NextSchedInsp_d:40)
 		End if 
 	: ($1=166)  //LSS_Photos
 		$Array_Ptr:=->v_166_001_atxt

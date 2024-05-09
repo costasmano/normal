@@ -27,6 +27,9 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(2022-12-27 18:37:37)
 	Mods_2022_12_bug
 	//  `added missing code when duplicating a group
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-14 15:53:07)
+	Mods_2024_LSS_1
+	//  `added missing pushchange on the group name when duplicating a group
 End if 
 
 Case of 
@@ -108,6 +111,7 @@ Case of
 		
 		If (GRP_NewUserGrpName#"")
 			[PERS_Groups:109]PERS_GroupName_s:2:=GRP_NewUserGrpName
+			PushChange(1; ->[PERS_Groups:109]PERS_GroupName_s:2)
 			COPY ARRAY:C226(GRP_GrpMembIDs_aI; $GRP_GrpMembID_aI)
 		Else 
 			QUERY:C277([PERS_GroupMembers:110]; [PERS_GroupMembers:110]GroupID_I:1=[PERS_Groups:109]PERS_GroupID_I:1)

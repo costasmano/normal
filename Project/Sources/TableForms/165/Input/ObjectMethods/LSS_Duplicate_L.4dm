@@ -17,6 +17,11 @@ If (False:C215)
 	// Modified by: manousakisc-(Designer)-(3/19/2024 18:06:15)
 	Mods_2024_03_bug
 	//  `disabled all calls related to activity log
+	
+	// Modified by: Costas Manousakis-(Designer)-(2024-04-10 13:35:21)
+	Mods_2024_LSS_1
+	//  `initialize the contract and assignment number
+	
 End if 
 
 C_LONGINT:C283($LBCol_L; $LBRow_L; $Key_L; $Loop_L; $InnerLoop_L)
@@ -61,10 +66,6 @@ If ($LBRow_L>0)
 			End SQL
 			
 			// start of Mods_2024_03_bug
-			If (False:C215)
-				ARRAY POINTER:C280(ptr_Changes; 0; 0)
-				InitChangeStack(1)
-			End if 
 			// end of Mods_2024_03_bug
 			
 			C_TEXT:C284($Category_txt)
@@ -108,6 +109,10 @@ If ($LBRow_L>0)
 				[LSS_Inspection:164]LSS_Photos_b:29:=False:C215
 				[LSS_Inspection:164]LSS_ReviewDate_d:42:=!00-00-00!
 				[LSS_Inspection:164]LSS_Reviewed_L:41:=0
+				//start of Mods_2024_LSS_1
+				[LSS_Inspection:164]LSS_ContractNo_L:60:=0
+				[LSS_Inspection:164]LSS_AssignmentNo_L:61:=0
+				//end of Mods_2024_LSS_1
 				[LSS_Inspection:164]LSS_CondFoundationPrev_s:13:=[LSS_Inspection:164]LSS_CondFoundationCurr_s:12
 				[LSS_Inspection:164]LSS_CondLuminairePrev_s:23:=[LSS_Inspection:164]LSS_CondLuminaireCurr_s:22
 				[LSS_Inspection:164]LSS_CondOverallPrev_s:25:=[LSS_Inspection:164]LSS_CondOverallCurr_s:24
@@ -135,28 +140,6 @@ If ($LBRow_L>0)
 				End if 
 				
 				// start of Mods_2024_03_bug
-				If (False:C215)
-					LogNewRecord(->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; 0; "LSS_Inspection")
-					ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-					APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_InspectionId_s")
-					APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_TeamLeaderId_L")
-					APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_DistHWYEngineerId_L")
-					APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_ProjectManagerId_L")
-					
-					If (ACT_PushGroupChanges(Table:C252(->[LSS_Inspection:164]); 1; ->$FieldsToSkip_atxt; False:C215))
-						FlushGrpChgs(1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; 0)
-					End if 
-					If ([LSS_Inspection:164]LSS_TeamLeaderId_L:8>0)
-						LogLink(->[LSS_Inspection:164]LSS_TeamLeaderId_L:8; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; 0; ->[Personnel:42]Person ID:1)
-					End if 
-					If ([LSS_Inspection:164]LSS_DistHWYEngineerId_L:5>0)
-						LogLink(->[LSS_Inspection:164]LSS_DistHWYEngineerId_L:5; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; 0; ->[Personnel:42]Person ID:1)
-					End if 
-					If ([LSS_Inspection:164]LSS_ProjectManagerId_L:9>0)
-						LogLink(->[LSS_Inspection:164]LSS_ProjectManagerId_L:9; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; 0; ->[Personnel:42]Person ID:1)
-					End if 
-					
-				End if 
 				// end of Mods_2024_03_bug
 				
 				SAVE RECORD:C53([LSS_Inspection:164])
@@ -170,10 +153,6 @@ If ($LBRow_L>0)
 				LONGINT ARRAY FROM SELECTION:C647([LSS_Accessibility:159]; $RecordNumbers_aL)
 				For ($Loop_l; 1; Records in selection:C76([LSS_Accessibility:159]))
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					
 					GOTO RECORD:C242([LSS_Accessibility:159]; $RecordNumbers_aL{$Loop_l})
@@ -184,16 +163,6 @@ If ($LBRow_L>0)
 					[LSS_Accessibility:159]LSS_AccessibilityId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_Accessibility:159]LSS_AccessibilityId_s:1; ->[LSS_Accessibility:159]LSS_AccessibilityId_s:1; ->[LSS_Accessibility:159]LSS_AccessibilityId_s:1; 0; "LSS_Accessibility")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_AccessibilityId_s")
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_Accessibility:159]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_Accessibility:159]LSS_AccessibilityId_s:1; ->[LSS_Accessibility:159]LSS_AccessibilityId_s:1; ->[LSS_Accessibility:159]LSS_AccessibilityId_s:1; 0)
-						End if 
-						
-					End if 
 					
 					SAVE RECORD:C53([LSS_Accessibility:159])
 					// end of Mods_2024_03_bug
@@ -210,10 +179,6 @@ If ($LBRow_L>0)
 				For ($Loop_l; 1; Records in selection:C76([LSS_DMeter:161]))
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					GOTO RECORD:C242([LSS_DMeter:161]; $RecordNumbers_aL{$Loop_l})
 					DUPLICATE RECORD:C225([LSS_DMeter:161])
@@ -224,16 +189,6 @@ If ($LBRow_L>0)
 					[LSS_DMeter:161]LSS_DMeterId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_DMeter:161]LSS_DMeterId_s:1; ->[LSS_DMeter:161]LSS_DMeterId_s:1; ->[LSS_DMeter:161]LSS_DMeterId_s:1; 0; "LSS_DMeterId_s")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_DMeterId_s")
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_DMeter:161]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_DMeter:161]LSS_DMeterId_s:1; ->[LSS_DMeter:161]LSS_DMeterId_s:1; ->[LSS_DMeter:161]LSS_DMeterId_s:1; 0)
-						End if 
-						
-					End if 
 					SAVE RECORD:C53([LSS_DMeter:161])
 					// end of Mods_2024_03_bug
 				End for 
@@ -247,10 +202,6 @@ If ($LBRow_L>0)
 				For ($Loop_l; 1; Records in selection:C76([LSS_ElementInspection:163]))
 					MESSAGE:C88(String:C10($Loop_l; " #####..."))
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					GOTO RECORD:C242([LSS_ElementInspection:163]; $RecordNumbers_aL{$Loop_l})
 					DUPLICATE RECORD:C225([LSS_ElementInspection:163])
@@ -261,16 +212,6 @@ If ($LBRow_L>0)
 					[LSS_ElementInspection:163]LSS_ElementInspectionId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_ElementInspection:163]LSS_ElementInspectionId_s:1; ->[LSS_ElementInspection:163]LSS_ElementInspectionId_s:1; ->[LSS_ElementInspection:163]LSS_ElementInspectionId_s:1; 0; "LSS_ElementInspectionId_s")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_ElementInspectionId_s")
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_ElementInspection:163]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_ElementInspection:163]LSS_ElementInspectionId_s:1; ->[LSS_ElementInspection:163]LSS_ElementInspectionId_s:1; ->[LSS_ElementInspection:163]LSS_ElementInspectionId_s:1; 0)
-						End if 
-						
-					End if 
 					SAVE RECORD:C53([LSS_ElementInspection:163])
 					// end of Mods_2024_03_bug
 				End for 
@@ -285,10 +226,6 @@ If ($LBRow_L>0)
 				For ($Loop_l; 1; Records in selection:C76([LSS_Photos:166]))
 					MESSAGE:C88(String:C10($Loop_l; " #####..."))
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					GOTO RECORD:C242([LSS_Photos:166]; $RecordNumbers_aL{$Loop_l})
 					DUPLICATE RECORD:C225([LSS_Photos:166])
@@ -299,18 +236,6 @@ If ($LBRow_L>0)
 					[LSS_Photos:166]LSS_PhotoId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_Photos:166]LSS_PhotoId_s:1; ->[LSS_Photos:166]LSS_PhotoId_s:1; ->[LSS_Photos:166]LSS_PhotoId_s:1; 0; "LSS_PhotoId_s")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_PhotoId_s")
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_Photo_blb")
-						PushChange(1; ->[LSS_Photos:166]LSS_Photo_blb:5)
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_Photos:166]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_Photos:166]LSS_PhotoId_s:1; ->[LSS_Photos:166]LSS_PhotoId_s:1; ->[LSS_Photos:166]LSS_PhotoId_s:1; 0)
-						End if 
-						
-					End if 
 					SAVE RECORD:C53([LSS_Photos:166])
 					// end of Mods_2024_03_bug
 				End for 
@@ -326,10 +251,6 @@ If ($LBRow_L>0)
 					MESSAGE:C88(String:C10($Loop_l; " #####..."))
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					GOTO RECORD:C242([LSS_SignPanel:172]; $RecordNumbers_aL{$Loop_l})
 					DUPLICATE RECORD:C225([LSS_SignPanel:172])
@@ -340,16 +261,6 @@ If ($LBRow_L>0)
 					[LSS_SignPanel:172]LSS_SignPanelId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_SignPanel:172]LSS_SignPanelId_s:1; ->[LSS_SignPanel:172]LSS_SignPanelId_s:1; ->[LSS_SignPanel:172]LSS_SignPanelId_s:1; 0; "LSS_SignPanelId_s")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_SignPanelId_s")
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_SignPanel:172]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_SignPanel:172]LSS_SignPanelId_s:1; ->[LSS_SignPanel:172]LSS_SignPanelId_s:1; ->[LSS_SignPanel:172]LSS_SignPanelId_s:1; 0)
-						End if 
-						
-					End if 
 					SAVE RECORD:C53([LSS_SignPanel:172])
 					// end of Mods_2024_03_bug
 				End for 
@@ -362,11 +273,6 @@ If ($LBRow_L>0)
 				LONGINT ARRAY FROM SELECTION:C647([LSS_TowerDistance:174]; $RecordNumbers_aL)
 				For ($Loop_l; 1; Records in selection:C76([LSS_TowerDistance:174]))
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						ARRAY POINTER:C280(ptr_Changes; 0; 0)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					GOTO RECORD:C242([LSS_TowerDistance:174]; $RecordNumbers_aL{$Loop_l})
 					DUPLICATE RECORD:C225([LSS_TowerDistance:174])
@@ -377,16 +283,6 @@ If ($LBRow_L>0)
 					[LSS_TowerDistance:174]LSS_TowerDistanceId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_TowerDistance:174]LSS_TowerDistanceId_s:1; ->[LSS_TowerDistance:174]LSS_TowerDistanceId_s:1; ->[LSS_TowerDistance:174]LSS_TowerDistanceId_s:1; 0; "LSS_TowerDistanceId_s")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_TowerDistanceId_s")
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_TowerDistance:174]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_TowerDistance:174]LSS_TowerDistanceId_s:1; ->[LSS_TowerDistance:174]LSS_TowerDistanceId_s:1; ->[LSS_TowerDistance:174]LSS_TowerDistanceId_s:1; 0)
-						End if 
-						
-					End if 
 					SAVE RECORD:C53([LSS_TowerDistance:174])
 					// end of Mods_2024_03_bug
 				End for 
@@ -401,11 +297,6 @@ If ($LBRow_L>0)
 					MESSAGE:C88(String:C10($Loop_l; " #####..."))
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						ARRAY POINTER:C280(ptr_Changes; 0; 0)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					GOTO RECORD:C242([LSS_UT:175]; $RecordNumbers_aL{$Loop_l})
 					v_175_001_txt:=[LSS_UT:175]LSS_UTId_s:1
@@ -417,16 +308,6 @@ If ($LBRow_L>0)
 					[LSS_UT:175]LSS_UTId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_UT:175]LSS_UTId_s:1; ->[LSS_UT:175]LSS_UTId_s:1; ->[LSS_UT:175]LSS_UTId_s:1; 0; "LSS_UTId_s")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_UTId_s")
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_UT:175]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_UT:175]LSS_UTId_s:1; ->[LSS_UT:175]LSS_UTId_s:1; ->[LSS_UT:175]LSS_UTId_s:1; 0)
-						End if 
-						
-					End if 
 					SAVE RECORD:C53([LSS_UT:175])
 					// end of Mods_2024_03_bug
 					QUERY:C277([LSS_UtResult:176]; [LSS_UtResult:176]LSS_UTId_s:2=v_175_001_txt)
@@ -434,11 +315,6 @@ If ($LBRow_L>0)
 					LONGINT ARRAY FROM SELECTION:C647([LSS_UtResult:176]; $RecordNumbers1_aL)
 					For ($InnerLoop_l; 1; Records in selection:C76([LSS_UtResult:176]))
 						// start of Mods_2024_03_bug
-						If (False:C215)
-							ARRAY POINTER:C280(ptr_Changes; 0; 0)
-							InitChangeStack(1)
-							
-						End if 
 						// end of Mods_2024_03_bug
 						GOTO RECORD:C242([LSS_UtResult:176]; $RecordNumbers1_aL{$InnerLoop_l})
 						DUPLICATE RECORD:C225([LSS_UtResult:176])
@@ -449,16 +325,6 @@ If ($LBRow_L>0)
 						[LSS_UtResult:176]LSS_UTResultId_s:1:=String:C10($Key_L; <>KeyMask_s)
 						
 						// start of Mods_2024_03_bug
-						If (False:C215)
-							LogNewRecord(->[LSS_UtResult:176]LSS_UTResultId_s:1; ->[LSS_UtResult:176]LSS_UTResultId_s:1; ->[LSS_UtResult:176]LSS_UTResultId_s:1; 0; "LSS_UTResultId_s")
-							ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-							APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_UTResultId_s")
-							
-							If (ACT_PushGroupChanges(Table:C252(->[LSS_UtResult:176]); 1; ->$FieldsToSkip_atxt; False:C215))
-								FlushGrpChgs(1; ->[LSS_UtResult:176]LSS_UTResultId_s:1; ->[LSS_UtResult:176]LSS_UTResultId_s:1; ->[LSS_UtResult:176]LSS_UTResultId_s:1; 0)
-							End if 
-							
-						End if 
 						SAVE RECORD:C53([LSS_UtResult:176])
 						// end of Mods_2024_03_bug
 						
@@ -474,11 +340,6 @@ If ($LBRow_L>0)
 				For ($Loop_l; 1; Records in selection:C76([LSS_VerticalClearance:177]))
 					MESSAGE:C88(String:C10($Loop_l; " #####..."))
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						ARRAY POINTER:C280(ptr_Changes; 0; 0)
-						InitChangeStack(1)
-						
-					End if 
 					// end of Mods_2024_03_bug
 					GOTO RECORD:C242([LSS_VerticalClearance:177]; $RecordNumbers_aL{$Loop_l})
 					DUPLICATE RECORD:C225([LSS_VerticalClearance:177])
@@ -489,16 +350,6 @@ If ($LBRow_L>0)
 					[LSS_VerticalClearance:177]LSS_VerticalClearanceId_s:1:=String:C10($Key_L; <>KeyMask_s)
 					
 					// start of Mods_2024_03_bug
-					If (False:C215)
-						LogNewRecord(->[LSS_VerticalClearance:177]LSS_VerticalClearanceId_s:1; ->[LSS_VerticalClearance:177]LSS_VerticalClearanceId_s:1; ->[LSS_VerticalClearance:177]LSS_VerticalClearanceId_s:1; 0; "LSS_VerticalClearanceId_s")
-						ARRAY TEXT:C222($FieldsToSkip_atxt; 0)
-						APPEND TO ARRAY:C911($FieldsToSkip_atxt; "LSS_VerticalClearanceId_s")
-						
-						If (ACT_PushGroupChanges(Table:C252(->[LSS_VerticalClearance:177]); 1; ->$FieldsToSkip_atxt; False:C215))
-							FlushGrpChgs(1; ->[LSS_VerticalClearance:177]LSS_VerticalClearanceId_s:1; ->[LSS_VerticalClearance:177]LSS_VerticalClearanceId_s:1; ->[LSS_VerticalClearance:177]LSS_VerticalClearanceId_s:1; 0)
-						End if 
-						
-					End if 
 					SAVE RECORD:C53([LSS_VerticalClearance:177])
 					// end of Mods_2024_03_bug
 				End for 

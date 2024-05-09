@@ -30,10 +30,46 @@ If (False:C215)
 	// Modified by: manousakisc-(Designer)-(6/20/2023 12:44:26)
 	Mods_2023_LSSNew
 	//  `added columns Status, Yr Built, Proj # built
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-13 17:09:19)
+	Mods_2024_LSS_1
+	//  `use contextual click on 1st column to copy the selected structure numbers
+	//  `enable on Clicked event for listbox object
+	
 End if 
 C_LONGINT:C283($LBCol_L; LSS_InventoryRow_L; $0)
 $0:=0
 Case of 
+		//start of Mods_2024_LSS_1
+	: (Form event code:C388=On Clicked:K2:4)
+		//C_LONGINT($mx;$my;$mb)
+		//GET MOUSE($mx;$my;$mb)
+		LISTBOX GET CELL POSITION:C971(*; "Inventory_LB"; $LBCol_L; LSS_InventoryRow_L)
+		//ut_Send2Clipboard ("\n-"+String(Tickcount)+"-"+Choose(Contextual click;"context";"nocontext")+" mb="+String($mb)+\
+			" row :"+String(LSS_InventoryRow_L)+" col:"+String($LBCol_L)+\
+			" num selected:"+String(Records in set("InventorySet")))
+		//build all str nums of selected rows
+		
+		If (Contextual click:C713 & ($LBCol_L=1))  // right click on structure number
+			C_TEXT:C284($copymenu_txt)
+			$copymenu_txt:="...;Copy selected Structure numbers"
+			C_LONGINT:C283($choice_L)
+			$choice_L:=Pop up menu:C542($copymenu_txt)
+			//ut_Send2Clipboard ("\n"+String($choice_L))
+			If ($choice_L=2)
+				
+				ARRAY TEXT:C222($strnums_atxt; Records in set:C195("InventorySet"))
+				COPY NAMED SELECTION:C331([LSS_Inventory:165]; "$LSSINV_PRECUT")
+				USE SET:C118("InventorySet")
+				SELECTION TO ARRAY:C260([LSS_Inventory:165]LSS_StructureNumber_s:6; $strnums_atxt)
+				USE NAMED SELECTION:C332("$LSSINV_PRECUT")
+				CLEAR NAMED SELECTION:C333("$LSSINV_PRECUT")
+				SET TEXT TO PASTEBOARD:C523(ut_ArrayToText(->$strnums_atxt; "\n"))
+				
+			End if 
+			
+		End if 
+		//end of Mods_2024_LSS_1
+		
 	: (Form event code:C388=On Header Click:K2:40)
 		$0:=LSS_SortStructureType
 		//WIN_SetWindowTitle (->[LSS_Inventory])
@@ -101,4 +137,5 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		InDoubleClick_B:=False:C215
+		
 End case 

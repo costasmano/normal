@@ -14,6 +14,9 @@ If (False:C215)
 	Mods_2015_06
 	Mods_2017_06_bug  ////Fix error where errors occur and tranaction not cancelled
 	//Modified by: Chuck Miller (6/21/17 13:44:29)
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-14 15:11:14)
+	Mods_2024_LSS_1
+	//  `added updating of modified fields
 End if 
 //
 
@@ -29,6 +32,10 @@ If (Is new record:C668([LSS_Inspection:164]))
 	LogNewRecord(->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; 0; "LSS_Inspection")
 End if 
 If (ACT_PushGroupChanges(Table:C252(->[LSS_Inspection:164]); 1; ->$FieldsToSkip_atxt))
+	// start of changes Mods_2024_LSS_1
+	[LSS_Inspection:164]LSS_ModifiedBy_s:47:=<>CURRENTUSER_NAME
+	[LSS_Inspection:164]LSS_ModifiedISODate_s:48:=ISODateTime(Current date:C33; Current time:C178)
+	// end of changes Mods_2024_LSS_1
 	FlushGrpChgs(1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; ->[LSS_Inspection:164]LSS_InspectionId_s:1; 0)
 End if 
 If ([LSS_Inspection:164]LSS_TeamLeaderId_L:8>0) & (Old:C35([LSS_Inspection:164]LSS_TeamLeaderId_L:8)#[LSS_Inspection:164]LSS_TeamLeaderId_L:8)

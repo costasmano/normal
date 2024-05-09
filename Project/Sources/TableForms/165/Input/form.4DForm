@@ -581,6 +581,98 @@
 					"class": "Label12Plain",
 					"textAlign": "right",
 					"text": "Status :"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 96,
+					"left": 34,
+					"width": 110,
+					"height": 14,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Inspection Cycle : "
+				},
+				"NoEdit10": {
+					"type": "input",
+					"top": 95,
+					"left": 152,
+					"width": 32,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_Cycle_L:39",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"dataSourceTypeHint": "number"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 96,
+					"left": 503,
+					"width": 170,
+					"height": 14,
+					"class": "Label12Plain",
+					"textAlign": "right",
+					"text": "Next Scheduled Inspection : "
+				},
+				"NoEdit11": {
+					"type": "input",
+					"top": 95,
+					"left": 676,
+					"width": 100,
+					"height": 17,
+					"dataSource": "[LSS_Inventory:165]LSS_NextSchedInsp_d:40",
+					"class": "DataEntry14Plain",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"dataSourceTypeHint": "date"
+				},
+				"EditCycle": {
+					"type": "button",
+					"text": "Edit",
+					"top": 93,
+					"left": 220,
+					"width": 61,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"class": "Label12Plain",
+					"method": "ObjectMethods/EditCycle.4dm"
 				}
 			}
 		},
@@ -1175,8 +1267,8 @@
 				"Inspection_LB": {
 					"type": "listbox",
 					"top": 526,
-					"left": 188,
-					"width": 400,
+					"left": 153,
+					"width": 480,
 					"height": 190,
 					"sizingY": "grow",
 					"resizingMode": "legacy",
@@ -1205,8 +1297,8 @@
 				"LSS_Add_L": {
 					"type": "button",
 					"top": 526,
-					"left": 21,
-					"width": 152,
+					"left": 10,
+					"width": 132,
 					"height": 27,
 					"dataSource": "LSS_Add_L",
 					"text": "Add",
@@ -1219,8 +1311,8 @@
 				"LSS_Edit_L": {
 					"type": "button",
 					"top": 566,
-					"left": 21,
-					"width": 152,
+					"left": 10,
+					"width": 132,
 					"height": 27,
 					"dataSource": "LSS_Edit_L",
 					"text": "Edit",
@@ -1233,8 +1325,8 @@
 				"LSS_Duplicate_L": {
 					"type": "button",
 					"top": 607,
-					"left": 21,
-					"width": 152,
+					"left": 10,
+					"width": 132,
 					"height": 27,
 					"dataSource": "LSS_Duplicate_L",
 					"text": "Duplicate",
@@ -1247,8 +1339,8 @@
 				"LSS_Print_L": {
 					"type": "button",
 					"top": 648,
-					"left": 21,
-					"width": 152,
+					"left": 10,
+					"width": 132,
 					"height": 27,
 					"dataSource": "LSS_Print_L",
 					"text": "Print Inspection",
@@ -1261,8 +1353,8 @@
 				"LSS_Approved_L": {
 					"type": "button",
 					"top": 689,
-					"left": 21,
-					"width": 152,
+					"left": 10,
+					"width": 132,
 					"height": 27,
 					"dataSource": "LSS_Approved_L",
 					"text": "Review Inspection",
@@ -1296,11 +1388,11 @@
 				"LSS_ExportInspection_L": {
 					"type": "button",
 					"top": 530,
-					"left": 628,
-					"width": 165,
+					"left": 720,
+					"width": 66,
 					"height": 23,
 					"dataSource": "LSS_ExportInspection_L",
-					"text": "Export Inspection",
+					"text": "Export",
 					"class": "DataEntry12Plain",
 					"method": "ObjectMethods/LSS_ExportInspection_L.4dm",
 					"events": [
@@ -1310,10 +1402,10 @@
 				"LSS_ImportInspection": {
 					"type": "button",
 					"top": 570,
-					"left": 628,
-					"width": 165,
+					"left": 720,
+					"width": 66,
 					"height": 23,
-					"text": "Import Inspection",
+					"text": "Import",
 					"class": "DataEntry12Plain",
 					"method": "ObjectMethods/LSS_ImportInspection.4dm",
 					"events": [
@@ -1476,5 +1568,10 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"geometryStamp": 111,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }

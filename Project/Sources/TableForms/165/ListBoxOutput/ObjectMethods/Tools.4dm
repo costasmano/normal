@@ -14,6 +14,9 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(12/4/18 16:48:10)
 	Mods_2018_12_bug
 	//  `obj set vis = false when not permitted.
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-13 17:09:19)
+	Mods_2024_LSS_1
+	//  `on form enabled On load event for button
 End if 
 //
 

@@ -16,6 +16,11 @@ If (False:C215)
 	// Modified by: manousakisc (4/28/2023)
 	Mods_2023_LSSNew
 	// added status collection
+	// Modified by: Costas Manousakis-(Designer)-(2024-02-28 16:56:04)
+	Mods_2024_LSS_1
+	//  `added LSS_defaultcycle Storage object 
+	//  `call LSS_ContractsToStorage
+	
 End if 
 //
 Compiler_LB
@@ -108,6 +113,22 @@ Else
 		New object:C1471("status"; "Proposed"; "color"; 0x00FFCC66))
 	
 End if 
+
+//start of Mods_2024_LSS_1
+C_LONGINT:C283($defaultCycle_L)
+$defaultCycle_L:=Num:C11(ut_GetSysParameter("LSS_DefaultCycle"; "4"))
+If (Storage:C1525.LSS_defaultcycle=Null:C1517)
+	Use (Storage:C1525)
+		Storage:C1525.LSS_defaultcycle:=New shared object:C1526
+	End use 
+End if 
+Use (Storage:C1525.LSS_defaultcycle)
+	Storage:C1525.LSS_defaultcycle.value:=$defaultCycle_L
+End use 
+
+LSS_ContractsToStorage
+
+//end of Mods_2024_LSS_1
 
 LSS_SetSelectPullDowns
 

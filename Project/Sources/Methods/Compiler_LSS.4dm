@@ -535,4 +535,9 @@ If (False:C215)
 	
 	C_LONGINT:C283(LSS_StatusTextColor; $0)
 	
+	C_OBJECT:C1216(LSS_DuplicateInspection; $1)
+	
+	C_BOOLEAN:C305(LSS_MemberofContract; $0)
+	C_LONGINT:C283(LSS_MemberofContract; $1)
+	C_LONGINT:C283(LSS_MemberofContract; $2)
 End if 

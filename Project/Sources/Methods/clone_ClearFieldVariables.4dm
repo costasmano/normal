@@ -15,7 +15,7 @@
 // Modified by: Charles Miller (5/6/10)
 If (False:C215)
 	//Modified by: Charles Miller (8/11/10 11:34:45) 
-	// Updated by clone_NewCreateSQLVariables on 5/6/24 - 16:56:47
+	// Updated by clone_NewCreateSQLVariables on 5/9/24 - 09:49:24
 End if 
 // 
 If (Count parameters:C259=0)
@@ -6636,6 +6636,10 @@ Else
 			CLEAR VARIABLE:C89(v_164_041_aL)  //LSS_Reviewed_L
 			CLEAR VARIABLE:C89(v_164_043_L)  //LSS_Approved_L
 			CLEAR VARIABLE:C89(v_164_043_aL)  //LSS_Approved_L
+			CLEAR VARIABLE:C89(v_164_060_L)  //LSS_ContractNo_L
+			CLEAR VARIABLE:C89(v_164_060_aL)  //LSS_ContractNo_L
+			CLEAR VARIABLE:C89(v_164_061_L)  //LSS_AssignmentNo_L
+			CLEAR VARIABLE:C89(v_164_061_aL)  //LSS_AssignmentNo_L
 			CLEAR VARIABLE:C89(v_164_004_d)  //LSS_InspectionDate_d
 			CLEAR VARIABLE:C89(v_164_004_ad)  //LSS_InspectionDate_d
 			CLEAR VARIABLE:C89(v_164_030_d)  //LSS_DateOfPhotos_d
@@ -6737,6 +6741,10 @@ Else
 			CLEAR VARIABLE:C89(v_165_037_aL)  //LSS_ProjNoBuilt_L
 			CLEAR VARIABLE:C89(v_165_038_L)  //LSS_ProjNoRemoved_L
 			CLEAR VARIABLE:C89(v_165_038_aL)  //LSS_ProjNoRemoved_L
+			CLEAR VARIABLE:C89(v_165_039_L)  //LSS_Cycle_L
+			CLEAR VARIABLE:C89(v_165_039_aL)  //LSS_Cycle_L
+			CLEAR VARIABLE:C89(v_165_040_d)  //LSS_NextSchedInsp_d
+			CLEAR VARIABLE:C89(v_165_040_ad)  //LSS_NextSchedInsp_d
 		: ($1=166)  //LSS_Photos
 			CLEAR VARIABLE:C89(v_166_005_blb)  //LSS_Photo_blb
 			CLEAR VARIABLE:C89(v_166_005_ablb)  //LSS_Photo_blb

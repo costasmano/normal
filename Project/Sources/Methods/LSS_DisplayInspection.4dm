@@ -1,25 +1,41 @@
 //%attributes = {"invisible":true}
-
-// ----------------------------------------------------
-// User name (OS): administrator
-// Date and time: 09/23/14, 15:22:00
-// ----------------------------------------------------
 // Method: LSS_DisplayInspection
 // Description
-// 
-//
 // Parameters
-// ----------------------------------------------------
+
+If (False:C215)
+	// ----------------------------------------------------
+	// User name (OS): administrator
+	// Date and time: 09/23/14, 15:22:00
+	// ----------------------------------------------------
+	// 
+	//
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-28 13:37:10)
+	Mods_2024_LSS_1
+	//  `Allow users in LSS_MassEditAccess to edit so they can modify Contract and assignment number
+	
+End if 
 C_TEXT:C284($1; $InputForm_txt)
 $InputForm_txt:=$1
 LSS_PermissionModInspection
 LSS_PermissionDelInspection
-If (Not:C34(LSS_AllowInspectionEdit_B) & (User in group:C338(Current user:C182; "Design Access Group")))
-	CONFIRM:C162("Do you "+Current user:C182+" want to edit the inspection"; "Edit"; "Read Only")
-	If (OK=1)
-		LSS_AllowInspectionEdit_B:=True:C214
-		LSS_AllowInspectionDelete_B:=True:C214
-	End if 
+If (Not:C34(LSS_AllowInspectionEdit_B))
+	
+	Case of 
+		: (User in group:C338(Current user:C182; "Design Access Group"))
+			CONFIRM:C162("Do you "+Current user:C182+" want to edit the inspection"; "Edit"; "Read Only")
+			If (OK=1)
+				LSS_AllowInspectionEdit_B:=True:C214
+				LSS_AllowInspectionDelete_B:=True:C214
+			End if 
+		: (GRP_UserInGroup("LSS_MassEditAccess")=1)
+			CONFIRM:C162("Do you "+Current user:C182+" want to edit the inspection to change Contract and Assignment?"; "Edit"; "Read Only")
+			If (OK=1)
+				LSS_AllowInspectionEdit_B:=True:C214
+			End if 
+			
+	End case 
+	
 End if 
 
 C_LONGINT:C283($Width_L; $Height_L; $Choice_L)

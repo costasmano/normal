@@ -18,6 +18,9 @@ If (False:C215)
 	// Modified by: Costas Manousakis-(Designer)-(11/29/18 14:28:04)
 	Mods_2018_11
 	//  `use method LSS_SetUpReviewButton
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-13 19:05:18)
+	Mods_2024_LSS_1
+	//  `allow copying of structure numbers when using right-click on the str num column.
 End if 
 //
 C_LONGINT:C283($LBCol_L; LSS_InspectionRow_L)
@@ -71,7 +74,8 @@ Case of
 		
 		
 	: (Form event code:C388=On Clicked:K2:4)
-		C_LONGINT:C283($LBCol_L)
+		
+		LISTBOX GET CELL POSITION:C971(*; "Inspection_LB"; $LBCol_L; LSS_InspectionRow_L)
 		
 		LSS_SelectInpsectionInputForm(->$InputForm_txt; ->LSS_InspectionRow_L)
 		
@@ -111,6 +115,33 @@ Case of
 			OBJECT SET VISIBLE:C603(*; "LSS_Duplicate_L"; False:C215)
 			OBJECT SET VISIBLE:C603(*; "LSS_ExportInspection_L"; False:C215)
 		End if 
+		
+		//start of Mods_2024_LSS_1
+		
+		If (Contextual click:C713 & ($LBCol_L=1))
+			C_TEXT:C284($copymenu_txt)
+			$copymenu_txt:="...;Copy selected Structure numbers"
+			C_LONGINT:C283($choice_L)
+			$choice_L:=Pop up menu:C542($copymenu_txt)
+			//ut_Send2Clipboard ("\n"+String($choice_L))
+			If ($choice_L=2)
+				
+				ARRAY TEXT:C222($strnums_atxt; Records in set:C195("InspReviewSelect"))
+				ARRAY TEXT:C222($invIDs_atxt; Records in set:C195("InspReviewSelect"))
+				
+				COPY NAMED SELECTION:C331([LSS_Inspection:164]; "$LSSINV_PRECUT")
+				COPY SET:C600("InspReviewSelect"; "$temphiliteset")
+				USE SET:C118("InspReviewSelect")
+				SELECTION TO ARRAY:C260([LSS_Inspection:164]LSS_InspectionId_s:1; $invIDs_atxt; [LSS_Inventory:165]LSS_StructureNumber_s:6; $strnums_atxt)
+				USE NAMED SELECTION:C332("$LSSINV_PRECUT")
+				CLEAR NAMED SELECTION:C333("$LSSINV_PRECUT")
+				SET TEXT TO PASTEBOARD:C523(ut_ArrayToText(->$strnums_atxt; "\n"))
+				COPY SET:C600("$temphiliteset"; "InspReviewSelect")
+				CLEAR SET:C117("$temphiliteset")
+			End if 
+			
+		End if 
+		//end of Mods_2024_LSS_1
 		
 End case 
 

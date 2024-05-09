@@ -2385,9 +2385,9 @@ Dec 2001 : Added TNL = Tunnel Structure in the Item8BridgeCat List.}]]></comment
 
 \f0\fs20 \cf2 \ulnone Rail Bridge information tied to the [Bridge MHD NBIS] table by the [BridgeinfoLink] table\
 ++Dec-2001 : Made Invisible.}]]></comment>
-			<editor_table_info displayable_fields_count="62">
+			<editor_table_info displayable_fields_count="39">
 				<color red="0" green="0" blue="0" alpha="0"/>
-				<coordinates left="289" top="3748" width="209.3359375" height="1349.23828125"/>
+				<coordinates left="289" top="3748" width="209.3359375" height="867.61108398438"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -9539,6 +9539,8 @@ Dec 2001 : Added TNL = Tunnel Structure in the Item8BridgeCat List.}]]></comment
 		<field name="LSS_DamBostonCopyForwardTo_s" uuid="60DC59C09E8D4266B57C9269AC62BD98" type="10" limiting_length="120" never_null="true" id="57"/>
 		<field name="LSS_DamBostonOffice_d" uuid="7EB462C20B684CAAB6CC432E6ED36714" type="8" never_null="true" id="58"/>
 		<field name="LSS_DamBostonOfficeRemarks_txt" uuid="309246D5C1B04722890377C9BFC1302F" type="10" never_null="true" id="59"/>
+		<field name="LSS_ContractNo_L" uuid="691C0FC45BA0467D9FA8206D8E03CF97" type="4" id="60"/>
+		<field name="LSS_AssignmentNo_L" uuid="69C0955DAF434748B2E7A17FEAF376C8" type="4" id="61"/>
 		<primary_key field_name="LSS_Inspection_UUIDKey_s" field_uuid="CC0E1BA383CD40568369D2D03F28D5E2"/>
 		<table_extra input_form="ITSStructurePg1" output_form="Output">
 			<comment format="rtf"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf840
@@ -9551,9 +9553,9 @@ Dec 2001 : Added TNL = Tunnel Structure in the Item8BridgeCat List.}]]></comment
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 }]]></comment>
-			<editor_table_info displayable_fields_count="59">
+			<editor_table_info displayable_fields_count="34">
 				<color red="102" green="204" blue="204" alpha="255"/>
-				<coordinates left="306.5703125" top="4815.8515625" width="208.515625" height="1283.19140625"/>
+				<coordinates left="304.37609863281" top="4640.8355712891" width="206.83813476562" height="766.41174316406"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -9646,6 +9648,8 @@ Dec 2001 : Added TNL = Tunnel Structure in the Item8BridgeCat List.}]]></comment
 		</field>
 		<field name="LSS_ProjNoBuilt_L" uuid="8BC93423EC4D412A879706D2C3ECCD2D" type="4" never_null="true" id="37"/>
 		<field name="LSS_ProjNoRemoved_L" uuid="04138FAD8E7D4B4FBEEE3969B1166819" type="4" never_null="true" id="38"/>
+		<field name="LSS_Cycle_L" uuid="9430E86108A2432D8FBDC497FD4AF30E" type="4" id="39"/>
+		<field name="LSS_NextSchedInsp_d" uuid="E615F46DB3C44219AC5E15BAF4C21D7C" type="8" id="40"/>
 		<primary_key field_name="LSS_Inventory_UUIDKey_s" field_uuid="EA2781DBABFD47F19FDFCF9703F34B1E"/>
 		<table_extra input_form="" output_form="Output">
 			<comment format="rtf"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf840

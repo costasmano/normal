@@ -1,19 +1,23 @@
 //%attributes = {"invisible":true}
-
-// ----------------------------------------------------
-// User name (OS): administrator
-// Date and time: 10/23/14, 13:58:17
-// ----------------------------------------------------
 // Method: LSS_SetUpInventoryListBox
 // Description
 // 
 //
 // Parameters
-// ----------------------------------------------------
 If (False:C215)
+	// ----------------------------------------------------
+	
+	// ----------------------------------------------------
+	// User name (OS): administrator
+	// Date and time: 10/23/14, 13:58:17
+	// ----------------------------------------------------
+	// ----------------------------------------------------
 	// Modified by: Costas Manousakis-(Designer)-(2/24/16 16:32:08)
 	Mods_2016_02_bug
 	//  `for section 3.0 and Highway signs (HS) use field [LSS_Inspection]LSS_CondSignPanelsCurr_s
+	// Modified by: Costas Manousakis-(Designer)-(2024-02-28 12:34:06)
+	Mods_2024_LSS_1
+	//  `added columns for contract number and assignment number
 End if 
 
 Compiler_LB
@@ -127,6 +131,30 @@ OBJECT SET FORMAT:C236(*; $ColumnName_txt; Char:C90(Scaled to fit prop centered:
 
 LISTBOX SET COLUMN WIDTH:C833(*; $ColumnName_txt; 30)
 $TotalLB_width_L:=$TotalLB_width_L+30
+
+//start of Mods_2024_LSS_1
+
+$ColumnNumber_l:=$ColumnNumber_l+1
+LB_SetUPFieldColumn($ColumnNumber_l; ->$HeaderVarName_txt; ->$HeaderVar_ptr; ->$ColumnName_txt)
+LISTBOX INSERT COLUMN:C829(*; "Inspection_LB"; $ColumnNumber_l; $ColumnName_txt; [LSS_Inspection:164]LSS_ContractNo_L:60; $HeaderVarName_txt; $HeaderVar_ptr->)
+OBJECT SET TITLE:C194(*; $HeaderVarName_txt; "Contract")
+OBJECT SET HORIZONTAL ALIGNMENT:C706(*; $ColumnName_txt; Align center:K42:3)
+OBJECT SET ENTERABLE:C238(*; $ColumnName_txt; False:C215)
+LISTBOX SET COLUMN WIDTH:C833(*; $ColumnName_txt; 55)
+OBJECT SET FORMAT:C236(*; $ColumnName_txt; "#######;;-")
+$TotalLB_width_L:=$TotalLB_width_L+55
+
+$ColumnNumber_l:=$ColumnNumber_l+1
+LB_SetUPFieldColumn($ColumnNumber_l; ->$HeaderVarName_txt; ->$HeaderVar_ptr; ->$ColumnName_txt)
+LISTBOX INSERT COLUMN:C829(*; "Inspection_LB"; $ColumnNumber_l; $ColumnName_txt; [LSS_Inspection:164]LSS_AssignmentNo_L:61; $HeaderVarName_txt; $HeaderVar_ptr->)
+OBJECT SET TITLE:C194(*; $HeaderVarName_txt; "AssignNo")
+OBJECT SET HORIZONTAL ALIGNMENT:C706(*; $ColumnName_txt; Align center:K42:3)
+OBJECT SET ENTERABLE:C238(*; $ColumnName_txt; False:C215)
+LISTBOX SET COLUMN WIDTH:C833(*; $ColumnName_txt; 55)
+OBJECT SET FORMAT:C236(*; $ColumnName_txt; "#######;;-")
+$TotalLB_width_L:=$TotalLB_width_L+55
+//start of Mods_2024_LSS_1
+
 
 C_LONGINT:C283($LBL_L; $LBT_L; $LBR_L; $LBB_L)
 OBJECT GET COORDINATES:C663(*; "Inspection_LB_Label"; $LBL_L; $LBT_L; $LBR_L; $LBB_L)

@@ -27,6 +27,11 @@ If (False:C215)
 	//added status , pinfo fields, relabeled/rearranged year blt,remove,rehab info
 	// changed help message for Map button
 	
+	// Modified by: Costas Manousakis-(Designer)-(2024-04-01 09:55:56)
+	Mods_2024_LSS_1
+	//  `resized and moved Inspection related buttons and listbox to allow for Contract and Assignment columns
+	//  `added Cycle (years) and Next Scheduled inspection dates - added Edit button to edit the cycle accessible for members of "LSS_EditCycle"
+	
 End if 
 
 If (Form event code:C388=On Load:K2:1)

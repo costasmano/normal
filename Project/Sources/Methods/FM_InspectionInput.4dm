@@ -34,6 +34,10 @@ If (False:C215)
 	//Modified by: Chuck Miller (7/14/17 11:50:35)
 	Mods_2018_09  //Modify so that input forms show inspection type in heading
 	//Modified by: Chuck Miller (9/27/18 14:08:52)
+	// Modified by: Costas Manousakis-(Designer)-(2024-03-06 18:01:11)
+	Mods_2024_LSS_1
+	//  `mods to handle Contract num and assignment num
+	//  `If there is a contract, disable the delete button except for design user or members of "LSS_AllowDeleteAssignment"
 End if 
 
 C_LONGINT:C283($FormEvent_L)
@@ -62,6 +66,18 @@ Case of
 				LSS_UpdateAccessibility_B:=True:C214
 			Else 
 		End case 
+		
+		//start of Mods_2024_LSS_1
+	: ($FormEvent_L=On Unload:K2:2)
+		
+		//"LSS_ContractNo_dd" "LSS_AssignNo_dd"
+		C_POINTER:C301($contrdd_ptr; $assigndd_ptr)
+		$contrdd_ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "LSS_ContractNo_dd")
+		
+		If (Is a list:C621($contrdd_ptr->))
+			CLEAR LIST:C377($contrdd_ptr->)
+		End if 
+		//end of Mods_2024_LSS_1
 		
 	: ($FormEvent_L=On Load:K2:1)
 		
@@ -145,7 +161,9 @@ Case of
 			
 		End if 
 		
+		
 		OBJECT SET VISIBLE:C603(*; "LSS_Approved_L"; False:C215)
+		
 		If (Is new record:C668([LSS_Inspection:164]))
 			
 			
@@ -221,6 +239,7 @@ Case of
 				
 			End if 
 		End if 
+		
 		LSS_FillNames
 		
 		CLEAR VARIABLE:C89(LSS_Picture_pct)
@@ -241,8 +260,6 @@ Case of
 				$Entry_b:=True:C214
 				
 		End case 
-		
-		
 		
 		OBJECT SET ENABLED:C1123(*; "LSS_Plans_b"; $Entry_b)
 		OBJECT SET ENABLED:C1123(*; "LSS_Photos_b"; $Entry_b)
@@ -304,6 +321,143 @@ Case of
 		
 		OBJECT SET TITLE:C194(*; "InspectionHeader"; Uppercase:C13($Title_txt))
 		
+		//start of Mods_2024_LSS_1
+		
+		//"LSS_ContractNo_dd" 
+		C_POINTER:C301($contrdd_ptr)
+		$contrdd_ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "LSS_ContractNo_dd")
+		ARRAY TEXT:C222($contracts_atxt; 0)
+		ARRAY LONGINT:C221($assignments_aL; 0)
+		
+		C_COLLECTION:C1488($ancContracts_c)
+		$ancContracts_c:=Storage:C1525.LSS_Contracts
+		C_COLLECTION:C1488($contract_c; $validcontracts_c)
+		
+		//if user is member of LSS_MassEditAccess or Design user - the contract dropdown will be all contracts
+		//if user can edit the inspection, the contract dropdown will be contracts where company is a member of
+		
+		If ($Entry_b)  // we can edit the inspection
+			ARRAY TEXT:C222($primes_atxt; 0)
+			//ALERT(<>PERS_MyCompany_txt)
+			Case of 
+				: (GRP_UserInGroup("LSS_MassEditAccess")=1) | User in group:C338(Current user:C182; "Design Access Group")
+					$validcontracts_c:=$ancContracts_c.query("Assignments.length>0")  // select only contracts that have assignments
+				Else 
+					$validcontracts_c:=$ancContracts_c.query("(ConsultantName = :1 OR Subs[].name = :1) AND (Assignments.length>0)"; <>PERS_MyCompany_txt)
+			End case 
+			
+			C_LONGINT:C283($newHL_)
+			$newHL_:=New list:C375
+			//ALERT(String($ancContracts_c.length)+" "+String($validcontracts_c.length))
+			If ($validcontracts_c.length>0)
+				ARRAY TEXT:C222($values_atxt; 0)
+				ARRAY TEXT:C222($contracts_atxt; 0)
+				C_OBJECT:C1216($contract_o; $assign_o)
+				For each ($contract_o; $validcontracts_c)
+					For each ($assign_o; $contract_o.Assignments)
+						APPEND TO ARRAY:C911($contracts_atxt; String:C10($contract_o.ContractNo)+" - "+\
+							$contract_o.ConsultantName+"\\\\"+"Assignment : "+String:C10($assign_o.assignnum))
+						APPEND TO ARRAY:C911($values_atxt; String:C10($contract_o.ContractNo)+";"+String:C10($assign_o.assignnum)+";"+$contract_o.ConsultantName)
+					End for each 
+					
+				End for each 
+				Menu_BuildHLFromArrays($newHL_; ->$contracts_atxt; ->$values_atxt; "\\\\")
+				
+			End if 
+			
+			$contrdd_ptr->:=$newHL_
+			
+			If ([LSS_Inspection:164]LSS_ContractNo_L:60>0)
+				
+				//populate the assignment dropdown
+				$contract_c:=$ancContracts_c.query("ContractNo = :1"; [LSS_Inspection:164]LSS_ContractNo_L:60)
+				
+				If ($contract_c.length=1)
+					If (Not:C34($contract_c[0].Assignments=Null:C1517))
+						COLLECTION TO ARRAY:C1562($contract_c[0].Assignments; $assignments_aL; "assignnum")
+					End if 
+				End if 
+				
+			End if 
+			
+		End if 
+		
+		
+		If ([LSS_Inspection:164]LSS_ContractNo_L:60>0)
+			
+			// fill the Assigned consultant text object and get the list of consultants assigned to the contract
+			
+			$contract_c:=$ancContracts_c.query("ContractNo = :1"; [LSS_Inspection:164]LSS_ContractNo_L:60)
+			C_TEXT:C284($ConsName_txt)
+			Case of 
+				: ($ancContracts_c.length=0)
+					$ConsName_txt:="List of Ancillary Inspection contracts not defined!"
+				: ($contract_c.length=0)
+					$ConsName_txt:="Contract is not in the List of Ancillary Inspection contracts!"
+				Else 
+					$ConsName_txt:="Assigned Consultant : "+$contract_c[0].ConsultantName
+					//correct array LSS_ConsultanList_atxt 
+					ARRAY TEXT:C222(LSS_ConsultanList_atxt; 0)
+					
+					APPEND TO ARRAY:C911(LSS_ConsultanList_atxt; $contract_c[0].ConsultantName)
+					If ($contract_c[0].Subs#Null:C1517)
+						C_OBJECT:C1216($sub_o)
+						For each ($sub_o; $contract_c[0].Subs)
+							APPEND TO ARRAY:C911(LSS_ConsultanList_atxt; $sub_o.name)
+						End for each 
+					End if 
+					
+			End case 
+			
+			OBJECT SET TITLE:C194(*; "AssigneCons"; $ConsName_txt)
+			
+			//When there is a contract - and we are editing the inspection make sure the assigned consultant is specified
+			//  use the employer of the current user if it is not
+			C_BOOLEAN:C305($updatePersDropdowns_b)
+			$updatePersDropdowns_b:=False:C215
+			If ([LSS_Inspection:164]LSS_ConsultantName_txt:10="") & ($Entry_b)
+				[LSS_Inspection:164]LSS_ConsultantName_txt:10:=<>PERS_MyCompany_txt
+				// need to update the dropdowns
+				$updatePersDropdowns_b:=True:C214
+			End if 
+			
+			If ([LSS_Inspection:164]LSS_TeamLeaderId_L:8=0)
+				If (GRP_UserInGroup("LSS_TeamLeader"; <>CurrentUser_PID)=1)
+					[LSS_Inspection:164]LSS_TeamLeaderId_L:8:=<>CurrentUser_PID
+					$updatePersDropdowns_b:=True:C214
+				End if 
+				
+			End if 
+			
+			If ($updatePersDropdowns_b)
+				LSS_SetPersonnel
+				LSS_FillNames
+			End if 
+			
+			// disable the delete button unless current user is design or member of LSS_AllowDeleteAssignment
+			If (User in group:C338(<>CURRENTUSER_NAME; "Design Access Group") | (GRP_UserInGroup("LSS_AllowDeleteAssignment")=1))
+				//ALERT(" can delete")
+				OBJECT SET ENABLED:C1123(*; "bdelete"; True:C214)
+				OBJECT SET VISIBLE:C603(*; "bdelete"; True:C214)
+				
+			Else 
+				ALERT:C41(" cannot delete? "+[LSS_Inspection:164]LSS_CreatedBy_s:45)
+				If ([LSS_Inspection:164]LSS_CreatedBy_s:45="AssignmentImport") | ([LSS_Inspection:164]LSS_CreatedBy_s:45="")
+					//this is an imported assignment - cannot be deleted!
+					OBJECT SET ENABLED:C1123(*; "bdelete"; False:C215)
+				End if 
+			End if 
+			
+		Else 
+			
+			//make sure the consultant list is set back to default 
+			ARRAY TEXT:C222(LSS_ConsultanList_atxt; 0)
+			TOL_ListToArray("LSS_Consultants"; ->LSS_ConsultanList_atxt)
+			SORT ARRAY:C229(LSS_ConsultanList_atxt)
+			
+		End if 
+		
+		//end of Mods_2024_LSS_1
 		
 End case 
 

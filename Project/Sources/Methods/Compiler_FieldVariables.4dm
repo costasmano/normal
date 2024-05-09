@@ -28,7 +28,7 @@
 // Modified by: Charles Miller (5/6/10)
 If (False:C215)
 	//Modified by: Charles Miller (8/11/10 11:06:44) 
-	// Updated by clone_NewCreateSQLVariables on 5/6/24 - 16:56:47
+	// Updated by clone_NewCreateSQLVariables on 5/9/24 - 09:49:24
 End if 
 // 
 If (Count parameters:C259=0)
@@ -6649,6 +6649,10 @@ Else
 			ARRAY LONGINT:C221(v_164_041_aL; 0)  //LSS_Reviewed_L
 			C_LONGINT:C283(v_164_043_L)  //LSS_Approved_L
 			ARRAY LONGINT:C221(v_164_043_aL; 0)  //LSS_Approved_L
+			C_LONGINT:C283(v_164_060_L)  //LSS_ContractNo_L
+			ARRAY LONGINT:C221(v_164_060_aL; 0)  //LSS_ContractNo_L
+			C_LONGINT:C283(v_164_061_L)  //LSS_AssignmentNo_L
+			ARRAY LONGINT:C221(v_164_061_aL; 0)  //LSS_AssignmentNo_L
 			C_DATE:C307(v_164_004_d)  //LSS_InspectionDate_d
 			ARRAY DATE:C224(v_164_004_ad; 0)  //LSS_InspectionDate_d
 			C_DATE:C307(v_164_030_d)  //LSS_DateOfPhotos_d
@@ -6750,6 +6754,10 @@ Else
 			ARRAY LONGINT:C221(v_165_037_aL; 0)  //LSS_ProjNoBuilt_L
 			C_LONGINT:C283(v_165_038_L)  //LSS_ProjNoRemoved_L
 			ARRAY LONGINT:C221(v_165_038_aL; 0)  //LSS_ProjNoRemoved_L
+			C_LONGINT:C283(v_165_039_L)  //LSS_Cycle_L
+			ARRAY LONGINT:C221(v_165_039_aL; 0)  //LSS_Cycle_L
+			C_DATE:C307(v_165_040_d)  //LSS_NextSchedInsp_d
+			ARRAY DATE:C224(v_165_040_ad; 0)  //LSS_NextSchedInsp_d
 		: ($1=166)  //LSS_Photos
 			C_BLOB:C604(v_166_005_blb)  //LSS_Photo_blb
 			ARRAY BLOB:C1222(v_166_005_ablb; 0)  //LSS_Photo_blb
